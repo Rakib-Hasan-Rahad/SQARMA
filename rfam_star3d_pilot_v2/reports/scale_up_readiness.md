@@ -55,3 +55,14 @@ validate it independently.
 5. A native x86-64 STAR3D host.
 
 After that, scale mode can reuse every automated stage unchanged. Construct review stays manual.
+
+## Update 2026-10-09 (v3)
+- Items 2 and 4 of the recommendation are done:
+  - the fresh rerun covers all 7 pairs;
+  - all 21 unreviewed families are reviewed, with 0 new primary pairs.
+- Item 3 was applied to the new candidates (`review/v3_screening/exact_source_v3.tsv`).
+- Still open:
+  - item 1, researcher review;
+  - item 5, a native host.
+- Under the current criteria there is nothing eligible to scale to. Further growth needs a declared scope change
+  (`deliverables/2026-10-09/readiness.json`).

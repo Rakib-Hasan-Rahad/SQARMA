@@ -1,0 +1,23 @@
+runs/RF00059__2GDI_X__3D2G_A/attempt1/STAR3D_source/out forward distinct_bodies=       1
+runs/RF00059__2GDI_X__3D2G_A/attempt1/STAR3D_source/out reverse distinct_bodies=       1
+runs/RF00162__2GIS_A__4KQY_A/attempt1/STAR3D_source/out forward distinct_bodies=       1
+runs/RF00162__2GIS_A__4KQY_A/attempt1/STAR3D_source/out reverse distinct_bodies=       1
+runs/RF00174__4GXY_A__6VMY_A/attempt1/STAR3D_source/out forward distinct_bodies=       1
+runs/RF00174__4GXY_A__6VMY_A/attempt1/STAR3D_source/out reverse distinct_bodies=       1
+runs/RF00442__5U3G_B__7MLW_F/attempt1/STAR3D_source/out forward distinct_bodies=       1
+runs/RF00442__5U3G_B__7MLW_F/attempt1/STAR3D_source/out reverse distinct_bodies=       1
+runs/RF00522__3FU2_A__6VUI_A/attempt3/STAR3D_source/out forward distinct_bodies=       1
+runs/RF00522__3FU2_A__6VUI_A/attempt3/STAR3D_source/out reverse distinct_bodies=       1
+runs/RF00522__3FU2_A__7REX_A/attempt1/STAR3D_source/out forward distinct_bodies=       1
+runs/RF00522__3FU2_A__7REX_A/attempt1/STAR3D_source/out reverse distinct_bodies=       1
+runs/RF00522__6VUI_A__7REX_A/attempt1/STAR3D_source/out forward distinct_bodies=       1
+runs/RF00522__6VUI_A__7REX_A/attempt1/STAR3D_source/out reverse distinct_bodies=       1
+RF00059__2GDI_X__3D2G_A forward==reverse(swapped): True 75 75 sym_diff 0
+RF00162__2GIS_A__4KQY_A forward==reverse(swapped): True 25 25 sym_diff 0
+RF00174__4GXY_A__6VMY_A forward==reverse(swapped): False 26 26 sym_diff 4
+RF00442__5U3G_B__7MLW_F forward==reverse(swapped): True 78 78 sym_diff 0
+RF00522__3FU2_A__6VUI_A forward==reverse(swapped): False 31 31 sym_diff 4
+RF00522__3FU2_A__7REX_A forward==reverse(swapped): True 32 32 sym_diff 0
+RF00522__6VUI_A__7REX_A forward==reverse(swapped): True 32 32 sym_diff 0
+RF00522__3FU2_A__6VUI_A forward-only [('A:32', 'A:32'), ('A:33', 'A:33')] reverse-only [('A:32', 'A:31'), ('A:33', 'A:32')]
+RF00174__4GXY_A__6VMY_A forward-only [('A:77', 'A:250'), ('A:78', 'A:251')] reverse-only [('A:94', 'A:214'), ('A:95', 'A:215')]

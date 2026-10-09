@@ -1,0 +1,3 @@
+suite	passed	failed	command	log_path
+51 tests (tests/)	51	0	.venv/bin/python -m pytest -q tests	logs/pytest_final.txt
+baseline at start (ac6ff55)	33	0	.venv/bin/python -m pytest -q tests	start_state/baseline_tests_env.txt

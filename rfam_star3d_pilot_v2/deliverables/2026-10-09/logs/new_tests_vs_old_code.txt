@@ -1,0 +1,10 @@
+== test_stockholm_export.py against HEAD scripts/reference.py
+1 failed, 2 passed in 0.34s
+== test_fresh_repro_gate.py against HEAD scripts/fresh_repro.py
+5 failed in 0.08s
+== test_compare_validation.py against HEAD scripts/compare.py
+5 failed, 5 passed in 0.06s
+== test_star3d_gate.py against HEAD scripts/star3d.py
+3 failed, 2 passed in 0.05s
+== test_regions.py against HEAD scripts/regions.py
+2 failed, 4 passed in 0.03s

@@ -1,0 +1,21 @@
+OK   pair table RF00522__3FU2_A__6VUI_A
+OK   pair table RF00162__2GIS_A__4KQY_A
+OK   pair table RF00174__4GXY_A__6VMY_A
+OK   pair table RF00522__3FU2_A__7REX_A
+OK   pair table RF00522__6VUI_A__7REX_A
+OK   pair table RF00059__2GDI_X__3D2G_A
+OK   pair table RF00442__5U3G_B__7MLW_F
+OK   7REX counts 6VUI → 7REX
+OK   7REX counts 7REX → 6VUI
+OK   7REX counts 3FU2 → 7REX
+OK   7REX counts 7REX → 3FU2
+OK   survey B 74 families
+OK   survey B 0 changed
+OK   funnel 167
+OK   funnel 31
+OK   21 families screened, 0 accepted
+OK   4 exploratory-only families
+OK   only 7REX row improves with +1 shift (43 rows)
+OK   site 7REX counts == table
+OK   site funnel reviewed_total 31
+20 OK, 0 FAIL

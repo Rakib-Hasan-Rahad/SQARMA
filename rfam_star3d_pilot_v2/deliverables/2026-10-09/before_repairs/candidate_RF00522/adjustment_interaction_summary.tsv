@@ -1,0 +1,11 @@
+pair_id	interaction_class	eligible_same_set	rfam_preserved	adjusted_preserved	star3d_forward_preserved
+RF00522__6VUI_A__7REX_A	all	46	19	31	29
+RF00522__6VUI_A__7REX_A	canonical	7	0	5	5
+RF00522__6VUI_A__7REX_A	wobble	0	0	0	0
+RF00522__6VUI_A__7REX_A	noncanonical	8	2	4	4
+RF00522__6VUI_A__7REX_A	stack	31	17	22	20
+RF00522__3FU2_A__7REX_A	all	44	20	33	31
+RF00522__3FU2_A__7REX_A	canonical	7	0	5	5
+RF00522__3FU2_A__7REX_A	wobble	0	0	0	0
+RF00522__3FU2_A__7REX_A	noncanonical	8	3	6	6
+RF00522__3FU2_A__7REX_A	stack	29	17	22	20

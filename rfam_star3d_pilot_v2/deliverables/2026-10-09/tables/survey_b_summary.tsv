@@ -1,0 +1,11 @@
+measure	value	source
+Families in ordinary seed (15.1)	4227	results/seed_collection_comparison/provenance.json
+Families in curated seed (15.1)	74	results/seed_collection_comparison/provenance.json
+Families in both	74	results/seed_collection_comparison/provenance.json
+Families with >=2 shared identical-sequence rows	74	results/seed_collection_comparison/provenance.json
+Shared rows	7808	results/seed_collection_comparison/provenance.json
+Shared rows with identical aligned strings	7808	results/seed_collection_comparison/provenance.json
+Comparable row pairs	1304970	results/seed_collection_comparison/provenance.json
+Row pairs with changed correspondence	0	results/seed_collection_comparison/provenance.json
+Annotation differences (GF/GR/GC)	0	results/seed_collection_comparison/provenance.json
+Curated records byte-identical to ordinary record	74/74	results/seed_collection_comparison/record_byte_identity.txt

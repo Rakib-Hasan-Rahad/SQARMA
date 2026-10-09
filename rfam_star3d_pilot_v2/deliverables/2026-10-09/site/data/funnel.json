@@ -1,0 +1,33 @@
+{
+ "source": "results/family_inventory.tsv",
+ "v3_source": "review/v3_screening/candidate_screening.tsv",
+ "unit": "Rfam family",
+ "counts": {
+  "families_in_inventory": 167,
+  "screen_status": {
+   "excluded": 136,
+   "pass": 31
+  },
+  "shortlisted": {
+   "no": 136,
+   "no_beyond_cap": 21,
+   "yes": 10
+  },
+  "review_status": {
+   "not_applicable": 136,
+   "pending": 21,
+   "verified": 10
+  },
+  "review_decision": {
+   "not reviewed": 157,
+   "excluded_from_primary": 4,
+   "exploratory": 2,
+   "primary": 3,
+   "pending_blast": 1
+  },
+  "v3_reviewed_families": 21,
+  "v3_accepted_primary_families": 0,
+  "v3_exploratory_only_families": 4,
+  "reviewed_total": 31
+ }
+}

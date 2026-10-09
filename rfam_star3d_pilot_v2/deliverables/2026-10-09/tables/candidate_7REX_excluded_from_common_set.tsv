@@ -1,0 +1,8 @@
+pair	interaction	pair_class	exclusion	rfam	adjusted	star3d
+RF00522__6VUI_A__7REX_A	cSH(20-21)	noncanonical	adjusted_unmapped_endpoint	different_class	unmapped_endpoint	no_annotated_target_pair
+RF00522__6VUI_A__7REX_A	s55(21-23)	stack	adjusted_unmapped_endpoint	no_annotated_target_pair	unmapped_endpoint	unmapped_endpoint
+RF00522__3FU2_A__7REX_A	cWW(10-32)	canonical	rfam_unmapped_endpoint	unmapped_endpoint	unmapped_endpoint	different_class
+RF00522__3FU2_A__7REX_A	s55(11-32)	stack	rfam_unmapped_endpoint	unmapped_endpoint	unmapped_endpoint	no_annotated_target_pair
+RF00522__3FU2_A__7REX_A	s35(15-16)	stack	rfam_unmapped_endpoint	unmapped_endpoint	exact_class_preserved	exact_class_preserved
+RF00522__3FU2_A__7REX_A	s35(31-32)	stack	rfam_unmapped_endpoint	unmapped_endpoint	unmapped_endpoint	exact_class_preserved
+RF00522__3FU2_A__7REX_A	s35(32-33)	stack	rfam_unmapped_endpoint	unmapped_endpoint	unmapped_endpoint	exact_class_preserved

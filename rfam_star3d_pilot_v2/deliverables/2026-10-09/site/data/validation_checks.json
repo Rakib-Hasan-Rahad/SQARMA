@@ -1,0 +1,72 @@
+{
+ "available": true,
+ "source": "deliverables/2026-10-09/tables/validation_checks.tsv",
+ "columns": [
+  "check",
+  "status",
+  "evidence",
+  "note"
+ ],
+ "rows": [
+  {
+   "check": "Valid Stockholm exports",
+   "status": "pass",
+   "evidence": "tests/test_stockholm_export.py; results/standard_seed_rows.sto",
+   "note": "5 records parse and equal pinned seed"
+  },
+  {
+   "check": "Input mismatches stop reproduction",
+   "status": "pass",
+   "evidence": "tests/test_fresh_repro_gate.py; audit/fresh_repro_v3_other4 (all accepted_identical)",
+   "note": "gate exercised on real downloads"
+  },
+  {
+   "check": "Actual FR3D software provenance",
+   "status": "pass",
+   "evidence": "scripts/interactions.py installed_fr3d_provenance; tables/fr3d_verify_regenerate.tsv",
+   "note": "commit 288f98cc from direct_url.json; 95/95 RECORD hashes"
+  },
+  {
+   "check": "STAR3D package/JAR/runtime identity",
+   "status": "pass",
+   "evidence": "STAR3D_execution_audit.md section 1",
+   "note": "emulated x86-64 (QEMU) on arm64"
+  },
+  {
+   "check": "Parser and intermediate behaviour",
+   "status": "pass with limitations",
+   "evidence": "STAR3D_execution_audit.md; logs/preprocessing_validation_retained.txt",
+   "note": "coordinate gaps treated as neighbours; non-WC WWc pairs kept; 7MLW ct overwrite"
+  },
+  {
+   "check": "Stored STAR3D outputs validated on consumption",
+   "status": "pass",
+   "evidence": "tests/test_compare_validation.py; logs/compare_v3.log",
+   "note": "41/41 completed runs; sha, counts, injectivity, crosswalk"
+  },
+  {
+   "check": "Reproduction of the 7 pilot pairs",
+   "status": "pass with platform failures",
+   "evidence": "audit/fresh_repro; tables/fresh_repro_other4.tsv",
+   "note": "all completed runs identical; 3 JVM crashes in 84 emulated runs"
+  },
+  {
+   "check": "Frozen candidate rules before new runs",
+   "status": "pass",
+   "evidence": "review/v3_screening/frozen_selection_v3.json",
+   "note": "empty selection"
+  },
+  {
+   "check": "Missing data distinguished from disagreement",
+   "status": "pass",
+   "evidence": "results/correspondence_comparison.tsv categories; site shows unavailable not zero",
+   "note": ""
+  },
+  {
+   "check": "Native x86-64 execution",
+   "status": "not available",
+   "evidence": "reports/environment.md",
+   "note": "only emulation used"
+  }
+ ]
+}

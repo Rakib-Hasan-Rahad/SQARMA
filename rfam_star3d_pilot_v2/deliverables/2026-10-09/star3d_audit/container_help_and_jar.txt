@@ -1,0 +1,26 @@
+## java -jar STAR3D.jar -h (exit code follows)
+usage: java -jar STAR3D.jar <options> PDB1 chain1 PDB2 chain2
+ -e <arg>   Gap extension penalty
+ -g <arg>   Gap open penalty
+ -h         help information
+ -i <arg>   Mismatch score
+ -m <arg>   Match score
+ -o <arg>   Output alignment file
+ -p         Output alignment PDB or not
+ -r <arg>   RMSD cutoff
+ -s <arg>   Minimum stack size
+ -t <arg>   Number of threads
+exit=0
+## java -cp STAR3D.jar Preprocess (no args)
+usage: java -cp STAR3D.jar Preprocess PDB chain
+exit=0
+## jar listing (classes) + manifest
+bash: line 1: unzip: command not found
+## bundled binaries
+285b89a65916133ae49c56db440dfbe38227fc648805cc759d8e37be418b0139  tools/MC-Annotate
+0ca3afc1ec2bc9935ec273bf86cf03346efda4a50da33c90682db353e2c0f316  tools/RemovePseudoknots
+ee7840eb553b850bdb32ed5be6194936f02f2cb2c9b915e4996312ec4a812588  lib/EJML-core-0.26.jar
+e7cd8951956d349b568b7ccfd4f5b2529a8c113e67c32b028f52ffda371259d9  lib/commons-cli-1.2.jar
+ldd (Ubuntu GLIBC 2.35-0ubuntu3.14) 2.35
+0000000 177   E   L   F 001 001 001  \0  \0  \0  \0  \0  \0  \0  \0  \0
+0000020 002  \0 003  \0

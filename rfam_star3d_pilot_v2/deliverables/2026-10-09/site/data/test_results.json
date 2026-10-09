@@ -1,0 +1,27 @@
+{
+ "available": true,
+ "source": "deliverables/2026-10-09/tables/test_results.tsv",
+ "columns": [
+  "suite",
+  "passed",
+  "failed",
+  "command",
+  "log_path"
+ ],
+ "rows": [
+  {
+   "suite": "51 tests (tests/)",
+   "passed": "51",
+   "failed": "0",
+   "command": ".venv/bin/python -m pytest -q tests",
+   "log_path": "logs/pytest_final.txt"
+  },
+  {
+   "suite": "baseline at start (ac6ff55)",
+   "passed": "33",
+   "failed": "0",
+   "command": ".venv/bin/python -m pytest -q tests",
+   "log_path": "start_state/baseline_tests_env.txt"
+  }
+ ]
+}

@@ -1,0 +1,16 @@
+label	path	description
+Professor report (2026-10-09)	deliverables/2026-10-09/professor_report.md	Updated professor-facing report
+Weekly progress update	deliverables/2026-10-09/weekly_progress_update.md	One-page update
+Two-minute meeting script	deliverables/2026-10-09/meeting_script.md	Completed work only
+Repair impact report	deliverables/2026-10-09/repair_impact_report.md	Defects, evidence, repairs, tests, effects
+STAR3D execution audit	deliverables/2026-10-09/STAR3D_execution_audit.md	Paper vs source vs our execution
+7REX candidate evidence update	deliverables/2026-10-09/candidate_evidence_update.md	Side-by-side evidence and counterevidence
+Readiness decision	deliverables/2026-10-09/readiness.json	Expansion readiness checks
+Survey B explanation	results/seed_collection_comparison/README.md	Ordinary vs curated seed, release 15.1
+Screening notes	review/v3_screening/screening_notes.md	21 newly reviewed families
+Pair summary (all runs)	results/pair_summary.tsv	Per-run correspondence counts
+Interaction summary	results/interaction_summary.tsv	Per-pair interaction preservation
+Region review	results/region_review.tsv	Candidate regions and interpretations
+Main report (cumulative)	reports/report.md	Full study report with dated sections
+Data dictionary	reports/data_dictionary.md	Column definitions
+Manifest	deliverables/2026-10-09/MANIFEST.tsv	Outputs, inputs, software and checksums

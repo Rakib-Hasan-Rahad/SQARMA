@@ -1,0 +1,17 @@
+{
+ "generated_utc": "2026-10-09",
+ "reviewer": "AI agent (Claude); no human review",
+ "checks": [
+  {"check": "valid_stockholm_exports", "status": "pass", "evidence": "tests/test_stockholm_export.py; results/standard_seed_rows.sto"},
+  {"check": "mismatch_stops_enforced", "status": "pass", "evidence": "tests/test_fresh_repro_gate.py; audit/fresh_repro_v3_other4/fresh_repro_summary.json"},
+  {"check": "actual_software_provenance", "status": "pass", "evidence": "tables/fr3d_verify_regenerate.tsv; STAR3D_execution_audit.md section 1"},
+  {"check": "parser_and_intermediate_behaviour", "status": "pass_with_documented_limitations", "evidence": "STAR3D_execution_audit.md; logs/preprocessing_validation_retained.txt", "limitations": ["coordinate gaps treated as sequence neighbours", "non-canonical WWc pairs enter STAR3D structures", "7MLW ct overwrite drops C16-G47 (exploratory pair only)"]},
+  {"check": "primary_cohort_mapping_defects_resolved", "status": "pass", "evidence": "logs/compare_v3.log (41/41 completed runs validated)"},
+  {"check": "seven_pilot_pairs_reproduced", "status": "pass_with_platform_failures", "evidence": "audit/fresh_repro; tables/fresh_repro_other4.tsv", "note": "all completed runs identical; 3 JVM crashes in 84 emulated runs"},
+  {"check": "frozen_candidate_rules", "status": "pass", "evidence": "review/v3_screening/frozen_selection_v3.json"},
+  {"check": "missing_data_vs_disagreement_reported", "status": "pass", "evidence": "results/correspondence_comparison.tsv; reports/data_dictionary.md"},
+  {"check": "native_x86_64_host", "status": "not_available", "evidence": "reports/environment.md"}
+ ],
+ "decision": "Technical checks pass for a small emulated batch, but Batch 1 was NOT executed: the frozen prospective selection is empty (no screened family met primary eligibility). No new STAR3D comparisons were run.",
+ "executed_after_checks": ["fresh reproduction of the 4 non-preQ1 pilot pairs", "Survey B (ordinary vs curated seed, 15.1)"]
+}

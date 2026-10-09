@@ -1,0 +1,15 @@
+attempt_dir	stem_chain	ct_len	pdbjava_len	seq_equal	npk_ct_sha256(host,now)	manifest_npk_sha_match	mca_WWc_same_chain	ct_pairs	ct_reciprocal	npk_pairs	npk_reciprocal	npk_subset_of_ct	removed_by_RemovePseudoknots(author ids)	noncanonical_WWc_in_ct(identity@author)
+runs/RF00522__3FU2_A__6VUI_A/attempt3/STAR3D_source	3fu2a_A	32	32	True	f12d9a6cd16d23fc	True	9	9	True	5	True	True	8-34,9-33,10-32,11-31	C-A@8-34(Wh/Ww)
+runs/RF00522__3FU2_A__6VUI_A/attempt3/STAR3D_source	6vuia_A	33	33	True	02b0c2ec8f15e51c	True	7	7	True	5	True	True	9-33,11-30	-
+runs/RF00162__2GIS_A__4KQY_A/attempt1/STAR3D_source	2gisa_A	94	94	True	48c45a86ee36257a	True	31	31	True	27	True	True	25-68,26-67,27-66,28-65	U-U@26-67(Ww/Ws)
+runs/RF00162__2GIS_A__4KQY_A/attempt1/STAR3D_source	4kqya_A	119	119	True	1b3d5820c6a6e42b	True	37	37	True	34	True	True	26-88,27-87,28-86	G-G@53-70(Ww/Wh)
+runs/RF00174__4GXY_A__6VMY_A/attempt1/STAR3D_source	4gxya_A	163	163	True	b5f8a6e9b34b2a57	True	48	48	True	46	True	True	62-152,63-151	A-G@73-156(Ww/Ww)
+runs/RF00174__4GXY_A__6VMY_A/attempt1/STAR3D_source	6vmya_A	130	130	True	562a727f9b64fc53	True	42	42	True	39	True	True	221-305,265-301,266-300	G-A@246-308(Ww/Ww),A-A@276-306(Ww/Ww)
+runs/RF00522__3FU2_A__7REX_A/attempt1/STAR3D_source	3fu2a_A	32	32	True	f12d9a6cd16d23fc	True	9	9	True	5	True	True	8-34,9-33,10-32,11-31	C-A@8-34(Wh/Ww)
+runs/RF00522__3FU2_A__7REX_A/attempt1/STAR3D_source	7rexa_A	34	34	True	1d1f92eddbe1fa37	True	5	5	True	5	True	True	-	-
+runs/RF00522__6VUI_A__7REX_A/attempt1/STAR3D_source	6vuia_A	33	33	True	02b0c2ec8f15e51c	True	7	7	True	5	True	True	9-33,11-30	-
+runs/RF00522__6VUI_A__7REX_A/attempt1/STAR3D_source	7rexa_A	34	34	True	1d1f92eddbe1fa37	True	5	5	True	5	True	True	-	-
+runs/RF00059__2GDI_X__3D2G_A/attempt1/STAR3D_source	2gdix_X	80	80	True	6ea329c4c84a2e4e	True	23	23	True	23	True	True	-	G-A@19-47(Ww/Ww)
+runs/RF00059__2GDI_X__3D2G_A/attempt1/STAR3D_source	3d2ga_A	77	77	True	1127bb70e6ef169c	True	20	20	True	20	True	True	-	-
+runs/RF00442__5U3G_B__7MLW_F/attempt1/STAR3D_source	5u3gb_B	85	85	True	4191154f11fd5dbe	True	25	25	True	24	True	True	60-80	U-U@13-28(Wh/Ww)
+runs/RF00442__5U3G_B__7MLW_F/attempt1/STAR3D_source	7mlwf_F	125	125	True	9bbeed5ced31eaeb	True	37	36	False	34	True	True	16-44,106-127	C-A@5-58(Wh/Ww),G-A@75-90(Ww/Ww)

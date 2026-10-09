@@ -1,0 +1,17 @@
+item	classification	evidence
+Pipeline repairs A-D and 51 passing tests	verified_this_session	deliverables/2026-10-09/repair_impact_report.md; logs/pytest_final.txt
+Reference, correspondence, interaction and region tables unchanged by repairs	verified_this_session	before_repairs/ vs results/ (byte comparisons in repair_impact_report.md)
+FR3D raw outputs for 11 RNAs regenerated with verified installed commit, byte-identical	verified_this_session	tables/fr3d_verify_regenerate.tsv
+Fresh STAR3D rerun of 4 non-preQ1 pairs: 21/24 identical, 2 JVM crashes, 1 previous crash now identical to siblings	verified_this_session	tables/fresh_repro_other4.tsv
+Fresh STAR3D rerun of 3 preQ1 pairs (18/18 identical)	retained_not_rerun	audit/fresh_repro/fresh_repro_summary.json (2026-10-09 earlier session)
+7REX interaction counts (19/29/31 of 46; 20/31/33 of 44) recomputed; reciprocal direction added	verified_this_session	tables/candidate_7REX_counts.tsv
+Exploratory adjusted 7REX row	exploratory	review/candidate_RF00522/adjustment_validation.json
+7REX P1 register issue specific to the 7REX row among 43 RF00522 seed rows (sequence-level)	verified_this_session	tables/RF00522_P1_register_all_rows.tsv
+Anchor-fit C1' distances (STAR3D 0.2-3.2 A vs seed 4-9 A on P1 3' strand)	retained_not_rerun	results/anchor_fit/
+Second preQ1 ligand in 7REX contacts L1 and residue 16	verified_this_session	logs/ligand_site_mapping.txt
+Exact-source genome matches for 6VUI, 3FU2, 7REX	retained_not_rerun	review/exact_source_check.tsv
+Survey B: curated = ordinary for all 74 families in 15.1	verified_this_session	results/seed_collection_comparison/
+No new primary pair among 21 screened families	verified_this_session	review/v3_screening/frozen_selection_v3.json
+L1 region interpretation (seed better supported) and its ligand explanation	unresolved	candidate_evidence_update.md section 3 and 5
+SAM-I pair exploratory (engineered, technical); justification partly outcome-informed	retained_not_rerun	review/decisions.yaml
+7MLW STAR3D secondary structure missing C16-G47 (STAR3D source overwrite)	verified_this_session	STAR3D_execution_audit.md; logs/preprocessing_validation_retained.txt

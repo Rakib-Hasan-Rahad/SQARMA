@@ -1,0 +1,249 @@
+{
+ "generated_utc": "2026-10-09T05:47:09Z",
+ "git_commit": "c552777d5cbf0a8c39a8e56cd64344bbd35728f8",
+ "git_worktree": "dirty",
+ "generator": "scripts/export_site_data.py",
+ "provenance": {
+  "reference_source": "Rfam.seed.gz",
+  "rfam_release": "15.1",
+  "seed_url": "https://ftp.ebi.ac.uk/pub/databases/Rfam/15.1/Rfam.seed.gz",
+  "seed_sha256": "41f014f4ab5628620935f089b1bb77987ebc162fda7c72bff368a32c9cccabac",
+  "star3d_url": "http://genome.ucf.edu/STAR3D/STAR3D_v1.2.tar.gz",
+  "star3d_sha256": "c9da44059d9cfc40828e798ebd4f6194c55415e17aaae7d90ac0f849ec2ed946",
+  "cohort_version": "1.1",
+  "prompt_version": "2.0",
+  "fr3d_commit": "288f98ccfd72dc6d88036c124605c05ce623b1b7",
+  "star3d_version": "1.2"
+ },
+ "sources": [
+  {
+   "path": "results/family_inventory.tsv",
+   "sha256": "f67ea06e486f4846ae33ded97222ba58a04a635cfb51ef3993193a94785061da",
+   "rows": 167,
+   "role": "required"
+  },
+  {
+   "path": "review/v3_screening/candidate_screening.tsv",
+   "sha256": "4ceb22ed683510e0cb8e44950cf9e3da9654a907d0fb0c2bbfc3adb659056ce2",
+   "rows": 26,
+   "role": "v3 screening"
+  },
+  {
+   "path": "results/selected_pairs.tsv",
+   "sha256": "0ae4ea124e1dd08bcc43c614eb907235ad785fcc2f0a1daa0b558b26f2ece28d",
+   "rows": 7,
+   "role": "required"
+  },
+  {
+   "path": "results/selected_representatives.tsv",
+   "sha256": "b68e4e6ae7e7c516ab72daa083138ab37132f80783743e56de34b7cab8d90399",
+   "rows": 11,
+   "role": "required"
+  },
+  {
+   "path": "review/construct_review.tsv",
+   "sha256": "a8832d0548754210e91357b41965f29b9dec38071b41df482050784bd1bee4b6",
+   "rows": 13,
+   "role": "review"
+  },
+  {
+   "path": "review/exact_source_check.tsv",
+   "sha256": "cdccdf088013505257b5200e52f11fbd26c39cabae8ea5e60565e4719cf4a923",
+   "rows": 9,
+   "role": "review"
+  },
+  {
+   "path": "results/run_manifest.tsv",
+   "sha256": "e8405d80ec4be8fe74178f68731b20c6e514a87a9b85f0d3a9632cbe2d691b59",
+   "rows": 65,
+   "role": "required"
+  },
+  {
+   "path": "results/pair_summary.tsv",
+   "sha256": "dda8623d0fd281c2a60417a272925622c4d1d06b368134e1e173bbc0ec4edb02",
+   "rows": 42,
+   "role": "required"
+  },
+  {
+   "path": "results/replicate_consistency.tsv",
+   "sha256": "f7fcf4cd4225b651a246c208ccdc15eafd888ad21c3908234b31ade1894047e1",
+   "rows": 20,
+   "role": "replicates"
+  },
+  {
+   "path": "results/interaction_summary.tsv",
+   "sha256": "bc261ebc9df8a7871f2af6047c103f3a9fb3e5006fca2df30086534a4fc4223c",
+   "rows": 210,
+   "role": "required"
+  },
+  {
+   "path": "results/region_review.tsv",
+   "sha256": "86c54396373d693bd49d77cbb631d5093cb8962d7a929d0001998523939a9d63",
+   "rows": 19,
+   "role": "required"
+  },
+  {
+   "path": "review/candidate_RF00522/adjustment_interaction_summary.tsv",
+   "sha256": "3d8beda20f425e332ad7bf69be7c772d3e14fd0a15ef6c46d451a117b5237dd2",
+   "rows": 10,
+   "role": "7REX adjustment summary"
+  },
+  {
+   "path": "review/candidate_RF00522/adjustment_validation.json",
+   "sha256": "87c8cfb4488514b6ee71fcd3f7b973a0befdd84afc32153aded73bd595175eb6",
+   "rows": 12,
+   "role": "7REX adjustment validation (keys)"
+  },
+  {
+   "path": "results/anchor_fit/RF00522__3FU2_A__7REX_A_9-22_shared.tsv",
+   "sha256": "e1d7cf4129c2bb11eb9f7e457f4d7abf4908e84fb7229344cac576a5a9776353",
+   "rows": 12,
+   "role": "anchor fit"
+  },
+  {
+   "path": "results/anchor_fit/RF00522__3FU2_A__7REX_A_9-22_shared_flank_excl.tsv",
+   "sha256": "b52e6f10d7a6331538d728ebd87b67e87f8fcb54e304b9cbbd595e2b2dc2c351",
+   "rows": 12,
+   "role": "anchor fit"
+  },
+  {
+   "path": "results/anchor_fit/RF00522__6VUI_A__7REX_A_7-23_shared.tsv",
+   "sha256": "fa6ab585a65648ec0f51151549219d43b29be09705a36cd045952d782a23b090",
+   "rows": 17,
+   "role": "anchor fit"
+  },
+  {
+   "path": "results/anchor_fit/RF00522__6VUI_A__7REX_A_7-23_shared_canonical.tsv",
+   "sha256": "17b7b1c4f88fe09d1cfff1489665488ab97f8be516173a27572d0750984e410a",
+   "rows": 0,
+   "role": "anchor fit"
+  },
+  {
+   "path": "results/anchor_fit/RF00522__6VUI_A__7REX_A_7-23_shared_flank_excl.tsv",
+   "sha256": "470044b035d663e9c7396d3bed62a1efcc5a725d363f30276adc15671f6e6047",
+   "rows": 17,
+   "role": "anchor fit"
+  },
+  {
+   "path": "deliverables/2026-10-09/tables/candidate_7REX_correspondence.tsv",
+   "sha256": "aff34b802abbb257fa68730ab3a8ff86fb0328e3a7b489f6a9be6eac72fe2787",
+   "rows": 67,
+   "role": "7REX correspondence"
+  },
+  {
+   "path": "deliverables/2026-10-09/tables/candidate_7REX_counts.tsv",
+   "sha256": "0b064d43de27794c81e9ee7a317b385f4c4da35109aa4d89edc69e96c41a8902",
+   "rows": 20,
+   "role": "7REX counts"
+  },
+  {
+   "path": "deliverables/2026-10-09/tables/candidate_screening.tsv",
+   "sha256": "4ceb22ed683510e0cb8e44950cf9e3da9654a907d0fb0c2bbfc3adb659056ce2",
+   "rows": 26,
+   "role": "candidate_screening"
+  },
+  {
+   "path": "deliverables/2026-10-09/tables/requirements_status.tsv",
+   "sha256": "3f62d6d6b191a3ef566311eaaaa95c6f7379078aaaa4875f21af0478c47acf02",
+   "rows": 7,
+   "role": "requirements_status"
+  },
+  {
+   "path": "deliverables/2026-10-09/tables/test_results.tsv",
+   "sha256": "463395df30ddc821948dbed0e77f6e3042cf0c8a56efd7f65f78bf46c888b00d",
+   "rows": 2,
+   "role": "test_results"
+  },
+  {
+   "path": "deliverables/2026-10-09/tables/validation_checks.tsv",
+   "sha256": "7100c7950cd38c74d9b511f0ccdf1158f920cac7f72cf0d4a818a3374ba4e1f1",
+   "rows": 10,
+   "role": "validation_checks"
+  },
+  {
+   "path": "deliverables/2026-10-09/tables/results_status.tsv",
+   "sha256": "3f86d3256a9233cf8456d05c65063ae1ecd6ff64d8b2f6bc9302390d40e51710",
+   "rows": 16,
+   "role": "results_status"
+  },
+  {
+   "path": "deliverables/2026-10-09/tables/survey_b_summary.tsv",
+   "sha256": "95c9ea04c15fb03fe54aac66d849d5b95e43279a0322ec7374357cc11c62f174",
+   "rows": 10,
+   "role": "survey_b"
+  },
+  {
+   "path": "deliverables/2026-10-09/tables/RF00522_P1_register_all_rows.tsv",
+   "sha256": "b349ec9f667a76b3b560b96a08295c7a6f64a526ebc9fa4a6f31eeb090ead902",
+   "rows": 43,
+   "role": "rf00522_rows"
+  },
+  {
+   "path": "deliverables/2026-10-09/tables/fresh_repro_other4.tsv",
+   "sha256": "cc7c0283f45cd2c4c5dbe6732af9a97b51bad06e2ee661815337bdb91e82586a",
+   "rows": 24,
+   "role": "fresh_repro_other4"
+  },
+  {
+   "path": "deliverables/2026-10-09/tables/candidate_7REX_method_differences.tsv",
+   "sha256": "a2c2453b25be753cfbdad94ce73e3cb0bfeda9d91db497938e2fb2393b4e560f",
+   "rows": 34,
+   "role": "method_differences"
+  },
+  {
+   "path": "figures/fig_RF00522_6VUI_7REX_P1.png",
+   "sha256": "8bb26e514467858f67b5df7c943fc13043502cd6abd4ec4d65a448390989a3b2",
+   "rows": null,
+   "role": "figure"
+  },
+  {
+   "path": "figures/fig_RF00522_3FU2_7REX_anchorfit_shared.png",
+   "sha256": "ff2204d58597d870441544626dd33e8f3fa2f3189cee1c38c8815181b3b534bd",
+   "rows": null,
+   "role": "figure"
+  },
+  {
+   "path": "figures/fig_RF00522_3FU2_7REX_anchorfit_shared_flank_excl.png",
+   "sha256": "6b2e350dccac01ed7c17fcf960cc08fcb06156312bd673610aa3628ec8f25571",
+   "rows": null,
+   "role": "figure"
+  },
+  {
+   "path": "figures/fig_RF00522_6VUI_7REX_anchorfit_shared.png",
+   "sha256": "6232eae8fdf37f4aa8cb3c0848cadc616a0fe41a967311fce418f265201c2a6e",
+   "rows": null,
+   "role": "figure"
+  },
+  {
+   "path": "figures/fig_RF00522_6VUI_7REX_anchorfit_shared_flank_excl.png",
+   "sha256": "bae2a73b2b1049e9cc0abe8f64893df64ac4d615ff7f2055ae9ccfc696ff5710",
+   "rows": null,
+   "role": "figure"
+  },
+  {
+   "path": "deliverables/2026-10-09/figures/fig_7REX_correspondence_6VUI.png",
+   "sha256": "8d80a529ee5479d12fa8a73b670d8d0342d7c653662c2c52557a88e75d573d6a",
+   "rows": null,
+   "role": "figure"
+  },
+  {
+   "path": "deliverables/2026-10-09/tables/downloads.tsv",
+   "sha256": "e65c706771a2e6d3811ea0ccb9778027c7b4d441870cd2cdb527d136df62879c",
+   "rows": 15,
+   "role": "downloads list"
+  },
+  {
+   "path": "config.yaml",
+   "sha256": "93972244591aad2bb7cdd24e7d051814acd870805626515d58862748697332bc",
+   "rows": 82,
+   "role": "provenance (lines)"
+  }
+ ],
+ "unavailable_optional_inputs": [
+  {
+   "path": "deliverables/2026-10-09/tables/new_pair_summary.tsv",
+   "role": "prospective pairs",
+   "status": "unavailable"
+  }
+ ]
+}
