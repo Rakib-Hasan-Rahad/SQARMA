@@ -1,4 +1,4 @@
-pair_id	interaction_class	eligible_same_set	rfam_preserved	adjusted_preserved	star3d_forward_preserved
+pair_id	interaction_class	eligible_same_set	rfam_preserved	adjusted_preserved	star3d_preserved
 RF00522__6VUI_A__7REX_A	all	46	19	31	29
 RF00522__6VUI_A__7REX_A	canonical	7	0	5	5
 RF00522__6VUI_A__7REX_A	wobble	0	0	0	0

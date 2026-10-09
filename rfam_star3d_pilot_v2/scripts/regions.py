@@ -1,13 +1,12 @@
 """Phase 5: candidate disagreement regions (ALL kept) and predeclared ranking for inspection.
 
-Rule (config regions.merge_gap): a source residue is a disagreement residue if, in the primary
-direction replicate 1, its category is different_partner, or rfam_only/star3d_only where the absent
-side is NOT explained by missing coordinates. Disagreement residues whose source-row indices are
-within merge_gap of each other form one region. Regions are also annotated by whether the reverse
-run reproduces the disagreement.
+Rule (config regions.merge_gap): a source residue is a disagreement residue if, in the ONE selected original-STAR3D
+output of the pair (v5 single-run policy), its category is different_partner, or rfam_only/star3d_only where the
+absent side is NOT explained by missing coordinates. Disagreement residues whose source-row indices are
+within merge_gap of each other form one region.
 Ranking (v2.1): (1) eligible_for_structural_adjudication (no engineering mask or missing coordinate at ANY source
 position in the span or at any Rfam/STAR3D target partner); (2) regions with >=1 correspondence disagreement before
-coverage-only regions; (3) more interaction-status differences on the eligible Rfam-vs-STAR3D-forward set;
+coverage-only regions; (3) more interaction-status differences on the eligible Rfam-vs-STAR3D set;
 (4) not within 3 residues of a row terminus; (5) more correspondence disagreements; (6) pair_id, start.
 Correspondence disagreements (both map, different partner) and coverage differences (only one maps) are counted
 separately; a missing mapping is not an incorrect correspondence. Eligibility means eligible for investigation only.
@@ -30,16 +29,6 @@ CFG = yaml.safe_load(open(P("config.yaml")))
 
 def read_tsv(path):
     return list(csv.DictReader(open(path, encoding="utf-8"), delimiter="\t"))
-
-
-def primary_replicates(comp):
-    """(pair_id, direction) -> lowest-numbered replicate whose run completed (failed replicates stay in tables)."""
-    ok = {}
-    for r in comp:
-        if r["category"] != "technical_failure_or_no_alignment":
-            key = (r["pair_id"], r["direction"])
-            ok[key] = min(ok.get(key, 99), int(r["replicate"]))
-    return ok
 
 
 def region_eligibility(span, src_cw, tgt_cw, rfam_map, s3d_map):
@@ -96,7 +85,6 @@ def carry_interpretations(out, previous):
 def main():
     reps = {r["rep_id"]: r for r in read_tsv(P("results/selected_representatives.tsv"))}
     comp = read_tsv(P("results/correspondence_comparison.tsv"))
-    prim = primary_replicates(comp)
     inter = read_tsv(P("results/interaction_comparison.tsv"))
     cw = defaultdict(dict)
     for r in read_tsv(P("results/residue_crosswalk.tsv")):
@@ -105,14 +93,8 @@ def main():
     previous = read_tsv(P("results/region_review.tsv")) if os.path.exists(P("results/region_review.tsv")) else []
     gap = CFG["regions"]["merge_gap"]
     fwd = defaultdict(list)
-    rev = defaultdict(dict)
-    for r in comp:
-        if prim.get((r["pair_id"], r["direction"])) != int(r["replicate"]):
-            continue
-        if r["direction"] == "forward":
-            fwd[r["pair_id"]].append(r)
-        else:
-            rev[r["pair_id"]][int(r["source_row_index"])] = r
+    for r in comp:                       # one selected STAR3D run per pair
+        fwd[r["pair_id"]].append(r)
 
     def kind(r):
         """correspondence disagreement (both map, different partner) vs coverage difference (one maps)."""
@@ -150,9 +132,8 @@ def main():
             el = region_eligibility(span, src_cw, tgt_cw, rmap, smap)
             ints = [x for x in inter if x["pair_id"] == pid and x["source_side"] == "query"
                     and (s <= int(x["i"]) <= e or s <= int(x["j"]) <= e)
-                    and x["eligible_rfam_vs_star3d_forward"] == "yes"
-                    and x["rfam_status"] != x["star3d_forward_status"]]
-            rev_same = sum(1 for r in g if rev[pid].get(int(r["source_row_index"]), {}).get("star3d_partner") == r["star3d_partner"])
+                    and x["eligible_rfam_vs_star3d"] == "yes"
+                    and x["rfam_status"] != x["star3d_status"]]
             out.append(dict(
                 pair_id=pid, region_id=f"{pid}__r{s}-{e}", source_rep=rep["rep_id"], row_index_start=s, row_index_end=e,
                 n_correspondence_disagreements=sum(1 for r in g if kind(r) == "correspondence"),
@@ -165,7 +146,7 @@ def main():
                 motif_flags=";".join(sorted({f for x in loc for f in x.get("motif_flags", "").split(";") if f})),
                 **el, near_terminus="yes" if (s <= 3 or e >= n - 2) else "no",
                 interaction_status_differences_eligible=len(ints),
-                reverse_run_same_star3d_partner=f"{rev_same}/{len(g)}", tier=pair["tier"]))
+                tier=pair["tier"]))
     out.sort(key=lambda r: (r["eligible_for_structural_adjudication"] != "yes", r["n_correspondence_disagreements"] == 0,
                             -r["interaction_status_differences_eligible"], r["near_terminus"] == "yes",
                             -r["n_correspondence_disagreements"], r["pair_id"], r["row_index_start"]))
@@ -177,7 +158,7 @@ def main():
               "partner_offsets", "seed_elements", "ss_cons", "motif_flags", "source_engineering_overlap",
               "rfam_target_engineering_overlap", "star3d_target_engineering_overlap", "source_unobserved_in_span",
               "rfam_target_unobserved", "star3d_target_unobserved", "eligible_for_structural_adjudication",
-              "near_terminus", "interaction_status_differences_eligible", "reverse_run_same_star3d_partner",
+              "near_terminus", "interaction_status_differences_eligible",
               "inspected", "classification", "interpretation", "interpretation_source"]
     with open(P("results/region_review.tsv"), "w", newline="") as f:
         w = csv.DictWriter(f, fieldnames=fields, delimiter="\t", lineterminator="\n", extrasaction="ignore")

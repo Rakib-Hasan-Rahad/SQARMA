@@ -59,7 +59,7 @@ def test_mount_mismatch_prevents_alignment(tmp_path, monkeypatch):
         return 0, 0.1, "t", ""
 
     monkeypatch.setattr(star3d, "docker", fake_docker)
-    star3d.run_pair(pair, reps, inputs, 3)
+    star3d.run_pair(pair, reps, inputs)
     assert not any("STAR3D.jar -o" in c for c in issued), "alignment must not run after a mount mismatch"
     rows = list(csv.DictReader(open(root / "results/run_manifest.tsv"), delimiter="\t"))
     assert [r["status"] for r in rows] == ["failed_mount_mismatch"]
@@ -77,7 +77,7 @@ def test_stale_intermediates_fail_mount_check(tmp_path, monkeypatch):
         return 0, 0.1, "t", ""
 
     monkeypatch.setattr(star3d, "docker", fake_docker)
-    star3d.run_pair(pair, reps, inputs, 3)
+    star3d.run_pair(pair, reps, inputs)
     assert not any("Preprocess" in c or "STAR3D.jar -o" in c for c in issued)
     rows = list(csv.DictReader(open(root / "results/run_manifest.tsv"), delimiter="\t"))
     assert [r["status"] for r in rows] == ["failed_mount_check"]
@@ -113,7 +113,7 @@ def test_empty_mca_stops_before_alignment(tmp_path, monkeypatch):
     root, reps, inputs, pair, pdbs = _setup(tmp_path, monkeypatch)
     fake, issued = _prep_docker(pdbs, "", GOOD_CT)
     monkeypatch.setattr(star3d, "docker", fake)
-    star3d.run_pair(pair, reps, inputs, 1)
+    star3d.run_pair(pair, reps, inputs)
     assert not any("STAR3D.jar -o" in c for c in issued)
     rows = list(csv.DictReader(open(root / "results/run_manifest.tsv"), delimiter="\t"))
     assert rows[0]["status"] == "failed_intermediate_invalid" and "MC-Annotate" in rows[0]["note"]
@@ -124,7 +124,7 @@ def test_non_reciprocal_npk_ct_stops_before_alignment(tmp_path, monkeypatch):
     bad = "4 x\n1 G 0 2 4 1\n2 G 1 3 0 2\n3 A 2 4 0 3\n4 C 3 5 2 4\n"
     fake, issued = _prep_docker(pdbs, "Base-pairs ---\n", bad)
     monkeypatch.setattr(star3d, "docker", fake)
-    star3d.run_pair(pair, reps, inputs, 1)
+    star3d.run_pair(pair, reps, inputs)
     assert not any("STAR3D.jar -o" in c for c in issued)
 
 
@@ -133,7 +133,7 @@ def test_valid_preprocessing_proceeds_and_raw_ct_defect_is_a_warning(tmp_path, m
     raw_bad = "4 x\n1 G 0 2 4 1\n2 G 1 3 4 2\n3 A 2 4 0 3\n4 C 3 5 2 4\n"
     fake, issued = _prep_docker(pdbs, "Base-pairs ---\n", GOOD_CT, raw_bad)
     monkeypatch.setattr(star3d, "docker", fake)
-    star3d.run_pair(pair, reps, inputs, 1)
+    star3d.run_pair(pair, reps, inputs)
     rows = list(csv.DictReader(open(root / "results/run_manifest.tsv"), delimiter="\t"))
     pre = [r for r in rows if r["direction"] == "preprocess"]
     assert [r["status"] for r in pre] == ["completed", "completed"]

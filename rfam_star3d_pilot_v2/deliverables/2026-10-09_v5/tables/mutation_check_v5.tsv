@@ -1,0 +1,19 @@
+defect_reintroduced	file	test_file	result	pytest_summary
+masked target ignored in eligibility	interactions.py	test_interaction_masking.py	DETECTED	2 failed, 8 passed in 0.04s
+masked source ignored	interactions.py	test_interaction_masking.py	DETECTED	1 failed, 9 passed in 0.02s
+one shared denominator across comparisons (unmapped method ignored)	interactions.py	test_interaction_masking.py	DETECTED	1 failed, 9 passed in 0.03s
+symmetry mates counted as intrachain	interactions.py	test_interaction_masking.py	DETECTED	1 failed, 9 passed in 0.02s
+non-injective map silently collapsed	interactions.py	test_interaction_masking.py	DETECTED	1 failed, 9 passed in 0.02s
+region targets not checked	regions.py	test_regions.py	DETECTED	2 failed, 4 passed in 0.02s
+region intervening positions skipped	regions.py	test_regions.py	DETECTED	1 failed, 5 passed in 0.02s
+old interpretations auto-accepted after eligibility change	regions.py	test_regions.py	DETECTED	2 failed, 4 passed in 0.02s
+stored STAR3D output not re-validated	compare.py	test_compare_validation.py	DETECTED	4 failed, 6 passed in 0.09s
+non-injective STAR3D output accepted	compare.py	test_compare_validation.py	DETECTED	1 failed, 9 passed in 0.05s
+subset rerun allowed	compare.py	test_subset_refusal.py	DETECTED	1 failed, 2 passed in 0.05s
+preprocessing contents not validated	star3d.py	test_star3d_gate.py	DETECTED	3 failed, 2 passed in 0.04s
+checksum mismatch does not block	fresh_repro.py	test_fresh_repro_gate.py	DETECTED	3 failed, 2 passed in 0.07s
+configured FR3D commit trusted instead of installed	interactions.py	test_fr3d_provenance.py	DETECTED	1 failed, 8 passed in 0.05s
+cached FR3D output reused without raw-hash check	interactions.py	test_fr3d_provenance.py	DETECTED	2 failed, 7 passed in 0.05s
+v5: alignment repeated (replicate loop re-introduced)	star3d.py	test_single_run_policy.py	DETECTED	3 failed, 5 passed in 0.04s
+v5: reverse-run substitution in primary selection	select_primary_outputs.py	test_single_run_policy.py	DETECTED	3 failed, 5 passed in 0.04s
+multi-family Stockholm record	reference.py	test_stockholm_export.py	DETECTED	1 failed, 2 passed in 0.31s

@@ -1,34 +1,34 @@
-source	source_row_index	source_nt	source_auth	seed_column	rfam_partner	star3d_fwd_partner	star3d_rev_partner	adjusted_partner	category	source_interactions	C1p_rfam_shared	C1p_star3d_shared	C1p_rfam_flankexcl	C1p_star3d_flankexcl
-6VUI_A	1	C	A:1	6	U1	U1	1	1	same_partner	cWW(1-20,canon):R=no_an/A=exact/S=exact s35(1-2,stack):R=exact/A=exact/S=exact	NA	NA	NA	NA
-6VUI_A	2	U	A:2	7	G2	G2	2	2	same_partner	cWW(2-19,canon):R=no_an/A=exact/S=exact s35(1-2,stack):R=exact/A=exact/S=exact s35(2-3,stack):R=exact/A=exact/S=exact s55(2-20,stack):R=diffe/A=exact/S=exact	NA	NA	NA	NA
-6VUI_A	3	G	A:3	8	U3	U3	3	3	same_partner	cWW(3-18,canon):R=no_an/A=exact/S=exact s35(2-3,stack):R=exact/A=exact/S=exact s35(3-4,stack):R=exact/A=exact/S=exact s55(3-19,stack):R=diffe/A=no_an/S=no_an	NA	NA	NA	NA
-6VUI_A	4	G	A:4	9	G4	G4	4	4	same_partner	cWW(4-17,canon):R=no_an/A=exact/S=exact s35(3-4,stack):R=exact/A=exact/S=exact s35(4-5,stack):R=exact/A=exact/S=exact s55(4-18,stack):R=diffe/A=exact/S=exact	NA	NA	NA	NA
-6VUI_A	5	G	A:5	10	G5	G5	5	5	same_partner	cWW(5-16,canon):R=no_an/A=exact/S=exact tSW(5-27,nonca):R=exact/A=exact/S=exact s35(4-5,stack):R=exact/A=exact/S=exact s55(5-17,stack):R=diffe/A=exact/S=exact	NA	NA	NA	NA
-6VUI_A	6	U	A:6	11	U6	U6	6	6	same_partner	cWH(6-28,nonca):R=exact/A=exact/S=exact s35(6-7,stack):R=no_an/A=no_an/S=exact s53(6-27,stack):R=exact/A=exact/S=exact	NA	NA	NA	NA
-6VUI_A	7	C	A:7	13	C8	U7	7	8	different_partner	tWH(7-11,nonca):R=diffe/A=diffe/S=no_an s35(6-7,stack):R=no_an/A=no_an/S=exact s35(7-8,stack):R=exact/A=exact/S=no_an	5.25	3.25	5.48	2.32
-6VUI_A	8	G	A:8	14	G9	C10	10	9	different_partner	tSW(8-31,nonca):R=no_an/A=no_an/S=no_an s35(7-8,stack):R=exact/A=exact/S=no_an ns33(8-10,stack):R=exact/A=exact/S=no_an s55(8-11,stack):R=diffe/A=diffe/S=no_an	3.39	9.96	4.0	10.72
-6VUI_A	9	C	A:9	15	C10	A11	11	10	different_partner	cWW(9-33,canon):R=no_an/A=no_an/S=no_an s35(9-10,stack):R=exact/A=exact/S=no_an	3.48	3.41	4.62	4.52
-6VUI_A	10	A	A:10	16	A11	A12	12	11	different_partner	tSH(10-32,nonca):R=diffe/A=diffe/S=diffe ns33(8-10,stack):R=exact/A=exact/S=no_an s35(9-10,stack):R=exact/A=exact/S=no_an s33(10-31,stack):R=no_an/A=no_an/S=diffe s55(10-33,stack):R=no_an/A=no_an/S=no_an	2.93	4.25	3.44	4.09
-6VUI_A	11	G	A:11	17	A12	C13	13	12	different_partner	tWH(7-11,nonca):R=diffe/A=diffe/S=no_an cWW(11-30,canon):R=no_an/A=no_an/S=no_an tSW(11-14,nonca):R=no_an/A=no_an/S=no_an s55(8-11,stack):R=diffe/A=diffe/S=no_an s55(11-31,stack):R=diffe/A=diffe/S=no_an	3.27	8.72	3.95	8.77
-6VUI_A	12	U	A:12	20	C13	C14	14	13	different_partner	NA	4.73	1.34	4.14	2.55
-6VUI_A	13	A	A:13	22	gap	A15	15	gap	star3d_only	NA	NA	1.82	NA	2.35
-6VUI_A	14	A	A:14	25	A15	U16	16	16	different_partner	tSW(11-14,nonca):R=no_an/A=no_an/S=no_an s35(14-15,stack):R=exact/A=exact/S=exact	6.43	1.62	5.86	1.6
-6VUI_A	15	C	A:15	26	U16	C17	17	17	different_partner	s35(14-15,stack):R=exact/A=exact/S=exact ns35(15-16,stack):R=diffe/A=exact/S=exact	6.09	0.61	6.09	0.83
-6VUI_A	16	C	A:16	27	C17	C18	18	18	different_partner	cWW(5-16,canon):R=no_an/A=exact/S=exact cSW(16-28,nonca):R=no_an/A=exact/S=exact ns35(15-16,stack):R=diffe/A=exact/S=exact s35(16-17,stack):R=diffe/A=exact/S=exact	6.62	0.61	6.74	0.55
-6VUI_A	17	C	A:17	28	C18	C19	19	19	different_partner	cWW(4-17,canon):R=no_an/A=exact/S=exact cSW(17-26,nonca):R=no_an/A=exact/S=exact s55(5-17,stack):R=diffe/A=exact/S=exact s35(16-17,stack):R=diffe/A=exact/S=exact s35(17-18,stack):R=exact/A=exact/S=exact	6.11	1.06	6.12	0.72
-6VUI_A	18	C	A:18	29	C19	A20	20	20	different_partner	cWW(3-18,canon):R=no_an/A=exact/S=exact s55(4-18,stack):R=diffe/A=exact/S=exact s35(17-18,stack):R=exact/A=exact/S=exact s35(18-19,stack):R=exact/A=exact/S=exact	6.4	1.53	6.17	1.03
-6VUI_A	19	A	A:19	30	A20	C21	21	21	different_partner	cWW(2-19,canon):R=no_an/A=exact/S=exact s55(3-19,stack):R=diffe/A=no_an/S=no_an s35(18-19,stack):R=exact/A=exact/S=exact s35(19-20,stack):R=exact/A=exact/S=exact	6.2	1.72	5.8	0.94
-6VUI_A	20	G	A:20	31	C21	A22	22	22	different_partner	cWW(1-20,canon):R=no_an/A=exact/S=exact cSH(20-21,nonca):R=diffe/A=unmap/S=no_an s55(2-20,stack):R=diffe/A=exact/S=exact s35(19-20,stack):R=exact/A=exact/S=exact	7.26	2.67	6.86	1.83
-6VUI_A	21	U	A:21	32	A22	U23	23	gap	different_partner	cSH(20-21,nonca):R=diffe/A=unmap/S=no_an s55(21-23,stack):R=no_an/A=unmap/S=unmap	8.58	3.19	7.11	2.33
-6VUI_A	22	U	A:22	53	U23	A24	24	23	different_partner	NA	5.64	6.16	6.35	6.29
-6VUI_A	23	A	A:23	54	A24	none	NA	24	rfam_only	s55(21-23,stack):R=no_an/A=unmap/S=unmap	4.4	NA	4.39	NA
-6VUI_A	24	A	A:24	55	A25	A25	25	25	same_partner	s35(24-25,stack):R=diffe/A=diffe/S=diffe	NA	NA	NA	NA
-6VUI_A	25	C	A:25	56	A26	A26	26	26	same_partner	s35(24-25,stack):R=diffe/A=diffe/S=diffe s35(25-26,stack):R=diffe/A=diffe/S=diffe	NA	NA	NA	NA
-6VUI_A	26	A	A:26	57	A27	A27	27	27	same_partner	cSW(17-26,nonca):R=no_an/A=exact/S=exact s35(25-26,stack):R=diffe/A=diffe/S=diffe s35(26-27,stack):R=exact/A=exact/S=exact	NA	NA	NA	NA
-6VUI_A	27	A	A:27	58	A28	A28	28	28	same_partner	tSW(5-27,nonca):R=exact/A=exact/S=exact s53(6-27,stack):R=exact/A=exact/S=exact s35(26-27,stack):R=exact/A=exact/S=exact s35(27-28,stack):R=exact/A=exact/S=exact	NA	NA	NA	NA
-6VUI_A	28	A	A:28	59	A29	A29	29	29	same_partner	cWH(6-28,nonca):R=exact/A=exact/S=exact cSW(16-28,nonca):R=no_an/A=exact/S=exact s35(27-28,stack):R=exact/A=exact/S=exact s35(28-29,stack):R=exact/A=exact/S=exact	NA	NA	NA	NA
-6VUI_A	29	A	A:29	60	A30	A30	30	30	same_partner	s35(28-29,stack):R=exact/A=exact/S=exact s35(29-30,stack):R=exact/A=exact/S=exact	NA	NA	NA	NA
-6VUI_A	30	C	A:30	61	C31	C31	31	31	same_partner	cWW(11-30,canon):R=no_an/A=no_an/S=no_an s35(29-30,stack):R=exact/A=exact/S=exact s35(30-31,stack):R=exact/A=exact/S=exact	NA	NA	NA	NA
-6VUI_A	31	A	A:31	63	U32	U32	32	32	same_partner	tSW(8-31,nonca):R=no_an/A=no_an/S=no_an s33(10-31,stack):R=no_an/A=no_an/S=diffe s55(11-31,stack):R=diffe/A=diffe/S=no_an s35(30-31,stack):R=exact/A=exact/S=exact	NA	NA	NA	NA
-6VUI_A	32	A	A:32	64	A33	A33	33	33	same_partner	tSH(10-32,nonca):R=diffe/A=diffe/S=diffe ns35(32-33,stack):R=no_an/A=no_an/S=no_an	NA	NA	NA	NA
-6VUI_A	33	G	A:33	65	G34	G34	34	34	same_partner	cWW(9-33,canon):R=no_an/A=no_an/S=no_an s55(10-33,stack):R=no_an/A=no_an/S=no_an ns35(32-33,stack):R=no_an/A=no_an/S=no_an	NA	NA	NA	NA
+source	source_row_index	source_nt	source_auth	seed_column	rfam_partner	star3d_partner	adjusted_partner	category	source_interactions	C1p_rfam_shared	C1p_star3d_shared	C1p_rfam_flankexcl	C1p_star3d_flankexcl
+6VUI_A	1	C	A:1	6	U1	U1	1	same_partner	cWW(1-20,canon):R=no_an/A=exact/S=exact s35(1-2,stack):R=exact/A=exact/S=exact	NA	NA	NA	NA
+6VUI_A	2	U	A:2	7	G2	G2	2	same_partner	cWW(2-19,canon):R=no_an/A=exact/S=exact s35(1-2,stack):R=exact/A=exact/S=exact s35(2-3,stack):R=exact/A=exact/S=exact s55(2-20,stack):R=diffe/A=exact/S=exact	NA	NA	NA	NA
+6VUI_A	3	G	A:3	8	U3	U3	3	same_partner	cWW(3-18,canon):R=no_an/A=exact/S=exact s35(2-3,stack):R=exact/A=exact/S=exact s35(3-4,stack):R=exact/A=exact/S=exact s55(3-19,stack):R=diffe/A=no_an/S=no_an	NA	NA	NA	NA
+6VUI_A	4	G	A:4	9	G4	G4	4	same_partner	cWW(4-17,canon):R=no_an/A=exact/S=exact s35(3-4,stack):R=exact/A=exact/S=exact s35(4-5,stack):R=exact/A=exact/S=exact s55(4-18,stack):R=diffe/A=exact/S=exact	NA	NA	NA	NA
+6VUI_A	5	G	A:5	10	G5	G5	5	same_partner	cWW(5-16,canon):R=no_an/A=exact/S=exact tSW(5-27,nonca):R=exact/A=exact/S=exact s35(4-5,stack):R=exact/A=exact/S=exact s55(5-17,stack):R=diffe/A=exact/S=exact	NA	NA	NA	NA
+6VUI_A	6	U	A:6	11	U6	U6	6	same_partner	cWH(6-28,nonca):R=exact/A=exact/S=exact s35(6-7,stack):R=no_an/A=no_an/S=exact s53(6-27,stack):R=exact/A=exact/S=exact	NA	NA	NA	NA
+6VUI_A	7	C	A:7	13	C8	U7	8	different_partner	tWH(7-11,nonca):R=diffe/A=diffe/S=no_an s35(6-7,stack):R=no_an/A=no_an/S=exact s35(7-8,stack):R=exact/A=exact/S=no_an	5.25	3.25	5.48	2.32
+6VUI_A	8	G	A:8	14	G9	C10	9	different_partner	tSW(8-31,nonca):R=no_an/A=no_an/S=no_an s35(7-8,stack):R=exact/A=exact/S=no_an ns33(8-10,stack):R=exact/A=exact/S=no_an s55(8-11,stack):R=diffe/A=diffe/S=no_an	3.39	9.96	4.0	10.72
+6VUI_A	9	C	A:9	15	C10	A11	10	different_partner	cWW(9-33,canon):R=no_an/A=no_an/S=no_an s35(9-10,stack):R=exact/A=exact/S=no_an	3.48	3.41	4.62	4.52
+6VUI_A	10	A	A:10	16	A11	A12	11	different_partner	tSH(10-32,nonca):R=diffe/A=diffe/S=diffe ns33(8-10,stack):R=exact/A=exact/S=no_an s35(9-10,stack):R=exact/A=exact/S=no_an s33(10-31,stack):R=no_an/A=no_an/S=diffe s55(10-33,stack):R=no_an/A=no_an/S=no_an	2.93	4.25	3.44	4.09
+6VUI_A	11	G	A:11	17	A12	C13	12	different_partner	tWH(7-11,nonca):R=diffe/A=diffe/S=no_an cWW(11-30,canon):R=no_an/A=no_an/S=no_an tSW(11-14,nonca):R=no_an/A=no_an/S=no_an s55(8-11,stack):R=diffe/A=diffe/S=no_an s55(11-31,stack):R=diffe/A=diffe/S=no_an	3.27	8.72	3.95	8.77
+6VUI_A	12	U	A:12	20	C13	C14	13	different_partner	NA	4.73	1.34	4.14	2.55
+6VUI_A	13	A	A:13	22	gap	A15	gap	star3d_only	NA	NA	1.82	NA	2.35
+6VUI_A	14	A	A:14	25	A15	U16	16	different_partner	tSW(11-14,nonca):R=no_an/A=no_an/S=no_an s35(14-15,stack):R=exact/A=exact/S=exact	6.43	1.62	5.86	1.6
+6VUI_A	15	C	A:15	26	U16	C17	17	different_partner	s35(14-15,stack):R=exact/A=exact/S=exact ns35(15-16,stack):R=diffe/A=exact/S=exact	6.09	0.61	6.09	0.83
+6VUI_A	16	C	A:16	27	C17	C18	18	different_partner	cWW(5-16,canon):R=no_an/A=exact/S=exact cSW(16-28,nonca):R=no_an/A=exact/S=exact ns35(15-16,stack):R=diffe/A=exact/S=exact s35(16-17,stack):R=diffe/A=exact/S=exact	6.62	0.61	6.74	0.55
+6VUI_A	17	C	A:17	28	C18	C19	19	different_partner	cWW(4-17,canon):R=no_an/A=exact/S=exact cSW(17-26,nonca):R=no_an/A=exact/S=exact s55(5-17,stack):R=diffe/A=exact/S=exact s35(16-17,stack):R=diffe/A=exact/S=exact s35(17-18,stack):R=exact/A=exact/S=exact	6.11	1.06	6.12	0.72
+6VUI_A	18	C	A:18	29	C19	A20	20	different_partner	cWW(3-18,canon):R=no_an/A=exact/S=exact s55(4-18,stack):R=diffe/A=exact/S=exact s35(17-18,stack):R=exact/A=exact/S=exact s35(18-19,stack):R=exact/A=exact/S=exact	6.4	1.53	6.17	1.03
+6VUI_A	19	A	A:19	30	A20	C21	21	different_partner	cWW(2-19,canon):R=no_an/A=exact/S=exact s55(3-19,stack):R=diffe/A=no_an/S=no_an s35(18-19,stack):R=exact/A=exact/S=exact s35(19-20,stack):R=exact/A=exact/S=exact	6.2	1.72	5.8	0.94
+6VUI_A	20	G	A:20	31	C21	A22	22	different_partner	cWW(1-20,canon):R=no_an/A=exact/S=exact cSH(20-21,nonca):R=diffe/A=unmap/S=no_an s55(2-20,stack):R=diffe/A=exact/S=exact s35(19-20,stack):R=exact/A=exact/S=exact	7.26	2.67	6.86	1.83
+6VUI_A	21	U	A:21	32	A22	U23	gap	different_partner	cSH(20-21,nonca):R=diffe/A=unmap/S=no_an s55(21-23,stack):R=no_an/A=unmap/S=unmap	8.58	3.19	7.11	2.33
+6VUI_A	22	U	A:22	53	U23	A24	23	different_partner	NA	5.64	6.16	6.35	6.29
+6VUI_A	23	A	A:23	54	A24	none	24	rfam_only	s55(21-23,stack):R=no_an/A=unmap/S=unmap	4.4	NA	4.39	NA
+6VUI_A	24	A	A:24	55	A25	A25	25	same_partner	s35(24-25,stack):R=diffe/A=diffe/S=diffe	NA	NA	NA	NA
+6VUI_A	25	C	A:25	56	A26	A26	26	same_partner	s35(24-25,stack):R=diffe/A=diffe/S=diffe s35(25-26,stack):R=diffe/A=diffe/S=diffe	NA	NA	NA	NA
+6VUI_A	26	A	A:26	57	A27	A27	27	same_partner	cSW(17-26,nonca):R=no_an/A=exact/S=exact s35(25-26,stack):R=diffe/A=diffe/S=diffe s35(26-27,stack):R=exact/A=exact/S=exact	NA	NA	NA	NA
+6VUI_A	27	A	A:27	58	A28	A28	28	same_partner	tSW(5-27,nonca):R=exact/A=exact/S=exact s53(6-27,stack):R=exact/A=exact/S=exact s35(26-27,stack):R=exact/A=exact/S=exact s35(27-28,stack):R=exact/A=exact/S=exact	NA	NA	NA	NA
+6VUI_A	28	A	A:28	59	A29	A29	29	same_partner	cWH(6-28,nonca):R=exact/A=exact/S=exact cSW(16-28,nonca):R=no_an/A=exact/S=exact s35(27-28,stack):R=exact/A=exact/S=exact s35(28-29,stack):R=exact/A=exact/S=exact	NA	NA	NA	NA
+6VUI_A	29	A	A:29	60	A30	A30	30	same_partner	s35(28-29,stack):R=exact/A=exact/S=exact s35(29-30,stack):R=exact/A=exact/S=exact	NA	NA	NA	NA
+6VUI_A	30	C	A:30	61	C31	C31	31	same_partner	cWW(11-30,canon):R=no_an/A=no_an/S=no_an s35(29-30,stack):R=exact/A=exact/S=exact s35(30-31,stack):R=exact/A=exact/S=exact	NA	NA	NA	NA
+6VUI_A	31	A	A:31	63	U32	U32	32	same_partner	tSW(8-31,nonca):R=no_an/A=no_an/S=no_an s33(10-31,stack):R=no_an/A=no_an/S=diffe s55(11-31,stack):R=diffe/A=diffe/S=no_an s35(30-31,stack):R=exact/A=exact/S=exact	NA	NA	NA	NA
+6VUI_A	32	A	A:32	64	A33	A33	33	same_partner	tSH(10-32,nonca):R=diffe/A=diffe/S=diffe ns35(32-33,stack):R=no_an/A=no_an/S=no_an	NA	NA	NA	NA
+6VUI_A	33	G	A:33	65	G34	G34	34	same_partner	cWW(9-33,canon):R=no_an/A=no_an/S=no_an s55(10-33,stack):R=no_an/A=no_an/S=no_an ns35(32-33,stack):R=no_an/A=no_an/S=no_an	NA	NA	NA	NA

@@ -1,0 +1,23 @@
+RF00059__2GDI_X__3D2G_A__r17-23.tsv rows 7 7 differing cells 0
+RF00059__2GDI_X__3D2G_A__r76-76.tsv rows 1 1 differing cells 0
+RF00162__2GIS_A__4KQY_A__r1-93.tsv rows 93 93 differing cells 0
+RF00174__4GXY_A__6VMY_A__r1-19.tsv rows 19 19 differing cells 0
+RF00174__4GXY_A__6VMY_A__r102-112.tsv rows 11 11 differing cells 0
+RF00174__4GXY_A__6VMY_A__r117-129.tsv rows 13 13 differing cells 0
+RF00174__4GXY_A__6VMY_A__r145-172.tsv rows 28 28 differing cells 0
+RF00174__4GXY_A__6VMY_A__r26-82.tsv rows 57 57 differing cells 0
+RF00174__4GXY_A__6VMY_A__r85-88.tsv rows 4 4 differing cells 0
+RF00442__5U3G_B__7MLW_F__r17-23.tsv rows 7 7 differing cells 0
+RF00442__5U3G_B__7MLW_F__r41-55.tsv rows 15 15 differing cells 0
+RF00522__3FU2_A__6VUI_A__r15-15.tsv rows 1 1 differing cells 0
+RF00522__3FU2_A__6VUI_A__r23-24.tsv rows 2 2 differing cells 0
+RF00522__3FU2_A__6VUI_A__r32-34.tsv rows 3 3 differing cells 0
+RF00522__3FU2_A__6VUI_A__r7-8.tsv rows 2 2 differing cells 0
+RF00522__3FU2_A__7REX_A__r15-22.tsv rows 8 8 differing cells 0
+RF00522__3FU2_A__7REX_A__r32-34.tsv rows 3 3 differing cells 0
+RF00522__3FU2_A__7REX_A__r9-12.tsv rows 4 4 differing cells 0
+RF00522__6VUI_A__7REX_A__r7-23.tsv rows 17 17 differing cells 0
+summary.tsv rows 19 19 differing cells 0
+residue_evidence_RF00522__3FU2_A__7REX_A.tsv rows 34 34 differing cells 0
+residue_evidence_RF00522__6VUI_A__7REX_A.tsv rows 33 33 differing cells 0
+TOTAL differing 0

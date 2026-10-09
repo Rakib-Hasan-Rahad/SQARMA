@@ -1,6 +1,7 @@
 """v4 prospective expansion (pre-registered: review/v4_expansion/PREREGISTRATION.md).
 Builds an ISOLATED workspace expansion_v4/ (the frozen pilot tables are never touched), freezes the selection, then
-runs the UNCHANGED pipeline stages there: reference -> prepare_inputs -> original STAR3D (both directions x 3) ->
+runs the pipeline stages there: prepare_inputs -> reference -> original STAR3D (v5: one forward alignment) ->
+select_primary_outputs ->
 compare -> FR3D interactions -> regions.
 Usage: expansion_v4.py freeze | run [--downstream-only]
   (attempt 1 ran reference before prepare_inputs; its STAR3D runs do not depend on reference tables and are kept;
@@ -114,6 +115,9 @@ def run():
     prepare_inputs.main()          # documented order (README): Phase 4a crosswalk BEFORE Phase 3 reference
     reference.main([])
     if len(sys.argv) > 2 and sys.argv[2] == "--downstream-only":
+        import select_primary_outputs as sp
+        sp.ROOT, sp.P = WS, fp
+        sp.main()
         compare.main([])
         interactions.main([])
         regions.main()
@@ -121,7 +125,10 @@ def run():
     reps = {r["rep_id"]: r for r in csv.DictReader(open(fp("results/selected_representatives.tsv")), delimiter="\t")}
     inputs = {r["rep_id"]: r for r in csv.DictReader(open(fp("mappings/aligner_inputs.tsv")), delimiter="\t")}
     for pair in csv.DictReader(open(fp("results/selected_pairs.tsv")), delimiter="\t"):
-        star3d.run_pair(pair, reps, inputs, star3d.CFG["star3d"]["replicates"])
+        star3d.run_pair(pair, reps, inputs)          # v5: one forward alignment per pair
+    import select_primary_outputs as sp
+    sp.ROOT, sp.P = WS, fp
+    sp.main()
     compare.main([])
     interactions.main([])
     regions.main()

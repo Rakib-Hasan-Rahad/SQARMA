@@ -1,11 +1,13 @@
 """Phase 4 comparison: standard-seed reference pairs vs ORIGINAL STAR3D correspondences.
 
+v5 single-run policy: consumes exactly ONE selected original-STAR3D output per pair
+(results/primary_star3d_outputs.tsv, written by select_primary_outputs.py; forward = query -> target). No replicate,
+reverse-run or cross-run consensus logic remains in the active comparison.
 Index system: row residue index (1-based) of each selected standard-seed row (crosswalk joins
-STAR3D author residue IDs -> row index). Reverse-direction runs are inverted to query->target.
-Outputs: results/correspondence_comparison.tsv (per run x source residue)
-         results/pair_summary.tsv            (per run, with explicit denominators)
-         results/replicate_consistency.tsv   (per pair x direction)
-Usage: compare.py [pair_id ...]
+STAR3D author residue IDs -> row index).
+Outputs: results/correspondence_comparison.tsv (per pair x source residue)
+         results/pair_summary.tsv            (per pair, with explicit denominators)
+Usage: compare.py
 """
 import csv
 import hashlib
@@ -130,6 +132,7 @@ def compare_run(run, pair, cw, ref):
         if js is None:
             if smap is None:
                 why_s = ("validation_failed" if run["status"] == "completed" else
+                         "no_valid_primary_output" if run["status"] == "unavailable" else
                          "technical_failure" if run["status"] == "failed" else "no_alignment")
             elif c["observed"] != "yes":
                 why_s = "missing_coordinates_source"
@@ -141,8 +144,7 @@ def compare_run(run, pair, cw, ref):
             why_s = None
         assess = (c["observed"] == "yes" and not masked_q and jr is not None and ct[jr]["observed"] == "yes"
                   and ct[jr]["engineered_masked"] != "yes")
-        rows.append(dict(run_id=run["run_id"], pair_id=pair["pair_id"], direction=run["direction"],
-                         replicate=run["replicate"], source_rep=qrep, source_row_index=i, source_nt=c["row_nt"],
+        rows.append(dict(pair_id=pair["pair_id"], star3d_run_id=run["run_id"], source_rep=qrep, source_row_index=i, source_nt=c["row_nt"],
                          source_label_seq_id=c["label_seq_id"], source_auth=f"{c['auth_asym_id']}:{c['auth_seq_id']}",
                          source_observed=c["observed"], source_masked=c["engineered_masked"],
                          original_column=c["original_column"],
@@ -170,8 +172,8 @@ def summarize(run, pair, rows, smap, rmap, injective, unmapped, cw):
     for r in rows:
         cats[r["category"]] += 1
     Sa = unmask(S)
-    return dict(run_id=run["run_id"], pair_id=pair["pair_id"], tier=pair["tier"], direction=run["direction"],
-                replicate=run["replicate"], status=run["status"],
+    return dict(pair_id=pair["pair_id"], tier=pair["tier"], star3d_run_id=run["run_id"],
+                star3d_output=run.get("output_aln"), status=run["status"],
                 source_row_len=len(cq), target_row_len=len(ct),
                 source_observed=sum(c["observed"] == "yes" for c in cq.values()),
                 target_observed=sum(c["observed"] == "yes" for c in ct.values()),
@@ -195,50 +197,47 @@ def summarize(run, pair, rows, smap, rmap, injective, unmapped, cw):
                 seed_sha256=CFG["reference"]["seed_sha256"])
 
 
+def primary_runs(pairs):
+    """One selected run per pair from results/primary_star3d_outputs.tsv (missing or 'unavailable' -> unavailable)."""
+    sel = {r["pair_id"]: r for r in read_tsv(P("results/primary_star3d_outputs.tsv"))}
+    out = {}
+    for pid in pairs:
+        r = sel.get(pid)
+        if r is None or r["status"] != "selected":
+            out[pid] = dict(run_id=(r or {}).get("selected_run_id", "NA"), status="unavailable", direction="forward",
+                            output_aln="NA", rmsd=None)
+        else:
+            out[pid] = dict(run_id=r["selected_run_id"], status="completed", direction="forward",
+                            output_aln=r["output_aln"], output_sha256=r["output_sha256"], aligned_n=r["aligned_n"],
+                            rmsd=r["rmsd"])
+    return out
+
+
 def main(only):
     if only:
         raise SystemExit("subset runs would overwrite the complete global tables; run without arguments")
     pairs = {p["pair_id"]: p for p in read_tsv(P("results/selected_pairs.tsv"))}
-    runs = [r for r in read_tsv(P("results/run_manifest.tsv")) if r["direction"] in ("forward", "reverse") and not r["run_id"].startswith("attempt")
-            and (not only or r["pair_id"] in only)]
+    runs = primary_runs(pairs)
     refs = defaultdict(list)
     for r in read_tsv(P("results/reference_pairs.tsv")):
         refs[r["pair_id"]].append(r)
     cw = crosswalks()
     allrows, summ = [], []
-    maps = defaultdict(dict)
-    for run in runs:
-        pair = pairs[run["pair_id"]]
-        rows, smap, rmap, inj, un = compare_run(run, pair, cw, refs[run["pair_id"]])
+    for pid, pair in pairs.items():
+        run = runs[pid]
+        rows, smap, rmap, inj, un = compare_run(run, pair, cw, refs[pid])
         allrows += rows
         summ.append(summarize(run, pair, rows, smap, rmap, inj, un, cw))
-        maps[(run["pair_id"], run["direction"])][run["replicate"]] = smap
     # on validation failure the recomputed tables are written ONLY as *.INVALID.tsv (complete tables untouched)
     out = (lambda n: P("results", n + (".INVALID.tsv" if VALIDATION_FAILURES else ".tsv")))  # noqa: E731
     write_tsv(out("correspondence_comparison"), allrows, list(allrows[0].keys()))
     write_tsv(out("pair_summary"), summ, list(summ[0].keys()))
-    cons = []
-    for (pid, d), reps in sorted(maps.items()):
-        vals = [frozenset(v.items()) if v is not None else None for v in reps.values()]
-        cons.append(dict(pair_id=pid, direction=d, replicates=len(vals), identical_across_replicates=len(set(vals)) == 1,
-                         distinct_outputs=len(set(vals))))
-    fw_rev = []
-    for pid in sorted({p for p, _ in maps}):
-        f = maps.get((pid, "forward"), {}).get("1")
-        r = maps.get((pid, "reverse"), {}).get("1")
-        if f is not None and r is not None:
-            fs, rs = set(f.items()), set(r.items())
-            fw_rev.append(dict(pair_id=pid, direction="forward_vs_reverse_rep1", replicates=None,
-                               identical_across_replicates=fs == rs,
-                               distinct_outputs=f"shared {len(fs & rs)}; fwd-only {len(fs - rs)}; rev-only {len(rs - fs)}"))
-    write_tsv(out("replicate_consistency"), cons + fw_rev,
-              ["pair_id", "direction", "replicates", "identical_across_replicates", "distinct_outputs"])
     if VALIDATION_FAILURES:
         raise SystemExit(f"STAGE FAILED: STAR3D output validation failures {VALIDATION_FAILURES} (written only as results/*.INVALID.tsv)")
     for s in summ:
-        print(s["run_id"], s["status"], "R", s["rfam_pairs"], "Ra", s["rfam_pairs_structurally_assessable"], "S",
-              s["star3d_pairs"], "shared", s["shared_pairs"], "reproduced", s["frac_rfam_assessable_reproduced"],
-              "diff", s["different_partner"], "inj", s["star3d_injective"], s["category_sum_check"])
+        print(s["pair_id"], s["star3d_run_id"], s["status"], "R", s["rfam_pairs"], "Ra", s["rfam_pairs_structurally_assessable"],
+              "S", s["star3d_pairs"], "same", s["same_partner"], "diff", s["different_partner"], "inj", s["star3d_injective"],
+              s["category_sum_check"])
 
 
 if __name__ == "__main__":

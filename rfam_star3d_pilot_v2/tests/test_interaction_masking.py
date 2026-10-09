@@ -14,34 +14,33 @@ TOBS = set(range(1, 40))
 
 def per(rfam_map, s3d_map, tmask):
     return {"rfam": it.method_status(SRC, rfam_map, TIX, TOBS, tmask),
-            "star3d_forward": it.method_status(SRC, s3d_map, TIX, TOBS, tmask),
-            "star3d_reverse": it.method_status(SRC, s3d_map, TIX, TOBS, tmask)}
+            "star3d": it.method_status(SRC, s3d_map, TIX, TOBS, tmask)}
 
 
 def test_masked_star3d_target_excludes():
     # Rfam maps to 12-19 (unmasked); STAR3D maps to 13-20 and target 20 is engineered
     d = per({2: 12, 9: 19}, {2: 13, 9: 20}, tmask={20})
-    ok, why = it.comparison_eligibility("no", d, ("rfam", "star3d_forward"))
-    assert not ok and why == "star3d_forward_target_masked"
-    assert d["rfam"]["target_masked"] == "no" and d["star3d_forward"]["target_masked"] == "yes"
+    ok, why = it.comparison_eligibility("no", d, ("rfam", "star3d"))
+    assert not ok and why == "star3d_target_masked"
+    assert d["rfam"]["target_masked"] == "no" and d["star3d"]["target_masked"] == "yes"
 
 
 def test_masked_rfam_target_excludes():
     d = per({2: 12, 9: 19}, {2: 13, 9: 20}, tmask={12})
-    ok, why = it.comparison_eligibility("no", d, ("rfam", "star3d_forward"))
+    ok, why = it.comparison_eligibility("no", d, ("rfam", "star3d"))
     assert not ok and why == "rfam_target_masked"
 
 
 def test_unmasked_observed_interaction_eligible():
     d = per({2: 12, 9: 19}, {2: 13, 9: 20}, tmask=set())
-    ok, why = it.comparison_eligibility("no", d, ("rfam", "star3d_forward"))
+    ok, why = it.comparison_eligibility("no", d, ("rfam", "star3d"))
     assert ok and why == "eligible"
-    assert d["rfam"]["status"] == "exact_class_preserved" and d["star3d_forward"]["status"] == "exact_class_preserved"
+    assert d["rfam"]["status"] == "exact_class_preserved" and d["star3d"]["status"] == "exact_class_preserved"
 
 
 def test_masked_source_excludes_even_if_targets_clean():
     d = per({2: 12, 9: 19}, {2: 13, 9: 20}, tmask=set())
-    assert it.comparison_eligibility("yes", d, ("rfam", "star3d_forward")) == (False, "source_endpoint_masked")
+    assert it.comparison_eligibility("yes", d, ("rfam", "star3d")) == (False, "source_endpoint_masked")
 
 
 def test_reversed_endpoint_order_swaps_edges():
@@ -58,15 +57,22 @@ def test_unobserved_target_and_unmapped():
     assert st["status"] == "target_endpoint_unobserved"
     st = it.method_status(SRC, {2: 12}, TIX, TOBS, set())
     assert st["status"] == "unmapped_endpoint"
-    d = {"rfam": st, "star3d_forward": st}
-    assert it.comparison_eligibility("no", d, ("rfam", "star3d_forward"))[1] == "rfam_unmapped_endpoint"
+    d = {"rfam": st, "star3d": st}
+    assert it.comparison_eligibility("no", d, ("rfam", "star3d"))[1] == "rfam_unmapped_endpoint"
 
 
-def test_three_way_denominator_uses_all_methods():
-    d = per({2: 12, 9: 19}, {2: 13, 9: 20}, tmask=set())
-    d["star3d_reverse"] = it.method_status(SRC, {2: 13, 9: 20}, TIX, TOBS, {13})
-    assert it.comparison_eligibility("no", d, ("rfam", "star3d_forward"))[0]
-    assert it.comparison_eligibility("no", d, it.COMPARISONS["all_three_methods"]) == (False, "star3d_reverse_target_masked")
+def test_single_star3d_comparison_only():
+    """v5: one selected STAR3D mapping per pair -> exactly one Rfam-vs-STAR3D comparison (no reverse, no 3-way)."""
+    assert it.METHODS == ("rfam", "star3d") and list(it.COMPARISONS) == ["rfam_vs_star3d"]
+
+
+def test_target_side_uses_inverted_same_mapping():
+    """Target-side interactions use the INVERTED selected mapping (no extra STAR3D run); a non-injective map fails."""
+    fwd = {2: 12, 9: 19}
+    inv = it.invert_injective(fwd, "test")
+    assert inv == {12: 2, 19: 9}
+    st = it.method_status(dict(i=12, j=19, label="tHS"), inv, {(2, 9): {"tHS"}}, TOBS, set())
+    assert st["status"] == "exact_class_preserved"
 
 
 def test_symmetry_classes():

@@ -1,31 +1,11 @@
-pair_id	source_side	interaction_class	comparison	source_interactions	eligible_unmasked	interchain_lines_excluded	rfam_coverage_all	rfam_preserved_all	rfam_preserved_eligible	star3d_forward_coverage_all	star3d_forward_preserved_all	star3d_forward_preserved_eligible	star3d_reverse_coverage_all	star3d_reverse_preserved_all	star3d_reverse_preserved_eligible
-RF00005__5CCB_N__7EQJ_B	query	all	rfam_vs_star3d_forward	106	97	0	106	84	81	97	81	81	98	81	NA
-RF00005__5CCB_N__7EQJ_B	query	all	rfam_vs_star3d_reverse	106	98	0	106	84	81	97	81	NA	98	81	81
-RF00005__5CCB_N__7EQJ_B	query	all	all_three_methods	106	97	0	106	84	81	97	81	81	98	81	81
-RF00005__5CCB_N__7EQJ_B	query	canonical	rfam_vs_star3d_forward	21	21	0	21	20	20	21	20	20	21	20	NA
-RF00005__5CCB_N__7EQJ_B	query	canonical	rfam_vs_star3d_reverse	21	21	0	21	20	20	21	20	NA	21	20	20
-RF00005__5CCB_N__7EQJ_B	query	canonical	all_three_methods	21	21	0	21	20	20	21	20	20	21	20	20
-RF00005__5CCB_N__7EQJ_B	query	wobble	rfam_vs_star3d_forward	1	1	0	1	1	1	1	1	1	1	1	NA
-RF00005__5CCB_N__7EQJ_B	query	wobble	rfam_vs_star3d_reverse	1	1	0	1	1	1	1	1	NA	1	1	1
-RF00005__5CCB_N__7EQJ_B	query	wobble	all_three_methods	1	1	0	1	1	1	1	1	1	1	1	1
-RF00005__5CCB_N__7EQJ_B	query	noncanonical	rfam_vs_star3d_forward	5	4	0	5	3	3	4	3	3	4	3	NA
-RF00005__5CCB_N__7EQJ_B	query	noncanonical	rfam_vs_star3d_reverse	5	4	0	5	3	3	4	3	NA	4	3	3
-RF00005__5CCB_N__7EQJ_B	query	noncanonical	all_three_methods	5	4	0	5	3	3	4	3	3	4	3	3
-RF00005__5CCB_N__7EQJ_B	query	stack	rfam_vs_star3d_forward	79	71	0	79	60	57	71	57	57	72	57	NA
-RF00005__5CCB_N__7EQJ_B	query	stack	rfam_vs_star3d_reverse	79	72	0	79	60	57	71	57	NA	72	57	57
-RF00005__5CCB_N__7EQJ_B	query	stack	all_three_methods	79	71	0	79	60	57	71	57	57	72	57	57
-RF00005__5CCB_N__7EQJ_B	target	all	rfam_vs_star3d_forward	116	103	0	116	84	82	103	81	81	103	81	NA
-RF00005__5CCB_N__7EQJ_B	target	all	rfam_vs_star3d_reverse	116	103	0	116	84	82	103	81	NA	103	81	81
-RF00005__5CCB_N__7EQJ_B	target	all	all_three_methods	116	103	0	116	84	82	103	81	81	103	81	81
-RF00005__5CCB_N__7EQJ_B	target	canonical	rfam_vs_star3d_forward	21	20	0	21	20	20	20	20	20	20	20	NA
-RF00005__5CCB_N__7EQJ_B	target	canonical	rfam_vs_star3d_reverse	21	20	0	21	20	20	20	20	NA	20	20	20
-RF00005__5CCB_N__7EQJ_B	target	canonical	all_three_methods	21	20	0	21	20	20	20	20	20	20	20	20
-RF00005__5CCB_N__7EQJ_B	target	wobble	rfam_vs_star3d_forward	1	1	0	1	1	1	1	1	1	1	1	NA
-RF00005__5CCB_N__7EQJ_B	target	wobble	rfam_vs_star3d_reverse	1	1	0	1	1	1	1	1	NA	1	1	1
-RF00005__5CCB_N__7EQJ_B	target	wobble	all_three_methods	1	1	0	1	1	1	1	1	1	1	1	1
-RF00005__5CCB_N__7EQJ_B	target	noncanonical	rfam_vs_star3d_forward	8	5	0	8	3	3	5	3	3	5	3	NA
-RF00005__5CCB_N__7EQJ_B	target	noncanonical	rfam_vs_star3d_reverse	8	5	0	8	3	3	5	3	NA	5	3	3
-RF00005__5CCB_N__7EQJ_B	target	noncanonical	all_three_methods	8	5	0	8	3	3	5	3	3	5	3	3
-RF00005__5CCB_N__7EQJ_B	target	stack	rfam_vs_star3d_forward	86	77	0	86	60	58	77	57	57	77	57	NA
-RF00005__5CCB_N__7EQJ_B	target	stack	rfam_vs_star3d_reverse	86	77	0	86	60	58	77	57	NA	77	57	57
-RF00005__5CCB_N__7EQJ_B	target	stack	all_three_methods	86	77	0	86	60	58	77	57	57	77	57	57
+pair_id	source_side	source_side_meaning	interaction_class	comparison	source_interactions	eligible_unmasked	interchain_lines_excluded	rfam_coverage_all	rfam_preserved_all	rfam_preserved_eligible	star3d_coverage_all	star3d_preserved_all	star3d_preserved_eligible
+RF00005__5CCB_N__7EQJ_B	query	query RNA interactions via the forward mapping	all	rfam_vs_star3d	106	97	0	106	84	81	97	81	81
+RF00005__5CCB_N__7EQJ_B	query	query RNA interactions via the forward mapping	canonical	rfam_vs_star3d	21	21	0	21	20	20	21	20	20
+RF00005__5CCB_N__7EQJ_B	query	query RNA interactions via the forward mapping	wobble	rfam_vs_star3d	1	1	0	1	1	1	1	1	1
+RF00005__5CCB_N__7EQJ_B	query	query RNA interactions via the forward mapping	noncanonical	rfam_vs_star3d	5	4	0	5	3	3	4	3	3
+RF00005__5CCB_N__7EQJ_B	query	query RNA interactions via the forward mapping	stack	rfam_vs_star3d	79	71	0	79	60	57	71	57	57
+RF00005__5CCB_N__7EQJ_B	target	target RNA interactions via the inverted forward mapping (no additional STAR3D run)	all	rfam_vs_star3d	116	103	0	116	84	82	103	81	81
+RF00005__5CCB_N__7EQJ_B	target	target RNA interactions via the inverted forward mapping (no additional STAR3D run)	canonical	rfam_vs_star3d	21	20	0	21	20	20	20	20	20
+RF00005__5CCB_N__7EQJ_B	target	target RNA interactions via the inverted forward mapping (no additional STAR3D run)	wobble	rfam_vs_star3d	1	1	0	1	1	1	1	1	1
+RF00005__5CCB_N__7EQJ_B	target	target RNA interactions via the inverted forward mapping (no additional STAR3D run)	noncanonical	rfam_vs_star3d	8	5	0	8	3	3	5	3	3
+RF00005__5CCB_N__7EQJ_B	target	target RNA interactions via the inverted forward mapping (no additional STAR3D run)	stack	rfam_vs_star3d	86	77	0	86	60	58	77	57	57

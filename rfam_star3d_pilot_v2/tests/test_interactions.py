@@ -26,9 +26,9 @@ def test_unit_id_parse_with_icode():
 
 def test_common_denominator_identical_across_methods():
     # a source interaction counts toward the common set only if BOTH methods map both endpoints
-    rows = [dict(rfam_status="exact_class_preserved", star3d_forward_status="unmapped_endpoint"),
-            dict(rfam_status="no_annotated_target_pair", star3d_forward_status="exact_class_preserved"),
-            dict(rfam_status="exact_class_preserved", star3d_forward_status="different_class")]
+    rows = [dict(rfam_status="exact_class_preserved", star3d_status="unmapped_endpoint"),
+            dict(rfam_status="no_annotated_target_pair", star3d_status="exact_class_preserved"),
+            dict(rfam_status="exact_class_preserved", star3d_status="different_class")]
     bad = ("unmapped_endpoint", "target_endpoint_unobserved")
-    common = [r for r in rows if r["rfam_status"] not in bad and r["star3d_forward_status"] not in bad]
+    common = [r for r in rows if r["rfam_status"] not in bad and r["star3d_status"] not in bad]
     assert len(common) == 2  # same denominator for both methods

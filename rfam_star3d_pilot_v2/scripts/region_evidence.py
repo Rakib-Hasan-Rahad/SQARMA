@@ -1,5 +1,5 @@
 """v4: uniform evidence extraction for EVERY region in results/region_review.tsv (no interpretation is written here).
-Per region: span eligibility flags; per-residue Rfam / STAR3D forward / STAR3D reverse partners; FR3D interactions
+Per region: span eligibility flags; per-residue Rfam / selected-STAR3D partners; FR3D interactions
 touching the span, per class, on the rfam-vs-STAR3D-forward eligible set; shared-correspondence anchor fits under
 three anchor rules (C1' and base-centroid distances); ligand, other-chain and crystal-symmetry contacts (<= 4 A)
 of the source span and both partner sets; missing coordinates.
@@ -72,9 +72,7 @@ def main():
         cw[r["rep_id"]][int(r["row_index1"])] = r
     comp = defaultdict(dict)
     for r in R("results/correspondence_comparison.tsv"):
-        if r["run_id"].startswith("attempt"):
-            continue
-        comp[(r["pair_id"], r["direction"], r["replicate"])][int(r["source_row_index"])] = r
+        comp[r["pair_id"]][int(r["source_row_index"])] = r      # v5: one selected STAR3D run per pair
     inter = [r for r in R("results/interaction_comparison.tsv") if r["source_side"] == "query"]
     cont = {}
     summary = []
@@ -85,10 +83,7 @@ def main():
         for rid in (q, t):
             if rid not in cont:
                 cont[rid] = contacts(reps[rid]["pdb_id"], reps[rid]["auth_asym_id"])
-        fwd = comp[(pid, "forward", "1")]
-        # first COMPLETED reverse replicate (a crashed replicate has only technical-failure rows)
-        rev = next((comp[(pid, "reverse", k)] for k in ("1", "2", "3") if (pid, "reverse", k) in comp and any(
-            x["category"] != "technical_failure_or_no_alignment" for x in comp[(pid, "reverse", k)].values())), {})
+        fwd = comp[pid]
         fits = {rule: run_fit(pid, s, e, rule, 8 if rule == "shared_local" else 2)
                 for rule in ("shared", "shared_flank_excl", "shared_local")}
         rows = []
@@ -105,8 +100,7 @@ def main():
                 key = (int(x["auth_seq_id"]), "" if x["ins_code"] in ("NA", "") else x["ins_code"])
                 return ";".join(sorted(cont[rid].get(key, set()))) or "none"
             rec = dict(region_id=reg["region_id"], source_row_index=i, source_nt=c["source_nt"], source_auth=c["source_auth"],
-                       rfam_partner=c["rfam_partner"], star3d_fwd_partner=c["star3d_partner"],
-                       star3d_rev_partner=rev.get(i, {}).get("star3d_partner", "NA"), category=c["category"],
+                       rfam_partner=c["rfam_partner"], star3d_partner=c["star3d_partner"], category=c["category"],
                        source_contacts=ctc(q, i), rfam_partner_contacts=ctc(t, c["rfam_partner"]),
                        star3d_partner_contacts=ctc(t, c["star3d_partner"]))
             for rule, f in fits.items():
@@ -123,12 +117,12 @@ def main():
                 fo.write(f"# {rule}: {f['header'][2:]}\n")
         # interactions with >=1 endpoint in span; rfam vs STAR3D forward, eligible set
         ints = [x for x in inter if x["pair_id"] == pid and (s <= int(x["i"]) <= e or s <= int(x["j"]) <= e)]
-        el = [x for x in ints if x["eligible_rfam_vs_star3d_forward"] in ("yes", "True")]
+        el = [x for x in ints if x["eligible_rfam_vs_star3d"] in ("yes", "True")]
         cls = {}
         for k in ("canonical", "wobble", "noncanonical", "stack"):
             sel = [x for x in el if x["pair_class"] == k]
             cls[k] = (len(sel), sum(x["rfam_status"] == "exact_class_preserved" for x in sel),
-                      sum(x["star3d_forward_status"] == "exact_class_preserved" for x in sel))
+                      sum(x["star3d_status"] == "exact_class_preserved" for x in sel))
         diff = [r for r in rows if r["category"] == "different_partner"]
 
         def closer(rule, kind):
@@ -148,7 +142,6 @@ def main():
         summary.append(dict(region_id=reg["region_id"], pair_id=pid, tier=reg["tier"], span=f"{s}-{e}",
                             n_residues=len(rows), categories=";".join(f"{k}:{v}" for k, v in Counter(r["category"] for r in rows).items()),
                             eligible=reg["eligible_for_structural_adjudication"],
-                            star3d_fwd_rev_same=sum(1 for r in rows if r["star3d_fwd_partner"] == r["star3d_rev_partner"]),
                             interactions_touching=len(ints), interactions_eligible=len(el),
                             **{f"{k}_eligible_rfam_star3d": "%d/%d/%d" % v for k, v in cls.items()},
                             closer_C1p_shared=closer("shared", "C1p"), closer_base_shared=closer("shared", "base"),

@@ -154,7 +154,7 @@ def main():
                                              if n in (links["6VUI_A"]["row_name"], links["3FU2_A"]["row_name"])}
 
     # ---- residue evidence + interaction preservation with the adjusted mapping
-    comp = [r for r in R(P("results/correspondence_comparison.tsv")) if r["replicate"] == "1"]
+    comp = R(P("results/correspondence_comparison.tsv"))          # v5: one selected STAR3D run per pair
     inter_rows = []
     fit = {}
     for rule in ("shared", "shared_flank_excl"):
@@ -169,8 +169,7 @@ def main():
         s_aln = seed.seqs[src_row]
         adj_map = {a + 1: b + 1 for a, b in stockholm.pairwise_correspondence(s_aln, adj)}
         assert len(set(adj_map.values())) == len(adj_map), "adjusted mapping not one-to-one"
-        rows = {int(r["source_row_index"]): r for r in comp if r["pair_id"] == pid and r["direction"] == "forward"}
-        rrev = {int(r["source_row_index"]): r for r in comp if r["pair_id"] == pid and r["direction"] == "reverse"}
+        rows = {int(r["source_row_index"]): r for r in comp if r["pair_id"] == pid}
         src_rep, tgt_rep = REPS[src_key], REPS["7REX_A"]
         ann_s = R(P("annotations/normalized", f"{src_rep}.tsv"))
         ann_t = R(P("annotations/normalized", f"{tgt_rep}.tsv"))
@@ -181,7 +180,7 @@ def main():
         tmask = {k for k, r in cw[tgt_rep].items() if r["engineered_masked"] == "yes"}
         maps = {"rfam": {i: int(r["rfam_partner"]) for i, r in rows.items() if r["rfam_partner"] != "NA"},
                 "adjusted": adj_map,
-                "star3d_forward": {i: int(r["star3d_partner"]) for i, r in rows.items() if r["star3d_partner"] != "NA"}}
+                "star3d": {i: int(r["star3d_partner"]) for i, r in rows.items() if r["star3d_partner"] != "NA"}}
         per_int = []
         for s in ann_s:
             s2 = dict(i=int(s["i"]), j=int(s["j"]), label=s["label"])
@@ -199,10 +198,9 @@ def main():
                 source=src_key, source_row_index=i, source_nt=r["source_nt"], source_auth=r["source_auth"],
                 seed_column=r["original_column"],
                 rfam_partner=f"{r['rfam_partner_nt']}{r['rfam_partner']}" if r["rfam_partner"] != "NA" else "gap",
-                star3d_fwd_partner=f"{r['star3d_partner_nt']}{r['star3d_partner']}" if r["star3d_partner"] != "NA" else "none",
-                star3d_rev_partner=(rrev[i]["star3d_partner"] if i in rrev else "NA"),
+                star3d_partner=f"{r['star3d_partner_nt']}{r['star3d_partner']}" if r["star3d_partner"] != "NA" else "none",
                 adjusted_partner=adj_map.get(i, "gap"), category=r["category"],
-                source_interactions=" ".join(f"{x['label']}({x['i']}-{x['j']},{x['pair_class'][:5]}):R={x['rfam_status'][:5]}/A={x['adjusted_status'][:5]}/S={x['star3d_forward_status'][:5]}"
+                source_interactions=" ".join(f"{x['label']}({x['i']}-{x['j']},{x['pair_class'][:5]}):R={x['rfam_status'][:5]}/A={x['adjusted_status'][:5]}/S={x['star3d_status'][:5]}"
                                              for x in mine),
                 C1p_rfam_shared=fit.get((pid, "shared", i), {}).get("rfam_C1p_dist"),
                 C1p_star3d_shared=fit.get((pid, "shared", i), {}).get("star3d_C1p_dist"),
@@ -217,7 +215,7 @@ def main():
                   and (cls == "all" or x["pair_class"] == cls)]
             summ.append(dict(pair_id=pid, interaction_class=cls, eligible_same_set=len(el),
                              **{f"{m}_preserved": sum(x[f"{m}_status"] == "exact_class_preserved" for x in el)
-                                for m in ("rfam", "adjusted", "star3d_forward")}))
+                                for m in ("rfam", "adjusted", "star3d")}))
     W(os.path.join(OUT, "adjustment_interaction_summary.tsv"), summ)
     # damage check: interactions preserved by the seed but NOT by the adjusted mapping
     checks["interactions_lost_by_adjustment"] = [f"{x['pair_id']}:{x['label']}({x['i']}-{x['j']})" for x in inter_rows

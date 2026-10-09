@@ -6,7 +6,8 @@ Steps (outputs only under audit/fresh_repro/; retained study files are never ove
     BLOCKS every dependent step (v3 repair B); the run then exits nonzero;
  2. rebuild the STAR3D coordinate inputs from the fresh mmCIF with the unchanged prepare() policy; compare bytes,
     residue identities and coordinates with the retained inputs;
- 3. rerun ORIGINAL STAR3D (fresh tarball, star3d-runtime:1, defaults) for the 3 preQ1 pairs, both directions x 3;
+ 3. rerun ORIGINAL STAR3D (fresh tarball, star3d-runtime:1, defaults): v5 = ONE forward alignment per pair, compared
+    with that pair's SELECTED primary output (results/primary_star3d_outputs.tsv);
     compare parsed mappings with the retained runs;
  4. rerun FR3D (pinned commit) on the fresh mmCIF; compare normalized annotations with the retained ones.
 Usage: fresh_repro.py
@@ -230,25 +231,24 @@ def main():
     inputs = {r["rep_id"]: r for r in inp}
     rec["star3d_gate"] = run_allowed_pairs(
         gate, {pid: pairs[pid] for pid in PAIRS},
-        lambda p: star3d.run_pair(p, reps, inputs, star3d.CFG["star3d"]["replicates"]))
+        lambda p: star3d.run_pair(p, reps, inputs))
     _write_partial(rec, gate)
-    runs_new = ([r for r in R(fp("results/run_manifest.tsv")) if r["direction"] in ("forward", "reverse")]
+    runs_new = ([r for r in R(fp("results/run_manifest.tsv")) if r["direction"] == "forward"]
                 if os.path.exists(fp("results/run_manifest.tsv")) else [])
-    runs_old = {r["run_id"]: r for r in R(os.path.join(ROOT, "results/run_manifest.tsv"))
-                if r["pair_id"] in PAIRS and r["direction"] in ("forward", "reverse") and not r["run_id"].startswith("attempt")}
+    primary = {r["pair_id"]: r for r in R(os.path.join(ROOT, "results/primary_star3d_outputs.tsv"))}
     star = []
     for r in runs_new:
-        old = next((o for o in runs_old.values() if o["pair_id"] == r["pair_id"]
-                    and o["direction"] == r["direction"] and o["replicate"] == r["replicate"]), None)
+        old = primary.get(r["pair_id"])
         new_map = star3d.parse_aln(fp(r["output_aln"]))["pairs"] if r["status"] == "completed" else None
-        old_map = star3d.parse_aln(os.path.join(ROOT, old["output_aln"]))["pairs"] if old and old["status"] == "completed" else None
-        star.append(dict(pair_id=r["pair_id"], direction=r["direction"], replicate=r["replicate"],
-                         fresh_status=r["status"], retained_status=old["status"] if old else None,
-                         fresh_aligned_n=r["aligned_n"], retained_aligned_n=old["aligned_n"] if old else None,
-                         fresh_rmsd=r["rmsd"], retained_rmsd=old["rmsd"] if old else None,
-                         mapping_identical=(new_map == old_map) if new_map is not None else False,
-                         fresh_npk_query_identical=r["query_npk_ct_sha256"] == (old or {}).get("query_npk_ct_sha256"),
-                         fresh_npk_target_identical=r["target_npk_ct_sha256"] == (old or {}).get("target_npk_ct_sha256")))
+        old_ok = old is not None and old["status"] == "selected"
+        old_map = star3d.parse_aln(os.path.join(ROOT, old["output_aln"]))["pairs"] if old_ok else None
+        star.append(dict(pair_id=r["pair_id"], fresh_run_id=r["run_id"], primary_run_id=old["selected_run_id"] if old else None,
+                         fresh_status=r["status"], primary_status=old["status"] if old else None,
+                         fresh_aligned_n=r["aligned_n"], primary_aligned_n=old["aligned_n"] if old_ok else None,
+                         fresh_rmsd=r["rmsd"], primary_rmsd=old["rmsd"] if old_ok else None,
+                         mapping_identical=(new_map == old_map) if (new_map is not None and old_map is not None) else False,
+                         fresh_npk_query_identical=old_ok and r["query_npk_ct_sha256"] == old["query_npk_ct_sha256"],
+                         fresh_npk_target_identical=old_ok and r["target_npk_ct_sha256"] == old["target_npk_ct_sha256"]))
     rec["star3d"] = star
     for s in star:
         print(s)

@@ -68,7 +68,11 @@ star3d:
   image: star3d-runtime:1                  # ubuntu:22.04 + openjdk-8-jre-headless, linux/amd64
   parameters: defaults                     # -r 4.0 -s 3 -g -5 -e -2 -m 3 -i 0 -t 1 (STAR3D.java)
   extra_flags: ["-p"]                      # superposition PDB output only
-  replicates: 3                            # unseeded java.util.Random in Bron-Kerbosch pivot
+  alignments_per_pair: 1                   # v5 single-run policy: ONE forward alignment (query -> target), no replicates,
+                                           # no reverse run, no automatic retry. (Historical v1-v4 runs used 3 replicates x
+                                           # 2 directions because of an unseeded java.util.Random in the Bron-Kerbosch pivot;
+                                           # archived in archive/v4_multi_run_history/.)
+  primary_outputs: results/primary_star3d_outputs.tsv
   input_policy: family interval of one chain, model 1, author numbering, mmCIF source
 
 annotation:

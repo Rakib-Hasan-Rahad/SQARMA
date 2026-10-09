@@ -1,5 +1,15 @@
-"""Phase 4: run ORIGINAL STAR3D v1.2 (defaults) for frozen pairs, both directions, with replicates;
-parse its raw .aln output.
+"""Phase 4: run ORIGINAL STAR3D v1.2 (defaults) for frozen pairs and parse its raw .aln output.
+
+v5 single-run policy: for each selected RNA pair, one forward alignment from original STAR3D v1.2 with default
+parameters, following the package's preprocessing procedure (README):
+    java -cp STAR3D.jar Preprocess <query_id> <query_chain>
+    java -cp STAR3D.jar Preprocess <target_id> <target_chain>
+    java -jar STAR3D.jar -o <output.aln> -p <query_id> <query_chain> <target_id> <target_chain>
+Order is the frozen query -> target order of results/selected_pairs.tsv (query = lexicographically smaller stable
+ID). Steps per pair: prepared-input validation -> Preprocess once per RNA (bundled MC-Annotate + RemovePseudoknots)
+-> preprocessing-product validation -> ONE alignment -> raw-output preservation + parse validation. No replicate
+loop, no reverse-direction run and no automatic retry: a failure is recorded as a failure. Fresh, never-reused
+attempt directories and in-container checksums are file-management safeguards, not repetitions.
 
 Usage: star3d.py run PAIR_ID [PAIR_ID ...]      (append rows to results/run_manifest.tsv)
        star3d.py parse FILE                      (print parsed mapping)
@@ -185,7 +195,7 @@ def preprocess_and_gate(work, ids, rep_order, base, tag, k, common, runner=None)
     return True
 
 
-def run_pair(pair, reps, inputs, nrep):
+def run_pair(pair, reps, inputs):
     if sha(TARBALL) != CFG["sources"]["star3d_sha256"]:
         raise SystemExit("STAR3D tarball checksum mismatch")
     pid = pair["pair_id"]
@@ -217,42 +227,43 @@ def run_pair(pair, reps, inputs, nrep):
                   rfam_release=CFG["reference"]["rfam_release"], seed_sha256=CFG["reference"]["seed_sha256"],
                   code_commit=code_commit())
     if not preprocess_and_gate(work, ids, (q["rep_id"], t_["rep_id"]), base, tag, k, common):
-        print(f"{pid}: preprocessing/mount gate FAILED -> no alignment runs for this attempt (see manifest)", flush=True)
-        return
+        print(f"{pid}: preprocessing/mount gate FAILED -> no alignment for this attempt (see manifest)", flush=True)
+        return None, "preprocessing_gate_failed"
     flags = " ".join(CFG["star3d"]["extra_flags"])
-    for direction, (a, b) in (("forward", (q, t_)), ("reverse", (t_, q))):
-        sa, ca, ha = ids[a["rep_id"]]
-        sb, cb, hb = ids[b["rep_id"]]
-        for r_ in range(1, nrep + 1):
-            run_id = f"{tag}__a{k}__{direction}__rep{r_}"
-            out = f"out/{run_id}.aln"
-            cmd = f"java -jar STAR3D.jar -o {out} {flags} {sa} {ca} {sb} {cb}"
-            rc, dur, st, so = docker(work, cmd, os.path.join(base, "logs", run_id))
-            outp = os.path.join(work, out)
-            if rc != 0:
-                status, n, rmsd, note = "failed", None, None, "nonzero exit"
-            elif not os.path.exists(outp):
-                status, n, rmsd = "no_alignment", 0, None
-                note = "no output file; stdout: " + so.strip()[:120]
-            else:
-                pa = parse_aln(outp)
-                status = "completed" if not pa["bad_lines"] else "parse_error"
-                n, rmsd, note = pa["aligned_n"], pa["rmsd"], ";".join(pa["bad_lines"])[:200]
-            si = os.path.join(work, "STAR3D_struct_info")
-            append_manifest(dict(common, run_id=run_id, direction=direction, replicate=r_, query_rep=a["rep_id"],
-                                 target_rep=b["rep_id"], query_star3d_id=sa, target_star3d_id=sb, query_chain=ca,
-                                 target_chain=cb, command=cmd, query_input_sha256=ha, target_input_sha256=hb,
-                                 query_npk_ct_sha256=sha(os.path.join(si, f"{sa}_{ca}.npk.ct")),
-                                 target_npk_ct_sha256=sha(os.path.join(si, f"{sb}_{cb}.npk.ct")),
-                                 query_mca_sha256=sha(os.path.join(si, f"{sa}.mca")),
-                                 target_mca_sha256=sha(os.path.join(si, f"{sb}.mca")),
-                                 parameters="defaults (-r 4.0 -s 3 -g -5 -e -2 -m 3 -i 0 -t 1) + " + flags,
-                                 started_utc=st, duration_s=dur, exit_code=rc,
-                                 stdout=os.path.relpath(os.path.join(base, "logs", run_id + ".stdout"), ROOT),
-                                 stderr=os.path.relpath(os.path.join(base, "logs", run_id + ".stderr"), ROOT),
-                                 output_aln=os.path.relpath(outp, ROOT) if os.path.exists(outp) else None,
-                                 output_sha256=sha(outp), aligned_n=n, rmsd=rmsd, status=status, note=note))
-            print(run_id, status, n, rmsd, f"{dur}s", flush=True)
+    a, b = q, t_                                   # fixed forward order: query -> target (recorded explicitly)
+    sa, ca, ha = ids[a["rep_id"]]
+    sb, cb, hb = ids[b["rep_id"]]
+    run_id = f"{tag}__a{k}__forward"
+    out = f"out/{run_id}.aln"
+    cmd = f"java -jar STAR3D.jar -o {out} {flags} {sa} {ca} {sb} {cb}"
+    rc, dur, st, so = docker(work, cmd, os.path.join(base, "logs", run_id))
+    outp = os.path.join(work, out)
+    if rc != 0:
+        status, n, rmsd, note = "failed", None, None, "nonzero exit (not retried)"
+    elif not os.path.exists(outp):
+        status, n, rmsd = "no_alignment", 0, None
+        note = "no output file; stdout: " + so.strip()[:120]
+    else:
+        pa = parse_aln(outp)
+        status = "completed" if not pa["bad_lines"] else "parse_error"
+        n, rmsd, note = pa["aligned_n"], pa["rmsd"], ";".join(pa["bad_lines"])[:200]
+    si = os.path.join(work, "STAR3D_struct_info")
+    append_manifest(dict(common, run_id=run_id, direction="forward", replicate="NA", query_rep=a["rep_id"],
+                         target_rep=b["rep_id"], query_star3d_id=sa, target_star3d_id=sb, query_chain=ca,
+                         target_chain=cb, command=cmd, query_input_sha256=ha, target_input_sha256=hb,
+                         query_npk_ct_sha256=sha(os.path.join(si, f"{sa}_{ca}.npk.ct")),
+                         target_npk_ct_sha256=sha(os.path.join(si, f"{sb}_{cb}.npk.ct")),
+                         query_mca_sha256=sha(os.path.join(si, f"{sa}.mca")),
+                         target_mca_sha256=sha(os.path.join(si, f"{sb}.mca")),
+                         parameters="defaults (-r 4.0 -s 3 -g -5 -e -2 -m 3 -i 0 -t 1) + " + flags,
+                         started_utc=st, duration_s=dur, exit_code=rc,
+                         stdout=os.path.relpath(os.path.join(base, "logs", run_id + ".stdout"), ROOT),
+                         stderr=os.path.relpath(os.path.join(base, "logs", run_id + ".stderr"), ROOT),
+                         output_aln=os.path.relpath(outp, ROOT) if os.path.exists(outp) else None,
+                         output_sha256=sha(outp), aligned_n=n, rmsd=rmsd, status=status,
+                         note=f"single forward alignment; order {a['rep_id']} -> {b['rep_id']}" + (f"; {note}" if note else "")))
+    print(run_id, status, n, rmsd, f"{dur}s", flush=True)
+    return run_id, status
 
 
 def main():
@@ -264,7 +275,7 @@ def main():
     reps = {r["rep_id"]: r for r in read_tsv(P("results/selected_representatives.tsv"))}
     inputs = {r["rep_id"]: r for r in read_tsv(P("mappings/aligner_inputs.tsv"))}
     for pid in sys.argv[2:]:
-        run_pair(pairs[pid], reps, inputs, CFG["star3d"]["replicates"])
+        run_pair(pairs[pid], reps, inputs)
 
 
 if __name__ == "__main__":

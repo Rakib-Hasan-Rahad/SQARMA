@@ -1,4 +1,4 @@
-pair_id	i	j	label	pair_class	rfam_target	adjusted_target	star3d_forward_target	rfam_status	adjusted_status	star3d_forward_status	eligible_all_three	exclusion
+pair_id	i	j	label	pair_class	rfam_target	adjusted_target	star3d_target	rfam_status	adjusted_status	star3d_status	eligible_all_three	exclusion
 RF00522__6VUI_A__7REX_A	1	20	cWW	canonical	1-21	1-22	1-22	no_annotated_target_pair	exact_class_preserved	exact_class_preserved	yes	NA
 RF00522__6VUI_A__7REX_A	2	19	cWW	canonical	2-20	2-21	2-21	no_annotated_target_pair	exact_class_preserved	exact_class_preserved	yes	NA
 RF00522__6VUI_A__7REX_A	3	18	cWW	canonical	3-19	3-20	3-20	no_annotated_target_pair	exact_class_preserved	exact_class_preserved	yes	NA

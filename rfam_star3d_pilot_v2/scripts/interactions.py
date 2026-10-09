@@ -9,6 +9,11 @@ Normalization: one record per unordered intrachain pair, ordered by row index (i
 is reversed the two edge letters are swapped (e.g. tSH <-> tHS) and s35 <-> s53.
 Canonical = cWW with identities AU/UA/GC/CG; cWW GU/UG = 'wobble'; everything else 'noncanonical'.
 
+v5 single-run policy: methods are 'rfam' (standard seed) and 'star3d' (the ONE selected original-STAR3D output per
+pair). source_side 'query' evaluates the query RNA's interactions through the forward mapping; source_side 'target'
+evaluates the target RNA's interactions through the INVERTED same mapping (no additional STAR3D run). Each side has
+its own denominator.
+
 Outputs: annotations/normalized/<rep>.tsv, results/interaction_comparison.tsv, results/interaction_summary.tsv
 Usage: interactions.py [pair_id ...]
 """
@@ -314,21 +319,11 @@ def normalized(rep_id, rep, cw):
     return out, interchain
 
 
-def primary_replicates(comp):
-    """(pair_id, direction) -> lowest-numbered replicate whose run completed (failed replicates stay in tables)."""
-    ok = {}
-    for r in comp:
-        if r["category"] != "technical_failure_or_no_alignment":
-            key = (r["pair_id"], r["direction"])
-            ok[key] = min(ok.get(key, 99), int(r["replicate"]))
-    return ok
-
-
 SYMMETRY_LOG = {}
-METHODS = ("rfam", "star3d_forward", "star3d_reverse")
-COMPARISONS = {"rfam_vs_star3d_forward": ("rfam", "star3d_forward"),
-               "rfam_vs_star3d_reverse": ("rfam", "star3d_reverse"),
-               "all_three_methods": METHODS}
+METHODS = ("rfam", "star3d")
+COMPARISONS = {"rfam_vs_star3d": ("rfam", "star3d")}
+SIDE_LABEL = {"query": "query RNA interactions via the forward mapping",
+              "target": "target RNA interactions via the inverted forward mapping (no additional STAR3D run)"}
 
 
 def invert_injective(mp, what):
@@ -382,21 +377,17 @@ def main(only):
     cw = defaultdict(dict)
     for r in read_tsv(P("results/residue_crosswalk.tsv")):
         cw[r["rep_id"]][int(r["row_index1"])] = r
-    comp_all = read_tsv(P("results/correspondence_comparison.tsv"))
-    prim = primary_replicates(comp_all)
-    comp = [r for r in comp_all if prim.get((r["pair_id"], r["direction"])) == int(r["replicate"])]
+    comp = read_tsv(P("results/correspondence_comparison.tsv"))     # one selected STAR3D run per pair
     ann, interch = {}, {}
     rows, summ = [], []
     for p in pairs:
         for rid in (p["query_rep"], p["target_rep"]):
             if rid not in ann:
                 ann[rid], interch[rid] = normalized(rid, reps[rid], cw[rid])
-        fwd = {int(r["source_row_index"]): r for r in comp if r["pair_id"] == p["pair_id"] and r["direction"] == "forward"}
-        rev = {int(r["source_row_index"]): r for r in comp if r["pair_id"] == p["pair_id"] and r["direction"] == "reverse"}
+        fwd = {int(r["source_row_index"]): r for r in comp if r["pair_id"] == p["pair_id"]}
         maps = {
             "rfam": {i: int(r["rfam_partner"]) for i, r in fwd.items() if r["rfam_partner"] != "NA"},
-            "star3d_forward": {i: int(r["star3d_partner"]) for i, r in fwd.items() if r["star3d_partner"] != "NA"},
-            "star3d_reverse": {i: int(r["star3d_partner"]) for i, r in rev.items() if r["star3d_partner"] != "NA"},
+            "star3d": {i: int(r["star3d_partner"]) for i, r in fwd.items() if r["star3d_partner"] != "NA"},
         }
         for src_side in ("query", "target"):
             src = p["query_rep"] if src_side == "query" else p["target_rep"]
@@ -412,7 +403,8 @@ def main(only):
             for s in ann[src]:
                 per = {meth: method_status(s, m[meth], tix, tobs, tmask) for meth in METHODS}
                 smasked = "yes" if (s["i"] in smask or s["j"] in smask) else "no"
-                row = dict(pair_id=p["pair_id"], source_side=src_side, source_rep=src, target_rep=tgt,
+                row = dict(pair_id=p["pair_id"], source_side=src_side, source_side_meaning=SIDE_LABEL[src_side],
+                           source_rep=src, target_rep=tgt,
                            i=s["i"], j=s["j"], label=s["label"], pair_class=s["pair_class"], kind=s["kind"],
                            source_masked=smasked)
                 for meth in METHODS:
@@ -433,7 +425,8 @@ def main(only):
                 pres = {meth: sum(r[f"{meth}_status"] == "exact_class_preserved" for r in ss) for meth in METHODS}
                 for cname, meths in COMPARISONS.items():
                     el = [r for r in ss if r[f"eligible_{cname}"] == "yes"]
-                    rec = dict(pair_id=p["pair_id"], source_side=src_side, interaction_class=cls, comparison=cname,
+                    rec = dict(pair_id=p["pair_id"], source_side=src_side, source_side_meaning=SIDE_LABEL[src_side],
+                               interaction_class=cls, comparison=cname,
                                source_interactions=len(ss), eligible_unmasked=len(el),
                                interchain_lines_excluded=interch[src])
                     for meth in METHODS:
@@ -450,8 +443,7 @@ def main(only):
     for s in summ:
         if s["interaction_class"] == "all" and s["source_side"] == "query":
             print(s["pair_id"], s["comparison"], "n", s["source_interactions"], "eligible", s["eligible_unmasked"],
-                  "rfam", s["rfam_preserved_eligible"], "fwd", s["star3d_forward_preserved_eligible"],
-                  "rev", s["star3d_reverse_preserved_eligible"])
+                  "rfam", s["rfam_preserved_eligible"], "star3d", s["star3d_preserved_eligible"])
 
 
 if __name__ == "__main__":

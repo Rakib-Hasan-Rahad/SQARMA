@@ -97,7 +97,7 @@ def select_anchors(rows, S, T, cs, ct, rule, start, end, flank):
 def main(pair_id, start, end, rule="shared", flank="2"):
     start, end, flank = int(start), int(end), int(flank)
     rows = [r for r in read_tsv("results/correspondence_comparison.tsv")
-            if r["pair_id"] == pair_id and r["direction"] == "forward" and r["replicate"] == "1"]
+            if r["pair_id"] == pair_id]          # v5: one selected STAR3D run per pair
     pair = next(p for p in read_tsv("results/selected_pairs.tsv") if p["pair_id"] == pair_id)
     (S, cs), (T, ct) = residues(pair["query_rep"]), residues(pair["target_rep"])
     anchors = select_anchors(rows, S, T, cs, ct, rule, start, end, flank)

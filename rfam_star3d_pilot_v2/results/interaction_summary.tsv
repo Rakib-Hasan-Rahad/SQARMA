@@ -1,211 +1,71 @@
-pair_id	source_side	interaction_class	comparison	source_interactions	eligible_unmasked	interchain_lines_excluded	rfam_coverage_all	rfam_preserved_all	rfam_preserved_eligible	star3d_forward_coverage_all	star3d_forward_preserved_all	star3d_forward_preserved_eligible	star3d_reverse_coverage_all	star3d_reverse_preserved_all	star3d_reverse_preserved_eligible
-RF00059__2GDI_X__3D2G_A	query	all	rfam_vs_star3d_forward	127	68	8	119	91	57	114	94	58	114	94	NA
-RF00059__2GDI_X__3D2G_A	query	all	rfam_vs_star3d_reverse	127	68	8	119	91	57	114	94	NA	114	94	58
-RF00059__2GDI_X__3D2G_A	query	all	all_three_methods	127	68	8	119	91	57	114	94	58	114	94	58
-RF00059__2GDI_X__3D2G_A	query	canonical	rfam_vs_star3d_forward	21	7	8	21	16	7	19	17	7	19	17	NA
-RF00059__2GDI_X__3D2G_A	query	canonical	rfam_vs_star3d_reverse	21	7	8	21	16	7	19	17	NA	19	17	7
-RF00059__2GDI_X__3D2G_A	query	canonical	all_three_methods	21	7	8	21	16	7	19	17	7	19	17	7
-RF00059__2GDI_X__3D2G_A	query	wobble	rfam_vs_star3d_forward	1	0	8	1	1	0	1	1	0	1	1	NA
-RF00059__2GDI_X__3D2G_A	query	wobble	rfam_vs_star3d_reverse	1	0	8	1	1	0	1	1	NA	1	1	0
-RF00059__2GDI_X__3D2G_A	query	wobble	all_three_methods	1	0	8	1	1	0	1	1	0	1	1	0
-RF00059__2GDI_X__3D2G_A	query	noncanonical	rfam_vs_star3d_forward	13	6	8	12	10	5	12	10	5	12	10	NA
-RF00059__2GDI_X__3D2G_A	query	noncanonical	rfam_vs_star3d_reverse	13	6	8	12	10	5	12	10	NA	12	10	5
-RF00059__2GDI_X__3D2G_A	query	noncanonical	all_three_methods	13	6	8	12	10	5	12	10	5	12	10	5
-RF00059__2GDI_X__3D2G_A	query	stack	rfam_vs_star3d_forward	92	55	8	85	64	45	82	66	46	82	66	NA
-RF00059__2GDI_X__3D2G_A	query	stack	rfam_vs_star3d_reverse	92	55	8	85	64	45	82	66	NA	82	66	46
-RF00059__2GDI_X__3D2G_A	query	stack	all_three_methods	92	55	8	85	64	45	82	66	46	82	66	46
-RF00059__2GDI_X__3D2G_A	target	all	rfam_vs_star3d_forward	121	68	0	117	91	57	120	94	57	120	94	NA
-RF00059__2GDI_X__3D2G_A	target	all	rfam_vs_star3d_reverse	121	68	0	117	91	57	120	94	NA	120	94	57
-RF00059__2GDI_X__3D2G_A	target	all	all_three_methods	121	68	0	117	91	57	120	94	57	120	94	57
-RF00059__2GDI_X__3D2G_A	target	canonical	rfam_vs_star3d_forward	19	7	0	18	16	7	19	17	7	19	17	NA
-RF00059__2GDI_X__3D2G_A	target	canonical	rfam_vs_star3d_reverse	19	7	0	18	16	7	19	17	NA	19	17	7
-RF00059__2GDI_X__3D2G_A	target	canonical	all_three_methods	19	7	0	18	16	7	19	17	7	19	17	7
-RF00059__2GDI_X__3D2G_A	target	wobble	rfam_vs_star3d_forward	1	0	0	1	1	0	1	1	0	1	1	NA
-RF00059__2GDI_X__3D2G_A	target	wobble	rfam_vs_star3d_reverse	1	0	0	1	1	0	1	1	NA	1	1	0
-RF00059__2GDI_X__3D2G_A	target	wobble	all_three_methods	1	0	0	1	1	0	1	1	0	1	1	0
-RF00059__2GDI_X__3D2G_A	target	noncanonical	rfam_vs_star3d_forward	15	8	0	15	10	5	15	10	5	15	10	NA
-RF00059__2GDI_X__3D2G_A	target	noncanonical	rfam_vs_star3d_reverse	15	8	0	15	10	5	15	10	NA	15	10	5
-RF00059__2GDI_X__3D2G_A	target	noncanonical	all_three_methods	15	8	0	15	10	5	15	10	5	15	10	5
-RF00059__2GDI_X__3D2G_A	target	stack	rfam_vs_star3d_forward	86	53	0	83	64	45	85	66	45	85	66	NA
-RF00059__2GDI_X__3D2G_A	target	stack	rfam_vs_star3d_reverse	86	53	0	83	64	45	85	66	NA	85	66	45
-RF00059__2GDI_X__3D2G_A	target	stack	all_three_methods	86	53	0	83	64	45	85	66	45	85	66	45
-RF00162__2GIS_A__4KQY_A	query	all	rfam_vs_star3d_forward	153	26	0	142	111	21	35	24	19	35	24	NA
-RF00162__2GIS_A__4KQY_A	query	all	rfam_vs_star3d_reverse	153	26	0	142	111	21	35	24	NA	35	24	19
-RF00162__2GIS_A__4KQY_A	query	all	all_three_methods	153	26	0	142	111	21	35	24	19	35	24	19
-RF00162__2GIS_A__4KQY_A	query	canonical	rfam_vs_star3d_forward	28	5	0	27	25	5	6	5	4	6	5	NA
-RF00162__2GIS_A__4KQY_A	query	canonical	rfam_vs_star3d_reverse	28	5	0	27	25	5	6	5	NA	6	5	4
-RF00162__2GIS_A__4KQY_A	query	canonical	all_three_methods	28	5	0	27	25	5	6	5	4	6	5	4
-RF00162__2GIS_A__4KQY_A	query	wobble	rfam_vs_star3d_forward	2	0	0	2	1	0	0	0	0	0	0	NA
-RF00162__2GIS_A__4KQY_A	query	wobble	rfam_vs_star3d_reverse	2	0	0	2	1	0	0	0	NA	0	0	0
-RF00162__2GIS_A__4KQY_A	query	wobble	all_three_methods	2	0	0	2	1	0	0	0	0	0	0	0
-RF00162__2GIS_A__4KQY_A	query	noncanonical	rfam_vs_star3d_forward	10	1	0	9	6	0	2	0	0	2	0	NA
-RF00162__2GIS_A__4KQY_A	query	noncanonical	rfam_vs_star3d_reverse	10	1	0	9	6	0	2	0	NA	2	0	0
-RF00162__2GIS_A__4KQY_A	query	noncanonical	all_three_methods	10	1	0	9	6	0	2	0	0	2	0	0
-RF00162__2GIS_A__4KQY_A	query	stack	rfam_vs_star3d_forward	113	20	0	104	79	16	27	19	15	27	19	NA
-RF00162__2GIS_A__4KQY_A	query	stack	rfam_vs_star3d_reverse	113	20	0	104	79	16	27	19	NA	27	19	15
-RF00162__2GIS_A__4KQY_A	query	stack	all_three_methods	113	20	0	104	79	16	27	19	15	27	19	15
-RF00162__2GIS_A__4KQY_A	target	all	rfam_vs_star3d_forward	180	5	0	128	111	4	32	24	3	32	24	NA
-RF00162__2GIS_A__4KQY_A	target	all	rfam_vs_star3d_reverse	180	5	0	128	111	4	32	24	NA	32	24	3
-RF00162__2GIS_A__4KQY_A	target	all	all_three_methods	180	5	0	128	111	4	32	24	3	32	24	3
-RF00162__2GIS_A__4KQY_A	target	canonical	rfam_vs_star3d_forward	37	0	0	27	27	0	7	5	0	7	5	NA
-RF00162__2GIS_A__4KQY_A	target	canonical	rfam_vs_star3d_reverse	37	0	0	27	27	0	7	5	NA	7	5	0
-RF00162__2GIS_A__4KQY_A	target	canonical	all_three_methods	37	0	0	27	27	0	7	5	0	7	5	0
-RF00162__2GIS_A__4KQY_A	target	wobble	rfam_vs_star3d_forward	0	0	0	0	0	0	0	0	0	0	0	NA
-RF00162__2GIS_A__4KQY_A	target	wobble	rfam_vs_star3d_reverse	0	0	0	0	0	0	0	0	NA	0	0	0
-RF00162__2GIS_A__4KQY_A	target	wobble	all_three_methods	0	0	0	0	0	0	0	0	0	0	0	0
-RF00162__2GIS_A__4KQY_A	target	noncanonical	rfam_vs_star3d_forward	7	1	0	7	5	0	1	0	0	1	0	NA
-RF00162__2GIS_A__4KQY_A	target	noncanonical	rfam_vs_star3d_reverse	7	1	0	7	5	0	1	0	NA	1	0	0
-RF00162__2GIS_A__4KQY_A	target	noncanonical	all_three_methods	7	1	0	7	5	0	1	0	0	1	0	0
-RF00162__2GIS_A__4KQY_A	target	stack	rfam_vs_star3d_forward	136	4	0	94	79	4	24	19	3	24	19	NA
-RF00162__2GIS_A__4KQY_A	target	stack	rfam_vs_star3d_reverse	136	4	0	94	79	4	24	19	NA	24	19	3
-RF00162__2GIS_A__4KQY_A	target	stack	all_three_methods	136	4	0	94	79	4	24	19	3	24	19	3
-RF00174__4GXY_A__6VMY_A	query	all	rfam_vs_star3d_forward	245	1	0	154	107	1	38	26	1	38	26	NA
-RF00174__4GXY_A__6VMY_A	query	all	rfam_vs_star3d_reverse	245	0	0	154	107	0	38	26	NA	38	26	0
-RF00174__4GXY_A__6VMY_A	query	all	all_three_methods	245	0	0	154	107	0	38	26	0	38	26	0
-RF00174__4GXY_A__6VMY_A	query	canonical	rfam_vs_star3d_forward	41	0	0	27	20	0	8	7	0	8	7	NA
-RF00174__4GXY_A__6VMY_A	query	canonical	rfam_vs_star3d_reverse	41	0	0	27	20	0	8	7	NA	8	7	0
-RF00174__4GXY_A__6VMY_A	query	canonical	all_three_methods	41	0	0	27	20	0	8	7	0	8	7	0
-RF00174__4GXY_A__6VMY_A	query	wobble	rfam_vs_star3d_forward	4	0	0	2	1	0	1	1	0	1	1	NA
-RF00174__4GXY_A__6VMY_A	query	wobble	rfam_vs_star3d_reverse	4	0	0	2	1	0	1	1	NA	1	1	0
-RF00174__4GXY_A__6VMY_A	query	wobble	all_three_methods	4	0	0	2	1	0	1	1	0	1	1	0
-RF00174__4GXY_A__6VMY_A	query	noncanonical	rfam_vs_star3d_forward	12	0	0	7	4	0	1	0	0	1	0	NA
-RF00174__4GXY_A__6VMY_A	query	noncanonical	rfam_vs_star3d_reverse	12	0	0	7	4	0	1	0	NA	1	0	0
-RF00174__4GXY_A__6VMY_A	query	noncanonical	all_three_methods	12	0	0	7	4	0	1	0	0	1	0	0
-RF00174__4GXY_A__6VMY_A	query	stack	rfam_vs_star3d_forward	188	1	0	118	82	1	28	18	1	28	18	NA
-RF00174__4GXY_A__6VMY_A	query	stack	rfam_vs_star3d_reverse	188	0	0	118	82	0	28	18	NA	28	18	0
-RF00174__4GXY_A__6VMY_A	query	stack	all_three_methods	188	0	0	118	82	0	28	18	0	28	18	0
-RF00174__4GXY_A__6VMY_A	target	all	rfam_vs_star3d_forward	191	24	0	151	107	21	33	26	19	33	26	NA
-RF00174__4GXY_A__6VMY_A	target	all	rfam_vs_star3d_reverse	191	24	0	151	107	21	33	26	NA	33	26	19
-RF00174__4GXY_A__6VMY_A	target	all	all_three_methods	191	23	0	151	107	20	33	26	18	33	26	18
-RF00174__4GXY_A__6VMY_A	target	canonical	rfam_vs_star3d_forward	36	5	0	30	19	3	8	8	5	8	8	NA
-RF00174__4GXY_A__6VMY_A	target	canonical	rfam_vs_star3d_reverse	36	5	0	30	19	3	8	8	NA	8	8	5
-RF00174__4GXY_A__6VMY_A	target	canonical	all_three_methods	36	5	0	30	19	3	8	8	5	8	8	5
-RF00174__4GXY_A__6VMY_A	target	wobble	rfam_vs_star3d_forward	4	0	0	2	2	0	0	0	0	0	0	NA
-RF00174__4GXY_A__6VMY_A	target	wobble	rfam_vs_star3d_reverse	4	0	0	2	2	0	0	0	NA	0	0	0
-RF00174__4GXY_A__6VMY_A	target	wobble	all_three_methods	4	0	0	2	2	0	0	0	0	0	0	0
-RF00174__4GXY_A__6VMY_A	target	noncanonical	rfam_vs_star3d_forward	6	1	0	6	4	1	1	0	0	1	0	NA
-RF00174__4GXY_A__6VMY_A	target	noncanonical	rfam_vs_star3d_reverse	6	1	0	6	4	1	1	0	NA	1	0	0
-RF00174__4GXY_A__6VMY_A	target	noncanonical	all_three_methods	6	1	0	6	4	1	1	0	0	1	0	0
-RF00174__4GXY_A__6VMY_A	target	stack	rfam_vs_star3d_forward	145	18	0	113	82	17	24	18	14	24	18	NA
-RF00174__4GXY_A__6VMY_A	target	stack	rfam_vs_star3d_reverse	145	18	0	113	82	17	24	18	NA	24	18	14
-RF00174__4GXY_A__6VMY_A	target	stack	all_three_methods	145	17	0	113	82	16	24	18	13	24	18	13
-RF00442__5U3G_B__7MLW_F	query	all	rfam_vs_star3d_forward	125	103	0	123	94	84	113	87	81	113	87	NA
-RF00442__5U3G_B__7MLW_F	query	all	rfam_vs_star3d_reverse	125	103	0	123	94	84	113	87	NA	113	87	81
-RF00442__5U3G_B__7MLW_F	query	all	all_three_methods	125	103	0	123	94	84	113	87	81	113	87	81
-RF00442__5U3G_B__7MLW_F	query	canonical	rfam_vs_star3d_forward	22	19	0	22	17	17	20	15	15	20	15	NA
-RF00442__5U3G_B__7MLW_F	query	canonical	rfam_vs_star3d_reverse	22	19	0	22	17	17	20	15	NA	20	15	15
-RF00442__5U3G_B__7MLW_F	query	canonical	all_three_methods	22	19	0	22	17	17	20	15	15	20	15	15
-RF00442__5U3G_B__7MLW_F	query	wobble	rfam_vs_star3d_forward	2	1	0	2	1	1	2	0	0	2	0	NA
-RF00442__5U3G_B__7MLW_F	query	wobble	rfam_vs_star3d_reverse	2	1	0	2	1	1	2	0	NA	2	0	0
-RF00442__5U3G_B__7MLW_F	query	wobble	all_three_methods	2	1	0	2	1	1	2	0	0	2	0	0
-RF00442__5U3G_B__7MLW_F	query	noncanonical	rfam_vs_star3d_forward	9	8	0	8	6	6	8	6	6	8	6	NA
-RF00442__5U3G_B__7MLW_F	query	noncanonical	rfam_vs_star3d_reverse	9	8	0	8	6	6	8	6	NA	8	6	6
-RF00442__5U3G_B__7MLW_F	query	noncanonical	all_three_methods	9	8	0	8	6	6	8	6	6	8	6	6
-RF00442__5U3G_B__7MLW_F	query	stack	rfam_vs_star3d_forward	92	75	0	91	70	60	83	66	60	83	66	NA
-RF00442__5U3G_B__7MLW_F	query	stack	rfam_vs_star3d_reverse	92	75	0	91	70	60	83	66	NA	83	66	60
-RF00442__5U3G_B__7MLW_F	query	stack	all_three_methods	92	75	0	91	70	60	83	66	60	83	66	60
-RF00442__5U3G_B__7MLW_F	target	all	rfam_vs_star3d_forward	200	105	0	125	94	83	126	87	79	126	87	NA
-RF00442__5U3G_B__7MLW_F	target	all	rfam_vs_star3d_reverse	200	105	0	125	94	83	126	87	NA	126	87	79
-RF00442__5U3G_B__7MLW_F	target	all	all_three_methods	200	105	0	125	94	83	126	87	79	126	87	79
-RF00442__5U3G_B__7MLW_F	target	canonical	rfam_vs_star3d_forward	33	16	0	18	16	14	17	14	14	17	14	NA
-RF00442__5U3G_B__7MLW_F	target	canonical	rfam_vs_star3d_reverse	33	16	0	18	16	14	17	14	NA	17	14	14
-RF00442__5U3G_B__7MLW_F	target	canonical	all_three_methods	33	16	0	18	16	14	17	14	14	17	14	14
-RF00442__5U3G_B__7MLW_F	target	wobble	rfam_vs_star3d_forward	3	2	0	2	2	2	2	1	1	2	1	NA
-RF00442__5U3G_B__7MLW_F	target	wobble	rfam_vs_star3d_reverse	3	2	0	2	2	2	2	1	NA	2	1	1
-RF00442__5U3G_B__7MLW_F	target	wobble	all_three_methods	3	2	0	2	2	2	2	1	1	2	1	1
-RF00442__5U3G_B__7MLW_F	target	noncanonical	rfam_vs_star3d_forward	13	9	0	11	6	6	12	6	6	12	6	NA
-RF00442__5U3G_B__7MLW_F	target	noncanonical	rfam_vs_star3d_reverse	13	9	0	11	6	6	12	6	NA	12	6	6
-RF00442__5U3G_B__7MLW_F	target	noncanonical	all_three_methods	13	9	0	11	6	6	12	6	6	12	6	6
-RF00442__5U3G_B__7MLW_F	target	stack	rfam_vs_star3d_forward	151	78	0	94	70	61	95	66	58	95	66	NA
-RF00442__5U3G_B__7MLW_F	target	stack	rfam_vs_star3d_reverse	151	78	0	94	70	61	95	66	NA	95	66	58
-RF00442__5U3G_B__7MLW_F	target	stack	all_three_methods	151	78	0	94	70	61	95	66	58	95	66	58
-RF00522__3FU2_A__6VUI_A	query	all	rfam_vs_star3d_forward	49	40	2	41	31	31	48	34	33	48	34	NA
-RF00522__3FU2_A__6VUI_A	query	all	rfam_vs_star3d_reverse	49	40	2	41	31	31	48	34	NA	48	34	31
-RF00522__3FU2_A__6VUI_A	query	all	all_three_methods	49	40	2	41	31	31	48	34	33	48	34	31
-RF00522__3FU2_A__6VUI_A	query	canonical	rfam_vs_star3d_forward	8	7	2	7	6	6	8	7	7	8	6	NA
-RF00522__3FU2_A__6VUI_A	query	canonical	rfam_vs_star3d_reverse	8	7	2	7	6	6	8	7	NA	8	6	6
-RF00522__3FU2_A__6VUI_A	query	canonical	all_three_methods	8	7	2	7	6	6	8	7	7	8	6	6
-RF00522__3FU2_A__6VUI_A	query	wobble	rfam_vs_star3d_forward	0	0	2	0	0	0	0	0	0	0	0	NA
-RF00522__3FU2_A__6VUI_A	query	wobble	rfam_vs_star3d_reverse	0	0	2	0	0	0	0	0	NA	0	0	0
-RF00522__3FU2_A__6VUI_A	query	wobble	all_three_methods	0	0	2	0	0	0	0	0	0	0	0	0
-RF00522__3FU2_A__6VUI_A	query	noncanonical	rfam_vs_star3d_forward	8	7	2	7	5	5	8	5	5	8	5	NA
-RF00522__3FU2_A__6VUI_A	query	noncanonical	rfam_vs_star3d_reverse	8	7	2	7	5	5	8	5	NA	8	5	5
-RF00522__3FU2_A__6VUI_A	query	noncanonical	all_three_methods	8	7	2	7	5	5	8	5	5	8	5	5
-RF00522__3FU2_A__6VUI_A	query	stack	rfam_vs_star3d_forward	33	26	2	27	20	20	32	22	21	32	23	NA
-RF00522__3FU2_A__6VUI_A	query	stack	rfam_vs_star3d_reverse	33	26	2	27	20	20	32	22	NA	32	23	20
-RF00522__3FU2_A__6VUI_A	query	stack	all_three_methods	33	26	2	27	20	20	32	22	21	32	23	20
-RF00522__3FU2_A__6VUI_A	target	all	rfam_vs_star3d_forward	48	36	0	39	31	31	43	34	32	44	34	NA
-RF00522__3FU2_A__6VUI_A	target	all	rfam_vs_star3d_reverse	48	39	0	39	31	31	43	34	NA	44	34	34
-RF00522__3FU2_A__6VUI_A	target	all	all_three_methods	48	36	0	39	31	31	43	34	32	44	34	32
-RF00522__3FU2_A__6VUI_A	target	canonical	rfam_vs_star3d_forward	7	6	0	6	6	6	7	7	6	6	6	NA
-RF00522__3FU2_A__6VUI_A	target	canonical	rfam_vs_star3d_reverse	7	6	0	6	6	6	7	7	NA	6	6	6
-RF00522__3FU2_A__6VUI_A	target	canonical	all_three_methods	7	6	0	6	6	6	7	7	6	6	6	6
-RF00522__3FU2_A__6VUI_A	target	wobble	rfam_vs_star3d_forward	0	0	0	0	0	0	0	0	0	0	0	NA
-RF00522__3FU2_A__6VUI_A	target	wobble	rfam_vs_star3d_reverse	0	0	0	0	0	0	0	0	NA	0	0	0
-RF00522__3FU2_A__6VUI_A	target	wobble	all_three_methods	0	0	0	0	0	0	0	0	0	0	0	0
-RF00522__3FU2_A__6VUI_A	target	noncanonical	rfam_vs_star3d_forward	9	7	0	7	5	5	8	5	5	9	5	NA
-RF00522__3FU2_A__6VUI_A	target	noncanonical	rfam_vs_star3d_reverse	9	7	0	7	5	5	8	5	NA	9	5	5
-RF00522__3FU2_A__6VUI_A	target	noncanonical	all_three_methods	9	7	0	7	5	5	8	5	5	9	5	5
-RF00522__3FU2_A__6VUI_A	target	stack	rfam_vs_star3d_forward	32	23	0	26	20	20	28	22	21	29	23	NA
-RF00522__3FU2_A__6VUI_A	target	stack	rfam_vs_star3d_reverse	32	26	0	26	20	20	28	22	NA	29	23	23
-RF00522__3FU2_A__6VUI_A	target	stack	all_three_methods	32	23	0	26	20	20	28	22	21	29	23	21
-RF00522__3FU2_A__7REX_A	query	all	rfam_vs_star3d_forward	49	44	2	44	20	20	49	34	31	49	34	NA
-RF00522__3FU2_A__7REX_A	query	all	rfam_vs_star3d_reverse	49	44	2	44	20	20	49	34	NA	49	34	31
-RF00522__3FU2_A__7REX_A	query	all	all_three_methods	49	44	2	44	20	20	49	34	31	49	34	31
-RF00522__3FU2_A__7REX_A	query	canonical	rfam_vs_star3d_forward	8	7	2	7	0	0	8	5	5	8	5	NA
-RF00522__3FU2_A__7REX_A	query	canonical	rfam_vs_star3d_reverse	8	7	2	7	0	0	8	5	NA	8	5	5
-RF00522__3FU2_A__7REX_A	query	canonical	all_three_methods	8	7	2	7	0	0	8	5	5	8	5	5
-RF00522__3FU2_A__7REX_A	query	wobble	rfam_vs_star3d_forward	0	0	2	0	0	0	0	0	0	0	0	NA
-RF00522__3FU2_A__7REX_A	query	wobble	rfam_vs_star3d_reverse	0	0	2	0	0	0	0	0	NA	0	0	0
-RF00522__3FU2_A__7REX_A	query	wobble	all_three_methods	0	0	2	0	0	0	0	0	0	0	0	0
-RF00522__3FU2_A__7REX_A	query	noncanonical	rfam_vs_star3d_forward	8	8	2	8	3	3	8	6	6	8	6	NA
-RF00522__3FU2_A__7REX_A	query	noncanonical	rfam_vs_star3d_reverse	8	8	2	8	3	3	8	6	NA	8	6	6
-RF00522__3FU2_A__7REX_A	query	noncanonical	all_three_methods	8	8	2	8	3	3	8	6	6	8	6	6
-RF00522__3FU2_A__7REX_A	query	stack	rfam_vs_star3d_forward	33	29	2	29	17	17	33	23	20	33	23	NA
-RF00522__3FU2_A__7REX_A	query	stack	rfam_vs_star3d_reverse	33	29	2	29	17	17	33	23	NA	33	23	20
-RF00522__3FU2_A__7REX_A	query	stack	all_three_methods	33	29	2	29	17	17	33	23	20	33	23	20
-RF00522__3FU2_A__7REX_A	target	all	rfam_vs_star3d_forward	49	39	6	40	20	19	44	34	31	44	34	NA
-RF00522__3FU2_A__7REX_A	target	all	rfam_vs_star3d_reverse	49	39	6	40	20	19	44	34	NA	44	34	31
-RF00522__3FU2_A__7REX_A	target	all	all_three_methods	49	39	6	40	20	19	44	34	31	44	34	31
-RF00522__3FU2_A__7REX_A	target	canonical	rfam_vs_star3d_forward	5	4	6	4	0	0	5	5	4	5	5	NA
-RF00522__3FU2_A__7REX_A	target	canonical	rfam_vs_star3d_reverse	5	4	6	4	0	0	5	5	NA	5	5	4
-RF00522__3FU2_A__7REX_A	target	canonical	all_three_methods	5	4	6	4	0	0	5	5	4	5	5	4
-RF00522__3FU2_A__7REX_A	target	wobble	rfam_vs_star3d_forward	0	0	6	0	0	0	0	0	0	0	0	NA
-RF00522__3FU2_A__7REX_A	target	wobble	rfam_vs_star3d_reverse	0	0	6	0	0	0	0	0	NA	0	0	0
-RF00522__3FU2_A__7REX_A	target	wobble	all_three_methods	0	0	6	0	0	0	0	0	0	0	0	0
-RF00522__3FU2_A__7REX_A	target	noncanonical	rfam_vs_star3d_forward	9	8	6	8	3	3	8	6	6	8	6	NA
-RF00522__3FU2_A__7REX_A	target	noncanonical	rfam_vs_star3d_reverse	9	8	6	8	3	3	8	6	NA	8	6	6
-RF00522__3FU2_A__7REX_A	target	noncanonical	all_three_methods	9	8	6	8	3	3	8	6	6	8	6	6
-RF00522__3FU2_A__7REX_A	target	stack	rfam_vs_star3d_forward	35	27	6	28	17	16	31	23	21	31	23	NA
-RF00522__3FU2_A__7REX_A	target	stack	rfam_vs_star3d_reverse	35	27	6	28	17	16	31	23	NA	31	23	21
-RF00522__3FU2_A__7REX_A	target	stack	all_three_methods	35	27	6	28	17	16	31	23	21	31	23	21
-RF00522__6VUI_A__7REX_A	query	all	rfam_vs_star3d_forward	48	47	0	48	19	19	47	29	29	47	29	NA
-RF00522__6VUI_A__7REX_A	query	all	rfam_vs_star3d_reverse	48	47	0	48	19	19	47	29	NA	47	29	29
-RF00522__6VUI_A__7REX_A	query	all	all_three_methods	48	47	0	48	19	19	47	29	29	47	29	29
-RF00522__6VUI_A__7REX_A	query	canonical	rfam_vs_star3d_forward	7	7	0	7	0	0	7	5	5	7	5	NA
-RF00522__6VUI_A__7REX_A	query	canonical	rfam_vs_star3d_reverse	7	7	0	7	0	0	7	5	NA	7	5	5
-RF00522__6VUI_A__7REX_A	query	canonical	all_three_methods	7	7	0	7	0	0	7	5	5	7	5	5
-RF00522__6VUI_A__7REX_A	query	wobble	rfam_vs_star3d_forward	0	0	0	0	0	0	0	0	0	0	0	NA
-RF00522__6VUI_A__7REX_A	query	wobble	rfam_vs_star3d_reverse	0	0	0	0	0	0	0	0	NA	0	0	0
-RF00522__6VUI_A__7REX_A	query	wobble	all_three_methods	0	0	0	0	0	0	0	0	0	0	0	0
-RF00522__6VUI_A__7REX_A	query	noncanonical	rfam_vs_star3d_forward	9	9	0	9	2	2	9	4	4	9	4	NA
-RF00522__6VUI_A__7REX_A	query	noncanonical	rfam_vs_star3d_reverse	9	9	0	9	2	2	9	4	NA	9	4	4
-RF00522__6VUI_A__7REX_A	query	noncanonical	all_three_methods	9	9	0	9	2	2	9	4	4	9	4	4
-RF00522__6VUI_A__7REX_A	query	stack	rfam_vs_star3d_forward	32	31	0	32	17	17	31	20	20	31	20	NA
-RF00522__6VUI_A__7REX_A	query	stack	rfam_vs_star3d_reverse	32	31	0	32	17	17	31	20	NA	31	20	20
-RF00522__6VUI_A__7REX_A	query	stack	all_three_methods	32	31	0	32	17	17	31	20	20	31	20	20
-RF00522__6VUI_A__7REX_A	target	all	rfam_vs_star3d_forward	49	39	6	44	19	17	43	29	28	43	29	NA
-RF00522__6VUI_A__7REX_A	target	all	rfam_vs_star3d_reverse	49	39	6	44	19	17	43	29	NA	43	29	28
-RF00522__6VUI_A__7REX_A	target	all	all_three_methods	49	39	6	44	19	17	43	29	28	43	29	28
-RF00522__6VUI_A__7REX_A	target	canonical	rfam_vs_star3d_forward	5	5	6	5	0	0	5	5	5	5	5	NA
-RF00522__6VUI_A__7REX_A	target	canonical	rfam_vs_star3d_reverse	5	5	6	5	0	0	5	5	NA	5	5	5
-RF00522__6VUI_A__7REX_A	target	canonical	all_three_methods	5	5	6	5	0	0	5	5	5	5	5	5
-RF00522__6VUI_A__7REX_A	target	wobble	rfam_vs_star3d_forward	0	0	6	0	0	0	0	0	0	0	0	NA
-RF00522__6VUI_A__7REX_A	target	wobble	rfam_vs_star3d_reverse	0	0	6	0	0	0	0	0	NA	0	0	0
-RF00522__6VUI_A__7REX_A	target	wobble	all_three_methods	0	0	6	0	0	0	0	0	0	0	0	0
-RF00522__6VUI_A__7REX_A	target	noncanonical	rfam_vs_star3d_forward	9	6	6	8	2	2	7	4	4	7	4	NA
-RF00522__6VUI_A__7REX_A	target	noncanonical	rfam_vs_star3d_reverse	9	6	6	8	2	2	7	4	NA	7	4	4
-RF00522__6VUI_A__7REX_A	target	noncanonical	all_three_methods	9	6	6	8	2	2	7	4	4	7	4	4
-RF00522__6VUI_A__7REX_A	target	stack	rfam_vs_star3d_forward	35	28	6	31	17	15	31	20	19	31	20	NA
-RF00522__6VUI_A__7REX_A	target	stack	rfam_vs_star3d_reverse	35	28	6	31	17	15	31	20	NA	31	20	19
-RF00522__6VUI_A__7REX_A	target	stack	all_three_methods	35	28	6	31	17	15	31	20	19	31	20	19
+pair_id	source_side	source_side_meaning	interaction_class	comparison	source_interactions	eligible_unmasked	interchain_lines_excluded	rfam_coverage_all	rfam_preserved_all	rfam_preserved_eligible	star3d_coverage_all	star3d_preserved_all	star3d_preserved_eligible
+RF00059__2GDI_X__3D2G_A	query	query RNA interactions via the forward mapping	all	rfam_vs_star3d	127	68	8	119	91	57	114	94	58
+RF00059__2GDI_X__3D2G_A	query	query RNA interactions via the forward mapping	canonical	rfam_vs_star3d	21	7	8	21	16	7	19	17	7
+RF00059__2GDI_X__3D2G_A	query	query RNA interactions via the forward mapping	wobble	rfam_vs_star3d	1	0	8	1	1	0	1	1	0
+RF00059__2GDI_X__3D2G_A	query	query RNA interactions via the forward mapping	noncanonical	rfam_vs_star3d	13	6	8	12	10	5	12	10	5
+RF00059__2GDI_X__3D2G_A	query	query RNA interactions via the forward mapping	stack	rfam_vs_star3d	92	55	8	85	64	45	82	66	46
+RF00059__2GDI_X__3D2G_A	target	target RNA interactions via the inverted forward mapping (no additional STAR3D run)	all	rfam_vs_star3d	121	68	0	117	91	57	120	94	57
+RF00059__2GDI_X__3D2G_A	target	target RNA interactions via the inverted forward mapping (no additional STAR3D run)	canonical	rfam_vs_star3d	19	7	0	18	16	7	19	17	7
+RF00059__2GDI_X__3D2G_A	target	target RNA interactions via the inverted forward mapping (no additional STAR3D run)	wobble	rfam_vs_star3d	1	0	0	1	1	0	1	1	0
+RF00059__2GDI_X__3D2G_A	target	target RNA interactions via the inverted forward mapping (no additional STAR3D run)	noncanonical	rfam_vs_star3d	15	8	0	15	10	5	15	10	5
+RF00059__2GDI_X__3D2G_A	target	target RNA interactions via the inverted forward mapping (no additional STAR3D run)	stack	rfam_vs_star3d	86	53	0	83	64	45	85	66	45
+RF00162__2GIS_A__4KQY_A	query	query RNA interactions via the forward mapping	all	rfam_vs_star3d	153	26	0	142	111	21	35	24	19
+RF00162__2GIS_A__4KQY_A	query	query RNA interactions via the forward mapping	canonical	rfam_vs_star3d	28	5	0	27	25	5	6	5	4
+RF00162__2GIS_A__4KQY_A	query	query RNA interactions via the forward mapping	wobble	rfam_vs_star3d	2	0	0	2	1	0	0	0	0
+RF00162__2GIS_A__4KQY_A	query	query RNA interactions via the forward mapping	noncanonical	rfam_vs_star3d	10	1	0	9	6	0	2	0	0
+RF00162__2GIS_A__4KQY_A	query	query RNA interactions via the forward mapping	stack	rfam_vs_star3d	113	20	0	104	79	16	27	19	15
+RF00162__2GIS_A__4KQY_A	target	target RNA interactions via the inverted forward mapping (no additional STAR3D run)	all	rfam_vs_star3d	180	5	0	128	111	4	32	24	3
+RF00162__2GIS_A__4KQY_A	target	target RNA interactions via the inverted forward mapping (no additional STAR3D run)	canonical	rfam_vs_star3d	37	0	0	27	27	0	7	5	0
+RF00162__2GIS_A__4KQY_A	target	target RNA interactions via the inverted forward mapping (no additional STAR3D run)	wobble	rfam_vs_star3d	0	0	0	0	0	0	0	0	0
+RF00162__2GIS_A__4KQY_A	target	target RNA interactions via the inverted forward mapping (no additional STAR3D run)	noncanonical	rfam_vs_star3d	7	1	0	7	5	0	1	0	0
+RF00162__2GIS_A__4KQY_A	target	target RNA interactions via the inverted forward mapping (no additional STAR3D run)	stack	rfam_vs_star3d	136	4	0	94	79	4	24	19	3
+RF00174__4GXY_A__6VMY_A	query	query RNA interactions via the forward mapping	all	rfam_vs_star3d	245	1	0	154	107	1	38	26	1
+RF00174__4GXY_A__6VMY_A	query	query RNA interactions via the forward mapping	canonical	rfam_vs_star3d	41	0	0	27	20	0	8	7	0
+RF00174__4GXY_A__6VMY_A	query	query RNA interactions via the forward mapping	wobble	rfam_vs_star3d	4	0	0	2	1	0	1	1	0
+RF00174__4GXY_A__6VMY_A	query	query RNA interactions via the forward mapping	noncanonical	rfam_vs_star3d	12	0	0	7	4	0	1	0	0
+RF00174__4GXY_A__6VMY_A	query	query RNA interactions via the forward mapping	stack	rfam_vs_star3d	188	1	0	118	82	1	28	18	1
+RF00174__4GXY_A__6VMY_A	target	target RNA interactions via the inverted forward mapping (no additional STAR3D run)	all	rfam_vs_star3d	191	24	0	151	107	21	33	26	19
+RF00174__4GXY_A__6VMY_A	target	target RNA interactions via the inverted forward mapping (no additional STAR3D run)	canonical	rfam_vs_star3d	36	5	0	30	19	3	8	8	5
+RF00174__4GXY_A__6VMY_A	target	target RNA interactions via the inverted forward mapping (no additional STAR3D run)	wobble	rfam_vs_star3d	4	0	0	2	2	0	0	0	0
+RF00174__4GXY_A__6VMY_A	target	target RNA interactions via the inverted forward mapping (no additional STAR3D run)	noncanonical	rfam_vs_star3d	6	1	0	6	4	1	1	0	0
+RF00174__4GXY_A__6VMY_A	target	target RNA interactions via the inverted forward mapping (no additional STAR3D run)	stack	rfam_vs_star3d	145	18	0	113	82	17	24	18	14
+RF00442__5U3G_B__7MLW_F	query	query RNA interactions via the forward mapping	all	rfam_vs_star3d	125	103	0	123	94	84	113	87	81
+RF00442__5U3G_B__7MLW_F	query	query RNA interactions via the forward mapping	canonical	rfam_vs_star3d	22	19	0	22	17	17	20	15	15
+RF00442__5U3G_B__7MLW_F	query	query RNA interactions via the forward mapping	wobble	rfam_vs_star3d	2	1	0	2	1	1	2	0	0
+RF00442__5U3G_B__7MLW_F	query	query RNA interactions via the forward mapping	noncanonical	rfam_vs_star3d	9	8	0	8	6	6	8	6	6
+RF00442__5U3G_B__7MLW_F	query	query RNA interactions via the forward mapping	stack	rfam_vs_star3d	92	75	0	91	70	60	83	66	60
+RF00442__5U3G_B__7MLW_F	target	target RNA interactions via the inverted forward mapping (no additional STAR3D run)	all	rfam_vs_star3d	200	105	0	125	94	83	126	87	79
+RF00442__5U3G_B__7MLW_F	target	target RNA interactions via the inverted forward mapping (no additional STAR3D run)	canonical	rfam_vs_star3d	33	16	0	18	16	14	17	14	14
+RF00442__5U3G_B__7MLW_F	target	target RNA interactions via the inverted forward mapping (no additional STAR3D run)	wobble	rfam_vs_star3d	3	2	0	2	2	2	2	1	1
+RF00442__5U3G_B__7MLW_F	target	target RNA interactions via the inverted forward mapping (no additional STAR3D run)	noncanonical	rfam_vs_star3d	13	9	0	11	6	6	12	6	6
+RF00442__5U3G_B__7MLW_F	target	target RNA interactions via the inverted forward mapping (no additional STAR3D run)	stack	rfam_vs_star3d	151	78	0	94	70	61	95	66	58
+RF00522__3FU2_A__6VUI_A	query	query RNA interactions via the forward mapping	all	rfam_vs_star3d	49	40	2	41	31	31	48	34	33
+RF00522__3FU2_A__6VUI_A	query	query RNA interactions via the forward mapping	canonical	rfam_vs_star3d	8	7	2	7	6	6	8	7	7
+RF00522__3FU2_A__6VUI_A	query	query RNA interactions via the forward mapping	wobble	rfam_vs_star3d	0	0	2	0	0	0	0	0	0
+RF00522__3FU2_A__6VUI_A	query	query RNA interactions via the forward mapping	noncanonical	rfam_vs_star3d	8	7	2	7	5	5	8	5	5
+RF00522__3FU2_A__6VUI_A	query	query RNA interactions via the forward mapping	stack	rfam_vs_star3d	33	26	2	27	20	20	32	22	21
+RF00522__3FU2_A__6VUI_A	target	target RNA interactions via the inverted forward mapping (no additional STAR3D run)	all	rfam_vs_star3d	48	36	0	39	31	31	43	34	32
+RF00522__3FU2_A__6VUI_A	target	target RNA interactions via the inverted forward mapping (no additional STAR3D run)	canonical	rfam_vs_star3d	7	6	0	6	6	6	7	7	6
+RF00522__3FU2_A__6VUI_A	target	target RNA interactions via the inverted forward mapping (no additional STAR3D run)	wobble	rfam_vs_star3d	0	0	0	0	0	0	0	0	0
+RF00522__3FU2_A__6VUI_A	target	target RNA interactions via the inverted forward mapping (no additional STAR3D run)	noncanonical	rfam_vs_star3d	9	7	0	7	5	5	8	5	5
+RF00522__3FU2_A__6VUI_A	target	target RNA interactions via the inverted forward mapping (no additional STAR3D run)	stack	rfam_vs_star3d	32	23	0	26	20	20	28	22	21
+RF00522__3FU2_A__7REX_A	query	query RNA interactions via the forward mapping	all	rfam_vs_star3d	49	44	2	44	20	20	49	34	31
+RF00522__3FU2_A__7REX_A	query	query RNA interactions via the forward mapping	canonical	rfam_vs_star3d	8	7	2	7	0	0	8	5	5
+RF00522__3FU2_A__7REX_A	query	query RNA interactions via the forward mapping	wobble	rfam_vs_star3d	0	0	2	0	0	0	0	0	0
+RF00522__3FU2_A__7REX_A	query	query RNA interactions via the forward mapping	noncanonical	rfam_vs_star3d	8	8	2	8	3	3	8	6	6
+RF00522__3FU2_A__7REX_A	query	query RNA interactions via the forward mapping	stack	rfam_vs_star3d	33	29	2	29	17	17	33	23	20
+RF00522__3FU2_A__7REX_A	target	target RNA interactions via the inverted forward mapping (no additional STAR3D run)	all	rfam_vs_star3d	49	39	6	40	20	19	44	34	31
+RF00522__3FU2_A__7REX_A	target	target RNA interactions via the inverted forward mapping (no additional STAR3D run)	canonical	rfam_vs_star3d	5	4	6	4	0	0	5	5	4
+RF00522__3FU2_A__7REX_A	target	target RNA interactions via the inverted forward mapping (no additional STAR3D run)	wobble	rfam_vs_star3d	0	0	6	0	0	0	0	0	0
+RF00522__3FU2_A__7REX_A	target	target RNA interactions via the inverted forward mapping (no additional STAR3D run)	noncanonical	rfam_vs_star3d	9	8	6	8	3	3	8	6	6
+RF00522__3FU2_A__7REX_A	target	target RNA interactions via the inverted forward mapping (no additional STAR3D run)	stack	rfam_vs_star3d	35	27	6	28	17	16	31	23	21
+RF00522__6VUI_A__7REX_A	query	query RNA interactions via the forward mapping	all	rfam_vs_star3d	48	47	0	48	19	19	47	29	29
+RF00522__6VUI_A__7REX_A	query	query RNA interactions via the forward mapping	canonical	rfam_vs_star3d	7	7	0	7	0	0	7	5	5
+RF00522__6VUI_A__7REX_A	query	query RNA interactions via the forward mapping	wobble	rfam_vs_star3d	0	0	0	0	0	0	0	0	0
+RF00522__6VUI_A__7REX_A	query	query RNA interactions via the forward mapping	noncanonical	rfam_vs_star3d	9	9	0	9	2	2	9	4	4
+RF00522__6VUI_A__7REX_A	query	query RNA interactions via the forward mapping	stack	rfam_vs_star3d	32	31	0	32	17	17	31	20	20
+RF00522__6VUI_A__7REX_A	target	target RNA interactions via the inverted forward mapping (no additional STAR3D run)	all	rfam_vs_star3d	49	39	6	44	19	17	43	29	28
+RF00522__6VUI_A__7REX_A	target	target RNA interactions via the inverted forward mapping (no additional STAR3D run)	canonical	rfam_vs_star3d	5	5	6	5	0	0	5	5	5
+RF00522__6VUI_A__7REX_A	target	target RNA interactions via the inverted forward mapping (no additional STAR3D run)	wobble	rfam_vs_star3d	0	0	6	0	0	0	0	0	0
+RF00522__6VUI_A__7REX_A	target	target RNA interactions via the inverted forward mapping (no additional STAR3D run)	noncanonical	rfam_vs_star3d	9	6	6	8	2	2	7	4	4
+RF00522__6VUI_A__7REX_A	target	target RNA interactions via the inverted forward mapping (no additional STAR3D run)	stack	rfam_vs_star3d	35	28	6	31	17	15	31	20	19
