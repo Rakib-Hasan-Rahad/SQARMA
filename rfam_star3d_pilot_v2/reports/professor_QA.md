@@ -1,6 +1,6 @@
 # Questions the professor is likely to ask
 
-*Answers trace to files in this study. Prepared by an AI agent; not yet reviewed by the researcher.*
+*Answers trace to files in this study (v2.1, cohort v1.1). Prepared by an AI agent; not yet reviewed by the researcher.*
 
 **Why these families and pairs?**
 The rule was declared before any run, in `config.yaml`. A family qualified if it had at least two explicitly
@@ -10,12 +10,17 @@ manually, and representatives were picked by a fixed rule order: verified row, n
 cognate-ligand-bound state, coverage, method, resolution, ID. All eligible pairs within a family were run.
 
 **Are the sequences really distinct and natural?**
-Yes, for the primary RNAs, as far as could be checked. Each one was compared with its source genome by NCBI BLAST
-(`review/natural_sequence_comparison.tsv`). 3FU2, 7REX and 6VMY match their genomes over the family interval; 6VUI
-matches a related *Thermoanaerobacter* genome and is described as *T. tengcongensis* in its papers (the restricted
-check timed out). 2GIS and 4KQY differ from their genomes only in peripheral loops (P3 apex, P4 apex), which are
-masked. 4GXY matches its genome except at its terminal residues. Exact-string diversity and natural-source diversity
-are reported separately (`results/sequence_groups.tsv`).
+Each representative now has an evidence-strength category from a direct search of the claimed source genome for the
+exact sequence (`review/exact_source_check.tsv`):
+- **Exact source genome:** the whole family interval is found exactly — 6VUI (*T. tengcongensis* MB4), 3FU2
+  (*B. subtilis* 168) and 7REX (*C. antarcticum* CP1).
+- **Native core verified, termini differ:** 4GXY, 6VMY and 2GDI. Only their masked terminal residues differ from the
+  genome.
+- **Engineered inside the interval:** 2GIS and 4KQY (P3/P4 loops), 5U3G, and 3D2G (5′ redesign).
+- **Related species only:** 7MLW, because the source strain's genome isn't available.
+
+A match to a related species is never treated as source verification. Exact-string diversity and natural-source
+diversity are reported separately (`results/sequence_groups.tsv`).
 
 **Organism or expression host?**
 Source comes from the RNA entity's own records and the papers, never from a protein or the expression host. Two
@@ -66,17 +71,33 @@ Every table states them (`results/pair_summary.tsv`):
 - reproduced assessable pairs;
 - per-residue categories that sum to the row length.
 
-Interaction comparisons use the same common-assessable source set for both methods.
+Interaction comparisons use, for each pair of methods compared, the same eligible source set (both endpoints unmasked, mapped and observed, with no masked target under either method). Reverse-direction results have their own denominator.
 
 **Does disagreement mean Rfam is wrong?**
-No. Most disagreements are explained by STAR3D aligning only one module (SAM-I, cobalamin), by engineered regions, or
-by loop register uncertainty. Only one region reaches "supported candidate": the 7REX row's P1 3′ strand in RF00522.
-There, four kinds of evidence converge: the seed's own SS_cons implies non-Watson–Crick pairs, the structure shows
-Watson–Crick pairs, base-pair preservation favours STAR3D, and a method-neutral fit agrees. Even that is a candidate
-for curator review, not proof.
+No. The disagreements break down as follows:
+- **Coverage differences:** most are STAR3D aligning only one module (SAM-I, cobalamin). A missing mapping is not a
+  wrong correspondence.
+- **Engineered regions:** these are masked and not interpreted.
+- **Loop register:** in L1 of preQ1-I, the seed's partners fit *better* than STAR3D's.
+
+One region reaches "supported candidate": the P1 3′ strand of the 7REX row in RF00522. The evidence converges:
+- the seed's own SS_cons implies non-Watson–Crick pairs for that row;
+- the crystal shows Watson–Crick pairs in all three copies of the RNA (U1–A22 in two);
+- STAR3D preserves those pairs;
+- shared-correspondence anchor fits favour STAR3D for that strand under two anchor sets;
+- a one-column local adjustment of the row fixes all five pairs without losing any interaction.
+
+It is still a candidate for curator review, not proof, and canonical-pair agreement is partly circular with STAR3D's
+own preprocessing.
+
+**Why was SAM-I demoted?**
+Both SAM-I constructs are engineered inside the family interval (2GIS: P3 apex shortened and P4 loop changed;
+4KQY: GAAA tetraloop in P3). Masking removes those positions from interpretation, but STAR3D still sees them. Its
+25-nt alignment concentrated on the engineered P3. In cohort v1.1 the pair is therefore *exploratory
+(engineered, technical)*. This reason is partly outcome-informed, and the pair and runs are retained.
 
 **What are the limits?**
-- Three primary families and seven pairs that share RNAs.
+- Two primary families (4 primary pairs; the 3 preQ1 pairs share RNAs) and 3 exploratory pairs.
 - Engineering is pervasive, and several construct papers were inaccessible.
 - STAR3D runs under emulation, and its preprocessing overlaps the canonical-pair evaluation.
 - FR3D labels its output as not finalized.

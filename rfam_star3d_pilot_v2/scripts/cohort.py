@@ -76,6 +76,8 @@ def main(freeze):
                            masked_label_seq_ids=rep.get("masked", []), relevance=rep.get("relevance"),
                            ligand_state=rep.get("ligand_state"), alternatives=rep.get("alternatives"),
                            decision=rep["decision"], reason=rep.get("reason"),
+                           evidence_strength=rep.get("evidence_strength", "unknown"),
+                           engineering_status=rep.get("engineering_status", "unknown"),
                            mmcif_pdbx_mutation=r["entity_pdbx_mutation"], mmcif_struct_ref_seq_dif=r["struct_ref_seq_dif"],
                            link_status=r["link_status"], reviewer="AI agent (Claude); no human approval"))
             if rep["decision"] in ("accept", "accept_with_masked_engineering", "exploratory"):
@@ -98,7 +100,8 @@ def main(freeze):
         by_fam[r["rfam_acc"]].append(r)
     for fam, rs in sorted(by_fam.items()):
         tier = "primary" if all(x["decision"] != "exploratory" for x in rs) and \
-            dec[fam]["decision"].startswith("primary") else "exploratory"
+            dec[fam]["decision"].startswith("primary") else \
+            ("exploratory_engineered_technical" if dec[fam]["decision"] == "exploratory_engineered_technical" else "exploratory")
         for a, b in itertools.combinations(sorted(rs, key=lambda x: x["key"]), 2):
             if a["link_status"] != "verified" or b["link_status"] != "verified":
                 continue

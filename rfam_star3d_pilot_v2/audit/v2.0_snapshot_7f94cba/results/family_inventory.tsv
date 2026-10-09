@@ -1,0 +1,168 @@
+rfam_acc	rfam_id	type	model_length_RF	in_standard_seed	seed_rows	mapping_pdb_entries	mapping_chain_regions	candidate_chains	candidate_chain_sequence_groups	chains_without_seqres	explicit_gr_links	explicit_linked_rows	explicit_linked_distinct_sequences	explicit_linked_taxa_all	explicit_linked_taxa_nonsynthetic	sequence_only_candidate_chains	any_linked_distinct_sequences	review_status	screen_status	shortlisted	verified_eligible_representatives_primary	exploratory_representatives	review_decision
+RF00001	5S_rRNA	Gene; rRNA;	120	yes	712	1797	2175	2175	121	23	0	0	0	0	0	388	19	not_applicable	excluded	no	unknown	unknown	not reviewed
+RF00002	5_8S_rRNA	Gene; rRNA;	154	yes	61	599	661	661	51	22	0	0	0	0	0	496	8	not_applicable	excluded	no	unknown	unknown	not reviewed
+RF00003	U1	Gene; snRNA; splicing;	166	yes	100	7	11	11	3	0	1	1	1	1	1	6	2	not_applicable	excluded	no	unknown	unknown	not reviewed
+RF00004	U2	Gene; snRNA; splicing;	192	yes	208	93	93	93	14	0	0	0	0	0	0	24	3	not_applicable	excluded	no	unknown	unknown	not reviewed
+RF00005	tRNA	Gene; tRNA;	71	yes	954	1634	3222	3190	425	31	0	0	0	0	0	502	43	not_applicable	excluded	no	unknown	unknown	not reviewed
+RF00007	U12	Gene; snRNA; splicing;	151	yes	62	2	2	2	1	0	0	0	0	0	0	2	1	not_applicable	excluded	no	unknown	unknown	not reviewed
+RF00008	Hammerhead_3	Gene; ribozyme;	54	yes	85	0	0	9	3	0	9	3	3	1	0	0	3	pending	pass	no_beyond_cap	unknown	unknown	not reviewed
+RF00009	RNaseP_nuc	Gene; ribozyme;	301	yes	116	4	4	4	2	0	0	0	0	0	0	2	1	not_applicable	excluded	no	unknown	unknown	not reviewed
+RF00010	RNaseP_bact_a	Gene; ribozyme;	367	yes	458	8	8	8	5	0	0	0	0	0	0	1	1	not_applicable	excluded	no	unknown	unknown	not reviewed
+RF00011	RNaseP_bact_b	Gene; ribozyme;	365	yes	114	3	4	4	3	0	0	0	0	0	0	0	0	not_applicable	excluded	no	unknown	unknown	not reviewed
+RF00012	U3	Gene; snRNA; snoRNA; CD-box;	219	yes	87	3	3	3	1	0	0	0	0	0	0	3	1	not_applicable	excluded	no	unknown	unknown	not reviewed
+RF00013	6S	Gene;	187	yes	150	1	1	1	1	0	1	1	1	1	1	0	1	not_applicable	excluded	no	unknown	unknown	not reviewed
+RF00015	U4	Gene; snRNA; splicing;	138	yes	177	33	33	33	10	0	12	7	6	3	2	21	8	verified	pass	yes	0	0	excluded_from_primary
+RF00017	Metazoa_SRP	Gene;	299	yes	91	17	19	19	13	0	0	0	0	0	0	1	1	not_applicable	excluded	no	unknown	unknown	not reviewed
+RF00020	U5	Gene; snRNA; splicing;	117	yes	180	102	102	102	12	0	0	0	0	0	0	51	1	not_applicable	excluded	no	unknown	unknown	not reviewed
+RF00023	tmRNA	Gene;	374	yes	477	20	24	24	10	0	0	0	0	0	0	13	4	not_applicable	excluded	no	unknown	unknown	not reviewed
+RF00024	Telomerase-vert	Gene;	443	yes	37	18	20	20	1	0	0	0	0	0	0	20	1	not_applicable	excluded	no	unknown	unknown	not reviewed
+RF00025	Telomerase-cil	Gene;	165	yes	21	6	6	6	1	0	3	1	1	1	1	3	1	not_applicable	excluded	no	unknown	unknown	not reviewed
+RF00026	U6	Gene; snRNA; splicing;	105	yes	188	103	104	104	17	0	0	0	0	0	0	32	3	not_applicable	excluded	no	unknown	unknown	not reviewed
+RF00027	let-7	Gene; miRNA;	84	yes	64	7	7	7	5	0	2	1	1	1	1	5	7	not_applicable	excluded	no	unknown	unknown	not reviewed
+RF00028	Intron_gpI	Intron;	253	yes	12	45	52	52	23	0	0	0	0	0	0	0	0	not_applicable	excluded	no	unknown	unknown	not reviewed
+RF00029	Intron_gpII	Intron;	77	yes	92	31	35	35	20	0	0	0	0	0	0	6	2	not_applicable	excluded	no	unknown	unknown	not reviewed
+RF00030	RNase_MRP	Gene; ribozyme;	266	yes	66	5	5	5	3	0	0	0	0	0	0	1	1	not_applicable	excluded	no	unknown	unknown	not reviewed
+RF00031	SECIS_1	Cis-reg;	64	yes	61	2	2	2	1	0	0	0	0	0	0	0	0	not_applicable	excluded	no	unknown	unknown	not reviewed
+RF00032	Histone3	Cis-reg;	46	yes	50	1	1	12	5	0	11	4	4	3	2	1	4	verified	pass	yes	0	0	excluded_from_primary
+RF00036	RRE	Cis-reg;	337	yes	65	1	1	1	1	0	0	0	0	0	0	0	0	not_applicable	excluded	no	unknown	unknown	not reviewed
+RF00037	IRE_I	Cis-reg;	36	yes	62	1	2	2	1	0	2	1	1	1	1	0	1	not_applicable	excluded	no	unknown	unknown	not reviewed
+RF00044	Phage_pRNA	Gene;	118	yes	5	3	15	15	2	0	15	2	2	1	1	0	3	pending	pass	no_beyond_cap	unknown	unknown	not reviewed
+RF00050	FMN	Cis-reg; riboswitch;	138	yes	146	8	8	8	1	0	8	2	1	2	1	0	1	not_applicable	excluded	no	unknown	unknown	not reviewed
+RF00051	mir-17	Gene; miRNA;	80	yes	234	1	1	1	1	0	0	0	0	0	0	1	2	not_applicable	excluded	no	unknown	unknown	not reviewed
+RF00059	TPP	Cis-reg; riboswitch;	105	yes	115	28	38	38	6	0	34	6	4	3	2	2	4	verified	pass	yes	0	2	exploratory
+RF00061	IRES_HCV	Cis-reg; IRES;	352	yes	51	25	25	25	5	0	0	0	0	0	0	3	2	not_applicable	excluded	no	unknown	unknown	not reviewed
+RF00066	U7	Gene; snRNA;	62	yes	49	1	1	1	1	0	0	0	0	0	0	0	0	not_applicable	excluded	no	unknown	unknown	not reviewed
+RF00075	MIR166	Gene; miRNA;	111	yes	31	1	1	1	1	0	0	0	0	0	0	1	1	not_applicable	excluded	no	unknown	unknown	not reviewed
+RF00080	Manganese	Cis-reg; riboswitch;	177	yes	29	2	4	4	2	0	0	0	0	0	0	0	0	not_applicable	excluded	no	unknown	unknown	not reviewed
+RF00083	GlmZ_SraJ	Gene; sRNA;	214	yes	22	2	2	2	1	0	2	1	1	1	1	0	1	not_applicable	excluded	no	unknown	unknown	not reviewed
+RF00094	HDV_ribozyme	Gene; ribozyme;	89	yes	33	14	14	14	5	0	0	0	0	0	0	0	0	not_applicable	excluded	no	unknown	unknown	not reviewed
+RF00100	7SK	Gene;	331	yes	45	10	13	13	5	0	0	0	0	0	0	0	0	not_applicable	excluded	no	unknown	unknown	not reviewed
+RF00102	VA	Gene;	159	yes	55	1	1	1	1	0	1	1	1	1	1	0	1	not_applicable	excluded	no	unknown	unknown	not reviewed
+RF00106	RNAI	Gene; antisense;	102	yes	10	2	2	2	1	0	0	0	0	0	0	2	1	not_applicable	excluded	no	unknown	unknown	not reviewed
+RF00114	S15	Cis-reg; leader;	117	yes	78	2	2	2	2	0	0	0	0	0	0	0	0	not_applicable	excluded	no	unknown	unknown	not reviewed
+RF00162	SAM	Cis-reg; riboswitch;	108	yes	457	28	29	29	24	0	28	24	24	4	3	1	24	verified	pass	yes	2	0	primary
+RF00163	Hammerhead_1	Gene; ribozyme;	45	yes	29	2	2	2	1	0	0	0	0	0	0	0	0	not_applicable	excluded	no	unknown	unknown	not reviewed
+RF00164	s2m	Cis-reg;	43	yes	39	1	1	1	1	0	1	1	1	1	0	0	1	not_applicable	excluded	no	unknown	unknown	not reviewed
+RF00166	PrrB_RsmZ	Gene; sRNA;	133	yes	39	4	4	4	2	0	4	2	2	2	2	0	2	pending	pass	no_beyond_cap	unknown	unknown	not reviewed
+RF00167	Purine	Cis-reg; riboswitch;	102	yes	133	63	75	75	31	0	0	0	0	0	0	0	0	not_applicable	excluded	no	unknown	unknown	not reviewed
+RF00168	Lysine	Cis-reg; riboswitch;	182	yes	47	16	16	16	2	0	0	0	0	0	0	0	0	not_applicable	excluded	no	unknown	unknown	not reviewed
+RF00169	Bacteria_small_SRP	Gene;	97	yes	261	15	18	18	11	0	0	0	0	0	0	15	4	not_applicable	excluded	no	unknown	unknown	not reviewed
+RF00170	msr	Gene;	69	yes	7	7	9	9	2	0	0	0	0	0	0	9	1	not_applicable	excluded	no	unknown	unknown	not reviewed
+RF00174	Cobalamin	Cis-reg; riboswitch;	189	yes	434	9	14	14	3	0	13	4	4	4	3	1	4	verified	pass	yes	2	0	primary
+RF00175	HIV-1_DIS	Cis-reg;	40	yes	70	6	10	10	5	0	0	0	0	0	0	2	1	not_applicable	excluded	no	unknown	unknown	not reviewed
+RF00177	SSU_rRNA_bacteria	Gene; rRNA;	1533	yes	99	1317	1650	1650	209	1	0	0	0	0	0	16	2	not_applicable	excluded	no	unknown	unknown	not reviewed
+RF00185	Flavi_CRE	Cis-reg;	96	yes	84	2	2	2	1	0	0	0	0	0	0	0	0	not_applicable	excluded	no	unknown	unknown	not reviewed
+RF00207	K10_TLS	Cis-reg;	48	yes	10	5	5	5	5	0	5	5	5	1	1	0	6	pending	pass	no_beyond_cap	unknown	unknown	not reviewed
+RF00209	IRES_Pesti	Cis-reg; IRES;	380	yes	42	1	1	1	1	0	0	0	0	0	0	0	0	not_applicable	excluded	no	unknown	unknown	not reviewed
+RF00210	IRES_Picorna_2	Cis-reg; IRES;	462	yes	92	3	3	3	1	0	0	0	0	0	0	0	0	not_applicable	excluded	no	unknown	unknown	not reviewed
+RF00228	IRES_HepA	Cis-reg; IRES;	572	yes	23	1	2	2	1	0	0	0	0	0	0	0	0	not_applicable	excluded	no	unknown	unknown	not reviewed
+RF00233	Tymo_tRNA-like	Cis-reg;	84	yes	29	2	3	3	2	0	3	2	2	1	1	0	2	pending	pass	no_beyond_cap	unknown	unknown	not reviewed
+RF00234	glmS	Cis-reg; riboswitch;	167	yes	18	21	39	39	5	0	0	0	0	0	0	0	0	not_applicable	excluded	no	unknown	unknown	not reviewed
+RF00240	RNA-OUT	Gene; antisense;	70	yes	16	1	1	1	1	0	0	0	0	0	0	0	0	not_applicable	excluded	no	unknown	unknown	not reviewed
+RF00250	mir-TAR	Gene; miRNA;	61	yes	45	9	13	13	6	0	0	0	0	0	0	0	0	not_applicable	excluded	no	unknown	unknown	not reviewed
+RF00254	mir-16	Gene; miRNA;	82	yes	14	2	2	3	2	0	3	2	2	1	1	0	3	pending	pass	no_beyond_cap	unknown	unknown	not reviewed
+RF00373	RNaseP_arch	Gene; ribozyme;	288	yes	70	2	4	4	1	0	0	0	0	0	0	0	0	not_applicable	excluded	no	unknown	unknown	not reviewed
+RF00374	Gammaretro_CES	Cis-reg;	101	yes	25	2	2	4	3	0	4	3	3	1	1	0	3	pending	pass	no_beyond_cap	unknown	unknown	not reviewed
+RF00375	HIV_PBS	Cis-reg;	99	yes	132	6	6	6	2	0	4	2	2	1	1	2	3	pending	pass	no_beyond_cap	unknown	unknown	not reviewed
+RF00379	c-di-AMP	Cis-reg; riboswitch;	134	yes	106	16	16	16	13	0	0	0	0	0	0	0	0	not_applicable	excluded	no	unknown	unknown	not reviewed
+RF00380	Magnesium	Cis-reg; riboswitch;	169	yes	159	2	3	3	1	0	3	2	1	2	1	0	1	not_applicable	excluded	no	unknown	unknown	not reviewed
+RF00382	DnaX	Cis-reg; frameshift_element;	65	yes	5	2	2	2	1	0	0	0	0	0	0	0	0	not_applicable	excluded	no	unknown	unknown	not reviewed
+RF00386	Entero_5_CRE	Cis-reg;	90	yes	160	9	11	11	8	0	0	0	0	0	0	0	0	not_applicable	excluded	no	unknown	unknown	not reviewed
+RF00390	TYMV_upPK	Cis-reg;	23	yes	7	1	2	2	1	0	2	1	1	1	1	0	2	not_applicable	excluded	no	unknown	unknown	not reviewed
+RF00442	Guanidine-I	Cis-reg; riboswitch;	107	yes	100	9	10	10	5	0	3	3	3	3	3	0	3	verified	pass	yes	0	2	exploratory
+RF00455	mir-15	Gene; miRNA;	88	yes	164	1	1	1	1	0	0	0	0	0	0	0	0	not_applicable	excluded	no	unknown	unknown	not reviewed
+RF00458	IRES_Cripavirus	Cis-reg; IRES;	196	yes	18	15	17	17	13	0	15	11	11	2	2	0	11	verified	pass	yes	0	0	excluded_from_primary
+RF00480	HIV_FE	Cis-reg; frameshift_element;	52	yes	147	5	5	5	2	0	5	2	2	1	1	0	2	pending	pass	no_beyond_cap	unknown	unknown	not reviewed
+RF00488	U1_yeast	Gene; snRNA; splicing;	567	yes	5	8	8	8	2	0	0	0	0	0	0	7	1	not_applicable	excluded	no	unknown	unknown	not reviewed
+RF00500	TCV_H5	Cis-reg;	45	yes	5	1	1	1	1	0	0	0	0	0	0	0	0	not_applicable	excluded	no	unknown	unknown	not reviewed
+RF00504	Glycine	Cis-reg; riboswitch;	94	yes	44	14	25	23	6	0	0	0	0	0	0	0	0	not_applicable	excluded	no	unknown	unknown	not reviewed
+RF00505	RydC	Gene; sRNA;	64	yes	6	1	1	1	1	0	1	1	1	1	1	0	1	not_applicable	excluded	no	unknown	unknown	not reviewed
+RF00507	Corona_FSE	Cis-reg; frameshift_element;	78	yes	51	6	6	6	4	0	2	2	2	1	1	0	2	pending	pass	no_beyond_cap	unknown	unknown	not reviewed
+RF00522	PreQ1	Cis-reg; riboswitch;	45	yes	43	0	0	16	7	0	16	8	7	3	2	0	7	verified	pass	yes	3	0	primary
+RF00525	Flavivirus_DB	Cis-reg;	72	yes	112	1	2	2	1	0	2	1	1	1	1	0	1	not_applicable	excluded	no	unknown	unknown	not reviewed
+RF00548	U11	Gene; snRNA; splicing;	134	yes	72	7	7	7	2	0	0	0	0	0	0	6	1	not_applicable	excluded	no	unknown	unknown	not reviewed
+RF00618	U4atac	Gene; snRNA; splicing;	132	yes	61	1	1	1	1	0	0	0	0	0	0	1	1	not_applicable	excluded	no	unknown	unknown	not reviewed
+RF00619	U6atac	Gene; snRNA; splicing;	126	yes	62	2	2	2	2	0	0	0	0	0	0	1	1	not_applicable	excluded	no	unknown	unknown	not reviewed
+RF00620	HCV_ARF_SL	Cis-reg;	136	yes	57	3	3	3	1	0	0	0	0	0	0	0	0	not_applicable	excluded	no	unknown	unknown	not reviewed
+RF00622	CPEB3_ribozyme	Gene; ribozyme;	78	yes	14	2	3	3	2	0	3	2	2	2	2	0	2	pending	pass	no_beyond_cap	unknown	unknown	not reviewed
+RF00634	SAM-IV	Cis-reg; riboswitch;	116	yes	40	4	4	4	1	0	0	0	0	0	0	4	1	not_applicable	excluded	no	unknown	unknown	not reviewed
+RF00661	mir-31	Gene; miRNA;	83	yes	75	1	1	1	1	0	1	1	1	1	1	0	1	not_applicable	excluded	no	unknown	unknown	not reviewed
+RF00957	mir-663	Gene; miRNA;	90	yes	6	3	3	3	1	0	0	0	0	0	0	0	0	not_applicable	excluded	no	unknown	unknown	not reviewed
+RF01047	HBV_epsilon	Cis-reg;	61	yes	33	1	1	1	1	0	1	1	1	1	1	0	1	not_applicable	excluded	no	unknown	unknown	not reviewed
+RF01051	c-di-GMP-I	Cis-reg; riboswitch;	87	yes	155	4	6	6	3	0	0	0	0	0	0	0	0	not_applicable	excluded	no	unknown	unknown	not reviewed
+RF01054	preQ1-II	Cis-reg; riboswitch;	99	yes	15	1	1	1	1	0	1	1	1	1	0	0	1	not_applicable	excluded	no	unknown	unknown	not reviewed
+RF01057	SAH	Cis-reg; riboswitch;	78	yes	52	1	3	3	1	0	0	0	0	0	0	0	0	not_applicable	excluded	no	unknown	unknown	not reviewed
+RF01071	OLE	Gene;	616	yes	20	2	4	4	2	0	0	0	0	0	0	0	0	not_applicable	excluded	no	unknown	unknown	not reviewed
+RF01073	GP_knot1	Cis-reg;	62	yes	8	1	1	1	1	0	1	1	1	1	1	0	1	not_applicable	excluded	no	unknown	unknown	not reviewed
+RF01084	TLS-PK3	Cis-reg;	129	yes	9	7	7	7	2	0	3	1	1	1	1	4	2	not_applicable	excluded	no	unknown	unknown	not reviewed
+RF01271	snR30	Gene; snRNA; snoRNA; HACA-box;	612	yes	5	2	2	2	1	0	0	0	0	0	0	0	0	not_applicable	excluded	no	unknown	unknown	not reviewed
+RF01317	CRISPR-DR4	Gene; CRISPR;	28	yes	33	1	1	1	1	0	0	0	0	0	0	0	0	not_applicable	excluded	no	unknown	unknown	not reviewed
+RF01330	CRISPR-DR16	Gene; CRISPR;	37	yes	6	2	2	2	2	0	0	0	0	0	0	1	1	not_applicable	excluded	no	unknown	unknown	not reviewed
+RF01335	CRISPR-DR22	Gene; CRISPR;	36	yes	9	1	1	1	1	0	0	0	0	0	0	1	1	not_applicable	excluded	no	unknown	unknown	not reviewed
+RF01344	CRISPR-DR34	Gene; CRISPR;	36	yes	5	10	14	14	3	0	0	0	0	0	0	0	0	not_applicable	excluded	no	unknown	unknown	not reviewed
+RF01380	HIV-1_SD	Cis-reg;	19	yes	22	3	3	3	2	0	0	0	0	0	0	3	1	not_applicable	excluded	no	unknown	unknown	not reviewed
+RF01381	HIV-1_SL3	Cis-reg;	23	yes	19	1	1	1	1	0	0	0	0	0	0	1	1	not_applicable	excluded	no	unknown	unknown	not reviewed
+RF01415	Flavivirus_SLIV	Cis-reg;	75	yes	21	1	1	1	1	0	1	1	1	1	1	0	1	not_applicable	excluded	no	unknown	unknown	not reviewed
+RF01510	2dG-I	Cis-reg; riboswitch;	63	yes	4	8	16	16	2	0	8	1	1	1	1	0	1	not_applicable	excluded	no	unknown	unknown	not reviewed
+RF01684	mascRNA-menRNA	Gene;	56	yes	53	7	12	12	6	0	1	1	1	0	0	5	2	not_applicable	excluded	no	unknown	unknown	not reviewed
+RF01689	AdoCbl-II	Cis-reg; riboswitch;	81	yes	146	16	33	33	3	0	4	2	2	1	1	0	2	pending	pass	no_beyond_cap	unknown	unknown	not reviewed
+RF01704	Glutamine-II	Cis-reg; riboswitch;	60	yes	628	1	2	2	1	0	2	1	1	1	1	0	1	not_applicable	excluded	no	unknown	unknown	not reviewed
+RF01725	SAM-I-IV	Cis-reg; riboswitch;	99	yes	417	2	2	2	2	0	2	2	2	1	0	0	2	pending	pass	no_beyond_cap	unknown	unknown	not reviewed
+RF01727	SAM-SAH	Cis-reg; riboswitch;	49	yes	54	1	1	1	1	0	1	1	1	1	1	0	1	not_applicable	excluded	no	unknown	unknown	not reviewed
+RF01734	Fluoride	Cis-reg; riboswitch;	64	yes	289	6	6	6	2	0	6	2	2	2	1	0	2	pending	pass	no_beyond_cap	unknown	unknown	not reviewed
+RF01739	Glutamine	Cis-reg; riboswitch;	53	yes	940	3	6	6	1	0	6	1	1	1	1	0	1	not_applicable	excluded	no	unknown	unknown	not reviewed
+RF01750	ZMP-ZTP	Cis-reg; riboswitch;	86	yes	185	11	17	17	4	0	12	3	3	2	1	2	3	pending	pass	no_beyond_cap	unknown	unknown	not reviewed
+RF01763	Guanidine-III	Cis-reg; riboswitch;	67	yes	41	7	13	13	2	0	13	2	2	1	1	0	2	pending	pass	no_beyond_cap	unknown	unknown	not reviewed
+RF01764	azaaromatic	Cis-reg; riboswitch;	101	yes	62	5	10	10	2	0	0	0	0	0	0	0	0	not_applicable	excluded	no	unknown	unknown	not reviewed
+RF01786	c-di-GMP-II	Cis-reg; riboswitch;	84	yes	54	1	2	2	1	0	2	1	1	1	1	0	1	not_applicable	excluded	no	unknown	unknown	not reviewed
+RF01807	GIR1	Gene; ribozyme;	201	yes	13	1	1	1	1	0	1	1	1	1	1	0	1	not_applicable	excluded	no	unknown	unknown	not reviewed
+RF01826	SAM_V	Cis-reg; riboswitch;	66	yes	7	1	1	1	1	0	1	1	1	1	1	0	1	not_applicable	excluded	no	unknown	unknown	not reviewed
+RF01831	THF	Cis-reg; riboswitch;	99	yes	101	12	12	12	3	0	12	4	3	3	2	0	3	pending	pass	no_beyond_cap	unknown	unknown	not reviewed
+RF01846	Fungi_U3	Gene; snRNA; snoRNA; CD-box;	274	yes	66	49	49	49	11	0	0	0	0	0	0	0	0	not_applicable	excluded	no	unknown	unknown	not reviewed
+RF01852	tRNA-Sec	Gene; tRNA;	91	yes	109	23	34	34	10	0	0	0	0	0	0	21	5	not_applicable	excluded	no	unknown	unknown	not reviewed
+RF01854	Bacteria_large_SRP	Gene;	256	yes	92	4	5	5	3	0	0	0	0	0	0	2	2	not_applicable	excluded	no	unknown	unknown	not reviewed
+RF01857	Archaea_SRP	Gene;	317	yes	54	1	1	1	1	0	1	1	1	1	1	0	1	not_applicable	excluded	no	unknown	unknown	not reviewed
+RF01959	SSU_rRNA_archaea	Gene; rRNA;	1478	yes	86	47	51	51	23	0	0	0	0	0	0	7	1	not_applicable	excluded	no	unknown	unknown	not reviewed
+RF01960	SSU_rRNA_eukarya	Gene; rRNA;	1831	yes	90	633	700	700	168	22	0	0	0	0	0	0	0	not_applicable	excluded	no	unknown	unknown	not reviewed
+RF01998	group-II-D1D4-1	Intron;	84	yes	237	53	57	57	24	0	0	0	0	0	0	0	0	not_applicable	excluded	no	unknown	unknown	not reviewed
+RF02001	group-II-D1D4-3	Intron;	170	yes	406	60	66	66	29	0	0	0	0	0	0	0	0	not_applicable	excluded	no	unknown	unknown	not reviewed
+RF02012	group-II-D1D4-7	Intron;	151	yes	244	6	6	6	6	0	0	0	0	0	0	3	1	not_applicable	excluded	no	unknown	unknown	not reviewed
+RF02032	GOLLD	Gene;	416	yes	35	9	73	73	4	0	0	0	0	0	0	29	1	not_applicable	excluded	no	unknown	unknown	not reviewed
+RF02095	mir-2985	Gene; miRNA;	71	yes	8	1	1	1	1	0	1	1	1	1	1	0	2	not_applicable	excluded	no	unknown	unknown	not reviewed
+RF02253	IRE_II	Cis-reg;	31	yes	30	1	1	1	1	0	1	1	1	1	1	0	1	not_applicable	excluded	no	unknown	unknown	not reviewed
+RF02340	DENV_SLA	Cis-reg;	72	yes	15	6	6	6	5	0	5	4	4	4	3	0	5	verified	pass	yes	0	0	pending_blast
+RF02348	tracrRNA	Gene; CRISPR;	92	yes	37	1	1	5	3	0	4	2	1	2	2	0	1	not_applicable	excluded	no	unknown	unknown	not reviewed
+RF02359	MS2	Cis-reg;	36	yes	5	1	1	1	1	0	0	0	0	0	0	1	1	not_applicable	excluded	no	unknown	unknown	not reviewed
+RF02519	ToxI	Gene; antitoxin;	34	yes	5	1	1	1	1	0	1	1	1	1	1	0	1	not_applicable	excluded	no	unknown	unknown	not reviewed
+RF02521	Virus-PTE	Cis-reg;	85	yes	3	1	1	1	1	0	1	1	1	1	1	0	1	not_applicable	excluded	no	unknown	unknown	not reviewed
+RF02540	LSU_rRNA_archaea	Gene; rRNA;	2987	yes	91	103	108	108	36	0	0	0	0	0	0	0	0	not_applicable	excluded	no	unknown	unknown	not reviewed
+RF02541	LSU_rRNA_bacteria	Gene; rRNA;	2925	yes	102	1368	1714	1714	248	1	0	0	0	0	0	0	0	not_applicable	excluded	no	unknown	unknown	not reviewed
+RF02542	SSU_rRNA_microsporidia	Gene; rRNA;	1311	yes	46	12	15	15	6	0	0	0	0	0	0	1	1	not_applicable	excluded	no	unknown	unknown	not reviewed
+RF02543	LSU_rRNA_eukarya	Gene; rRNA;	3401	yes	88	640	745	745	208	22	0	0	0	0	0	0	0	not_applicable	excluded	no	unknown	unknown	not reviewed
+RF02545	SSU_trypano_mito	Gene; rRNA;	623	yes	4	15	17	17	12	0	0	0	0	0	0	0	0	not_applicable	excluded	no	unknown	unknown	not reviewed
+RF02546	LSU_trypano_mito	Gene; rRNA;	561	yes	6	10	12	12	10	0	0	0	0	0	0	8	3	not_applicable	excluded	no	unknown	unknown	not reviewed
+RF02553	YrlA	Gene; sRNA;	114	yes	6	0	0	1	1	0	1	1	1	1	1	0	1	not_applicable	excluded	no	unknown	unknown	not reviewed
+RF02678	Hatchet	Gene; ribozyme;	133	yes	155	2	3	3	2	0	3	2	2	1	0	0	2	pending	pass	no_beyond_cap	unknown	unknown	not reviewed
+RF02679	Pistol	Gene; ribozyme;	68	yes	47	8	13	13	4	0	8	2	2	2	1	0	2	pending	pass	no_beyond_cap	unknown	unknown	not reviewed
+RF02680	PreQ1-III	Cis-reg; riboswitch;	102	yes	31	5	5	5	5	0	3	3	3	1	1	0	3	pending	pass	no_beyond_cap	unknown	unknown	not reviewed
+RF02681	Twister-sister	Gene; ribozyme;	81	yes	113	3	5	5	2	0	1	1	1	1	1	0	1	not_applicable	excluded	no	unknown	unknown	not reviewed
+RF02683	NiCo	Cis-reg; riboswitch;	96	yes	83	1	1	1	1	0	1	1	1	1	0	0	1	not_applicable	excluded	no	unknown	unknown	not reviewed
+RF02796	Pab160	Gene; snRNA; snoRNA; HACA-box;	68	yes	5	6	6	6	1	0	6	1	1	1	0	0	1	not_applicable	excluded	no	unknown	unknown	not reviewed
+RF02926	DUF2693-FD	Gene; sRNA;	49	yes	92	1	1	1	1	0	1	1	1	1	1	0	1	not_applicable	excluded	no	unknown	unknown	not reviewed
+RF02933	ARRPOF	Gene; sRNA;	256	yes	35	2	4	4	1	0	0	0	0	0	0	4	1	not_applicable	excluded	no	unknown	unknown	not reviewed
+RF02977	THF-II	Cis-reg;	39	yes	46	16	16	16	3	0	5	1	1	1	1	10	2	not_applicable	excluded	no	unknown	unknown	not reviewed
+RF03013	nadA	Gene; sRNA;	62	yes	186	16	16	16	4	0	16	4	4	4	3	0	4	verified	pass	yes	0	0	excluded_from_primary
+RF03016	RT-12	Gene; sRNA;	117	yes	42	2	2	2	1	0	0	0	0	0	0	2	1	not_applicable	excluded	no	unknown	unknown	not reviewed
+RF03022	Phage_DGR	Gene; sRNA;	127	yes	114	9	9	9	1	0	9	1	1	1	1	0	1	not_applicable	excluded	no	unknown	unknown	not reviewed
+RF03030	salivarius-1	Gene; sRNA;	56	yes	20	1	2	2	1	0	2	1	1	1	1	0	1	not_applicable	excluded	no	unknown	unknown	not reviewed
+RF03054	Xanthine	Cis-reg; riboswitch;	56	yes	383	5	9	9	2	0	8	1	1	1	1	1	1	not_applicable	excluded	no	unknown	unknown	not reviewed
+RF03064	RAGATH-18	Gene; sRNA;	71	yes	1420	1	1	1	1	0	0	0	0	0	0	1	1	not_applicable	excluded	no	unknown	unknown	not reviewed
+RF03072	raiA	Cis-reg; riboswitch;	209	yes	488	6	6	6	6	0	0	0	0	0	0	3	2	not_applicable	excluded	no	unknown	unknown	not reviewed
+RF03085	abiF	Gene; sRNA;	37	yes	126	1	2	2	1	0	0	0	0	0	0	2	1	not_applicable	excluded	no	unknown	unknown	not reviewed
+RF03087	ROOL	Gene; sRNA;	574	yes	290	13	64	64	5	0	0	0	0	0	0	28	2	not_applicable	excluded	no	unknown	unknown	not reviewed
+RF03120	Sarbecovirus-5UTR	Cis-reg;	298	yes	19	2	2	2	2	0	0	0	0	0	0	0	0	not_applicable	excluded	no	unknown	unknown	not reviewed
+RF03167	c-di-GMP-I-GGC	Cis-reg; riboswitch;	80	yes	40	10	11	11	5	0	6	2	2	1	1	0	2	pending	pass	no_beyond_cap	unknown	unknown	not reviewed
+RF04076	mir-H11	Gene; miRNA;	72	yes	6	1	2	2	2	0	0	0	0	0	0	1	1	not_applicable	excluded	no	unknown	unknown	not reviewed
+RF04190	Hairpin-meta1	Gene; ribozyme;	90	yes	84	4	8	8	1	0	0	0	0	0	0	0	0	not_applicable	excluded	no	unknown	unknown	not reviewed
+RF04222	NA	NA	NA	no	NA	1	2	2	1	0	0	0	0	0	0	0	0	not_applicable	excluded	no	unknown	unknown	not reviewed
+RF04326	PV_xrRNA_class3	Cis-reg;	52	yes	354	0	0	2	1	0	2	1	1	1	1	0	1	not_applicable	excluded	no	unknown	unknown	not reviewed

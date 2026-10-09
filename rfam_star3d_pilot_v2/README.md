@@ -5,7 +5,7 @@ correspondences produced by **original STAR3D v1.2** from experimental structure
 and stacking preservation (FR3D). The ordinary-versus-structure-curated seed comparison is **deferred**.
 `Rfam.3d.seed.gz` is not used by this study. Version-1 work was deleted after V2 completed; its provenance records are in `archive_v1_provenance/`.
 
-Status: see `STATUS.md`. Validation: `reports/validation_report.md`. Blockers: `reports/blockers.md`.
+Status: see `STATUS.md` (v2.1 audit-repair: `audit/AUDIT_LOG.md`; professor summary: `reports/professor_summary.md`). Validation: `reports/validation_report.md`. Blockers: `reports/blockers.md`.
 
 ## Layout
 `inputs/` unchanged downloads (checksummed in `metadata/sources_manifest.tsv`; mmCIF, wwPDB seqres, papers and the STAR3D tarball are git-ignored — re-download from the recorded URLs) ·
@@ -33,7 +33,11 @@ Status: see `STATUS.md`. Validation: `reports/validation_report.md`. Blockers: `
 .venv/bin/python scripts/compare.py                        # Phase 4: correspondence comparison
 .venv/bin/python scripts/interactions.py                   # Phase 5: FR3D + interaction preservation
 .venv/bin/python scripts/regions.py                        # Phase 5: disagreement regions
-.venv/bin/python -m pytest -q tests                        # focused correctness tests (invented data only)
+.venv/bin/python scripts/exact_source_check.py KEY:ACC[:org] ...  # v2.1 exact-source genome check (full + trimmed core)
+.venv/bin/python scripts/anchor_fit.py PAIR START END [shared|shared_flank_excl|shared_canonical] [flank]
+.venv/bin/python scripts/candidate_evidence.py             # v2.1 RF00522 candidate evidence + exploratory adjustment checks
+.venv/bin/python scripts/fresh_repro.py                    # v2.1 fresh re-download + STAR3D/FR3D rerun (preQ1) under audit/fresh_repro/
+.venv/bin/python -m pytest -q tests                        # 33 focused correctness tests (invented data only)
 ```
 `mode: pilot|scale` lives in `config.yaml`; scale mode changes only cohort caps, never the reference policy.
 

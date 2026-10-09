@@ -1,0 +1,20 @@
+region_id	old_rank	old_trustworthy	new_rank	new_eligible	src_eng	rfam_tgt_eng	star3d_tgt_eng	src_unobs	rfam_tgt_unobs	s3d_tgt_unobs	corr	cov	changed
+RF00522__6VUI_A__7REX_A__r7-23	1	yes	1	yes	no	no	no	no	no	no	15	2	
+RF00522__3FU2_A__7REX_A__r15-22	2	yes	2	yes	no	no	no	no	no	no	7	1	
+RF00522__3FU2_A__7REX_A__r9-12	3	yes	3	yes	no	no	no	no	no	no	4	0	
+RF00522__3FU2_A__7REX_A__r32-34	5	yes	4	yes	no	no	no	no	no	no	2	1	
+RF00522__3FU2_A__6VUI_A__r32-34	6	yes	5	yes	no	no	no	no	no	no	1	2	
+RF00059__2GDI_X__3D2G_A__r76-76	4	yes	6	yes	no	no	no	no	no	no	1	0	
+RF00174__4GXY_A__6VMY_A__r26-82	7	yes	7	yes	no	no	no	no	no	no	2	54	
+RF00522__3FU2_A__6VUI_A__r23-24	13	yes	8	yes	no	no	no	no	no	no	2	0	
+RF00522__3FU2_A__6VUI_A__r7-8	12	yes	9	yes	no	no	no	no	no	no	1	1	
+RF00174__4GXY_A__6VMY_A__r85-88	11	yes	10	yes	no	no	no	no	no	no	0	4	
+RF00174__4GXY_A__6VMY_A__r102-112	9	yes	11	yes	no	no	no	no	no	no	0	11	
+RF00174__4GXY_A__6VMY_A__r117-129	8	yes	12	yes	no	no	no	no	no	no	0	13	
+RF00522__3FU2_A__6VUI_A__r15-15	14	yes	13	yes	no	no	no	no	no	no	0	1	
+RF00162__2GIS_A__4KQY_A__r1-93	16	no	14	no	yes	no	yes	no	no	no	21	72	
+RF00442__5U3G_B__7MLW_F__r41-55	15	no	15	no	yes	no	no	no	no	no	12	3	
+RF00442__5U3G_B__7MLW_F__r17-23	17	no	16	no	yes	no	no	no	no	no	4	3	
+RF00059__2GDI_X__3D2G_A__r17-23	10	yes	17	no	no	yes	yes	no	no	no	0	6	CHANGED
+RF00174__4GXY_A__6VMY_A__r1-19	19	no	18	no	yes	no	no	no	no	no	0	18	
+RF00174__4GXY_A__6VMY_A__r145-172	18	no	19	no	yes	no	no	no	no	no	0	28	

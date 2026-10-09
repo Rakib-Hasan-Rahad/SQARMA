@@ -12,7 +12,12 @@ validate it independently.
 - **Phase 3 reference.** `reference.py` does the raw-archive trace and fails the stage if a row is absent or its hash differs.
 - **Inputs and crosswalk.** `prepare_inputs.py` hard-checks author IDs against the written input files.
 - **STAR3D runs.** `star3d.py` uses unique attempt paths, checks checksums inside the container, and records every run.
-- **Downstream analysis.** `compare.py`, `interactions.py`, `regions.py`, `neutral_fit.py` and the plotting scripts.
+- **Downstream analysis.** `compare.py` (validation failures fatal), `interactions.py` (per-method masking, separate
+  denominators, symmetry-operator filter, provenance sidecars), `regions.py` (span and target eligibility),
+  `anchor_fit.py` (shared-correspondence anchor fit with degeneracy check) and the plotting scripts.
+- **Exact-source genome check.** `exact_source_check.py` (full interval and trimmed core). This should run
+  automatically for every candidate before construct review starts.
+- **Fresh reproduction.** `fresh_repro.py` can be extended to any pair list.
 
 ## Still requires manual review (the bottleneck)
 - **Construct and source review** took most of the pilot effort. Engineering was found in most candidate families,
@@ -40,3 +45,13 @@ validate it independently.
 5. Decide whether to use a release newer than 15.1. That would be a new, versioned study with links revalidated, not a
    silent mix of releases.
 6. Report per family; pairs that share RNAs are not independent.
+
+## Recommendation (v2.1)
+**Do not scale yet.** First complete:
+1. Researcher review of the RF00522 candidate and the cohort v1.1 reclassification.
+2. A fresh rerun of the 4 pairs not yet rerun (cobalamin, SAM-I, TPP, guanidine-I).
+3. Automated exact-source checks as a screening gate, because construct engineering removed most candidates.
+4. Review of the 21 unreviewed families in rank order.
+5. A native x86-64 STAR3D host.
+
+After that, scale mode can reuse every automated stage unchanged. Construct review stays manual.

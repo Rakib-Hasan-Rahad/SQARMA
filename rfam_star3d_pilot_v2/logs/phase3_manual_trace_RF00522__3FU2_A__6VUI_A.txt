@@ -57,3 +57,8 @@ disordered" uses paper numbering offset by one from PDB numbering. Crosswalk fol
 GATE Phase 3 (this pair): PASS — rows traced to raw archive lines 98370/98377; independent awk count reproduces
 all 30 reference pairs and 7 gap columns exactly; 5 pairs + 1 gap joined to structure residues and checked;
 no alignment program was run; all-gap-column invariance covered by tests/test_stockholm.py. Reviewer: AI agent.
+
+CORRECTION (audit-repair v2.1): the note above claiming that the paper's numbering is "offset by one from PDB
+numbering" was wrong. In 3FU2 the C12 nucleotide has only phosphate atoms modelled (P, OP1, OP2, O5'; sugar and
+base disordered) and U13, A14 have no coordinates. The paper's "C12 and U13 are disordered" therefore uses the same
+numbering as the PDB; the deposition additionally omits A14. The trace results above are unaffected.

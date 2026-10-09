@@ -21,3 +21,17 @@ runs/**/STAR3D_source/STAR3D.jar
 runs/**/STAR3D_source/README
 runs/**/STAR3D_source/build.xml
 runs/**/STAR3D_source/ShowAln.py
+# v2.1: same exclusions inside the audit fresh-reproduction tree (patterns above are anchored at the study root)
+**/STAR3D_source/tools/
+**/STAR3D_source/lib/
+**/STAR3D_source/class/
+**/STAR3D_source/src/
+**/STAR3D_source/STAR3D.jar
+**/STAR3D_source/README
+**/STAR3D_source/build.xml
+**/STAR3D_source/ShowAln.py
+**/_cif/
+audit/fresh_repro/inputs/software/
+audit/fresh_repro/inputs/structures/
+inputs/ncbi/genomes/
+audit/repro_package_RF00522_v2.1/

@@ -1,0 +1,57 @@
+pair_id	side	class	old_common_n	old_rfam	old_fwd	old_rev(fwd-denominator)	new_fwd_n	new_rfam	new_fwd	new_rev_n	new_rfam_r	new_rev	changed
+RF00059__2GDI_X__3D2G_A	query	all	68	57	58	58	68	57	58	68	57	58	
+RF00059__2GDI_X__3D2G_A	query	canonical	7	7	7	7	7	7	7	7	7	7	
+RF00059__2GDI_X__3D2G_A	query	noncanonical	6	5	5	5	6	5	5	6	5	5	
+RF00059__2GDI_X__3D2G_A	query	stack	55	45	46	46	55	45	46	55	45	46	
+RF00059__2GDI_X__3D2G_A	target	all	68	57	57	57	68	57	57	68	57	57	
+RF00059__2GDI_X__3D2G_A	target	canonical	7	7	7	7	7	7	7	7	7	7	
+RF00059__2GDI_X__3D2G_A	target	noncanonical	8	5	5	5	8	5	5	8	5	5	
+RF00059__2GDI_X__3D2G_A	target	stack	53	45	45	45	53	45	45	53	45	45	
+RF00162__2GIS_A__4KQY_A	query	all	26	21	19	19	26	21	19	26	21	19	
+RF00162__2GIS_A__4KQY_A	query	canonical	5	5	4	4	5	5	4	5	5	4	
+RF00162__2GIS_A__4KQY_A	query	noncanonical	1	0	0	0	1	0	0	1	0	0	
+RF00162__2GIS_A__4KQY_A	query	stack	20	16	15	15	20	16	15	20	16	15	
+RF00162__2GIS_A__4KQY_A	target	all	5	4	3	3	5	4	3	5	4	3	
+RF00162__2GIS_A__4KQY_A	target	canonical	0	0	0	0	0	0	0	0	0	0	
+RF00162__2GIS_A__4KQY_A	target	noncanonical	1	0	0	0	1	0	0	1	0	0	
+RF00162__2GIS_A__4KQY_A	target	stack	4	4	3	3	4	4	3	4	4	3	
+RF00174__4GXY_A__6VMY_A	query	all	1	1	1	0	1	1	1	0	0	0	
+RF00174__4GXY_A__6VMY_A	query	canonical	0	0	0	0	0	0	0	0	0	0	
+RF00174__4GXY_A__6VMY_A	query	noncanonical	0	0	0	0	0	0	0	0	0	0	
+RF00174__4GXY_A__6VMY_A	query	stack	1	1	1	0	1	1	1	0	0	0	
+RF00174__4GXY_A__6VMY_A	target	all	24	21	19	18	24	21	19	24	21	19	
+RF00174__4GXY_A__6VMY_A	target	canonical	5	3	5	5	5	3	5	5	3	5	
+RF00174__4GXY_A__6VMY_A	target	noncanonical	1	1	0	0	1	1	0	1	1	0	
+RF00174__4GXY_A__6VMY_A	target	stack	18	17	14	13	18	17	14	18	17	14	
+RF00442__5U3G_B__7MLW_F	query	all	103	84	81	81	103	84	81	103	84	81	
+RF00442__5U3G_B__7MLW_F	query	canonical	19	17	15	15	19	17	15	19	17	15	
+RF00442__5U3G_B__7MLW_F	query	noncanonical	8	6	6	6	8	6	6	8	6	6	
+RF00442__5U3G_B__7MLW_F	query	stack	75	60	60	60	75	60	60	75	60	60	
+RF00442__5U3G_B__7MLW_F	target	all	110	88	82	82	105	83	79	105	83	79	CHANGED
+RF00442__5U3G_B__7MLW_F	target	canonical	17	15	14	14	16	14	14	16	14	14	CHANGED
+RF00442__5U3G_B__7MLW_F	target	noncanonical	9	6	6	6	9	6	6	9	6	6	
+RF00442__5U3G_B__7MLW_F	target	stack	82	65	61	61	78	61	58	78	61	58	CHANGED
+RF00522__3FU2_A__6VUI_A	query	all	40	31	33	31	40	31	33	40	31	31	
+RF00522__3FU2_A__6VUI_A	query	canonical	7	6	7	6	7	6	7	7	6	6	
+RF00522__3FU2_A__6VUI_A	query	noncanonical	7	5	5	5	7	5	5	7	5	5	
+RF00522__3FU2_A__6VUI_A	query	stack	26	20	21	20	26	20	21	26	20	20	
+RF00522__3FU2_A__6VUI_A	target	all	36	31	32	32	36	31	32	39	31	34	
+RF00522__3FU2_A__6VUI_A	target	canonical	6	6	6	6	6	6	6	6	6	6	
+RF00522__3FU2_A__6VUI_A	target	noncanonical	7	5	5	5	7	5	5	7	5	5	
+RF00522__3FU2_A__6VUI_A	target	stack	23	20	21	21	23	20	21	26	20	23	
+RF00522__3FU2_A__7REX_A	query	all	44	20	31	31	44	20	31	44	20	31	
+RF00522__3FU2_A__7REX_A	query	canonical	7	0	5	5	7	0	5	7	0	5	
+RF00522__3FU2_A__7REX_A	query	noncanonical	8	3	6	6	8	3	6	8	3	6	
+RF00522__3FU2_A__7REX_A	query	stack	29	17	20	20	29	17	20	29	17	20	
+RF00522__3FU2_A__7REX_A	target	all	39	19	31	31	39	19	31	39	19	31	
+RF00522__3FU2_A__7REX_A	target	canonical	4	0	4	4	4	0	4	4	0	4	
+RF00522__3FU2_A__7REX_A	target	noncanonical	8	3	6	6	8	3	6	8	3	6	
+RF00522__3FU2_A__7REX_A	target	stack	27	16	21	21	27	16	21	27	16	21	
+RF00522__6VUI_A__7REX_A	query	all	47	19	29	29	47	19	29	47	19	29	
+RF00522__6VUI_A__7REX_A	query	canonical	7	0	5	5	7	0	5	7	0	5	
+RF00522__6VUI_A__7REX_A	query	noncanonical	9	2	4	4	9	2	4	9	2	4	
+RF00522__6VUI_A__7REX_A	query	stack	31	17	20	20	31	17	20	31	17	20	
+RF00522__6VUI_A__7REX_A	target	all	39	17	28	28	39	17	28	39	17	28	
+RF00522__6VUI_A__7REX_A	target	canonical	5	0	5	5	5	0	5	5	0	5	
+RF00522__6VUI_A__7REX_A	target	noncanonical	6	2	4	4	6	2	4	6	2	4	
+RF00522__6VUI_A__7REX_A	target	stack	28	15	19	19	28	15	19	28	15	19	

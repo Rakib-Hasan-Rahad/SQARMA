@@ -1,0 +1,137 @@
+# Construct / source / eligibility decisions (cohort_version 1). Reviewer: AI agent (Claude); raw evidence
+# viewed directly: mmCIF records (review/evidence/*.json), paper text excerpts (review/literature/*),
+# NCBI BLAST XML (inputs/blast/*), seed rows (Rfam.seed.gz 15.1). No human approval given or claimed.
+# Positions are mmCIF label_seq_id of the deposited chain unless stated. "masked" positions stay in all
+# tables but are flagged engineered and are never interpreted biologically.
+# Written BEFORE any research STAR3D run or Phase-3 correspondence extraction.
+
+families:
+  RF00162:
+    decision: primary
+    target_motifs: "k-turn (P2), SAM pocket (J1/2, J3/4, P1), P2L-J3/4 pseudoknot (seed #=GC RNA_motif_k_turn, RNA_ligand_SAM, SS_cons)"
+    representatives:
+      - key: 2GIS_A
+        source: "Thermoanaerobacter tengcongensis (= Caldanaerobacter subterraneus subsp. tengcongensis) yitJ SAM-I"
+        source_evidence: "mmCIF RNA entity source empty (pdbx_entity_src_syn without organism); 4KQY paper (PMC3222078) cites the 94-nt T. tengcongensis yitJ structure [refs 23,24]; BLAST txid119072 hit = T. tengcongensis MB4 complete genome (83/96)"
+        construct_changes: "vs MB4 genome: native 7-nt segment absent after 49 and 51A,52A (P3 variable SL apex shortened); 75-77 AAA and 80U (P4 apical loop/terminal stem); 1-2 and 92-94 unaligned (P1 ends, cloning/terminal). Primary paper (Nature 2006, PMID 16810258) not open access: construct design statement UNREVIEWED"
+        masked: [1, 2, 49, 50, 51, 52, 75, 76, 77, 80, 92, 93, 94]
+        relevance: "all changes in P3 apex, P4 apex/terminal pairs, P1 termini; none at seed-flagged k-turn/SAM positions"
+        ligand_state: "SAM-bound"
+        alternatives: "26 other T. tengcongensis entries are titled variants of this construct (A94G; U34C/A94G; Kt-7/Kt-23/Actinomyces k-turn swaps at 17-22, 30-38) -> engineered in target motif; 3V7E protein complex with extension"
+        decision: accept_with_masked_engineering
+      - key: 4KQY_A
+        source: "Bacillus subtilis yitJ S box (aptamer nt 29-146)"
+        source_evidence: "mmCIF pdbx_entity_src_syn Bacillus subtilis; struct_ref GB CP003695.1; paper PMC3222078 methods; BLAST hit B. subtilis natto genome 117/119"
+        construct_changes: "P3 distal stem-loop replaced by GAAA tetraloop (paper methods); vs genome: U deleted after 63, 64 C->A (mmCIF struct_ref_seq_dif agrees: deletion + 64A conflict)"
+        masked: [63, 64]
+        relevance: "P3 variable SL apex only"
+        ligand_state: "SAM-bound"
+        decision: accept_with_masked_engineering
+    justification: "Only two natural sources; both constructs carry documented peripheral changes outside the target motifs. Accepted as primary with masking; disagreements touching masked positions are reported but not interpreted."
+
+  RF00522:
+    decision: primary
+    target_motifs: "H-type pseudoknot, preQ1 pocket (seed RNA_ligand_preQ1), L1/L2/L3"
+    representatives:
+      - key: 6VUI_A
+        source: "Thermoanaerobacter tengcongensis preQ1-I (33-mer, locus 1564 5'UTR)"
+        source_evidence: "mmCIF Caldanaerobacter subterraneus subsp. tengcongensis; 3GCA paper (PMC2670106): 33-mer derived from T. tengcongensis; 6VUI paper (PMC7641330) calls it wild-type Tte; BLAST (unrestricted) 33/33 to T. italicus Ab9; organism-restricted check pending"
+        construct_changes: "none reported; identical sequence to 3GCA/3Q50/6VUH/7E9I"
+        masked: []
+        ligand_state: "preQ1 + Mn2+"
+        alternatives: "3Q50 (preQ1, 2.75 A), 3GCA (preQ0), 6VUH (apo), 7E9I (synthetic ligand); rule: cognate-bound then resolution -> 6VUI (2.68 A)"
+        decision: accept
+      - key: 3FU2_A
+        source: "Bacillus subtilis queC preQ1-I (34-mer)"
+        source_evidence: "paper PMC2657927: wild-type B. subtilis; BLAST B. subtilis natto genome 34/34"
+        construct_changes: "none (wild type); C12,U13 (L2) disordered per paper"
+        masked: []
+        ligand_state: "preQ1-bound"
+        alternatives: "3K1V = sequence variant of same RNA (excluded, engineered); 2L1V = NMR 36-mer with 5' GG and L2 differences (lower priority by rule)"
+        decision: accept
+      - key: 7REX_A
+        source: "Carnobacterium antarcticum preQ1-I type 1"
+        source_evidence: "mmCIF pdbx_entity_src_syn C. antarcticum; paper PMC8752633; BLAST C. antarcticum CP1 genome 34/34"
+        construct_changes: "none detected"
+        masked: []
+        ligand_state: "two stacked preQ1 in one pocket (different stoichiometry; flagged)"
+        alternatives: "8FB3 same sequence, 3.0 A"
+        decision: accept
+
+  RF00174:
+    decision: primary
+    target_motifs: "AdoCbl pocket (seed RNA_ligand_AdoCbl), four-way junction, k-turn, L5-L13 kissing loop"
+    representatives:
+      - key: 4GMA_Z
+        source: "Thermoanaerobacter tengcongensis AdoCbl riboswitch (locus ~395164-395395 of MB4 genome)"
+        source_evidence: "paper PMC3518761 (Johnson et al. 2012) states Tte AdoCbl riboswitch; 6VMY paper calls 4GMA Cbl-I from T. tengcongensis; mmCIF/RNAcentral label 'Marine metagenome 408172' CONFLICTS (metadata error); BLAST txid119072: MB4 genome HSPs q41-117 (77/77) and q124-209 (85/87)"
+        construct_changes: "vs MB4 genome: deposited 1-40 (P1 5p strand + P2 per seed elements) not alignable to the native locus; ~62 native nt replaced by 6 nt at 118-123 (seed element P7+P8+P9+P10+P11+P12 = P6 extension); 197G>A and 1-nt change after 204 (outside row)"
+        masked: []
+        ligand_state: "AdoCbl-bound"
+        alternatives: "8SA2-8SA6 identical construct (cryo-EM dimers; authors: dimer likely artifact)"
+        decision: excluded
+        reason: "extensive construct changes inside the family interval (P1/P2 and P6-extension replacement) plus source-label conflict; not usable for a natural-sequence comparison"
+      - key: 4GXY_A
+        source: "Symbiobacterium thermophilum AdoCbl riboswitch"
+        source_evidence: "mmCIF source empty; BLAST S. thermophilum IAM 14863 genome 169/169 (positions 2-170)"
+        construct_changes: "none within 2-170; 1 and 171-172 unaligned (terminal)"
+        masked: [1, 171, 172]
+        ligand_state: "AdoCbl-bound"
+        decision: accept
+      - key: 6VMY_A
+        source: "Bacillus subtilis cobalamin riboswitch (atypical)"
+        source_evidence: "mmCIF entity_src_gen B. subtilis; struct_ref GB CP046047.1; paper PMC7367189; BLAST B. subtilis natto 147/147 (2-148)"
+        construct_changes: "5' GTP cloning artifact (struct_ref_seq_dif), outside row 1-130? (checked in crosswalk)"
+        masked: [1]
+        ligand_state: "AdoCbl-bound"
+        decision: accept
+
+  RF00059:
+    decision: exploratory
+    target_motifs: "TPP pocket (seed RNA_ligand_TPP), J3/2, P2/P4 tetrads, L5-P3 tertiary contact"
+    representatives:
+      - key: 2GDI_X
+        source: "Escherichia coli thiM"
+        source_evidence: "paper PMID 16728979 (abstract/PMC4689313 excerpts); BLAST E. coli genome 77/77 (2-78)"
+        construct_changes: "1 and 79-80 unaligned to genome (terminal); construct statement in methods not fully reviewed"
+        masked: [1, 79, 80]
+        ligand_state: "TPP-bound"
+        alternatives: "4NYA/7TZR/7TZS same sequence with fragment ligands; 2HOJ group (83 nt, added terminal GC pairs) lower priority"
+        decision: accept
+      - key: 3D2G_A
+        source: "Arabidopsis thaliana THIC (thiC) TPP riboswitch, 3'UTR"
+        source_evidence: "mmCIF entity_src_gen Arabidopsis thaliana; BLAST txid3702 (2CKY identical sequence): THIC mRNA NM_128517 2365-2419 = query 22-76 (55/55); native segment NM_128517:2320-2440 fetched (inputs/ncbi)"
+        construct_changes: "1-21 redesigned: native GGGACCAGG joined to a rearranged copy of upstream native GUGCUUG... with a ~30-nt native hairpin absent; seed elements: P1 (5p), P2, part of P3. Primary papers (Science 2006, JACS 2008) not open access: design statement UNREVIEWED"
+        masked: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 77]
+        ligand_state: "TPP-bound"
+        alternatives: "2CKY (TPP, 2.9 A), 3D2V/3D2X analogues - same construct"
+        decision: exploratory
+        reason: "redesign spans P2/P3 (pyrimidine-sensor arm, a target region) -> exploratory, not primary"
+
+  RF00442:
+    decision: exploratory
+    reason: "both natural-source constructs carry changes inside P1 paired/interior positions in addition to peripheral loop replacements (5U3G 25; 7MLW deletion after 43); relevance to the guanidinium pocket uncertain -> exploratory, not primary"
+    representatives:
+      - {key: 5U3G_B, source: "Dickeya dadantii ykkC", masked: [19, 20, 21, 22, 25, 37, 48, 49, 50, 51, 70], decision: exploratory, evidence: "BLAST txid204038 vs D. dadantii 3937: 19-21, 4-nt native insert after 22, 25, 37, 48-51, 70; paper Fig.1 marks construct changes"}
+      - {key: 7MLW_F, source: "Burkholderia sp. TJI49", masked: [43, 81, 83, 84], decision: exploratory}
+      - {key: 5T83_A, source: "Sulfobacillus acidophilus", decision: excluded, reason: "P1b CUAG/CUAG -> CGUC/GGUG engineered tandem G.U motif (paper + BLAST 25-27, 31-33): deliberate noncanonical change"}
+
+  RF02340:
+    decision: pending
+    reason: "7LYF (DENV2) and 7LYG (ZIKV) are SLA fused into a tRNA scaffold (paper PMC8100141); family row lies within the fusion; SLA-native check pending; 7UMC NMR (DENV1, same species as DENV2); 8GZP/8GZQ synthetic + NS5 cryo-EM"
+
+  RF03013:
+    decision: excluded_from_primary
+    reason: "fewer than two eligible natural sources: 7D81/7D82 carry C2G, A27G, G49C (mmCIF pdbx_mutation) inside the ~50-nt domain incl. P1; 7D7V has deletions and a loop replacement; 7D7W-7D7Z synthetic; only Ca. Koribacter versatilis group (6TB7...) remains (29A conflict unresolved)"
+
+  RF00458:
+    decision: excluded_from_primary
+    reason: "PSIV (2IL9, free IRES crystal) vs CrPV (all ribosome-bound cryo-EM); experimental context not comparable; several CrPV chains use multi-character IDs; construct review not completed"
+
+  RF00015:
+    decision: excluded_from_primary
+    reason: "yeast U4 chains cover <0.90 of their rows (0.53-0.81) except 5GAP_V, whose deposited U4 is a 67-nt partial; inadequate comparable coverage for a yeast-human pair"
+
+  RF00032:
+    decision: excluded_from_primary
+    reason: "mouse NMR entries 1JU7/1JWC observe 0.571 of row (<0.90) and carry 5' GG changes (struct_ref_seq_dif); other rows human or synthetic only -> <2 eligible natural sources"

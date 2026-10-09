@@ -12,3 +12,10 @@
 - 2026-10-09T03:46Z TECHNICAL CONTROLS (not results; results/control_runs.tsv, runs/_controls/): 2GIS_A vs 3IQR_A (same Tte construct, A94G) 94/94 RMSD 0.63; 4GXY self 163/163; 6VMY self 130/130. Conclusion: short cross-species alignments for RF00162 (25 nt) and RF00174 (26 nt) are STAR3D algorithmic outcomes, not input/tool defects. (Control attempt1 dirs failed on wrapper run_id path bug; preserved.)
 - 2026-10-09T03:52Z decisions.yaml post-freeze label edit: RF02340 'pending_blast' -> 'pending' (family never selected; no effect on frozen pairs). Freeze checksum for decisions.yaml therefore differs from metadata/cohort_v1_freeze.json by this line only.
 - 2026-10-09T04:03Z User requested removal of the V1 directory ../rfam_star3d_pilot (502 MB). V2 has no runtime dependency on it (all reused inputs copied with sha256 re-verification). V1 provenance (archive note, V1 sources manifest, failed SSL attempt, captcha quarantine list) copied to archive_v1_provenance/ before deletion; doc references updated.
+- 2026-10-09 audit-repair v2.1 (branch audit-repair-v2.1 from 7f94cba): fixes to interactions.py (masking per
+  method, separate denominators, FR3D symmetry operators, injective inversion, provenance sidecars), regions.py
+  (span/target eligibility, correspondence vs coverage, carried interpretations), star3d.py (preprocessing gate),
+  compare.py/reference.py (validation failures, subset refusal, deterministic order); new anchor_fit.py,
+  exact_source_check.py, candidate_evidence.py, fresh_repro.py; cohort v1.1 (RF00162 tier -> exploratory_engineered_technical;
+  frozen metadata/cohort_v1.1_freeze.json); decisions.yaml evidence_strength/engineering_status fields; a later
+  wording-only edit to the 6VUI construct note after the v1.1 freeze (no cohort effect). Details: audit/AUDIT_LOG.md.
