@@ -1,0 +1,29 @@
+{
+ "families_with_pdb_candidates(Rfam.pdb.gz or seed GR)": 167,
+ "  of which in Rfam.pdb.gz": 163,
+ "  of which have explicit GR links in standard seed": 74,
+ "families_with_>=2_candidate_chain_sequence_groups": 98,
+ "families_with_>=2_explicitly_linked_distinct_row_sequences": 31,
+ "families_with_>=2_linked_distinct_row_sequences_incl_sequence_only_proposals": 54,
+ "families_with_>=2_eligible_distinct_biological_representatives": "unknown outside reviewed scope (Phase 2)",
+ "candidate_chains_total": 12818,
+ "candidate_chain_status_counts": {
+  "explicit_gr_link": 383,
+  "no_seqres": 122,
+  "no_standard_seed_row_candidate": 10520,
+  "sequence_match_only_pending_provenance": 1793
+ },
+ "shortlist": [
+  "RF00162",
+  "RF03013",
+  "RF02340",
+  "RF00174",
+  "RF00442",
+  "RF00458",
+  "RF00522",
+  "RF00015",
+  "RF00032",
+  "RF00059"
+ ],
+ "screen_pass_total": 31
+}

@@ -1,0 +1,17 @@
+RF00162__2GIS_A__4KQY_A  (pinned Rfam.seed.gz 15.1; ORIGINAL column numbers)
+col    1  A   G-GCUUAUCAAGAG-AGG-U-GG-----------------AGGGA--CUGG-CCCGA--U
+          B   GUUCUUAUCAAGAG-AAG-C-AG-----------------AGGGA--CUGG-CCCGA--C
+          SS  (.(((((((,,,,<.<<<.<.--.................-<<<_..AAAA.>>>--..-
+
+col   61  A   GAA-ACC--CGGCAACC-------------------------------------------
+          B   GAA-GCU-UCAGCAACC-G-GUG-UAAUGGCGA---------------------------
+          SS  ---.>>>.>><<<<-<<.<.<<<._____...............................
+
+col  121  A   ---------------------------AGAA----AU--GGUGCCA-AUUC--CUG-CAG
+          B   -------------------AAGCCAUG----ACC-AA--GGUGCUA-AAUC--CAG-CAA
+          SS  ........................__>....>>>.--..>>>>>>,.,,<a..aaa.<<<
+
+col  181  A   CG--------GAA----------------------ACGU-UG-A-AA-GAUGAGC-CA-
+          B   GCUC-----GAAC----------------------AGCU-UG-G-AA-GAUAAGAAC--
+          SS  <<<_.....____......................>>>>.>>.-.->.))))))).)..
+

@@ -1,0 +1,6 @@
+# Runtime for ORIGINAL STAR3D v1.2 (genome.ucf.edu/STAR3D). Bundled MC-Annotate (i386 static) and
+# RemovePseudoknots (x86-64, glibc) are Linux binaries, so the image is linux/amd64.
+FROM ubuntu:22.04
+ENV DEBIAN_FRONTEND=noninteractive
+RUN apt-get update -qq && apt-get install -y -qq openjdk-8-jre-headless && rm -rf /var/lib/apt/lists/*
+WORKDIR /star3d

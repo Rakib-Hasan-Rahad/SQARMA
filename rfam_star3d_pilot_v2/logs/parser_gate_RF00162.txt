@@ -1,0 +1,9 @@
+interleaved file: inputs/rfam/web/RF00162_web_stockholm.sto; record RF00162; 457 rows; width 239
+raw lines for URS000080DF35_32630/1-94 / 2GIS_A_SS (2 sequence blocks):
+  L542: URS000080DF35_32630/1-94                      G-GCUUAUCAAGAG-AGG-U-GG-----------------AGGGA--CU
+  L543: #=GR URS000080DF35_32630/1-94       2GIS_A_SS (.(((((((....(..((.(.....................(((...{{
+  L1033: URS000080DF35_32630/1-94                      ---------------ACGU-UG-A-AA-GAUGAGC-CA-
+  L1034: #=GR URS000080DF35_32630/1-94       2GIS_A_SS ................))).))....).))))))).)..
+independent raw assembly == parser assembly: True
+vs pinned Rfam.seed.gz (15.1): rows 457; same names True; identical aligned strings True; GC identical {'SS_cons': True, 'RF': True, 'RNA_motif_k_turn': True, 'RNA_ligand_SAM': True, 'RNA_structural_elements': True}
+GATE parser-on-interleaved-record: PASS (reviewer: AI agent; raw lines above viewed directly)

@@ -1,0 +1,602 @@
+<?xml version="1.0" encoding="US-ASCII"?>
+<!DOCTYPE BlastOutput PUBLIC "-//NCBI//NCBI BlastOutput/EN" "http://www.ncbi.nlm.nih.gov/dtd/NCBI_BlastOutput.dtd">
+<BlastOutput>
+  <BlastOutput_program>blastn</BlastOutput_program>
+  <BlastOutput_version>BLASTN 2.17.0+</BlastOutput_version>
+  <BlastOutput_reference>Stephen F. Altschul, Thomas L. Madden, Alejandro A. Sch&amp;auml;ffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), &quot;Gapped BLAST and PSI-BLAST: a new generation of protein database search programs&quot;, Nucleic Acids Res. 25:3389-3402.</BlastOutput_reference>
+  <BlastOutput_db>core_nt</BlastOutput_db>
+  <BlastOutput_query-ID>Query_772733</BlastOutput_query-ID>
+  <BlastOutput_query-def>No definition line</BlastOutput_query-def>
+  <BlastOutput_query-len>85</BlastOutput_query-len>
+  <BlastOutput_param>
+    <Parameters>
+      <Parameters_expect>0.001</Parameters_expect>
+      <Parameters_sc-match>2</Parameters_sc-match>
+      <Parameters_sc-mismatch>-3</Parameters_sc-mismatch>
+      <Parameters_gap-open>5</Parameters_gap-open>
+      <Parameters_gap-extend>2</Parameters_gap-extend>
+      <Parameters_filter>L;m;</Parameters_filter>
+    </Parameters>
+  </BlastOutput_param>
+<BlastOutput_iterations>
+<Iteration>
+  <Iteration_iter-num>1</Iteration_iter-num>
+  <Iteration_query-ID>Query_772733</Iteration_query-ID>
+  <Iteration_query-def>No definition line</Iteration_query-def>
+  <Iteration_query-len>85</Iteration_query-len>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>gi|1139421946|pdb|5U3G|B</Hit_id>
+  <Hit_def>Chain B, ykkC riboswitch</Hit_def>
+  <Hit_accession>5U3G_B</Hit_accession>
+  <Hit_len>85</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>152.769</Hsp_bit-score>
+      <Hsp_score>168</Hsp_score>
+      <Hsp_evalue>5.33313e-33</Hsp_evalue>
+      <Hsp_query-from>2</Hsp_query-from>
+      <Hsp_query-to>85</Hsp_query-to>
+      <Hsp_hit-from>2</Hsp_hit-from>
+      <Hsp_hit-to>85</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>1</Hsp_hit-frame>
+      <Hsp_identity>84</Hsp_identity>
+      <Hsp_positive>84</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>84</Hsp_align-len>
+      <Hsp_qseq>GTGACTAGGGTTCCGGCGAAAGCCGGTCCGAGAGTTACCGACCGCCGAAAGGCGGTTACACGGCGGGAAAAAAGCCCGGGAGGA</Hsp_qseq>
+      <Hsp_hseq>GTGACTAGGGTTCCGGCGAAAGCCGGTCCGAGAGTTACCGACCGCCGAAAGGCGGTTACACGGCGGGAAAAAAGCCCGGGAGGA</Hsp_hseq>
+      <Hsp_midline>||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>2</Hit_num>
+  <Hit_id>gi|2077425183|gb|CP040816.1|</Hit_id>
+  <Hit_def>Dickeya ananatis strain A5410 chromosome, complete genome</Hit_def>
+  <Hit_accession>CP040816</Hit_accession>
+  <Hit_len>4779199</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>106.783</Hsp_bit-score>
+      <Hsp_score>117</Hsp_score>
+      <Hsp_evalue>6.94309e-19</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>85</Hsp_query-to>
+      <Hsp_hit-from>4352771</Hsp_hit-from>
+      <Hsp_hit-to>4352683</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>-1</Hsp_hit-frame>
+      <Hsp_identity>77</Hsp_identity>
+      <Hsp_positive>77</Hsp_positive>
+      <Hsp_gaps>4</Hsp_gaps>
+      <Hsp_align-len>89</Hsp_align-len>
+      <Hsp_qseq>GGTGACTAGGGTTCCGGCGAAA----GCCGGTCCGAGAGTTACCGACCGCCGAAAGGCGGTTACACGGCGGGAAAAAAGCCCGGGAGGA</Hsp_qseq>
+      <Hsp_hseq>GGTGACTAGGGTTCCGGCTTTACTGCGCAGGTCCGAGAGTTACCGACCGCCCTCTGGCGGTTACACGGCGGGAAAAAAGCCCGGGAGGA</Hsp_hseq>
+      <Hsp_midline>||||||||||||||||||   |    || ||||||||||||||||||||||    ||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>3</Hit_num>
+  <Hit_id>gi|2864254841|gb|CP146228.1|</Hit_id>
+  <Hit_def>Dickeya ananatis strain CFBP 1272 chromosome, complete genome</Hit_def>
+  <Hit_accession>CP146228</Hit_accession>
+  <Hit_len>4797088</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>106.783</Hsp_bit-score>
+      <Hsp_score>117</Hsp_score>
+      <Hsp_evalue>6.94309e-19</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>85</Hsp_query-to>
+      <Hsp_hit-from>1933729</Hsp_hit-from>
+      <Hsp_hit-to>1933817</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>1</Hsp_hit-frame>
+      <Hsp_identity>77</Hsp_identity>
+      <Hsp_positive>77</Hsp_positive>
+      <Hsp_gaps>4</Hsp_gaps>
+      <Hsp_align-len>89</Hsp_align-len>
+      <Hsp_qseq>GGTGACTAGGGTTCCGGCGAAA----GCCGGTCCGAGAGTTACCGACCGCCGAAAGGCGGTTACACGGCGGGAAAAAAGCCCGGGAGGA</Hsp_qseq>
+      <Hsp_hseq>GGTGACTAGGGTTCCGGCTTTACTGCGCAGGTCCGAGAGTTACCGACCGCCCTCTGGCGGTTACACGGCGGGAAAAAAGCCCGGGAGGA</Hsp_hseq>
+      <Hsp_midline>||||||||||||||||||   |    || ||||||||||||||||||||||    ||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>4</Hit_num>
+  <Hit_id>gi|2864246859|gb|CP146226.1|</Hit_id>
+  <Hit_def>Dickeya ananatis strain A5611 chromosome, complete genome</Hit_def>
+  <Hit_accession>CP146226</Hit_accession>
+  <Hit_len>4837911</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>106.783</Hsp_bit-score>
+      <Hsp_score>117</Hsp_score>
+      <Hsp_evalue>6.94309e-19</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>85</Hsp_query-to>
+      <Hsp_hit-from>561023</Hsp_hit-from>
+      <Hsp_hit-to>560935</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>-1</Hsp_hit-frame>
+      <Hsp_identity>77</Hsp_identity>
+      <Hsp_positive>77</Hsp_positive>
+      <Hsp_gaps>4</Hsp_gaps>
+      <Hsp_align-len>89</Hsp_align-len>
+      <Hsp_qseq>GGTGACTAGGGTTCCGGCGAAA----GCCGGTCCGAGAGTTACCGACCGCCGAAAGGCGGTTACACGGCGGGAAAAAAGCCCGGGAGGA</Hsp_qseq>
+      <Hsp_hseq>GGTGACTAGGGTTCCGGCTTTACTGCGCAGGTCCGAGAGTTACCGACCGCCCTCTGGCGGTTACACGGCGGGAAAAAAGCCCGGGAGGA</Hsp_hseq>
+      <Hsp_midline>||||||||||||||||||   |    || ||||||||||||||||||||||    ||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>5</Hit_num>
+  <Hit_id>gi|2864262884|gb|CP146225.1|</Hit_id>
+  <Hit_def>Dickeya ananatis strain A6137 chromosome, complete genome</Hit_def>
+  <Hit_accession>CP146225</Hit_accession>
+  <Hit_len>4779844</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>106.783</Hsp_bit-score>
+      <Hsp_score>117</Hsp_score>
+      <Hsp_evalue>6.94309e-19</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>85</Hsp_query-to>
+      <Hsp_hit-from>334587</Hsp_hit-from>
+      <Hsp_hit-to>334675</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>1</Hsp_hit-frame>
+      <Hsp_identity>77</Hsp_identity>
+      <Hsp_positive>77</Hsp_positive>
+      <Hsp_gaps>4</Hsp_gaps>
+      <Hsp_align-len>89</Hsp_align-len>
+      <Hsp_qseq>GGTGACTAGGGTTCCGGCGAAA----GCCGGTCCGAGAGTTACCGACCGCCGAAAGGCGGTTACACGGCGGGAAAAAAGCCCGGGAGGA</Hsp_qseq>
+      <Hsp_hseq>GGTGACTAGGGTTCCGGCTTTACTGCGCAGGTCCGAGAGTTACCGACCGCCCTCTGGCGGTTACACGGCGGGAAAAAAGCCCGGGAGGA</Hsp_hseq>
+      <Hsp_midline>||||||||||||||||||   |    || ||||||||||||||||||||||    ||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>6</Hit_num>
+  <Hit_id>gi|2780835767|gb|CP162411.1|</Hit_id>
+  <Hit_def>Dickeya oryzae strain A642-S2-A17 chromosome, complete genome</Hit_def>
+  <Hit_accession>CP162411</Hit_accession>
+  <Hit_len>4825049</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>106.783</Hsp_bit-score>
+      <Hsp_score>117</Hsp_score>
+      <Hsp_evalue>6.94309e-19</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>85</Hsp_query-to>
+      <Hsp_hit-from>62413</Hsp_hit-from>
+      <Hsp_hit-to>62325</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>-1</Hsp_hit-frame>
+      <Hsp_identity>77</Hsp_identity>
+      <Hsp_positive>77</Hsp_positive>
+      <Hsp_gaps>4</Hsp_gaps>
+      <Hsp_align-len>89</Hsp_align-len>
+      <Hsp_qseq>GGTGACTAGGGTTCCGGCGAAA----GCCGGTCCGAGAGTTACCGACCGCCGAAAGGCGGTTACACGGCGGGAAAAAAGCCCGGGAGGA</Hsp_qseq>
+      <Hsp_hseq>GGTGACTAGGGTTCCGGCTTTACTGCGCAGGTCCGAGAGTTACCGACCGCCCTCTGGCGGTTACACGGCGGGAAAAAAGCCCGGGAGGA</Hsp_hseq>
+      <Hsp_midline>||||||||||||||||||   |    || ||||||||||||||||||||||    ||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>7</Hit_num>
+  <Hit_id>gi|2183602559|gb|CP053012.1|</Hit_id>
+  <Hit_def>Dickeya zeae MS1 chromosome, complete genome</Hit_def>
+  <Hit_accession>CP053012</Hit_accession>
+  <Hit_len>4831702</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>106.783</Hsp_bit-score>
+      <Hsp_score>117</Hsp_score>
+      <Hsp_evalue>6.94309e-19</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>85</Hsp_query-to>
+      <Hsp_hit-from>79672</Hsp_hit-from>
+      <Hsp_hit-to>79584</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>-1</Hsp_hit-frame>
+      <Hsp_identity>77</Hsp_identity>
+      <Hsp_positive>77</Hsp_positive>
+      <Hsp_gaps>4</Hsp_gaps>
+      <Hsp_align-len>89</Hsp_align-len>
+      <Hsp_qseq>GGTGACTAGGGTTCCGGCGAAA----GCCGGTCCGAGAGTTACCGACCGCCGAAAGGCGGTTACACGGCGGGAAAAAAGCCCGGGAGGA</Hsp_qseq>
+      <Hsp_hseq>GGTGACTAGGGTTCCGGCTTTACTGCGCAGGTCCGAGAGTTACCGACCGCCCTCTGGCGGTTACACGGCGGGAAAAAAGCCCGGGAGGA</Hsp_hseq>
+      <Hsp_midline>||||||||||||||||||   |    || ||||||||||||||||||||||    ||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>8</Hit_num>
+  <Hit_id>gi|2232990762|gb|CP040815.1|</Hit_id>
+  <Hit_def>Dickeya oryzae strain A5272 chromosome, complete genome</Hit_def>
+  <Hit_accession>CP040815</Hit_accession>
+  <Hit_len>4697973</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>106.783</Hsp_bit-score>
+      <Hsp_score>117</Hsp_score>
+      <Hsp_evalue>6.94309e-19</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>85</Hsp_query-to>
+      <Hsp_hit-from>168450</Hsp_hit-from>
+      <Hsp_hit-to>168362</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>-1</Hsp_hit-frame>
+      <Hsp_identity>77</Hsp_identity>
+      <Hsp_positive>77</Hsp_positive>
+      <Hsp_gaps>4</Hsp_gaps>
+      <Hsp_align-len>89</Hsp_align-len>
+      <Hsp_qseq>GGTGACTAGGGTTCCGGCGAAA----GCCGGTCCGAGAGTTACCGACCGCCGAAAGGCGGTTACACGGCGGGAAAAAAGCCCGGGAGGA</Hsp_qseq>
+      <Hsp_hseq>GGTGACTAGGGTTCCGGCTTTACTGCGCAGGTCCGAGAGTTACCGACCGCCCTCTGGCGGTTACACGGCGGGAAAAAAGCCCGGGAGGA</Hsp_hseq>
+      <Hsp_midline>||||||||||||||||||   |    || ||||||||||||||||||||||    ||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>9</Hit_num>
+  <Hit_id>gi|2118078285|gb|CP084740.1|</Hit_id>
+  <Hit_def>Dickeya parazeae strain A586-S18-A17 chromosome, complete genome</Hit_def>
+  <Hit_accession>CP084740</Hit_accession>
+  <Hit_len>4763550</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>106.783</Hsp_bit-score>
+      <Hsp_score>117</Hsp_score>
+      <Hsp_evalue>6.94309e-19</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>85</Hsp_query-to>
+      <Hsp_hit-from>2027737</Hsp_hit-from>
+      <Hsp_hit-to>2027825</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>1</Hsp_hit-frame>
+      <Hsp_identity>77</Hsp_identity>
+      <Hsp_positive>77</Hsp_positive>
+      <Hsp_gaps>4</Hsp_gaps>
+      <Hsp_align-len>89</Hsp_align-len>
+      <Hsp_qseq>GGTGACTAGGGTTCCGGCGAAA----GCCGGTCCGAGAGTTACCGACCGCCGAAAGGCGGTTACACGGCGGGAAAAAAGCCCGGGAGGA</Hsp_qseq>
+      <Hsp_hseq>GGTGACTAGGGTTCCGGCTTTACTGCGCAGGTCCGAGAGTTACCGACCGCCCTCTGGCGGTTACACGGCGGGAAAAAAGCCCGGGAGGA</Hsp_hseq>
+      <Hsp_midline>||||||||||||||||||   |    || ||||||||||||||||||||||    ||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>10</Hit_num>
+  <Hit_id>gi|2183558246|gb|CP053014.1|</Hit_id>
+  <Hit_def>Dickeya zeae strain MS_2018 chromosome, complete genome</Hit_def>
+  <Hit_accession>CP053014</Hit_accession>
+  <Hit_len>4787201</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>106.783</Hsp_bit-score>
+      <Hsp_score>117</Hsp_score>
+      <Hsp_evalue>6.94309e-19</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>85</Hsp_query-to>
+      <Hsp_hit-from>3612991</Hsp_hit-from>
+      <Hsp_hit-to>3613079</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>1</Hsp_hit-frame>
+      <Hsp_identity>77</Hsp_identity>
+      <Hsp_positive>77</Hsp_positive>
+      <Hsp_gaps>4</Hsp_gaps>
+      <Hsp_align-len>89</Hsp_align-len>
+      <Hsp_qseq>GGTGACTAGGGTTCCGGCGAAA----GCCGGTCCGAGAGTTACCGACCGCCGAAAGGCGGTTACACGGCGGGAAAAAAGCCCGGGAGGA</Hsp_qseq>
+      <Hsp_hseq>GGTGACTAGGGTTCCGGCTTTACTGCGCAGGTCCGAGAGTTACCGACCGCCCTCTGGCGGTTACACGGCGGGAAAAAAGCCCGGGAGGA</Hsp_hseq>
+      <Hsp_midline>||||||||||||||||||   |    || ||||||||||||||||||||||    ||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>11</Hit_num>
+  <Hit_id>gi|2075741201|gb|CP060263.1|</Hit_id>
+  <Hit_def>Dickeya zeae strain JZL7 chromosome, complete genome</Hit_def>
+  <Hit_accession>CP060263</Hit_accession>
+  <Hit_len>4925859</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>106.783</Hsp_bit-score>
+      <Hsp_score>117</Hsp_score>
+      <Hsp_evalue>6.94309e-19</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>85</Hsp_query-to>
+      <Hsp_hit-from>71330</Hsp_hit-from>
+      <Hsp_hit-to>71242</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>-1</Hsp_hit-frame>
+      <Hsp_identity>77</Hsp_identity>
+      <Hsp_positive>77</Hsp_positive>
+      <Hsp_gaps>4</Hsp_gaps>
+      <Hsp_align-len>89</Hsp_align-len>
+      <Hsp_qseq>GGTGACTAGGGTTCCGGCGAAA----GCCGGTCCGAGAGTTACCGACCGCCGAAAGGCGGTTACACGGCGGGAAAAAAGCCCGGGAGGA</Hsp_qseq>
+      <Hsp_hseq>GGTGACTAGGGTTCCGGCTTTACTGCGCAGGTCCGAGAGTTACCGACCGCCCTCTGGCGGTTACACGGCGGGAAAAAAGCCCGGGAGGA</Hsp_hseq>
+      <Hsp_midline>||||||||||||||||||   |    || ||||||||||||||||||||||    ||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>12</Hit_num>
+  <Hit_id>gi|2864234085|gb|CP146227.1|</Hit_id>
+  <Hit_def>Dickeya ananatis strain CFBP 1278 chromosome, complete genome</Hit_def>
+  <Hit_accession>CP146227</Hit_accession>
+  <Hit_len>4805951</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>106.783</Hsp_bit-score>
+      <Hsp_score>117</Hsp_score>
+      <Hsp_evalue>6.94309e-19</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>85</Hsp_query-to>
+      <Hsp_hit-from>85141</Hsp_hit-from>
+      <Hsp_hit-to>85053</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>-1</Hsp_hit-frame>
+      <Hsp_identity>77</Hsp_identity>
+      <Hsp_positive>77</Hsp_positive>
+      <Hsp_gaps>4</Hsp_gaps>
+      <Hsp_align-len>89</Hsp_align-len>
+      <Hsp_qseq>GGTGACTAGGGTTCCGGCGAAA----GCCGGTCCGAGAGTTACCGACCGCCGAAAGGCGGTTACACGGCGGGAAAAAAGCCCGGGAGGA</Hsp_qseq>
+      <Hsp_hseq>GGTGACTAGGGTTCCGGCTTTACTGCGCAGGTCCGAGAGTTACCGACCGCCCTCTGGCGGTTACACGGCGGGAAAAAAGCCCGGGAGGA</Hsp_hseq>
+      <Hsp_midline>||||||||||||||||||   |    || ||||||||||||||||||||||    ||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>13</Hit_num>
+  <Hit_id>gi|2780831705|gb|CP162670.1|</Hit_id>
+  <Hit_def>Dickeya oryzae strain A003-S1-M15 chromosome, complete genome</Hit_def>
+  <Hit_accession>CP162670</Hit_accession>
+  <Hit_len>4763888</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>106.783</Hsp_bit-score>
+      <Hsp_score>117</Hsp_score>
+      <Hsp_evalue>6.94309e-19</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>85</Hsp_query-to>
+      <Hsp_hit-from>69217</Hsp_hit-from>
+      <Hsp_hit-to>69129</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>-1</Hsp_hit-frame>
+      <Hsp_identity>77</Hsp_identity>
+      <Hsp_positive>77</Hsp_positive>
+      <Hsp_gaps>4</Hsp_gaps>
+      <Hsp_align-len>89</Hsp_align-len>
+      <Hsp_qseq>GGTGACTAGGGTTCCGGCGAAA----GCCGGTCCGAGAGTTACCGACCGCCGAAAGGCGGTTACACGGCGGGAAAAAAGCCCGGGAGGA</Hsp_qseq>
+      <Hsp_hseq>GGTGACTAGGGTTCCGGCTTTACTGCGCAGGTCCGAGAGTTACCGACCGCCCTCTGGCGGTTACACGGCGGGAAAAAAGCCCGGGAGGA</Hsp_hseq>
+      <Hsp_midline>||||||||||||||||||   |    || ||||||||||||||||||||||    ||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>14</Hit_num>
+  <Hit_id>gi|2864208479|gb|CP146223.1|</Hit_id>
+  <Hit_def>Dickeya ananatis strain A5391 chromosome, complete genome</Hit_def>
+  <Hit_accession>CP146223</Hit_accession>
+  <Hit_len>4834333</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>106.783</Hsp_bit-score>
+      <Hsp_score>117</Hsp_score>
+      <Hsp_evalue>6.94309e-19</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>85</Hsp_query-to>
+      <Hsp_hit-from>1176780</Hsp_hit-from>
+      <Hsp_hit-to>1176868</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>1</Hsp_hit-frame>
+      <Hsp_identity>77</Hsp_identity>
+      <Hsp_positive>77</Hsp_positive>
+      <Hsp_gaps>4</Hsp_gaps>
+      <Hsp_align-len>89</Hsp_align-len>
+      <Hsp_qseq>GGTGACTAGGGTTCCGGCGAAA----GCCGGTCCGAGAGTTACCGACCGCCGAAAGGCGGTTACACGGCGGGAAAAAAGCCCGGGAGGA</Hsp_qseq>
+      <Hsp_hseq>GGTGACTAGGGTTCCGGCTTTACTGCGCAGGTCCGAGAGTTACCGACCGCCCTCTGGCGGTTACACGGCGGGAAAAAAGCCCGGGAGGA</Hsp_hseq>
+      <Hsp_midline>||||||||||||||||||   |    || ||||||||||||||||||||||    ||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>15</Hit_num>
+  <Hit_id>gi|2183553652|gb|CP053013.1|</Hit_id>
+  <Hit_def>Dickeya zeae strain MS_2014 chromosome, complete genome</Hit_def>
+  <Hit_accession>CP053013</Hit_accession>
+  <Hit_len>4740000</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>106.783</Hsp_bit-score>
+      <Hsp_score>117</Hsp_score>
+      <Hsp_evalue>6.94309e-19</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>85</Hsp_query-to>
+      <Hsp_hit-from>84123</Hsp_hit-from>
+      <Hsp_hit-to>84035</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>-1</Hsp_hit-frame>
+      <Hsp_identity>77</Hsp_identity>
+      <Hsp_positive>77</Hsp_positive>
+      <Hsp_gaps>4</Hsp_gaps>
+      <Hsp_align-len>89</Hsp_align-len>
+      <Hsp_qseq>GGTGACTAGGGTTCCGGCGAAA----GCCGGTCCGAGAGTTACCGACCGCCGAAAGGCGGTTACACGGCGGGAAAAAAGCCCGGGAGGA</Hsp_qseq>
+      <Hsp_hseq>GGTGACTAGGGTTCCGGCTTTACTGCGCAGGTCCGAGAGTTACCGACCGCCCTCTGGCGGTTACACGGCGGGAAAAAAGCCCGGGAGGA</Hsp_hseq>
+      <Hsp_midline>||||||||||||||||||   |    || ||||||||||||||||||||||    ||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>16</Hit_num>
+  <Hit_id>gi|2077421085|gb|CP040817.1|</Hit_id>
+  <Hit_def>Dickeya zeae strain PL65 chromosome, complete genome</Hit_def>
+  <Hit_accession>CP040817</Hit_accession>
+  <Hit_len>4749968</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>106.783</Hsp_bit-score>
+      <Hsp_score>117</Hsp_score>
+      <Hsp_evalue>6.94309e-19</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>85</Hsp_query-to>
+      <Hsp_hit-from>3347171</Hsp_hit-from>
+      <Hsp_hit-to>3347083</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>-1</Hsp_hit-frame>
+      <Hsp_identity>77</Hsp_identity>
+      <Hsp_positive>77</Hsp_positive>
+      <Hsp_gaps>4</Hsp_gaps>
+      <Hsp_align-len>89</Hsp_align-len>
+      <Hsp_qseq>GGTGACTAGGGTTCCGGCGAAA----GCCGGTCCGAGAGTTACCGACCGCCGAAAGGCGGTTACACGGCGGGAAAAAAGCCCGGGAGGA</Hsp_qseq>
+      <Hsp_hseq>GGTGACTAGGGTTCCGGCTTTACTGCGCAGGTCCGAGAGTTACCGACCGCCCTCTGGCGGTTACACGGCGGGAAAAAAGCCCGGGAGGA</Hsp_hseq>
+      <Hsp_midline>||||||||||||||||||   |    || ||||||||||||||||||||||    ||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>17</Hit_num>
+  <Hit_id>gi|2780827668|gb|CP162669.1|</Hit_id>
+  <Hit_def>Dickeya zeae strain A661-S21-A17 chromosome, complete genome</Hit_def>
+  <Hit_accession>CP162669</Hit_accession>
+  <Hit_len>4694569</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>106.783</Hsp_bit-score>
+      <Hsp_score>117</Hsp_score>
+      <Hsp_evalue>6.94309e-19</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>85</Hsp_query-to>
+      <Hsp_hit-from>82095</Hsp_hit-from>
+      <Hsp_hit-to>82007</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>-1</Hsp_hit-frame>
+      <Hsp_identity>77</Hsp_identity>
+      <Hsp_positive>77</Hsp_positive>
+      <Hsp_gaps>4</Hsp_gaps>
+      <Hsp_align-len>89</Hsp_align-len>
+      <Hsp_qseq>GGTGACTAGGGTTCCGGCGAAA----GCCGGTCCGAGAGTTACCGACCGCCGAAAGGCGGTTACACGGCGGGAAAAAAGCCCGGGAGGA</Hsp_qseq>
+      <Hsp_hseq>GGTGACTAGGGTTCCGGCTTTACTGCGCAGGTCCGAGAGTTACCGACCGCCCTCTGGCGGTTACACGGCGGGAAAAAAGCCCGGGAGGA</Hsp_hseq>
+      <Hsp_midline>||||||||||||||||||   |    || ||||||||||||||||||||||    ||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>18</Hit_num>
+  <Hit_id>gi|3004037226|gb|CP139931.1|</Hit_id>
+  <Hit_def>Dickeya zeae strain PL47 chromosome, complete genome</Hit_def>
+  <Hit_accession>CP139931</Hit_accession>
+  <Hit_len>4604464</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>106.783</Hsp_bit-score>
+      <Hsp_score>117</Hsp_score>
+      <Hsp_evalue>6.94309e-19</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>85</Hsp_query-to>
+      <Hsp_hit-from>3906808</Hsp_hit-from>
+      <Hsp_hit-to>3906720</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>-1</Hsp_hit-frame>
+      <Hsp_identity>77</Hsp_identity>
+      <Hsp_positive>77</Hsp_positive>
+      <Hsp_gaps>4</Hsp_gaps>
+      <Hsp_align-len>89</Hsp_align-len>
+      <Hsp_qseq>GGTGACTAGGGTTCCGGCGAAA----GCCGGTCCGAGAGTTACCGACCGCCGAAAGGCGGTTACACGGCGGGAAAAAAGCCCGGGAGGA</Hsp_qseq>
+      <Hsp_hseq>GGTGACTAGGGTTCCGGCTTTACTGCGCAGGTCCGAGAGTTACCGACCGCCCTCTGGCGGTTACACGGCGGGAAAAAAGCCCGGGAGGA</Hsp_hseq>
+      <Hsp_midline>||||||||||||||||||   |    || ||||||||||||||||||||||    ||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>19</Hit_num>
+  <Hit_id>gi|2719142979|gb|CP150895.1|</Hit_id>
+  <Hit_def>Dickeya zeae strain MS3 chromosome, complete genome</Hit_def>
+  <Hit_accession>CP150895</Hit_accession>
+  <Hit_len>4825404</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>106.783</Hsp_bit-score>
+      <Hsp_score>117</Hsp_score>
+      <Hsp_evalue>6.94309e-19</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>85</Hsp_query-to>
+      <Hsp_hit-from>79841</Hsp_hit-from>
+      <Hsp_hit-to>79753</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>-1</Hsp_hit-frame>
+      <Hsp_identity>77</Hsp_identity>
+      <Hsp_positive>77</Hsp_positive>
+      <Hsp_gaps>4</Hsp_gaps>
+      <Hsp_align-len>89</Hsp_align-len>
+      <Hsp_qseq>GGTGACTAGGGTTCCGGCGAAA----GCCGGTCCGAGAGTTACCGACCGCCGAAAGGCGGTTACACGGCGGGAAAAAAGCCCGGGAGGA</Hsp_qseq>
+      <Hsp_hseq>GGTGACTAGGGTTCCGGCTTTACTGCGCAGGTCCGAGAGTTACCGACCGCCCTCTGGCGGTTACACGGCGGGAAAAAAGCCCGGGAGGA</Hsp_hseq>
+      <Hsp_midline>||||||||||||||||||   |    || ||||||||||||||||||||||    ||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>20</Hit_num>
+  <Hit_id>gi|2864250844|gb|CP146224.1|</Hit_id>
+  <Hit_def>Dickeya ananatis strain A6136 chromosome, complete genome</Hit_def>
+  <Hit_accession>CP146224</Hit_accession>
+  <Hit_len>4779825</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>106.783</Hsp_bit-score>
+      <Hsp_score>117</Hsp_score>
+      <Hsp_evalue>6.94309e-19</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>85</Hsp_query-to>
+      <Hsp_hit-from>1420544</Hsp_hit-from>
+      <Hsp_hit-to>1420456</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>-1</Hsp_hit-frame>
+      <Hsp_identity>77</Hsp_identity>
+      <Hsp_positive>77</Hsp_positive>
+      <Hsp_gaps>4</Hsp_gaps>
+      <Hsp_align-len>89</Hsp_align-len>
+      <Hsp_qseq>GGTGACTAGGGTTCCGGCGAAA----GCCGGTCCGAGAGTTACCGACCGCCGAAAGGCGGTTACACGGCGGGAAAAAAGCCCGGGAGGA</Hsp_qseq>
+      <Hsp_hseq>GGTGACTAGGGTTCCGGCTTTACTGCGCAGGTCCGAGAGTTACCGACCGCCCTCTGGCGGTTACACGGCGGGAAAAAAGCCCGGGAGGA</Hsp_hseq>
+      <Hsp_midline>||||||||||||||||||   |    || ||||||||||||||||||||||    ||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>131744797</Statistics_db-num>
+      <Statistics_db-len>1086004251965</Statistics_db-len>
+      <Statistics_hsp-len>0</Statistics_hsp-len>
+      <Statistics_eff-space>0</Statistics_eff-space>
+      <Statistics_kappa>0.41</Statistics_kappa>
+      <Statistics_lambda>0.625</Statistics_lambda>
+      <Statistics_entropy>0.78</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+</Iteration>
+</BlastOutput_iterations>
+</BlastOutput>

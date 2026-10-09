@@ -1,0 +1,72 @@
+rfam_acc	row_seq_hash	row_name	row_len	n_structures	members	link_statuses	entity_sources	representative	group_decision
+RF00015	1b69ff7ce673472d	URS00008FED2F_4932/1-67	67	1	5GAP_V	verified	entity_src_nat:Saccharomyces cerevisiae|taxid=4932	NA	not_selected (see decisions.yaml alternatives / family reason)
+RF00015	7abbfecace83442f	URS00003F07BD_9606/1-144	144	2	6AH0_I;6AHD_I	verified	entity_src_nat:Homo sapiens|taxid=9606	NA	not_selected (see decisions.yaml alternatives / family reason)
+RF00015	8650e92db6ed3d86	URS0000D77922_4932/1-161	161	1	5ZWO_I	verified	entity_src_nat:Saccharomyces cerevisiae S288c|taxid=559292	NA	not_selected (see decisions.yaml alternatives / family reason)
+RF00015	a3d0e32858fa64db	URS00001143F5_4932/1-160	160	4	3JCM_E;5GAN_V;5NRL_4;5ZWM_I	verified	entity_src_nat:Saccharomyces cerevisiae S288c|taxid=559292;entity_src_nat:Saccharomyces cerevisiae|taxid=4932	NA	not_selected (see decisions.yaml alternatives / family reason)
+RF00015	e8c2eb7d4f0c1bd4	URS00008FED30_32630/1-92	92	1	2N7M_X	verified	NA	NA	not_selected (see decisions.yaml alternatives / family reason)
+RF00015	f1a5bf8c780a86d5	URS0000200C70_9606/1-145	145	3	5O9Z_4;6QW6_4;6QX9_4	verified	entity_src_nat:Homo sapiens|taxid=9606	NA	not_selected (see decisions.yaml alternatives / family reason)
+RF00032	493f7ef70784f257	URS000080E236_32630/1-26	26	4	4TUW_D;4TUX_C;4TUX_D;4TV0_B	verified	pdbx_entity_src_syn:synthetic construct|taxid=32630	NA	not_selected (see decisions.yaml alternatives / family reason)
+RF00032	7297d09e4957b138	URS000233597C_9606/1-26	26	4	4L8R_A;4L8R_D;4QOZ_A;4QOZ_D	verified	NA;pdbx_entity_src_syn:None|taxid=None	NA	not_selected (see decisions.yaml alternatives / family reason)
+RF00032	d9d09e680eb0b0b7	URS000080E1CD_10090/1-28	28	2	1JU7_A;1JWC_A	verified	pdbx_entity_src_syn:None|taxid=None	NA	not_selected (see decisions.yaml alternatives / family reason)
+RF00032	e42b411ae9bb652c	URS0002335968_32630/1-28	28	1	4TUW_C	verified	pdbx_entity_src_syn:synthetic construct|taxid=32630	NA	not_selected (see decisions.yaml alternatives / family reason)
+RF00059	79dc9078a98d9e05	URS000080E068_32630/1-83	83	12	2HOJ_A;2HOK_A;2HOL_A;2HOM_A;2HOO_A;2HOP_A;7TD7_A;7TDA_A;7TDB_A;7TDC_A;7TZT_A;7TZU_A	verified	pdbx_entity_src_syn:Escherichia coli|taxid=562;pdbx_entity_src_syn:None|taxid=None	NA	not_selected (see decisions.yaml alternatives / family reason)
+RF00059	aa3a7fd94c152244	URS000080DE9F_3702/1-77	77	8	2CKY_A;2CKY_B;3D2G_A;3D2G_B;3D2V_A;3D2V_B;3D2X_A;3D2X_B	verified	entity_src_gen:Arabidopsis thaliana|taxid=None;pdbx_entity_src_syn:ARABIDOPSIS THALIANA|taxid=3702	3D2G_A	exploratory
+RF00059	f4d7e73ea2ea7690	URS000080DDEB_32630/1-80	80	12	2GDI_X;2GDI_Y;4NYA_A;4NYA_B;4NYB_A;4NYC_A;4NYD_A;4NYG_A;7TZR_X;7TZR_Y;7TZS_X;7TZS_Y	failed;verified	pdbx_entity_src_syn:Escherichia coli|taxid=562;pdbx_entity_src_syn:None|taxid=None	2GDI_X	accept
+RF00059	f652a7c9ed03d108	URS000080E23F_32630/1-87	87	2	3K0J_E;3K0J_F	verified	NA	NA	not_selected (see decisions.yaml alternatives / family reason)
+RF00162	08adcd7cc73bb521	URS0000A7635A_911092/1-94	94	1	5FK6_A	verified	pdbx_entity_src_syn:THERMOANAEROBACTER TENGCONGENSIS|taxid=119072	NA	not_selected (see decisions.yaml alternatives / family reason)
+RF00162	3748b8b80faf2c03	URS0002311979_119072/1-94	94	1	7EAF_A	verified	pdbx_entity_src_syn:Caldanaerobacter subterraneus subsp. tengcongensis|taxid=119072	NA	not_selected (see decisions.yaml alternatives / family reason)
+RF00162	381b919b40b6f14a	URS0000A76363_911092/1-94	94	1	5FK2_A	verified	pdbx_entity_src_syn:THERMOANAEROBACTER TENGCONGENSIS|taxid=119072	NA	not_selected (see decisions.yaml alternatives / family reason)
+RF00162	4152728c15b0a55b	URS000080DF6B_911092/1-94	94	1	4AOB_A	verified	pdbx_entity_src_syn:THERMOANAEROBACTER TENGCONGENSIS|taxid=119072	NA	not_selected (see decisions.yaml alternatives / family reason)
+RF00162	47950b7cc56951a6	URS0000A76377_911092/1-94	94	1	5FK1_A	verified	pdbx_entity_src_syn:THERMOANAEROBACTER TENGCONGENSIS|taxid=119072	NA	not_selected (see decisions.yaml alternatives / family reason)
+RF00162	4bd2ad4e73fe87b6	URS0000BC4670_911092/1-95	95	1	2YGH_A	verified	pdbx_entity_src_syn:THERMOANAEROBACTER TENGCONGENSIS|taxid=119072	NA	not_selected (see decisions.yaml alternatives / family reason)
+RF00162	6061c6e4c04f228d	URS0000A7635B_911092/1-94	94	1	5FKD_A	verified	pdbx_entity_src_syn:THERMOANAEROBACTER TENGCONGENSIS|taxid=119072	NA	not_selected (see decisions.yaml alternatives / family reason)
+RF00162	6166f3c7310e9634	URS000080DDBE_1423/1-119	119	1	4KQY_A	verified	pdbx_entity_src_syn:Bacillus subtilis|taxid=1192196	4KQY_A	accept_with_masked_engineering
+RF00162	6341dad96ed0b827	URS000080DF1C_32630/1-94	94	2	3IQP_A;3IQR_A	verified	NA	NA	not_selected (see decisions.yaml alternatives / family reason)
+RF00162	644f94f26842003b	URS0000A76359_911092/1-94	94	1	5FK5_A	verified	pdbx_entity_src_syn:THERMOANAEROBACTER TENGCONGENSIS|taxid=119072	NA	not_selected (see decisions.yaml alternatives / family reason)
+RF00162	6495a9541f65d784	URS0000A7638A_911092/1-94	94	1	5FKE_A	verified	pdbx_entity_src_syn:THERMOANAEROBACTER TENGCONGENSIS|taxid=119072	NA	not_selected (see decisions.yaml alternatives / family reason)
+RF00162	6ba8c17b8fc9f770	URS0000A7634F_911092/1-94	94	1	5FJC_A	verified	pdbx_entity_src_syn:THERMOANAEROBACTER TENGCONGENSIS|taxid=119072	NA	not_selected (see decisions.yaml alternatives / family reason)
+RF00162	7299e9d6f11b8261	URS0000A76399_911092/1-94	94	1	5FKF_A	verified	pdbx_entity_src_syn:THERMOANAEROBACTER TENGCONGENSIS|taxid=119072	NA	not_selected (see decisions.yaml alternatives / family reason)
+RF00162	73bb6931bf4ecede	URS000080E09F_911092/1-126	126	1	3V7E_C	verified	pdbx_entity_src_syn:Caldanaerobacter subterraneus subsp. tengcongensis|taxid=119072	NA	not_selected (see decisions.yaml alternatives / family reason)
+RF00162	7f6472dc4f0dc3a6	URS000080E047_32630/1-94	94	4	3GX2_A;3GX3_A;3GX5_A;3GX6_A	verified	pdbx_entity_src_syn:None|taxid=None	NA	not_selected (see decisions.yaml alternatives / family reason)
+RF00162	800d7447011941d9	URS000080DFE5_911092/1-94	94	1	4B5R_A	verified	pdbx_entity_src_syn:THERMOANAEROBACTER TENGCONGENSIS|taxid=119072	NA	not_selected (see decisions.yaml alternatives / family reason)
+RF00162	913108987b0084dd	URS0000A7631C_911092/1-93	93	1	5FK4_A	verified	pdbx_entity_src_syn:THERMOANAEROBACTER TENGCONGENSIS|taxid=119072	NA	not_selected (see decisions.yaml alternatives / family reason)
+RF00162	94af805ff09def0a	URS0000A76343_911092/1-94	94	1	5FKG_A	verified	pdbx_entity_src_syn:THERMOANAEROBACTER TENGCONGENSIS|taxid=119072	NA	not_selected (see decisions.yaml alternatives / family reason)
+RF00162	accb6962a370e533	URS000080E279_32630/1-94	94	1	3IQN_A	verified	NA	NA	not_selected (see decisions.yaml alternatives / family reason)
+RF00162	c852e7fa9f65d9b4	URS0000A76344_911092/1-94	94	1	5FKH_A	verified	pdbx_entity_src_syn:THERMOANAEROBACTER TENGCONGENSIS|taxid=119072	NA	not_selected (see decisions.yaml alternatives / family reason)
+RF00162	dc4242fc9a336d0e	URS000080DF35_32630/1-94	94	1	2GIS_A	verified	pdbx_entity_src_syn:None|taxid=None	2GIS_A	accept_with_masked_engineering
+RF00162	eeaff8e802110368	URS0000A76386_911092/1-94	94	1	5FK3_A	verified	pdbx_entity_src_syn:THERMOANAEROBACTER TENGCONGENSIS|taxid=119072	NA	not_selected (see decisions.yaml alternatives / family reason)
+RF00162	f705ab41d44305fe	URS000080E094_32630/1-94	94	1	3GX7_A	verified	pdbx_entity_src_syn:None|taxid=None	NA	not_selected (see decisions.yaml alternatives / family reason)
+RF00162	f9ceef20be9cdb75	URS000080E1B3_911092/1-94	94	1	2YDH_A	verified	pdbx_entity_src_syn:THERMOANAEROBACTER TENGCONGENSIS|taxid=119072	NA	not_selected (see decisions.yaml alternatives / family reason)
+RF00174	79cedf8de87eff19	URS000080DFBC_32630/1-172	172	1	4GXY_A	verified	pdbx_entity_src_syn:None|taxid=None	4GXY_A	accept
+RF00174	7fcabf4e0778e8e9	URS000080E34D_119072/1-210	210	10	8FW4_Z;8SA2_A;8SA2_B;8SA3_A;8SA3_B;8SA4_A;8SA5_A;8SA5_B;8SA6_A;8SA6_B	verified	pdbx_entity_src_syn:Caldanaerobacter subterraneus subsp. tengcongensis|taxid=119072	NA	not_selected (see decisions.yaml alternatives / family reason)
+RF00174	ab293442d447c03e	URS000080E34D_408172/1-187	187	1	4GMA_Z	verified	pdbx_entity_src_syn:Marine metagenome|taxid=408172	4GMA_Z	excluded
+RF00174	be48005ba2bd478c	URS0001A24B44_1423/1-130	130	1	6VMY_A	verified	entity_src_gen:Bacillus subtilis|taxid=1423	6VMY_A	accept
+RF00442	4d2620b5a067356f	URS00023119BD_987057/1-128	128	1	7MLW_F	verified	entity_src_gen:Burkholderia sp. TJI49|taxid=987057	7MLW_F	exploratory
+RF00442	b91d2150475c6714	URS0000B21DF2_53633/1-95	95	1	5T83_A	verified	pdbx_entity_src_syn:Sulfobacillus acidophilus DSM 10332|taxid=679936	5T83_A	excluded
+RF00442	cc802d0903becf72	URS0000B21DF0_204038/1-85	85	1	5U3G_B	verified	pdbx_entity_src_syn:Dickeya dadantii|taxid=204038	5U3G_B	exploratory
+RF00458	41b4a9ee8578c58c	URS000080DD48_12136/1-190	190	1	4V92_AZ	verified	entity_src_nat:CRICKET PARALYSIS VIRUS|taxid=12136	NA	not_selected (see decisions.yaml alternatives / family reason)
+RF00458	4c9a769d56ac2556	URS000080E076_12136/1-190	190	1	2NOQ_A	verified	pdbx_entity_src_syn:None|taxid=None	NA	not_selected (see decisions.yaml alternatives / family reason)
+RF00458	68bec16e88d20ae7	URS0000A7632F_12136/1-192	192	2	5IT9_i;7JQC_i	verified	entity_src_gen:Cricket paralysis virus|taxid=12136;entity_src_nat:Cricket paralysis virus|taxid=12136	NA	not_selected (see decisions.yaml alternatives / family reason)
+RF00458	6b32730c1ed1789c	URS000080DDA6_64698/2-142	141	2	2IL9_A;2IL9_M	verified	pdbx_entity_src_syn:None|taxid=None	NA	not_selected (see decisions.yaml alternatives / family reason)
+RF00458	73a3d8b1b0c14cd6	URS0000A7638F_12136/1-190	190	1	5IT7_4	verified	entity_src_gen:Cricket paralysis virus|taxid=12136	NA	not_selected (see decisions.yaml alternatives / family reason)
+RF00458	77f8ea1eb4ada33a	URS0000D56C35_12136/1-190	190	1	6D9J_4	verified	pdbx_entity_src_syn:Cricket paralysis virus|taxid=12136	NA	not_selected (see decisions.yaml alternatives / family reason)
+RF00458	7c900d4750ff4c0a	URS0002616B80_12136/1-163	163	1	7ZJX_I	verified	pdbx_entity_src_syn:Cricket paralysis virus|taxid=12136	NA	not_selected (see decisions.yaml alternatives / family reason)
+RF00458	b9fe541454cbadf4	URS00008116AA_64698/6-196	191	2	4XEJ_AIRE;4XEJ_BIRE	verified	entity_src_gen:Plautia stali intestine virus|taxid=64698	NA	not_selected (see decisions.yaml alternatives / family reason)
+RF00458	d2a96763fa98301e	URS000080E194_12136/1-194	194	2	4D5N_X;4D61_j	verified	pdbx_entity_src_syn:CRICKET PARALYSIS VIRUS|taxid=12136	NA	not_selected (see decisions.yaml alternatives / family reason)
+RF00458	db3b3209bf15e26d	URS0000D56C4A_12136/1-194	194	1	6D90_4	verified	pdbx_entity_src_syn:Cricket paralysis virus|taxid=12136	NA	not_selected (see decisions.yaml alternatives / family reason)
+RF00458	f4177bf069d602ae	URS0002617726_12136/1-195	195	1	7ZJW_I	verified	pdbx_entity_src_syn:Cricket paralysis virus|taxid=12136	NA	not_selected (see decisions.yaml alternatives / family reason)
+RF00522	21341924bf704a98	URS0000E60BA5_119072/1-33	33	3	6E1S_A;6E1U_A;6E1W_A	ambiguous	pdbx_entity_src_syn:Caldanaerobacter subterraneus subsp. tengcongensis|taxid=119072	NA	not_selected (see decisions.yaml alternatives / family reason)
+RF00522	5920b3043f000051	URS000080E020_32630/1-34	34	1	3FU2_A	verified	pdbx_entity_src_syn:None|taxid=None	3FU2_A	accept
+RF00522	74587d4e5f92cb8e	URS000080E32E_32630/1-33	33	6	3GCA_A;3Q50_A;6VUH_A;6VUI_A;7E9E_A;7E9I_A	ambiguous;verified	pdbx_entity_src_syn:Caldanaerobacter subterraneus subsp. tengcongensis|taxid=119072;pdbx_entity_src_syn:None|taxid=None	6VUI_A	accept
+RF00522	b82e8db54c613200	URS000080E08D_32630/1-36	36	1	2L1V_A	verified	NA	NA	not_selected (see decisions.yaml alternatives / family reason)
+RF00522	ba3b034d96e41813	URS000080E037_32630/1-34	34	1	3K1V_A	verified	pdbx_entity_src_syn:None|taxid=None	NA	not_selected (see decisions.yaml alternatives / family reason)
+RF00522	e8971621bf249396	URS0000E60B99_119072/1-33	33	2	6E1T_A;6E1V_A	ambiguous	pdbx_entity_src_syn:Caldanaerobacter subterraneus subsp. tengcongensis|taxid=119072	NA	not_selected (see decisions.yaml alternatives / family reason)
+RF00522	ece479b524f9463b	URS00023119CB_2126436/1-34	34	2	7REX_A;8FB3_A	verified	pdbx_entity_src_syn:Carnobacterium antarcticum|taxid=2126436	7REX_A	accept
+RF02340	105f826d494c7f4b	URS00023359CE_11053/2-70	69	1	7UMC_A	verified	pdbx_entity_src_syn:Dengue virus 1|taxid=11053	NA	not_selected (see decisions.yaml alternatives / family reason)
+RF02340	4351df8c0a243ff9	URS0002311981_11060/31-102	72	1	7LYF_A	verified	entity_src_gen:Dengue virus 2|taxid=11060 ; entity_src_gen:Dengue virus 2|taxid=11060 ; entity_src_gen:Dengue virus 2|taxid=11060	NA	not_selected (see decisions.yaml alternatives / family reason)
+RF02340	7284825ad44aa2a2	URS0002311A29_64320/31-104	74	1	7LYG_A	verified	entity_src_gen:Zika virus|taxid=64320 ; entity_src_gen:Zika virus|taxid=64320 ; entity_src_gen:Zika virus|taxid=64320	NA	not_selected (see decisions.yaml alternatives / family reason)
+RF02340	9643dd58a679c360	URS0002681453_32630/1-69	69	2	8GZP_S;8GZQ_S	verified	pdbx_entity_src_syn:synthetic construct|taxid=32630	NA	not_selected (see decisions.yaml alternatives / family reason)
+RF03013	0220156db9de808a	URS00021ED956_1267533/1-50	50	2	7D81_A;7D82_A	verified	entity_src_gen:Acidobacteriaceae bacterium KBS 83|taxid=1267533	NA	not_selected (see decisions.yaml alternatives / family reason)
+RF03013	0c42b5e033599d47	URS00021ED92A_204669/1-52	52	9	6TB7_A;6TF0_A;6TF1_A;6TF2_A;6TF3_A;6TFE_A;6TFF_A;6TFG_A;6TFH_A	verified	pdbx_entity_src_syn:Candidatus Koribacter versatilis Ellin345|taxid=204669	NA	not_selected (see decisions.yaml alternatives / family reason)
+RF03013	1cb24eda5096a478	URS00021ED902_32630/1-51	51	4	7D7W_A;7D7X_A;7D7Y_A;7D7Z_A	verified	pdbx_entity_src_syn:synthetic construct|taxid=32630	NA	not_selected (see decisions.yaml alternatives / family reason)
+RF03013	fd81226af3dc2758	URS00021ED9BF_240015/1-57	57	1	7D7V_A	verified	entity_src_gen:Acidobacterium capsulatum ATCC 51196|taxid=240015	NA	not_selected (see decisions.yaml alternatives / family reason)

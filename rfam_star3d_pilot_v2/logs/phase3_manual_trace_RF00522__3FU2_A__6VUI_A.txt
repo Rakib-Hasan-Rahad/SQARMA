@@ -1,0 +1,59 @@
+# Phase 3 gate — manual raw trace, pair RF00522__3FU2_A__6VUI_A (reviewer: AI agent)
+Raw decompressed Rfam.seed.gz lines (independent of the parser):
+  L98370: URS000080E020_32630/1-34                    -----AGAGGUUC-UAG--CUA-CACCCUCU---------------------AUAAAAAACUAA------
+  L98377: URS000080E32E_119072/1-33                   -----CUGGGU-CGCAG--U-A--ACCCCAGU--------------------UAACAAAAC-AAG-----
+Independent awk count (col, A_idx A_nt, B_idx B_nt):
+  col 6: A1 A <-> B1 C
+  col 7: A2 G <-> B2 U
+  col 8: A3 A <-> B3 G
+  col 9: A4 G <-> B4 G
+  col 10: A5 G <-> B5 G
+  col 11: A6 U <-> B6 U
+  col 12: GAP  A7 U | B- -
+  col 13: A8 C <-> B7 C
+  col 14: GAP  A- - | B8 G
+  col 15: A9 U <-> B9 C
+  col 16: A10 A <-> B10 A
+  col 17: A11 G <-> B11 G
+  col 20: A12 C <-> B12 U
+  col 21: GAP  A13 U | B- -
+  col 22: A14 A <-> B13 A
+  col 24: GAP  A15 C | B- -
+  col 25: A16 A <-> B14 A
+  col 26: A17 C <-> B15 C
+  col 27: A18 C <-> B16 C
+  col 28: A19 C <-> B17 C
+  col 29: A20 U <-> B18 C
+  col 30: A21 C <-> B19 A
+  col 31: A22 U <-> B20 G
+  col 32: GAP  A- - | B21 U
+  col 53: A23 A <-> B22 U
+  col 54: A24 U <-> B23 A
+  col 55: A25 A <-> B24 A
+  col 56: A26 A <-> B25 C
+  col 57: A27 A <-> B26 A
+  col 58: A28 A <-> B27 A
+  col 59: A29 A <-> B28 A
+  col 60: A30 A <-> B29 A
+  col 61: A31 C <-> B30 C
+  col 62: GAP  A32 U | B- -
+  col 63: A33 A <-> B31 A
+  col 64: A34 A <-> B32 A
+  col 65: GAP  A- - | B33 G
+
+COMPARISON with pipeline output:
+ reference pairs: awk 30 pipeline 30 identical: True
+ gap columns: awk 7 pipeline 7 identical: True
+ structure join for 5 traced pairs (col: A row idx/label/auth <-> B row idx/label/auth, status):
+  col 6: A1 A label 1 A:1  <->  B1 C label 1 A:1  [assessable]
+  col 13: A8 C label 8 A:8  <->  B7 C label 7 A:7  [assessable]
+  col 22: A14 A label 14 A:NA  <->  B13 A label 13 A:13  [missing_coordinates]
+  col 29: A20 U label 20 A:20  <->  B18 C label 18 A:18  [assessable]
+  col 53: A23 A label 23 A:23  <->  B22 U label 22 A:22  [assessable]
+  gap example col 12: row A idx 7 U label 7 -> gap
+
+Note: 3FU2 residues without coordinates are deposited label/auth 13-14 (U, A); the paper's "C12 and U13 are
+disordered" uses paper numbering offset by one from PDB numbering. Crosswalk follows mmCIF; no renumbering.
+GATE Phase 3 (this pair): PASS — rows traced to raw archive lines 98370/98377; independent awk count reproduces
+all 30 reference pairs and 7 gap columns exactly; 5 pairs + 1 gap joined to structure residues and checked;
+no alignment program was run; all-gap-column invariance covered by tests/test_stockholm.py. Reviewer: AI agent.

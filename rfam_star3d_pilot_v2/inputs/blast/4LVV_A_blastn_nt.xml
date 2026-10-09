@@ -1,0 +1,602 @@
+<?xml version="1.0" encoding="US-ASCII"?>
+<!DOCTYPE BlastOutput PUBLIC "-//NCBI//NCBI BlastOutput/EN" "http://www.ncbi.nlm.nih.gov/dtd/NCBI_BlastOutput.dtd">
+<BlastOutput>
+  <BlastOutput_program>blastn</BlastOutput_program>
+  <BlastOutput_version>BLASTN 2.17.0+</BlastOutput_version>
+  <BlastOutput_reference>Stephen F. Altschul, Thomas L. Madden, Alejandro A. Sch&amp;auml;ffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), &quot;Gapped BLAST and PSI-BLAST: a new generation of protein database search programs&quot;, Nucleic Acids Res. 25:3389-3402.</BlastOutput_reference>
+  <BlastOutput_db>core_nt</BlastOutput_db>
+  <BlastOutput_query-ID>Query_954919</BlastOutput_query-ID>
+  <BlastOutput_query-def>No definition line</BlastOutput_query-def>
+  <BlastOutput_query-len>89</BlastOutput_query-len>
+  <BlastOutput_param>
+    <Parameters>
+      <Parameters_expect>0.001</Parameters_expect>
+      <Parameters_sc-match>2</Parameters_sc-match>
+      <Parameters_sc-mismatch>-3</Parameters_sc-mismatch>
+      <Parameters_gap-open>5</Parameters_gap-open>
+      <Parameters_gap-extend>2</Parameters_gap-extend>
+      <Parameters_filter>L;m;</Parameters_filter>
+    </Parameters>
+  </BlastOutput_param>
+<BlastOutput_iterations>
+<Iteration>
+  <Iteration_iter-num>1</Iteration_iter-num>
+  <Iteration_query-ID>Query_954919</Iteration_query-ID>
+  <Iteration_query-def>No definition line</Iteration_query-def>
+  <Iteration_query-len>89</Iteration_query-len>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>gi|595588369|pdb|4LVV|A</Hit_id>
+  <Hit_def>Chain A, THF riboswitch &gt;gi|595588370|pdb|4LVW|A Chain A, THF riboswitch &gt;gi|595588371|pdb|4LVX|A Chain A, THF riboswitch &gt;gi|595588372|pdb|4LVY|A Chain A, THF riboswitch &gt;gi|595588373|pdb|4LVZ|A Chain A, THF riboswitch &gt;gi|595588374|pdb|4LW0|A Chain A, THF riboswitch &gt;gi|1787099075|pdb|6Q57|A Chain A, tetrahydrofolate riboswitch aptamer &gt;gi|1996390848|pdb|7KD1|A Chain A, tetrahydrofolate riboswitch aptamer domain</Hit_def>
+  <Hit_accession>4LVV_A</Hit_accession>
+  <Hit_len>89</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>159.983</Hsp_bit-score>
+      <Hsp_score>176</Hsp_score>
+      <Hsp_evalue>3.89289e-35</Hsp_evalue>
+      <Hsp_query-from>2</Hsp_query-from>
+      <Hsp_query-to>89</Hsp_query-to>
+      <Hsp_hit-from>2</Hsp_hit-from>
+      <Hsp_hit-to>89</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>1</Hsp_hit-frame>
+      <Hsp_identity>88</Hsp_identity>
+      <Hsp_positive>88</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>88</Hsp_align-len>
+      <Hsp_qseq>GAGAGTAGATGATTCGCGTTAAGTGTGTGTGAATGGGATGTCGTCACACAACGAAGCGAGAGCGCGGTGAATCATTGCATCCGCTCCA</Hsp_qseq>
+      <Hsp_hseq>GAGAGTAGATGATTCGCGTTAAGTGTGTGTGAATGGGATGTCGTCACACAACGAAGCGAGAGCGCGGTGAATCATTGCATCCGCTCCA</Hsp_hseq>
+      <Hsp_midline>||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>2</Hit_num>
+  <Hit_id>gi|347447612|pdb|3SD3|A</Hit_id>
+  <Hit_def>Chain A, Tetrahydrofolate riboswitch</Hit_def>
+  <Hit_accession>3SD3_A</Hit_accession>
+  <Hit_len>89</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>155.474</Hsp_bit-score>
+      <Hsp_score>171</Hsp_score>
+      <Hsp_evalue>1.6553e-33</Hsp_evalue>
+      <Hsp_query-from>2</Hsp_query-from>
+      <Hsp_query-to>89</Hsp_query-to>
+      <Hsp_hit-from>2</Hsp_hit-from>
+      <Hsp_hit-to>89</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>1</Hsp_hit-frame>
+      <Hsp_identity>87</Hsp_identity>
+      <Hsp_positive>87</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>88</Hsp_align-len>
+      <Hsp_qseq>GAGAGTAGATGATTCGCGTTAAGTGTGTGTGAATGGGATGTCGTCACACAACGAAGCGAGAGCGCGGTGAATCATTGCATCCGCTCCA</Hsp_qseq>
+      <Hsp_hseq>GAGAGTAGATGATTCGCGTTAAGCGTGTGTGAATGGGATGTCGTCACACAACGAAGCGAGAGCGCGGTGAATCATTGCATCCGCTCCA</Hsp_hseq>
+      <Hsp_midline>||||||||||||||||||||||| ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>3</Hit_num>
+  <Hit_id>gi|1829982550|gb|CP050962.1|</Hit_id>
+  <Hit_def>Streptococcus mutans strain FDAARGOS_685 chromosome</Hit_def>
+  <Hit_accession>CP050962</Hit_accession>
+  <Hit_len>2054143</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>137.441</Hsp_bit-score>
+      <Hsp_score>151</Hsp_score>
+      <Hsp_evalue>4.44178e-28</Hsp_evalue>
+      <Hsp_query-from>3</Hsp_query-from>
+      <Hsp_query-to>86</Hsp_query-to>
+      <Hsp_hit-from>903212</Hsp_hit-from>
+      <Hsp_hit-to>903128</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>-1</Hsp_hit-frame>
+      <Hsp_identity>82</Hsp_identity>
+      <Hsp_positive>82</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>85</Hsp_align-len>
+      <Hsp_qseq>AGAGTAGATGATTCGCGTTAAGTGTGTGTGAATGGGATGTCGTCACACAACGAAGCGA-GAGCGCGGTGAATCATTGCATCCGCT</Hsp_qseq>
+      <Hsp_hseq>AGAGTAGATGATTCGCGTTAAGTGTGTGTGAATGGGATGTCGTCACACAACGAAGCCATAAGCGCGGTGAATCATTGCATCCGCT</Hsp_hseq>
+      <Hsp_midline>|||||||||||||||||||||||||||||||||||||||||||||||||||||||| |  |||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>4</Hit_num>
+  <Hit_id>gi|2292857749|gb|CP101984.1|</Hit_id>
+  <Hit_def>Streptococcus mutans strain UA-159 chromosome, complete genome</Hit_def>
+  <Hit_accession>CP101984</Hit_accession>
+  <Hit_len>2033272</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>137.441</Hsp_bit-score>
+      <Hsp_score>151</Hsp_score>
+      <Hsp_evalue>4.44178e-28</Hsp_evalue>
+      <Hsp_query-from>3</Hsp_query-from>
+      <Hsp_query-to>86</Hsp_query-to>
+      <Hsp_hit-from>559532</Hsp_hit-from>
+      <Hsp_hit-to>559448</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>-1</Hsp_hit-frame>
+      <Hsp_identity>82</Hsp_identity>
+      <Hsp_positive>82</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>85</Hsp_align-len>
+      <Hsp_qseq>AGAGTAGATGATTCGCGTTAAGTGTGTGTGAATGGGATGTCGTCACACAACGAAGCGA-GAGCGCGGTGAATCATTGCATCCGCT</Hsp_qseq>
+      <Hsp_hseq>AGAGTAGATGATTCGCGTTAAGTGTGTGTGAATGGGATGTCGTCACACAACGAAGCCATAAGCGCGGTGAATCATTGCATCCGCT</Hsp_hseq>
+      <Hsp_midline>|||||||||||||||||||||||||||||||||||||||||||||||||||||||| |  |||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>5</Hit_num>
+  <Hit_id>gi|1825990291|gb|CP050273.1|</Hit_id>
+  <Hit_def>Streptococcus mutans strain P1 chromosome, complete genome</Hit_def>
+  <Hit_accession>CP050273</Hit_accession>
+  <Hit_len>2085371</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>137.441</Hsp_bit-score>
+      <Hsp_score>151</Hsp_score>
+      <Hsp_evalue>4.44178e-28</Hsp_evalue>
+      <Hsp_query-from>3</Hsp_query-from>
+      <Hsp_query-to>86</Hsp_query-to>
+      <Hsp_hit-from>1330823</Hsp_hit-from>
+      <Hsp_hit-to>1330907</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>1</Hsp_hit-frame>
+      <Hsp_identity>82</Hsp_identity>
+      <Hsp_positive>82</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>85</Hsp_align-len>
+      <Hsp_qseq>AGAGTAGATGATTCGCGTTAAGTGTGTGTGAATGGGATGTCGTCACACAACGAAGCGA-GAGCGCGGTGAATCATTGCATCCGCT</Hsp_qseq>
+      <Hsp_hseq>AGAGTAGATGATTCGCGTTAAGTGTGTGTGAATGGGATGTCGTCACACAACGAAGCCATAAGCGCGGTGAATCATTGCATCCGCT</Hsp_hseq>
+      <Hsp_midline>|||||||||||||||||||||||||||||||||||||||||||||||||||||||| |  |||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>6</Hit_num>
+  <Hit_id>gi|2770544506|gb|CP160385.1|</Hit_id>
+  <Hit_def>Streptococcus mutans strain UA159-WCSS chromosome, complete genome</Hit_def>
+  <Hit_accession>CP160385</Hit_accession>
+  <Hit_len>2033272</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>137.441</Hsp_bit-score>
+      <Hsp_score>151</Hsp_score>
+      <Hsp_evalue>4.44178e-28</Hsp_evalue>
+      <Hsp_query-from>3</Hsp_query-from>
+      <Hsp_query-to>86</Hsp_query-to>
+      <Hsp_hit-from>559532</Hsp_hit-from>
+      <Hsp_hit-to>559448</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>-1</Hsp_hit-frame>
+      <Hsp_identity>82</Hsp_identity>
+      <Hsp_positive>82</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>85</Hsp_align-len>
+      <Hsp_qseq>AGAGTAGATGATTCGCGTTAAGTGTGTGTGAATGGGATGTCGTCACACAACGAAGCGA-GAGCGCGGTGAATCATTGCATCCGCT</Hsp_qseq>
+      <Hsp_hseq>AGAGTAGATGATTCGCGTTAAGTGTGTGTGAATGGGATGTCGTCACACAACGAAGCCATAAGCGCGGTGAATCATTGCATCCGCT</Hsp_hseq>
+      <Hsp_midline>|||||||||||||||||||||||||||||||||||||||||||||||||||||||| |  |||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>7</Hit_num>
+  <Hit_id>gi|1825986511|gb|CP050271.1|</Hit_id>
+  <Hit_def>Streptococcus mutans strain S1 chromosome, complete genome</Hit_def>
+  <Hit_accession>CP050271</Hit_accession>
+  <Hit_len>2080705</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>137.441</Hsp_bit-score>
+      <Hsp_score>151</Hsp_score>
+      <Hsp_evalue>4.44178e-28</Hsp_evalue>
+      <Hsp_query-from>3</Hsp_query-from>
+      <Hsp_query-to>86</Hsp_query-to>
+      <Hsp_hit-from>1326160</Hsp_hit-from>
+      <Hsp_hit-to>1326244</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>1</Hsp_hit-frame>
+      <Hsp_identity>82</Hsp_identity>
+      <Hsp_positive>82</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>85</Hsp_align-len>
+      <Hsp_qseq>AGAGTAGATGATTCGCGTTAAGTGTGTGTGAATGGGATGTCGTCACACAACGAAGCGA-GAGCGCGGTGAATCATTGCATCCGCT</Hsp_qseq>
+      <Hsp_hseq>AGAGTAGATGATTCGCGTTAAGTGTGTGTGAATGGGATGTCGTCACACAACGAAGCCATAAGCGCGGTGAATCATTGCATCCGCT</Hsp_hseq>
+      <Hsp_midline>|||||||||||||||||||||||||||||||||||||||||||||||||||||||| |  |||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>8</Hit_num>
+  <Hit_id>gi|3389074615|emb|OZ543088.1|</Hit_id>
+  <Hit_def>Streptococcus mutans strain JF3HA19006 genome assembly, chromosome: 1</Hit_def>
+  <Hit_accession>OZ543088</Hit_accession>
+  <Hit_len>2009488</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>137.441</Hsp_bit-score>
+      <Hsp_score>151</Hsp_score>
+      <Hsp_evalue>4.44178e-28</Hsp_evalue>
+      <Hsp_query-from>3</Hsp_query-from>
+      <Hsp_query-to>86</Hsp_query-to>
+      <Hsp_hit-from>559202</Hsp_hit-from>
+      <Hsp_hit-to>559118</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>-1</Hsp_hit-frame>
+      <Hsp_identity>82</Hsp_identity>
+      <Hsp_positive>82</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>85</Hsp_align-len>
+      <Hsp_qseq>AGAGTAGATGATTCGCGTTAAGTGTGTGTGAATGGGATGTCGTCACACAACGAAGCGA-GAGCGCGGTGAATCATTGCATCCGCT</Hsp_qseq>
+      <Hsp_hseq>AGAGTAGATGATTCGCGTTAAGTGTGTGTGAATGGGATGTCGTCACACAACGAAGCCATAAGCGCGGTGAATCATTGCATCCGCT</Hsp_hseq>
+      <Hsp_midline>|||||||||||||||||||||||||||||||||||||||||||||||||||||||| |  |||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>9</Hit_num>
+  <Hit_id>gi|2088770239|gb|CP082153.1|</Hit_id>
+  <Hit_def>Streptococcus mutans OMZ175 chromosome, complete genome</Hit_def>
+  <Hit_accession>CP082153</Hit_accession>
+  <Hit_len>2060302</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>137.441</Hsp_bit-score>
+      <Hsp_score>151</Hsp_score>
+      <Hsp_evalue>4.44178e-28</Hsp_evalue>
+      <Hsp_query-from>3</Hsp_query-from>
+      <Hsp_query-to>86</Hsp_query-to>
+      <Hsp_hit-from>359757</Hsp_hit-from>
+      <Hsp_hit-to>359673</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>-1</Hsp_hit-frame>
+      <Hsp_identity>82</Hsp_identity>
+      <Hsp_positive>82</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>85</Hsp_align-len>
+      <Hsp_qseq>AGAGTAGATGATTCGCGTTAAGTGTGTGTGAATGGGATGTCGTCACACAACGAAGCGA-GAGCGCGGTGAATCATTGCATCCGCT</Hsp_qseq>
+      <Hsp_hseq>AGAGTAGATGATTCGCGTTAAGTGTGTGTGAATGGGATGTCGTCACACAACGAAGCCATAAGCGCGGTGAATCATTGCATCCGCT</Hsp_hseq>
+      <Hsp_midline>|||||||||||||||||||||||||||||||||||||||||||||||||||||||| |  |||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>10</Hit_num>
+  <Hit_id>gi|2020326652|gb|CP066294.2|</Hit_id>
+  <Hit_def>Streptococcus mutans strain 27-3 chromosome, complete genome</Hit_def>
+  <Hit_accession>CP066294</Hit_accession>
+  <Hit_len>1978522</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>137.441</Hsp_bit-score>
+      <Hsp_score>151</Hsp_score>
+      <Hsp_evalue>4.44178e-28</Hsp_evalue>
+      <Hsp_query-from>3</Hsp_query-from>
+      <Hsp_query-to>86</Hsp_query-to>
+      <Hsp_hit-from>1021825</Hsp_hit-from>
+      <Hsp_hit-to>1021909</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>1</Hsp_hit-frame>
+      <Hsp_identity>82</Hsp_identity>
+      <Hsp_positive>82</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>85</Hsp_align-len>
+      <Hsp_qseq>AGAGTAGATGATTCGCGTTAAGTGTGTGTGAATGGGATGTCGTCACACAACGAAGCGA-GAGCGCGGTGAATCATTGCATCCGCT</Hsp_qseq>
+      <Hsp_hseq>AGAGTAGATGATTCGCGTTAAGTGTGTGTGAATGGGATGTCGTCACACAACGAAGCCATAAGCGCGGTGAATCATTGCATCCGCT</Hsp_hseq>
+      <Hsp_midline>|||||||||||||||||||||||||||||||||||||||||||||||||||||||| |  |||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>11</Hit_num>
+  <Hit_id>gi|3058714251|gb|CP199376.1|</Hit_id>
+  <Hit_def>Streptococcus mutans strain bcs3l1 chromosome, complete genome</Hit_def>
+  <Hit_accession>CP199376</Hit_accession>
+  <Hit_len>2071619</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>137.441</Hsp_bit-score>
+      <Hsp_score>151</Hsp_score>
+      <Hsp_evalue>4.44178e-28</Hsp_evalue>
+      <Hsp_query-from>3</Hsp_query-from>
+      <Hsp_query-to>86</Hsp_query-to>
+      <Hsp_hit-from>356676</Hsp_hit-from>
+      <Hsp_hit-to>356592</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>-1</Hsp_hit-frame>
+      <Hsp_identity>82</Hsp_identity>
+      <Hsp_positive>82</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>85</Hsp_align-len>
+      <Hsp_qseq>AGAGTAGATGATTCGCGTTAAGTGTGTGTGAATGGGATGTCGTCACACAACGAAGCGA-GAGCGCGGTGAATCATTGCATCCGCT</Hsp_qseq>
+      <Hsp_hseq>AGAGTAGATGATTCGCGTTAAGTGTGTGTGAATGGGATGTCGTCACACAACGAAGCCATAAGCGCGGTGAATCATTGCATCCGCT</Hsp_hseq>
+      <Hsp_midline>|||||||||||||||||||||||||||||||||||||||||||||||||||||||| |  |||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>12</Hit_num>
+  <Hit_id>gi|2770551957|gb|CP160386.1|</Hit_id>
+  <Hit_def>Streptococcus mutans strain UA159 ykuR deletion chromosome, complete genome</Hit_def>
+  <Hit_accession>CP160386</Hit_accession>
+  <Hit_len>2032141</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>137.441</Hsp_bit-score>
+      <Hsp_score>151</Hsp_score>
+      <Hsp_evalue>4.44178e-28</Hsp_evalue>
+      <Hsp_query-from>3</Hsp_query-from>
+      <Hsp_query-to>86</Hsp_query-to>
+      <Hsp_hit-from>558401</Hsp_hit-from>
+      <Hsp_hit-to>558317</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>-1</Hsp_hit-frame>
+      <Hsp_identity>82</Hsp_identity>
+      <Hsp_positive>82</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>85</Hsp_align-len>
+      <Hsp_qseq>AGAGTAGATGATTCGCGTTAAGTGTGTGTGAATGGGATGTCGTCACACAACGAAGCGA-GAGCGCGGTGAATCATTGCATCCGCT</Hsp_qseq>
+      <Hsp_hseq>AGAGTAGATGATTCGCGTTAAGTGTGTGTGAATGGGATGTCGTCACACAACGAAGCCATAAGCGCGGTGAATCATTGCATCCGCT</Hsp_hseq>
+      <Hsp_midline>|||||||||||||||||||||||||||||||||||||||||||||||||||||||| |  |||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>13</Hit_num>
+  <Hit_id>gi|3389073847|emb|OZ542321.1|</Hit_id>
+  <Hit_def>Streptococcus mutans strain AF118-59-BHI genome assembly, chromosome: 1</Hit_def>
+  <Hit_accession>OZ542321</Hit_accession>
+  <Hit_len>2001773</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>137.441</Hsp_bit-score>
+      <Hsp_score>151</Hsp_score>
+      <Hsp_evalue>4.44178e-28</Hsp_evalue>
+      <Hsp_query-from>3</Hsp_query-from>
+      <Hsp_query-to>86</Hsp_query-to>
+      <Hsp_hit-from>616674</Hsp_hit-from>
+      <Hsp_hit-to>616590</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>-1</Hsp_hit-frame>
+      <Hsp_identity>82</Hsp_identity>
+      <Hsp_positive>82</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>85</Hsp_align-len>
+      <Hsp_qseq>AGAGTAGATGATTCGCGTTAAGTGTGTGTGAATGGGATGTCGTCACACAACGAAGCGA-GAGCGCGGTGAATCATTGCATCCGCT</Hsp_qseq>
+      <Hsp_hseq>AGAGTAGATGATTCGCGTTAAGTGTGTGTGAATGGGATGTCGTCACACAACGAAGCCATAAGCGCGGTGAATCATTGCATCCGCT</Hsp_hseq>
+      <Hsp_midline>|||||||||||||||||||||||||||||||||||||||||||||||||||||||| |  |||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>14</Hit_num>
+  <Hit_id>gi|1825988396|gb|CP050272.1|</Hit_id>
+  <Hit_def>Streptococcus mutans strain P6 chromosome, complete genome</Hit_def>
+  <Hit_accession>CP050272</Hit_accession>
+  <Hit_len>2085254</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>137.441</Hsp_bit-score>
+      <Hsp_score>151</Hsp_score>
+      <Hsp_evalue>4.44178e-28</Hsp_evalue>
+      <Hsp_query-from>3</Hsp_query-from>
+      <Hsp_query-to>86</Hsp_query-to>
+      <Hsp_hit-from>1056729</Hsp_hit-from>
+      <Hsp_hit-to>1056813</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>1</Hsp_hit-frame>
+      <Hsp_identity>82</Hsp_identity>
+      <Hsp_positive>82</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>85</Hsp_align-len>
+      <Hsp_qseq>AGAGTAGATGATTCGCGTTAAGTGTGTGTGAATGGGATGTCGTCACACAACGAAGCGA-GAGCGCGGTGAATCATTGCATCCGCT</Hsp_qseq>
+      <Hsp_hseq>AGAGTAGATGATTCGCGTTAAGTGTGTGTGAATGGGATGTCGTCACACAACGAAGCCATAAGCGCGGTGAATCATTGCATCCGCT</Hsp_hseq>
+      <Hsp_midline>|||||||||||||||||||||||||||||||||||||||||||||||||||||||| |  |||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>15</Hit_num>
+  <Hit_id>gi|3389073865|emb|OZ542339.1|</Hit_id>
+  <Hit_def>Streptococcus mutans strain AF118-60-BHI genome assembly, chromosome: 1</Hit_def>
+  <Hit_accession>OZ542339</Hit_accession>
+  <Hit_len>2001773</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>137.441</Hsp_bit-score>
+      <Hsp_score>151</Hsp_score>
+      <Hsp_evalue>4.44178e-28</Hsp_evalue>
+      <Hsp_query-from>3</Hsp_query-from>
+      <Hsp_query-to>86</Hsp_query-to>
+      <Hsp_hit-from>616674</Hsp_hit-from>
+      <Hsp_hit-to>616590</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>-1</Hsp_hit-frame>
+      <Hsp_identity>82</Hsp_identity>
+      <Hsp_positive>82</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>85</Hsp_align-len>
+      <Hsp_qseq>AGAGTAGATGATTCGCGTTAAGTGTGTGTGAATGGGATGTCGTCACACAACGAAGCGA-GAGCGCGGTGAATCATTGCATCCGCT</Hsp_qseq>
+      <Hsp_hseq>AGAGTAGATGATTCGCGTTAAGTGTGTGTGAATGGGATGTCGTCACACAACGAAGCCATAAGCGCGGTGAATCATTGCATCCGCT</Hsp_hseq>
+      <Hsp_midline>|||||||||||||||||||||||||||||||||||||||||||||||||||||||| |  |||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>16</Hit_num>
+  <Hit_id>gi|2833685254|gb|CP171350.1|</Hit_id>
+  <Hit_def>Streptococcus mutans strain GDP01 chromosome</Hit_def>
+  <Hit_accession>CP171350</Hit_accession>
+  <Hit_len>1992406</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>137.441</Hsp_bit-score>
+      <Hsp_score>151</Hsp_score>
+      <Hsp_evalue>4.44178e-28</Hsp_evalue>
+      <Hsp_query-from>3</Hsp_query-from>
+      <Hsp_query-to>86</Hsp_query-to>
+      <Hsp_hit-from>721471</Hsp_hit-from>
+      <Hsp_hit-to>721555</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>1</Hsp_hit-frame>
+      <Hsp_identity>82</Hsp_identity>
+      <Hsp_positive>82</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>85</Hsp_align-len>
+      <Hsp_qseq>AGAGTAGATGATTCGCGTTAAGTGTGTGTGAATGGGATGTCGTCACACAACGAAGCGA-GAGCGCGGTGAATCATTGCATCCGCT</Hsp_qseq>
+      <Hsp_hseq>AGAGTAGATGATTCGCGTTAAGTGTGTGTGAATGGGATGTCGTCACACAACGAAGCCATAAGCGCGGTGAATCATTGCATCCGCT</Hsp_hseq>
+      <Hsp_midline>|||||||||||||||||||||||||||||||||||||||||||||||||||||||| |  |||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>17</Hit_num>
+  <Hit_id>gi|2438327465|dbj|AP014571.1|</Hit_id>
+  <Hit_def>Streptococcus mutans LP13 DNA, complete genome</Hit_def>
+  <Hit_accession>AP014571</Hit_accession>
+  <Hit_len>2094589</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>137.441</Hsp_bit-score>
+      <Hsp_score>151</Hsp_score>
+      <Hsp_evalue>4.44178e-28</Hsp_evalue>
+      <Hsp_query-from>3</Hsp_query-from>
+      <Hsp_query-to>86</Hsp_query-to>
+      <Hsp_hit-from>577713</Hsp_hit-from>
+      <Hsp_hit-to>577629</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>-1</Hsp_hit-frame>
+      <Hsp_identity>82</Hsp_identity>
+      <Hsp_positive>82</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>85</Hsp_align-len>
+      <Hsp_qseq>AGAGTAGATGATTCGCGTTAAGTGTGTGTGAATGGGATGTCGTCACACAACGAAGCGA-GAGCGCGGTGAATCATTGCATCCGCT</Hsp_qseq>
+      <Hsp_hseq>AGAGTAGATGATTCGCGTTAAGTGTGTGTGAATGGGATGTCGTCACACAACGAAGCCATAAGCGCGGTGAATCATTGCATCCGCT</Hsp_hseq>
+      <Hsp_midline>|||||||||||||||||||||||||||||||||||||||||||||||||||||||| |  |||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>18</Hit_num>
+  <Hit_id>gi|2292861541|gb|CP101986.1|</Hit_id>
+  <Hit_def>Streptococcus mutans strain COCC33-14 chromosome, complete genome</Hit_def>
+  <Hit_accession>CP101986</Hit_accession>
+  <Hit_len>2114814</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>137.441</Hsp_bit-score>
+      <Hsp_score>151</Hsp_score>
+      <Hsp_evalue>4.44178e-28</Hsp_evalue>
+      <Hsp_query-from>3</Hsp_query-from>
+      <Hsp_query-to>86</Hsp_query-to>
+      <Hsp_hit-from>582038</Hsp_hit-from>
+      <Hsp_hit-to>581954</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>-1</Hsp_hit-frame>
+      <Hsp_identity>82</Hsp_identity>
+      <Hsp_positive>82</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>85</Hsp_align-len>
+      <Hsp_qseq>AGAGTAGATGATTCGCGTTAAGTGTGTGTGAATGGGATGTCGTCACACAACGAAGCGA-GAGCGCGGTGAATCATTGCATCCGCT</Hsp_qseq>
+      <Hsp_hseq>AGAGTAGATGATTCGCGTTAAGTGTGTGTGAATGGGATGTCGTCACACAACGAAGCCATAAGCGCGGTGAATCATTGCATCCGCT</Hsp_hseq>
+      <Hsp_midline>|||||||||||||||||||||||||||||||||||||||||||||||||||||||| |  |||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>19</Hit_num>
+  <Hit_id>gi|2945920791|gb|CP185273.1|</Hit_id>
+  <Hit_def>Streptococcus mutans strain E681 chromosome, complete genome</Hit_def>
+  <Hit_accession>CP185273</Hit_accession>
+  <Hit_len>2016654</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>137.441</Hsp_bit-score>
+      <Hsp_score>151</Hsp_score>
+      <Hsp_evalue>4.44178e-28</Hsp_evalue>
+      <Hsp_query-from>3</Hsp_query-from>
+      <Hsp_query-to>86</Hsp_query-to>
+      <Hsp_hit-from>577933</Hsp_hit-from>
+      <Hsp_hit-to>577849</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>-1</Hsp_hit-frame>
+      <Hsp_identity>82</Hsp_identity>
+      <Hsp_positive>82</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>85</Hsp_align-len>
+      <Hsp_qseq>AGAGTAGATGATTCGCGTTAAGTGTGTGTGAATGGGATGTCGTCACACAACGAAGCGA-GAGCGCGGTGAATCATTGCATCCGCT</Hsp_qseq>
+      <Hsp_hseq>AGAGTAGATGATTCGCGTTAAGTGTGTGTGAATGGGATGTCGTCACACAACGAAGCCATAAGCGCGGTGAATCATTGCATCCGCT</Hsp_hseq>
+      <Hsp_midline>|||||||||||||||||||||||||||||||||||||||||||||||||||||||| |  |||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>20</Hit_num>
+  <Hit_id>gi|2292859643|gb|CP101985.1|</Hit_id>
+  <Hit_def>Streptococcus mutans strain COCC33-14R chromosome, complete genome</Hit_def>
+  <Hit_accession>CP101985</Hit_accession>
+  <Hit_len>2115009</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>137.441</Hsp_bit-score>
+      <Hsp_score>151</Hsp_score>
+      <Hsp_evalue>4.44178e-28</Hsp_evalue>
+      <Hsp_query-from>3</Hsp_query-from>
+      <Hsp_query-to>86</Hsp_query-to>
+      <Hsp_hit-from>582038</Hsp_hit-from>
+      <Hsp_hit-to>581954</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>-1</Hsp_hit-frame>
+      <Hsp_identity>82</Hsp_identity>
+      <Hsp_positive>82</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>85</Hsp_align-len>
+      <Hsp_qseq>AGAGTAGATGATTCGCGTTAAGTGTGTGTGAATGGGATGTCGTCACACAACGAAGCGA-GAGCGCGGTGAATCATTGCATCCGCT</Hsp_qseq>
+      <Hsp_hseq>AGAGTAGATGATTCGCGTTAAGTGTGTGTGAATGGGATGTCGTCACACAACGAAGCCATAAGCGCGGTGAATCATTGCATCCGCT</Hsp_hseq>
+      <Hsp_midline>|||||||||||||||||||||||||||||||||||||||||||||||||||||||| |  |||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>131744797</Statistics_db-num>
+      <Statistics_db-len>1086004251965</Statistics_db-len>
+      <Statistics_hsp-len>0</Statistics_hsp-len>
+      <Statistics_eff-space>0</Statistics_eff-space>
+      <Statistics_kappa>0.41</Statistics_kappa>
+      <Statistics_lambda>0.625</Statistics_lambda>
+      <Statistics_entropy>0.78</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+</Iteration>
+</BlastOutput_iterations>
+</BlastOutput>

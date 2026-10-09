@@ -1,0 +1,168 @@
+rank	rfam_acc	rfam_id	type	model_length_RF	explicit_gr_links	explicit_linked_rows	explicit_linked_distinct_sequences	explicit_linked_taxa_all	explicit_linked_taxa_nonsynthetic	sequence_only_candidate_chains	screen_status	screen_reasons	shortlisted
+1	RF00162	SAM	Cis-reg; riboswitch;	108	28	24	24	4	3	1	pass	NA	yes
+2	RF03013	nadA	Gene; sRNA;	62	16	4	4	4	3	0	pass	NA	yes
+3	RF02340	DENV_SLA	Cis-reg;	72	5	4	4	4	3	0	pass	NA	yes
+4	RF00174	Cobalamin	Cis-reg; riboswitch;	189	13	4	4	4	3	1	pass	NA	yes
+5	RF00442	Guanidine-I	Cis-reg; riboswitch;	107	3	3	3	3	3	0	pass	NA	yes
+6	RF00458	IRES_Cripavirus	Cis-reg; IRES;	196	15	11	11	2	2	0	pass	NA	yes
+7	RF00522	PreQ1	Cis-reg; riboswitch;	45	16	8	7	3	2	0	pass	NA	yes
+8	RF00015	U4	Gene; snRNA; splicing;	138	12	7	6	3	2	21	pass	NA	yes
+9	RF00032	Histone3	Cis-reg;	46	11	4	4	3	2	1	pass	NA	yes
+10	RF00059	TPP	Cis-reg; riboswitch;	105	34	6	4	3	2	2	pass	NA	yes
+11	RF01831	THF	Cis-reg; riboswitch;	99	12	4	3	3	2	0	pass	NA	no_beyond_cap
+12	RF00622	CPEB3_ribozyme	Gene; ribozyme;	78	3	2	2	2	2	0	pass	NA	no_beyond_cap
+13	RF00166	PrrB_RsmZ	Gene; sRNA;	133	4	2	2	2	2	0	pass	NA	no_beyond_cap
+14	RF00207	K10_TLS	Cis-reg;	48	5	5	5	1	1	0	pass	NA	no_beyond_cap
+15	RF01750	ZMP-ZTP	Cis-reg; riboswitch;	86	12	3	3	2	1	2	pass	NA	no_beyond_cap
+16	RF00374	Gammaretro_CES	Cis-reg;	101	4	3	3	1	1	0	pass	NA	no_beyond_cap
+17	RF02680	PreQ1-III	Cis-reg; riboswitch;	102	3	3	3	1	1	0	pass	NA	no_beyond_cap
+18	RF00480	HIV_FE	Cis-reg; frameshift_element;	52	5	2	2	1	1	0	pass	NA	no_beyond_cap
+19	RF01734	Fluoride	Cis-reg; riboswitch;	64	6	2	2	2	1	0	pass	NA	no_beyond_cap
+20	RF01763	Guanidine-III	Cis-reg; riboswitch;	67	13	2	2	1	1	0	pass	NA	no_beyond_cap
+21	RF02679	Pistol	Gene; ribozyme;	68	8	2	2	2	1	0	pass	NA	no_beyond_cap
+22	RF00507	Corona_FSE	Cis-reg; frameshift_element;	78	2	2	2	1	1	0	pass	NA	no_beyond_cap
+23	RF03167	c-di-GMP-I-GGC	Cis-reg; riboswitch;	80	6	2	2	1	1	0	pass	NA	no_beyond_cap
+24	RF01689	AdoCbl-II	Cis-reg; riboswitch;	81	4	2	2	1	1	0	pass	NA	no_beyond_cap
+25	RF00254	mir-16	Gene; miRNA;	82	3	2	2	1	1	0	pass	NA	no_beyond_cap
+26	RF00233	Tymo_tRNA-like	Cis-reg;	84	3	2	2	1	1	0	pass	NA	no_beyond_cap
+27	RF00375	HIV_PBS	Cis-reg;	99	4	2	2	1	1	2	pass	NA	no_beyond_cap
+28	RF00044	Phage_pRNA	Gene;	118	15	2	2	1	1	0	pass	NA	no_beyond_cap
+29	RF00008	Hammerhead_3	Gene; ribozyme;	54	9	3	3	1	0	0	pass	NA	no_beyond_cap
+30	RF01725	SAM-I-IV	Cis-reg; riboswitch;	99	2	2	2	1	0	0	pass	NA	no_beyond_cap
+31	RF02678	Hatchet	Gene; ribozyme;	133	3	2	2	1	0	0	pass	NA	no_beyond_cap
+NA	RF00001	5S_rRNA	Gene; rRNA;	120	0	0	0	0	0	388	excluded	explicitly_linked_distinct_row_sequences<2;type_excluded:Gene; rRNA;	no
+NA	RF00002	5_8S_rRNA	Gene; rRNA;	154	0	0	0	0	0	496	excluded	explicitly_linked_distinct_row_sequences<2;type_excluded:Gene; rRNA;	no
+NA	RF00003	U1	Gene; snRNA; splicing;	166	1	1	1	1	1	6	excluded	explicitly_linked_distinct_row_sequences<2	no
+NA	RF00004	U2	Gene; snRNA; splicing;	192	0	0	0	0	0	24	excluded	explicitly_linked_distinct_row_sequences<2	no
+NA	RF00005	tRNA	Gene; tRNA;	71	0	0	0	0	0	502	excluded	explicitly_linked_distinct_row_sequences<2	no
+NA	RF00007	U12	Gene; snRNA; splicing;	151	0	0	0	0	0	2	excluded	explicitly_linked_distinct_row_sequences<2	no
+NA	RF00009	RNaseP_nuc	Gene; ribozyme;	301	0	0	0	0	0	2	excluded	explicitly_linked_distinct_row_sequences<2;model_length>300	no
+NA	RF00010	RNaseP_bact_a	Gene; ribozyme;	367	0	0	0	0	0	1	excluded	explicitly_linked_distinct_row_sequences<2;model_length>300	no
+NA	RF00011	RNaseP_bact_b	Gene; ribozyme;	365	0	0	0	0	0	0	excluded	explicitly_linked_distinct_row_sequences<2;model_length>300	no
+NA	RF00012	U3	Gene; snRNA; snoRNA; CD-box;	219	0	0	0	0	0	3	excluded	explicitly_linked_distinct_row_sequences<2	no
+NA	RF00013	6S	Gene;	187	1	1	1	1	1	0	excluded	explicitly_linked_distinct_row_sequences<2	no
+NA	RF00017	Metazoa_SRP	Gene;	299	0	0	0	0	0	1	excluded	explicitly_linked_distinct_row_sequences<2	no
+NA	RF00020	U5	Gene; snRNA; splicing;	117	0	0	0	0	0	51	excluded	explicitly_linked_distinct_row_sequences<2	no
+NA	RF00023	tmRNA	Gene;	374	0	0	0	0	0	13	excluded	explicitly_linked_distinct_row_sequences<2;model_length>300	no
+NA	RF00024	Telomerase-vert	Gene;	443	0	0	0	0	0	20	excluded	explicitly_linked_distinct_row_sequences<2;model_length>300	no
+NA	RF00025	Telomerase-cil	Gene;	165	3	1	1	1	1	3	excluded	explicitly_linked_distinct_row_sequences<2	no
+NA	RF00026	U6	Gene; snRNA; splicing;	105	0	0	0	0	0	32	excluded	explicitly_linked_distinct_row_sequences<2	no
+NA	RF00027	let-7	Gene; miRNA;	84	2	1	1	1	1	5	excluded	explicitly_linked_distinct_row_sequences<2	no
+NA	RF00028	Intron_gpI	Intron;	253	0	0	0	0	0	0	excluded	explicitly_linked_distinct_row_sequences<2	no
+NA	RF00029	Intron_gpII	Intron;	77	0	0	0	0	0	6	excluded	explicitly_linked_distinct_row_sequences<2	no
+NA	RF00030	RNase_MRP	Gene; ribozyme;	266	0	0	0	0	0	1	excluded	explicitly_linked_distinct_row_sequences<2	no
+NA	RF00031	SECIS_1	Cis-reg;	64	0	0	0	0	0	0	excluded	explicitly_linked_distinct_row_sequences<2	no
+NA	RF00036	RRE	Cis-reg;	337	0	0	0	0	0	0	excluded	explicitly_linked_distinct_row_sequences<2;model_length>300	no
+NA	RF00037	IRE_I	Cis-reg;	36	2	1	1	1	1	0	excluded	explicitly_linked_distinct_row_sequences<2	no
+NA	RF00050	FMN	Cis-reg; riboswitch;	138	8	2	1	2	1	0	excluded	explicitly_linked_distinct_row_sequences<2	no
+NA	RF00051	mir-17	Gene; miRNA;	80	0	0	0	0	0	1	excluded	explicitly_linked_distinct_row_sequences<2	no
+NA	RF00061	IRES_HCV	Cis-reg; IRES;	352	0	0	0	0	0	3	excluded	explicitly_linked_distinct_row_sequences<2;model_length>300	no
+NA	RF00066	U7	Gene; snRNA;	62	0	0	0	0	0	0	excluded	explicitly_linked_distinct_row_sequences<2	no
+NA	RF00075	MIR166	Gene; miRNA;	111	0	0	0	0	0	1	excluded	explicitly_linked_distinct_row_sequences<2	no
+NA	RF00080	Manganese	Cis-reg; riboswitch;	177	0	0	0	0	0	0	excluded	explicitly_linked_distinct_row_sequences<2	no
+NA	RF00083	GlmZ_SraJ	Gene; sRNA;	214	2	1	1	1	1	0	excluded	explicitly_linked_distinct_row_sequences<2	no
+NA	RF00094	HDV_ribozyme	Gene; ribozyme;	89	0	0	0	0	0	0	excluded	explicitly_linked_distinct_row_sequences<2	no
+NA	RF00100	7SK	Gene;	331	0	0	0	0	0	0	excluded	explicitly_linked_distinct_row_sequences<2;model_length>300	no
+NA	RF00102	VA	Gene;	159	1	1	1	1	1	0	excluded	explicitly_linked_distinct_row_sequences<2	no
+NA	RF00106	RNAI	Gene; antisense;	102	0	0	0	0	0	2	excluded	explicitly_linked_distinct_row_sequences<2	no
+NA	RF00114	S15	Cis-reg; leader;	117	0	0	0	0	0	0	excluded	explicitly_linked_distinct_row_sequences<2	no
+NA	RF00163	Hammerhead_1	Gene; ribozyme;	45	0	0	0	0	0	0	excluded	explicitly_linked_distinct_row_sequences<2	no
+NA	RF00164	s2m	Cis-reg;	43	1	1	1	1	0	0	excluded	explicitly_linked_distinct_row_sequences<2	no
+NA	RF00167	Purine	Cis-reg; riboswitch;	102	0	0	0	0	0	0	excluded	explicitly_linked_distinct_row_sequences<2	no
+NA	RF00168	Lysine	Cis-reg; riboswitch;	182	0	0	0	0	0	0	excluded	explicitly_linked_distinct_row_sequences<2	no
+NA	RF00169	Bacteria_small_SRP	Gene;	97	0	0	0	0	0	15	excluded	explicitly_linked_distinct_row_sequences<2	no
+NA	RF00170	msr	Gene;	69	0	0	0	0	0	9	excluded	explicitly_linked_distinct_row_sequences<2	no
+NA	RF00175	HIV-1_DIS	Cis-reg;	40	0	0	0	0	0	2	excluded	explicitly_linked_distinct_row_sequences<2	no
+NA	RF00177	SSU_rRNA_bacteria	Gene; rRNA;	1533	0	0	0	0	0	16	excluded	explicitly_linked_distinct_row_sequences<2;model_length>300;type_excluded:Gene; rRNA;	no
+NA	RF00185	Flavi_CRE	Cis-reg;	96	0	0	0	0	0	0	excluded	explicitly_linked_distinct_row_sequences<2	no
+NA	RF00209	IRES_Pesti	Cis-reg; IRES;	380	0	0	0	0	0	0	excluded	explicitly_linked_distinct_row_sequences<2;model_length>300	no
+NA	RF00210	IRES_Picorna_2	Cis-reg; IRES;	462	0	0	0	0	0	0	excluded	explicitly_linked_distinct_row_sequences<2;model_length>300	no
+NA	RF00228	IRES_HepA	Cis-reg; IRES;	572	0	0	0	0	0	0	excluded	explicitly_linked_distinct_row_sequences<2;model_length>300	no
+NA	RF00234	glmS	Cis-reg; riboswitch;	167	0	0	0	0	0	0	excluded	explicitly_linked_distinct_row_sequences<2	no
+NA	RF00240	RNA-OUT	Gene; antisense;	70	0	0	0	0	0	0	excluded	explicitly_linked_distinct_row_sequences<2	no
+NA	RF00250	mir-TAR	Gene; miRNA;	61	0	0	0	0	0	0	excluded	explicitly_linked_distinct_row_sequences<2	no
+NA	RF00373	RNaseP_arch	Gene; ribozyme;	288	0	0	0	0	0	0	excluded	explicitly_linked_distinct_row_sequences<2	no
+NA	RF00379	c-di-AMP	Cis-reg; riboswitch;	134	0	0	0	0	0	0	excluded	explicitly_linked_distinct_row_sequences<2	no
+NA	RF00380	Magnesium	Cis-reg; riboswitch;	169	3	2	1	2	1	0	excluded	explicitly_linked_distinct_row_sequences<2	no
+NA	RF00382	DnaX	Cis-reg; frameshift_element;	65	0	0	0	0	0	0	excluded	explicitly_linked_distinct_row_sequences<2	no
+NA	RF00386	Entero_5_CRE	Cis-reg;	90	0	0	0	0	0	0	excluded	explicitly_linked_distinct_row_sequences<2	no
+NA	RF00390	TYMV_upPK	Cis-reg;	23	2	1	1	1	1	0	excluded	explicitly_linked_distinct_row_sequences<2	no
+NA	RF00455	mir-15	Gene; miRNA;	88	0	0	0	0	0	0	excluded	explicitly_linked_distinct_row_sequences<2	no
+NA	RF00488	U1_yeast	Gene; snRNA; splicing;	567	0	0	0	0	0	7	excluded	explicitly_linked_distinct_row_sequences<2;model_length>300	no
+NA	RF00500	TCV_H5	Cis-reg;	45	0	0	0	0	0	0	excluded	explicitly_linked_distinct_row_sequences<2	no
+NA	RF00504	Glycine	Cis-reg; riboswitch;	94	0	0	0	0	0	0	excluded	explicitly_linked_distinct_row_sequences<2	no
+NA	RF00505	RydC	Gene; sRNA;	64	1	1	1	1	1	0	excluded	explicitly_linked_distinct_row_sequences<2	no
+NA	RF00525	Flavivirus_DB	Cis-reg;	72	2	1	1	1	1	0	excluded	explicitly_linked_distinct_row_sequences<2	no
+NA	RF00548	U11	Gene; snRNA; splicing;	134	0	0	0	0	0	6	excluded	explicitly_linked_distinct_row_sequences<2	no
+NA	RF00618	U4atac	Gene; snRNA; splicing;	132	0	0	0	0	0	1	excluded	explicitly_linked_distinct_row_sequences<2	no
+NA	RF00619	U6atac	Gene; snRNA; splicing;	126	0	0	0	0	0	1	excluded	explicitly_linked_distinct_row_sequences<2	no
+NA	RF00620	HCV_ARF_SL	Cis-reg;	136	0	0	0	0	0	0	excluded	explicitly_linked_distinct_row_sequences<2	no
+NA	RF00634	SAM-IV	Cis-reg; riboswitch;	116	0	0	0	0	0	4	excluded	explicitly_linked_distinct_row_sequences<2	no
+NA	RF00661	mir-31	Gene; miRNA;	83	1	1	1	1	1	0	excluded	explicitly_linked_distinct_row_sequences<2	no
+NA	RF00957	mir-663	Gene; miRNA;	90	0	0	0	0	0	0	excluded	explicitly_linked_distinct_row_sequences<2	no
+NA	RF01047	HBV_epsilon	Cis-reg;	61	1	1	1	1	1	0	excluded	explicitly_linked_distinct_row_sequences<2	no
+NA	RF01051	c-di-GMP-I	Cis-reg; riboswitch;	87	0	0	0	0	0	0	excluded	explicitly_linked_distinct_row_sequences<2	no
+NA	RF01054	preQ1-II	Cis-reg; riboswitch;	99	1	1	1	1	0	0	excluded	explicitly_linked_distinct_row_sequences<2	no
+NA	RF01057	SAH	Cis-reg; riboswitch;	78	0	0	0	0	0	0	excluded	explicitly_linked_distinct_row_sequences<2	no
+NA	RF01071	OLE	Gene;	616	0	0	0	0	0	0	excluded	explicitly_linked_distinct_row_sequences<2;model_length>300	no
+NA	RF01073	GP_knot1	Cis-reg;	62	1	1	1	1	1	0	excluded	explicitly_linked_distinct_row_sequences<2	no
+NA	RF01084	TLS-PK3	Cis-reg;	129	3	1	1	1	1	4	excluded	explicitly_linked_distinct_row_sequences<2	no
+NA	RF01271	snR30	Gene; snRNA; snoRNA; HACA-box;	612	0	0	0	0	0	0	excluded	explicitly_linked_distinct_row_sequences<2;model_length>300	no
+NA	RF01317	CRISPR-DR4	Gene; CRISPR;	28	0	0	0	0	0	0	excluded	explicitly_linked_distinct_row_sequences<2	no
+NA	RF01330	CRISPR-DR16	Gene; CRISPR;	37	0	0	0	0	0	1	excluded	explicitly_linked_distinct_row_sequences<2	no
+NA	RF01335	CRISPR-DR22	Gene; CRISPR;	36	0	0	0	0	0	1	excluded	explicitly_linked_distinct_row_sequences<2	no
+NA	RF01344	CRISPR-DR34	Gene; CRISPR;	36	0	0	0	0	0	0	excluded	explicitly_linked_distinct_row_sequences<2	no
+NA	RF01380	HIV-1_SD	Cis-reg;	19	0	0	0	0	0	3	excluded	explicitly_linked_distinct_row_sequences<2	no
+NA	RF01381	HIV-1_SL3	Cis-reg;	23	0	0	0	0	0	1	excluded	explicitly_linked_distinct_row_sequences<2	no
+NA	RF01415	Flavivirus_SLIV	Cis-reg;	75	1	1	1	1	1	0	excluded	explicitly_linked_distinct_row_sequences<2	no
+NA	RF01510	2dG-I	Cis-reg; riboswitch;	63	8	1	1	1	1	0	excluded	explicitly_linked_distinct_row_sequences<2	no
+NA	RF01684	mascRNA-menRNA	Gene;	56	1	1	1	0	0	5	excluded	explicitly_linked_distinct_row_sequences<2	no
+NA	RF01704	Glutamine-II	Cis-reg; riboswitch;	60	2	1	1	1	1	0	excluded	explicitly_linked_distinct_row_sequences<2	no
+NA	RF01727	SAM-SAH	Cis-reg; riboswitch;	49	1	1	1	1	1	0	excluded	explicitly_linked_distinct_row_sequences<2	no
+NA	RF01739	Glutamine	Cis-reg; riboswitch;	53	6	1	1	1	1	0	excluded	explicitly_linked_distinct_row_sequences<2	no
+NA	RF01764	azaaromatic	Cis-reg; riboswitch;	101	0	0	0	0	0	0	excluded	explicitly_linked_distinct_row_sequences<2	no
+NA	RF01786	c-di-GMP-II	Cis-reg; riboswitch;	84	2	1	1	1	1	0	excluded	explicitly_linked_distinct_row_sequences<2	no
+NA	RF01807	GIR1	Gene; ribozyme;	201	1	1	1	1	1	0	excluded	explicitly_linked_distinct_row_sequences<2	no
+NA	RF01826	SAM_V	Cis-reg; riboswitch;	66	1	1	1	1	1	0	excluded	explicitly_linked_distinct_row_sequences<2	no
+NA	RF01846	Fungi_U3	Gene; snRNA; snoRNA; CD-box;	274	0	0	0	0	0	0	excluded	explicitly_linked_distinct_row_sequences<2	no
+NA	RF01852	tRNA-Sec	Gene; tRNA;	91	0	0	0	0	0	21	excluded	explicitly_linked_distinct_row_sequences<2	no
+NA	RF01854	Bacteria_large_SRP	Gene;	256	0	0	0	0	0	2	excluded	explicitly_linked_distinct_row_sequences<2	no
+NA	RF01857	Archaea_SRP	Gene;	317	1	1	1	1	1	0	excluded	explicitly_linked_distinct_row_sequences<2;model_length>300	no
+NA	RF01959	SSU_rRNA_archaea	Gene; rRNA;	1478	0	0	0	0	0	7	excluded	explicitly_linked_distinct_row_sequences<2;model_length>300;type_excluded:Gene; rRNA;	no
+NA	RF01960	SSU_rRNA_eukarya	Gene; rRNA;	1831	0	0	0	0	0	0	excluded	explicitly_linked_distinct_row_sequences<2;model_length>300;type_excluded:Gene; rRNA;	no
+NA	RF01998	group-II-D1D4-1	Intron;	84	0	0	0	0	0	0	excluded	explicitly_linked_distinct_row_sequences<2	no
+NA	RF02001	group-II-D1D4-3	Intron;	170	0	0	0	0	0	0	excluded	explicitly_linked_distinct_row_sequences<2	no
+NA	RF02012	group-II-D1D4-7	Intron;	151	0	0	0	0	0	3	excluded	explicitly_linked_distinct_row_sequences<2	no
+NA	RF02032	GOLLD	Gene;	416	0	0	0	0	0	29	excluded	explicitly_linked_distinct_row_sequences<2;model_length>300	no
+NA	RF02095	mir-2985	Gene; miRNA;	71	1	1	1	1	1	0	excluded	explicitly_linked_distinct_row_sequences<2	no
+NA	RF02253	IRE_II	Cis-reg;	31	1	1	1	1	1	0	excluded	explicitly_linked_distinct_row_sequences<2	no
+NA	RF02348	tracrRNA	Gene; CRISPR;	92	4	2	1	2	2	0	excluded	explicitly_linked_distinct_row_sequences<2	no
+NA	RF02359	MS2	Cis-reg;	36	0	0	0	0	0	1	excluded	explicitly_linked_distinct_row_sequences<2	no
+NA	RF02519	ToxI	Gene; antitoxin;	34	1	1	1	1	1	0	excluded	explicitly_linked_distinct_row_sequences<2	no
+NA	RF02521	Virus-PTE	Cis-reg;	85	1	1	1	1	1	0	excluded	explicitly_linked_distinct_row_sequences<2	no
+NA	RF02540	LSU_rRNA_archaea	Gene; rRNA;	2987	0	0	0	0	0	0	excluded	explicitly_linked_distinct_row_sequences<2;model_length>300;type_excluded:Gene; rRNA;	no
+NA	RF02541	LSU_rRNA_bacteria	Gene; rRNA;	2925	0	0	0	0	0	0	excluded	explicitly_linked_distinct_row_sequences<2;model_length>300;type_excluded:Gene; rRNA;	no
+NA	RF02542	SSU_rRNA_microsporidia	Gene; rRNA;	1311	0	0	0	0	0	1	excluded	explicitly_linked_distinct_row_sequences<2;model_length>300;type_excluded:Gene; rRNA;	no
+NA	RF02543	LSU_rRNA_eukarya	Gene; rRNA;	3401	0	0	0	0	0	0	excluded	explicitly_linked_distinct_row_sequences<2;model_length>300;type_excluded:Gene; rRNA;	no
+NA	RF02545	SSU_trypano_mito	Gene; rRNA;	623	0	0	0	0	0	0	excluded	explicitly_linked_distinct_row_sequences<2;model_length>300;type_excluded:Gene; rRNA;	no
+NA	RF02546	LSU_trypano_mito	Gene; rRNA;	561	0	0	0	0	0	8	excluded	explicitly_linked_distinct_row_sequences<2;model_length>300;type_excluded:Gene; rRNA;	no
+NA	RF02553	YrlA	Gene; sRNA;	114	1	1	1	1	1	0	excluded	explicitly_linked_distinct_row_sequences<2	no
+NA	RF02681	Twister-sister	Gene; ribozyme;	81	1	1	1	1	1	0	excluded	explicitly_linked_distinct_row_sequences<2	no
+NA	RF02683	NiCo	Cis-reg; riboswitch;	96	1	1	1	1	0	0	excluded	explicitly_linked_distinct_row_sequences<2	no
+NA	RF02796	Pab160	Gene; snRNA; snoRNA; HACA-box;	68	6	1	1	1	0	0	excluded	explicitly_linked_distinct_row_sequences<2	no
+NA	RF02926	DUF2693-FD	Gene; sRNA;	49	1	1	1	1	1	0	excluded	explicitly_linked_distinct_row_sequences<2	no
+NA	RF02933	ARRPOF	Gene; sRNA;	256	0	0	0	0	0	4	excluded	explicitly_linked_distinct_row_sequences<2	no
+NA	RF02977	THF-II	Cis-reg;	39	5	1	1	1	1	10	excluded	explicitly_linked_distinct_row_sequences<2	no
+NA	RF03016	RT-12	Gene; sRNA;	117	0	0	0	0	0	2	excluded	explicitly_linked_distinct_row_sequences<2	no
+NA	RF03022	Phage_DGR	Gene; sRNA;	127	9	1	1	1	1	0	excluded	explicitly_linked_distinct_row_sequences<2	no
+NA	RF03030	salivarius-1	Gene; sRNA;	56	2	1	1	1	1	0	excluded	explicitly_linked_distinct_row_sequences<2	no
+NA	RF03054	Xanthine	Cis-reg; riboswitch;	56	8	1	1	1	1	1	excluded	explicitly_linked_distinct_row_sequences<2	no
+NA	RF03064	RAGATH-18	Gene; sRNA;	71	0	0	0	0	0	1	excluded	explicitly_linked_distinct_row_sequences<2	no
+NA	RF03072	raiA	Cis-reg; riboswitch;	209	0	0	0	0	0	3	excluded	explicitly_linked_distinct_row_sequences<2	no
+NA	RF03085	abiF	Gene; sRNA;	37	0	0	0	0	0	2	excluded	explicitly_linked_distinct_row_sequences<2	no
+NA	RF03087	ROOL	Gene; sRNA;	574	0	0	0	0	0	28	excluded	explicitly_linked_distinct_row_sequences<2;model_length>300	no
+NA	RF03120	Sarbecovirus-5UTR	Cis-reg;	298	0	0	0	0	0	0	excluded	explicitly_linked_distinct_row_sequences<2	no
+NA	RF04076	mir-H11	Gene; miRNA;	72	0	0	0	0	0	1	excluded	explicitly_linked_distinct_row_sequences<2	no
+NA	RF04190	Hairpin-meta1	Gene; ribozyme;	90	0	0	0	0	0	0	excluded	explicitly_linked_distinct_row_sequences<2	no
+NA	RF04222	NA	NA	NA	0	0	0	0	0	0	excluded	explicitly_linked_distinct_row_sequences<2	no
+NA	RF04326	PV_xrRNA_class3	Cis-reg;	52	2	1	1	1	1	0	excluded	explicitly_linked_distinct_row_sequences<2	no

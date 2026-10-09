@@ -1,0 +1,27 @@
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  SIGILL (0x4) at pc=0x0000762249181924, pid=1, tid=0x000076225d28a640
+#
+# JRE version: OpenJDK Runtime Environment (8.0_504-b01) (build 1.8.0_504-8u504-ga-1ubuntu1~22.04.3-b01)
+# Java VM: OpenJDK 64-Bit Server VM (25.504-b01 mixed mode linux-amd64 compressed oops)
+# Problematic frame:
+# J 209 C1 java.util.AbstractCollection.<init>()V (5 bytes) @ 0x0000762249181924 [0x0000762249181940+0xffffffe4]
+#
+# Core dump written. Default location: /run/STAR3D_source/core or core.1
+#
+# An error report file with more information is saved as:
+# /run/STAR3D_source/hs_err_pid1.log
+Compiled method (c1)    1686  209       3       java.util.AbstractCollection::<init> (5 bytes)
+ total in heap  [0x00007622491817d0,0x0000762249181b70] = 928
+ relocation     [0x00007622491818f8,0x0000762249181928] = 48
+ main code      [0x0000762249181940,0x0000762249181a60] = 288
+ stub code      [0x0000762249181a60,0x0000762249181af0] = 144
+ metadata       [0x0000762249181af0,0x0000762249181b08] = 24
+ scopes data    [0x0000762249181b08,0x0000762249181b28] = 32
+ scopes pcs     [0x0000762249181b28,0x0000762249181b68] = 64
+ dependencies   [0x0000762249181b68,0x0000762249181b70] = 8
+#
+# If you would like to submit a bug report, please visit:
+#   http://bugreport.java.com/bugreport/crash.jsp
+#
