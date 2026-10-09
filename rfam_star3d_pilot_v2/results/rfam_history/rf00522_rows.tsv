@@ -1,0 +1,14 @@
+release	rows	3FU2_row_present	6VUI_row_present	7REX_row_present	rex_aligned	rex_gr_features	p1_6vui_16_to_7rex	p1_6vui_20_to_7rex	l1_6vui_11_to_7rex
+14.0	35	False	False	False	NA	none	NA	NA	NA
+14.1	35	False	False	False	NA	none	NA	NA	NA
+14.2	35	False	False	False	NA	none	NA	NA	NA
+14.3	35	False	False	False	NA	none	NA	NA	NA
+14.4	35	False	False	False	NA	none	NA	NA	NA
+14.5	35	False	False	False	NA	none	NA	NA	NA
+14.6	35	False	False	False	NA	none	NA	NA	NA
+14.7	35	False	False	False	NA	none	NA	NA	NA
+14.8	35	False	False	False	NA	none	NA	NA	NA
+14.9	36	False	False	False	NA	none	NA	NA	NA
+14.10	36	False	False	False	NA	none	NA	NA	NA
+15.0	43	True	True	True	-----UGUGGUUCGCAA--CC---AUCCCACA--------------------UAAAAAAAC-UAG-----	7REX_A_SS;8FB3_A_SS	17	21	12
+15.1	43	True	True	True	-----UGUGGUUCGCAA--CC---AUCCCACA--------------------UAAAAAAAC-UAG-----	7REX_A_SS;8FB3_A_SS	17	21	12

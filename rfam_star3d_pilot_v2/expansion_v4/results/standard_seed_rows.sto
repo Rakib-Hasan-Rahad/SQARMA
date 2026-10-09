@@ -1,0 +1,9 @@
+# STOCKHOLM 1.0
+#=GF ID   tRNA
+#=GF AC   RF00005
+#=GF CC   DERIVED EXCERPT of pinned Rfam.seed.gz (release 15.1, sha256 41f014f4ab5628620935f089b1bb77987ebc162fda7c72bff368a32c9cccabac); selected rows only; original columns preserved; not an alignment product
+AP000442.6/2022-1950                          GCCCGGAU-A-GCUCAGUC--GGU---AGAGCA-U-CAGAC-UUUUAAUCUG-AGG------------------------GU--CCAG-GGU-UCA-AG--UCCCU-G-UUCGGGC-G
+X17321.1/66-138                               GGGUGAUU-A-GCUCAGCU--GGG---AGAGCA-C-CUCCC-UUACAAGGAG-GGG------------------------GU--CGGC-GGU-UCG-AU--CCCGU-C-AUCACCC-A
+#=GC SS_cons                                  (((((((,.,.<<<<___...___..._>>>>,.<.<<<<_.______>>>>.>,,........................,...,<<<.<<_.___.__.._>>>>.>.))))))).:
+#=GC RF                                       ggggaugU.A.GCuuAaU...GGU...AaaGCa.u.ugGaC.UuauAAuCca.aAg........................g...cgcg.GGU.UCg.Aa..UCCcg.c.caucccc.A
+//

@@ -41,3 +41,11 @@ audit/fresh_repro_v3_other4/inputs/software/
 audit/fresh_repro_v3_other4/inputs/structures/
 **/core
 **/hs_err_pid*.log
+inputs/rfam_history/
+# v4
+runs_sensitivity/**/STAR3D_source/tools/
+runs_sensitivity/**/STAR3D_source/lib/
+runs_sensitivity/**/STAR3D_source/class/
+runs_sensitivity/**/STAR3D_source/src/
+runs_sensitivity/**/STAR3D_source/STAR3D.jar
+expansion_v4/inputs

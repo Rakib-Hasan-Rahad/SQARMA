@@ -1,0 +1,9 @@
+# shared-correspondence anchor fit; rule=shared_local flank=8; 16 anchors [(46, 46), (47, 47), (48, 48), (49, 49), (50, 50), (51, 51), (52, 52), (53, 53), (61, 61), (62, 62), (63, 63), (64, 64), (65, 65), (66, 66), (67, 67), (68, 68)]; fit RMSD 2.42 A; source singular values [34.75, 26.43, 15.62]; target singular values [31.63, 24.06, 16.21]
+pair_id	source_row_index	source_nt	category	rfam_partner	star3d_partner	rfam_C1p_dist	star3d_C1p_dist	rfam_base_centroid_dist	star3d_base_centroid_dist
+RF00005__5CCB_N__7EQJ_B	54	U	rfam_only	54	NA	2.33	NA	2.69	NA
+RF00005__5CCB_N__7EQJ_B	55	U	different_partner	55	54	3.06	4.6	2.61	4.36
+RF00005__5CCB_N__7EQJ_B	56	C	different_partner	56	55	5.5	7.17	6.22	11.43
+RF00005__5CCB_N__7EQJ_B	57	A	different_partner	57	56	9.55	4.29	13.06	9.04
+RF00005__5CCB_N__7EQJ_B	58	A	different_partner	58	57	10.41	5.03	10.45	5.9
+RF00005__5CCB_N__7EQJ_B	59	G	rfam_only	59	NA	10.34	NA	12.36	NA
+RF00005__5CCB_N__7EQJ_B	60	U	rfam_only	60	NA	4.09	NA	6.34	NA

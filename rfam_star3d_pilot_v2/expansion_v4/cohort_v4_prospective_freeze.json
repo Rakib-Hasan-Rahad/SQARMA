@@ -1,0 +1,11 @@
+{
+ "frozen_utc": "2026-10-09T06:16:35+00:00",
+ "statement": "frozen before any STAR3D run on these structures",
+ "preregistration": "review/v4_expansion/PREREGISTRATION.md",
+ "files": {
+  "results/selected_representatives.tsv": "243860cfff0af39e82c8beeb28c053a6956f9b222a43b2adc86ff2c4b9a245e4",
+  "results/selected_pairs.tsv": "e5fec5ac7bc8f01c769bd0981225997f444dfc4cf1e6ca5cfc9f73d88ff159cc",
+  "config.yaml": "93972244591aad2bb7cdd24e7d051814acd870805626515d58862748697332bc"
+ },
+ "preregistration_sha256": "cc2797bb5b53b0a54e9959d3478d610bd35ca5bb52d14cf1418edf4ac42a5009"
+}

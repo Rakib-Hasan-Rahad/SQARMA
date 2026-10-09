@@ -1,0 +1,3 @@
+pair_id	tier	direction	status	default_aligned	S1_aligned	identical_mapping	shared_with_default	only_default	only_S1	default_same_as_rfam	S1_same_as_rfam	default_rmsd	S1_rmsd	S1_attempts
+RF00442__5U3G_B__7MLW_F	exploratory	forward	completed	78	78	True	78	0	0	62	62	2.44	2.44	1
+RF00442__5U3G_B__7MLW_F	exploratory	reverse	completed	78	78	True	78	0	0	62	62	2.44	2.44	1

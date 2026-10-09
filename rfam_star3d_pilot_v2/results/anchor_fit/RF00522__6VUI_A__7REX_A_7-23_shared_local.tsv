@@ -1,0 +1,19 @@
+# shared-correspondence anchor fit; rule=shared_local flank=8; 14 anchors [(1, 1), (2, 2), (3, 3), (4, 4), (5, 5), (6, 6), (24, 25), (25, 26), (26, 27), (27, 28), (28, 29), (29, 30), (30, 31), (31, 32)]; fit RMSD 2.00 A; source singular values [32.87, 26.66, 9.52]; target singular values [32.72, 23.87, 10.18]
+pair_id	source_row_index	source_nt	category	rfam_partner	star3d_partner	rfam_C1p_dist	star3d_C1p_dist	rfam_base_centroid_dist	star3d_base_centroid_dist
+RF00522__6VUI_A__7REX_A	7	C	different_partner	8	7	4.65	3.63	3.99	4.02
+RF00522__6VUI_A__7REX_A	8	G	different_partner	9	10	3.31	10.25	3.96	10.91
+RF00522__6VUI_A__7REX_A	9	C	different_partner	10	11	3.65	2.73	3.8	1.69
+RF00522__6VUI_A__7REX_A	10	A	different_partner	11	12	4.75	4.13	4.59	5.53
+RF00522__6VUI_A__7REX_A	11	G	different_partner	12	13	4.29	10.01	4.32	12.07
+RF00522__6VUI_A__7REX_A	12	U	different_partner	13	14	6.68	1.4	4.41	4.05
+RF00522__6VUI_A__7REX_A	13	A	star3d_only	NA	15	NA	2.77	NA	7.61
+RF00522__6VUI_A__7REX_A	14	A	different_partner	15	16	7.97	2.5	5.42	2.47
+RF00522__6VUI_A__7REX_A	15	C	different_partner	16	17	6.89	1.79	4.45	1.2
+RF00522__6VUI_A__7REX_A	16	C	different_partner	17	18	6.93	1.01	5.18	0.55
+RF00522__6VUI_A__7REX_A	17	C	different_partner	18	19	6.33	1.04	4.49	0.52
+RF00522__6VUI_A__7REX_A	18	C	different_partner	19	20	6.6	1.77	4.74	1.03
+RF00522__6VUI_A__7REX_A	19	A	different_partner	20	21	6.37	1.91	4.41	2.27
+RF00522__6VUI_A__7REX_A	20	G	different_partner	21	22	7.21	2.55	5.72	2.3
+RF00522__6VUI_A__7REX_A	21	U	different_partner	22	23	8.83	3.25	8.61	2.53
+RF00522__6VUI_A__7REX_A	22	U	different_partner	23	24	6.01	6.21	10.49	10.09
+RF00522__6VUI_A__7REX_A	23	A	rfam_only	24	NA	4.28	NA	4.06	NA

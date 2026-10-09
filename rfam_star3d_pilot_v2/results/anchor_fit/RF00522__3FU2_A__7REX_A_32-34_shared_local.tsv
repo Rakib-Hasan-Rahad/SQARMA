@@ -1,0 +1,5 @@
+# shared-correspondence anchor fit; rule=shared_local flank=8; 8 anchors [(24, 24), (25, 25), (26, 26), (27, 27), (28, 28), (29, 29), (30, 30), (31, 31)]; fit RMSD 0.63 A; source singular values [27.2, 9.47, 3.6]; target singular values [27.43, 10.41, 3.57]
+pair_id	source_row_index	source_nt	category	rfam_partner	star3d_partner	rfam_C1p_dist	star3d_C1p_dist	rfam_base_centroid_dist	star3d_base_centroid_dist
+RF00522__3FU2_A__7REX_A	32	U	star3d_only	NA	32	NA	1.12	NA	1.19
+RF00522__3FU2_A__7REX_A	33	A	different_partner	32	33	5.92	2.02	4.46	2.11
+RF00522__3FU2_A__7REX_A	34	A	different_partner	33	34	6.53	7.98	4.66	13.4

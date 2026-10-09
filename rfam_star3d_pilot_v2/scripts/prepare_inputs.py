@@ -120,6 +120,13 @@ def prepare(rep, seed):
     return meta, conv
 
 
+def row_coordinate(rep, k):
+    """Coordinate of the k-th (0-based) row residue in the row's own sequence system; reverse-strand rows
+    (start > end, e.g. AP000442.6/2022-1950) count down (v4 fix; all pilot rows are forward-strand)."""
+    s, e = int(rep["row_start"]), int(rep["row_end"])
+    return s + k if s <= e else s - k
+
+
 def crosswalk(rep, conv, seed, scheme):
     """Per row residue: every numbering system + ORIGINAL standard-seed column."""
     rows = []
@@ -139,7 +146,7 @@ def crosswalk(rep, conv, seed, scheme):
         par = rep["deposited_seq_parent_mapped"][off + k]
         rows.append(dict(
             rep_id=rep["rep_id"], rfam_acc=fam, row_name=name, row_index1=k + 1,
-            row_coordinate=int(rep["row_start"]) + k, row_nt=ch, original_column=cols[k] + 1,
+            row_coordinate=row_coordinate(rep, k), row_nt=ch, original_column=cols[k] + 1,
             reference_source="Rfam.seed.gz", rfam_release=CFG["reference"]["rfam_release"],
             seed_sha256=CFG["reference"]["seed_sha256"],
             pdb_id=rep["pdb_id"], model=1, label_asym_id=rep["label_asym_id"], auth_asym_id=rep["auth_asym_id"],

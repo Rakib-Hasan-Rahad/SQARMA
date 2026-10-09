@@ -6,6 +6,8 @@ target not engineering-masked, both observed):
   shared            all such residues
   shared_flank_excl shared, excluding anchors within `flank` source positions of the disputed region [start,end]
   shared_canonical  shared, restricted to residues in an FR3D canonical cWW pair in BOTH source and target
+  shared_local      (v4) shared anchors only within `flank` positions OUTSIDE the region ([start-flank, start-1] and
+                    [end+1, end+flank]); tests dependence on distant anchors
 Degeneracy check: >= 4 anchors and smallest singular value of the centred anchor C1' cloud >= 1.0 A in both
 structures; otherwise the fit is refused.
 
@@ -18,7 +20,7 @@ import sys
 import gemmi
 import numpy as np
 
-ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+ROOT = os.environ.get("SQARMA_STUDY_ROOT") or os.path.dirname(os.path.dirname(os.path.abspath(__file__)))  # v4: workspace override
 P = lambda *a: os.path.join(ROOT, *a)  # noqa: E731
 BASE_ATOMS = {"N1", "C2", "N3", "C4", "C5", "C6", "N7", "C8", "N9", "O2", "O4", "N4", "O6", "N6", "N2"}
 
@@ -80,6 +82,8 @@ def select_anchors(rows, S, T, cs, ct, rule, start, end, flank):
         if atom(S[i], "C1'") is None or atom(T[j], "C1'") is None:
             continue
         if rule == "shared_flank_excl" and start - flank <= i <= end + flank:
+            continue
+        if rule == "shared_local" and not (start - flank <= i < start or end < i <= end + flank):
             continue
         if rule == "shared_canonical":
             if canon_s is None:
