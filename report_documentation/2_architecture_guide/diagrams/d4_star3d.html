@@ -1,0 +1,20 @@
+<!doctype html><html><head><meta charset="utf-8">
+<script src="https://cdn.jsdelivr.net/npm/mermaid@10.9.1/dist/mermaid.min.js"></script>
+<style>body{margin:0;background:#fff;font-family:Arial,Helvetica,sans-serif} .mermaid{display:inline-block;padding:12px}</style>
+</head><body><pre class="mermaid">flowchart TD
+  A[&quot;Verify tarball sha256 and prepared-input sha256&quot;] --&gt; B[&quot;New unique attempt dir&lt;br/&gt;(never reuse a path)&quot;]
+  B --&gt; C([&quot;In-container checksum +&lt;br/&gt;empty-dir check pass?&quot;])
+  C -- &quot;no&quot; --&gt; F1[&quot;failed_mount_check: stop pair&quot;]
+  C -- &quot;yes&quot; --&gt; D[&quot;Preprocess once per RNA (query, then target)&lt;br/&gt;bundled MC-Annotate → .ct → RemovePseudoknots → npk.ct&quot;]
+  D --&gt; E([&quot;Exit 0, npk.ct checksum matches,&lt;br/&gt;.mca has Base-pairs, npk.ct reciprocal?&quot;])
+  E -- &quot;no&quot; --&gt; F2[&quot;failed_* status: no alignment&quot;]
+  E -- &quot;yes&quot; --&gt; G[&quot;ONE alignment, fixed order:&lt;br/&gt;java -jar STAR3D.jar -o out.aln -p query A target A&quot;]
+  G --&gt; H([&quot;Exit code&quot;])
+  H -- &quot;≠0 (e.g. JVM crash)&quot; --&gt; F3[&quot;failed: recorded, NOT retried,&lt;br/&gt;nothing substituted&quot;]
+  H -- &quot;0, no file&quot; --&gt; N[&quot;no_alignment&quot;]
+  H -- &quot;0, file&quot; --&gt; I([&quot;Parse: declared = parsed count,&lt;br/&gt;no bad lines, sha recorded&quot;])
+  I -- &quot;no&quot; --&gt; F4[&quot;parse_error&quot;]
+  I -- &quot;yes&quot; --&gt; J[&quot;select_primary_outputs.py: earliest valid forward&lt;br/&gt;record → compare.py re-validates on every read&quot;]
+</pre>
+<script>mermaid.initialize({startOnLoad:true, theme:'neutral', flowchart:{useMaxWidth:false, htmlLabels:true, curve:'basis', nodeSpacing:30, rankSpacing:40},
+ themeVariables:{fontSize:'15px', fontFamily:'Arial, Helvetica, sans-serif'}});</script></body></html>

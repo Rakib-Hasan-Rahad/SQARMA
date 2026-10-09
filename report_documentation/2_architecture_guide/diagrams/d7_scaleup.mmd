@@ -1,0 +1,13 @@
+flowchart TD
+  A["Proposed expansion"] --> B(["Scientific need stated<br/>(which uncertainty?)"])
+  B -- "no" --> S["Do not expand"]
+  B -- "yes" --> C(["Rules pre-registered<br/>and frozen?"])
+  C -- "no" --> S
+  C -- "yes" --> D(["Native or emulated host?<br/>crash rate acceptable?"])
+  D --> E(["Eligible pairs found<br/>under unchanged rules?"])
+  E -- "none" --> R["Report the negative result;<br/>ask for a scope decision"]
+  E -- "some" --> F["Run in isolated workspace;<br/>gates per pair"]
+  F --> G(["Gate failures?"])
+  G -- "systemic" --> Q["Quarantine and fix;<br/>do not interpret"]
+  G -- "none" --> H["Biological review<br/>(the bottleneck)"]
+  H --> I["Report separately from<br/>the development set"]

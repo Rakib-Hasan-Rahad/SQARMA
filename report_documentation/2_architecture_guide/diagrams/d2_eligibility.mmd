@@ -1,0 +1,15 @@
+flowchart TD
+  A["Candidate PDB chain"] --> B(["Explicit #=GR link or exact match<br/>to an ordinary seed row?"])
+  B -- "no" --> X1["Excluded: no verified row"]
+  B -- "yes" --> C(["Row found exactly once in the chain;<br/>source organism = row organism?"])
+  C -- "no / ambiguous" --> X2["Excluded or pending"]
+  C -- "yes" --> D(["Construct documented well enough<br/>to establish the natural sequence?"])
+  D -- "no" --> X3["unresolved → pending<br/>(never accepted)"]
+  D -- "yes" --> E(["Any substitution, artificial extension,<br/>internal deletion, loop/stem replacement<br/>or chimera ANYWHERE in the construct?"])
+  E -- "yes (masked or not)" --> X4["confirmed_engineered → excluded"]
+  E -- "no (synthesis / transcription of the<br/>natural sequence is fine)" --> F(["Coordinates, mapping and STAR3D<br/>compatibility suitable? (missing residues and<br/>native modifications assessed here)"])
+  F -- "no" --> X5["verified_natural, excluded<br/>(suitability)"]
+  F -- "yes" --> G["verified_natural, accepted"]
+  G --> H(["Partner in the same family: accepted,<br/>distinct sequence (not a repeat or crystal copy)?"])
+  H -- "no" --> X6["No pair (representative kept on record)"]
+  H -- "yes" --> I["Accepted pair, frozen before STAR3D outcomes are examined"]

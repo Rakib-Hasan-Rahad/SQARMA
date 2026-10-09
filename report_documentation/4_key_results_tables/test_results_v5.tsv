@@ -1,0 +1,4 @@
+suite	passed	failed	command	log_path
+81 tests (tests/), v5	81	0	.venv/bin/python -m pytest -q tests	logs/pytest_final_v5.txt
+mutation check: 18 re-introduced defects	18 detected	0 undetected	.venv/bin/python deliverables/2026-10-09_v5/scripts/mutation_check_v5.py	tables/mutation_check_v5.tsv
+baseline at v5 start (222f355)	64	0	.venv/bin/python -m pytest -q tests	baseline/start_commit.txt

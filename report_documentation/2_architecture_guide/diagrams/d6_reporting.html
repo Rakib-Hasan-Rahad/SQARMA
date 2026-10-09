@@ -1,0 +1,17 @@
+<!doctype html><html><head><meta charset="utf-8">
+<script src="https://cdn.jsdelivr.net/npm/mermaid@10.9.1/dist/mermaid.min.js"></script>
+<style>body{margin:0;background:#fff;font-family:Arial,Helvetica,sans-serif} .mermaid{display:inline-block;padding:12px}</style>
+</head><body><pre class="mermaid">flowchart TD
+  A[&quot;Active tables&lt;br/&gt;results/*.tsv, review/*.tsv&lt;br/&gt;(accepted cohort only)&quot;] --&gt; B[&quot;export_site_data.py&quot;]
+  B --&gt; C[&quot;site/data/*.json&lt;br/&gt;+ export_manifest.json&lt;br/&gt;(sha256 of every source)&quot;]
+  C --&gt; D[&quot;index.html + app.js&lt;br/&gt;(no typed numbers)&quot;]
+  A --&gt; E[&quot;render scripts&lt;br/&gt;(region review, evidence cards)&quot;]
+  E --&gt; F[&quot;Markdown reports&quot;]
+  A --&gt; G[&quot;check_report_numbers_v5.py&quot;]
+  F --&gt; G
+  C --&gt; G
+  G --&gt; H[&quot;OK / FAIL log&quot;]
+  F --&gt; I[&quot;pandoc → .docx&lt;br/&gt;Chrome → .pdf&quot;]
+</pre>
+<script>mermaid.initialize({startOnLoad:true, theme:'neutral', flowchart:{useMaxWidth:false, htmlLabels:true, curve:'basis', nodeSpacing:30, rankSpacing:40},
+ themeVariables:{fontSize:'15px', fontFamily:'Arial, Helvetica, sans-serif'}});</script></body></html>

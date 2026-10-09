@@ -1,0 +1,13 @@
+scope	table	key	field	before	after	reason
+study (7 pilot pairs)	pair_summary	ALL	rows	42	7	rows removed: reverse-direction runs, replicates 2-3 and historical attempts are no longer active rows (archived)
+study (7 pilot pairs)	correspondence_comparison	ALL	residue rows compared	532	532	0 differing values
+study (7 pilot pairs)	interaction_summary	ALL	rows (v4 all comparisons -> v5)	210	70	0 differing values on the retained comparison; 'rfam_vs_star3d_reverse' and 'all_three_methods' comparisons and star3d_reverse columns removed from the active table (archived)
+study (7 pilot pairs)	interaction_comparison	ALL	interactions compared	1634	1634	0 differing values; 539 exclusion labels renamed only (star3d_forward_* -> star3d_*); star3d_reverse and all_three_methods columns removed (archived)
+study (7 pilot pairs)	region_review	ALL	regions	19	19	0 differing values; column 'reverse_run_same_star3d_partner' removed
+expansion_v4 (tRNA pair)	pair_summary	ALL	rows	6	1	rows removed: reverse-direction runs, replicates 2-3 and historical attempts are no longer active rows (archived)
+expansion_v4 (tRNA pair)	correspondence_comparison	ALL	residue rows compared	73	73	0 differing values
+expansion_v4 (tRNA pair)	interaction_summary	ALL	rows (v4 all comparisons -> v5)	30	10	0 differing values on the retained comparison; 'rfam_vs_star3d_reverse' and 'all_three_methods' comparisons and star3d_reverse columns removed from the active table (archived)
+expansion_v4 (tRNA pair)	interaction_comparison	ALL	interactions compared	222	222	0 differing values; 22 exclusion labels renamed only (star3d_forward_* -> star3d_*); star3d_reverse and all_three_methods columns removed (archived)
+expansion_v4 (tRNA pair)	region_review	RF00005__5CCB_N__7EQJ_B__r15-21	interpretation_source	manual review review/region_review_v4.tsv (AI agent, 2026-10-09; no human review	carried exact from RF00005__5CCB_N__7EQJ_B__r15-21	value changed
+expansion_v4 (tRNA pair)	region_review	RF00005__5CCB_N__7EQJ_B__r54-60	interpretation_source	manual review review/region_review_v4.tsv (AI agent, 2026-10-09; no human review	carried exact from RF00005__5CCB_N__7EQJ_B__r54-60	value changed
+expansion_v4 (tRNA pair)	region_review	ALL	regions	2	2	2 differing values; column 'reverse_run_same_star3d_partner' removed

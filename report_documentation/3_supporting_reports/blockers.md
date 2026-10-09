@@ -1,0 +1,37 @@
+# Blockers and attempted remedies
+
+| # | Item | Effect | Attempted remedy | Needed |
+|---|---|---|---|---|
+| 1 | Python.org Python lacked a CA store (SSL verify failed on EBI) | first download attempt failed (recorded in archive_v1_provenance/sources_manifest_failed_attempt1_ssl.tsv) | certifi CA bundle in scripts/fetch.py | none (resolved) |
+| 2 | No host Java; STAR3D bundles Linux-only MC-Annotate (i386) / RemovePseudoknots (x86-64) | cannot run natively on macOS/arm64 | docker image star3d-runtime:1 (ubuntu 22.04, OpenJDK 8) on colima x86_64/QEMU | none (resolved) |
+| 3 | PMC returned reCAPTCHA pages for 3 articles (4LVV, 7KD1, 3K1V papers) | methods text for those papers unreviewed | pages quarantined (list: archive_v1_provenance/v1_quarantined_captcha_pages.txt), manifest correction rows; 3K1V paper reviewed via the 3FU2 copy | manual access if THF family is revisited |
+| 4 | Non-open-access primary papers (2GIS Nature 2006, 2CKY Science 2006, 3D2G JACS 2008, 4GXY NSMB 2012, 2HOJ) | construct-design statements unreviewed; engineering inferred from genome comparison only | NCBI BLAST against claimed source genome | researcher library access to confirm construct design |
+| 5 | NCBI BLAST organism-restricted query for 6VUI_A timed out (900 s) | Tte-genome-specific check for the PreQ1 33-mer missing | unrestricted BLAST already 33/33 to T. italicus; literature states T. tengcongensis origin | optional rerun |
+| 6 | 7MLW_F source strain (Burkholderia sp. TJI49, txid987057) has no genome in NCBI nt | organism-specific natural comparison impossible | closest hit B. pseudomultivorans (125/129) + paper statement of P2-loop changes | exploratory pair only |
+| 7 | JVM SIGILL (JIT code) under QEMU x86 emulation in 1 of 36 alignment runs (RF00442 reverse rep1) | that replicate has no output | recorded as failed; downstream uses lowest completed replicate; replicates 2-3 completed | native x86-64 Linux host would avoid emulation |
+
+## v2.1 additions (audit-repair)
+| # | Item | Effect | Attempted remedy | Needed |
+|---|---|---|---|---|
+| 8 | Fresh rerun limited to the preQ1 candidate | 4 pairs (SAM-I, cobalamin, TPP, guanidine-I) not rerun from fresh downloads | reproduction script is generic (`scripts/fresh_repro.py`, PDBS/PAIRS lists) | run with the remaining pairs if required |
+| 9 | STAR3D author site reset a connection once during the fresh download | none (retry/cache added; tarball verified identical) | bounded retries | none |
+| 10 | No exact-source genome check for 3D2G (plant locus; construct already redesigned) and 7MLW (strain genome absent from nt) | evidence_strength literature_supported_only / related_species_only | documented in evidence cards | strain genome or author confirmation |
+| 11 | Node.js absent: palette validator not runnable | chart colours taken from the reference palette's documented validated slots; non-colour encoding added | — | none |
+| 12 | Item 5 superseded: 6VUI source now exact-verified via direct genome search (AE008691.1) instead of BLAST | resolved | — | — |
+
+## v4 additions (2026-10-09)
+| # | Item | Effect | Attempted remedy | Needed |
+|---|---|---|---|---|
+| 13 | Original STAR3D reads modified nucleotides as "N" (no parent mapping) | native tRNAs (1EHZ, 1VTQ) are excluded from the expansion | documented in `deliverables/2026-10-09_v4/method_audit_v4.md` | a declared method change (parent-mapped residue names), validated separately |
+| 14 | STAR3D's pair rule differs from the paper | guanidine-I result depends on it | S1/S2 sensitivity analyses | none for the preQ1 conclusions |
+| 15 | Professor meeting transcript not on disk | requirements taken from the 8 Oct plan's transcript-derived list | `deliverables/2026-10-09_v4/tables/requirements_matrix.tsv` labels the source type | researcher to confirm |
+| 16 | Wrong stage order in the first prospective run (reference before prepare_inputs) | reference tables had 0 assessable pairs in attempt 1 | downstream stages re-run in the documented order; log kept | none (resolved) |
+| 17 | `rm -rf` blocked by the agent safety check during the determinism test | none (unique directories used instead) | — | none |
+
+## v5 additions (2026-10-09)
+| # | Item | Effect | Attempted remedy | Needed |
+|---|---|---|---|---|
+| 18 | Natural-sequence policy excludes 9 of 13 analysed chains | 1 family / 3 pairs remain | documented per chain in `review/natural_sequence_eligibility.tsv` | scope decision for expansion |
+| 19 | 5CCB paper full text not retrievable (Europe PMC HTTP 500) | 5′ G purpose undocumented; exclusion rests on sequence evidence (extra 5′ G vs the natural mature tRNA) | — | library access (optional; the decision does not depend on it) |
+| 20 | 3FU2 preparation method not found in the accessible paper text | sequence verified natural; preparation statement missing | — | full paper (optional) |
+| 21 | Word did not respond to automated .docx-to-PDF export (v4) | .docx checked structurally only | — | open in Word manually |
