@@ -1,7 +1,7 @@
 # Running status — Rfam standard seed vs ORIGINAL STAR3D (prompt V2.0; audit-repair v2.1; cohort v1.1)
 
 Reviewer for all checks: AI agent (Claude). No human review or professor approval has been given or claimed.
-Last update: 2026-10-09 (v4 validation) — branch v4-validation-2026-10-09 (from v3-session-2026-10-09); local commits, not pushed.
+Last update: 2026-10-09 (v5) — branch v5-single-run-natural-dataset; local commits only (not pushed).
 
 | Status | State |
 |---|---|
@@ -26,4 +26,14 @@ Resume: README.md "Rerun by stage"; tests: `.venv/bin/python -m pytest -q tests`
 | STAR3D method audit | pair-rule difference and overwrite quantified; S1/S2 sensitivity |
 | Curated vs ordinary | records identical in all releases with a curated file; discovery rule samples curated families only |
 | Expansion | tRNA pre-registered: 0 primary pairs; 1 exploratory pair run |
+| Ready for scaling | no (scope decision needed) |
+
+## v5 (2026-10-09): CURRENT
+| Status | State |
+|---|---|
+| Method | one forward original-STAR3D v1.2 output per pair (results/primary_star3d_outputs.tsv) |
+| Dataset | verified natural sequences only: 1 family, 3 structures, 3 pairs (RF00522) |
+| Excluded | 9 confirmed-engineered chains; 7EQJ natural but unpaired |
+| Candidate | 7REX P1 3′ strand: supported candidate (moderate); L1 favours the seed |
+| Tests | 81 pass; mutation check 18/18 |
 | Ready for scaling | no (scope decision needed) |

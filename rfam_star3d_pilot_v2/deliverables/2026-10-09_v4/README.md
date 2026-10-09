@@ -1,3 +1,5 @@
+> **SUPERSEDED (2026-10-09, v5).** This folder is a dated historical record. Current: `deliverables/2026-10-09_v5/README.md` (single-run policy; natural-sequence dataset). Conclusions here that rely on engineered constructs or multi-run STAR3D output are withdrawn from the active results.
+
 # Session deliverables, 2026-10-09 (v4: scientific validation)
 
 *AI-agent work; no human review. Branch `v4-validation-2026-10-09`, pushed to GitHub (not merged into main).*

@@ -53,7 +53,7 @@ def test_actual_pilot_excerpt_round_trips_against_pinned_seed():
         import pytest
         pytest.skip("pinned Rfam.seed.gz not present")
     ex = {a.acc: a for a in stockholm.parse(sto)}
-    assert len(ex) >= 2 and len({a.width for a in ex.values()}) >= 2
+    assert len(ex) >= 1      # v5 natural cohort has one family; unequal widths are covered by the synthetic test
     seed = {a.acc: a for a in stockholm.parse(seed_path, only=set(ex))}
     for acc, a in ex.items():
         assert a.width == seed[acc].width

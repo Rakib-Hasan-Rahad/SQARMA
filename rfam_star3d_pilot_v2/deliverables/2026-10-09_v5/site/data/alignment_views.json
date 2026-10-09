@@ -1,0 +1,69 @@
+{
+ "available": true,
+ "source": "results/derived_alignment_views.tsv",
+ "columns": [
+  "pair_id",
+  "method",
+  "query",
+  "target",
+  "n_correspondences",
+  "query_gapped",
+  "target_gapped"
+ ],
+ "rows": [
+  {
+   "pair_id": "RF00522__3FU2_A__6VUI_A",
+   "method": "seed",
+   "query": "3FU2_A",
+   "target": "6VUI_A",
+   "n_correspondences": "30",
+   "query_gapped": "AGAGGUUC-UAGCuaCACCCUCU-AUAAAAAACUAA-",
+   "target_gapped": "CUGGGU-CGCAGU-A-ACCCCAGUUAACAAAAC-AAG"
+  },
+  {
+   "pair_id": "RF00522__3FU2_A__6VUI_A",
+   "method": "STAR3D",
+   "query": "3FU2_A",
+   "target": "6VUI_A",
+   "n_correspondences": "31",
+   "query_gapped": "AGAGGUUCUAGCuaCACCCUCUAU-AAAAAAC-UAA",
+   "target_gapped": "CUGGGUCGCAGU--AACCCCAGUUAACAAAACAAG-"
+  },
+  {
+   "pair_id": "RF00522__3FU2_A__7REX_A",
+   "method": "seed",
+   "query": "3FU2_A",
+   "target": "7REX_A",
+   "n_correspondences": "31",
+   "query_gapped": "AGAGGUUC-UAGCuaCACCCUCU-AUAAAAAACUAA-",
+   "target_gapped": "UGUGGUUCGCAACC--AUCCCACAUAAAAAAAC-UAG"
+  },
+  {
+   "pair_id": "RF00522__3FU2_A__7REX_A",
+   "method": "STAR3D",
+   "query": "3FU2_A",
+   "target": "7REX_A",
+   "n_correspondences": "32",
+   "query_gapped": "AGAGGUUC--UAGCuaCACCCUCUAUAAAAAACUAA",
+   "target_gapped": "UGUGGUUCGCAACC--AUCCCACAUAAAAAAACUAG"
+  },
+  {
+   "pair_id": "RF00522__6VUI_A__7REX_A",
+   "method": "seed",
+   "query": "6VUI_A",
+   "target": "7REX_A",
+   "n_correspondences": "32",
+   "query_gapped": "CUGGGU-CGCAGUA-ACCCCAGUUAACAAAACAAG",
+   "target_gapped": "UGUGGUUCGCAAC-CAUCCCACAUAAAAAAACUAG"
+  },
+  {
+   "pair_id": "RF00522__6VUI_A__7REX_A",
+   "method": "STAR3D",
+   "query": "6VUI_A",
+   "target": "7REX_A",
+   "n_correspondences": "32",
+   "query_gapped": "CUGGGUC--GCAGUAACCCCAGUUAACAAAACAAG",
+   "target_gapped": "UGUGGUUCGCAACCAUCCCACAUA-AAAAAACUAG"
+  }
+ ]
+}

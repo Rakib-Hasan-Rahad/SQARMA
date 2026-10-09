@@ -141,3 +141,28 @@ where it depends on the alignment. Index systems are never mixed without a named
   `prospective_exploratory_conformational_context`.
 - **review/v4_expansion/.** `PREREGISTRATION.md`, `candidate_structures.tsv`, `raw/` (RCSB GraphQL and NCBI esummary
   responses).
+
+## v5 additions (2026-10-09)
+- **results/primary_star3d_outputs.tsv** — one row per pair: `status` (selected / unavailable), `alignment_order`,
+  `selected_run_id`, `output_aln`, `output_sha256`, aligned_n, rmsd, command, parameters, input/npk/mca sha256,
+  `preprocessing_run_ids`, `selection_rule`, `earlier_records_not_selected` (each with its reason), `checks_passed`.
+- **results/correspondence_comparison.tsv, pair_summary.tsv** — one STAR3D run per pair (`star3d_run_id`). The
+  `direction` and `replicate` columns are removed. `star3d_missing_reason` can be `no_valid_primary_output`.
+- **results/interaction_comparison.tsv, interaction_summary.tsv** — methods `rfam` and `star3d`; single comparison
+  `rfam_vs_star3d`.
+  - `source_side` = query (forward mapping) or target (inverted same mapping; not another run).
+  - `source_side_meaning` spells this out. Each side has its own denominator.
+- **results/region_review.tsv** — the column `reverse_run_same_star3d_partner` is removed.
+- **review/natural_sequence_eligibility.tsv** — per chain:
+  - `natural_sequence_status` ∈ verified_natural, confirmed_engineered, unresolved;
+  - `analysis_eligibility` ∈ accepted, excluded, pending;
+  - evidence, reason, reviewer and date.
+- **results/dataset_chains.tsv/.md** — readable chain-level table generated from the eligibility table.
+- **results/family_inventory.tsv** — old review columns renamed `historical_review_status_v1`,
+  `historical_review_decision_v1_1` and `historical_shortlisted_v1`. `current_status_v5_natural_policy` gives the
+  current status.
+- **results/derived_alignment_views.tsv/.md** — a SQARMA-generated gapped display of the seed and STAR3D
+  correspondences (not STAR3D raw output). Lower-case = residue without coordinates.
+- **metadata/cohort_v2.0_natural_freeze.json** — the frozen natural cohort, with hashes.
+- **archive/** — `v4_multi_run_history/` (replicate, reverse and sensitivity tables and scripts),
+  `cohort_v1.1_pre_natural_policy/`, `v4_region_evidence_all_pairs/`, `legacy_scripts/`.

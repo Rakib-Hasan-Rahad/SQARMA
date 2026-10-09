@@ -1,0 +1,150 @@
+# generated at commit a2d41224f84a18779117c96c428f8f02bd9468c7 (plus the working-tree changes committed with it); software: Python 3.13 (.venv; requirements.lock.txt); FR3D-python 288f98cc (installed, RECORD-verified); original STAR3D v1.2 tarball c9da4405, image star3d-runtime:1 (amd64 emulated); ONE forward alignment per pair
+path	generated_by	inputs_and_config	sha256	bytes
+review/natural_sequence_eligibility.tsv	manual decisions (AI agent) + natural_policy.py validation	papers, genomes, mmCIF (evidence paths per row)	328601ae80b363f8dae10f1571f201e14c9c011478c57cd928087b371326b3e7	8447
+metadata/cohort_v2.0_natural_freeze.json	scripts/natural_policy.py rebuild-cohort	eligibility table; archive/cohort_v1.1_pre_natural_policy	ca4388a8cebead3e5975fd1ba514bc78d6f65872c8c281f3b9d23331b336cea6	977
+results/selected_representatives.tsv	scripts/natural_policy.py rebuild-cohort	eligibility table	d140e82bd33816f5da541825d5bb1d933169403c0b8d37f35ea4bdbf965b6a15	1498
+results/selected_pairs.tsv	scripts/natural_policy.py rebuild-cohort	eligibility table	4248f1a956457c372a2d3c08ac6b35acfc5f330e59ffd98ea091b16098eeeaec	1391
+results/family_inventory.tsv	scripts/reconcile_inventory.py	eligibility table; v3 screening	fc0130ba24f61a72d49030d7d5afdb18c7dc2f7fee8433768659df61177a1545	27451
+results/dataset_chains.tsv	derived from eligibility table	review/natural_sequence_eligibility.tsv	2a428044cf9db0d7905e5268a8477695931ab577bde2de632bf287e6ab85ab54	4642
+results/dataset_chains.md	derived from eligibility table	review/natural_sequence_eligibility.tsv	fcf7192df13632e205d08528131838adf04adc2b63991363ad33c75a10317f20	5287
+results/residue_crosswalk.tsv	scripts/prepare_inputs.py	Rfam 15.1 Rfam.seed.gz 41f014f4; config.yaml edabb21d09b9; mmCIF	ff16b6527dfc7dca1d91ee5ee13eb741a1c6a664971cbcaee41fe21dc5f96f9e	20708
+mappings/aligner_inputs.tsv	scripts/prepare_inputs.py	mmCIF	2aed72a0981a46cc06a61d0e6f31a082b6689550db3eda9fdfa433d528ab427b	759
+results/reference_pairs.tsv	scripts/reference.py	Rfam 15.1 Rfam.seed.gz 41f014f4; config.yaml edabb21d09b9	2cd63868cae9e46088d06c531d60343fd2a17b9e4c12b9056aa6fd34a6a0d887	21583
+results/standard_seed_membership.tsv	scripts/reference.py	Rfam 15.1 Rfam.seed.gz 41f014f4; config.yaml edabb21d09b9	e3d9f719234dcbecd311928b611b670aa4d05cea53744e72e8dafdb88459759a	1070
+results/standard_seed_rows.sto	scripts/reference.py	Rfam 15.1 Rfam.seed.gz 41f014f4; config.yaml edabb21d09b9	77674a1afca17238351f4701de3a83f359c560c118942d733bfe2c55fbb4b906	1979
+results/primary_star3d_outputs.tsv	scripts/select_primary_outputs.py	results/run_manifest.tsv; runs/*/attempt*/STAR3D_source	35af9ea9af2d415425c47862fb84968f99c85ff36e13e206c8005b277219125b	4840
+results/correspondence_comparison.tsv	scripts/compare.py	primary outputs; reference_pairs; crosswalk	b1dcdbdf1597bd72f636bce18b366518e5e250537f162a0163d4749a6a558a9c	24296
+results/pair_summary.tsv	scripts/compare.py	as above	7cf3001345ccf8b6fd1d136df00e9283113d14eb30d8afca8619c1591afcc191	1609
+results/interaction_comparison.tsv	scripts/interactions.py	annotations/raw (FR3D); comparison	3cad8eadbfccc3b0778294d04a4d14f6b3ac2abd83936a362b108013df8202be	71446
+results/interaction_summary.tsv	scripts/interactions.py	as above	d050aca6f3b56c5093ae9d1fe7a6d43242b35edb52cd6a55fd869108694be74f	4467
+results/region_review.tsv	scripts/regions.py (+ carried reviews)	comparison; interactions	cb0f5f6aefdec6217835e00ee92516bdfb0aed65ef620b720319abfedc77e053	9972
+results/region_evidence/RF00522__3FU2_A__6VUI_A__r15-15.tsv	scripts/region_evidence.py	results; mmCIF; annotations	f1e14c21a2f7634172b0379751bec12a6b2d8fa9365cf94daecd99e34a2c7c6b	1648
+results/region_evidence/RF00522__3FU2_A__6VUI_A__r23-24.tsv	scripts/region_evidence.py	results; mmCIF; annotations	ee99ee73e1252bfbf33a049c877f83bc0e0a714c5f051b5ccca193b29d2dac5a	1879
+results/region_evidence/RF00522__3FU2_A__6VUI_A__r32-34.tsv	scripts/region_evidence.py	results; mmCIF; annotations	1b8116174e57716524e3157966c96d2d14ab1c90259d23af6386ecee586f94fb	1971
+results/region_evidence/RF00522__3FU2_A__6VUI_A__r7-8.tsv	scripts/region_evidence.py	results; mmCIF; annotations	f1abac306a2e590ee44cfa4b3737af43d5089f8b97100ae858a486e398e3dcd2	1799
+results/region_evidence/RF00522__3FU2_A__7REX_A__r15-22.tsv	scripts/region_evidence.py	results; mmCIF; annotations	a4906fff454637d4a37e26919979fac2c1d667b58966b7fb51cc19d417e2828e	2628
+results/region_evidence/RF00522__3FU2_A__7REX_A__r32-34.tsv	scripts/region_evidence.py	results; mmCIF; annotations	8848bdb0e1b30f9dac330fabbefb94a5dab3274402484ce8b0dcf1a0bd029ef4	1818
+results/region_evidence/RF00522__3FU2_A__7REX_A__r9-12.tsv	scripts/region_evidence.py	results; mmCIF; annotations	7cd1aab397eebfcc78801127d085d7bbffb6a75fb0022902f3fca81a9e510b62	2017
+results/region_evidence/RF00522__6VUI_A__7REX_A__r7-23.tsv	scripts/region_evidence.py	results; mmCIF; annotations	5e322976d09cdba2fd28a9d4bc080810bc1b7d34f44fd34ca311dc79a39a4e24	4040
+results/region_evidence/summary.tsv	scripts/region_evidence.py	results; mmCIF; annotations	485bfbb4207c4ba799b4dc693291a4d518de380a7eb0b72e29be357fa5b45463	3030
+results/derived_alignment_views.md	scripts/derived_alignment_view.py	comparison; crosswalk; primary outputs	3692cfccf4053f785d7a0eb18c60fc6d32370d9bb45b7fa5c82b3f7701288114	1885
+results/derived_alignment_views.tsv	scripts/derived_alignment_view.py	as above	907099f1cfd5923fd4e969344d1ddb9b405f87095a0eb9dadeb337518b08110a	799
+review/candidate_RF00522/adjustment_interaction_summary.tsv	scripts/candidate_evidence.py	comparison; annotations; anchor fits	aff517c7d11b45b88bb7001250c1484ab85082afb8ef1018d7c8f50f9ebc9d2f	511
+review/candidate_RF00522/adjustment_interactions.tsv	scripts/candidate_evidence.py	comparison; annotations; anchor fits	42a11c45d1c4def3c2f828c65f26ce3b7c0c7b703d9af441de89dd9f603ba1e2	12918
+review/candidate_RF00522/adjustment_validation.json	scripts/candidate_evidence.py	comparison; annotations; anchor fits	87c8cfb4488514b6ee71fcd3f7b973a0befdd84afc32153aded73bd595175eb6	821
+review/candidate_RF00522/numbering_chain.tsv	scripts/candidate_evidence.py	comparison; annotations; anchor fits	902bb00bc2615baaf6bea3feb032428a5f35dbeb447041fc3b9b684d29b42cdc	3818
+review/candidate_RF00522/p1_raw_fr3d_lines.txt	scripts/candidate_evidence.py	comparison; annotations; anchor fits	47ff40c9234f4312684b2ec2fc3036978fddec41a3e61933cae825d4756b71e6	895
+review/candidate_RF00522/residue_evidence_RF00522__3FU2_A__7REX_A.tsv	scripts/candidate_evidence.py	comparison; annotations; anchor fits	e94982c4eada634a73f85cbf58b8649d13f49a621b711fc67dac61577a70f7a3	6181
+review/candidate_RF00522/residue_evidence_RF00522__6VUI_A__7REX_A.tsv	scripts/candidate_evidence.py	comparison; annotations; anchor fits	1c41956e1bdc16e2645c45b7f3750deb9405c5bc155063001497ccf8be7627a0	6097
+review/candidate_RF00522/structure_facts.tsv	scripts/candidate_evidence.py	comparison; annotations; anchor fits	d2f223d4f9471d286ca9c22909654e7723f0621658683df0910d6ba02475974d	1649
+reports/blockers.md	hand-written + scripts/evidence_cards.py	tables above	89eb5ffdb25e49d5bb78609bcb45ddb319447f58a77090213700f8baa5df8b1a	5002
+reports/data_dictionary.md	hand-written + scripts/evidence_cards.py	tables above	25f2742d4cd8c0dace530df129b8807436674383dc1087f414e66e94fbf601cf	14294
+reports/environment.md	hand-written + scripts/evidence_cards.py	tables above	050a824001b5bf913d730d0027b8de3b3d33d1c4bf5f6cb64ae2ca6820d9857d	1410
+reports/evidence_cards.md	hand-written + scripts/evidence_cards.py	tables above	ed3689b913d9731079bc00394816fa94319e2ff5d3135ba75be17bebcad61987	8321
+reports/professor_QA.md	hand-written + scripts/evidence_cards.py	tables above	f24cbf1acbc45f863cd96c52f453a3666f720947d673799fe4d44b0b2af31095	9649
+reports/professor_summary.md	hand-written + scripts/evidence_cards.py	tables above	c51bed172ac09f811cb9682610cf761489edd8ab40b66405cd81a3166a638ff8	3047
+reports/report.md	hand-written + scripts/evidence_cards.py	tables above	87746bef29f1c7145a48eda9b58c24bb5691a7fd68c9e783e1789bf8ac565bdc	15474
+reports/scale_up_readiness.md	hand-written + scripts/evidence_cards.py	tables above	db40933c073846cdf081de86a07f3b8b91f2277095a75ffbc04cf819a5f58ed3	5946
+reports/validation_report.md	hand-written + scripts/evidence_cards.py	tables above	ed7bc0fae60856d6fa18c5ca9d6200984312a9bb66e489f23439fde64df35196	6910
+deliverables/2026-10-09_v5/tables/before_after_natural_dataset.tsv	deliverables/2026-10-09_v5/scripts/*.py	before/, before_natural/, results	053581594747162709d8b68ac45e97c306b9e06f52ff8ce7e3e586bd50e10e19	2034
+deliverables/2026-10-09_v5/tables/before_after_single_run.tsv	deliverables/2026-10-09_v5/scripts/*.py	before/, before_natural/, results	29865b5ed3c818eb278d774dbef3033c99a726244944a806cba71593175d690a	2284
+deliverables/2026-10-09_v5/tables/mutation_check_v5.tsv	deliverables/2026-10-09_v5/scripts/*.py	before/, before_natural/, results	c0323534b6409d32ce130baa0a74637791c9f7046cd741543000b1114007f6e5	2135
+deliverables/2026-10-09_v5/tables/test_results_v5.tsv	deliverables/2026-10-09_v5/scripts/*.py	before/, before_natural/, results	dd11f342cf1a1db858aa3ca33a30a76111573b0d4058d35fb15c69e843d2e9fc	391
+deliverables/2026-10-09_v5/architecture/SQARMA_Project_Architecture_and_Pipeline_Guide.docx	pandoc 2.12 + headless Chrome; diagrams/render.py (mermaid 10.9.1)	guide .md; diagrams/*.mmd	a73805b8c0fa82da1538f6f32db2cd1d80d165c3f212d8fd3c23ed3950b9bfe7	1211390
+deliverables/2026-10-09_v5/architecture/SQARMA_Project_Architecture_and_Pipeline_Guide.md	pandoc 2.12 + headless Chrome; diagrams/render.py (mermaid 10.9.1)	guide .md; diagrams/*.mmd	25b4de0dd4b8f278e0a9bd3f89e36b1cba5c43a48a154026e06379348b0999eb	29513
+deliverables/2026-10-09_v5/architecture/SQARMA_Project_Architecture_and_Pipeline_Guide.pdf	pandoc 2.12 + headless Chrome; diagrams/render.py (mermaid 10.9.1)	guide .md; diagrams/*.mmd	33a3a4c9509f2e7e08b8ce7a03c688c3804c111b20d6076a0afe6752885e834b	1549166
+deliverables/2026-10-09_v5/architecture/diagrams/d1_workflow.html	pandoc 2.12 + headless Chrome; diagrams/render.py (mermaid 10.9.1)	guide .md; diagrams/*.mmd	a4d0623c065d7b0b42c304b9270f58b49194e9f9a8cc12c62b46939f148b227b	1736
+deliverables/2026-10-09_v5/architecture/diagrams/d1_workflow.mmd	pandoc 2.12 + headless Chrome; diagrams/render.py (mermaid 10.9.1)	guide .md; diagrams/*.mmd	86bdddb119dcdc9906a9e8f6bb0a73481a82922d78dc39741d767880c3ba0652	884
+deliverables/2026-10-09_v5/architecture/diagrams/d1_workflow.png	pandoc 2.12 + headless Chrome; diagrams/render.py (mermaid 10.9.1)	guide .md; diagrams/*.mmd	d3512c24f0e52fd414544b29e91fd9fdae9a931d21077e12aa54812db8dc2cf0	186635
+deliverables/2026-10-09_v5/architecture/diagrams/d2_eligibility.html	pandoc 2.12 + headless Chrome; diagrams/render.py (mermaid 10.9.1)	guide .md; diagrams/*.mmd	173076572e396aa3280a43abf9c7b937a7de4341a30b904d32891fa89e9611ec	2219
+deliverables/2026-10-09_v5/architecture/diagrams/d2_eligibility.mmd	pandoc 2.12 + headless Chrome; diagrams/render.py (mermaid 10.9.1)	guide .md; diagrams/*.mmd	c91383e6d23503ba1520c5f37f17321baeeb1cff4db967943e80a4c938c4f095	1273
+deliverables/2026-10-09_v5/architecture/diagrams/d2_eligibility.png	pandoc 2.12 + headless Chrome; diagrams/render.py (mermaid 10.9.1)	guide .md; diagrams/*.mmd	bdb1f6874dd144f9af56fe67afd25c3a91233fe87d26e7b8b53baa9eeb228ee7	288930
+deliverables/2026-10-09_v5/architecture/diagrams/d3_mapping.html	pandoc 2.12 + headless Chrome; diagrams/render.py (mermaid 10.9.1)	guide .md; diagrams/*.mmd	7b8937f018c2bc840d9c029027f7438e9333a0637ea8c03cf4ba53d95bdd6c7a	1324
+deliverables/2026-10-09_v5/architecture/diagrams/d3_mapping.mmd	pandoc 2.12 + headless Chrome; diagrams/render.py (mermaid 10.9.1)	guide .md; diagrams/*.mmd	2e3f1de0e656e7584ad0450f9d02f27f6d1f41a004735001eb71b04571621e2b	548
+deliverables/2026-10-09_v5/architecture/diagrams/d3_mapping.png	pandoc 2.12 + headless Chrome; diagrams/render.py (mermaid 10.9.1)	guide .md; diagrams/*.mmd	6e1c274fbedf8ca6ac0c5b5a9c47efcd8b20a1973de58e4f04b5d699dfbb8c31	111983
+deliverables/2026-10-09_v5/architecture/diagrams/d4_star3d.html	pandoc 2.12 + headless Chrome; diagrams/render.py (mermaid 10.9.1)	guide .md; diagrams/*.mmd	cc001045aac4d599ad7ba46e239d9f81d841b33f2a841ef272e62791553b915b	1922
+deliverables/2026-10-09_v5/architecture/diagrams/d4_star3d.mmd	pandoc 2.12 + headless Chrome; diagrams/render.py (mermaid 10.9.1)	guide .md; diagrams/*.mmd	27d429bd8616fc884e3f60b660e60c07954dc286195eafa543a0b56ba61947dd	1037
+deliverables/2026-10-09_v5/architecture/diagrams/d4_star3d.png	pandoc 2.12 + headless Chrome; diagrams/render.py (mermaid 10.9.1)	guide .md; diagrams/*.mmd	6640e4b006f7ca5d2cb0d46229bc2d241486550f7421f2ef611a830ef32b3449	221864
+deliverables/2026-10-09_v5/architecture/diagrams/d5_evidence.html	pandoc 2.12 + headless Chrome; diagrams/render.py (mermaid 10.9.1)	guide .md; diagrams/*.mmd	698b2e5f06c125cc86f9eaedd330d4e44da1463b219223df99d32ff8967343dc	2072
+deliverables/2026-10-09_v5/architecture/diagrams/d5_evidence.mmd	pandoc 2.12 + headless Chrome; diagrams/render.py (mermaid 10.9.1)	guide .md; diagrams/*.mmd	6f1736ba5ce4bc33fe9ca6236c9e2cee17c6634cb5542b89fc7f3b9fa1fd85cd	1120
+deliverables/2026-10-09_v5/architecture/diagrams/d5_evidence.png	pandoc 2.12 + headless Chrome; diagrams/render.py (mermaid 10.9.1)	guide .md; diagrams/*.mmd	329a17800d3068a99915a3f1884b380496893cb0a3dbb9f53afd46ed2a240d65	242699
+deliverables/2026-10-09_v5/architecture/diagrams/d6_reporting.html	pandoc 2.12 + headless Chrome; diagrams/render.py (mermaid 10.9.1)	guide .md; diagrams/*.mmd	4e13a44d6672f35bd5a11e7c8318558253e43b76edf668d0f5ed28381e15f460	1225
+deliverables/2026-10-09_v5/architecture/diagrams/d6_reporting.mmd	pandoc 2.12 + headless Chrome; diagrams/render.py (mermaid 10.9.1)	guide .md; diagrams/*.mmd	fb6223d86ffe67671f5bc81e8df07a29589928f05b6a138282b6d9adf48459cc	495
+deliverables/2026-10-09_v5/architecture/diagrams/d6_reporting.png	pandoc 2.12 + headless Chrome; diagrams/render.py (mermaid 10.9.1)	guide .md; diagrams/*.mmd	9ed4374e2b93195c9d98b9f63d25b1477f892f1e5090d5ab79813f0f5f7fc328	110820
+deliverables/2026-10-09_v5/architecture/diagrams/d7_scaleup.html	pandoc 2.12 + headless Chrome; diagrams/render.py (mermaid 10.9.1)	guide .md; diagrams/*.mmd	e9fb7eb2ce0c23eee7b6a9c64346933ea09d74b129b5fec54240ce07d89477c0	1578
+deliverables/2026-10-09_v5/architecture/diagrams/d7_scaleup.mmd	pandoc 2.12 + headless Chrome; diagrams/render.py (mermaid 10.9.1)	guide .md; diagrams/*.mmd	b90e93125fa5521ec1c57472b19b3ab1b64f876e0879d01f822ecd6ad7ac166b	720
+deliverables/2026-10-09_v5/architecture/diagrams/d7_scaleup.png	pandoc 2.12 + headless Chrome; diagrams/render.py (mermaid 10.9.1)	guide .md; diagrams/*.mmd	1aafdc67590ccb797490e51b0a15cac3f4901ff0e0802b69f9fe83a06641cf64	157073
+deliverables/2026-10-09_v5/architecture/diagrams/render.py	pandoc 2.12 + headless Chrome; diagrams/render.py (mermaid 10.9.1)	guide .md; diagrams/*.mmd	b75a0d9ed3a373105fd5a729fe8e974607b3540b0cdf9a31e4a163f1e4cb3964	1725
+deliverables/2026-10-09_v5/architecture/guide.css	pandoc 2.12 + headless Chrome; diagrams/render.py (mermaid 10.9.1)	guide .md; diagrams/*.mmd	a042e6bb21665bfc96f3fa09df9e080f083d0801f1785de0367ca1af2d85d6db	1128
+deliverables/2026-10-09_v5/architecture/guide_print.html	pandoc 2.12 + headless Chrome; diagrams/render.py (mermaid 10.9.1)	guide .md; diagrams/*.mmd	b1d749582a17011c16534cf36fc0a8dba365af2577cbc30646d4881d178fdd9a	1802003
+deliverables/2026-10-09_v5/site/README_site.md	scripts/export_site_data.py + static html/js/css	site/data/export_manifest.json	8ed7ec6417fd209771d46c7b303a6311c32009d7e4f43ef8f0c3f73e10b0d825	397
+deliverables/2026-10-09_v5/site/app.js	scripts/export_site_data.py + static html/js/css	site/data/export_manifest.json	de90ff76c32bd72dbdcff29905fe639e6d1946094d6892ae5af65fbead8de836	8638
+deliverables/2026-10-09_v5/site/assets/fig_7REX_correspondence_6VUI.png	scripts/export_site_data.py + static html/js/css	site/data/export_manifest.json	8d80a529ee5479d12fa8a73b670d8d0342d7c653662c2c52557a88e75d573d6a	293446
+deliverables/2026-10-09_v5/site/assets/fig_RF00522_6VUI_7REX_P1.png	scripts/export_site_data.py + static html/js/css	site/data/export_manifest.json	8bb26e514467858f67b5df7c943fc13043502cd6abd4ec4d65a448390989a3b2	495607
+deliverables/2026-10-09_v5/site/data/alignment_views.json	scripts/export_site_data.py + static html/js/css	site/data/export_manifest.json	102287470935ef99db791327ae9a05d4bc8a5e9a8851954000a001a6b28c1793	1801
+deliverables/2026-10-09_v5/site/data/candidate.json	scripts/export_site_data.py + static html/js/css	site/data/export_manifest.json	8a38e736004dcce795b5f4c04daa78f53b0da91ac741a95028192f345256991d	39050
+deliverables/2026-10-09_v5/site/data/chains.json	scripts/export_site_data.py + static html/js/css	site/data/export_manifest.json	d7fa823f82a44d61f3f6e360129492a5d37fcaca997bd85495d7adad43d73c34	6773
+deliverables/2026-10-09_v5/site/data/downloads.json	scripts/export_site_data.py + static html/js/css	site/data/export_manifest.json	695eaa5f080c1418ea90c4424113ccfeb627d3c6eee9c4b93a060ce28626c972	2058
+deliverables/2026-10-09_v5/site/data/eligibility.json	scripts/export_site_data.py + static html/js/css	site/data/export_manifest.json	51df96fe6e6bb1efaeae7016fec1d52d1fae10ed0165a014177025d150ecf98d	16095
+deliverables/2026-10-09_v5/site/data/export_manifest.json	scripts/export_site_data.py + static html/js/css	site/data/export_manifest.json	cba1e0a41075b337875a40d3b24ac0497e5cc628e906cfad887db0f21301edbf	4088
+deliverables/2026-10-09_v5/site/data/family_status.json	scripts/export_site_data.py + static html/js/css	site/data/export_manifest.json	050ed54864b3a69875c2b7a4e93f31c772f0216a090c3230da96d52d918c1021	9316
+deliverables/2026-10-09_v5/site/data/figures.json	scripts/export_site_data.py + static html/js/css	site/data/export_manifest.json	f54547fdcbf6d3afd1c6958abc6fc983e8c10bd00f8d2393886ed43c2c63c812	273
+deliverables/2026-10-09_v5/site/data/interactions.json	scripts/export_site_data.py + static html/js/css	site/data/export_manifest.json	a443ce6f6cfb44f612815df9d3e3ae91c15eb6e722477b55d9e2117055a5b1a6	16486
+deliverables/2026-10-09_v5/site/data/kpis.json	scripts/export_site_data.py + static html/js/css	site/data/export_manifest.json	2815f62d562cba5d9277e117f39986387d534bdde00dd773ade8c4bd2e972d89	443
+deliverables/2026-10-09_v5/site/data/pair_summary.json	scripts/export_site_data.py + static html/js/css	site/data/export_manifest.json	bc038b5e26792de820abba00217b9aa4e2defa6d666dd1772121e4545490a52a	4383
+deliverables/2026-10-09_v5/site/data/pairs.json	scripts/export_site_data.py + static html/js/css	site/data/export_manifest.json	6646d1fd3a18f0d3985b55fc42c8438f9b3f1e297fea209aaeb17d651560b3d8	1431
+deliverables/2026-10-09_v5/site/data/primary_outputs.json	scripts/export_site_data.py + static html/js/css	site/data/export_manifest.json	ec5bd43da7b85b57298f4e4684a37d74cd8e712dceb242a1c540c08d95e951f1	2335
+deliverables/2026-10-09_v5/site/data/region_evidence.json	scripts/export_site_data.py + static html/js/css	site/data/export_manifest.json	caee561251d1ed2dd1578e9fab288764068a903c64a895fbf9ad5589b4ab9021	8637
+deliverables/2026-10-09_v5/site/data/regions.json	scripts/export_site_data.py + static html/js/css	site/data/export_manifest.json	94284f77ee24cb07e2b0919856abaf333e22d8ee7faceeab186e57ebd1580406	10405
+deliverables/2026-10-09_v5/site/data/validation.json	scripts/export_site_data.py + static html/js/css	site/data/export_manifest.json	1d200a4d1f6ef908e3ba11a11beb5744f3e43cdad69a7a8d3386327b1099f65f	20729
+deliverables/2026-10-09_v5/site/downloads/README.md	scripts/export_site_data.py + static html/js/css	site/data/export_manifest.json	873237806f6cd77f02b5a20cbe6d524acbc574b42065119d908b7e3ab1aeb3ec	1619
+deliverables/2026-10-09_v5/site/downloads/SQARMA_Project_Architecture_and_Pipeline_Guide.docx	scripts/export_site_data.py + static html/js/css	site/data/export_manifest.json	a73805b8c0fa82da1538f6f32db2cd1d80d165c3f212d8fd3c23ed3950b9bfe7	1211390
+deliverables/2026-10-09_v5/site/downloads/SQARMA_Project_Architecture_and_Pipeline_Guide.pdf	scripts/export_site_data.py + static html/js/css	site/data/export_manifest.json	33a3a4c9509f2e7e08b8ce7a03c688c3804c111b20d6076a0afe6752885e834b	1549166
+deliverables/2026-10-09_v5/site/downloads/before_after_natural_dataset.tsv	scripts/export_site_data.py + static html/js/css	site/data/export_manifest.json	053581594747162709d8b68ac45e97c306b9e06f52ff8ce7e3e586bd50e10e19	2034
+deliverables/2026-10-09_v5/site/downloads/before_after_single_run.tsv	scripts/export_site_data.py + static html/js/css	site/data/export_manifest.json	29865b5ed3c818eb278d774dbef3033c99a726244944a806cba71593175d690a	2284
+deliverables/2026-10-09_v5/site/downloads/dataset_chains.md	scripts/export_site_data.py + static html/js/css	site/data/export_manifest.json	fcf7192df13632e205d08528131838adf04adc2b63991363ad33c75a10317f20	5287
+deliverables/2026-10-09_v5/site/downloads/derived_alignment_views.md	scripts/export_site_data.py + static html/js/css	site/data/export_manifest.json	3692cfccf4053f785d7a0eb18c60fc6d32370d9bb45b7fa5c82b3f7701288114	1885
+deliverables/2026-10-09_v5/site/downloads/natural_sequence_eligibility.tsv	scripts/export_site_data.py + static html/js/css	site/data/export_manifest.json	328601ae80b363f8dae10f1571f201e14c9c011478c57cd928087b371326b3e7	8447
+deliverables/2026-10-09_v5/site/downloads/primary_star3d_outputs.tsv	scripts/export_site_data.py + static html/js/css	site/data/export_manifest.json	35af9ea9af2d415425c47862fb84968f99c85ff36e13e206c8005b277219125b	4840
+deliverables/2026-10-09_v5/site/downloads/professor_report_v5.md	scripts/export_site_data.py + static html/js/css	site/data/export_manifest.json	0881b4b84591cdba9a6eb342c4eb07061790620fd6a5012d11ee16acdefcf0c0	7388
+deliverables/2026-10-09_v5/site/downloads/professor_summary.md	scripts/export_site_data.py + static html/js/css	site/data/export_manifest.json	c51bed172ac09f811cb9682610cf761489edd8ab40b66405cd81a3166a638ff8	3047
+deliverables/2026-10-09_v5/site/downloads/region_review.tsv	scripts/export_site_data.py + static html/js/css	site/data/export_manifest.json	cb0f5f6aefdec6217835e00ee92516bdfb0aed65ef620b720319abfedc77e053	9972
+deliverables/2026-10-09_v5/site/downloads/report.md	scripts/export_site_data.py + static html/js/css	site/data/export_manifest.json	87746bef29f1c7145a48eda9b58c24bb5691a7fd68c9e783e1789bf8ac565bdc	15474
+deliverables/2026-10-09_v5/site/index.html	scripts/export_site_data.py + static html/js/css	site/data/export_manifest.json	454c642968c9cd606cb0ca200d44da4e01efb62b1a7d9a958892c25eaa7e3467	8373
+deliverables/2026-10-09_v5/site/style.css	scripts/export_site_data.py + static html/js/css	site/data/export_manifest.json	07b4b27f4d0e316b8cd1de849f65e07ba33af07739bdb0cdc8051839b9badc67	6731
+deliverables/2026-10-09_v5/README.md	hand-written reports (AI agent)	tables above	ecc3628b929d5b58ee42c675a60a02f65cefb2fa9f99e8e32e503af3222e0507	1794
+deliverables/2026-10-09_v5/meeting_script_v5.md	hand-written reports (AI agent)	tables above	fcc0cc06fd542165069b6134a7e1d466ec853d68553d9db27a27280d4ebb7bc5	1509
+deliverables/2026-10-09_v5/professor_report_v5.md	hand-written reports (AI agent)	tables above	0881b4b84591cdba9a6eb342c4eb07061790620fd6a5012d11ee16acdefcf0c0	7388
+deliverables/2026-10-09_v5/validation_v5.md	hand-written reports (AI agent)	tables above	90b2c03bc3b46fbc2a026dd5645e1909cd1a203b06ad4ec8c71b34a3b2f9f393	3194
+archive/cohort_v1.1_pre_natural_policy/selected_pairs.tsv	git mv / copies of superseded active tables (unchanged)	v4 active state	0ae4ea124e1dd08bcc43c614eb907235ad785fcc2f0a1daa0b558b26f2ece28d	2527
+archive/cohort_v1.1_pre_natural_policy/selected_representatives.tsv	git mv / copies of superseded active tables (unchanged)	v4 active state	b68e4e6ae7e7c516ab72daa083138ab37132f80783743e56de34b7cab8d90399	5111
+archive/legacy_scripts/export_site_data_v4.py	git mv / copies of superseded active tables (unchanged)	v4 active state	a432dc383aa8689604c84b646a7f3a4fba015baf6a312fe7fc386cb666c67d42	23675
+archive/legacy_scripts/neutral_fit.py	git mv / copies of superseded active tables (unchanged)	v4 active state	1c3c1226657b1c19f7cf543751fbb7063a439c252971e01b41c83d280d912d51	4826
+archive/v4_multi_run_history/README.md	git mv / copies of superseded active tables (unchanged)	v4 active state	873237806f6cd77f02b5a20cbe6d524acbc574b42065119d908b7e3ab1aeb3ec	1619
+archive/v4_multi_run_history/expansion_v4_results/replicate_consistency.tsv	git mv / copies of superseded active tables (unchanged)	v4 active state	79ac32b36d792acff390e734fc9162d737137b53b97c8182cd4961a877c81dda	247
+archive/v4_multi_run_history/expansion_v4_results/run_manifest_all_runs_v4.tsv	git mv / copies of superseded active tables (unchanged)	v4 active state	972f29e7a661c9741b932181c3fb96e13597b968a96da3d2e2f9167ebb886812	10165
+archive/v4_multi_run_history/results/correspondence_comparison_v4_multi_run.tsv	git mv / copies of superseded active tables (unchanged)	v4 active state	e4fb6c11950a11002136edcd37365ec45bd0b9874cb3a3ef0007490ffe4d5993	817166
+archive/v4_multi_run_history/results/interaction_comparison_v4_multi_run.tsv	git mv / copies of superseded active tables (unchanged)	v4 active state	a69753248ceb1754bb454c880f7456075ff8efdd8e668b30dd7f6b22699cec7d	433709
+archive/v4_multi_run_history/results/interaction_summary_v4_multi_run.tsv	git mv / copies of superseded active tables (unchanged)	v4 active state	bc261ebc9df8a7871f2af6047c103f3a9fb3e5006fca2df30086534a4fc4223c	19243
+archive/v4_multi_run_history/results/pair_summary_v4_multi_run.tsv	git mv / copies of superseded active tables (unchanged)	v4 active state	dda8623d0fd281c2a60417a272925622c4d1d06b368134e1e173bbc0ec4edb02	11480
+archive/v4_multi_run_history/results/region_review_v4_multi_run.tsv	git mv / copies of superseded active tables (unchanged)	v4 active state	9f542e930520de96ee3b0e7c3c7c4e6b33420b4011d36a6e8094910c9bee7e44	16949
+archive/v4_multi_run_history/results/replicate_consistency.tsv	git mv / copies of superseded active tables (unchanged)	v4 active state	f7fcf4cd4225b651a246c208ccdc15eafd888ad21c3908234b31ade1894047e1	1191
+archive/v4_multi_run_history/results/run_manifest_all_runs_v4.tsv	git mv / copies of superseded active tables (unchanged)	v4 active state	e8405d80ec4be8fe74178f68731b20c6e514a87a9b85f0d3a9632cbe2d691b59	79479
+archive/v4_multi_run_history/results/sensitivity/S1_run_manifest.tsv	git mv / copies of superseded active tables (unchanged)	v4 active state	47691aaaa02ded20d4cb667f636049b766fe742f55ad962d280b9c1caceaa921	10135
+archive/v4_multi_run_history/results/sensitivity/S1_vs_default.tsv	git mv / copies of superseded active tables (unchanged)	v4 active state	f8cb31bc160eb956b7eeb27982aada03d295095a1ef05985d6f46de5f5080b0b	1452
+archive/v4_multi_run_history/results/sensitivity/S2_run_manifest.tsv	git mv / copies of superseded active tables (unchanged)	v4 active state	27e8a1f3c64c55b0bc3ddad813cb76fb295b0ca8961e1f80b15000d54c826f33	1564
+archive/v4_multi_run_history/results/sensitivity/S2_vs_default.tsv	git mv / copies of superseded active tables (unchanged)	v4 active state	be2cd930bd6b58054e01434e9da23d680e762c5691c7c04f2b66d1081398528e	366
+archive/v4_multi_run_history/scripts/star3d_sensitivity.py	git mv / copies of superseded active tables (unchanged)	v4 active state	5477eff135a0a564f654e150f07cce4562bf6f2d3117eab3b9fefcd8c83a0b5e	9599
+archive/v4_multi_run_history/scripts/star3d_sensitivity_s2.py	git mv / copies of superseded active tables (unchanged)	v4 active state	c4e61d95ca7cc8f59f6746bb06d659923014a295afd32f21f234bbfe3579170c	5044
+archive/v4_region_evidence_all_pairs/RF00059__2GDI_X__3D2G_A__r17-23.tsv	git mv / copies of superseded active tables (unchanged)	v4 active state	844f91725a87c2460c7b31ebbaca28aa89d2d91fc4d60244af82821892d52bea	3009
+archive/v4_region_evidence_all_pairs/RF00059__2GDI_X__3D2G_A__r76-76.tsv	git mv / copies of superseded active tables (unchanged)	v4 active state	f1ce027d9575659c4a5cc649f9ffce04fca3928b1afa3ee163d4e1dc339c2ff9	2278
+archive/v4_region_evidence_all_pairs/RF00162__2GIS_A__4KQY_A__r1-93.tsv	git mv / copies of superseded active tables (unchanged)	v4 active state	86f47290f2b628d0a04e48cbd8d2864979b4a5a866d7ca93b91f50be4f4cfe7b	11214
+archive/v4_region_evidence_all_pairs/RF00174__4GXY_A__6VMY_A__r1-19.tsv	git mv / copies of superseded active tables (unchanged)	v4 active state	7478099d7f4c5be649fcecda1142e5ea5e7ecc533fd7ebec7818543d30239180	2739
+archive/v4_region_evidence_all_pairs/RF00174__4GXY_A__6VMY_A__r102-112.tsv	git mv / copies of superseded active tables (unchanged)	v4 active state	6dd441d1575585c349b93c018b125dae4791f674cfd5d7eee83c903018f568cb	1965
+archive/v4_region_evidence_all_pairs/RF00174__4GXY_A__6VMY_A__r117-129.tsv	git mv / copies of superseded active tables (unchanged)	v4 active state	fecdba4182c4994846b51a15230dd36e635d0f338e5022503b14ba62f0caba96	2187
+archive/v4_region_evidence_all_pairs/RF00174__4GXY_A__6VMY_A__r145-172.tsv	git mv / copies of superseded active tables (unchanged)	v4 active state	222b17d09917ad7a1c2f0d17f7eec3e5915e452184ed8d44919b028556cf842f	4006
+archive/v4_region_evidence_all_pairs/RF00174__4GXY_A__6VMY_A__r26-82.tsv	git mv / copies of superseded active tables (unchanged)	v4 active state	994b007a16501ab0a1c8efea38ca058449b12a2f0af7be62880ce3951fb5ec96	7275
+archive/v4_region_evidence_all_pairs/RF00174__4GXY_A__6VMY_A__r85-88.tsv	git mv / copies of superseded active tables (unchanged)	v4 active state	ae06ff0271836cf1ee3304b9ad4e3547efcb6fa90ac25b1f98f864c50d06b2e8	1108
+archive/v4_region_evidence_all_pairs/RF00442__5U3G_B__7MLW_F__r17-23.tsv	git mv / copies of superseded active tables (unchanged)	v4 active state	b136a91d25254ca675fd5bde6335657f9a515f9697cc4ee7bad0b5567fdb6a5d	3319
+archive/v4_region_evidence_all_pairs/RF00442__5U3G_B__7MLW_F__r41-55.tsv	git mv / copies of superseded active tables (unchanged)	v4 active state	4c1215689cb354311e5145537bd70df88ac9942bc43d623621f4427f325392cc	4467
+archive/v4_region_evidence_all_pairs/summary_all_19_regions.tsv	git mv / copies of superseded active tables (unchanged)	v4 active state	3f64ff8a246c939e97da09d4443c1766b060c1a4e9f9b991ea280d2a8797fc77	6532

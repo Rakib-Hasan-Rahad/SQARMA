@@ -1,0 +1,5 @@
+# EXPLORATORY ONLY — proposed alternative correspondence; the downloaded Rfam.seed.gz is NOT modified.
+# Basis: RF00522 7REX row (URS00023119CB_2126436/1-34) residues 17-22 shifted by +1 relative to the standard seed so the seed's
+# P1 3' strand columns (SS_cons 27-31) hold 7REX C18-A22; see review/RF00522_sscons_pairing_check.txt, results/neutral_fit_*.tsv
+family	row	seed_columns_SS_cons_P1_3p	seed_assigned_7REX_residues	proposed_7REX_residues	evidence	status
+RF00522	URS00023119CB_2126436/1-34	27,28,29,30,31	C17,C18,C19,A20,C21	C18,C19,A20,C21,A22	FR3D cWW U1-A22,G2-C21,U3-A20,G4-C19,G5-C18 in 7REX; STAR3D (both partners) maps P1 3' strand to 18-22; neutral-fit distances	supported_candidate (not definitive)

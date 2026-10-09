@@ -1,0 +1,7 @@
+RF00522__6VUI_A 33 residues -> runs/_inputs/6vuia.pdb
+RF00522__3FU2_A 32 residues -> runs/_inputs/3fu2a.pdb
+RF00522__7REX_A 34 residues -> runs/_inputs/7rexa.pdb
+crosswalk rows 101 identity mismatches 0
+RF00522__6VUI_A IDs == input file: OK; residues where scheme auth_seq_num != coordinate auth_seq_id: 0
+RF00522__3FU2_A IDs == input file: OK; residues where scheme auth_seq_num != coordinate auth_seq_id: 0
+RF00522__7REX_A IDs == input file: OK; residues where scheme auth_seq_num != coordinate auth_seq_id: 0

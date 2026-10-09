@@ -84,3 +84,10 @@ regions:
   merge_gap: 2
   max_inspected_regions: 3
   agreement_examples: 1
+
+dataset_policy:                              # v5 (2026-10-09): the researcher's explicit requirement
+  natural_sequences_only: true               # only experimental structures of VERIFIED NATURAL RNA sequences
+  decisions: review/natural_sequence_eligibility.tsv   # explicit evidence classifications (natural_policy.py)
+  masking_makes_eligible: false              # engineered constructs stay excluded even if altered residues are masked
+  unresolved: pending                        # never enters the accepted cohort
+  cohort_freeze: metadata/cohort_v2.0_natural_freeze.json

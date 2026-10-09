@@ -1,5 +1,17 @@
 # Validation report — pilot v2.1 (cohort v1.1)
 
+## v5 (2026-10-09): CURRENT
+- **Tests.** 81 tests pass (`deliverables/2026-10-09_v5/logs/pytest_final_v5.txt`), including:
+  - single-run tests: one alignment per pair, fixed order, no retry or substitution, pinned output reused;
+  - natural-policy tests: engineered, masked and unresolved cases cannot enter; one bad representative blocks its pair;
+    synthesis, missing coordinates and modifications are not engineering; no leakage into active tables.
+- **Mutation check.** 18/18 detected (`deliverables/2026-10-09_v5/tables/mutation_check_v5.tsv`).
+- **Single-run refactor.** 0 changed scientific values (`deliverables/2026-10-09_v5/tables/before_after_single_run.tsv`).
+- **Natural cohort.** Inputs of the accepted pairs are byte-identical, so their original STAR3D outputs are reused.
+  Every output passed the selection checks (inputs, preprocessing, output hash, parse, crosswalk, one-to-one).
+- **Not done.** Independent human review, a native host and a second aligner.
+
+
 ## v4 (2026-10-09): see `deliverables/2026-10-09_v4/validation_v4.md`
 - **Tests.** 64 pass. Mutation testing detects 16/16 re-introduced defects (`deliverables/2026-10-09_v4/tables/mutation_check.tsv`).
 - **Fix.** Reverse-strand crosswalk coordinates; no pilot row is affected.

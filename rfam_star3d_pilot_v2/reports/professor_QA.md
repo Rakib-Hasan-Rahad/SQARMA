@@ -1,5 +1,25 @@
 # Questions the professor is likely to ask
 
+## v5 additions (2026-10-09): CURRENT. Older answers below are superseded where they differ.
+**Which data are used now?**
+Only experimental structures of verified natural RNA sequences: 3FU2 A, 6VUI A and 7REX A (preQ1-I), forming 3 pairs.
+- Nine previously analysed chains are confirmed engineered and excluded. Masking does not make them eligible.
+- 7EQJ is natural but has no eligible partner.
+- Evidence: `review/natural_sequence_eligibility.tsv`.
+
+**How many STAR3D runs per pair?**
+One forward alignment from original STAR3D v1.2 with default parameters, following the package's preprocessing.
+Earlier reverse and replicate runs are archived and are not used to choose or combine the mapping.
+
+**Did removing data change the 7REX conclusion?**
+No. All three supporting RNAs pass the policy. Findings that relied on excluded pairs have been withdrawn from active
+results: TPP agreement, cobalamin/SAM-I coverage, guanidine-I sensitivity, and the tRNA pair.
+
+**Is this the professor's rule?**
+No. The natural-sequence-only policy is the researcher's explicit requirement. The professor asked us to avoid
+redundant structures and to review engineered constructs.
+
+
 ## v4 additions (2026-10-09)
 **Is the "ordinary" seed really sequence-only?**
 No. In every Rfam release that ships `Rfam.3d.seed.gz` (14.9–15.1), each curated family record is byte-identical to the

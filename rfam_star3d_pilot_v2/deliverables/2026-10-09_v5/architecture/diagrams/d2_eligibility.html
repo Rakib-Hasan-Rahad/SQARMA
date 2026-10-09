@@ -1,0 +1,21 @@
+<!doctype html><html><head><meta charset="utf-8">
+<script src="https://cdn.jsdelivr.net/npm/mermaid@10.9.1/dist/mermaid.min.js"></script>
+<style>body{margin:0;background:#fff;font-family:Arial,Helvetica,sans-serif} .mermaid{display:inline-block;padding:12px}</style>
+</head><body><pre class="mermaid">flowchart TD
+  A[&quot;Candidate PDB chain&quot;] --&gt; B([&quot;Explicit #=GR link or exact match&lt;br/&gt;to an ordinary seed row?&quot;])
+  B -- &quot;no&quot; --&gt; X1[&quot;Excluded: no verified row&quot;]
+  B -- &quot;yes&quot; --&gt; C([&quot;Row found exactly once in the chain;&lt;br/&gt;source organism = row organism?&quot;])
+  C -- &quot;no / ambiguous&quot; --&gt; X2[&quot;Excluded or pending&quot;]
+  C -- &quot;yes&quot; --&gt; D([&quot;Construct documented well enough&lt;br/&gt;to establish the natural sequence?&quot;])
+  D -- &quot;no&quot; --&gt; X3[&quot;unresolved → pending&lt;br/&gt;(never accepted)&quot;]
+  D -- &quot;yes&quot; --&gt; E([&quot;Any substitution, artificial extension,&lt;br/&gt;internal deletion, loop/stem replacement&lt;br/&gt;or chimera ANYWHERE in the construct?&quot;])
+  E -- &quot;yes (masked or not)&quot; --&gt; X4[&quot;confirmed_engineered → excluded&quot;]
+  E -- &quot;no (synthesis / transcription of the&lt;br/&gt;natural sequence is fine)&quot; --&gt; F([&quot;Coordinates, mapping and STAR3D&lt;br/&gt;compatibility suitable? (missing residues and&lt;br/&gt;native modifications assessed here)&quot;])
+  F -- &quot;no&quot; --&gt; X5[&quot;verified_natural, excluded&lt;br/&gt;(suitability)&quot;]
+  F -- &quot;yes&quot; --&gt; G[&quot;verified_natural, accepted&quot;]
+  G --&gt; H([&quot;Partner in the same family: accepted,&lt;br/&gt;distinct sequence (not a repeat or crystal copy)?&quot;])
+  H -- &quot;no&quot; --&gt; X6[&quot;No pair (representative kept on record)&quot;]
+  H -- &quot;yes&quot; --&gt; I[&quot;Accepted pair, frozen before STAR3D outcomes are examined&quot;]
+</pre>
+<script>mermaid.initialize({startOnLoad:true, theme:'neutral', flowchart:{useMaxWidth:false, htmlLabels:true, curve:'basis', nodeSpacing:30, rankSpacing:40},
+ themeVariables:{fontSize:'15px', fontFamily:'Arial, Helvetica, sans-serif'}});</script></body></html>

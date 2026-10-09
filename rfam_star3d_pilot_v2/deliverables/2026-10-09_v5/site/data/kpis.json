@@ -1,0 +1,19 @@
+{
+ "source": [
+  "review/natural_sequence_eligibility.tsv",
+  "results/selected_pairs.tsv",
+  "results/family_inventory.tsv"
+ ],
+ "values": {
+  "families_with_accepted_pairs": 1,
+  "accepted_pairs": 3,
+  "accepted_structures_in_pairs": 3,
+  "chains_reviewed_under_policy": 13,
+  "verified_natural": 4,
+  "confirmed_engineered": 9,
+  "unresolved": 0,
+  "star3d_outputs_used": 3,
+  "families_in_inventory": 167,
+  "families_screen_pass": 31
+ }
+}

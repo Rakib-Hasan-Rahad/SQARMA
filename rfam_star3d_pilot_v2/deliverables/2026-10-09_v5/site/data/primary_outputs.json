@@ -1,0 +1,54 @@
+{
+ "available": true,
+ "source": "results/primary_star3d_outputs.tsv",
+ "columns": [
+  "pair_id",
+  "status",
+  "alignment_order",
+  "selected_run_id",
+  "output_aln",
+  "output_sha256",
+  "aligned_n",
+  "rmsd",
+  "parameters",
+  "earlier_records_not_selected"
+ ],
+ "rows": [
+  {
+   "pair_id": "RF00522__3FU2_A__6VUI_A",
+   "status": "selected",
+   "alignment_order": "3FU2_A -> 6VUI_A (query = lexicographically smaller stable ID)",
+   "selected_run_id": "RF00522__3FU2_A__6VUI_A__a3__forward__rep1",
+   "output_aln": "runs/RF00522__3FU2_A__6VUI_A/attempt3/STAR3D_source/out/RF00522__3FU2_A__6VUI_A__a3__forward__rep1.aln",
+   "output_sha256": "9af68194430b70885e9ba7ed7f6655c82d9aff2b34343098d1165ec48432aeab",
+   "aligned_n": "31",
+   "rmsd": "2.59",
+   "parameters": "defaults (-r 4.0 -s 3 -g -5 -e -2 -m 3 -i 0 -t 1) + -p",
+   "earlier_records_not_selected": "attempt1__RF00522__3FU2_A__6VUI_A__forward__rep1: status failed_wrapper_defect exit 1 | attempt1__RF00522__3FU2_A__6VUI_A__forward__rep2: status failed_wrapper_defect exit 1 | attempt1__RF00522__3FU2_A__6VUI_A__forward__rep3: status failed_wrapper_defect exit 1"
+  },
+  {
+   "pair_id": "RF00522__3FU2_A__7REX_A",
+   "status": "selected",
+   "alignment_order": "3FU2_A -> 7REX_A (query = lexicographically smaller stable ID)",
+   "selected_run_id": "RF00522__3FU2_A__7REX_A__a1__forward__rep1",
+   "output_aln": "runs/RF00522__3FU2_A__7REX_A/attempt1/STAR3D_source/out/RF00522__3FU2_A__7REX_A__a1__forward__rep1.aln",
+   "output_sha256": "b548d4136b43fb17577faea886b411c27bc9acc6623213e29736166ec41eaecf",
+   "aligned_n": "32",
+   "rmsd": "2.0",
+   "parameters": "defaults (-r 4.0 -s 3 -g -5 -e -2 -m 3 -i 0 -t 1) + -p",
+   "earlier_records_not_selected": "none"
+  },
+  {
+   "pair_id": "RF00522__6VUI_A__7REX_A",
+   "status": "selected",
+   "alignment_order": "6VUI_A -> 7REX_A (query = lexicographically smaller stable ID)",
+   "selected_run_id": "RF00522__6VUI_A__7REX_A__a1__forward__rep1",
+   "output_aln": "runs/RF00522__6VUI_A__7REX_A/attempt1/STAR3D_source/out/RF00522__6VUI_A__7REX_A__a1__forward__rep1.aln",
+   "output_sha256": "3fe59e3701c841253cde6adbb0b4efd36cfb41590246b766ea965a4f8f469028",
+   "aligned_n": "32",
+   "rmsd": "2.34",
+   "parameters": "defaults (-r 4.0 -s 3 -g -5 -e -2 -m 3 -i 0 -t 1) + -p",
+   "earlier_records_not_selected": "none"
+  }
+ ]
+}

@@ -1,0 +1,520 @@
+{
+ "before_after_natural": {
+  "available": true,
+  "source": "deliverables/2026-10-09_v5/tables/before_after_natural_dataset.tsv",
+  "columns": [
+   "item",
+   "previous_dataset",
+   "natural_sequence_dataset",
+   "reason_for_change"
+  ],
+  "rows": [
+   {
+    "item": "Families with an analysed pair",
+    "previous_dataset": "6 (RF00005, RF00059, RF00162, RF00174, RF00442, RF00522)",
+    "natural_sequence_dataset": "1 (RF00522)",
+    "reason_for_change": "all representatives of RF00059, RF00162, RF00174, RF00442 are confirmed engineered; RF00005 has no accepted pair (5CCB carries an artificial 5' G)"
+   },
+   {
+    "item": "Structures (RNA chains) analysed",
+    "previous_dataset": "13",
+    "natural_sequence_dataset": "3",
+    "reason_for_change": "only verified-natural representatives in accepted pairs remain active"
+   },
+   {
+    "item": "Verified-natural representatives (any pair status)",
+    "previous_dataset": "not assessed under this policy",
+    "natural_sequence_dataset": "4",
+    "reason_for_change": "3FU2, 6VUI, 7REX (accepted, paired) and 7EQJ (accepted representative, no eligible partner)"
+   },
+   {
+    "item": "Confirmed-engineered representatives",
+    "previous_dataset": "kept with masks (exploratory tiers)",
+    "natural_sequence_dataset": "9",
+    "reason_for_change": "masking no longer makes a construct eligible; terminal artificial nucleotides count as engineering"
+   },
+   {
+    "item": "Unresolved / pending representatives",
+    "previous_dataset": "n/a",
+    "natural_sequence_dataset": "0",
+    "reason_for_change": "none"
+   },
+   {
+    "item": "Distinct analysed sequences",
+    "previous_dataset": "13",
+    "natural_sequence_dataset": "3",
+    "reason_for_change": "as structures"
+   },
+   {
+    "item": "Pairs",
+    "previous_dataset": "8",
+    "natural_sequence_dataset": "3",
+    "reason_for_change": "a pair is accepted only if both representatives are accepted"
+   },
+   {
+    "item": "Pairs labelled primary",
+    "previous_dataset": "4",
+    "natural_sequence_dataset": "3",
+    "reason_for_change": "RF00174 4GXY-6VMY (previously primary) is excluded: both constructs carry artificial terminal nucleotides"
+   },
+   {
+    "item": "Primary STAR3D outputs used",
+    "previous_dataset": "8",
+    "natural_sequence_dataset": "3",
+    "reason_for_change": "the 3 preQ1 outputs are reused unchanged (inputs byte-identical); no STAR3D run was needed"
+   },
+   {
+    "item": "Candidate regions",
+    "previous_dataset": "21",
+    "natural_sequence_dataset": "8",
+    "reason_for_change": "regions of excluded pairs archived"
+   },
+   {
+    "item": "Source-side interactions evaluated (query side, all classes)",
+    "previous_dataset": "902",
+    "natural_sequence_dataset": "146",
+    "reason_for_change": "only accepted pairs"
+   },
+   {
+    "item": "7REX P1 candidate",
+    "previous_dataset": "supported candidate (moderate)",
+    "natural_sequence_dataset": "supported candidate (moderate) - unchanged",
+    "reason_for_change": "all three supporting representatives (3FU2, 6VUI, 7REX) pass the natural-sequence policy"
+   },
+   {
+    "item": "Agreement control",
+    "previous_dataset": "TPP 2GDI-3D2G (71 same / 1 different)",
+    "natural_sequence_dataset": "3FU2-6VUI (24 same / 4 different) as the closest available",
+    "reason_for_change": "TPP pair excluded (both constructs engineered)"
+   },
+   {
+    "item": "Coverage-limitation examples",
+    "previous_dataset": "cobalamin, SAM-I",
+    "natural_sequence_dataset": "none in the active dataset",
+    "reason_for_change": "excluded pairs"
+   },
+   {
+    "item": "Pairing-rule sensitivity (guanidine-I 78->25 nt)",
+    "previous_dataset": "reported as a limitation",
+    "natural_sequence_dataset": "archived historical observation",
+    "reason_for_change": "guanidine-I excluded; sensitivity analyses archived"
+   },
+   {
+    "item": "tRNA exploratory agreement (59/64)",
+    "previous_dataset": "reported",
+    "natural_sequence_dataset": "withdrawn from active results",
+    "reason_for_change": "5CCB excluded (artificial 5' G)"
+   }
+  ]
+ },
+ "before_after_single_run": {
+  "available": true,
+  "source": "deliverables/2026-10-09_v5/tables/before_after_single_run.tsv",
+  "columns": [
+   "scope",
+   "table",
+   "key",
+   "field",
+   "before",
+   "after",
+   "reason"
+  ],
+  "rows": [
+   {
+    "scope": "study (7 pilot pairs)",
+    "table": "pair_summary",
+    "key": "ALL",
+    "field": "rows",
+    "before": "42",
+    "after": "7",
+    "reason": "rows removed: reverse-direction runs, replicates 2-3 and historical attempts are no longer active rows (archived)"
+   },
+   {
+    "scope": "study (7 pilot pairs)",
+    "table": "correspondence_comparison",
+    "key": "ALL",
+    "field": "residue rows compared",
+    "before": "532",
+    "after": "532",
+    "reason": "0 differing values"
+   },
+   {
+    "scope": "study (7 pilot pairs)",
+    "table": "interaction_summary",
+    "key": "ALL",
+    "field": "rows (v4 all comparisons -> v5)",
+    "before": "210",
+    "after": "70",
+    "reason": "0 differing values on the retained comparison; 'rfam_vs_star3d_reverse' and 'all_three_methods' comparisons and star3d_reverse columns removed from the active table (archived)"
+   },
+   {
+    "scope": "study (7 pilot pairs)",
+    "table": "interaction_comparison",
+    "key": "ALL",
+    "field": "interactions compared",
+    "before": "1634",
+    "after": "1634",
+    "reason": "0 differing values; 539 exclusion labels renamed only (star3d_forward_* -> star3d_*); star3d_reverse and all_three_methods columns removed (archived)"
+   },
+   {
+    "scope": "study (7 pilot pairs)",
+    "table": "region_review",
+    "key": "ALL",
+    "field": "regions",
+    "before": "19",
+    "after": "19",
+    "reason": "0 differing values; column 'reverse_run_same_star3d_partner' removed"
+   },
+   {
+    "scope": "expansion_v4 (tRNA pair)",
+    "table": "pair_summary",
+    "key": "ALL",
+    "field": "rows",
+    "before": "6",
+    "after": "1",
+    "reason": "rows removed: reverse-direction runs, replicates 2-3 and historical attempts are no longer active rows (archived)"
+   },
+   {
+    "scope": "expansion_v4 (tRNA pair)",
+    "table": "correspondence_comparison",
+    "key": "ALL",
+    "field": "residue rows compared",
+    "before": "73",
+    "after": "73",
+    "reason": "0 differing values"
+   },
+   {
+    "scope": "expansion_v4 (tRNA pair)",
+    "table": "interaction_summary",
+    "key": "ALL",
+    "field": "rows (v4 all comparisons -> v5)",
+    "before": "30",
+    "after": "10",
+    "reason": "0 differing values on the retained comparison; 'rfam_vs_star3d_reverse' and 'all_three_methods' comparisons and star3d_reverse columns removed from the active table (archived)"
+   },
+   {
+    "scope": "expansion_v4 (tRNA pair)",
+    "table": "interaction_comparison",
+    "key": "ALL",
+    "field": "interactions compared",
+    "before": "222",
+    "after": "222",
+    "reason": "0 differing values; 22 exclusion labels renamed only (star3d_forward_* -> star3d_*); star3d_reverse and all_three_methods columns removed (archived)"
+   },
+   {
+    "scope": "expansion_v4 (tRNA pair)",
+    "table": "region_review",
+    "key": "ALL",
+    "field": "regions",
+    "before": "2",
+    "after": "2",
+    "reason": "2 differing values; column 'reverse_run_same_star3d_partner' removed"
+   }
+  ]
+ },
+ "mutation_check": {
+  "available": true,
+  "source": "deliverables/2026-10-09_v5/tables/mutation_check_v5.tsv",
+  "columns": [
+   "defect_reintroduced",
+   "file",
+   "test_file",
+   "result",
+   "pytest_summary"
+  ],
+  "rows": [
+   {
+    "defect_reintroduced": "masked target ignored in eligibility",
+    "file": "interactions.py",
+    "test_file": "test_interaction_masking.py",
+    "result": "DETECTED",
+    "pytest_summary": "2 failed, 8 passed in 0.04s"
+   },
+   {
+    "defect_reintroduced": "masked source ignored",
+    "file": "interactions.py",
+    "test_file": "test_interaction_masking.py",
+    "result": "DETECTED",
+    "pytest_summary": "1 failed, 9 passed in 0.02s"
+   },
+   {
+    "defect_reintroduced": "one shared denominator across comparisons (unmapped method ignored)",
+    "file": "interactions.py",
+    "test_file": "test_interaction_masking.py",
+    "result": "DETECTED",
+    "pytest_summary": "1 failed, 9 passed in 0.03s"
+   },
+   {
+    "defect_reintroduced": "symmetry mates counted as intrachain",
+    "file": "interactions.py",
+    "test_file": "test_interaction_masking.py",
+    "result": "DETECTED",
+    "pytest_summary": "1 failed, 9 passed in 0.02s"
+   },
+   {
+    "defect_reintroduced": "non-injective map silently collapsed",
+    "file": "interactions.py",
+    "test_file": "test_interaction_masking.py",
+    "result": "DETECTED",
+    "pytest_summary": "1 failed, 9 passed in 0.02s"
+   },
+   {
+    "defect_reintroduced": "region targets not checked",
+    "file": "regions.py",
+    "test_file": "test_regions.py",
+    "result": "DETECTED",
+    "pytest_summary": "2 failed, 4 passed in 0.02s"
+   },
+   {
+    "defect_reintroduced": "region intervening positions skipped",
+    "file": "regions.py",
+    "test_file": "test_regions.py",
+    "result": "DETECTED",
+    "pytest_summary": "1 failed, 5 passed in 0.02s"
+   },
+   {
+    "defect_reintroduced": "old interpretations auto-accepted after eligibility change",
+    "file": "regions.py",
+    "test_file": "test_regions.py",
+    "result": "DETECTED",
+    "pytest_summary": "2 failed, 4 passed in 0.02s"
+   },
+   {
+    "defect_reintroduced": "stored STAR3D output not re-validated",
+    "file": "compare.py",
+    "test_file": "test_compare_validation.py",
+    "result": "DETECTED",
+    "pytest_summary": "4 failed, 6 passed in 0.09s"
+   },
+   {
+    "defect_reintroduced": "non-injective STAR3D output accepted",
+    "file": "compare.py",
+    "test_file": "test_compare_validation.py",
+    "result": "DETECTED",
+    "pytest_summary": "1 failed, 9 passed in 0.05s"
+   },
+   {
+    "defect_reintroduced": "subset rerun allowed",
+    "file": "compare.py",
+    "test_file": "test_subset_refusal.py",
+    "result": "DETECTED",
+    "pytest_summary": "1 failed, 2 passed in 0.05s"
+   },
+   {
+    "defect_reintroduced": "preprocessing contents not validated",
+    "file": "star3d.py",
+    "test_file": "test_star3d_gate.py",
+    "result": "DETECTED",
+    "pytest_summary": "3 failed, 2 passed in 0.04s"
+   },
+   {
+    "defect_reintroduced": "checksum mismatch does not block",
+    "file": "fresh_repro.py",
+    "test_file": "test_fresh_repro_gate.py",
+    "result": "DETECTED",
+    "pytest_summary": "3 failed, 2 passed in 0.07s"
+   },
+   {
+    "defect_reintroduced": "configured FR3D commit trusted instead of installed",
+    "file": "interactions.py",
+    "test_file": "test_fr3d_provenance.py",
+    "result": "DETECTED",
+    "pytest_summary": "1 failed, 8 passed in 0.05s"
+   },
+   {
+    "defect_reintroduced": "cached FR3D output reused without raw-hash check",
+    "file": "interactions.py",
+    "test_file": "test_fr3d_provenance.py",
+    "result": "DETECTED",
+    "pytest_summary": "2 failed, 7 passed in 0.05s"
+   },
+   {
+    "defect_reintroduced": "v5: alignment repeated (replicate loop re-introduced)",
+    "file": "star3d.py",
+    "test_file": "test_single_run_policy.py",
+    "result": "DETECTED",
+    "pytest_summary": "3 failed, 5 passed in 0.04s"
+   },
+   {
+    "defect_reintroduced": "v5: reverse-run substitution in primary selection",
+    "file": "select_primary_outputs.py",
+    "test_file": "test_single_run_policy.py",
+    "result": "DETECTED",
+    "pytest_summary": "3 failed, 5 passed in 0.04s"
+   },
+   {
+    "defect_reintroduced": "multi-family Stockholm record",
+    "file": "reference.py",
+    "test_file": "test_stockholm_export.py",
+    "result": "DETECTED",
+    "pytest_summary": "1 failed, 2 passed in 0.31s"
+   }
+  ]
+ },
+ "tests": {
+  "available": true,
+  "source": "deliverables/2026-10-09_v5/tables/test_results_v5.tsv",
+  "columns": [
+   "suite",
+   "passed",
+   "failed",
+   "command",
+   "log_path"
+  ],
+  "rows": [
+   {
+    "suite": "81 tests (tests/), v5",
+    "passed": "81",
+    "failed": "0",
+    "command": ".venv/bin/python -m pytest -q tests",
+    "log_path": "logs/pytest_final_v5.txt"
+   },
+   {
+    "suite": "mutation check: 18 re-introduced defects",
+    "passed": "18 detected",
+    "failed": "0 undetected",
+    "command": ".venv/bin/python deliverables/2026-10-09_v5/scripts/mutation_check_v5.py",
+    "log_path": "tables/mutation_check_v5.tsv"
+   },
+   {
+    "suite": "baseline at v5 start (222f355)",
+    "passed": "64",
+    "failed": "0",
+    "command": ".venv/bin/python -m pytest -q tests",
+    "log_path": "baseline/start_commit.txt"
+   }
+  ]
+ },
+ "requirements": {
+  "available": true,
+  "source": "deliverables/2026-10-09_v4/tables/requirements_matrix.tsv",
+  "columns": [
+   "requirement",
+   "source_type",
+   "source_and_wording",
+   "interpretation",
+   "implementation",
+   "evidence",
+   "remaining_gap"
+  ],
+  "rows": [
+   {
+    "requirement": "Count families with >=2 eligible distinct RNA sequences with PDB structures",
+    "source_type": "explicit professor instruction (secondary record)",
+    "source_and_wording": "Research plan 2026-10-08, 'What the professor is asking': \"Count how many families have at least two eligible, distinct RNA sequences with PDB structures. A count of PDB entries alone does not answer this question.\" (plan states it was taken from the meeting transcript; the transcript itself is not on disk)",
+    "interpretation": "count families, not entries; distinct sequences; eligibility after provenance and construct review",
+    "implementation": "inventory.py funnel; manual review of all 31 screen-passing families; v4 sequence-only route for non-curated families",
+    "evidence": "results/family_inventory.tsv; review/v3_screening/; review/v4_expansion/",
+    "remaining_gap": "explicit-link discovery only reaches the 74 curated families; 16 non-curated families with sequence-only proposals not reviewed; 1,793 sequence-only proposals mostly unreviewed"
+   },
+   {
+    "requirement": "Link each PDB chain/family region to a specific Rfam row; explain organism, origin, coverage",
+    "source_type": "explicit professor instruction (secondary record)",
+    "source_and_wording": "plan 2026-10-08: \"Link each selected PDB RNA chain and family region to a specific Rfam alignment row, and explain its organism, sequence origin and residue coverage.\"",
+    "interpretation": "exact row, entity source (not host), exact-source genome check, observed fraction",
+    "implementation": "structures.py build_link; exact_source_check.py; evidence cards; crosswalk",
+    "evidence": "reports/evidence_cards.md; results/residue_crosswalk.tsv; review/exact_source_check.tsv",
+    "remaining_gap": "none for selected rows"
+   },
+   {
+    "requirement": "Remove repeated structures of the same sequence; review construct meaning, especially motif mutations",
+    "source_type": "explicit professor instruction (secondary record)",
+    "source_and_wording": "plan 2026-10-08: \"Remove repeated structures of the same sequence and review the biological meaning of each selected construct, particularly mutations affecting motifs.\"",
+    "interpretation": "group by exact interval sequence; construct review; engineered cases kept separate",
+    "implementation": "sequence_groups; construct_review; masks; exploratory tiers",
+    "evidence": "results/sequence_groups.tsv; review/construct_review.tsv; review/decisions.yaml",
+    "remaining_gap": "several construct papers inaccessible (ZMP-ZTP)"
+   },
+   {
+    "requirement": "Compare ordinary seed with structure-curated seed for shared sequences; count comparable families",
+    "source_type": "explicit professor instruction (secondary record)",
+    "source_and_wording": "plan 2026-10-08: \"Compare ordinary Rfam seed alignments with the structure-curated seed collection for shared sequences; count the families for which this comparison is possible.\"",
+    "interpretation": "residue-correspondence comparison of shared rows, matched release",
+    "implementation": "survey_b.py (15.1) + rfam_history.py (14.9-15.1)",
+    "evidence": "results/seed_collection_comparison/; results/rfam_history/",
+    "remaining_gap": "identity holds in every release with a curated file; a pre-curation comparison per family is possible only via older ordinary releases (rows absent before 15.0 for RF00522)"
+   },
+   {
+    "requirement": "Run original STAR3D on suitable non-identical homologs; investigate motif-region disagreements",
+    "source_type": "explicit professor instruction (secondary record)",
+    "source_and_wording": "plan 2026-10-08: \"Run original STAR3D on suitable, non-identical homologous RNAs from the same family, then investigate motif-region disagreements.\"",
+    "interpretation": "original v1.2, defaults; both directions; region review",
+    "implementation": "star3d.py; compare/interactions/regions; region_evidence.py",
+    "evidence": "results/pair_summary.tsv; results/region_review.tsv; results/region_evidence/",
+    "remaining_gap": "emulated execution only"
+   },
+   {
+    "requirement": "If no suitable experimental cases, bring the search to Smriti and ask about predicted structures",
+    "source_type": "explicit professor instruction, conditional (secondary record)",
+    "source_and_wording": "plan 2026-10-08: \"If suitable experimental cases cannot be found, bring the documented search to Smriti and ask about available predicted structures or how to generate them.\"",
+    "interpretation": "conditional fallback; separate study",
+    "implementation": "questions drafted, not sent",
+    "evidence": "reports/professor_QA.md",
+    "remaining_gap": "decision for the researcher: whether to trigger the fallback"
+   },
+   {
+    "requirement": "Metabolite-bound structures may be acceptable",
+    "source_type": "explicit professor statement as recorded in plan",
+    "source_and_wording": "plan 2026-10-08: \"the professor explicitly allowed metabolite binding as potentially acceptable\"",
+    "interpretation": "ligand state recorded; comparable states favoured",
+    "implementation": "cognate-ligand preference in representative rule",
+    "evidence": "review/decisions.yaml",
+    "remaining_gap": "7REX second ligand: context recorded"
+   },
+   {
+    "requirement": "Prefer different organisms",
+    "source_type": "professor example; plan recommendation",
+    "source_and_wording": "plan: \"Prioritize different organisms because that matches his example\"",
+    "interpretation": "different species preferred, sequence distinctness required",
+    "implementation": "representative/pair rules",
+    "evidence": "config.yaml",
+    "remaining_gap": "none"
+   },
+   {
+    "requirement": "Use ordinary Rfam.seed.gz as the primary reference; do not use Rfam.3d.seed.gz as reference; no cmalign additions",
+    "source_type": "later user decision",
+    "source_and_wording": "prompt V2 (2026-10-08) and later user prompts",
+    "interpretation": "primary reference fixed; curated file only in Survey B",
+    "implementation": "config.yaml pins",
+    "evidence": "config.yaml",
+    "remaining_gap": "none"
+   },
+   {
+    "requirement": "Use original STAR3D v1.2, not LocalSTAR3D/CircularSTAR3D",
+    "source_type": "professor request + later user decision",
+    "source_and_wording": "plan [9]/[14]; user prompts",
+    "interpretation": "original package, defaults",
+    "implementation": "star3d.py; execution audit",
+    "evidence": "STAR3D_execution_audit.md",
+    "remaining_gap": "paper-vs-source pairing difference documented; S1 sensitivity separate"
+   },
+   {
+    "requirement": "Literature/single-sequence prediction priority",
+    "source_type": "superseded earlier recollection",
+    "source_and_wording": "plan 2026-09-28 gave literature/single-sequence prediction priority; plan 2026-10-08 says these are deferred",
+    "interpretation": "latest clear instruction applies (deferred)",
+    "implementation": "not implemented",
+    "evidence": "this table",
+    "remaining_gap": "conflict documented, not acted on"
+   },
+   {
+    "requirement": "Predicted structures",
+    "source_type": "methodological recommendation",
+    "source_and_wording": "plan: predicted structures form a separate track",
+    "interpretation": "not mixed into experimental counts",
+    "implementation": "none",
+    "evidence": "none",
+    "remaining_gap": "n/a"
+   },
+   {
+    "requirement": "Pre-registration, mutation testing, sensitivity analyses, anchor-fit rules",
+    "source_type": "our methodological recommendations",
+    "source_and_wording": "not professor instructions",
+    "interpretation": "used to make claims traceable",
+    "implementation": "scripts listed in architecture guide",
+    "evidence": "deliverables/2026-10-09_v4/",
+    "remaining_gap": "n/a"
+   }
+  ]
+ }
+}

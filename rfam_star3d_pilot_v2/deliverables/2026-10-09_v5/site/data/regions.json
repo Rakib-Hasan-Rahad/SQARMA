@@ -1,0 +1,105 @@
+{
+ "available": true,
+ "source": "results/region_review.tsv",
+ "columns": [
+  "inspection_rank",
+  "region_id",
+  "pair_id",
+  "n_correspondence_disagreements",
+  "n_coverage_differences",
+  "seed_elements",
+  "eligible_for_structural_adjudication",
+  "classification",
+  "interpretation"
+ ],
+ "rows": [
+  {
+   "inspection_rank": "1",
+   "region_id": "RF00522__6VUI_A__7REX_A__r7-23",
+   "pair_id": "RF00522__6VUI_A__7REX_A",
+   "n_correspondence_disagreements": "15",
+   "n_coverage_differences": "2",
+   "seed_elements": "P1;unlabelled",
+   "eligible_for_structural_adjudication": "yes",
+   "classification": "6VUI 13-21 (P1 3' strand + J): supported_candidate_Rfam_correspondence_issue (moderate) | 6VUI 7-12 (L1): possible_STAR3D_correspondence_issue (low-moderate)",
+   "interpretation": "v4 6VUI 13-21 (P1 3' strand + J): for seed: none at 13-21; at 22 seed partner marginally closer (C1' 5.6 vs 6.2 A); for STAR3D: C1' after shared fit: STAR3D partners 0.6-3.2 A vs seed 6.1-8.6 A for 14-21 (same under flank-excluded and local-anchor fits); FR3D within span: canonical cWW 0/7 seed vs 5/7 STAR3D, noncanonical 0/7 vs 2/7, stacks 7/18 vs 10/18 (rfam-vs-STAR3D-forward eligible set); 7REX P1 cWW present in all 3 crystal copies (U1-A22 in 2); the 7REX authors describe P1 as a canonical A-form helix with an A28*G5-C18*A29 triple (G5-C18 = STAR3D register, seed implies G5-C17) (PMC8752633); confounds: STAR3D builds stacks from pairing (partly circular); same 7REX row as r15-22 (one observation); 7REX ligand PRF101 contacts residue 16 and PRF102 contacts 16-18; crystal/ASU contacts at 7REX 21-22 (chain B) and 6VUI 19-23 (symmetry); 6VUI U22-A23 unresolved (both partners ~5-6 A) | v4 6VUI 7-12 (L1): for seed: C1' after shared fit: G8 3.4 vs 10.0 A, G11 3.3 vs 8.7 A; seed preserves 3 L1 stacks STAR3D loses (s35 7-8, ns33 8-10, s35 9-10); the seed maps the 6VUI C7-G11 tWH pair onto 7REX C8-A12 (FR3D tWW, different class), the residues the 7REX authors describe as the U32*A12*C8 pocket-ceiling triple (Schroeder et al. 2022, PMC8752633); STAR3D maps it to 7REX 7-13; for STAR3D: C7 3.3 vs 5.3 A, U12 1.3 vs 4.7 A; STAR3D preserves s35 6-7; confounds: 7REX L1 residues contact a SECOND preQ1 (PRF101) and Mg (MG103) absent from 6VUI's single site -> genuine structural/ligand-context variation is plausible; crystal contacts at 7REX 8-12; residue-level mixed evidence || previous: [supported_candidate_Rfam_correspondence_issue (P1 3' strand + J/L2, 6VUI 12-21) ; possible_STAR3D_correspondence_issue (L1, 6VUI 8 and 11) ; unresolved (6VUI 7, 9, 10, 22) || v2.0: split: 6VUI 12-21 (L2 + P1 3' strand) supported_candidate_Rfam_correspondence_issue; 8-11 (L1) possible_STAR3D_correspondence_issue] v2.1: re-checked from raw FR3D lines: 6VUI P1 1-20,2-19,3-18,4-17,5-16 cWW; 7REX 1-22..5-18 cWW in chain A and in crystal copies B,C (1-22 absent in C); no raw FR3D line for 7REX 1-21..5-17. All three RNAs exact-source verified in their genomes; no engineering, no modified nucleotides; 7REX binds two preQ1 (PRF101 contacts 7,8,12,16,30-32) -> plausible cause of L1 differences, not of the P1 register. Shared-correspondence anchor fit (16 anchors, RMSD 2.64 A) and flank-excluded fit (12 anchors, 1.89 A): direction of support unchanged except 6VUI A10 (Rfam-closer -> within 1 A). Exploratory row adjustment (7REX A15-A22 one column left; A15 into insert column 24) preserves nucleotides/order/one-to-one mapping, makes all 5 SS_cons P1 pairs Watson-Crick, preserves 5/7 canonical vs seed 0/7 and loses no seed-preserved interaction (review/candidate_RF00522/). Fresh rerun of STAR3D+FR3D by this agent reproduced the retained mappings/annotations exactly. Canonical-pair evidence is not independent of STAR3D (MC-Annotate WWc preprocessing). || v2.0: Seed's own SS_cons applied to 7REX row gives U1.C21, G2.A20, U3.C19 (non-WC) while 7REX FR3D shows U1-A22..G5-C18 cWW; seed mapping preserves 0/5 6VUI P1 cWW pairs, STAR3D 5/5 (+2 cSW A-minor); neutral C1' fit on 16 agreed residues (RMSD 2.64 A): P1 3' strand STAR3D partners 0.6-3.2 A vs seed 6.1-8.6 A; in L1 (8,10,11) seed partners closer (2.9-3.4 vs 4.3-10 A). Construct native (BLAST 34/34), link verified, nothing masked, replicates/directions identical. Evidence localises to the 7REX row register (one shift); not definitive evolutionary equivalence."
+  },
+  {
+   "inspection_rank": "2",
+   "region_id": "RF00522__3FU2_A__7REX_A__r15-22",
+   "pair_id": "RF00522__3FU2_A__7REX_A",
+   "n_correspondence_disagreements": "7",
+   "n_coverage_differences": "1",
+   "seed_elements": "P1",
+   "eligible_for_structural_adjudication": "yes",
+   "classification": "3FU2 15-22 (P1 3' strand): supported_candidate_Rfam_correspondence_issue (moderate)",
+   "interpretation": "v4 3FU2 15-22 (P1 3' strand): for seed: none; for STAR3D: STAR3D partner closer for 7/7 different-partner residues under shared, flank-excluded and local-anchor fits (C1' and base centroid); canonical 0/5 seed vs 5/5 STAR3D, noncanonical 0/5 vs 3/5, stacks 4/9 vs 9/9; same published G5-C18 description of 7REX P1; confounds: not independent of r7-23 (same 7REX row); STAR3D pairing circularity; ligand contacts at 7REX 16-18 || previous: [supported_candidate_Rfam_correspondence_issue (same 7REX row; not independent of r7-23) || v2.0: supported_candidate_Rfam_correspondence_issue (same 7REX row as region above; not independent)] v2.1: same 7REX-row register; flank-excluded anchor fit (13 anchors) keeps STAR3D partners closer for 3FU2 16-22 (0.2-2.0 A vs 5.1-6.8 A); adjusted row preserves 33/44 eligible interactions vs seed 20/44 and STAR3D 31/44. || v2.0: Neutral fit on 17 agreed residues: 3FU2 16-22 STAR3D partners 0.4-2.5 A vs seed 5.5-7.9 A; seed preserves 0/7 canonical 3FU2 pairs in 7REX, STAR3D 5/7."
+  },
+  {
+   "inspection_rank": "3",
+   "region_id": "RF00522__3FU2_A__7REX_A__r9-12",
+   "pair_id": "RF00522__3FU2_A__7REX_A",
+   "n_correspondence_disagreements": "4",
+   "n_coverage_differences": "0",
+   "seed_elements": "P1",
+   "eligible_for_structural_adjudication": "yes",
+   "classification": "3FU2 9-12 (L1): construct_or_coordinate_confound (low)",
+   "interpretation": "v4 3FU2 9-12 (L1): for seed: G11 seed partner 3.8 vs 10.3 A (shared fit); seed preserves 1 of 4 eligible stacks vs 0; for STAR3D: U9 5.9 vs 7.1 A, A10 2.7 vs 5.7 A; confounds: 3FU2 C12 has only P/O5' (no C1'), U13-A14 unobserved; STAR3D's parser treats 3FU2 12 and 15 as sequence neighbours (STAR3D audit); 7REX L1 contacts second preQ1; canonical eligible 0/2 for both || previous: [possible_STAR3D_correspondence_issue (L1) / unresolved || v2.0: possible_STAR3D_correspondence_issue (L1)] v2.1: G11 seed partner closer in both anchor sets (2.9-3.8 vs 9.1-10.3 A); U9/A10 favour STAR3D; residue 12 has only phosphate atoms (C1' absent). 7REX second preQ1 contacts this loop. || v2.0: Neutral fit: G11 seed partner 3.8 A vs STAR3D 10.3 A; U9/A10 favour STAR3D; residue 12 lacks C1' in input -> NA. Mixed; L1 local register uncertain."
+  },
+  {
+   "inspection_rank": "4",
+   "region_id": "RF00522__3FU2_A__7REX_A__r32-34",
+   "pair_id": "RF00522__3FU2_A__7REX_A",
+   "n_correspondence_disagreements": "2",
+   "n_coverage_differences": "1",
+   "seed_elements": "unlabelled",
+   "eligible_for_structural_adjudication": "yes",
+   "classification": "3' terminal 32-34: insufficient_evidence (low)",
+   "interpretation": "v4 3' terminal 32-34: for seed: A34 seed partner 5.1 vs 7.9 A; for STAR3D: A33 STAR3D partner 1.9 vs 4.3 A; U32 STAR3D-only (1.3 A); confounds: 3' end of crystallised constructs; Ca2+ and crystal-symmetry contacts at 3FU2 33-34; 1 canonical eligible preserved by neither"
+  },
+  {
+   "inspection_rank": "5",
+   "region_id": "RF00522__3FU2_A__6VUI_A__r32-34",
+   "pair_id": "RF00522__3FU2_A__6VUI_A",
+   "n_correspondence_disagreements": "1",
+   "n_coverage_differences": "2",
+   "seed_elements": "unlabelled",
+   "eligible_for_structural_adjudication": "yes",
+   "classification": "3' terminal 32-34: insufficient_evidence (low)",
+   "interpretation": "v4 3' terminal 32-34: for seed: none decisive (A34 seed partner 11.4 A); for STAR3D: A33: C1' favours STAR3D (4.5 vs 5.7 A) but base centroid favours the seed (4.0 vs 4.9 A); U32 STAR3D-only; confounds: terminal; STAR3D forward and reverse disagree here (1 of 3 positions identical) -> direction-unstable STAR3D output; Mn2+/Ca2+ and symmetry contacts || previous: [unresolved (terminal 3' residues)] Near 3' terminus; 1-residue register differences; not interpreted."
+  },
+  {
+   "inspection_rank": "6",
+   "region_id": "RF00522__3FU2_A__6VUI_A__r23-24",
+   "pair_id": "RF00522__3FU2_A__6VUI_A",
+   "n_correspondence_disagreements": "2",
+   "n_coverage_differences": "0",
+   "seed_elements": "unlabelled",
+   "eligible_for_structural_adjudication": "yes",
+   "classification": "3FU2 23-24 (J/L3): insufficient_evidence (low)",
+   "interpretation": "v4 3FU2 23-24 (J/L3): for seed: U24 seed partner 4.9 vs 6.2 A (C1'); A23 base centroid favours seed; for STAR3D: A23 C1' 4.0 vs 4.9 A; confounds: 3FU2 A23 contacts another chain in the asymmetric unit and symmetry mates; mixed C1' vs base-centroid evidence; 2 eligible stacks preserved by neither"
+  },
+  {
+   "inspection_rank": "7",
+   "region_id": "RF00522__3FU2_A__6VUI_A__r7-8",
+   "pair_id": "RF00522__3FU2_A__6VUI_A",
+   "n_correspondence_disagreements": "1",
+   "n_coverage_differences": "1",
+   "seed_elements": "P1",
+   "eligible_for_structural_adjudication": "yes",
+   "classification": "3FU2 7-8 (L1 start): insufficient_evidence (low)",
+   "interpretation": "v4 3FU2 7-8 (L1 start): for seed: none; for STAR3D: C8 STAR3D partner 6.9 vs 8.7 A (both far); U7 STAR3D-only 3.0 A; confounds: both partners poorly superposed; 3FU2 C8 forms a non-canonical C-A WWc pair with A34 in STAR3D's raw structure (removed before stacks)"
+  },
+  {
+   "inspection_rank": "8",
+   "region_id": "RF00522__3FU2_A__6VUI_A__r15-15",
+   "pair_id": "RF00522__3FU2_A__6VUI_A",
+   "n_correspondence_disagreements": "0",
+   "n_coverage_differences": "1",
+   "seed_elements": "P1",
+   "eligible_for_structural_adjudication": "yes",
+   "classification": "3FU2 C15: construct_or_coordinate_confound (moderate)",
+   "interpretation": "v4 3FU2 C15: for seed: seed leaves C15 unaligned (gap); for STAR3D: STAR3D maps C15 to 6VUI 13 (5.1 A); confounds: 3FU2 13-14 unobserved; STAR3D treats 12 and 15 as neighbours, so its local loop scoring here spans a coordinate gap"
+  }
+ ]
+}

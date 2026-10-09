@@ -1,0 +1,17 @@
+item	previous_dataset	natural_sequence_dataset	reason_for_change
+Families with an analysed pair	6 (RF00005, RF00059, RF00162, RF00174, RF00442, RF00522)	1 (RF00522)	all representatives of RF00059, RF00162, RF00174, RF00442 are confirmed engineered; RF00005 has no accepted pair (5CCB carries an artificial 5' G)
+Structures (RNA chains) analysed	13	3	only verified-natural representatives in accepted pairs remain active
+Verified-natural representatives (any pair status)	not assessed under this policy	4	3FU2, 6VUI, 7REX (accepted, paired) and 7EQJ (accepted representative, no eligible partner)
+Confirmed-engineered representatives	kept with masks (exploratory tiers)	9	masking no longer makes a construct eligible; terminal artificial nucleotides count as engineering
+Unresolved / pending representatives	n/a	0	none
+Distinct analysed sequences	13	3	as structures
+Pairs	8	3	a pair is accepted only if both representatives are accepted
+Pairs labelled primary	4	3	RF00174 4GXY-6VMY (previously primary) is excluded: both constructs carry artificial terminal nucleotides
+Primary STAR3D outputs used	8	3	the 3 preQ1 outputs are reused unchanged (inputs byte-identical); no STAR3D run was needed
+Candidate regions	21	8	regions of excluded pairs archived
+Source-side interactions evaluated (query side, all classes)	902	146	only accepted pairs
+7REX P1 candidate	supported candidate (moderate)	supported candidate (moderate) - unchanged	all three supporting representatives (3FU2, 6VUI, 7REX) pass the natural-sequence policy
+Agreement control	TPP 2GDI-3D2G (71 same / 1 different)	3FU2-6VUI (24 same / 4 different) as the closest available	TPP pair excluded (both constructs engineered)
+Coverage-limitation examples	cobalamin, SAM-I	none in the active dataset	excluded pairs
+Pairing-rule sensitivity (guanidine-I 78->25 nt)	reported as a limitation	archived historical observation	guanidine-I excluded; sensitivity analyses archived
+tRNA exploratory agreement (59/64)	reported	withdrawn from active results	5CCB excluded (artificial 5' G)

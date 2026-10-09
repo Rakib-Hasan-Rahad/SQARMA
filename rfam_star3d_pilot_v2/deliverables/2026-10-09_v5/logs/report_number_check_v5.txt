@@ -1,0 +1,19 @@
+OK   3 accepted pairs
+OK   pair table RF00522__3FU2_A__6VUI_A
+OK   pair table RF00522__3FU2_A__7REX_A
+OK   pair table RF00522__6VUI_A__7REX_A
+OK   interaction RF00522__3FU2_A__6VUI_A
+OK   interaction RF00522__3FU2_A__7REX_A
+OK   interaction RF00522__6VUI_A__7REX_A
+OK   13 chains; 4 natural; 9 engineered; 0 unresolved
+OK   before/after pairs 8->3
+OK   before/after structures 13->3
+OK   region verdicts 2/1/2/4 and 8 regions
+OK   single-run: 0 differing values
+OK   mutation 18/18
+OK   81 tests
+OK   primary outputs all selected forward
+OK   site KPIs
+OK   site pair rows == table
+OK   no excluded pair in site results
+18 OK, 0 FAIL

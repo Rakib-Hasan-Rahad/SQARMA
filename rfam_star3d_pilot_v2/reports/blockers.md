@@ -27,3 +27,11 @@
 | 15 | Professor meeting transcript not on disk | requirements taken from the 8 Oct plan's transcript-derived list | `deliverables/2026-10-09_v4/tables/requirements_matrix.tsv` labels the source type | researcher to confirm |
 | 16 | Wrong stage order in the first prospective run (reference before prepare_inputs) | reference tables had 0 assessable pairs in attempt 1 | downstream stages re-run in the documented order; log kept | none (resolved) |
 | 17 | `rm -rf` blocked by the agent safety check during the determinism test | none (unique directories used instead) | — | none |
+
+## v5 additions (2026-10-09)
+| # | Item | Effect | Attempted remedy | Needed |
+|---|---|---|---|---|
+| 18 | Natural-sequence policy excludes 9 of 13 analysed chains | 1 family / 3 pairs remain | documented per chain in `review/natural_sequence_eligibility.tsv` | scope decision for expansion |
+| 19 | 5CCB paper full text not retrievable (Europe PMC HTTP 500) | 5′ G purpose undocumented; exclusion rests on sequence evidence (extra 5′ G vs the natural mature tRNA) | — | library access (optional; the decision does not depend on it) |
+| 20 | 3FU2 preparation method not found in the accessible paper text | sequence verified natural; preparation statement missing | — | full paper (optional) |
+| 21 | Word did not respond to automated .docx-to-PDF export (v4) | .docx checked structurally only | — | open in Word manually |

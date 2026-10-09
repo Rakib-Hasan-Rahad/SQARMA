@@ -1,44 +1,4 @@
 pair_id	source_side	source_side_meaning	interaction_class	comparison	source_interactions	eligible_unmasked	interchain_lines_excluded	rfam_coverage_all	rfam_preserved_all	rfam_preserved_eligible	star3d_coverage_all	star3d_preserved_all	star3d_preserved_eligible
-RF00059__2GDI_X__3D2G_A	query	query RNA interactions via the forward mapping	all	rfam_vs_star3d	127	68	8	119	91	57	114	94	58
-RF00059__2GDI_X__3D2G_A	query	query RNA interactions via the forward mapping	canonical	rfam_vs_star3d	21	7	8	21	16	7	19	17	7
-RF00059__2GDI_X__3D2G_A	query	query RNA interactions via the forward mapping	wobble	rfam_vs_star3d	1	0	8	1	1	0	1	1	0
-RF00059__2GDI_X__3D2G_A	query	query RNA interactions via the forward mapping	noncanonical	rfam_vs_star3d	13	6	8	12	10	5	12	10	5
-RF00059__2GDI_X__3D2G_A	query	query RNA interactions via the forward mapping	stack	rfam_vs_star3d	92	55	8	85	64	45	82	66	46
-RF00059__2GDI_X__3D2G_A	target	target RNA interactions via the inverted forward mapping (no additional STAR3D run)	all	rfam_vs_star3d	121	68	0	117	91	57	120	94	57
-RF00059__2GDI_X__3D2G_A	target	target RNA interactions via the inverted forward mapping (no additional STAR3D run)	canonical	rfam_vs_star3d	19	7	0	18	16	7	19	17	7
-RF00059__2GDI_X__3D2G_A	target	target RNA interactions via the inverted forward mapping (no additional STAR3D run)	wobble	rfam_vs_star3d	1	0	0	1	1	0	1	1	0
-RF00059__2GDI_X__3D2G_A	target	target RNA interactions via the inverted forward mapping (no additional STAR3D run)	noncanonical	rfam_vs_star3d	15	8	0	15	10	5	15	10	5
-RF00059__2GDI_X__3D2G_A	target	target RNA interactions via the inverted forward mapping (no additional STAR3D run)	stack	rfam_vs_star3d	86	53	0	83	64	45	85	66	45
-RF00162__2GIS_A__4KQY_A	query	query RNA interactions via the forward mapping	all	rfam_vs_star3d	153	26	0	142	111	21	35	24	19
-RF00162__2GIS_A__4KQY_A	query	query RNA interactions via the forward mapping	canonical	rfam_vs_star3d	28	5	0	27	25	5	6	5	4
-RF00162__2GIS_A__4KQY_A	query	query RNA interactions via the forward mapping	wobble	rfam_vs_star3d	2	0	0	2	1	0	0	0	0
-RF00162__2GIS_A__4KQY_A	query	query RNA interactions via the forward mapping	noncanonical	rfam_vs_star3d	10	1	0	9	6	0	2	0	0
-RF00162__2GIS_A__4KQY_A	query	query RNA interactions via the forward mapping	stack	rfam_vs_star3d	113	20	0	104	79	16	27	19	15
-RF00162__2GIS_A__4KQY_A	target	target RNA interactions via the inverted forward mapping (no additional STAR3D run)	all	rfam_vs_star3d	180	5	0	128	111	4	32	24	3
-RF00162__2GIS_A__4KQY_A	target	target RNA interactions via the inverted forward mapping (no additional STAR3D run)	canonical	rfam_vs_star3d	37	0	0	27	27	0	7	5	0
-RF00162__2GIS_A__4KQY_A	target	target RNA interactions via the inverted forward mapping (no additional STAR3D run)	wobble	rfam_vs_star3d	0	0	0	0	0	0	0	0	0
-RF00162__2GIS_A__4KQY_A	target	target RNA interactions via the inverted forward mapping (no additional STAR3D run)	noncanonical	rfam_vs_star3d	7	1	0	7	5	0	1	0	0
-RF00162__2GIS_A__4KQY_A	target	target RNA interactions via the inverted forward mapping (no additional STAR3D run)	stack	rfam_vs_star3d	136	4	0	94	79	4	24	19	3
-RF00174__4GXY_A__6VMY_A	query	query RNA interactions via the forward mapping	all	rfam_vs_star3d	245	1	0	154	107	1	38	26	1
-RF00174__4GXY_A__6VMY_A	query	query RNA interactions via the forward mapping	canonical	rfam_vs_star3d	41	0	0	27	20	0	8	7	0
-RF00174__4GXY_A__6VMY_A	query	query RNA interactions via the forward mapping	wobble	rfam_vs_star3d	4	0	0	2	1	0	1	1	0
-RF00174__4GXY_A__6VMY_A	query	query RNA interactions via the forward mapping	noncanonical	rfam_vs_star3d	12	0	0	7	4	0	1	0	0
-RF00174__4GXY_A__6VMY_A	query	query RNA interactions via the forward mapping	stack	rfam_vs_star3d	188	1	0	118	82	1	28	18	1
-RF00174__4GXY_A__6VMY_A	target	target RNA interactions via the inverted forward mapping (no additional STAR3D run)	all	rfam_vs_star3d	191	24	0	151	107	21	33	26	19
-RF00174__4GXY_A__6VMY_A	target	target RNA interactions via the inverted forward mapping (no additional STAR3D run)	canonical	rfam_vs_star3d	36	5	0	30	19	3	8	8	5
-RF00174__4GXY_A__6VMY_A	target	target RNA interactions via the inverted forward mapping (no additional STAR3D run)	wobble	rfam_vs_star3d	4	0	0	2	2	0	0	0	0
-RF00174__4GXY_A__6VMY_A	target	target RNA interactions via the inverted forward mapping (no additional STAR3D run)	noncanonical	rfam_vs_star3d	6	1	0	6	4	1	1	0	0
-RF00174__4GXY_A__6VMY_A	target	target RNA interactions via the inverted forward mapping (no additional STAR3D run)	stack	rfam_vs_star3d	145	18	0	113	82	17	24	18	14
-RF00442__5U3G_B__7MLW_F	query	query RNA interactions via the forward mapping	all	rfam_vs_star3d	125	103	0	123	94	84	113	87	81
-RF00442__5U3G_B__7MLW_F	query	query RNA interactions via the forward mapping	canonical	rfam_vs_star3d	22	19	0	22	17	17	20	15	15
-RF00442__5U3G_B__7MLW_F	query	query RNA interactions via the forward mapping	wobble	rfam_vs_star3d	2	1	0	2	1	1	2	0	0
-RF00442__5U3G_B__7MLW_F	query	query RNA interactions via the forward mapping	noncanonical	rfam_vs_star3d	9	8	0	8	6	6	8	6	6
-RF00442__5U3G_B__7MLW_F	query	query RNA interactions via the forward mapping	stack	rfam_vs_star3d	92	75	0	91	70	60	83	66	60
-RF00442__5U3G_B__7MLW_F	target	target RNA interactions via the inverted forward mapping (no additional STAR3D run)	all	rfam_vs_star3d	200	105	0	125	94	83	126	87	79
-RF00442__5U3G_B__7MLW_F	target	target RNA interactions via the inverted forward mapping (no additional STAR3D run)	canonical	rfam_vs_star3d	33	16	0	18	16	14	17	14	14
-RF00442__5U3G_B__7MLW_F	target	target RNA interactions via the inverted forward mapping (no additional STAR3D run)	wobble	rfam_vs_star3d	3	2	0	2	2	2	2	1	1
-RF00442__5U3G_B__7MLW_F	target	target RNA interactions via the inverted forward mapping (no additional STAR3D run)	noncanonical	rfam_vs_star3d	13	9	0	11	6	6	12	6	6
-RF00442__5U3G_B__7MLW_F	target	target RNA interactions via the inverted forward mapping (no additional STAR3D run)	stack	rfam_vs_star3d	151	78	0	94	70	61	95	66	58
 RF00522__3FU2_A__6VUI_A	query	query RNA interactions via the forward mapping	all	rfam_vs_star3d	49	40	2	41	31	31	48	34	33
 RF00522__3FU2_A__6VUI_A	query	query RNA interactions via the forward mapping	canonical	rfam_vs_star3d	8	7	2	7	6	6	8	7	7
 RF00522__3FU2_A__6VUI_A	query	query RNA interactions via the forward mapping	wobble	rfam_vs_star3d	0	0	2	0	0	0	0	0	0

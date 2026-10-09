@@ -1,0 +1,237 @@
+{
+ "source": "results/family_inventory.tsv",
+ "unit": "Rfam family",
+ "counts": {
+  "not_eligible_by_screen": 135,
+  "reviewed_v5": 5,
+  "reviewed_v3": 21,
+  "reviewed_v1": 5,
+  "accepted_natural_pairs": 1
+ },
+ "rows": [
+  {
+   "rfam_acc": "RF00005",
+   "rfam_id": "tRNA",
+   "screen_status": "excluded",
+   "current_status_v5_natural_policy": "reviewed_v5: 1 verified-natural accepted representative(s), no accepted pair",
+   "historical_review_decision_v1_1": "not reviewed"
+  },
+  {
+   "rfam_acc": "RF00008",
+   "rfam_id": "Hammerhead_3",
+   "screen_status": "pass",
+   "current_status_v5_natural_policy": "reviewed_v3: no accepted natural pair (screened under earlier criteria; none passed; not re-reviewed in v5)",
+   "historical_review_decision_v1_1": "not reviewed"
+  },
+  {
+   "rfam_acc": "RF00015",
+   "rfam_id": "U4",
+   "screen_status": "pass",
+   "current_status_v5_natural_policy": "reviewed_v1: not accepted (excluded or pending earlier; not re-reviewed under the v5 natural policy)",
+   "historical_review_decision_v1_1": "excluded_from_primary"
+  },
+  {
+   "rfam_acc": "RF00032",
+   "rfam_id": "Histone3",
+   "screen_status": "pass",
+   "current_status_v5_natural_policy": "reviewed_v1: not accepted (excluded or pending earlier; not re-reviewed under the v5 natural policy)",
+   "historical_review_decision_v1_1": "excluded_from_primary"
+  },
+  {
+   "rfam_acc": "RF00044",
+   "rfam_id": "Phage_pRNA",
+   "screen_status": "pass",
+   "current_status_v5_natural_policy": "reviewed_v3: no accepted natural pair (screened under earlier criteria; none passed; not re-reviewed in v5)",
+   "historical_review_decision_v1_1": "not reviewed"
+  },
+  {
+   "rfam_acc": "RF00059",
+   "rfam_id": "TPP",
+   "screen_status": "pass",
+   "current_status_v5_natural_policy": "reviewed_v5: all analysed representatives excluded (confirmed engineered)",
+   "historical_review_decision_v1_1": "exploratory"
+  },
+  {
+   "rfam_acc": "RF00162",
+   "rfam_id": "SAM",
+   "screen_status": "pass",
+   "current_status_v5_natural_policy": "reviewed_v5: all analysed representatives excluded (confirmed engineered)",
+   "historical_review_decision_v1_1": "primary"
+  },
+  {
+   "rfam_acc": "RF00166",
+   "rfam_id": "PrrB_RsmZ",
+   "screen_status": "pass",
+   "current_status_v5_natural_policy": "reviewed_v3: no accepted natural pair (screened under earlier criteria; none passed; not re-reviewed in v5)",
+   "historical_review_decision_v1_1": "not reviewed"
+  },
+  {
+   "rfam_acc": "RF00174",
+   "rfam_id": "Cobalamin",
+   "screen_status": "pass",
+   "current_status_v5_natural_policy": "reviewed_v5: all analysed representatives excluded (confirmed engineered)",
+   "historical_review_decision_v1_1": "primary"
+  },
+  {
+   "rfam_acc": "RF00207",
+   "rfam_id": "K10_TLS",
+   "screen_status": "pass",
+   "current_status_v5_natural_policy": "reviewed_v3: no accepted natural pair (screened under earlier criteria; none passed; not re-reviewed in v5)",
+   "historical_review_decision_v1_1": "not reviewed"
+  },
+  {
+   "rfam_acc": "RF00233",
+   "rfam_id": "Tymo_tRNA-like",
+   "screen_status": "pass",
+   "current_status_v5_natural_policy": "reviewed_v3: no accepted natural pair (screened under earlier criteria; none passed; not re-reviewed in v5)",
+   "historical_review_decision_v1_1": "not reviewed"
+  },
+  {
+   "rfam_acc": "RF00254",
+   "rfam_id": "mir-16",
+   "screen_status": "pass",
+   "current_status_v5_natural_policy": "reviewed_v3: no accepted natural pair (screened under earlier criteria; none passed; not re-reviewed in v5)",
+   "historical_review_decision_v1_1": "not reviewed"
+  },
+  {
+   "rfam_acc": "RF00374",
+   "rfam_id": "Gammaretro_CES",
+   "screen_status": "pass",
+   "current_status_v5_natural_policy": "reviewed_v3: no accepted natural pair (screened under earlier criteria; none passed; not re-reviewed in v5)",
+   "historical_review_decision_v1_1": "not reviewed"
+  },
+  {
+   "rfam_acc": "RF00375",
+   "rfam_id": "HIV_PBS",
+   "screen_status": "pass",
+   "current_status_v5_natural_policy": "reviewed_v3: no accepted natural pair (screened under earlier criteria; none passed; not re-reviewed in v5)",
+   "historical_review_decision_v1_1": "not reviewed"
+  },
+  {
+   "rfam_acc": "RF00442",
+   "rfam_id": "Guanidine-I",
+   "screen_status": "pass",
+   "current_status_v5_natural_policy": "reviewed_v5: all analysed representatives excluded (confirmed engineered)",
+   "historical_review_decision_v1_1": "exploratory"
+  },
+  {
+   "rfam_acc": "RF00458",
+   "rfam_id": "IRES_Cripavirus",
+   "screen_status": "pass",
+   "current_status_v5_natural_policy": "reviewed_v1: not accepted (excluded or pending earlier; not re-reviewed under the v5 natural policy)",
+   "historical_review_decision_v1_1": "excluded_from_primary"
+  },
+  {
+   "rfam_acc": "RF00480",
+   "rfam_id": "HIV_FE",
+   "screen_status": "pass",
+   "current_status_v5_natural_policy": "reviewed_v3: no accepted natural pair (screened under earlier criteria; none passed; not re-reviewed in v5)",
+   "historical_review_decision_v1_1": "not reviewed"
+  },
+  {
+   "rfam_acc": "RF00507",
+   "rfam_id": "Corona_FSE",
+   "screen_status": "pass",
+   "current_status_v5_natural_policy": "reviewed_v3: no accepted natural pair (screened under earlier criteria; none passed; not re-reviewed in v5)",
+   "historical_review_decision_v1_1": "not reviewed"
+  },
+  {
+   "rfam_acc": "RF00522",
+   "rfam_id": "PreQ1",
+   "screen_status": "pass",
+   "current_status_v5_natural_policy": "accepted_natural_pairs:3",
+   "historical_review_decision_v1_1": "primary"
+  },
+  {
+   "rfam_acc": "RF00622",
+   "rfam_id": "CPEB3_ribozyme",
+   "screen_status": "pass",
+   "current_status_v5_natural_policy": "reviewed_v3: no accepted natural pair (screened under earlier criteria; none passed; not re-reviewed in v5)",
+   "historical_review_decision_v1_1": "not reviewed"
+  },
+  {
+   "rfam_acc": "RF01689",
+   "rfam_id": "AdoCbl-II",
+   "screen_status": "pass",
+   "current_status_v5_natural_policy": "reviewed_v3: no accepted natural pair (screened under earlier criteria; none passed; not re-reviewed in v5)",
+   "historical_review_decision_v1_1": "not reviewed"
+  },
+  {
+   "rfam_acc": "RF01725",
+   "rfam_id": "SAM-I-IV",
+   "screen_status": "pass",
+   "current_status_v5_natural_policy": "reviewed_v3: no accepted natural pair (screened under earlier criteria; none passed; not re-reviewed in v5)",
+   "historical_review_decision_v1_1": "not reviewed"
+  },
+  {
+   "rfam_acc": "RF01734",
+   "rfam_id": "Fluoride",
+   "screen_status": "pass",
+   "current_status_v5_natural_policy": "reviewed_v3: no accepted natural pair (screened under earlier criteria; none passed; not re-reviewed in v5)",
+   "historical_review_decision_v1_1": "not reviewed"
+  },
+  {
+   "rfam_acc": "RF01750",
+   "rfam_id": "ZMP-ZTP",
+   "screen_status": "pass",
+   "current_status_v5_natural_policy": "reviewed_v3: no accepted natural pair (screened under earlier criteria; none passed; not re-reviewed in v5)",
+   "historical_review_decision_v1_1": "not reviewed"
+  },
+  {
+   "rfam_acc": "RF01763",
+   "rfam_id": "Guanidine-III",
+   "screen_status": "pass",
+   "current_status_v5_natural_policy": "reviewed_v3: no accepted natural pair (screened under earlier criteria; none passed; not re-reviewed in v5)",
+   "historical_review_decision_v1_1": "not reviewed"
+  },
+  {
+   "rfam_acc": "RF01831",
+   "rfam_id": "THF",
+   "screen_status": "pass",
+   "current_status_v5_natural_policy": "reviewed_v3: no accepted natural pair (screened under earlier criteria; none passed; not re-reviewed in v5)",
+   "historical_review_decision_v1_1": "not reviewed"
+  },
+  {
+   "rfam_acc": "RF02340",
+   "rfam_id": "DENV_SLA",
+   "screen_status": "pass",
+   "current_status_v5_natural_policy": "reviewed_v1: not accepted (excluded or pending earlier; not re-reviewed under the v5 natural policy)",
+   "historical_review_decision_v1_1": "pending_blast"
+  },
+  {
+   "rfam_acc": "RF02678",
+   "rfam_id": "Hatchet",
+   "screen_status": "pass",
+   "current_status_v5_natural_policy": "reviewed_v3: no accepted natural pair (screened under earlier criteria; none passed; not re-reviewed in v5)",
+   "historical_review_decision_v1_1": "not reviewed"
+  },
+  {
+   "rfam_acc": "RF02679",
+   "rfam_id": "Pistol",
+   "screen_status": "pass",
+   "current_status_v5_natural_policy": "reviewed_v3: no accepted natural pair (screened under earlier criteria; none passed; not re-reviewed in v5)",
+   "historical_review_decision_v1_1": "not reviewed"
+  },
+  {
+   "rfam_acc": "RF02680",
+   "rfam_id": "PreQ1-III",
+   "screen_status": "pass",
+   "current_status_v5_natural_policy": "reviewed_v3: no accepted natural pair (screened under earlier criteria; none passed; not re-reviewed in v5)",
+   "historical_review_decision_v1_1": "not reviewed"
+  },
+  {
+   "rfam_acc": "RF03013",
+   "rfam_id": "nadA",
+   "screen_status": "pass",
+   "current_status_v5_natural_policy": "reviewed_v1: not accepted (excluded or pending earlier; not re-reviewed under the v5 natural policy)",
+   "historical_review_decision_v1_1": "excluded_from_primary"
+  },
+  {
+   "rfam_acc": "RF03167",
+   "rfam_id": "c-di-GMP-I-GGC",
+   "screen_status": "pass",
+   "current_status_v5_natural_policy": "reviewed_v3: no accepted natural pair (screened under earlier criteria; none passed; not re-reviewed in v5)",
+   "historical_review_decision_v1_1": "not reviewed"
+  }
+ ]
+}

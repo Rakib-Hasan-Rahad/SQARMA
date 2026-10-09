@@ -1,0 +1,122 @@
+{
+ "generated_utc": "2026-10-09T21:55:29Z",
+ "git_commit": "a2d41224f84a18779117c96c428f8f02bd9468c7",
+ "git_worktree": "dirty",
+ "generator": "scripts/export_site_data.py",
+ "provenance": {
+  "rfam_release": "15.1",
+  "seed_sha256": "41f014f4ab5628620935f089b1bb77987ebc162fda7c72bff368a32c9cccabac",
+  "star3d": "original STAR3D v1.2, defaults, one forward alignment per pair",
+  "star3d_sha256": "c9da44059d9cfc40828e798ebd4f6194c55415e17aaae7d90ac0f849ec2ed946",
+  "fr3d": "fr3d-python (BGSU-RNA) commit 288f98ccfd72dc6d88036c124605c05ce623b1b7",
+  "cohort": "2.0_natural"
+ },
+ "sources": [
+  {
+   "path": "review/natural_sequence_eligibility.tsv",
+   "sha256": "328601ae80b363f8dae10f1571f201e14c9c011478c57cd928087b371326b3e7",
+   "rows": 13
+  },
+  {
+   "path": "results/selected_pairs.tsv",
+   "sha256": "4248f1a956457c372a2d3c08ac6b35acfc5f330e59ffd98ea091b16098eeeaec",
+   "rows": 3
+  },
+  {
+   "path": "results/selected_representatives.tsv",
+   "sha256": "d140e82bd33816f5da541825d5bb1d933169403c0b8d37f35ea4bdbf965b6a15",
+   "rows": 3
+  },
+  {
+   "path": "results/pair_summary.tsv",
+   "sha256": "7cf3001345ccf8b6fd1d136df00e9283113d14eb30d8afca8619c1591afcc191",
+   "rows": 3
+  },
+  {
+   "path": "results/primary_star3d_outputs.tsv",
+   "sha256": "35af9ea9af2d415425c47862fb84968f99c85ff36e13e206c8005b277219125b",
+   "rows": 3
+  },
+  {
+   "path": "results/interaction_summary.tsv",
+   "sha256": "d050aca6f3b56c5093ae9d1fe7a6d43242b35edb52cd6a55fd869108694be74f",
+   "rows": 30
+  },
+  {
+   "path": "results/region_review.tsv",
+   "sha256": "cb0f5f6aefdec6217835e00ee92516bdfb0aed65ef620b720319abfedc77e053",
+   "rows": 8
+  },
+  {
+   "path": "results/family_inventory.tsv",
+   "sha256": "fc0130ba24f61a72d49030d7d5afdb18c7dc2f7fee8433768659df61177a1545",
+   "rows": 167
+  },
+  {
+   "path": "results/dataset_chains.tsv",
+   "sha256": "2a428044cf9db0d7905e5268a8477695931ab577bde2de632bf287e6ab85ab54",
+   "rows": 13
+  },
+  {
+   "path": "results/derived_alignment_views.tsv",
+   "sha256": "907099f1cfd5923fd4e969344d1ddb9b405f87095a0eb9dadeb337518b08110a",
+   "rows": 6
+  },
+  {
+   "path": "results/region_evidence/summary.tsv",
+   "sha256": "485bfbb4207c4ba799b4dc693291a4d518de380a7eb0b72e29be357fa5b45463",
+   "rows": 8
+  },
+  {
+   "path": "review/candidate_RF00522/adjustment_interaction_summary.tsv",
+   "sha256": "aff517c7d11b45b88bb7001250c1484ab85082afb8ef1018d7c8f50f9ebc9d2f",
+   "rows": 10
+  },
+  {
+   "path": "review/candidate_RF00522/residue_evidence_RF00522__6VUI_A__7REX_A.tsv",
+   "sha256": "1c41956e1bdc16e2645c45b7f3750deb9405c5bc155063001497ccf8be7627a0",
+   "rows": 33
+  },
+  {
+   "path": "review/candidate_RF00522/residue_evidence_RF00522__3FU2_A__7REX_A.tsv",
+   "sha256": "e94982c4eada634a73f85cbf58b8649d13f49a621b711fc67dac61577a70f7a3",
+   "rows": 34
+  },
+  {
+   "path": "deliverables/2026-10-09_v5/tables/before_after_natural_dataset.tsv",
+   "sha256": "053581594747162709d8b68ac45e97c306b9e06f52ff8ce7e3e586bd50e10e19",
+   "rows": 16
+  },
+  {
+   "path": "deliverables/2026-10-09_v5/tables/before_after_single_run.tsv",
+   "sha256": "29865b5ed3c818eb278d774dbef3033c99a726244944a806cba71593175d690a",
+   "rows": 12
+  },
+  {
+   "path": "deliverables/2026-10-09_v5/tables/mutation_check_v5.tsv",
+   "sha256": "c0323534b6409d32ce130baa0a74637791c9f7046cd741543000b1114007f6e5",
+   "rows": 18
+  },
+  {
+   "path": "deliverables/2026-10-09_v5/tables/test_results_v5.tsv",
+   "sha256": "dd11f342cf1a1db858aa3ca33a30a76111573b0d4058d35fb15c69e843d2e9fc",
+   "rows": 3
+  },
+  {
+   "path": "deliverables/2026-10-09_v4/tables/requirements_matrix.tsv",
+   "sha256": "7cabe302f6edc958b5c795dfc3bd691c6c1bc04d8d7eae7e53d04bc3f105a7a1",
+   "rows": 13
+  },
+  {
+   "path": "figures/fig_RF00522_6VUI_7REX_P1.png",
+   "sha256": "8bb26e514467858f67b5df7c943fc13043502cd6abd4ec4d65a448390989a3b2",
+   "rows": null
+  },
+  {
+   "path": "deliverables/2026-10-09/figures/fig_7REX_correspondence_6VUI.png",
+   "sha256": "8d80a529ee5479d12fa8a73b670d8d0342d7c653662c2c52557a88e75d573d6a",
+   "rows": null
+  }
+ ],
+ "unavailable": []
+}

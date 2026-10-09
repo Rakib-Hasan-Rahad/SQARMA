@@ -1,0 +1,32 @@
+{
+ "frozen_utc": "2026-10-09T21:46:03+00:00",
+ "cohort_version": "2.0_natural",
+ "policy": "only verified natural RNA sequences (researcher requirement 2026-10-09)",
+ "statement": "frozen from eligibility decisions only; alignment scores, RMSD and interaction preservation were not consulted",
+ "accepted_pairs": [
+  "RF00522__3FU2_A__6VUI_A",
+  "RF00522__3FU2_A__7REX_A",
+  "RF00522__6VUI_A__7REX_A"
+ ],
+ "accepted_representatives": [
+  "RF00522__3FU2_A",
+  "RF00522__6VUI_A",
+  "RF00522__7REX_A"
+ ],
+ "excluded_or_pending": [
+  "2GDI_X",
+  "2GIS_A",
+  "3D2G_A",
+  "4GXY_A",
+  "4KQY_A",
+  "5CCB_N",
+  "5U3G_B",
+  "6VMY_A",
+  "7MLW_F"
+ ],
+ "files": {
+  "results/selected_representatives.tsv": "d140e82bd33816f5da541825d5bb1d933169403c0b8d37f35ea4bdbf965b6a15",
+  "results/selected_pairs.tsv": "4248f1a956457c372a2d3c08ac6b35acfc5f330e59ffd98ea091b16098eeeaec",
+  "review/natural_sequence_eligibility.tsv": "328601ae80b363f8dae10f1571f201e14c9c011478c57cd928087b371326b3e7"
+ }
+}

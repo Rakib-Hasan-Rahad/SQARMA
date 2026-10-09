@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rfam vs STAR3D Pilot</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-head">
+  <div class="wrap">
+    <p class="eyebrow">SQARMA pilot &middot; v5 (natural-sequence dataset, single-run policy) &middot; prepared by an AI research agent; not reviewed by a human</p>
+    <h1>Do Rfam seed alignments match 3D structure correspondences?</h1>
+    <nav aria-label="Sections">
+      <a href="#overview">Overview</a><a href="#dataset">Dataset</a><a href="#results">Results</a>
+      <a href="#case">7REX case</a><a href="#validation">Validation</a><a href="#downloads">Downloads</a><a href="#glossary">Glossary</a>
+    </nav>
+  </div>
+</header>
+<main class="wrap">
+<p id="load-error" class="notice warn" hidden></p>
+
+<section id="overview">
+  <h2>1. Overview</h2>
+  <div class="grid2">
+    <div>
+      <h3>Research question</h3>
+      <p>For distinct homologous RNA sequences with experimental structures, where do the correspondences in the ordinary
+        Rfam <dfn>seed alignment</dfn> differ from those of the structural aligner <dfn>original STAR3D</dfn>, and what
+        evidence explains the differences? Neither method is treated as ground truth.</p>
+      <h3>Method in one sentence</h3>
+      <p class="notice">For each selected RNA pair, we use one forward alignment from original STAR3D v1.2 with default
+        parameters, following the package&rsquo;s preprocessing procedure.</p>
+      <h3>Dataset policy</h3>
+      <p class="notice">The active analysis includes only experimental structures of verified natural RNA sequences.
+        Confirmed engineered constructs and unresolved cases are excluded from the accepted cohort.</p>
+    </div>
+    <div>
+      <h3>Headline</h3>
+      <p>Under the natural-sequence policy, only the preQ1-I riboswitch family (RF00522) has accepted pairs (counts below).
+        In its row for PDB 7REX, the 3&prime; strand of helix P1 appears shifted by one position in the seed. This is a
+        <strong>candidate for curator review</strong>, not a demonstrated error: both supporting comparisons share the
+        7REX row, and in loop L1 the seed is better supported than STAR3D. All other previously analysed pairs used at
+        least one engineered construct and are excluded; their records are kept as dataset-selection evidence.</p>
+      <div id="kpis" class="kpis" aria-live="polite"></div>
+    </div>
+  </div>
+</section>
+
+<section id="dataset">
+  <h2>2. Dataset</h2>
+  <h3>Every previously analysed RNA chain <small>(unit: PDB chain)</small></h3>
+  <div class="controls"><label>Show <select id="chain-filter"><option value="">all chains</option><option value="accepted">accepted only</option><option value="excluded">excluded only</option></select></label></div>
+  <div id="chains-table"></div>
+  <h3>What changed from the previous dataset</h3>
+  <div id="before-after"></div>
+  <h3>Family inventory: current status <small>(unit: Rfam family; historical v1 decisions shown for reference)</small></h3>
+  <div id="family-counts"></div>
+  <details><summary>Families reviewed at any stage</summary><div id="family-table"></div></details>
+</section>
+
+<section id="results">
+  <h2>3. Results <small>(accepted pairs only)</small></h2>
+  <p class="meta">Unit for correspondences: residue of the query row. &ldquo;Same&rdquo; and &ldquo;different&rdquo;
+    count positions where both methods give a partner; &ldquo;seed-only&rdquo; and &ldquo;STAR3D-only&rdquo; are coverage
+    differences, not disagreements.</p>
+  <div id="pair-cards" class="classgrid"></div>
+  <h3>Derived alignment views <span class="tag na">SQARMA visualisation, not STAR3D raw output</span></h3>
+  <div id="views"></div>
+  <h3>Candidate regions</h3>
+  <div id="regions-table"></div>
+</section>
+
+<section id="case">
+  <h2>4. Case study: RF00522 row for 7REX</h2>
+  <div class="grid2">
+    <figure id="case-figure"></figure>
+    <div>
+      <h3>Supporting evidence</h3>
+      <ul>
+        <li>After superposition on residues where both methods agree, STAR3D partners are closer than seed partners for every differing residue of the P1 3&prime; strand (region evidence below).</li>
+        <li>FR3D finds the STAR3D-register Watson&ndash;Crick pairs in 7REX; for the seed-register pairs no FR3D annotation is detected.</li>
+        <li>The 7REX authors describe P1 as a canonical A-form helix with a G5&ndash;C18 pair (the STAR3D register; PMC8752633).</li>
+        <li>The RNAs involved (3FU2, 6VUI, 7REX) are verified natural sequences under the v5 policy.</li>
+      </ul>
+      <h3>Counterevidence and caveats</h3>
+      <ul>
+        <li><strong>Loop L1:</strong> the seed is better supported there, including the pocket-ceiling residues described by the 7REX authors.</li>
+        <li>STAR3D uses base pairing to build its alignment, so interaction preservation is supporting, not independent, evidence.</li>
+        <li>Both comparisons share the 7REX row: one observation, not two.</li>
+        <li>A second preQ1 ligand in 7REX contacts L1 and residue 16 of the candidate strand.</li>
+      </ul>
+    </div>
+  </div>
+  <h3>Interaction preservation on the same eligible set <span class="tag exploratory">includes an exploratory adjusted row</span></h3>
+  <div id="cand-summary"></div>
+  <details><summary>Residue evidence 6VUI &rarr; 7REX</summary><div id="cand-6vui"></div></details>
+  <details><summary>Residue evidence 3FU2 &rarr; 7REX</summary><div id="cand-3fu2"></div></details>
+  <h3>Region evidence summary</h3>
+  <div id="region-evidence"></div>
+</section>
+
+<section id="validation">
+  <h2>5. Validation and limitations</h2>
+  <h3>The one STAR3D output used for each pair</h3>
+  <div id="primary-outputs"></div>
+  <h3>Tests</h3>
+  <div id="tests"></div>
+  <details><summary>Re-introduced defects (mutation check)</summary><div id="mutation"></div></details>
+  <h3>Single-run refactor: before/after summary</h3>
+  <div id="single-run"></div>
+  <h3>Professor requests</h3>
+  <div id="requirements"></div>
+  <h3>Limitations</h3>
+  <ul>
+    <li>A single family has accepted pairs, and those pairs share RNAs, so they are not independent.</li>
+    <li>For these families the ordinary Rfam seed equals the 3D-curated alignment (identical records), so this is not a sequence-only versus 3D comparison.</li>
+    <li>STAR3D ran under x86-64 emulation. Earlier sessions also ran reverse-direction and replicate alignments; they were not used to select or combine the primary mapping (archived; earlier observations of forward/reverse differences remain documented limitations).</li>
+    <li>Original STAR3D&rsquo;s base-pair selection is broader than its paper describes (documented in the v4 method audit, archived).</li>
+    <li>Region classifications are an AI agent&rsquo;s review, not a human&rsquo;s.</li>
+  </ul>
+</section>
+
+<section id="downloads">
+  <h2>6. Downloads and history</h2>
+  <div id="downloads-list"></div>
+  <p class="meta">Excluded pairs, earlier multi-run results, sensitivity analyses and the tRNA workspace are kept unchanged in
+    <code>archive/</code>, <code>expansion_v4/</code> and the dated deliverables folders; they are not part of the active results.</p>
+</section>
+
+<section id="glossary" class="glossary">
+  <h2>Glossary</h2>
+  <dl>
+    <dt>Seed alignment</dt><dd>Rfam&rsquo;s curated multiple sequence alignment for a family; residues in the same column correspond.</dd>
+    <dt>Correspondence</dt><dd>A claim that nucleotide i of one RNA plays the same role as nucleotide j of another.</dd>
+    <dt>STAR3D</dt><dd>A structural aligner that superimposes helical stacks of two 3D structures and aligns the loops between them.</dd>
+    <dt>FR3D, cWW, stacking</dt><dd>FR3D annotates base pairs (cWW = canonical cis Watson&ndash;Crick) and base stacking in a structure.</dd>
+    <dt>Verified natural</dt><dd>The analysed construct reproduces a documented natural RNA sequence (synthesis or transcription allowed); engineered or extended constructs are excluded even if the changes were masked.</dd>
+    <dt>Denominator</dt><dd>The count an outcome is divided by; each table states its own.</dd>
+  </dl>
+</section>
+</main>
+<footer class="site-foot"><div class="wrap" id="provenance"></div></footer>
+<script src="app.js"></script>
+</body>
+</html>

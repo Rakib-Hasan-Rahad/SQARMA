@@ -19,7 +19,12 @@ Status: see `STATUS.md` (v2.1 audit-repair: `audit/AUDIT_LOG.md`; professor summ
 - STAR3D needs Linux (bundled i386/x86-64 binaries): `docker build --platform linux/amd64 -t star3d-runtime:1 -f scripts/Dockerfile.star3d scripts/`
   (on Apple silicon via colima x86_64/QEMU). Details: `reports/environment.md`.
 
-**Latest validated state: `deliverables/2026-10-09_v4/README.md` (v4).**
+**Current state (v5): `deliverables/2026-10-09_v5/README.md`.**
+For each selected RNA pair, we use one forward alignment from original STAR3D v1.2 with default parameters, following the package's preprocessing procedure.
+The active analysis includes only experimental structures of verified natural RNA sequences. Confirmed engineered constructs and unresolved cases are excluded from the accepted cohort.
+Active stage order: prepare_inputs → reference → star3d (only for new pairs) → select_primary_outputs → compare →
+interactions → regions → region_evidence. `natural_policy.py rebuild-cohort` derives the cohort from
+`review/natural_sequence_eligibility.tsv`.
 
 ## Rerun by stage (all stages are resumable; downloads are cached and never overwritten)
 ```

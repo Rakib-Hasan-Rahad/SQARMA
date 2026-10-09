@@ -1,0 +1,74 @@
+{
+ "downloads": [
+  {
+   "label": "Professor report (v5, current)",
+   "href": "downloads/professor_report_v5.md",
+   "description": "Current validated status"
+  },
+  {
+   "label": "Professor summary (current)",
+   "href": "downloads/professor_summary.md",
+   "description": "One page"
+  },
+  {
+   "label": "Natural-sequence eligibility decisions",
+   "href": "downloads/natural_sequence_eligibility.tsv",
+   "description": "All 13 previously analysed chains"
+  },
+  {
+   "label": "Dataset chains",
+   "href": "downloads/dataset_chains.md",
+   "description": "Readable chain-level table"
+  },
+  {
+   "label": "Before/after: natural-sequence dataset",
+   "href": "downloads/before_after_natural_dataset.tsv",
+   "description": "What changed and why"
+  },
+  {
+   "label": "Before/after: single-run refactor",
+   "href": "downloads/before_after_single_run.tsv",
+   "description": "Every compared value"
+  },
+  {
+   "label": "Primary STAR3D outputs",
+   "href": "downloads/primary_star3d_outputs.tsv",
+   "description": "The one selected original output per pair, with hashes"
+  },
+  {
+   "label": "Derived alignment views",
+   "href": "downloads/derived_alignment_views.md",
+   "description": "SQARMA visualisation, not STAR3D raw output"
+  },
+  {
+   "label": "Region review",
+   "href": "downloads/region_review.tsv",
+   "description": "Accepted-pair regions"
+  },
+  {
+   "label": "Main report (cumulative)",
+   "href": "downloads/report.md",
+   "description": "Dated sections; v5 at top"
+  },
+  {
+   "label": "Architecture guide (PDF)",
+   "href": "downloads/SQARMA_Project_Architecture_and_Pipeline_Guide.pdf",
+   "description": "Pipeline guide"
+  },
+  {
+   "label": "Architecture guide (Word)",
+   "href": "downloads/SQARMA_Project_Architecture_and_Pipeline_Guide.docx",
+   "description": "Pipeline guide"
+  },
+  {
+   "label": "Archive note: multi-run history",
+   "href": "downloads/README.md",
+   "description": "Historical runs, not used"
+  },
+  {
+   "label": "Manifest",
+   "href": "downloads/MANIFEST.tsv",
+   "description": "Outputs, inputs, software, checksums"
+  }
+ ]
+}

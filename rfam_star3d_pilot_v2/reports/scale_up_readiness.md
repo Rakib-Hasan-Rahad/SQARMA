@@ -1,5 +1,16 @@
 # Scale-up readiness
 
+## v5 (2026-10-09): CURRENT
+- **Scope.** Scaling now means finding pairs of *verified natural* constructs.
+- **Inventory status.** In the explicitly linked inventory only RF00522 qualifies.
+- **Evidence from tRNA.** Sequence-only links in non-curated families are the main untested route. The tRNA screen found
+  that natural tRNAs are usually either native (modified nucleotides, which original STAR3D reads as "N") or transcripts
+  with added nucleotides.
+- **Cost per pair.** Each new pair costs 2 preprocessing steps and 1 alignment (about 10 s emulated), plus manual
+  construct review, which is the bottleneck.
+- **Recommendation.** Do not scale without a declared scope decision.
+
+
 ## v4 decision (2026-10-09)
 **Not ready to scale under the current rules: the eligible experimental inventory is exhausted.**
 - All 31 explicitly linked, screen-passing families have been reviewed.
