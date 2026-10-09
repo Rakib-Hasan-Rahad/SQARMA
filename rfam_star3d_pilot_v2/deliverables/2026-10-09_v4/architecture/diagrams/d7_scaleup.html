@@ -1,0 +1,19 @@
+<!doctype html><html><head><meta charset="utf-8">
+<script src="https://cdn.jsdelivr.net/npm/mermaid@10.9.1/dist/mermaid.min.js"></script>
+<style>body{margin:0;background:#fff;font-family:Arial,Helvetica,sans-serif} .mermaid{display:inline-block;padding:12px}</style>
+</head><body><pre class="mermaid">flowchart TD
+  A[&quot;Proposed expansion&quot;] --&gt; B([&quot;Scientific need stated&lt;br/&gt;(which uncertainty?)&quot;])
+  B -- &quot;no&quot; --&gt; S[&quot;Do not expand&quot;]
+  B -- &quot;yes&quot; --&gt; C([&quot;Rules pre-registered&lt;br/&gt;and frozen?&quot;])
+  C -- &quot;no&quot; --&gt; S
+  C -- &quot;yes&quot; --&gt; D([&quot;Native or emulated host?&lt;br/&gt;crash rate acceptable?&quot;])
+  D --&gt; E([&quot;Eligible pairs found&lt;br/&gt;under unchanged rules?&quot;])
+  E -- &quot;none&quot; --&gt; R[&quot;Report the negative result;&lt;br/&gt;ask for a scope decision&quot;]
+  E -- &quot;some&quot; --&gt; F[&quot;Run in isolated workspace;&lt;br/&gt;gates per pair&quot;]
+  F --&gt; G([&quot;Gate failures?&quot;])
+  G -- &quot;systemic&quot; --&gt; Q[&quot;Quarantine and fix;&lt;br/&gt;do not interpret&quot;]
+  G -- &quot;none&quot; --&gt; H[&quot;Biological review&lt;br/&gt;(the bottleneck)&quot;]
+  H --&gt; I[&quot;Report separately from&lt;br/&gt;the development set&quot;]
+</pre>
+<script>mermaid.initialize({startOnLoad:true, theme:'neutral', flowchart:{useMaxWidth:false, htmlLabels:true, curve:'basis', nodeSpacing:30, rankSpacing:40},
+ themeVariables:{fontSize:'15px', fontFamily:'Arial, Helvetica, sans-serif'}});</script></body></html>

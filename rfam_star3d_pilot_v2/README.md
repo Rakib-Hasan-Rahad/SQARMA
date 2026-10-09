@@ -19,6 +19,8 @@ Status: see `STATUS.md` (v2.1 audit-repair: `audit/AUDIT_LOG.md`; professor summ
 - STAR3D needs Linux (bundled i386/x86-64 binaries): `docker build --platform linux/amd64 -t star3d-runtime:1 -f scripts/Dockerfile.star3d scripts/`
   (on Apple silicon via colima x86_64/QEMU). Details: `reports/environment.md`.
 
+**Latest validated state: `deliverables/2026-10-09_v4/README.md` (v4).**
+
 ## Rerun by stage (all stages are resumable; downloads are cached and never overwritten)
 ```
 .venv/bin/python scripts/inventory.py                      # Phase 1 (pins + verifies Rfam.seed.gz sha256)

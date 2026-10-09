@@ -1,0 +1,11 @@
+flowchart TD
+  A["Seed column<br/>original_column"] --> B["Ungapped row index<br/>row_index1"]
+  B --> C["Deposited position<br/>offset + row_index1"]
+  C --> D["mmCIF label_seq_id<br/>(pdbx_poly_seq_scheme)"]
+  D --> E["Author ID<br/>chain + auth_seq_id + ins_code"]
+  E --> F["STAR3D input residue<br/>star3d_index0 (file order)"]
+  F --> G["STAR3D output<br/>'A:16&lt;-&gt;A:18'"]
+  G --> E
+  E --> H["FR3D unit ID<br/>PDB|1|A|C|16"]
+  D -. "identity check<br/>(parent nucleotide)" .-> B
+  F -. "re-read file =<br/>crosswalk (hard check)" .-> E

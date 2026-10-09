@@ -1,0 +1,16 @@
+flowchart TD
+  A["Region of contiguous<br/>disagreement or coverage difference"] --> B(["Eligible?<br/>no masked / unobserved residue<br/>in span or either partner set"])
+  B -- "no" --> X["not_adjudicated_ineligible"]
+  B -- "yes" --> C(["Only one method aligns?"])
+  C -- "yes" --> CV["STAR3D_coverage_limitation<br/>(not a disagreement)"]
+  C -- "no" --> D["Collect evidence"]
+  D --> E1["Anchor-fit geometry:<br/>shared / flank-excluded / local;<br/>C1' and base centroid"]
+  D --> E2["FR3D interactions by class<br/>on one eligible set"]
+  D --> E3["Ligand, chain and<br/>crystal-symmetry contacts"]
+  D --> E4["Construct, missing atoms,<br/>coordinate gaps"]
+  D --> E5["Literature description,<br/>forward/reverse stability"]
+  E1 & E2 & E3 & E4 & E5 --> F(["Consistent across rules<br/>and measures?"])
+  F -- "favours STAR3D; confounds do not explain it" --> G["supported candidate<br/>(curator review)"]
+  F -- "favours seed" --> H["possible STAR3D issue"]
+  F -- "explained by context" --> I["structural variation /<br/>construct or coordinate confound"]
+  F -- "mixed or weak" --> J["insufficient evidence"]

@@ -1,0 +1,4 @@
+RF00442__5U3G_B__7MLW_F__S2__forward__try1 completed 78 2.44
+RF00442__5U3G_B__7MLW_F__S2__reverse__try1 completed 78 2.44
+{'pair_id': 'RF00442__5U3G_B__7MLW_F', 'tier': 'exploratory', 'direction': 'forward', 'status': 'completed', 'default_aligned': 78, 'S1_aligned': 78, 'identical_mapping': True, 'shared_with_default': 78, 'only_default': 0, 'only_S1': 0, 'default_same_as_rfam': 62, 'S1_same_as_rfam': 62, 'default_rmsd': '2.44', 'S1_rmsd': 2.44, 'S1_attempts': 1}
+{'pair_id': 'RF00442__5U3G_B__7MLW_F', 'tier': 'exploratory', 'direction': 'reverse', 'status': 'completed', 'default_aligned': 78, 'S1_aligned': 78, 'identical_mapping': True, 'shared_with_default': 78, 'only_default': 0, 'only_S1': 0, 'default_same_as_rfam': 62, 'S1_same_as_rfam': 62, 'default_rmsd': '2.44', 'S1_rmsd': 2.44, 'S1_attempts': 1}

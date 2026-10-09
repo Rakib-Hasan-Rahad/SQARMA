@@ -1,0 +1,17 @@
+flowchart TD
+  A["Pinned sources<br/>Rfam 15.1 seed, PDB mmCIF,<br/>STAR3D v1.2 tarball, FR3D commit"] --> B["Inventory<br/>families with PDB links"]
+  B --> C["Screen<br/>≥2 distinct linked rows,<br/>≤300 nt, not rRNA"]
+  C --> D["Biological review<br/>source, construct, coverage"]
+  D --> E["Frozen cohort<br/>representatives + pairs"]
+  E --> F["Residue crosswalk<br/>+ STAR3D inputs"]
+  F --> G["Seed reference<br/>correspondences"]
+  F --> H["Original STAR3D<br/>both directions × 3"]
+  G --> I["Compare<br/>same / different / one-sided"]
+  H --> I
+  F --> J["FR3D annotation"]
+  I --> K["Interaction preservation<br/>per class, shared denominators"]
+  J --> K
+  I --> L["Regions + evidence<br/>geometry, contacts"]
+  K --> L
+  L --> M["Manual review<br/>classification + confidence"]
+  M --> N["Reports + website<br/>from the same tables"]

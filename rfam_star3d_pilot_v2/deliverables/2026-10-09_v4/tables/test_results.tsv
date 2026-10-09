@@ -1,0 +1,4 @@
+suite	passed	failed	command	log_path
+64 tests (tests/), v4	64	0	.venv/bin/python -m pytest -q tests	logs/pytest_final_v4.txt
+mutation check: 16 re-introduced defects	16 detected	0 undetected	.venv/bin/python deliverables/2026-10-09_v4/scripts/mutation_check.py	tables/mutation_check.tsv
+baseline at v4 start (34f8b63)	51	0	.venv/bin/python -m pytest -q tests	baseline/baseline_state.txt

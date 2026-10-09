@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Export project tables to JSON for the static presentation site.
 
-Writes deliverables/2026-10-09/site/data/*.json, copies figures into site/assets/ and
+Writes deliverables/2026-10-09_v4/site/data/*.json, copies figures into site/assets/ and
 download files into site/downloads/, and writes data/export_manifest.json with the
 sha256, row count and path of every source read, the generation UTC time and git commit.
 
@@ -24,7 +24,9 @@ from collections import Counter, OrderedDict
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
-DELIV = ROOT / "deliverables" / "2026-10-09"
+DELIV = ROOT / "deliverables" / "2026-10-09_v4"      # v4: live site; deliverables/2026-10-09/site is a v3 snapshot
+V3T = ROOT / "deliverables" / "2026-10-09" / "tables"  # v3 session tables still current (7REX, Survey B, screening)
+EXP = ROOT / "expansion_v4"                          # v4 prospective (non-curated family) workspace
 SITE = DELIV / "site"
 DATA = SITE / "data"
 ASSETS = SITE / "assets"
@@ -209,8 +211,11 @@ def main() -> int:
     ps = [r for r in read_tsv(ps_p) if not r["run_id"].startswith("attempt")]
     rc_p = R / "replicate_consistency.tsv"
     rc = read_tsv(rc_p, optional=True, role="replicates") or []
+    rc += read_tsv(EXP / "results" / "replicate_consistency.tsv", optional=True, role="prospective replicates") or []
     rc_idx = {(r["pair_id"], r["direction"]): r for r in rc}
     tier_by_pair = {p["pair_id"]: p["tier"] for p in pairs}
+    tier_by_pair.update({p["pair_id"]: p["tier"] for p in (read_tsv(EXP / "results" / "selected_pairs.tsv", optional=True,
+                                                                     role="prospective pairs") or [])})
 
     def summarise(rows, src):
         out = OrderedDict()
@@ -239,7 +244,7 @@ def main() -> int:
 
     write("pair_summary.json", summarise(ps, ps_p))
 
-    new_ps_p = TABLES / "new_pair_summary.tsv"
+    new_ps_p = EXP / "results" / "pair_summary.tsv"
     new_ps = read_tsv(new_ps_p, optional=True, role="prospective pairs")
     if new_ps is None:
         write("new_pair_summary.json", {"available": False, "source": rel(new_ps_p), "rows": []})
@@ -250,10 +255,12 @@ def main() -> int:
 
     # ---------------------------------------------------------------- interactions / regions
     is_p = R / "interaction_summary.tsv"
-    write("interactions.json", dict(table_payload(read_tsv(is_p), is_p),
+    is_rows = read_tsv(is_p) + (read_tsv(EXP / "results" / "interaction_summary.tsv", optional=True,
+                                         role="prospective interactions") or [])
+    write("interactions.json", dict(table_payload(is_rows, is_p),
                                     unit="FR3D-annotated intrachain interaction of the source structure"))
     rr_p = R / "region_review.tsv"
-    rr = read_tsv(rr_p)
+    rr = read_tsv(rr_p) + (read_tsv(EXP / "results" / "region_review.tsv", optional=True, role="prospective regions") or [])
     rr_cols = ["inspection_rank", "region_id", "pair_id", "tier", "n_correspondence_disagreements",
                "n_coverage_differences", "seed_elements", "eligible_for_structural_adjudication",
                "inspected", "classification"]
@@ -285,8 +292,8 @@ def main() -> int:
                        "n_anchors": n.group(1) if n else "unavailable",
                        "rule": rule.group(1) if rule else "unavailable",
                        "columns": list(rows[0].keys()) if rows else [], "rows": rows or []})
-    corr_p = TABLES / "candidate_7REX_correspondence.tsv"
-    cnt_p = TABLES / "candidate_7REX_counts.tsv"
+    corr_p = V3T / "candidate_7REX_correspondence.tsv"
+    cnt_p = V3T / "candidate_7REX_counts.tsv"
     seven = [r for r in rr if "7REX" in r["pair_id"] and r["inspected"].startswith("inspected")]
     write("candidate_7rex.json", {
         "adjustment_summary": table_payload(adj, adj_p),
@@ -300,16 +307,16 @@ def main() -> int:
 
     # ---------------------------------------------------------------- session tables (optional)
     opt = {
-        "candidate_screening": [TABLES / "candidate_screening.tsv",
+        "candidate_screening": [V3T / "candidate_screening.tsv",
                                 ROOT / "review" / "v3_screening" / "candidate_screening.tsv"],
-        "requirements_status": [TABLES / "requirements_status.tsv"],
+        "requirements_status": [TABLES / "requirements_matrix.tsv"],
         "test_results": [TABLES / "test_results.tsv"],
-        "validation_checks": [TABLES / "validation_checks.tsv"],
+        "validation_checks": [TABLES / "validation_gates.tsv"],
         "results_status": [TABLES / "results_status.tsv"],
-        "survey_b": [TABLES / "survey_b_summary.tsv"],
-        "rf00522_rows": [TABLES / "RF00522_P1_register_all_rows.tsv"],
-        "fresh_repro_other4": [TABLES / "fresh_repro_other4.tsv"],
-        "method_differences": [TABLES / "candidate_7REX_method_differences.tsv"],
+        "survey_b": [V3T / "survey_b_summary.tsv"],
+        "rf00522_rows": [V3T / "RF00522_P1_register_all_rows.tsv"],
+        "fresh_repro_other4": [V3T / "fresh_repro_other4.tsv"],
+        "method_differences": [V3T / "candidate_7REX_method_differences.tsv"],
     }
     for name, cands in opt.items():
         found = next((c for c in cands if c.exists()), None)
@@ -320,10 +327,43 @@ def main() -> int:
         else:
             write(f"{name}.json", table_payload(read_tsv(found, role=name), found))
 
+    # ---------------------------------------------------------------- v4 tables (generic, per section)
+    v4 = [
+        ("validation", "Repairs re-checked by re-introducing each defect (mutation test)", TABLES / "mutation_check.tsv",
+         "Each historical defect was re-inserted into a scratch copy of the code; DETECTED = its regression test failed."),
+        ("validation", "Conclusions changed, refined or withdrawn in v4", TABLES / "conclusions_changed.tsv", ""),
+        ("method", "How original STAR3D selects base pairs for its stacks (per RNA)",
+         DELIV / "star3d_sensitivity" / "preproc_summary.tsv",
+         "STAR3D labels any cis W-edge MC-Annotate pair 'WWc' (incl. non-canonical identities); one residue can keep "
+         "only the last-written partner (overwrite)."),
+        ("method", "Sensitivity S1: STAR3D with the paper's pairing rule (NOT the primary method)",
+         R / "sensitivity" / "S1_vs_default.tsv", "Columns named S1_* are the sensitivity run; default = original STAR3D."),
+        ("method", "Sensitivity S2: only the overwrite corrected (7MLW residue 16; NOT the primary method)",
+         R / "sensitivity" / "S2_vs_default.tsv", "Columns named S1_* here hold the S2 values (shared comparison code)."),
+        ("results", "Evidence summary for every region (anchor-fit geometry, interactions, contacts)",
+         R / "region_evidence" / "summary.tsv", "closer_* = number of different-partner residues whose seed or STAR3D "
+         "partner is closer after superposition on shared anchors (tie = within 0.5 A)."),
+        ("results", "Manual review of every region (v4, AI agent)", ROOT / "review" / "region_review_v4.tsv", ""),
+        ("dataset", "Rfam release history: RF00522 rows across releases 14.0-15.1", R / "rfam_history" / "rf00522_rows.tsv",
+         "p1_6vui_16_to_7rex = the 7REX residue the seed pairs with 6VUI C16."),
+        ("dataset", "Curated vs ordinary seed records in every release that ships a curated file",
+         R / "rfam_history" / "curated_vs_ordinary.tsv", ""),
+        ("dataset", "Prospective expansion: tRNA (RF00005) candidate structures screened",
+         ROOT / "review" / "v4_expansion" / "candidate_structures.tsv", "Pre-registered in review/v4_expansion/PREREGISTRATION.md."),
+        ("results", "Prospective tRNA pair: interaction preservation (FR3D)", EXP / "results" / "interaction_summary.tsv", ""),
+    ]
+    v4_out = []
+    for sec, title, p, note in v4:
+        rows = read_tsv(p, optional=True, role=title)
+        payload = table_payload(rows, p) if rows is not None else {"available": False, "source": rel(p), "rows": []}
+        v4_out.append({"section": sec, "title": title, "note": note, "table": payload})
+    write("v4_tables.json", {"tables": v4_out})
+
     # ---------------------------------------------------------------- figures
     figs = []
     fig_src = [ROOT / "figures" / "fig_RF00522_6VUI_7REX_P1.png"]
     fig_src += sorted((ROOT / "figures").glob("*anchorfit*.png"))
+    fig_src += sorted((V3T.parent / "figures").glob("*.png")) if (V3T.parent / "figures").exists() else []
     fig_src += sorted((DELIV / "figures").glob("*.png")) if (DELIV / "figures").exists() else []
     for p in fig_src:
         if not p.exists():
@@ -398,7 +438,7 @@ def main() -> int:
             href = f"downloads/{p.name}"
             if href not in seen:
                 seen.add(href)
-                downloads.append({"label": p.name, "description": "Session table (deliverables/2026-10-09/tables)",
+                downloads.append({"label": p.name, "description": "Session table (deliverables/2026-10-09_v4/tables)",
                                   "href": href, "status": "available", "source": rel(p)})
     write("downloads.json", {"downloads": downloads})
 

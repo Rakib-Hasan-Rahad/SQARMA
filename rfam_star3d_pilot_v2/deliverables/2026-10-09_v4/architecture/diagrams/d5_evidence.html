@@ -1,0 +1,22 @@
+<!doctype html><html><head><meta charset="utf-8">
+<script src="https://cdn.jsdelivr.net/npm/mermaid@10.9.1/dist/mermaid.min.js"></script>
+<style>body{margin:0;background:#fff;font-family:Arial,Helvetica,sans-serif} .mermaid{display:inline-block;padding:12px}</style>
+</head><body><pre class="mermaid">flowchart TD
+  A[&quot;Region of contiguous&lt;br/&gt;disagreement or coverage difference&quot;] --&gt; B([&quot;Eligible?&lt;br/&gt;no masked / unobserved residue&lt;br/&gt;in span or either partner set&quot;])
+  B -- &quot;no&quot; --&gt; X[&quot;not_adjudicated_ineligible&quot;]
+  B -- &quot;yes&quot; --&gt; C([&quot;Only one method aligns?&quot;])
+  C -- &quot;yes&quot; --&gt; CV[&quot;STAR3D_coverage_limitation&lt;br/&gt;(not a disagreement)&quot;]
+  C -- &quot;no&quot; --&gt; D[&quot;Collect evidence&quot;]
+  D --&gt; E1[&quot;Anchor-fit geometry:&lt;br/&gt;shared / flank-excluded / local;&lt;br/&gt;C1&#x27; and base centroid&quot;]
+  D --&gt; E2[&quot;FR3D interactions by class&lt;br/&gt;on one eligible set&quot;]
+  D --&gt; E3[&quot;Ligand, chain and&lt;br/&gt;crystal-symmetry contacts&quot;]
+  D --&gt; E4[&quot;Construct, missing atoms,&lt;br/&gt;coordinate gaps&quot;]
+  D --&gt; E5[&quot;Literature description,&lt;br/&gt;forward/reverse stability&quot;]
+  E1 &amp; E2 &amp; E3 &amp; E4 &amp; E5 --&gt; F([&quot;Consistent across rules&lt;br/&gt;and measures?&quot;])
+  F -- &quot;favours STAR3D; confounds do not explain it&quot; --&gt; G[&quot;supported candidate&lt;br/&gt;(curator review)&quot;]
+  F -- &quot;favours seed&quot; --&gt; H[&quot;possible STAR3D issue&quot;]
+  F -- &quot;explained by context&quot; --&gt; I[&quot;structural variation /&lt;br/&gt;construct or coordinate confound&quot;]
+  F -- &quot;mixed or weak&quot; --&gt; J[&quot;insufficient evidence&quot;]
+</pre>
+<script>mermaid.initialize({startOnLoad:true, theme:'neutral', flowchart:{useMaxWidth:false, htmlLabels:true, curve:'basis', nodeSpacing:30, rankSpacing:40},
+ themeVariables:{fontSize:'15px', fontFamily:'Arial, Helvetica, sans-serif'}});</script></body></html>

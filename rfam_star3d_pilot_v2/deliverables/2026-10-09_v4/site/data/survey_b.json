@@ -1,0 +1,61 @@
+{
+ "available": true,
+ "source": "deliverables/2026-10-09/tables/survey_b_summary.tsv",
+ "columns": [
+  "measure",
+  "value",
+  "source"
+ ],
+ "rows": [
+  {
+   "measure": "Families in ordinary seed (15.1)",
+   "value": "4227",
+   "source": "results/seed_collection_comparison/provenance.json"
+  },
+  {
+   "measure": "Families in curated seed (15.1)",
+   "value": "74",
+   "source": "results/seed_collection_comparison/provenance.json"
+  },
+  {
+   "measure": "Families in both",
+   "value": "74",
+   "source": "results/seed_collection_comparison/provenance.json"
+  },
+  {
+   "measure": "Families with >=2 shared identical-sequence rows",
+   "value": "74",
+   "source": "results/seed_collection_comparison/provenance.json"
+  },
+  {
+   "measure": "Shared rows",
+   "value": "7808",
+   "source": "results/seed_collection_comparison/provenance.json"
+  },
+  {
+   "measure": "Shared rows with identical aligned strings",
+   "value": "7808",
+   "source": "results/seed_collection_comparison/provenance.json"
+  },
+  {
+   "measure": "Comparable row pairs",
+   "value": "1304970",
+   "source": "results/seed_collection_comparison/provenance.json"
+  },
+  {
+   "measure": "Row pairs with changed correspondence",
+   "value": "0",
+   "source": "results/seed_collection_comparison/provenance.json"
+  },
+  {
+   "measure": "Annotation differences (GF/GR/GC)",
+   "value": "0",
+   "source": "results/seed_collection_comparison/provenance.json"
+  },
+  {
+   "measure": "Curated records byte-identical to ordinary record",
+   "value": "74/74",
+   "source": "results/seed_collection_comparison/record_byte_identity.txt"
+  }
+ ]
+}

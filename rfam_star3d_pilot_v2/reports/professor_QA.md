@@ -1,5 +1,31 @@
 # Questions the professor is likely to ask
 
+## v4 additions (2026-10-09)
+**Is the "ordinary" seed really sequence-only?**
+No. In every Rfam release that ships `Rfam.3d.seed.gz` (14.9–15.1), each curated family record is byte-identical to the
+ordinary record. All five pilot families are curated families. Our explicit-link discovery rule could only find curated
+families, which is a selection bias.
+
+**Does the STAR3D code do what the paper says?**
+Not exactly.
+- The code keeps every cis W-edge pair reported by MC-Annotate, including non-canonical ones, and silently keeps only
+  the last partner when a residue has two.
+- Re-running with the paper's rule (S1, a labelled sensitivity analysis) leaves every preQ1 mapping identical but
+  shrinks the exploratory guanidine-I alignment from 78 to 25 nt.
+- Correcting only the overwrite (S2) changes nothing.
+
+**Where did the 7REX row come from?**
+It first appears in RF00522 in release 15.0, with the same alignment as in 15.1. How it was aligned is not documented.
+
+**Did you add data?**
+We pre-registered one non-curated family, tRNA. No primary-eligible different-species pair passed:
+- native tRNAs carry modified nucleotides, which STAR3D reads as "N";
+- two sequence-only links pointed to another species' row.
+
+One exploratory pair (free *E. coli* tRNA-Val vs enzyme-bound human tRNA3Lys) agrees with the seed except in the elbow
+that the enzyme refolds.
+
+
 *Answers trace to files in this study (v2.1, cohort v1.1). Prepared by an AI agent; not yet reviewed by the researcher.*
 
 **Why these families and pairs?**

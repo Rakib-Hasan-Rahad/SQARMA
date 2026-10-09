@@ -1,0 +1,54 @@
+{
+ "available": true,
+ "source": "deliverables/2026-10-09_v4/tables/validation_gates.tsv",
+ "columns": [
+  "gate",
+  "status",
+  "evidence",
+  "quarantined_or_limited_cases"
+ ],
+ "rows": [
+  {
+   "gate": "Data identity",
+   "status": "pass",
+   "evidence": "sources_manifest.tsv; seed sha256 pinned; fresh re-downloads byte-identical (all 11 pilot mmCIFs, tarball); rfam_history manifest",
+   "quarantined_or_limited_cases": "none"
+  },
+  {
+   "gate": "Biological eligibility",
+   "status": "pass with limits",
+   "evidence": "construct_review.tsv; exact_source_check.tsv; review/v3_screening; review/v4_expansion",
+   "quarantined_or_limited_cases": "SAM-I, TPP, guanidine-I exploratory; tRNA pair exploratory (refolded substrate); 1EHZ/1VTQ excluded (modified nts read as N by STAR3D); 9J4O/6PMO excluded (row organism mismatch)"
+  },
+  {
+   "gate": "Mapping validity",
+   "status": "pass",
+   "evidence": "residue_crosswalk.tsv identity checks (0 mismatches); compare stored-output validation (41/41 pilot + 6/6 tRNA runs); reverse-strand coordinate fix",
+   "quarantined_or_limited_cases": "none"
+  },
+  {
+   "gate": "Method execution",
+   "status": "pass with documented deviations",
+   "evidence": "STAR3D_execution_audit.md (v3 + v4 addendum); preprocessing validator 14/14 + 2/2; determinism 4/4 identical",
+   "quarantined_or_limited_cases": "emulated x86-64 (3 JVM crashes in 84 earlier alignment runs; 0 in the 22 alignment runs made in the v4 session); STAR3D pair rule differs from paper (S1 sensitivity)"
+  },
+  {
+   "gate": "Calculation validity",
+   "status": "pass",
+   "evidence": "64 tests; mutation_check.tsv 16/16 detected",
+   "quarantined_or_limited_cases": "none"
+  },
+  {
+   "gate": "Interpretation",
+   "status": "pass with explicit uncertainty",
+   "evidence": "review/region_review_v4.tsv (19 pilot + 2 prospective regions); candidate_evidence_update_v4.md",
+   "quarantined_or_limited_cases": "12 of 21 regions insufficient evidence or not adjudicated"
+  },
+  {
+   "gate": "Presentation consistency",
+   "status": "see final check",
+   "evidence": "logs/report_number_check.txt; site check log",
+   "quarantined_or_limited_cases": "-"
+  }
+ ]
+}
