@@ -1,4 +1,4 @@
-# generated at commit a2d41224f84a18779117c96c428f8f02bd9468c7 (plus the working-tree changes committed with it); software: Python 3.13 (.venv; requirements.lock.txt); FR3D-python 288f98cc (installed, RECORD-verified); original STAR3D v1.2 tarball c9da4405, image star3d-runtime:1 (amd64 emulated); ONE forward alignment per pair
+# generated at commit a6dd7785714fbd061d30264b363b22d9be7e13ea (plus the working-tree changes committed with it); software: Python 3.13 (.venv; requirements.lock.txt); FR3D-python 288f98cc (installed, RECORD-verified); original STAR3D v1.2 tarball c9da4405, image star3d-runtime:1 (amd64 emulated); ONE forward alignment per pair
 path	generated_by	inputs_and_config	sha256	bytes
 review/natural_sequence_eligibility.tsv	manual decisions (AI agent) + natural_policy.py validation	papers, genomes, mmCIF (evidence paths per row)	328601ae80b363f8dae10f1571f201e14c9c011478c57cd928087b371326b3e7	8447
 metadata/cohort_v2.0_natural_freeze.json	scripts/natural_policy.py rebuild-cohort	eligibility table; archive/cohort_v1.1_pre_natural_policy	ca4388a8cebead3e5975fd1ba514bc78d6f65872c8c281f3b9d23331b336cea6	977
@@ -84,9 +84,9 @@ deliverables/2026-10-09_v5/site/assets/fig_RF00522_6VUI_7REX_P1.png	scripts/expo
 deliverables/2026-10-09_v5/site/data/alignment_views.json	scripts/export_site_data.py + static html/js/css	site/data/export_manifest.json	102287470935ef99db791327ae9a05d4bc8a5e9a8851954000a001a6b28c1793	1801
 deliverables/2026-10-09_v5/site/data/candidate.json	scripts/export_site_data.py + static html/js/css	site/data/export_manifest.json	8a38e736004dcce795b5f4c04daa78f53b0da91ac741a95028192f345256991d	39050
 deliverables/2026-10-09_v5/site/data/chains.json	scripts/export_site_data.py + static html/js/css	site/data/export_manifest.json	d7fa823f82a44d61f3f6e360129492a5d37fcaca997bd85495d7adad43d73c34	6773
-deliverables/2026-10-09_v5/site/data/downloads.json	scripts/export_site_data.py + static html/js/css	site/data/export_manifest.json	695eaa5f080c1418ea90c4424113ccfeb627d3c6eee9c4b93a060ce28626c972	2058
+deliverables/2026-10-09_v5/site/data/downloads.json	scripts/export_site_data.py + static html/js/css	site/data/export_manifest.json	05c168c96e321af11eee6b9163d6f6e8a322ba153b81d950234e92e05f3f1a07	2078
 deliverables/2026-10-09_v5/site/data/eligibility.json	scripts/export_site_data.py + static html/js/css	site/data/export_manifest.json	51df96fe6e6bb1efaeae7016fec1d52d1fae10ed0165a014177025d150ecf98d	16095
-deliverables/2026-10-09_v5/site/data/export_manifest.json	scripts/export_site_data.py + static html/js/css	site/data/export_manifest.json	cba1e0a41075b337875a40d3b24ac0497e5cc628e906cfad887db0f21301edbf	4088
+deliverables/2026-10-09_v5/site/data/export_manifest.json	scripts/export_site_data.py + static html/js/css	site/data/export_manifest.json	cfb0976935eab5a49bb2cd29897b2569ff930acd60f53f00be8e1fb741c0d250	4042
 deliverables/2026-10-09_v5/site/data/family_status.json	scripts/export_site_data.py + static html/js/css	site/data/export_manifest.json	050ed54864b3a69875c2b7a4e93f31c772f0216a090c3230da96d52d918c1021	9316
 deliverables/2026-10-09_v5/site/data/figures.json	scripts/export_site_data.py + static html/js/css	site/data/export_manifest.json	f54547fdcbf6d3afd1c6958abc6fc983e8c10bd00f8d2393886ed43c2c63c812	273
 deliverables/2026-10-09_v5/site/data/interactions.json	scripts/export_site_data.py + static html/js/css	site/data/export_manifest.json	a443ce6f6cfb44f612815df9d3e3ae91c15eb6e722477b55d9e2117055a5b1a6	16486
@@ -115,6 +115,7 @@ deliverables/2026-10-09_v5/site/style.css	scripts/export_site_data.py + static h
 deliverables/2026-10-09_v5/README.md	hand-written reports (AI agent)	tables above	ecc3628b929d5b58ee42c675a60a02f65cefb2fa9f99e8e32e503af3222e0507	1794
 deliverables/2026-10-09_v5/meeting_script_v5.md	hand-written reports (AI agent)	tables above	fcc0cc06fd542165069b6134a7e1d466ec853d68553d9db27a27280d4ebb7bc5	1509
 deliverables/2026-10-09_v5/professor_report_v5.md	hand-written reports (AI agent)	tables above	0881b4b84591cdba9a6eb342c4eb07061790620fd6a5012d11ee16acdefcf0c0	7388
+deliverables/2026-10-09_v5/repro_package_v5_2026-10-09.tar.gz.sha256	hand-written reports (AI agent)	tables above	fff38f9592220901fdd8012ded880540bdb388b3fea6250e5dbf723757d4c87b	101
 deliverables/2026-10-09_v5/validation_v5.md	hand-written reports (AI agent)	tables above	90b2c03bc3b46fbc2a026dd5645e1909cd1a203b06ad4ec8c71b34a3b2f9f393	3194
 archive/cohort_v1.1_pre_natural_policy/selected_pairs.tsv	git mv / copies of superseded active tables (unchanged)	v4 active state	0ae4ea124e1dd08bcc43c614eb907235ad785fcc2f0a1daa0b558b26f2ece28d	2527
 archive/cohort_v1.1_pre_natural_policy/selected_representatives.tsv	git mv / copies of superseded active tables (unchanged)	v4 active state	b68e4e6ae7e7c516ab72daa083138ab37132f80783743e56de34b7cab8d90399	5111
