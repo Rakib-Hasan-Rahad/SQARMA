@@ -1,0 +1,14 @@
+key	accession	genome_header	exact_plus	exact_minus	verdict	best_strand	best_genome_start	n_diff	differences_construct_numbering
+3SUH_X	FP929059.1	FP929059.1 Eubacterium siraeum V10Sc8a draft genome	[]	[]	NOT_found_exactly_in_claimed_genome	-	95282	5	1G>C;14A>T;65C>T;85A>T;101C>G
+3SUH_X	FP929044.1	FP929044.1 Eubacterium siraeum 70/3 draft genome	[]	[]	NOT_found_exactly_in_claimed_genome	-	1949220	5	1G>C;14A>T;65C>T;85A>T;101C>G
+4LVV_A	AE014133.2	AE014133.2 Streptococcus mutans UA159, complete genome	[]	[]	NOT_found_exactly_in_claimed_genome	-	559729	8	1G>A;2G>C;59G>C;ins_before_61:T;61G>A;87C>G;88C>T;89A>T
+3SD3_A	AE014133.2	AE014133.2 Streptococcus mutans UA159, complete genome	[]	[]	NOT_found_exactly_in_claimed_genome	-	559729	9	1G>A;2G>C;25C>T;59G>C;ins_before_61:T;61G>A;87C>G;88C>T;89A>T
+7QR4_B	AL158040.14	AL158040.14 Human DNA sequence from clone RP11-360G10 on chromosome 10, complet	[]	[]	NOT_found_exactly_in_claimed_genome	-	122207	10	42C>del;43C>del;47G>C;48C>T;49A>G;50C>G;52C>G;53C>A;54G>A;55G>T
+2MF0_G	CP003190.1	CP003190.1 Pseudomonas protegens CHA0, complete genome	[1388359]	[]	exact_source_verified			0	
+7YR6_A	AE004091.2	AE004091.2 Pseudomonas aeruginosa PAO1, complete genome	[]	[]	NOT_found_exactly_in_claimed_genome	-	4057659	1	61C>del
+7YR6_A	CP000438.1	CP000438.1 Pseudomonas aeruginosa UCBPP-PA14, complete genome	[]	[]	NOT_found_exactly_in_claimed_genome	+	1500351	2	61C>del;70T>C
+4ZNP_A	AAWL01_Tcarboxydivorans_Nor1_contigs	AAWL01000001.1 Thermosinus carboxydivorans Nor1 ctg55, whole genome shotgun seq	[]	[]	NOT_found_exactly_in_claimed_genome	-	2173979	7	1G>A;ins_before_27:A;ins_before_27:A;28A>C;51A>G;72T>A;73C>A
+4XWF_A	AAYI02_Aodontolyticus_ATCC17982_contigs	AAYI02000001.1 Schaalia dentiphila ATCC 17982 Actinomyces_odontolyticus-2.0_Con	[]	[]	NOT_found_exactly_in_claimed_genome	-	222614	15	2G>T;26A>C;27A>C;ins_before_43:C;ins_before_43:G;ins_before_44:G;ins_before_44:T;ins_before_45:G;ins_before_45:G;ins_before_46:A;ins_before_47:C;ins_before_47:G;ins_before_47:A;ins_before_48:A;63A>T
+4FRG_X	AACY021350931.1	AACY021350931.1 Marine metagenome 1095390125609, whole genome shotgun sequence	[]	[]	NOT_found_exactly_in_claimed_genome	-	557	8	12A>G;45G>del;46C>del;47G>T;49A>C;50A>T;51G>T;52C>G
+4FRN_A	AACY021350931.1	AACY021350931.1 Marine metagenome 1095390125609, whole genome shotgun sequence	[]	[]	NOT_found_exactly_in_claimed_genome	-	557	6	3G>C;12A>G;14G>A;31T>A;42C>G;79C>G
+4FRG_X	AACY023653040.1	AACY023653040.1 Marine metagenome ctg_1101668460391, whole genome shotgun seque	[]	[]	NOT_found_exactly_in_claimed_genome	-	384	17	2G>T;3C>G;4C>T;31A>T;42G>C;45G>del;46C>del;47G>T;49A>C;50A>T;51G>T;52C>G;55A>G;64C>G;80G>A;81G>C;82C>A

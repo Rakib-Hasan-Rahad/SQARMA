@@ -1,0 +1,25 @@
+/Users/rakibhasanrahad/Desktop/IMPORTANT FILES 2026/2027 research/RNASEQ/Phase 1/Codebase/SQARMA/rfam_star3d_pilot_v2/.venv/bin/python -m fr3d.classifiers.NA_pairwise_interactions -i /Users/rakibhasanrahad/Desktop/IMPORTANT FILES 2026/2027 research/RNASEQ/Phase 1/Codebase/SQARMA/rfam_star3d_pilot_v2/annotations/_v3_regen/3FU2/_cif -o /Users/rakibhasanrahad/Desktop/IMPORTANT FILES 2026/2027 research/RNASEQ/Phase 1/Codebase/SQARMA/rfam_star3d_pilot_v2/annotations/_v3_regen/3FU2 -c basepair,stacking 3FU2.cif
+Reading file /Users/rakibhasanrahad/Desktop/IMPORTANT FILES 2026/2027 research/RNASEQ/Phase 1/Codebase/SQARMA/rfam_star3d_pilot_v2/annotations/_v3_regen/3FU2/_cif/3FU2.cif, which is number 1 out of 1
+3FU2|1|A|C|12 Rotation matrix calculation failed, 0 new atoms
+3FU2|1|A|C|12 Adding hydrogens failed
+3FU2|1|B|C|12 Rotation matrix calculation failed, 0 new atoms
+3FU2|1|B|C|12 Adding hydrogens failed
+3FU2|1|B|C|15 Rotation matrix calculation failed, 0 new atoms
+3FU2|1|B|C|15 Adding hydrogens failed
+3FU2|1|C|C|12 Rotation matrix calculation failed, 0 new atoms
+3FU2|1|C|C|12 Adding hydrogens failed
+  Found 151 nucleotide-nucleotide interactions
+  Recording interactions in /Users/rakibhasanrahad/Desktop/IMPORTANT FILES 2026/2027 research/RNASEQ/Phase 1/Codebase/SQARMA/rfam_star3d_pilot_v2/annotations/_v3_regen/3FU2
+Summary of time taken:
+start                          :      0.001 seconds      0.000 minutes      0.401% of total
+Reading CIF files              :      0.033 seconds      0.001 minutes     21.069% of total
+Building cubes                 :      0.000 seconds      0.000 minutes      0.099% of total
+Annotating interactions        :      0.000 seconds      0.000 minutes      0.016% of total
+Check base base stack          :      0.098 seconds      0.002 minutes     62.603% of total
+Check basepairing              :      0.024 seconds      0.000 minutes     15.233% of total
+Calculate crossing             :      0.000 seconds      0.000 minutes      0.310% of total
+Recording interactions         :      0.000 seconds      0.000 minutes      0.269% of total
+Total                          :      0.157 seconds      0.003 minutes    100.000% of total
+All files read successfully
+Stacking annotations are not yet finalized
+Basepair annotations are not yet finalized

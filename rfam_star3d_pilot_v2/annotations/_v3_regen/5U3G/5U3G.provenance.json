@@ -1,0 +1,24 @@
+{
+ "source_mmcif": "inputs/structures/mmcif/5U3G.cif.gz",
+ "source_mmcif_sha256": "8dead5640b483c5e01aa367da7447f28338080ffd48d6805cded150acb86e2ca",
+ "decompressed_cif_sha256": "956c0be35fc502cd7cef4412f9e1df943374c74823ecd85c4e147d8ae630a9d2",
+ "fr3d_commit": "288f98ccfd72dc6d88036c124605c05ce623b1b7",
+ "categories": "basepair,stacking",
+ "model_policy": "all models annotated; model 1 kept in normalization",
+ "command": "/Users/rakibhasanrahad/Desktop/IMPORTANT FILES 2026/2027 research/RNASEQ/Phase 1/Codebase/SQARMA/rfam_star3d_pilot_v2/.venv/bin/python -m fr3d.classifiers.NA_pairwise_interactions -i /Users/rakibhasanrahad/Desktop/IMPORTANT FILES 2026/2027 research/RNASEQ/Phase 1/Codebase/SQARMA/rfam_star3d_pilot_v2/annotations/_v3_regen/5U3G/_cif -o /Users/rakibhasanrahad/Desktop/IMPORTANT FILES 2026/2027 research/RNASEQ/Phase 1/Codebase/SQARMA/rfam_star3d_pilot_v2/annotations/_v3_regen/5U3G -c basepair,stacking 5U3G.cif",
+ "provenance": "generated",
+ "raw_sha256": {
+  "5U3G_basepair.txt": "26ef8020e63bb4e57a169a47066a6f7d9171970ded5ecd826e47f97ca9fce6ea",
+  "5U3G_stacking.txt": "918a5b3e3c307095e524304704e332b9e49052c476b460bbe25dc8a318af9712"
+ },
+ "fr3d_installed": {
+  "interpreter": "/Users/rakibhasanrahad/Desktop/IMPORTANT FILES 2026/2027 research/RNASEQ/Phase 1/Codebase/SQARMA/rfam_star3d_pilot_v2/.venv/bin/python",
+  "distribution": "fr3d 0.0.2",
+  "vcs_url": "https://github.com/BGSU-RNA/fr3d-python.git",
+  "installed_commit": "288f98ccfd72dc6d88036c124605c05ce623b1b7",
+  "imported_from": "/Users/rakibhasanrahad/Desktop/IMPORTANT FILES 2026/2027 research/RNASEQ/Phase 1/Codebase/SQARMA/rfam_star3d_pilot_v2/.venv/lib/python3.13/site-packages/fr3d",
+  "import_inside_distribution": true,
+  "record_files_checked": 95,
+  "record_files_mismatched": 0
+ }
+}

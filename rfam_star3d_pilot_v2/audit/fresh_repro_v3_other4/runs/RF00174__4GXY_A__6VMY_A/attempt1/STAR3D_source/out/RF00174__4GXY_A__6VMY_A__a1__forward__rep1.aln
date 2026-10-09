@@ -1,0 +1,42 @@
+#STAR3d alignment for 4gxya_A and 6vmya_A (2026/10/09 05:36:03)
+############
+#Parameters#
+############
+#RMSD cutoff: 4.0A
+#Minimum stack size: 3
+#Gap open penalty: -5.0
+#Gap extension penalty: -2.0
+#Match score: 3.0
+#Mismatch score: 0.0
+#########
+#Results#
+#########
+#Aligned nucleotide: 26
+#Alignment RMSD: 3.37A
+#Nucleotide mapping:
+A:77<->A:250
+A:78<->A:251
+A:102<->A:276
+A:103<->A:277
+A:104<->A:278
+A:105<->A:279
+A:106<->A:280
+A:107<->A:282
+A:108<->A:283
+A:109<->A:284
+A:110<->A:285
+A:111<->A:286
+A:112<->A:287
+A:117<->A:293
+A:118<->A:294
+A:119<->A:295
+A:120<->A:296
+A:121<->A:297
+A:122<->A:298
+A:123<->A:299
+A:124<->A:300
+A:125<->A:301
+A:126<->A:302
+A:127<->A:303
+A:128<->A:304
+A:129<->A:305

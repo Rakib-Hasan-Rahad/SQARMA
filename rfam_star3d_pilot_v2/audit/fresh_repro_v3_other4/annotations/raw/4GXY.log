@@ -1,0 +1,19 @@
+/Users/rakibhasanrahad/Desktop/IMPORTANT FILES 2026/2027 research/RNASEQ/Phase 1/Codebase/SQARMA/rfam_star3d_pilot_v2/.venv/bin/python -m fr3d.classifiers.NA_pairwise_interactions -i /Users/rakibhasanrahad/Desktop/IMPORTANT FILES 2026/2027 research/RNASEQ/Phase 1/Codebase/SQARMA/rfam_star3d_pilot_v2/audit/fresh_repro_v3_other4/annotations/raw/_cif -o /Users/rakibhasanrahad/Desktop/IMPORTANT FILES 2026/2027 research/RNASEQ/Phase 1/Codebase/SQARMA/rfam_star3d_pilot_v2/audit/fresh_repro_v3_other4/annotations/raw -c basepair,stacking 4GXY.cif
+Reading file /Users/rakibhasanrahad/Desktop/IMPORTANT FILES 2026/2027 research/RNASEQ/Phase 1/Codebase/SQARMA/rfam_star3d_pilot_v2/audit/fresh_repro_v3_other4/annotations/raw/_cif/4GXY.cif, which is number 1 out of 1
+4GXY|1|A|C|113 Rotation matrix calculation failed, 0 new atoms
+4GXY|1|A|C|113 Adding hydrogens failed
+  Found 251 nucleotide-nucleotide interactions
+  Recording interactions in /Users/rakibhasanrahad/Desktop/IMPORTANT FILES 2026/2027 research/RNASEQ/Phase 1/Codebase/SQARMA/rfam_star3d_pilot_v2/audit/fresh_repro_v3_other4/annotations/raw
+Summary of time taken:
+start                          :      0.001 seconds      0.000 minutes      0.241% of total
+Reading CIF files              :      0.061 seconds      0.001 minutes     23.333% of total
+Building cubes                 :      0.000 seconds      0.000 minutes      0.110% of total
+Annotating interactions        :      0.000 seconds      0.000 minutes      0.014% of total
+Check base base stack          :      0.157 seconds      0.003 minutes     60.149% of total
+Check basepairing              :      0.040 seconds      0.001 minutes     15.481% of total
+Calculate crossing             :      0.001 seconds      0.000 minutes      0.394% of total
+Recording interactions         :      0.001 seconds      0.000 minutes      0.277% of total
+Total                          :      0.261 seconds      0.004 minutes    100.000% of total
+All files read successfully
+Stacking annotations are not yet finalized
+Basepair annotations are not yet finalized

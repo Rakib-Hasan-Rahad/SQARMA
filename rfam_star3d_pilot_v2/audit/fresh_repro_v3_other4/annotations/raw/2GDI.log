@@ -1,0 +1,17 @@
+/Users/rakibhasanrahad/Desktop/IMPORTANT FILES 2026/2027 research/RNASEQ/Phase 1/Codebase/SQARMA/rfam_star3d_pilot_v2/.venv/bin/python -m fr3d.classifiers.NA_pairwise_interactions -i /Users/rakibhasanrahad/Desktop/IMPORTANT FILES 2026/2027 research/RNASEQ/Phase 1/Codebase/SQARMA/rfam_star3d_pilot_v2/audit/fresh_repro_v3_other4/annotations/raw/_cif -o /Users/rakibhasanrahad/Desktop/IMPORTANT FILES 2026/2027 research/RNASEQ/Phase 1/Codebase/SQARMA/rfam_star3d_pilot_v2/audit/fresh_repro_v3_other4/annotations/raw -c basepair,stacking 2GDI.cif
+Reading file /Users/rakibhasanrahad/Desktop/IMPORTANT FILES 2026/2027 research/RNASEQ/Phase 1/Codebase/SQARMA/rfam_star3d_pilot_v2/audit/fresh_repro_v3_other4/annotations/raw/_cif/2GDI.cif, which is number 1 out of 1
+  Found 261 nucleotide-nucleotide interactions
+  Recording interactions in /Users/rakibhasanrahad/Desktop/IMPORTANT FILES 2026/2027 research/RNASEQ/Phase 1/Codebase/SQARMA/rfam_star3d_pilot_v2/audit/fresh_repro_v3_other4/annotations/raw
+Summary of time taken:
+start                          :      0.001 seconds      0.000 minutes      0.240% of total
+Reading CIF files              :      0.073 seconds      0.001 minutes     26.003% of total
+Building cubes                 :      0.000 seconds      0.000 minutes      0.112% of total
+Annotating interactions        :      0.000 seconds      0.000 minutes      0.016% of total
+Check base base stack          :      0.164 seconds      0.003 minutes     58.343% of total
+Check basepairing              :      0.041 seconds      0.001 minutes     14.708% of total
+Calculate crossing             :      0.001 seconds      0.000 minutes      0.320% of total
+Recording interactions         :      0.001 seconds      0.000 minutes      0.259% of total
+Total                          :      0.281 seconds      0.005 minutes    100.000% of total
+All files read successfully
+Stacking annotations are not yet finalized
+Basepair annotations are not yet finalized
