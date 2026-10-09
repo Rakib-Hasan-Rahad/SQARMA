@@ -1,0 +1,602 @@
+<?xml version="1.0" encoding="US-ASCII"?>
+<!DOCTYPE BlastOutput PUBLIC "-//NCBI//NCBI BlastOutput/EN" "http://www.ncbi.nlm.nih.gov/dtd/NCBI_BlastOutput.dtd">
+<BlastOutput>
+  <BlastOutput_program>blastn</BlastOutput_program>
+  <BlastOutput_version>BLASTN 2.17.0+</BlastOutput_version>
+  <BlastOutput_reference>Stephen F. Altschul, Thomas L. Madden, Alejandro A. Sch&amp;auml;ffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), &quot;Gapped BLAST and PSI-BLAST: a new generation of protein database search programs&quot;, Nucleic Acids Res. 25:3389-3402.</BlastOutput_reference>
+  <BlastOutput_db>core_nt</BlastOutput_db>
+  <BlastOutput_query-ID>Query_7247877</BlastOutput_query-ID>
+  <BlastOutput_query-def>No definition line</BlastOutput_query-def>
+  <BlastOutput_query-len>95</BlastOutput_query-len>
+  <BlastOutput_param>
+    <Parameters>
+      <Parameters_expect>0.001</Parameters_expect>
+      <Parameters_sc-match>2</Parameters_sc-match>
+      <Parameters_sc-mismatch>-3</Parameters_sc-mismatch>
+      <Parameters_gap-open>5</Parameters_gap-open>
+      <Parameters_gap-extend>2</Parameters_gap-extend>
+      <Parameters_filter>L;m;</Parameters_filter>
+    </Parameters>
+  </BlastOutput_param>
+<BlastOutput_iterations>
+<Iteration>
+  <Iteration_iter-num>1</Iteration_iter-num>
+  <Iteration_query-ID>Query_7247877</Iteration_query-ID>
+  <Iteration_query-def>No definition line</Iteration_query-def>
+  <Iteration_query-len>95</Iteration_query-len>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>gi|1130619261|pdb|5T83|A</Hit_id>
+  <Hit_def>Chain A, RNA (95-MER)</Hit_def>
+  <Hit_accession>5T83_A</Hit_accession>
+  <Hit_len>95</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>172.606</Hsp_bit-score>
+      <Hsp_score>190</Hsp_score>
+      <Hsp_evalue>6.8805e-39</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>95</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>95</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>1</Hsp_hit-frame>
+      <Hsp_identity>95</Hsp_identity>
+      <Hsp_positive>95</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>95</Hsp_align-len>
+      <Hsp_qseq>GTCTAAAGTTTGCTAGGGTTCCGCGTCATAGGTGGTCTGGTCCAAGAGCAAACGGCTTTCACAAAGCCACACGGAAGGATAAAAGCCTGGGAGAT</Hsp_qseq>
+      <Hsp_hseq>GTCTAAAGTTTGCTAGGGTTCCGCGTCATAGGTGGTCTGGTCCAAGAGCAAACGGCTTTCACAAAGCCACACGGAAGGATAAAAGCCTGGGAGAT</Hsp_hseq>
+      <Hsp_midline>|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>2</Hit_num>
+  <Hit_id>gi|339284117|gb|CP002901.1|</Hit_id>
+  <Hit_def>Sulfobacillus acidophilus TPY, complete genome</Hit_def>
+  <Hit_accession>CP002901</Hit_accession>
+  <Hit_len>3551206</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>143.752</Hsp_bit-score>
+      <Hsp_score>158</Hsp_score>
+      <Hsp_evalue>3.33818e-30</Hsp_evalue>
+      <Hsp_query-from>2</Hsp_query-from>
+      <Hsp_query-to>95</Hsp_query-to>
+      <Hsp_hit-from>2667134</Hsp_hit-from>
+      <Hsp_hit-to>2667041</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>-1</Hsp_hit-frame>
+      <Hsp_identity>88</Hsp_identity>
+      <Hsp_positive>88</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>94</Hsp_align-len>
+      <Hsp_qseq>TCTAAAGTTTGCTAGGGTTCCGCGTCATAGGTGGTCTGGTCCAAGAGCAAACGGCTTTCACAAAGCCACACGGAAGGATAAAAGCCTGGGAGAT</Hsp_qseq>
+      <Hsp_hseq>TCTAAAGTTTGCTAGGGTTCCGCTAGATACTAGGTCTGGTCCAAGAGCAAACGGCTTTCACAAAGCCACACGGAAGGATAAAAGCCTGGGAGAT</Hsp_hseq>
+      <Hsp_midline>|||||||||||||||||||||||   |||   ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>3</Hit_num>
+  <Hit_id>gi|361052061|gb|CP003179.1|</Hit_id>
+  <Hit_def>Sulfobacillus acidophilus DSM 10332, complete genome</Hit_def>
+  <Hit_accession>CP003179</Hit_accession>
+  <Hit_len>3472898</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>143.752</Hsp_bit-score>
+      <Hsp_score>158</Hsp_score>
+      <Hsp_evalue>3.33818e-30</Hsp_evalue>
+      <Hsp_query-from>2</Hsp_query-from>
+      <Hsp_query-to>95</Hsp_query-to>
+      <Hsp_hit-from>1011131</Hsp_hit-from>
+      <Hsp_hit-to>1011224</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>1</Hsp_hit-frame>
+      <Hsp_identity>88</Hsp_identity>
+      <Hsp_positive>88</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>94</Hsp_align-len>
+      <Hsp_qseq>TCTAAAGTTTGCTAGGGTTCCGCGTCATAGGTGGTCTGGTCCAAGAGCAAACGGCTTTCACAAAGCCACACGGAAGGATAAAAGCCTGGGAGAT</Hsp_qseq>
+      <Hsp_hseq>TCTAAAGTTTGCTAGGGTTCCGCTAGATACTAGGTCTGGTCCAAGAGCAAACGGCTTTCACAAAGCCACACGGAAGGATAAAAGCCTGGGAGAT</Hsp_hseq>
+      <Hsp_midline>|||||||||||||||||||||||   |||   ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>4</Hit_num>
+  <Hit_id>gi|1611612124|gb|CP027563.1|</Hit_id>
+  <Hit_def>Weissella confusa strain VTT E-133279 chromosome, complete genome</Hit_def>
+  <Hit_accession>CP027563</Hit_accession>
+  <Hit_len>2212145</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>90.5531</Hsp_bit-score>
+      <Hsp_score>99</Hsp_score>
+      <Hsp_evalue>6.44989e-14</Hsp_evalue>
+      <Hsp_query-from>5</Hsp_query-from>
+      <Hsp_query-to>93</Hsp_query-to>
+      <Hsp_hit-from>1644136</Hsp_hit-from>
+      <Hsp_hit-to>1644222</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>1</Hsp_hit-frame>
+      <Hsp_identity>75</Hsp_identity>
+      <Hsp_positive>75</Hsp_positive>
+      <Hsp_gaps>4</Hsp_gaps>
+      <Hsp_align-len>90</Hsp_align-len>
+      <Hsp_qseq>AAAGTTTGCTAGGGTTCCGCGT-CATAGGTGGTCTGGTCCAAGAGCAAACGGCTTTCACAAAGCCACACGGAAGGATAAAAGCCTGGGAG</Hsp_qseq>
+      <Hsp_hseq>AAAGTTTGCTAGGGTTCCGCATGCA---GTGGTCTGGTCCAAGAGCAAACGCGTGCCTCGCACGTACACGGAAGGATAAAAGCCTGGGAG</Hsp_hseq>
+      <Hsp_midline>|||||||||||||||||||| | ||   |||||||||||||||||||||||  |  | |  |   |||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>5</Hit_num>
+  <Hit_id>gi|1611614821|gb|CP027565.1|</Hit_id>
+  <Hit_def>Weissella confusa strain VTT E-90392 chromosome, complete genome</Hit_def>
+  <Hit_accession>CP027565</Hit_accession>
+  <Hit_len>2355805</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>87.848</Hsp_bit-score>
+      <Hsp_score>96</Hsp_score>
+      <Hsp_evalue>2.25123e-13</Hsp_evalue>
+      <Hsp_query-from>5</Hsp_query-from>
+      <Hsp_query-to>93</Hsp_query-to>
+      <Hsp_hit-from>1761279</Hsp_hit-from>
+      <Hsp_hit-to>1761365</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>1</Hsp_hit-frame>
+      <Hsp_identity>78</Hsp_identity>
+      <Hsp_positive>78</Hsp_positive>
+      <Hsp_gaps>10</Hsp_gaps>
+      <Hsp_align-len>93</Hsp_align-len>
+      <Hsp_qseq>AAAGTTTGCTAGGGTTCCGCGTCATAGGTGGTCTGGTCCAAGAGCAAACG---GCTTT-CACAAAGCCACACGGAAGGATAAAAGCCTGGGAG</Hsp_qseq>
+      <Hsp_hseq>AAAGTTTGCTAGGGTTCCGCA-CGTAG-TGGTCTGGTCCAAGAGCAAACGCGTGCTTTGCAC----GTACACGGAAGGACAAAAGCCTGGGAG</Hsp_hseq>
+      <Hsp_midline>||||||||||||||||||||  | ||| ||||||||||||||||||||||   ||||| |||      ||||||||||| |||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>6</Hit_num>
+  <Hit_id>gi|2800633233|gb|CP168942.1|</Hit_id>
+  <Hit_def>Weissella confusa strain JLP1 chromosome, complete genome</Hit_def>
+  <Hit_accession>CP168942</Hit_accession>
+  <Hit_len>2304892</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>87.848</Hsp_bit-score>
+      <Hsp_score>96</Hsp_score>
+      <Hsp_evalue>2.25123e-13</Hsp_evalue>
+      <Hsp_query-from>5</Hsp_query-from>
+      <Hsp_query-to>93</Hsp_query-to>
+      <Hsp_hit-from>585034</Hsp_hit-from>
+      <Hsp_hit-to>584948</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>-1</Hsp_hit-frame>
+      <Hsp_identity>78</Hsp_identity>
+      <Hsp_positive>78</Hsp_positive>
+      <Hsp_gaps>10</Hsp_gaps>
+      <Hsp_align-len>93</Hsp_align-len>
+      <Hsp_qseq>AAAGTTTGCTAGGGTTCCGCGTCATAGGTGGTCTGGTCCAAGAGCAAACG---GCTTT-CACAAAGCCACACGGAAGGATAAAAGCCTGGGAG</Hsp_qseq>
+      <Hsp_hseq>AAAGTTTGCTAGGGTTCCGCA-CGTAG-TGGTCTGGTCCAAGAGCAAACGCGTGCTTTGCAC----GTACACGGAAGGACAAAAGCCTGGGAG</Hsp_hseq>
+      <Hsp_midline>||||||||||||||||||||  | ||| ||||||||||||||||||||||   ||||| |||      ||||||||||| |||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>7</Hit_num>
+  <Hit_id>gi|3389074483|emb|OZ542956.1|</Hit_id>
+  <Hit_def>Weissella confusa strain AM115-79_contig_3_np1 genome assembly, chromosome: 1</Hit_def>
+  <Hit_accession>OZ542956</Hit_accession>
+  <Hit_len>2293610</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>86.9463</Hsp_bit-score>
+      <Hsp_score>95</Hsp_score>
+      <Hsp_evalue>7.85758e-13</Hsp_evalue>
+      <Hsp_query-from>5</Hsp_query-from>
+      <Hsp_query-to>93</Hsp_query-to>
+      <Hsp_hit-from>589881</Hsp_hit-from>
+      <Hsp_hit-to>589795</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>-1</Hsp_hit-frame>
+      <Hsp_identity>74</Hsp_identity>
+      <Hsp_positive>74</Hsp_positive>
+      <Hsp_gaps>2</Hsp_gaps>
+      <Hsp_align-len>89</Hsp_align-len>
+      <Hsp_qseq>AAAGTTTGCTAGGGTTCCGCGTCATAGGTGGTCTGGTCCAAGAGCAAACGGCTTTCACAAAGCCACACGGAAGGATAAAAGCCTGGGAG</Hsp_qseq>
+      <Hsp_hseq>AAAGTTTGCTAGGGTTCCGCA-CGCAG-TGGTCTGGTCCAAGAGCAAACGCGTGCCTCGCACGTACACGGAAGGATAAAAGCCTGGGAG</Hsp_hseq>
+      <Hsp_midline>||||||||||||||||||||  |  || ||||||||||||||||||||||  |  | |  |   |||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>8</Hit_num>
+  <Hit_id>gi|3389078646|emb|OZ541943.1|</Hit_id>
+  <Hit_def>Weissella confusa strain AF116-62 genome assembly, chromosome: 1</Hit_def>
+  <Hit_accession>OZ541943</Hit_accession>
+  <Hit_len>2280804</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>86.9463</Hsp_bit-score>
+      <Hsp_score>95</Hsp_score>
+      <Hsp_evalue>7.85758e-13</Hsp_evalue>
+      <Hsp_query-from>5</Hsp_query-from>
+      <Hsp_query-to>93</Hsp_query-to>
+      <Hsp_hit-from>564042</Hsp_hit-from>
+      <Hsp_hit-to>563956</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>-1</Hsp_hit-frame>
+      <Hsp_identity>74</Hsp_identity>
+      <Hsp_positive>74</Hsp_positive>
+      <Hsp_gaps>2</Hsp_gaps>
+      <Hsp_align-len>89</Hsp_align-len>
+      <Hsp_qseq>AAAGTTTGCTAGGGTTCCGCGTCATAGGTGGTCTGGTCCAAGAGCAAACGGCTTTCACAAAGCCACACGGAAGGATAAAAGCCTGGGAG</Hsp_qseq>
+      <Hsp_hseq>AAAGTTTGCTAGGGTTCCGCA-CGCAG-TGGTCTGGTCCAAGAGCAAACGCGTGCCTCGCACGTACACGGAAGGATAAAAGCCTGGGAG</Hsp_hseq>
+      <Hsp_midline>||||||||||||||||||||  |  || ||||||||||||||||||||||  |  | |  |   |||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>9</Hit_num>
+  <Hit_id>gi|3389078433|emb|OZ541720.1|</Hit_id>
+  <Hit_def>Weissella confusa strain AF116-31_contig_1_np1 genome assembly, chromosome: 1</Hit_def>
+  <Hit_accession>OZ541720</Hit_accession>
+  <Hit_len>2281133</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>86.9463</Hsp_bit-score>
+      <Hsp_score>95</Hsp_score>
+      <Hsp_evalue>7.85758e-13</Hsp_evalue>
+      <Hsp_query-from>5</Hsp_query-from>
+      <Hsp_query-to>93</Hsp_query-to>
+      <Hsp_hit-from>568779</Hsp_hit-from>
+      <Hsp_hit-to>568693</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>-1</Hsp_hit-frame>
+      <Hsp_identity>74</Hsp_identity>
+      <Hsp_positive>74</Hsp_positive>
+      <Hsp_gaps>2</Hsp_gaps>
+      <Hsp_align-len>89</Hsp_align-len>
+      <Hsp_qseq>AAAGTTTGCTAGGGTTCCGCGTCATAGGTGGTCTGGTCCAAGAGCAAACGGCTTTCACAAAGCCACACGGAAGGATAAAAGCCTGGGAG</Hsp_qseq>
+      <Hsp_hseq>AAAGTTTGCTAGGGTTCCGCA-CGCAG-TGGTCTGGTCCAAGAGCAAACGCGTGCCTCGCACGTACACGGAAGGATAAAAGCCTGGGAG</Hsp_hseq>
+      <Hsp_midline>||||||||||||||||||||  |  || ||||||||||||||||||||||  |  | |  |   |||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>10</Hit_num>
+  <Hit_id>gi|3389078641|emb|OZ541938.1|</Hit_id>
+  <Hit_def>Weissella confusa strain AF116-69 genome assembly, chromosome: 1</Hit_def>
+  <Hit_accession>OZ541938</Hit_accession>
+  <Hit_len>2287943</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>86.9463</Hsp_bit-score>
+      <Hsp_score>95</Hsp_score>
+      <Hsp_evalue>7.85758e-13</Hsp_evalue>
+      <Hsp_query-from>5</Hsp_query-from>
+      <Hsp_query-to>93</Hsp_query-to>
+      <Hsp_hit-from>565763</Hsp_hit-from>
+      <Hsp_hit-to>565677</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>-1</Hsp_hit-frame>
+      <Hsp_identity>74</Hsp_identity>
+      <Hsp_positive>74</Hsp_positive>
+      <Hsp_gaps>2</Hsp_gaps>
+      <Hsp_align-len>89</Hsp_align-len>
+      <Hsp_qseq>AAAGTTTGCTAGGGTTCCGCGTCATAGGTGGTCTGGTCCAAGAGCAAACGGCTTTCACAAAGCCACACGGAAGGATAAAAGCCTGGGAG</Hsp_qseq>
+      <Hsp_hseq>AAAGTTTGCTAGGGTTCCGCA-CGCAG-TGGTCTGGTCCAAGAGCAAACGCGTGACTCGCACGTACACGGAAGGATAAAAGCCTGGGAG</Hsp_hseq>
+      <Hsp_midline>||||||||||||||||||||  |  || ||||||||||||||||||||||  |  | |  |   |||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>11</Hit_num>
+  <Hit_id>gi|3389078486|emb|OZ541773.1|</Hit_id>
+  <Hit_def>Weissella confusa strain AF116-34 genome assembly, chromosome: 1</Hit_def>
+  <Hit_accession>OZ541773</Hit_accession>
+  <Hit_len>2280805</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>86.9463</Hsp_bit-score>
+      <Hsp_score>95</Hsp_score>
+      <Hsp_evalue>7.85758e-13</Hsp_evalue>
+      <Hsp_query-from>5</Hsp_query-from>
+      <Hsp_query-to>93</Hsp_query-to>
+      <Hsp_hit-from>564042</Hsp_hit-from>
+      <Hsp_hit-to>563956</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>-1</Hsp_hit-frame>
+      <Hsp_identity>74</Hsp_identity>
+      <Hsp_positive>74</Hsp_positive>
+      <Hsp_gaps>2</Hsp_gaps>
+      <Hsp_align-len>89</Hsp_align-len>
+      <Hsp_qseq>AAAGTTTGCTAGGGTTCCGCGTCATAGGTGGTCTGGTCCAAGAGCAAACGGCTTTCACAAAGCCACACGGAAGGATAAAAGCCTGGGAG</Hsp_qseq>
+      <Hsp_hseq>AAAGTTTGCTAGGGTTCCGCA-CGCAG-TGGTCTGGTCCAAGAGCAAACGCGTGCCTCGCACGTACACGGAAGGATAAAAGCCTGGGAG</Hsp_hseq>
+      <Hsp_midline>||||||||||||||||||||  |  || ||||||||||||||||||||||  |  | |  |   |||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>12</Hit_num>
+  <Hit_id>gi|3389078439|emb|OZ541726.1|</Hit_id>
+  <Hit_def>Weissella confusa strain AF116-20 genome assembly, chromosome: 1</Hit_def>
+  <Hit_accession>OZ541726</Hit_accession>
+  <Hit_len>2281130</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>86.9463</Hsp_bit-score>
+      <Hsp_score>95</Hsp_score>
+      <Hsp_evalue>7.85758e-13</Hsp_evalue>
+      <Hsp_query-from>5</Hsp_query-from>
+      <Hsp_query-to>93</Hsp_query-to>
+      <Hsp_hit-from>568774</Hsp_hit-from>
+      <Hsp_hit-to>568688</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>-1</Hsp_hit-frame>
+      <Hsp_identity>74</Hsp_identity>
+      <Hsp_positive>74</Hsp_positive>
+      <Hsp_gaps>2</Hsp_gaps>
+      <Hsp_align-len>89</Hsp_align-len>
+      <Hsp_qseq>AAAGTTTGCTAGGGTTCCGCGTCATAGGTGGTCTGGTCCAAGAGCAAACGGCTTTCACAAAGCCACACGGAAGGATAAAAGCCTGGGAG</Hsp_qseq>
+      <Hsp_hseq>AAAGTTTGCTAGGGTTCCGCA-CGCAG-TGGTCTGGTCCAAGAGCAAACGCGTGCCTCGCACGTACACGGAAGGATAAAAGCCTGGGAG</Hsp_hseq>
+      <Hsp_midline>||||||||||||||||||||  |  || ||||||||||||||||||||||  |  | |  |   |||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>13</Hit_num>
+  <Hit_id>gi|3389075289|emb|OZ543244.1|</Hit_id>
+  <Hit_def>Weissella confusa strain AM115-83 genome assembly, chromosome: 1</Hit_def>
+  <Hit_accession>OZ543244</Hit_accession>
+  <Hit_len>2293613</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>86.9463</Hsp_bit-score>
+      <Hsp_score>95</Hsp_score>
+      <Hsp_evalue>7.85758e-13</Hsp_evalue>
+      <Hsp_query-from>5</Hsp_query-from>
+      <Hsp_query-to>93</Hsp_query-to>
+      <Hsp_hit-from>589881</Hsp_hit-from>
+      <Hsp_hit-to>589795</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>-1</Hsp_hit-frame>
+      <Hsp_identity>74</Hsp_identity>
+      <Hsp_positive>74</Hsp_positive>
+      <Hsp_gaps>2</Hsp_gaps>
+      <Hsp_align-len>89</Hsp_align-len>
+      <Hsp_qseq>AAAGTTTGCTAGGGTTCCGCGTCATAGGTGGTCTGGTCCAAGAGCAAACGGCTTTCACAAAGCCACACGGAAGGATAAAAGCCTGGGAG</Hsp_qseq>
+      <Hsp_hseq>AAAGTTTGCTAGGGTTCCGCA-CGCAG-TGGTCTGGTCCAAGAGCAAACGCGTGCCTCGCACGTACACGGAAGGATAAAAGCCTGGGAG</Hsp_hseq>
+      <Hsp_midline>||||||||||||||||||||  |  || ||||||||||||||||||||||  |  | |  |   |||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>14</Hit_num>
+  <Hit_id>gi|3389074304|emb|OZ542778.1|</Hit_id>
+  <Hit_def>Weissella confusa strain AM115-81 genome assembly, chromosome: 1 &gt;gi|3389074397|emb|OZ542870.1| Weissella confusa strain AM115-82 genome assembly, chromosome: 1</Hit_def>
+  <Hit_accession>OZ542778</Hit_accession>
+  <Hit_len>2293613</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>86.9463</Hsp_bit-score>
+      <Hsp_score>95</Hsp_score>
+      <Hsp_evalue>7.85758e-13</Hsp_evalue>
+      <Hsp_query-from>5</Hsp_query-from>
+      <Hsp_query-to>93</Hsp_query-to>
+      <Hsp_hit-from>589881</Hsp_hit-from>
+      <Hsp_hit-to>589795</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>-1</Hsp_hit-frame>
+      <Hsp_identity>74</Hsp_identity>
+      <Hsp_positive>74</Hsp_positive>
+      <Hsp_gaps>2</Hsp_gaps>
+      <Hsp_align-len>89</Hsp_align-len>
+      <Hsp_qseq>AAAGTTTGCTAGGGTTCCGCGTCATAGGTGGTCTGGTCCAAGAGCAAACGGCTTTCACAAAGCCACACGGAAGGATAAAAGCCTGGGAG</Hsp_qseq>
+      <Hsp_hseq>AAAGTTTGCTAGGGTTCCGCA-CGCAG-TGGTCTGGTCCAAGAGCAAACGCGTGCCTCGCACGTACACGGAAGGATAAAAGCCTGGGAG</Hsp_hseq>
+      <Hsp_midline>||||||||||||||||||||  |  || ||||||||||||||||||||||  |  | |  |   |||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>15</Hit_num>
+  <Hit_id>gi|3389078629|emb|OZ541926.1|</Hit_id>
+  <Hit_def>Weissella confusa strain AF116-73 genome assembly, chromosome: 1</Hit_def>
+  <Hit_accession>OZ541926</Hit_accession>
+  <Hit_len>2299148</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>86.9463</Hsp_bit-score>
+      <Hsp_score>95</Hsp_score>
+      <Hsp_evalue>7.85758e-13</Hsp_evalue>
+      <Hsp_query-from>5</Hsp_query-from>
+      <Hsp_query-to>93</Hsp_query-to>
+      <Hsp_hit-from>568970</Hsp_hit-from>
+      <Hsp_hit-to>568884</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>-1</Hsp_hit-frame>
+      <Hsp_identity>74</Hsp_identity>
+      <Hsp_positive>74</Hsp_positive>
+      <Hsp_gaps>2</Hsp_gaps>
+      <Hsp_align-len>89</Hsp_align-len>
+      <Hsp_qseq>AAAGTTTGCTAGGGTTCCGCGTCATAGGTGGTCTGGTCCAAGAGCAAACGGCTTTCACAAAGCCACACGGAAGGATAAAAGCCTGGGAG</Hsp_qseq>
+      <Hsp_hseq>AAAGTTTGCTAGGGTTCCGCA-CGCAG-TGGTCTGGTCCAAGAGCAAACGCGTGCCTCGCACGTACACGGAAGGATAAAAGCCTGGGAG</Hsp_hseq>
+      <Hsp_midline>||||||||||||||||||||  |  || ||||||||||||||||||||||  |  | |  |   |||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>16</Hit_num>
+  <Hit_id>gi|3389078621|emb|OZ541918.1|</Hit_id>
+  <Hit_def>Weissella confusa strain AF116-60 genome assembly, chromosome: 1</Hit_def>
+  <Hit_accession>OZ541918</Hit_accession>
+  <Hit_len>2281134</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>86.9463</Hsp_bit-score>
+      <Hsp_score>95</Hsp_score>
+      <Hsp_evalue>7.85758e-13</Hsp_evalue>
+      <Hsp_query-from>5</Hsp_query-from>
+      <Hsp_query-to>93</Hsp_query-to>
+      <Hsp_hit-from>568778</Hsp_hit-from>
+      <Hsp_hit-to>568692</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>-1</Hsp_hit-frame>
+      <Hsp_identity>74</Hsp_identity>
+      <Hsp_positive>74</Hsp_positive>
+      <Hsp_gaps>2</Hsp_gaps>
+      <Hsp_align-len>89</Hsp_align-len>
+      <Hsp_qseq>AAAGTTTGCTAGGGTTCCGCGTCATAGGTGGTCTGGTCCAAGAGCAAACGGCTTTCACAAAGCCACACGGAAGGATAAAAGCCTGGGAG</Hsp_qseq>
+      <Hsp_hseq>AAAGTTTGCTAGGGTTCCGCA-CGCAG-TGGTCTGGTCCAAGAGCAAACGCGTGCCTCGCACGTACACGGAAGGATAAAAGCCTGGGAG</Hsp_hseq>
+      <Hsp_midline>||||||||||||||||||||  |  || ||||||||||||||||||||||  |  | |  |   |||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>17</Hit_num>
+  <Hit_id>gi|3389078651|emb|OZ541948.1|</Hit_id>
+  <Hit_def>Weissella confusa strain AF116-68 genome assembly, chromosome: 1</Hit_def>
+  <Hit_accession>OZ541948</Hit_accession>
+  <Hit_len>2281131</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>86.9463</Hsp_bit-score>
+      <Hsp_score>95</Hsp_score>
+      <Hsp_evalue>7.85758e-13</Hsp_evalue>
+      <Hsp_query-from>5</Hsp_query-from>
+      <Hsp_query-to>93</Hsp_query-to>
+      <Hsp_hit-from>568774</Hsp_hit-from>
+      <Hsp_hit-to>568688</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>-1</Hsp_hit-frame>
+      <Hsp_identity>74</Hsp_identity>
+      <Hsp_positive>74</Hsp_positive>
+      <Hsp_gaps>2</Hsp_gaps>
+      <Hsp_align-len>89</Hsp_align-len>
+      <Hsp_qseq>AAAGTTTGCTAGGGTTCCGCGTCATAGGTGGTCTGGTCCAAGAGCAAACGGCTTTCACAAAGCCACACGGAAGGATAAAAGCCTGGGAG</Hsp_qseq>
+      <Hsp_hseq>AAAGTTTGCTAGGGTTCCGCA-CGCAG-TGGTCTGGTCCAAGAGCAAACGCGTGCCTCGCACGTACACGGAAGGATAAAAGCCTGGGAG</Hsp_hseq>
+      <Hsp_midline>||||||||||||||||||||  |  || ||||||||||||||||||||||  |  | |  |   |||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>18</Hit_num>
+  <Hit_id>gi|3389078678|emb|OZ541975.1|</Hit_id>
+  <Hit_def>Weissella confusa strain AF116-52_contig_9_np1 genome assembly, chromosome: 1</Hit_def>
+  <Hit_accession>OZ541975</Hit_accession>
+  <Hit_len>2281135</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>86.9463</Hsp_bit-score>
+      <Hsp_score>95</Hsp_score>
+      <Hsp_evalue>7.85758e-13</Hsp_evalue>
+      <Hsp_query-from>5</Hsp_query-from>
+      <Hsp_query-to>93</Hsp_query-to>
+      <Hsp_hit-from>568778</Hsp_hit-from>
+      <Hsp_hit-to>568692</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>-1</Hsp_hit-frame>
+      <Hsp_identity>74</Hsp_identity>
+      <Hsp_positive>74</Hsp_positive>
+      <Hsp_gaps>2</Hsp_gaps>
+      <Hsp_align-len>89</Hsp_align-len>
+      <Hsp_qseq>AAAGTTTGCTAGGGTTCCGCGTCATAGGTGGTCTGGTCCAAGAGCAAACGGCTTTCACAAAGCCACACGGAAGGATAAAAGCCTGGGAG</Hsp_qseq>
+      <Hsp_hseq>AAAGTTTGCTAGGGTTCCGCA-CGCAG-TGGTCTGGTCCAAGAGCAAACGCGTGCCTCGCACGTACACGGAAGGATAAAAGCCTGGGAG</Hsp_hseq>
+      <Hsp_midline>||||||||||||||||||||  |  || ||||||||||||||||||||||  |  | |  |   |||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>19</Hit_num>
+  <Hit_id>gi|2797123346|gb|CP168413.1|</Hit_id>
+  <Hit_def>Weissella confusa strain SY628 chromosome, complete genome</Hit_def>
+  <Hit_accession>CP168413</Hit_accession>
+  <Hit_len>2268577</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>86.9463</Hsp_bit-score>
+      <Hsp_score>95</Hsp_score>
+      <Hsp_evalue>7.85758e-13</Hsp_evalue>
+      <Hsp_query-from>5</Hsp_query-from>
+      <Hsp_query-to>93</Hsp_query-to>
+      <Hsp_hit-from>581940</Hsp_hit-from>
+      <Hsp_hit-to>581854</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>-1</Hsp_hit-frame>
+      <Hsp_identity>74</Hsp_identity>
+      <Hsp_positive>74</Hsp_positive>
+      <Hsp_gaps>2</Hsp_gaps>
+      <Hsp_align-len>89</Hsp_align-len>
+      <Hsp_qseq>AAAGTTTGCTAGGGTTCCGCGTCATAGGTGGTCTGGTCCAAGAGCAAACGGCTTTCACAAAGCCACACGGAAGGATAAAAGCCTGGGAG</Hsp_qseq>
+      <Hsp_hseq>AAAGTTTGCTAGGGTTCCGCA-CGCAG-TGGTCTGGTCCAAGAGCAAACGCGTGCCTCGCACGTACACGGAAGGATAAAAGCCTGGGAG</Hsp_hseq>
+      <Hsp_midline>||||||||||||||||||||  |  || ||||||||||||||||||||||  |  | |  |   |||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>20</Hit_num>
+  <Hit_id>gi|3389074371|emb|OZ542844.1|</Hit_id>
+  <Hit_def>Weissella confusa strain AM115-80_contig_1_np1 genome assembly, chromosome: 1</Hit_def>
+  <Hit_accession>OZ542844</Hit_accession>
+  <Hit_len>2293608</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>86.9463</Hsp_bit-score>
+      <Hsp_score>95</Hsp_score>
+      <Hsp_evalue>7.85758e-13</Hsp_evalue>
+      <Hsp_query-from>5</Hsp_query-from>
+      <Hsp_query-to>93</Hsp_query-to>
+      <Hsp_hit-from>589877</Hsp_hit-from>
+      <Hsp_hit-to>589791</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>-1</Hsp_hit-frame>
+      <Hsp_identity>74</Hsp_identity>
+      <Hsp_positive>74</Hsp_positive>
+      <Hsp_gaps>2</Hsp_gaps>
+      <Hsp_align-len>89</Hsp_align-len>
+      <Hsp_qseq>AAAGTTTGCTAGGGTTCCGCGTCATAGGTGGTCTGGTCCAAGAGCAAACGGCTTTCACAAAGCCACACGGAAGGATAAAAGCCTGGGAG</Hsp_qseq>
+      <Hsp_hseq>AAAGTTTGCTAGGGTTCCGCA-CGCAG-TGGTCTGGTCCAAGAGCAAACGCGTGCCTCGCACGTACACGGAAGGATAAAAGCCTGGGAG</Hsp_hseq>
+      <Hsp_midline>||||||||||||||||||||  |  || ||||||||||||||||||||||  |  | |  |   |||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>131744797</Statistics_db-num>
+      <Statistics_db-len>1086004251965</Statistics_db-len>
+      <Statistics_hsp-len>0</Statistics_hsp-len>
+      <Statistics_eff-space>0</Statistics_eff-space>
+      <Statistics_kappa>0.41</Statistics_kappa>
+      <Statistics_lambda>0.625</Statistics_lambda>
+      <Statistics_entropy>0.78</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+</Iteration>
+</BlastOutput_iterations>
+</BlastOutput>

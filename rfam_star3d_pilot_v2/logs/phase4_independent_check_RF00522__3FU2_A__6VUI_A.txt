@@ -1,0 +1,9 @@
+# Independent check (awk on raw files; reviewer AI agent): 3FU2 and 6VUI rows start at deposited residue 1 (row offset 0) and auth numbering == label numbering for both chains (crosswalk), so row index == author number.
+rows where (row_index != label_seq_id or label_seq_id != auth_seq_id) among observed residues: 0 (columns 4,17,18 checked; an earlier line here used wrong columns and was corrected)
+Rfam pairs (raw awk):       30; STAR3D pairs (raw .aln):       31
+shared (comm):       24
+Rfam-only pairs:
+8 7 14 13 23 22 24 23 33 31 34 32 
+STAR3D-only pairs:
+7 7 8 8 15 13 23 21 24 22 32 32 33 33 
+Pipeline pair_summary forward rep1: rfam_pairs 30, star3d_pairs 31, shared_pairs 24 -> independent awk/comm result IDENTICAL. GATE Phase 4 first-pair independent check: PASS

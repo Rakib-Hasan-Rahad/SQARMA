@@ -1,0 +1,7 @@
+Exception in thread "main" java.io.FileNotFoundException: out/RF00522__3FU2_A__6VUI_A__forward__rep2.aln (No such file or directory)
+	at java.io.FileOutputStream.open0(Native Method)
+	at java.io.FileOutputStream.open(FileOutputStream.java:270)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:213)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:101)
+	at java.io.FileWriter.<init>(FileWriter.java:63)
+	at STAR3D.main(Unknown Source)

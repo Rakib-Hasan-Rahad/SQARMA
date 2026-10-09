@@ -1,0 +1,14 @@
+{
+ "cohort_version": 1,
+ "frozen_utc": "2026-10-09T03:35:47.747277+00:00",
+ "note": "frozen before any research STAR3D run and before Phase-3 correspondence extraction",
+ "sha256": {
+  "config.yaml": "feabc69cac2a12edbe79ba2b1d2c078cb503be412e148380d7381f0811545c68",
+  "review/decisions.yaml": "25d3138745771d05b05113ca7cad79eebeb65b37f896f633b2f237858908d10a",
+  "mappings/structure_sequence_map.tsv": "5027d6acebf54c6c315c458aeaf6cd7126bd84029092373bd56da3002a11db8e",
+  "results/selected_representatives.tsv": "4756b03867ab5d30f47664e312ec53669ffef951c004d0c50a7aee0d420ace06",
+  "results/selected_pairs.tsv": "f3ec37adc5f93a79f65987c925baf2e2cea1f8444635be0f2891313de6dda9bf",
+  "review/construct_review.tsv": "6fccf7adb143b715a0c728704259a5347fd2fd193fd22cb3dd584d99918854c3",
+  "results/sequence_groups.tsv": "0d1766c0b51d22cd830cca3208499fdb40b1df860953bbf8df6d244f73111c10"
+ }
+}

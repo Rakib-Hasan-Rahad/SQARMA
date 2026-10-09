@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="US-ASCII"?>
+<!DOCTYPE BlastOutput PUBLIC "-//NCBI//NCBI BlastOutput/EN" "http://www.ncbi.nlm.nih.gov/dtd/NCBI_BlastOutput.dtd">
+<BlastOutput>
+  <BlastOutput_program>blastn</BlastOutput_program>
+  <BlastOutput_version>BLASTN 2.17.0+</BlastOutput_version>
+  <BlastOutput_reference>Stephen F. Altschul, Thomas L. Madden, Alejandro A. Sch&amp;auml;ffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), &quot;Gapped BLAST and PSI-BLAST: a new generation of protein database search programs&quot;, Nucleic Acids Res. 25:3389-3402.</BlastOutput_reference>
+  <BlastOutput_db>core_nt</BlastOutput_db>
+  <BlastOutput_query-ID>Query_2747543</BlastOutput_query-ID>
+  <BlastOutput_query-def>No definition line</BlastOutput_query-def>
+  <BlastOutput_query-len>210</BlastOutput_query-len>
+  <BlastOutput_param>
+    <Parameters>
+      <Parameters_expect>0.001</Parameters_expect>
+      <Parameters_sc-match>2</Parameters_sc-match>
+      <Parameters_sc-mismatch>-3</Parameters_sc-mismatch>
+      <Parameters_gap-open>5</Parameters_gap-open>
+      <Parameters_gap-extend>2</Parameters_gap-extend>
+      <Parameters_filter>L;m;</Parameters_filter>
+    </Parameters>
+  </BlastOutput_param>
+<BlastOutput_iterations>
+<Iteration>
+  <Iteration_iter-num>1</Iteration_iter-num>
+  <Iteration_query-ID>Query_2747543</Iteration_query-ID>
+  <Iteration_query-def>No definition line</Iteration_query-def>
+  <Iteration_query-len>210</Iteration_query-len>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>gi|2552638191|pdb|8FW4|Z</Hit_id>
+  <Hit_def>Chain Z, RNA (210-MER)</Hit_def>
+  <Hit_accession>8FW4_Z</Hit_accession>
+  <Hit_len>210</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>379.994</Hsp_bit-score>
+      <Hsp_score>420</Hsp_score>
+      <Hsp_evalue>2.08425e-106</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>210</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>210</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>1</Hsp_hit-frame>
+      <Hsp_identity>210</Hsp_identity>
+      <Hsp_positive>210</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>210</Hsp_align-len>
+      <Hsp_qseq>GGTTAAAGCCTTATGGTCGCTACCATTGCACTCCGGTAGCGTTAAAAGGGAAGACGGGTGAGAATCCCGCGCAGCCCCCGCTACTGTGAGGGAGGACGAAGCCCTAGTAAGCCACTGCCGAAAGGTGGGAAGGCAGGGTGGAGGATGAGTCCCGAGCCAGGAGACCTGCCATAAGGTTTTAGAAGTTCGCCTTCGGGGGGAAGGTGAACA</Hsp_qseq>
+      <Hsp_hseq>GGTTAAAGCCTTATGGTCGCTACCATTGCACTCCGGTAGCGTTAAAAGGGAAGACGGGTGAGAATCCCGCGCAGCCCCCGCTACTGTGAGGGAGGACGAAGCCCTAGTAAGCCACTGCCGAAAGGTGGGAAGGCAGGGTGGAGGATGAGTCCCGAGCCAGGAGACCTGCCATAAGGTTTTAGAAGTTCGCCTTCGGGGGGAAGGTGAACA</Hsp_hseq>
+      <Hsp_midline>||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>2</Hit_num>
+  <Hit_id>gi|2552639546|pdb|8SA2|A</Hit_id>
+  <Hit_def>Chain A, adenosylcobalamin riboswitch form 1 &gt;gi|2552639547|pdb|8SA2|B Chain B, adenosylcobalamin riboswitch form 1 &gt;gi|2552639548|pdb|8SA3|A Chain A, adenosylcobalamin riboswitch form 2 &gt;gi|2552639549|pdb|8SA3|B Chain B, adenosylcobalamin riboswitch form 2 &gt;gi|2552639550|pdb|8SA4|A Chain A, adenosylcobalamin riboswitch form 3 &gt;gi|2552639551|pdb|8SA4|B Chain B, adenosylcobalamin riboswitch form 3 &gt;gi|2552639552|pdb|8SA5|A Chain A, adenosylcobalamin riboswitch form 4 &gt;gi|2552639553|pdb|8SA5|B Chain B, adenosylcobalamin riboswitch form 4 &gt;gi|2552639554|pdb|8SA6|A Chain A, apo form of adenosylcobalamin riboswitch dimer &gt;gi|2552639555|pdb|8SA6|B Chain B, apo form of adenosylcobalamin riboswitch dimer</Hit_def>
+  <Hit_accession>8SA2_A</Hit_accession>
+  <Hit_len>210</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>378.19</Hsp_bit-score>
+      <Hsp_score>418</Hsp_score>
+      <Hsp_evalue>7.27473e-106</Hsp_evalue>
+      <Hsp_query-from>2</Hsp_query-from>
+      <Hsp_query-to>210</Hsp_query-to>
+      <Hsp_hit-from>2</Hsp_hit-from>
+      <Hsp_hit-to>210</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>1</Hsp_hit-frame>
+      <Hsp_identity>209</Hsp_identity>
+      <Hsp_positive>209</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>209</Hsp_align-len>
+      <Hsp_qseq>GTTAAAGCCTTATGGTCGCTACCATTGCACTCCGGTAGCGTTAAAAGGGAAGACGGGTGAGAATCCCGCGCAGCCCCCGCTACTGTGAGGGAGGACGAAGCCCTAGTAAGCCACTGCCGAAAGGTGGGAAGGCAGGGTGGAGGATGAGTCCCGAGCCAGGAGACCTGCCATAAGGTTTTAGAAGTTCGCCTTCGGGGGGAAGGTGAACA</Hsp_qseq>
+      <Hsp_hseq>GTTAAAGCCTTATGGTCGCTACCATTGCACTCCGGTAGCGTTAAAAGGGAAGACGGGTGAGAATCCCGCGCAGCCCCCGCTACTGTGAGGGAGGACGAAGCCCTAGTAAGCCACTGCCGAAAGGTGGGAAGGCAGGGTGGAGGATGAGTCCCGAGCCAGGAGACCTGCCATAAGGTTTTAGAAGTTCGCCTTCGGGGGGAAGGTGAACA</Hsp_hseq>
+      <Hsp_midline>|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>3</Hit_num>
+  <Hit_id>gi|20671658|gb|AE008691.1|</Hit_id>
+  <Hit_def>Thermoanaerobacter tengcongensis MB4, complete genome</Hit_def>
+  <Hit_accession>AE008691</Hit_accession>
+  <Hit_len>2689445</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>145.556</Hsp_bit-score>
+      <Hsp_score>160</Hsp_score>
+      <Hsp_evalue>7.79475e-36</Hsp_evalue>
+      <Hsp_query-from>124</Hsp_query-from>
+      <Hsp_query-to>209</Hsp_query-to>
+      <Hsp_hit-from>395309</Hsp_hit-from>
+      <Hsp_hit-to>395395</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>1</Hsp_hit-frame>
+      <Hsp_identity>85</Hsp_identity>
+      <Hsp_positive>85</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>87</Hsp_align-len>
+      <Hsp_qseq>GGTGGGAAGGCAGGGTGGAGGATGAGTCCCGAGCCAGGAGACCTGCCATAAGGTTTTAGAAGTTCGCCTTCGGGGGGAAGG-TGAAC</Hsp_qseq>
+      <Hsp_hseq>GGTGGGAAGGCAGGGTGGAGGATGAGTCCCGAGCCAGGAGACCTGCCATAAGGTTTTAGAAGTTCGCCTTCGGAGGGAAGGTTGAAC</Hsp_hseq>
+      <Hsp_midline>||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| ||||||| |||||</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>140.146</Hsp_bit-score>
+      <Hsp_score>154</Hsp_score>
+      <Hsp_evalue>3.31441e-34</Hsp_evalue>
+      <Hsp_query-from>41</Hsp_query-from>
+      <Hsp_query-to>117</Hsp_query-to>
+      <Hsp_hit-from>395164</Hsp_hit-from>
+      <Hsp_hit-to>395240</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>1</Hsp_hit-frame>
+      <Hsp_identity>77</Hsp_identity>
+      <Hsp_positive>77</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>77</Hsp_align-len>
+      <Hsp_qseq>GTTAAAAGGGAAGACGGGTGAGAATCCCGCGCAGCCCCCGCTACTGTGAGGGAGGACGAAGCCCTAGTAAGCCACTG</Hsp_qseq>
+      <Hsp_hseq>GTTAAAAGGGAAGACGGGTGAGAATCCCGCGCAGCCCCCGCTACTGTGAGGGAGGACGAAGCCCTAGTAAGCCACTG</Hsp_hseq>
+      <Hsp_midline>|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>3</Hsp_num>
+      <Hsp_bit-score>140.146</Hsp_bit-score>
+      <Hsp_score>154</Hsp_score>
+      <Hsp_evalue>3.31441e-34</Hsp_evalue>
+      <Hsp_query-from>41</Hsp_query-from>
+      <Hsp_query-to>117</Hsp_query-to>
+      <Hsp_hit-from>396086</Hsp_hit-from>
+      <Hsp_hit-to>396162</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>1</Hsp_hit-frame>
+      <Hsp_identity>77</Hsp_identity>
+      <Hsp_positive>77</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>77</Hsp_align-len>
+      <Hsp_qseq>GTTAAAAGGGAAGACGGGTGAGAATCCCGCGCAGCCCCCGCTACTGTGAGGGAGGACGAAGCCCTAGTAAGCCACTG</Hsp_qseq>
+      <Hsp_hseq>GTTAAAAGGGAAGACGGGTGAGAATCCCGCGCAGCCCCCGCTACTGTGAGGGAGGACGAAGCCCTAGTAAGCCACTG</Hsp_hseq>
+      <Hsp_midline>|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>4</Hsp_num>
+      <Hsp_bit-score>131.129</Hsp_bit-score>
+      <Hsp_score>144</Hsp_score>
+      <Hsp_evalue>1.71691e-31</Hsp_evalue>
+      <Hsp_query-from>126</Hsp_query-from>
+      <Hsp_query-to>209</Hsp_query-to>
+      <Hsp_hit-from>396233</Hsp_hit-from>
+      <Hsp_hit-to>396318</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>1</Hsp_hit-frame>
+      <Hsp_identity>82</Hsp_identity>
+      <Hsp_positive>82</Hsp_positive>
+      <Hsp_gaps>2</Hsp_gaps>
+      <Hsp_align-len>86</Hsp_align-len>
+      <Hsp_qseq>TGGGAAGGCAGGGTGGAGGATGAGTCCCGAGCCAGGAGACCTGCCATAAGG-TTTTAGAAGTTCGCCTTCGGGGGGAAGG-TGAAC</Hsp_qseq>
+      <Hsp_hseq>TGGGAAGGCAGGGTGGAGGATGAGTCCCGAGCCAGGAGACCTGCCATAAGGTTTTTAAAAGTTCGCCTTCGGAGGGAAGGTTGAAC</Hsp_hseq>
+      <Hsp_midline>||||||||||||||||||||||||||||||||||||||||||||||||||| ||||| |||||||||||||| ||||||| |||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>48</Statistics_db-num>
+      <Statistics_db-len>2718437</Statistics_db-len>
+      <Statistics_hsp-len>0</Statistics_hsp-len>
+      <Statistics_eff-space>0</Statistics_eff-space>
+      <Statistics_kappa>0.41</Statistics_kappa>
+      <Statistics_lambda>0.625</Statistics_lambda>
+      <Statistics_entropy>0.78</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+</Iteration>
+</BlastOutput_iterations>
+</BlastOutput>

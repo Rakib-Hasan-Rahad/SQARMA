@@ -1,0 +1,9 @@
+frozen pairs: 7
+RF00059__2GDI_X__3D2G_A: runs 6 {'completed': 6}; summary rows 6; category sums ok True; per-run residue rows == query row length True
+RF00162__2GIS_A__4KQY_A: runs 6 {'completed': 6}; summary rows 6; category sums ok True; per-run residue rows == query row length True
+RF00174__4GXY_A__6VMY_A: runs 6 {'completed': 6}; summary rows 6; category sums ok True; per-run residue rows == query row length True
+RF00442__5U3G_B__7MLW_F: runs 6 {'completed': 5, 'failed': 1}; summary rows 6; category sums ok True; per-run residue rows == query row length True
+RF00522__3FU2_A__6VUI_A: runs 6 {'completed': 6}; summary rows 6; category sums ok True; per-run residue rows == query row length True
+RF00522__3FU2_A__7REX_A: runs 6 {'completed': 6}; summary rows 6; category sums ok True; per-run residue rows == query row length True
+RF00522__6VUI_A__7REX_A: runs 6 {'completed': 6}; summary rows 6; category sums ok True; per-run residue rows == query row length True
+RECONCILIATION: PASS

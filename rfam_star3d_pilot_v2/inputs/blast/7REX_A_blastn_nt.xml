@@ -1,0 +1,602 @@
+<?xml version="1.0" encoding="US-ASCII"?>
+<!DOCTYPE BlastOutput PUBLIC "-//NCBI//NCBI BlastOutput/EN" "http://www.ncbi.nlm.nih.gov/dtd/NCBI_BlastOutput.dtd">
+<BlastOutput>
+  <BlastOutput_program>blastn</BlastOutput_program>
+  <BlastOutput_version>BLASTN 2.17.0+</BlastOutput_version>
+  <BlastOutput_reference>Stephen F. Altschul, Thomas L. Madden, Alejandro A. Sch&amp;auml;ffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), &quot;Gapped BLAST and PSI-BLAST: a new generation of protein database search programs&quot;, Nucleic Acids Res. 25:3389-3402.</BlastOutput_reference>
+  <BlastOutput_db>core_nt</BlastOutput_db>
+  <BlastOutput_query-ID>Query_505991</BlastOutput_query-ID>
+  <BlastOutput_query-def>No definition line</BlastOutput_query-def>
+  <BlastOutput_query-len>34</BlastOutput_query-len>
+  <BlastOutput_param>
+    <Parameters>
+      <Parameters_expect>0.001</Parameters_expect>
+      <Parameters_sc-match>2</Parameters_sc-match>
+      <Parameters_sc-mismatch>-3</Parameters_sc-mismatch>
+      <Parameters_gap-open>5</Parameters_gap-open>
+      <Parameters_gap-extend>2</Parameters_gap-extend>
+      <Parameters_filter>L;m;</Parameters_filter>
+    </Parameters>
+  </BlastOutput_param>
+<BlastOutput_iterations>
+<Iteration>
+  <Iteration_iter-num>1</Iteration_iter-num>
+  <Iteration_query-ID>Query_505991</Iteration_query-ID>
+  <Iteration_query-def>No definition line</Iteration_query-def>
+  <Iteration_query-len>34</Iteration_query-len>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>gi|2171220781|pdb|7REX|A</Hit_id>
+  <Hit_def>Chain A, RNA (34-MER) &gt;gi|2171220782|pdb|7REX|B Chain B, RNA (34-MER) &gt;gi|2171220783|pdb|7REX|C Chain C, RNA (34-MER) &gt;gi|2447596822|pdb|8FB3|A Chain A, RNA (34-MER) Riboswitch &gt;gi|2447596823|pdb|8FB3|B Chain B, RNA (34-MER) Riboswitch &gt;gi|2447596824|pdb|8FB3|C Chain C, RNA (34-MER) Riboswitch</Hit_def>
+  <Hit_accession>7REX_A</Hit_accession>
+  <Hit_len>34</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>62.6008</Hsp_bit-score>
+      <Hsp_score>68</Hsp_score>
+      <Hsp_evalue>4.64071e-07</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>34</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>34</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>1</Hsp_hit-frame>
+      <Hsp_identity>34</Hsp_identity>
+      <Hsp_positive>34</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>34</Hsp_align-len>
+      <Hsp_qseq>TGTGGTTCGCAACCATCCCACATAAAAAAACTAG</Hsp_qseq>
+      <Hsp_hseq>TGTGGTTCGCAACCATCCCACATAAAAAAACTAG</Hsp_hseq>
+      <Hsp_midline>||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>2</Hit_num>
+  <Hit_id>gi|971182981|gb|CP010796.1|</Hit_id>
+  <Hit_def>Carnobacterium antarcticum strain CP1, complete genome</Hit_def>
+  <Hit_accession>CP010796</Hit_accession>
+  <Hit_len>2605518</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>62.6008</Hsp_bit-score>
+      <Hsp_score>68</Hsp_score>
+      <Hsp_evalue>4.64071e-07</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>34</Hsp_query-to>
+      <Hsp_hit-from>2093557</Hsp_hit-from>
+      <Hsp_hit-to>2093590</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>1</Hsp_hit-frame>
+      <Hsp_identity>34</Hsp_identity>
+      <Hsp_positive>34</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>34</Hsp_align-len>
+      <Hsp_qseq>TGTGGTTCGCAACCATCCCACATAAAAAAACTAG</Hsp_qseq>
+      <Hsp_hseq>TGTGGTTCGCAACCATCCCACATAAAAAAACTAG</Hsp_hseq>
+      <Hsp_midline>||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>3</Hit_num>
+  <Hit_id>gi|1957355037|gb|CP067364.1|</Hit_id>
+  <Hit_def>Carnobacterium sp. CS13 chromosome, complete genome</Hit_def>
+  <Hit_accession>CP067364</Hit_accession>
+  <Hit_len>2562218</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>60.7975</Hsp_bit-score>
+      <Hsp_score>66</Hsp_score>
+      <Hsp_evalue>1.61977e-06</Hsp_evalue>
+      <Hsp_query-from>2</Hsp_query-from>
+      <Hsp_query-to>34</Hsp_query-to>
+      <Hsp_hit-from>285962</Hsp_hit-from>
+      <Hsp_hit-to>285994</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>1</Hsp_hit-frame>
+      <Hsp_identity>33</Hsp_identity>
+      <Hsp_positive>33</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>33</Hsp_align-len>
+      <Hsp_qseq>GTGGTTCGCAACCATCCCACATAAAAAAACTAG</Hsp_qseq>
+      <Hsp_hseq>GTGGTTCGCAACCATCCCACATAAAAAAACTAG</Hsp_hseq>
+      <Hsp_midline>|||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>4</Hit_num>
+  <Hit_id>gi|3280976997|emb|OZ463906.1|</Hit_id>
+  <Hit_def>Carnobacterium mobile isolate Carnobacterium_mobile_FME307 genome assembly, chromosome: 1</Hit_def>
+  <Hit_accession>OZ463906</Hit_accession>
+  <Hit_len>2661539</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>58.0924</Hsp_bit-score>
+      <Hsp_score>63</Hsp_score>
+      <Hsp_evalue>1.97328e-05</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>34</Hsp_query-to>
+      <Hsp_hit-from>272423</Hsp_hit-from>
+      <Hsp_hit-to>272456</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>1</Hsp_hit-frame>
+      <Hsp_identity>33</Hsp_identity>
+      <Hsp_positive>33</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>34</Hsp_align-len>
+      <Hsp_qseq>TGTGGTTCGCAACCATCCCACATAAAAAAACTAG</Hsp_qseq>
+      <Hsp_hseq>TGTGGTTCGTAACCATCCCACATAAAAAAACTAG</Hsp_hseq>
+      <Hsp_midline>||||||||| ||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>5</Hit_num>
+  <Hit_id>gi|3280977006|emb|OZ463915.1|</Hit_id>
+  <Hit_def>Carnobacterium mobile isolate Carnobacterium_mobile_FME004 genome assembly, chromosome: 1</Hit_def>
+  <Hit_accession>OZ463915</Hit_accession>
+  <Hit_len>2558223</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>58.0924</Hsp_bit-score>
+      <Hsp_score>63</Hsp_score>
+      <Hsp_evalue>1.97328e-05</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>34</Hsp_query-to>
+      <Hsp_hit-from>891903</Hsp_hit-from>
+      <Hsp_hit-to>891936</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>1</Hsp_hit-frame>
+      <Hsp_identity>33</Hsp_identity>
+      <Hsp_positive>33</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>34</Hsp_align-len>
+      <Hsp_qseq>TGTGGTTCGCAACCATCCCACATAAAAAAACTAG</Hsp_qseq>
+      <Hsp_hseq>TGTGGTTCGTAACCATCCCACATAAAAAAACTAG</Hsp_hseq>
+      <Hsp_midline>||||||||| ||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>6</Hit_num>
+  <Hit_id>gi|908225886|gb|CP009230.1|</Hit_id>
+  <Hit_def>Aggregatibacter aphrophilus NJ8700, complete genome</Hit_def>
+  <Hit_accession>CP009230</Hit_accession>
+  <Hit_len>2313256</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>56.2891</Hsp_bit-score>
+      <Hsp_score>61</Hsp_score>
+      <Hsp_evalue>6.88743e-05</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>33</Hsp_query-to>
+      <Hsp_hit-from>229333</Hsp_hit-from>
+      <Hsp_hit-to>229365</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>1</Hsp_hit-frame>
+      <Hsp_identity>32</Hsp_identity>
+      <Hsp_positive>32</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>33</Hsp_align-len>
+      <Hsp_qseq>TGTGGTTCGCAACCATCCCACATAAAAAAACTA</Hsp_qseq>
+      <Hsp_hseq>TGTGGTTCGCAACCCTCCCACATAAAAAAACTA</Hsp_hseq>
+      <Hsp_midline>|||||||||||||| ||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>7</Hit_num>
+  <Hit_id>gi|2895466706|gb|CP154840.1|</Hit_id>
+  <Hit_def>Lysinibacillus canaveralius strain 3P01SB chromosome</Hit_def>
+  <Hit_accession>CP154840</Hit_accession>
+  <Hit_len>4572201</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>56.2891</Hsp_bit-score>
+      <Hsp_score>61</Hsp_score>
+      <Hsp_evalue>6.88743e-05</Hsp_evalue>
+      <Hsp_query-from>2</Hsp_query-from>
+      <Hsp_query-to>34</Hsp_query-to>
+      <Hsp_hit-from>360567</Hsp_hit-from>
+      <Hsp_hit-to>360535</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>-1</Hsp_hit-frame>
+      <Hsp_identity>32</Hsp_identity>
+      <Hsp_positive>32</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>33</Hsp_align-len>
+      <Hsp_qseq>GTGGTTCGCAACCATCCCACATAAAAAAACTAG</Hsp_qseq>
+      <Hsp_hseq>GTGGTTCGCAACCATCCCACGTAAAAAAACTAG</Hsp_hseq>
+      <Hsp_midline>|||||||||||||||||||| ||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>8</Hit_num>
+  <Hit_id>gi|3264249091|emb|OZ455434.1|</Hit_id>
+  <Hit_def>Aggregatibacter aphrophilus isolate HK415 genome assembly, chromosome: 1</Hit_def>
+  <Hit_accession>OZ455434</Hit_accession>
+  <Hit_len>2461944</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>56.2891</Hsp_bit-score>
+      <Hsp_score>61</Hsp_score>
+      <Hsp_evalue>6.88743e-05</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>33</Hsp_query-to>
+      <Hsp_hit-from>900915</Hsp_hit-from>
+      <Hsp_hit-to>900947</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>1</Hsp_hit-frame>
+      <Hsp_identity>32</Hsp_identity>
+      <Hsp_positive>32</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>33</Hsp_align-len>
+      <Hsp_qseq>TGTGGTTCGCAACCATCCCACATAAAAAAACTA</Hsp_qseq>
+      <Hsp_hseq>TGTGGTTCGCAACCCTCCCACATAAAAAAACTA</Hsp_hseq>
+      <Hsp_midline>|||||||||||||| ||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>9</Hit_num>
+  <Hit_id>gi|1539879753|emb|LR134327.1|</Hit_id>
+  <Hit_def>Aggregatibacter aphrophilus strain NCTC5906 genome assembly, chromosome: 1</Hit_def>
+  <Hit_accession>LR134327</Hit_accession>
+  <Hit_len>2337153</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>56.2891</Hsp_bit-score>
+      <Hsp_score>61</Hsp_score>
+      <Hsp_evalue>6.88743e-05</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>33</Hsp_query-to>
+      <Hsp_hit-from>783352</Hsp_hit-from>
+      <Hsp_hit-to>783320</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>-1</Hsp_hit-frame>
+      <Hsp_identity>32</Hsp_identity>
+      <Hsp_positive>32</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>33</Hsp_align-len>
+      <Hsp_qseq>TGTGGTTCGCAACCATCCCACATAAAAAAACTA</Hsp_qseq>
+      <Hsp_hseq>TGTGGTTCGCAACCCTCCCACATAAAAAAACTA</Hsp_hseq>
+      <Hsp_midline>|||||||||||||| ||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>10</Hit_num>
+  <Hit_id>gi|1403670283|emb|LS483485.1|</Hit_id>
+  <Hit_def>Aggregatibacter aphrophilus strain NCTC11096 genome assembly, chromosome: 1</Hit_def>
+  <Hit_accession>LS483485</Hit_accession>
+  <Hit_len>2290909</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>56.2891</Hsp_bit-score>
+      <Hsp_score>61</Hsp_score>
+      <Hsp_evalue>6.88743e-05</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>33</Hsp_query-to>
+      <Hsp_hit-from>2116247</Hsp_hit-from>
+      <Hsp_hit-to>2116215</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>-1</Hsp_hit-frame>
+      <Hsp_identity>32</Hsp_identity>
+      <Hsp_positive>32</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>33</Hsp_align-len>
+      <Hsp_qseq>TGTGGTTCGCAACCATCCCACATAAAAAAACTA</Hsp_qseq>
+      <Hsp_hseq>TGTGGTTCGCAACCCTCCCACATAAAAAAACTA</Hsp_hseq>
+      <Hsp_midline>|||||||||||||| ||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>11</Hit_num>
+  <Hit_id>gi|247533203|gb|CP001607.1|</Hit_id>
+  <Hit_def>Aggregatibacter aphrophilus NJ8700, complete genome</Hit_def>
+  <Hit_accession>CP001607</Hit_accession>
+  <Hit_len>2313035</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>56.2891</Hsp_bit-score>
+      <Hsp_score>61</Hsp_score>
+      <Hsp_evalue>6.88743e-05</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>33</Hsp_query-to>
+      <Hsp_hit-from>229331</Hsp_hit-from>
+      <Hsp_hit-to>229363</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>1</Hsp_hit-frame>
+      <Hsp_identity>32</Hsp_identity>
+      <Hsp_positive>32</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>33</Hsp_align-len>
+      <Hsp_qseq>TGTGGTTCGCAACCATCCCACATAAAAAAACTA</Hsp_qseq>
+      <Hsp_hseq>TGTGGTTCGCAACCCTCCCACATAAAAAAACTA</Hsp_hseq>
+      <Hsp_midline>|||||||||||||| ||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>12</Hit_num>
+  <Hit_id>gi|2104762633|emb|OU745373.1|</Hit_id>
+  <Hit_def>Cardiobacterium sp. Marseille-Q4385 genome assembly, chromosome: contig00001</Hit_def>
+  <Hit_accession>OU745373</Hit_accession>
+  <Hit_len>2627365</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>56.2891</Hsp_bit-score>
+      <Hsp_score>61</Hsp_score>
+      <Hsp_evalue>6.88743e-05</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>34</Hsp_query-to>
+      <Hsp_hit-from>1548408</Hsp_hit-from>
+      <Hsp_hit-to>1548374</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>-1</Hsp_hit-frame>
+      <Hsp_identity>34</Hsp_identity>
+      <Hsp_positive>34</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>35</Hsp_align-len>
+      <Hsp_qseq>TGTGGTTCGCAACC-ATCCCACATAAAAAAACTAG</Hsp_qseq>
+      <Hsp_hseq>TGTGGTTCGCAACCCATCCCACATAAAAAAACTAG</Hsp_hseq>
+      <Hsp_midline>|||||||||||||| ||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>13</Hit_num>
+  <Hit_id>gi|2710079276|gb|CP150291.1|</Hit_id>
+  <Hit_def>Solibacillus sp. FSL H8-0523 chromosome, complete genome</Hit_def>
+  <Hit_accession>CP150291</Hit_accession>
+  <Hit_len>4144207</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>56.2891</Hsp_bit-score>
+      <Hsp_score>61</Hsp_score>
+      <Hsp_evalue>6.88743e-05</Hsp_evalue>
+      <Hsp_query-from>2</Hsp_query-from>
+      <Hsp_query-to>34</Hsp_query-to>
+      <Hsp_hit-from>420350</Hsp_hit-from>
+      <Hsp_hit-to>420318</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>-1</Hsp_hit-frame>
+      <Hsp_identity>32</Hsp_identity>
+      <Hsp_positive>32</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>33</Hsp_align-len>
+      <Hsp_qseq>GTGGTTCGCAACCATCCCACATAAAAAAACTAG</Hsp_qseq>
+      <Hsp_hseq>GTGGTTCGCAACCATCCCACGTAAAAAAACTAG</Hsp_hseq>
+      <Hsp_midline>|||||||||||||||||||| ||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>14</Hit_num>
+  <Hit_id>gi|913011305|gb|CP012067.1|</Hit_id>
+  <Hit_def>Aggregatibacter aphrophilus strain W10433, complete genome</Hit_def>
+  <Hit_accession>CP012067</Hit_accession>
+  <Hit_len>2414427</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>56.2891</Hsp_bit-score>
+      <Hsp_score>61</Hsp_score>
+      <Hsp_evalue>6.88743e-05</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>33</Hsp_query-to>
+      <Hsp_hit-from>1152301</Hsp_hit-from>
+      <Hsp_hit-to>1152333</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>1</Hsp_hit-frame>
+      <Hsp_identity>32</Hsp_identity>
+      <Hsp_positive>32</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>33</Hsp_align-len>
+      <Hsp_qseq>TGTGGTTCGCAACCATCCCACATAAAAAAACTA</Hsp_qseq>
+      <Hsp_hseq>TGTGGTTCGCAACCCTCCCACATAAAAAAACTA</Hsp_hseq>
+      <Hsp_midline>|||||||||||||| ||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>15</Hit_num>
+  <Hit_id>gi|2905474739|gb|CP180212.1|</Hit_id>
+  <Hit_def>Carnobacterium sp. TMP28 isolate 11T.7.20.2 chromosome, complete genome</Hit_def>
+  <Hit_accession>CP180212</Hit_accession>
+  <Hit_len>2269817</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>53.584</Hsp_bit-score>
+      <Hsp_score>58</Hsp_score>
+      <Hsp_evalue>0.000240395</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>34</Hsp_query-to>
+      <Hsp_hit-from>175944</Hsp_hit-from>
+      <Hsp_hit-to>175977</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>1</Hsp_hit-frame>
+      <Hsp_identity>32</Hsp_identity>
+      <Hsp_positive>32</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>34</Hsp_align-len>
+      <Hsp_qseq>TGTGGTTCGCAACCATCCCACATAAAAAAACTAG</Hsp_qseq>
+      <Hsp_hseq>TGTGGTTCGTAACCATCCCACAGAAAAAAACTAG</Hsp_hseq>
+      <Hsp_midline>||||||||| |||||||||||| |||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>16</Hit_num>
+  <Hit_id>gi|3352251312|gb|CP196375.1|</Hit_id>
+  <Hit_def>Weissella sp. ESL1139 chromosome, complete genome</Hit_def>
+  <Hit_accession>CP196375</Hit_accession>
+  <Hit_len>1872505</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>51.7806</Hsp_bit-score>
+      <Hsp_score>56</Hsp_score>
+      <Hsp_evalue>0.000839061</Hsp_evalue>
+      <Hsp_query-from>2</Hsp_query-from>
+      <Hsp_query-to>34</Hsp_query-to>
+      <Hsp_hit-from>668700</Hsp_hit-from>
+      <Hsp_hit-to>668732</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>1</Hsp_hit-frame>
+      <Hsp_identity>31</Hsp_identity>
+      <Hsp_positive>31</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>33</Hsp_align-len>
+      <Hsp_qseq>GTGGTTCGCAACCATCCCACATAAAAAAACTAG</Hsp_qseq>
+      <Hsp_hseq>GTGGTTCGTAACCATCCCACTTAAAAAAACTAG</Hsp_hseq>
+      <Hsp_midline>|||||||| ||||||||||| ||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>17</Hit_num>
+  <Hit_id>gi|3352245595|gb|CP196374.1|</Hit_id>
+  <Hit_def>Weissella sp. ESL1141 chromosome, complete genome</Hit_def>
+  <Hit_accession>CP196374</Hit_accession>
+  <Hit_len>1915384</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>51.7806</Hsp_bit-score>
+      <Hsp_score>56</Hsp_score>
+      <Hsp_evalue>0.000839061</Hsp_evalue>
+      <Hsp_query-from>2</Hsp_query-from>
+      <Hsp_query-to>34</Hsp_query-to>
+      <Hsp_hit-from>668701</Hsp_hit-from>
+      <Hsp_hit-to>668733</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>1</Hsp_hit-frame>
+      <Hsp_identity>31</Hsp_identity>
+      <Hsp_positive>31</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>33</Hsp_align-len>
+      <Hsp_qseq>GTGGTTCGCAACCATCCCACATAAAAAAACTAG</Hsp_qseq>
+      <Hsp_hseq>GTGGTTCGTAACCATCCCACTTAAAAAAACTAG</Hsp_hseq>
+      <Hsp_midline>|||||||| ||||||||||| ||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>18</Hit_num>
+  <Hit_id>gi|3260563294|emb|OZ454187.1|</Hit_id>
+  <Hit_def>Latilactobacillus fuchuensis isolate Latilactobacillus_fuchuensis_MFPB42D0601 genome assembly, chromosome: 1</Hit_def>
+  <Hit_accession>OZ454187</Hit_accession>
+  <Hit_len>2227844</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>51.7806</Hsp_bit-score>
+      <Hsp_score>56</Hsp_score>
+      <Hsp_evalue>0.000839061</Hsp_evalue>
+      <Hsp_query-from>2</Hsp_query-from>
+      <Hsp_query-to>34</Hsp_query-to>
+      <Hsp_hit-from>1984122</Hsp_hit-from>
+      <Hsp_hit-to>1984154</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>1</Hsp_hit-frame>
+      <Hsp_identity>31</Hsp_identity>
+      <Hsp_positive>31</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>33</Hsp_align-len>
+      <Hsp_qseq>GTGGTTCGCAACCATCCCACATAAAAAAACTAG</Hsp_qseq>
+      <Hsp_hseq>GTGGTTCGTAACCATCCCACGTAAAAAAACTAG</Hsp_hseq>
+      <Hsp_midline>|||||||| ||||||||||| ||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>19</Hit_num>
+  <Hit_id>gi|3260561605|emb|OZ454158.1|</Hit_id>
+  <Hit_def>Latilactobacillus fuchuensis isolate Latilactobacillus_fuchuensis_MFPC17A3001 genome assembly, chromosome: 1</Hit_def>
+  <Hit_accession>OZ454158</Hit_accession>
+  <Hit_len>2211108</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>51.7806</Hsp_bit-score>
+      <Hsp_score>56</Hsp_score>
+      <Hsp_evalue>0.000839061</Hsp_evalue>
+      <Hsp_query-from>2</Hsp_query-from>
+      <Hsp_query-to>34</Hsp_query-to>
+      <Hsp_hit-from>831129</Hsp_hit-from>
+      <Hsp_hit-to>831161</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>1</Hsp_hit-frame>
+      <Hsp_identity>31</Hsp_identity>
+      <Hsp_positive>31</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>33</Hsp_align-len>
+      <Hsp_qseq>GTGGTTCGCAACCATCCCACATAAAAAAACTAG</Hsp_qseq>
+      <Hsp_hseq>GTGGTTCGTAACCATCCCACGTAAAAAAACTAG</Hsp_hseq>
+      <Hsp_midline>|||||||| ||||||||||| ||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>20</Hit_num>
+  <Hit_id>gi|3260561801|emb|OZ454178.1|</Hit_id>
+  <Hit_def>Latilactobacillus fuchuensis isolate Latilactobacillus_fuchuensis_MFPA16A1505 genome assembly, chromosome: 1</Hit_def>
+  <Hit_accession>OZ454178</Hit_accession>
+  <Hit_len>2431629</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>51.7806</Hsp_bit-score>
+      <Hsp_score>56</Hsp_score>
+      <Hsp_evalue>0.000839061</Hsp_evalue>
+      <Hsp_query-from>2</Hsp_query-from>
+      <Hsp_query-to>34</Hsp_query-to>
+      <Hsp_hit-from>2220500</Hsp_hit-from>
+      <Hsp_hit-to>2220468</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>-1</Hsp_hit-frame>
+      <Hsp_identity>31</Hsp_identity>
+      <Hsp_positive>31</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>33</Hsp_align-len>
+      <Hsp_qseq>GTGGTTCGCAACCATCCCACATAAAAAAACTAG</Hsp_qseq>
+      <Hsp_hseq>GTGGTTCGTAACCATCCCACGTAAAAAAACTAG</Hsp_hseq>
+      <Hsp_midline>|||||||| ||||||||||| ||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>131744797</Statistics_db-num>
+      <Statistics_db-len>1086004251965</Statistics_db-len>
+      <Statistics_hsp-len>0</Statistics_hsp-len>
+      <Statistics_eff-space>0</Statistics_eff-space>
+      <Statistics_kappa>0.41</Statistics_kappa>
+      <Statistics_lambda>0.625</Statistics_lambda>
+      <Statistics_entropy>0.78</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+</Iteration>
+</BlastOutput_iterations>
+</BlastOutput>

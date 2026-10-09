@@ -1,0 +1,9 @@
+RF00522__6VUI_A__7REX_A  (pinned Rfam.seed.gz 15.1; ORIGINAL column numbers)
+col    1  A   -----CUGGGU-CGCAG--U-A--ACCCCAGU--------------------UAACAAAA
+          B   -----UGUGGUUCGCAA--CC---AUCCCACA--------------------UAAAAAAA
+          SS  :::::<<<<<____AA_..___..__>>>>>.....................::::::::
+
+col   61  A   C-AAG-----
+          B   C-UAG-----
+          SS  :aa:::::::
+

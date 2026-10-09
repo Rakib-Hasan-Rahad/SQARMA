@@ -1,0 +1,21 @@
+pair_id	direction	replicates	identical_across_replicates	distinct_outputs
+RF00059__2GDI_X__3D2G_A	forward	3	True	1
+RF00059__2GDI_X__3D2G_A	reverse	3	True	1
+RF00162__2GIS_A__4KQY_A	forward	3	True	1
+RF00162__2GIS_A__4KQY_A	reverse	3	True	1
+RF00174__4GXY_A__6VMY_A	forward	3	True	1
+RF00174__4GXY_A__6VMY_A	reverse	3	True	1
+RF00442__5U3G_B__7MLW_F	forward	3	True	1
+RF00442__5U3G_B__7MLW_F	reverse	3	False	2
+RF00522__3FU2_A__6VUI_A	forward	3	True	1
+RF00522__3FU2_A__6VUI_A	reverse	3	True	1
+RF00522__3FU2_A__7REX_A	forward	3	True	1
+RF00522__3FU2_A__7REX_A	reverse	3	True	1
+RF00522__6VUI_A__7REX_A	forward	3	True	1
+RF00522__6VUI_A__7REX_A	reverse	3	True	1
+RF00522__6VUI_A__7REX_A	forward_vs_reverse_rep1	NA	True	shared 32; fwd-only 0; rev-only 0
+RF00522__3FU2_A__6VUI_A	forward_vs_reverse_rep1	NA	False	shared 29; fwd-only 2; rev-only 2
+RF00162__2GIS_A__4KQY_A	forward_vs_reverse_rep1	NA	True	shared 25; fwd-only 0; rev-only 0
+RF00174__4GXY_A__6VMY_A	forward_vs_reverse_rep1	NA	False	shared 24; fwd-only 2; rev-only 2
+RF00522__3FU2_A__7REX_A	forward_vs_reverse_rep1	NA	True	shared 32; fwd-only 0; rev-only 0
+RF00059__2GDI_X__3D2G_A	forward_vs_reverse_rep1	NA	True	shared 75; fwd-only 0; rev-only 0

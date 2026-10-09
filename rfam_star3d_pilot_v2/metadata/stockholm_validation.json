@@ -1,0 +1,15 @@
+{
+ "reference_source": "Rfam.seed.gz",
+ "rfam_release": "15.1",
+ "seed_sha256": "41f014f4ab5628620935f089b1bb77987ebc162fda7c72bff368a32c9cccabac",
+ "records": 4227,
+ "sequence_rows": 109390,
+ "gr_rows": 1320,
+ "decode_fallback_lines_latin1": [
+  [
+   "/Users/rakibhasanrahad/Desktop/IMPORTANT FILES 2026/2027 research/RNASEQ/Phase 1/Codebase/SQARMA/rfam_star3d_pilot_v2/inputs/rfam/15.1/Rfam.seed.gz",
+   176325
+  ]
+ ],
+ "note": "parse() raises on width/alphabet/annotation-link errors; no record rejected"
+}

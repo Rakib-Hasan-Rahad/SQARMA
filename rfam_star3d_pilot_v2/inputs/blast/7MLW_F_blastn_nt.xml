@@ -1,0 +1,602 @@
+<?xml version="1.0" encoding="US-ASCII"?>
+<!DOCTYPE BlastOutput PUBLIC "-//NCBI//NCBI BlastOutput/EN" "http://www.ncbi.nlm.nih.gov/dtd/NCBI_BlastOutput.dtd">
+<BlastOutput>
+  <BlastOutput_program>blastn</BlastOutput_program>
+  <BlastOutput_version>BLASTN 2.17.0+</BlastOutput_version>
+  <BlastOutput_reference>Stephen F. Altschul, Thomas L. Madden, Alejandro A. Sch&amp;auml;ffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), &quot;Gapped BLAST and PSI-BLAST: a new generation of protein database search programs&quot;, Nucleic Acids Res. 25:3389-3402.</BlastOutput_reference>
+  <BlastOutput_db>core_nt</BlastOutput_db>
+  <BlastOutput_query-ID>Query_821339</BlastOutput_query-ID>
+  <BlastOutput_query-def>No definition line</BlastOutput_query-def>
+  <BlastOutput_query-len>128</BlastOutput_query-len>
+  <BlastOutput_param>
+    <Parameters>
+      <Parameters_expect>0.001</Parameters_expect>
+      <Parameters_sc-match>2</Parameters_sc-match>
+      <Parameters_sc-mismatch>-3</Parameters_sc-mismatch>
+      <Parameters_gap-open>5</Parameters_gap-open>
+      <Parameters_gap-extend>2</Parameters_gap-extend>
+      <Parameters_filter>L;m;</Parameters_filter>
+    </Parameters>
+  </BlastOutput_param>
+<BlastOutput_iterations>
+<Iteration>
+  <Iteration_iter-num>1</Iteration_iter-num>
+  <Iteration_query-ID>Query_821339</Iteration_query-ID>
+  <Iteration_query-def>No definition line</Iteration_query-def>
+  <Iteration_query-len>128</Iteration_query-len>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>gi|2177197791|pdb|7MLW|F</Hit_id>
+  <Hit_def>Chain F, Guanidine-I riboswitch</Hit_def>
+  <Hit_accession>7MLW_F</Hit_accession>
+  <Hit_len>128</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>232.118</Hsp_bit-score>
+      <Hsp_score>256</Hsp_score>
+      <Hsp_evalue>1.29937e-56</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>128</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>128</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>1</Hsp_hit-frame>
+      <Hsp_identity>128</Hsp_identity>
+      <Hsp_positive>128</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>128</Hsp_align-len>
+      <Hsp_qseq>GGATCGCTAGGGTTCCGGTCGTGCGGCGTTCGCGCCGCACGATGCTGGTCCGAGAGCAATCCGGTCTTGCCTTCGCCTCGTTCGCGAGGAAACGGCGAGGCTCCACGGAGGGATAAAAGCCCGGGAGG</Hsp_qseq>
+      <Hsp_hseq>GGATCGCTAGGGTTCCGGTCGTGCGGCGTTCGCGCCGCACGATGCTGGTCCGAGAGCAATCCGGTCTTGCCTTCGCCTCGTTCGCGAGGAAACGGCGAGGCTCCACGGAGGGATAAAAGCCCGGGAGG</Hsp_hseq>
+      <Hsp_midline>||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>2</Hit_num>
+  <Hit_id>gi|1061563933|gb|CP013377.1|</Hit_id>
+  <Hit_def>Burkholderia pseudomultivorans strain SUB-INT23-BP2 chromosome 2, complete sequence</Hit_def>
+  <Hit_accession>CP013377</Hit_accession>
+  <Hit_len>2995708</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>208.674</Hsp_bit-score>
+      <Hsp_score>230</Hsp_score>
+      <Hsp_evalue>1.48258e-49</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>128</Hsp_query-to>
+      <Hsp_hit-from>1506238</Hsp_hit-from>
+      <Hsp_hit-to>1506365</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>1</Hsp_hit-frame>
+      <Hsp_identity>125</Hsp_identity>
+      <Hsp_positive>125</Hsp_positive>
+      <Hsp_gaps>2</Hsp_gaps>
+      <Hsp_align-len>129</Hsp_align-len>
+      <Hsp_qseq>GGATCGCTAGGGTTCCGGTCGTGCGGCGTTCGCGCCGCACGAT-GCTGGTCCGAGAGCAATCCGGTCTTGCCTTCGCCTCGTTCGCGAGGAAACGGCGAGGCTCCACGGAGGGATAAAAGCCCGGGAGG</Hsp_qseq>
+      <Hsp_hseq>GGATCGCTAGGGTTCCGGTCGTGCGGCGTTCGCGCCGCACGATGGCTGGTCCGAGAGCAATCCGGTCTTGCCTTCGCCTCGCT-TCGAGGAAACGGCGAGGCTCCACGGAGGGATAAAAGCCCGGGAGG</Hsp_hseq>
+      <Hsp_midline>||||||||||||||||||||||||||||||||||||||||||| ||||||||||||||||||||||||||||||||||||| |  ||||||||||||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>3</Hit_num>
+  <Hit_id>gi|685647217|gb|CP007784.1|</Hit_id>
+  <Hit_def>Burkholderia cenocepacia strain DDS 22E-1 chromosome 2, complete sequence</Hit_def>
+  <Hit_accession>CP007784</Hit_accession>
+  <Hit_len>3209624</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>208.674</Hsp_bit-score>
+      <Hsp_score>230</Hsp_score>
+      <Hsp_evalue>1.48258e-49</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>128</Hsp_query-to>
+      <Hsp_hit-from>79971</Hsp_hit-from>
+      <Hsp_hit-to>80098</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>1</Hsp_hit-frame>
+      <Hsp_identity>125</Hsp_identity>
+      <Hsp_positive>125</Hsp_positive>
+      <Hsp_gaps>2</Hsp_gaps>
+      <Hsp_align-len>129</Hsp_align-len>
+      <Hsp_qseq>GGATCGCTAGGGTTCCGGTCGTGCGGCGTTCGCGCCGCACGAT-GCTGGTCCGAGAGCAATCCGGTCTTGCCTTCGCCTCGTTCGCGAGGAAACGGCGAGGCTCCACGGAGGGATAAAAGCCCGGGAGG</Hsp_qseq>
+      <Hsp_hseq>GGATCGCTAGGGTTCCGGTCGTGCGGCGTTCGCGCCGCACGATGGCTGGTCCGAGAGCAATCCGGTCTTGCCTTCGCCTCGCT-TCGAGGAAACGGCGAGGCTCCACGGAGGGATAAAAGCCCGGGAGG</Hsp_hseq>
+      <Hsp_midline>||||||||||||||||||||||||||||||||||||||||||| ||||||||||||||||||||||||||||||||||||| |  ||||||||||||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>4</Hit_num>
+  <Hit_id>gi|3342275553|emb|OZ480243.1|</Hit_id>
+  <Hit_def>Burkholderia sp. LMG 34232 genome assembly, chromosome: LMG34232_2</Hit_def>
+  <Hit_accession>OZ480243</Hit_accession>
+  <Hit_len>3219997</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>208.674</Hsp_bit-score>
+      <Hsp_score>230</Hsp_score>
+      <Hsp_evalue>1.48258e-49</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>128</Hsp_query-to>
+      <Hsp_hit-from>1748914</Hsp_hit-from>
+      <Hsp_hit-to>1748787</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>-1</Hsp_hit-frame>
+      <Hsp_identity>125</Hsp_identity>
+      <Hsp_positive>125</Hsp_positive>
+      <Hsp_gaps>2</Hsp_gaps>
+      <Hsp_align-len>129</Hsp_align-len>
+      <Hsp_qseq>GGATCGCTAGGGTTCCGGTCGTGCGGCGTTCGCGCCGCACGATG-CTGGTCCGAGAGCAATCCGGTCTTGCCTTCGCCTCGTTCGCGAGGAAACGGCGAGGCTCCACGGAGGGATAAAAGCCCGGGAGG</Hsp_qseq>
+      <Hsp_hseq>GGATCGCTAGGGTTCCGGTCGTGCGGCGTTCGCGCCGCACGATGCCTGGTCCGAGAGCAATCCGGTCTTGCCTTCGCCTCGAT-TCGAGGAAACGGCGAGGCTCCACGGAGGGATAAAAGCCCGGGAGG</Hsp_hseq>
+      <Hsp_midline>|||||||||||||||||||||||||||||||||||||||||||| |||||||||||||||||||||||||||||||||||| |  ||||||||||||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>5</Hit_num>
+  <Hit_id>gi|3342275501|emb|OZ480191.1|</Hit_id>
+  <Hit_def>Burkholderia arboris strain R-16036 genome assembly, chromosome: R16036_2</Hit_def>
+  <Hit_accession>OZ480191</Hit_accession>
+  <Hit_len>3521856</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>204.165</Hsp_bit-score>
+      <Hsp_score>225</Hsp_score>
+      <Hsp_evalue>6.30411e-48</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>128</Hsp_query-to>
+      <Hsp_hit-from>1672762</Hsp_hit-from>
+      <Hsp_hit-to>1672889</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>1</Hsp_hit-frame>
+      <Hsp_identity>124</Hsp_identity>
+      <Hsp_positive>124</Hsp_positive>
+      <Hsp_gaps>2</Hsp_gaps>
+      <Hsp_align-len>129</Hsp_align-len>
+      <Hsp_qseq>GGATCGCTAGGGTTCCGGTCGTGCGGCGTTCGCGCCGCACGATGC-TGGTCCGAGAGCAATCCGGTCTTGCCTTCGCCTCGTTCGCGAGGAAACGGCGAGGCTCCACGGAGGGATAAAAGCCCGGGAGG</Hsp_qseq>
+      <Hsp_hseq>GGATCGCTAGGGTTCCGGTCGTGCGGCGTTCGCGTCGCACGATGCCTGGTCCGAGAGCAATCCGGTCTTGCCTTCGCCTCGATT-CGAGGAAACGGCGAGGCTCCACGGAGGGATAAAAGCCCGGGAGG</Hsp_hseq>
+      <Hsp_midline>|||||||||||||||||||||||||||||||||| |||||||||| ||||||||||||||||||||||||||||||||||| |  ||||||||||||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>6</Hit_num>
+  <Hit_id>gi|3342275534|emb|OZ480224.1|</Hit_id>
+  <Hit_def>Burkholderia arboris strain R-8833 genome assembly, chromosome: R8833_2</Hit_def>
+  <Hit_accession>OZ480224</Hit_accession>
+  <Hit_len>3515367</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>204.165</Hsp_bit-score>
+      <Hsp_score>225</Hsp_score>
+      <Hsp_evalue>6.30411e-48</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>128</Hsp_query-to>
+      <Hsp_hit-from>1667860</Hsp_hit-from>
+      <Hsp_hit-to>1667987</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>1</Hsp_hit-frame>
+      <Hsp_identity>124</Hsp_identity>
+      <Hsp_positive>124</Hsp_positive>
+      <Hsp_gaps>2</Hsp_gaps>
+      <Hsp_align-len>129</Hsp_align-len>
+      <Hsp_qseq>GGATCGCTAGGGTTCCGGTCGTGCGGCGTTCGCGCCGCACGATGC-TGGTCCGAGAGCAATCCGGTCTTGCCTTCGCCTCGTTCGCGAGGAAACGGCGAGGCTCCACGGAGGGATAAAAGCCCGGGAGG</Hsp_qseq>
+      <Hsp_hseq>GGATCGCTAGGGTTCCGGTCGTGCGGCGTTCGCGTCGCACGATGCCTGGTCCGAGAGCAATCCGGTCTTGCCTTCGCCTCGATT-CGAGGAAACGGCGAGGCTCCACGGAGGGATAAAAGCCCGGGAGG</Hsp_hseq>
+      <Hsp_midline>|||||||||||||||||||||||||||||||||| |||||||||| ||||||||||||||||||||||||||||||||||| |  ||||||||||||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>7</Hit_num>
+  <Hit_id>gi|3342275558|emb|OZ480248.1|</Hit_id>
+  <Hit_def>Burkholderia arboris strain R-16920 genome assembly, chromosome: R16920_2</Hit_def>
+  <Hit_accession>OZ480248</Hit_accession>
+  <Hit_len>3557304</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>204.165</Hsp_bit-score>
+      <Hsp_score>225</Hsp_score>
+      <Hsp_evalue>6.30411e-48</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>128</Hsp_query-to>
+      <Hsp_hit-from>1675301</Hsp_hit-from>
+      <Hsp_hit-to>1675428</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>1</Hsp_hit-frame>
+      <Hsp_identity>124</Hsp_identity>
+      <Hsp_positive>124</Hsp_positive>
+      <Hsp_gaps>2</Hsp_gaps>
+      <Hsp_align-len>129</Hsp_align-len>
+      <Hsp_qseq>GGATCGCTAGGGTTCCGGTCGTGCGGCGTTCGCGCCGCACGATGC-TGGTCCGAGAGCAATCCGGTCTTGCCTTCGCCTCGTTCGCGAGGAAACGGCGAGGCTCCACGGAGGGATAAAAGCCCGGGAGG</Hsp_qseq>
+      <Hsp_hseq>GGATCGCTAGGGTTCCGGTCGTGCGGCGTTCGCGTCGCACGATGCCTGGTCCGAGAGCAATCCGGTCTTGCCTTCGCCTCGATT-CGAGGAAACGGCGAGGCTCCACGGAGGGATAAAAGCCCGGGAGG</Hsp_hseq>
+      <Hsp_midline>|||||||||||||||||||||||||||||||||| |||||||||| ||||||||||||||||||||||||||||||||||| |  ||||||||||||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>8</Hit_num>
+  <Hit_id>gi|2915678325|gb|CP138380.1|</Hit_id>
+  <Hit_def>Burkholderia cepacia strain L303 plasmid unnamed2, complete sequence</Hit_def>
+  <Hit_accession>CP138380</Hit_accession>
+  <Hit_len>1411079</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>199.657</Hsp_bit-score>
+      <Hsp_score>220</Hsp_score>
+      <Hsp_evalue>7.67998e-47</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>128</Hsp_query-to>
+      <Hsp_hit-from>1329970</Hsp_hit-from>
+      <Hsp_hit-to>1329843</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>-1</Hsp_hit-frame>
+      <Hsp_identity>123</Hsp_identity>
+      <Hsp_positive>123</Hsp_positive>
+      <Hsp_gaps>2</Hsp_gaps>
+      <Hsp_align-len>129</Hsp_align-len>
+      <Hsp_qseq>GGATCGCTAGGGTTCCGGTCGTGCGGCGTTCGCGCCGCACGATG-CTGGTCCGAGAGCAATCCGGTCTTGCCTTCGCCTCGTTCGCGAGGAAACGGCGAGGCTCCACGGAGGGATAAAAGCCCGGGAGG</Hsp_qseq>
+      <Hsp_hseq>GGATCGCTAGGGTTCCGGTCATGCGGCGTTCGCGCCGCACGATGCCTGGTCCGAGAGCAATCCGGTCTTGCCTTCGCCTCGAT-ACGAGGCAACGGCGAGGCTCCACGGAGGGATAAAAGCCCGGGAGG</Hsp_hseq>
+      <Hsp_midline>|||||||||||||||||||| ||||||||||||||||||||||| |||||||||||||||||||||||||||||||||||| |  ||||| ||||||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>9</Hit_num>
+  <Hit_id>gi|2283697463|gb|CP102331.1|</Hit_id>
+  <Hit_def>Burkholderia cepacia strain N3009-2YT chromosome 3, complete sequence</Hit_def>
+  <Hit_accession>CP102331</Hit_accession>
+  <Hit_len>1406349</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>199.657</Hsp_bit-score>
+      <Hsp_score>220</Hsp_score>
+      <Hsp_evalue>7.67998e-47</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>128</Hsp_query-to>
+      <Hsp_hit-from>647297</Hsp_hit-from>
+      <Hsp_hit-to>647170</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>-1</Hsp_hit-frame>
+      <Hsp_identity>123</Hsp_identity>
+      <Hsp_positive>123</Hsp_positive>
+      <Hsp_gaps>2</Hsp_gaps>
+      <Hsp_align-len>129</Hsp_align-len>
+      <Hsp_qseq>GGATCGCTAGGGTTCCGGTCGTGCGGCGTTCGCGCCGCACGATG-CTGGTCCGAGAGCAATCCGGTCTTGCCTTCGCCTCGTTCGCGAGGAAACGGCGAGGCTCCACGGAGGGATAAAAGCCCGGGAGG</Hsp_qseq>
+      <Hsp_hseq>GGATCGCTAGGGTTCCGGTCATGCGGCGTTCGCGCCGCACGATGCCTGGTCCGAGAGCAATCCGGTCTTGCCTTCGCCTCGAT-ACGAGGCAACGGCGAGGCTCCACGGAGGGATAAAAGCCCGGGAGG</Hsp_hseq>
+      <Hsp_midline>|||||||||||||||||||| ||||||||||||||||||||||| |||||||||||||||||||||||||||||||||||| |  ||||| ||||||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>10</Hit_num>
+  <Hit_id>gi|1061576509|gb|CP013385.1|</Hit_id>
+  <Hit_def>Burkholderia sp. LA-2-3-30-S1-D2 chromosome 3, complete sequence</Hit_def>
+  <Hit_accession>CP013385</Hit_accession>
+  <Hit_len>974331</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>199.657</Hsp_bit-score>
+      <Hsp_score>220</Hsp_score>
+      <Hsp_evalue>7.67998e-47</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>128</Hsp_query-to>
+      <Hsp_hit-from>36670</Hsp_hit-from>
+      <Hsp_hit-to>36797</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>1</Hsp_hit-frame>
+      <Hsp_identity>123</Hsp_identity>
+      <Hsp_positive>123</Hsp_positive>
+      <Hsp_gaps>2</Hsp_gaps>
+      <Hsp_align-len>129</Hsp_align-len>
+      <Hsp_qseq>GGATCGCTAGGGTTCCGGTCGTGCGGCGTTCGCGCCGCACGATG-CTGGTCCGAGAGCAATCCGGTCTTGCCTTCGCCTCGTTCGCGAGGAAACGGCGAGGCTCCACGGAGGGATAAAAGCCCGGGAGG</Hsp_qseq>
+      <Hsp_hseq>GGATCGCTAGGGTTCCGGTCGTGCGGCGTTCGCGCCGCGCGATGACTGGTCCGAGAGCAATCCGGTCTTGCCTTTGCCTCGATT-CGAGGAAACGGCGAGGCTCCACGGAGGGATAAAAGCCCGGGAGG</Hsp_hseq>
+      <Hsp_midline>|||||||||||||||||||||||||||||||||||||| ||||| ||||||||||||||||||||||||||||| |||||| |  ||||||||||||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>11</Hit_num>
+  <Hit_id>gi|2785750959|gb|CP158566.1|</Hit_id>
+  <Hit_def>Burkholderia cepacia strain JK11 chromosome 3, complete sequence</Hit_def>
+  <Hit_accession>CP158566</Hit_accession>
+  <Hit_len>1328515</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>199.657</Hsp_bit-score>
+      <Hsp_score>220</Hsp_score>
+      <Hsp_evalue>7.67998e-47</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>128</Hsp_query-to>
+      <Hsp_hit-from>587507</Hsp_hit-from>
+      <Hsp_hit-to>587634</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>1</Hsp_hit-frame>
+      <Hsp_identity>123</Hsp_identity>
+      <Hsp_positive>123</Hsp_positive>
+      <Hsp_gaps>2</Hsp_gaps>
+      <Hsp_align-len>129</Hsp_align-len>
+      <Hsp_qseq>GGATCGCTAGGGTTCCGGTCGTGCGGCGTTCGCGCCGCACGATG-CTGGTCCGAGAGCAATCCGGTCTTGCCTTCGCCTCGTTCGCGAGGAAACGGCGAGGCTCCACGGAGGGATAAAAGCCCGGGAGG</Hsp_qseq>
+      <Hsp_hseq>GGATCGCTAGGGTTCCGGTCATGCGGCGTTCGCGCCGCACGATGCCTGGTCCGAGAGCAATCCGGTCTTGCCTTCGCCTCGAT-ACGAGGCAACGGCGAGGCTCCACGGAGGGATAAAAGCCCGGGAGG</Hsp_hseq>
+      <Hsp_midline>|||||||||||||||||||| ||||||||||||||||||||||| |||||||||||||||||||||||||||||||||||| |  ||||| ||||||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>12</Hit_num>
+  <Hit_id>gi|2988514535|gb|CP192535.1|</Hit_id>
+  <Hit_def>Burkholderia cepacia strain R7-5 chromosome 3, complete sequence</Hit_def>
+  <Hit_accession>CP192535</Hit_accession>
+  <Hit_len>1273355</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>199.657</Hsp_bit-score>
+      <Hsp_score>220</Hsp_score>
+      <Hsp_evalue>7.67998e-47</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>128</Hsp_query-to>
+      <Hsp_hit-from>95939</Hsp_hit-from>
+      <Hsp_hit-to>95812</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>-1</Hsp_hit-frame>
+      <Hsp_identity>123</Hsp_identity>
+      <Hsp_positive>123</Hsp_positive>
+      <Hsp_gaps>2</Hsp_gaps>
+      <Hsp_align-len>129</Hsp_align-len>
+      <Hsp_qseq>GGATCGCTAGGGTTCCGGTCGTGCGGCGTTCGCGCCGCACGATG-CTGGTCCGAGAGCAATCCGGTCTTGCCTTCGCCTCGTTCGCGAGGAAACGGCGAGGCTCCACGGAGGGATAAAAGCCCGGGAGG</Hsp_qseq>
+      <Hsp_hseq>GGATCGCTAGGGTTCCGGTCATGCGGCGTTCGCGCCGCACGATGCCTGGTCCGAGAGCAATCCGGTCTTGCCTTCGCCTCGAT-ACGAGGCAACGGCGAGGCTCCACGGAGGGATAAAAGCCCGGGAGG</Hsp_hseq>
+      <Hsp_midline>|||||||||||||||||||| ||||||||||||||||||||||| |||||||||||||||||||||||||||||||||||| |  ||||| ||||||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>13</Hit_num>
+  <Hit_id>gi|1061537740|gb|CP013364.1|</Hit_id>
+  <Hit_def>Burkholderia diffusa strain RF2-non-BP9 chromosome 3, complete sequence</Hit_def>
+  <Hit_accession>CP013364</Hit_accession>
+  <Hit_len>905345</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>199.657</Hsp_bit-score>
+      <Hsp_score>220</Hsp_score>
+      <Hsp_evalue>7.67998e-47</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>128</Hsp_query-to>
+      <Hsp_hit-from>21266</Hsp_hit-from>
+      <Hsp_hit-to>21393</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>1</Hsp_hit-frame>
+      <Hsp_identity>123</Hsp_identity>
+      <Hsp_positive>123</Hsp_positive>
+      <Hsp_gaps>2</Hsp_gaps>
+      <Hsp_align-len>129</Hsp_align-len>
+      <Hsp_qseq>GGATCGCTAGGGTTCCGGTCGTGCGGCGTTCGCGCCGCACGATG-CTGGTCCGAGAGCAATCCGGTCTTGCCTTCGCCTCGTTCGCGAGGAAACGGCGAGGCTCCACGGAGGGATAAAAGCCCGGGAGG</Hsp_qseq>
+      <Hsp_hseq>GGATCGCTAGGGTTCCGGTCGTGCGGCGTTCGCGCCGTGCGATGACTGGTCCGAGAGCAATCCGGTCTTGCCTTCGCCTCGATT-CGAGGAAACGGCGAGGCTCCACGGAGGGATAAAAGCCCGGGAGG</Hsp_hseq>
+      <Hsp_midline>|||||||||||||||||||||||||||||||||||||  ||||| |||||||||||||||||||||||||||||||||||| |  ||||||||||||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>14</Hit_num>
+  <Hit_id>gi|1913875593|gb|CP032010.1|</Hit_id>
+  <Hit_def>Burkholderia cepacia strain 39628 chromosome 3, complete sequence</Hit_def>
+  <Hit_accession>CP032010</Hit_accession>
+  <Hit_len>1304848</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>199.657</Hsp_bit-score>
+      <Hsp_score>220</Hsp_score>
+      <Hsp_evalue>7.67998e-47</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>128</Hsp_query-to>
+      <Hsp_hit-from>100873</Hsp_hit-from>
+      <Hsp_hit-to>100746</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>-1</Hsp_hit-frame>
+      <Hsp_identity>123</Hsp_identity>
+      <Hsp_positive>123</Hsp_positive>
+      <Hsp_gaps>2</Hsp_gaps>
+      <Hsp_align-len>129</Hsp_align-len>
+      <Hsp_qseq>GGATCGCTAGGGTTCCGGTCGTGCGGCGTTCGCGCCGCACGATG-CTGGTCCGAGAGCAATCCGGTCTTGCCTTCGCCTCGTTCGCGAGGAAACGGCGAGGCTCCACGGAGGGATAAAAGCCCGGGAGG</Hsp_qseq>
+      <Hsp_hseq>GGATCGCTAGGGTTCCGGTCATGCGGCGTTCGCGCCGCACGATGCCTGGTCCGAGAGCAATCCGGTCTTGCCTTCGCCTCGAT-ACGAGGCAACGGCGAGGCTCCACGGAGGGATAAAAGCCCGGGAGG</Hsp_hseq>
+      <Hsp_midline>|||||||||||||||||||| ||||||||||||||||||||||| |||||||||||||||||||||||||||||||||||| |  ||||| ||||||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>15</Hit_num>
+  <Hit_id>gi|3000152457|gb|CP158898.1|</Hit_id>
+  <Hit_def>Burkholderia cepacia strain BUR1 chromosome 3, complete sequence</Hit_def>
+  <Hit_accession>CP158898</Hit_accession>
+  <Hit_len>1317691</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>199.657</Hsp_bit-score>
+      <Hsp_score>220</Hsp_score>
+      <Hsp_evalue>7.67998e-47</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>128</Hsp_query-to>
+      <Hsp_hit-from>27068</Hsp_hit-from>
+      <Hsp_hit-to>26941</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>-1</Hsp_hit-frame>
+      <Hsp_identity>123</Hsp_identity>
+      <Hsp_positive>123</Hsp_positive>
+      <Hsp_gaps>2</Hsp_gaps>
+      <Hsp_align-len>129</Hsp_align-len>
+      <Hsp_qseq>GGATCGCTAGGGTTCCGGTCGTGCGGCGTTCGCGCCGCACGATG-CTGGTCCGAGAGCAATCCGGTCTTGCCTTCGCCTCGTTCGCGAGGAAACGGCGAGGCTCCACGGAGGGATAAAAGCCCGGGAGG</Hsp_qseq>
+      <Hsp_hseq>GGATCGCTAGGGTTCCGGTCGTGCGGCGTTCGCGCCGCACGATGCCTGGTCCGAGAGCAATCCGGTCTTGCCTTCGCCTCGAT-ACGAGGCAGCGGCGAGGCTCCACGGAGGGATAAAAGCCCGGGAGG</Hsp_hseq>
+      <Hsp_midline>|||||||||||||||||||||||||||||||||||||||||||| |||||||||||||||||||||||||||||||||||| |  ||||| | ||||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>16</Hit_num>
+  <Hit_id>gi|2989446210|gb|CP192551.1|</Hit_id>
+  <Hit_def>Burkholderia cepacia strain P3 chromosome 3, complete sequence</Hit_def>
+  <Hit_accession>CP192551</Hit_accession>
+  <Hit_len>1455279</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>199.657</Hsp_bit-score>
+      <Hsp_score>220</Hsp_score>
+      <Hsp_evalue>7.67998e-47</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>128</Hsp_query-to>
+      <Hsp_hit-from>546919</Hsp_hit-from>
+      <Hsp_hit-to>547046</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>1</Hsp_hit-frame>
+      <Hsp_identity>123</Hsp_identity>
+      <Hsp_positive>123</Hsp_positive>
+      <Hsp_gaps>2</Hsp_gaps>
+      <Hsp_align-len>129</Hsp_align-len>
+      <Hsp_qseq>GGATCGCTAGGGTTCCGGTCGTGCGGCGTTCGCGCCGCACGATG-CTGGTCCGAGAGCAATCCGGTCTTGCCTTCGCCTCGTTCGCGAGGAAACGGCGAGGCTCCACGGAGGGATAAAAGCCCGGGAGG</Hsp_qseq>
+      <Hsp_hseq>GGATCGCTAGGGTTCCGGTCATGCGGCGTTCGCGCCGCACGATGCCTGGTCCGAGAGCAATCCGGTCTTGCCTTCGCCTCGAT-ACGAGGCAACGGCGAGGCTCCACGGAGGGATAAAAGCCCGGGAGG</Hsp_hseq>
+      <Hsp_midline>|||||||||||||||||||| ||||||||||||||||||||||| |||||||||||||||||||||||||||||||||||| |  ||||| ||||||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>17</Hit_num>
+  <Hit_id>gi|2022677530|gb|CP072606.1|</Hit_id>
+  <Hit_def>Burkholderia latens strain AU2934 chromosome 3, complete sequence</Hit_def>
+  <Hit_accession>CP072606</Hit_accession>
+  <Hit_len>901857</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>196.952</Hsp_bit-score>
+      <Hsp_score>217</Hsp_score>
+      <Hsp_evalue>9.35613e-46</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>128</Hsp_query-to>
+      <Hsp_hit-from>743131</Hsp_hit-from>
+      <Hsp_hit-to>743006</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>-1</Hsp_hit-frame>
+      <Hsp_identity>123</Hsp_identity>
+      <Hsp_positive>123</Hsp_positive>
+      <Hsp_gaps>4</Hsp_gaps>
+      <Hsp_align-len>129</Hsp_align-len>
+      <Hsp_qseq>GGATCGCTAGGGTTCCGGTCGTGCGGCGTTCGCGCCGCACGATGC-TGGTCCGAGAGCAATCCGGTCTTGCCTTCGCCTCGTTCGCGAGGAAACGGCGAGGCTCCACGGAGGGATAAAAGCCCGGGAGG</Hsp_qseq>
+      <Hsp_hseq>GGATCGCTAGGGTTCCGGTCGTGCGGCGT--GCGCCGCGCGATGCCTGGTCCGAGAGCAATCCGGTCTTGCCTTCGCCTCGATC-CGAGGAAACGGCGAGGCTCCACGGAGGGATAAAAGCCCGGGAGG</Hsp_hseq>
+      <Hsp_midline>|||||||||||||||||||||||||||||  ||||||| |||||| ||||||||||||||||||||||||||||||||||| || ||||||||||||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>18</Hit_num>
+  <Hit_id>gi|685650049|gb|CP007779.1|</Hit_id>
+  <Hit_def>Burkholderia cenocepacia strain DWS 37E-2 chromosome 3, complete sequence</Hit_def>
+  <Hit_accession>CP007779</Hit_accession>
+  <Hit_len>994670</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>196.952</Hsp_bit-score>
+      <Hsp_score>217</Hsp_score>
+      <Hsp_evalue>9.35613e-46</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>128</Hsp_query-to>
+      <Hsp_hit-from>351337</Hsp_hit-from>
+      <Hsp_hit-to>351212</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>-1</Hsp_hit-frame>
+      <Hsp_identity>123</Hsp_identity>
+      <Hsp_positive>123</Hsp_positive>
+      <Hsp_gaps>4</Hsp_gaps>
+      <Hsp_align-len>129</Hsp_align-len>
+      <Hsp_qseq>GGATCGCTAGGGTTCCGGTCGTGCGGCGTTCGCGCCGCACGATGC-TGGTCCGAGAGCAATCCGGTCTTGCCTTCGCCTCGTTCGCGAGGAAACGGCGAGGCTCCACGGAGGGATAAAAGCCCGGGAGG</Hsp_qseq>
+      <Hsp_hseq>GGATCGCTAGGGTTCCGGTCGTGCGGCGT--GCGCCGCGCGATGCCTGGTCCGAGAGCAATCCGGTCTTGCCTTCGCCTCGATC-CGAGGAAACGGCGAGGCTCCACGGAGGGATAAAAGCCCGGGAGG</Hsp_hseq>
+      <Hsp_midline>|||||||||||||||||||||||||||||  ||||||| |||||| ||||||||||||||||||||||||||||||||||| || ||||||||||||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>19</Hit_num>
+  <Hit_id>gi|1061714393|gb|CP013437.1|</Hit_id>
+  <Hit_def>Burkholderia latens strain AU17928 isolate AU17928 chromosome 3, complete sequence</Hit_def>
+  <Hit_accession>CP013437</Hit_accession>
+  <Hit_len>897684</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>196.952</Hsp_bit-score>
+      <Hsp_score>217</Hsp_score>
+      <Hsp_evalue>9.35613e-46</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>128</Hsp_query-to>
+      <Hsp_hit-from>378133</Hsp_hit-from>
+      <Hsp_hit-to>378008</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>-1</Hsp_hit-frame>
+      <Hsp_identity>123</Hsp_identity>
+      <Hsp_positive>123</Hsp_positive>
+      <Hsp_gaps>4</Hsp_gaps>
+      <Hsp_align-len>129</Hsp_align-len>
+      <Hsp_qseq>GGATCGCTAGGGTTCCGGTCGTGCGGCGTTCGCGCCGCACGATGC-TGGTCCGAGAGCAATCCGGTCTTGCCTTCGCCTCGTTCGCGAGGAAACGGCGAGGCTCCACGGAGGGATAAAAGCCCGGGAGG</Hsp_qseq>
+      <Hsp_hseq>GGATCGCTAGGGTTCCGGTCGTGCGGCGT--GCGCCGCGCGATGCCTGGTCCGAGAGCAATCCGGTCTTGCCTTCGCCTCGATC-CGAGGAAACGGCGAGGCTCCACGGAGGGATAAAAGCCCGGGAGG</Hsp_hseq>
+      <Hsp_midline>|||||||||||||||||||||||||||||  ||||||| |||||| ||||||||||||||||||||||||||||||||||| || ||||||||||||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>20</Hit_num>
+  <Hit_id>gi|3342275549|emb|OZ480239.1|</Hit_id>
+  <Hit_def>Burkholderia arboris strain LMG 24270 genome assembly, chromosome: LMG24270_2</Hit_def>
+  <Hit_accession>OZ480239</Hit_accession>
+  <Hit_len>3349698</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>196.05</Hsp_bit-score>
+      <Hsp_score>216</Hsp_score>
+      <Hsp_evalue>9.35613e-46</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>128</Hsp_query-to>
+      <Hsp_hit-from>1594892</Hsp_hit-from>
+      <Hsp_hit-to>1595018</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>1</Hsp_hit-frame>
+      <Hsp_identity>123</Hsp_identity>
+      <Hsp_positive>123</Hsp_positive>
+      <Hsp_gaps>3</Hsp_gaps>
+      <Hsp_align-len>129</Hsp_align-len>
+      <Hsp_qseq>GGATCGCTAGGGTTCCGGTCGTGCGGCGTTCGCGCCGCACGATGC-TGGTCCGAGAGCAATCCGGTCTTGCCTTCGCCTCGTTCGCGAGGAAACGGCGAGGCTCCACGGAGGGATAAAAGCCCGGGAGG</Hsp_qseq>
+      <Hsp_hseq>GGATCGCTAGGGTTCCGGTCGTGCG-CGTTCGCGTCGCACGATGCCTGGTCCGAGAGCAATCCGGTCTTGCCTTCGCCTCGATT-CGAGGAAACGGCGAGGCTCCACGGAGGGATAAAAGCCCGGGAGG</Hsp_hseq>
+      <Hsp_midline>||||||||||||||||||||||||| |||||||| |||||||||| ||||||||||||||||||||||||||||||||||| |  ||||||||||||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>131744797</Statistics_db-num>
+      <Statistics_db-len>1086004251965</Statistics_db-len>
+      <Statistics_hsp-len>0</Statistics_hsp-len>
+      <Statistics_eff-space>0</Statistics_eff-space>
+      <Statistics_kappa>0.41</Statistics_kappa>
+      <Statistics_lambda>0.625</Statistics_lambda>
+      <Statistics_entropy>0.78</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+</Iteration>
+</BlastOutput_iterations>
+</BlastOutput>

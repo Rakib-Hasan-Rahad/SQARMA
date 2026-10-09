@@ -1,0 +1,963 @@
+<?xml version="1.0" encoding="US-ASCII"?>
+<!DOCTYPE BlastOutput PUBLIC "-//NCBI//NCBI BlastOutput/EN" "http://www.ncbi.nlm.nih.gov/dtd/NCBI_BlastOutput.dtd">
+<BlastOutput>
+  <BlastOutput_program>blastn</BlastOutput_program>
+  <BlastOutput_version>BLASTN 2.17.0+</BlastOutput_version>
+  <BlastOutput_reference>Stephen F. Altschul, Thomas L. Madden, Alejandro A. Sch&amp;auml;ffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), &quot;Gapped BLAST and PSI-BLAST: a new generation of protein database search programs&quot;, Nucleic Acids Res. 25:3389-3402.</BlastOutput_reference>
+  <BlastOutput_db>core_nt</BlastOutput_db>
+  <BlastOutput_query-ID>Query_305545</BlastOutput_query-ID>
+  <BlastOutput_query-def>No definition line</BlastOutput_query-def>
+  <BlastOutput_query-len>119</BlastOutput_query-len>
+  <BlastOutput_param>
+    <Parameters>
+      <Parameters_expect>0.001</Parameters_expect>
+      <Parameters_sc-match>2</Parameters_sc-match>
+      <Parameters_sc-mismatch>-3</Parameters_sc-mismatch>
+      <Parameters_gap-open>5</Parameters_gap-open>
+      <Parameters_gap-extend>2</Parameters_gap-extend>
+      <Parameters_filter>L;m;</Parameters_filter>
+    </Parameters>
+  </BlastOutput_param>
+<BlastOutput_iterations>
+<Iteration>
+  <Iteration_iter-num>1</Iteration_iter-num>
+  <Iteration_query-ID>Query_305545</Iteration_query-ID>
+  <Iteration_query-def>No definition line</Iteration_query-def>
+  <Iteration_query-len>119</Iteration_query-len>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>gi|529281226|pdb|4KQY|A</Hit_id>
+  <Hit_def>Chain A, YitJ S box/SAM-I riboswitch</Hit_def>
+  <Hit_accession>4KQY_A</Hit_accession>
+  <Hit_len>119</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>215.887</Hsp_bit-score>
+      <Hsp_score>238</Hsp_score>
+      <Hsp_evalue>9.10272e-52</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>119</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>119</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>1</Hsp_hit-frame>
+      <Hsp_identity>119</Hsp_identity>
+      <Hsp_positive>119</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>119</Hsp_align-len>
+      <Hsp_qseq>GTTCTTATCAAGAGAAGCAGAGGGACTGGCCCGACGAAGCTTCAGCAACCGGTGTAATGGCGAAAGCCATGACCAAGGTGCTAAATCCAGCAAGCTCGAACAGCTTGGAAGATAAGAAC</Hsp_qseq>
+      <Hsp_hseq>GTTCTTATCAAGAGAAGCAGAGGGACTGGCCCGACGAAGCTTCAGCAACCGGTGTAATGGCGAAAGCCATGACCAAGGTGCTAAATCCAGCAAGCTCGAACAGCTTGGAAGATAAGAAC</Hsp_hseq>
+      <Hsp_midline>|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>2</Hit_num>
+  <Hit_id>gi|2993013881|gb|CP193772.1|</Hit_id>
+  <Hit_def>Bacillus subtilis strain natto chromosome, complete genome</Hit_def>
+  <Hit_accession>CP193772</Hit_accession>
+  <Hit_len>4196117</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>203.264</Hsp_bit-score>
+      <Hsp_score>224</Hsp_score>
+      <Hsp_evalue>5.74444e-48</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>118</Hsp_query-to>
+      <Hsp_hit-from>1175871</Hsp_hit-from>
+      <Hsp_hit-to>1175753</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>-1</Hsp_hit-frame>
+      <Hsp_identity>117</Hsp_identity>
+      <Hsp_positive>117</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>119</Hsp_align-len>
+      <Hsp_qseq>GTTCTTATCAAGAGAAGCAGAGGGACTGGCCCGACGAAGCTTCAGCAACCGGTGTAATGGCGA-AAGCCATGACCAAGGTGCTAAATCCAGCAAGCTCGAACAGCTTGGAAGATAAGAA</Hsp_qseq>
+      <Hsp_hseq>GTTCTTATCAAGAGAAGCAGAGGGACTGGCCCGACGAAGCTTCAGCAACCGGTGTAATGGCGATCAGCCATGACCAAGGTGCTAAATCCAGCAAGCTCGAACAGCTTGGAAGATAAGAA</Hsp_hseq>
+      <Hsp_midline>|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||  ||||||||||||||||||||||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>70.716</Hsp_bit-score>
+      <Hsp_score>77</Hsp_score>
+      <Hsp_evalue>8.54058e-08</Hsp_evalue>
+      <Hsp_query-from>2</Hsp_query-from>
+      <Hsp_query-to>118</Hsp_query-to>
+      <Hsp_hit-from>1249736</Hsp_hit-from>
+      <Hsp_hit-to>1249856</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>1</Hsp_hit-frame>
+      <Hsp_identity>92</Hsp_identity>
+      <Hsp_positive>92</Hsp_positive>
+      <Hsp_gaps>12</Hsp_gaps>
+      <Hsp_align-len>125</Hsp_align-len>
+      <Hsp_qseq>TTCTTATCAAGAGAAGCAGAGGGACTGGCCCGACGAAGCTTCAGCAACCGG--TGT----AATGGCGAAAGCCATGACCAAGGTGCTAAATCCAGCAAGC--TCGAACAGCTTGGAAGATAAGAA</Hsp_qseq>
+      <Hsp_hseq>TTCTTATCGTGAGAGGTGGAGGGACTGGCCCTTAGAAACCTCAGCAACCGGCTTGTTTTGCATGTGCAAAGC----GCCAAGGTGCTAAATCCAGCAAGCGTTTTTTATGCTTGGAAGATAAGAA</Hsp_hseq>
+      <Hsp_midline>||||||||  |||| |  |||||||||||||   ||| | |||||||||||  |||     |||   |||||     |||||||||||||||||||||||  |      ||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>3</Hit_num>
+  <Hit_id>gi|2957964887|gb|CP121756.2|</Hit_id>
+  <Hit_def>Bacillus subtilis strain PRO122 chromosome, complete genome</Hit_def>
+  <Hit_accession>CP121756</Hit_accession>
+  <Hit_len>4464353</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>203.264</Hsp_bit-score>
+      <Hsp_score>224</Hsp_score>
+      <Hsp_evalue>5.74444e-48</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>118</Hsp_query-to>
+      <Hsp_hit-from>1256980</Hsp_hit-from>
+      <Hsp_hit-to>1256862</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>-1</Hsp_hit-frame>
+      <Hsp_identity>117</Hsp_identity>
+      <Hsp_positive>117</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>119</Hsp_align-len>
+      <Hsp_qseq>GTTCTTATCAAGAGAAGCAGAGGGACTGGCCCGACGAAGCTTCAGCAACCGGTGTAATGGCGA-AAGCCATGACCAAGGTGCTAAATCCAGCAAGCTCGAACAGCTTGGAAGATAAGAA</Hsp_qseq>
+      <Hsp_hseq>GTTCTTATCAAGAGAAGCAGAGGGACTGGCCCGACGAAGCTTCAGCAACCGGTGTAATGGCGATCAGCCATGACCAAGGTGCTAAATCCAGCAAGCTCGAACAGCTTGGAAGATAAGAA</Hsp_hseq>
+      <Hsp_midline>|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||  ||||||||||||||||||||||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>70.716</Hsp_bit-score>
+      <Hsp_score>77</Hsp_score>
+      <Hsp_evalue>8.54058e-08</Hsp_evalue>
+      <Hsp_query-from>2</Hsp_query-from>
+      <Hsp_query-to>118</Hsp_query-to>
+      <Hsp_hit-from>1336288</Hsp_hit-from>
+      <Hsp_hit-to>1336408</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>1</Hsp_hit-frame>
+      <Hsp_identity>92</Hsp_identity>
+      <Hsp_positive>92</Hsp_positive>
+      <Hsp_gaps>12</Hsp_gaps>
+      <Hsp_align-len>125</Hsp_align-len>
+      <Hsp_qseq>TTCTTATCAAGAGAAGCAGAGGGACTGGCCCGACGAAGCTTCAGCAACCGG--TGT----AATGGCGAAAGCCATGACCAAGGTGCTAAATCCAGCAAGC--TCGAACAGCTTGGAAGATAAGAA</Hsp_qseq>
+      <Hsp_hseq>TTCTTATCGTGAGAGGTGGAGGGACTGGCCCTTAGAAACCTCAGCAACCGGCTTGTTTTGCATGTGCAAAGC----GCCAAGGTGCTAAATCCAGCAAGCGTTTTTTATGCTTGGAAGATAAGAA</Hsp_hseq>
+      <Hsp_midline>||||||||  |||| |  |||||||||||||   ||| | |||||||||||  |||     |||   |||||     |||||||||||||||||||||||  |      ||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>4</Hit_num>
+  <Hit_id>gi|2957971964|gb|CP120576.2|</Hit_id>
+  <Hit_def>Bacillus subtilis strain PRO56 chromosome, complete genome</Hit_def>
+  <Hit_accession>CP120576</Hit_accession>
+  <Hit_len>4002302</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>203.264</Hsp_bit-score>
+      <Hsp_score>224</Hsp_score>
+      <Hsp_evalue>5.74444e-48</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>118</Hsp_query-to>
+      <Hsp_hit-from>1166770</Hsp_hit-from>
+      <Hsp_hit-to>1166652</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>-1</Hsp_hit-frame>
+      <Hsp_identity>117</Hsp_identity>
+      <Hsp_positive>117</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>119</Hsp_align-len>
+      <Hsp_qseq>GTTCTTATCAAGAGAAGCAGAGGGACTGGCCCGACGAAGCTTCAGCAACCGGTGTAATGGCGA-AAGCCATGACCAAGGTGCTAAATCCAGCAAGCTCGAACAGCTTGGAAGATAAGAA</Hsp_qseq>
+      <Hsp_hseq>GTTCTTATCAAGAGAAGCAGAGGGACTGGCCCGACGAAGCTTCAGCAACCGGTGTAATGGCGATCAGCCATGACCAAGGTGCTAAATCCAGCAAGCTCGAACAGCTTGGAAGATAAGAA</Hsp_hseq>
+      <Hsp_midline>|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||  ||||||||||||||||||||||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>70.716</Hsp_bit-score>
+      <Hsp_score>77</Hsp_score>
+      <Hsp_evalue>8.54058e-08</Hsp_evalue>
+      <Hsp_query-from>2</Hsp_query-from>
+      <Hsp_query-to>118</Hsp_query-to>
+      <Hsp_hit-from>1247459</Hsp_hit-from>
+      <Hsp_hit-to>1247579</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>1</Hsp_hit-frame>
+      <Hsp_identity>92</Hsp_identity>
+      <Hsp_positive>92</Hsp_positive>
+      <Hsp_gaps>12</Hsp_gaps>
+      <Hsp_align-len>125</Hsp_align-len>
+      <Hsp_qseq>TTCTTATCAAGAGAAGCAGAGGGACTGGCCCGACGAAGCTTCAGCAACCGG--TGT----AATGGCGAAAGCCATGACCAAGGTGCTAAATCCAGCAAGC--TCGAACAGCTTGGAAGATAAGAA</Hsp_qseq>
+      <Hsp_hseq>TTCTTATCGTGAGAGGTGGAGGGACTGGCCCTTAGAAACCTCAGCAACCGGCTTGTTTTGCATGTGCAAAGC----GCCAAGGTGCTAAATCCAGCAAGCGTTTTTTATGCTTGGAAGATAAGAA</Hsp_hseq>
+      <Hsp_midline>||||||||  |||| |  |||||||||||||   ||| | |||||||||||  |||     |||   |||||     |||||||||||||||||||||||  |      ||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>5</Hit_num>
+  <Hit_id>gi|2993217662|gb|CP144137.1|</Hit_id>
+  <Hit_def>Bacillus subtilis strain DMB14 chromosome, complete genome</Hit_def>
+  <Hit_accession>CP144137</Hit_accession>
+  <Hit_len>4135213</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>203.264</Hsp_bit-score>
+      <Hsp_score>224</Hsp_score>
+      <Hsp_evalue>5.74444e-48</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>118</Hsp_query-to>
+      <Hsp_hit-from>1141256</Hsp_hit-from>
+      <Hsp_hit-to>1141138</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>-1</Hsp_hit-frame>
+      <Hsp_identity>117</Hsp_identity>
+      <Hsp_positive>117</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>119</Hsp_align-len>
+      <Hsp_qseq>GTTCTTATCAAGAGAAGCAGAGGGACTGGCCCGACGAAGCTTCAGCAACCGGTGTAATGGCGA-AAGCCATGACCAAGGTGCTAAATCCAGCAAGCTCGAACAGCTTGGAAGATAAGAA</Hsp_qseq>
+      <Hsp_hseq>GTTCTTATCAAGAGAAGCAGAGGGACTGGCCCGACGAAGCTTCAGCAACCGGTGTAATGGCGATCAGCCATGACCAAGGTGCTAAATCCAGCAAGCTCGAACAGCTTGGAAGATAAGAA</Hsp_hseq>
+      <Hsp_midline>|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||  ||||||||||||||||||||||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>70.716</Hsp_bit-score>
+      <Hsp_score>77</Hsp_score>
+      <Hsp_evalue>8.54058e-08</Hsp_evalue>
+      <Hsp_query-from>2</Hsp_query-from>
+      <Hsp_query-to>118</Hsp_query-to>
+      <Hsp_hit-from>1218761</Hsp_hit-from>
+      <Hsp_hit-to>1218881</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>1</Hsp_hit-frame>
+      <Hsp_identity>92</Hsp_identity>
+      <Hsp_positive>92</Hsp_positive>
+      <Hsp_gaps>12</Hsp_gaps>
+      <Hsp_align-len>125</Hsp_align-len>
+      <Hsp_qseq>TTCTTATCAAGAGAAGCAGAGGGACTGGCCCGACGAAGCTTCAGCAACCGG--TGT----AATGGCGAAAGCCATGACCAAGGTGCTAAATCCAGCAAGC--TCGAACAGCTTGGAAGATAAGAA</Hsp_qseq>
+      <Hsp_hseq>TTCTTATCGTGAGAGGTGGAGGGACTGGCCCTTAGAAACCTCAGCAACCGGCTTGTTTTGCATGTGCAAAGC----GCCAAGGTGCTAAATCCAGCAAGCGTTTTTTATGCTTGGAAGATAAGAA</Hsp_hseq>
+      <Hsp_midline>||||||||  |||| |  |||||||||||||   ||| | |||||||||||  |||     |||   |||||     |||||||||||||||||||||||  |      ||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>6</Hit_num>
+  <Hit_id>gi|2956671536|gb|CP120603.2|</Hit_id>
+  <Hit_def>Bacillus subtilis strain DSM 5611 chromosome, complete genome</Hit_def>
+  <Hit_accession>CP120603</Hit_accession>
+  <Hit_len>4226994</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>203.264</Hsp_bit-score>
+      <Hsp_score>224</Hsp_score>
+      <Hsp_evalue>5.74444e-48</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>118</Hsp_query-to>
+      <Hsp_hit-from>1166967</Hsp_hit-from>
+      <Hsp_hit-to>1166849</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>-1</Hsp_hit-frame>
+      <Hsp_identity>117</Hsp_identity>
+      <Hsp_positive>117</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>119</Hsp_align-len>
+      <Hsp_qseq>GTTCTTATCAAGAGAAGCAGAGGGACTGGCCCGACGAAGCTTCAGCAACCGGTGTAATGGCGA-AAGCCATGACCAAGGTGCTAAATCCAGCAAGCTCGAACAGCTTGGAAGATAAGAA</Hsp_qseq>
+      <Hsp_hseq>GTTCTTATCAAGAGAAGCAGAGGGACTGGCCCGACGAAGCTTCAGCAACCGGTGTAATGGCGATCAGCCATGACCAAGGTGCTAAATCCAGCAAGCTCGAACAGCTTGGAAGATAAGAA</Hsp_hseq>
+      <Hsp_midline>|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||  ||||||||||||||||||||||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>70.716</Hsp_bit-score>
+      <Hsp_score>77</Hsp_score>
+      <Hsp_evalue>8.54058e-08</Hsp_evalue>
+      <Hsp_query-from>2</Hsp_query-from>
+      <Hsp_query-to>118</Hsp_query-to>
+      <Hsp_hit-from>1244470</Hsp_hit-from>
+      <Hsp_hit-to>1244590</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>1</Hsp_hit-frame>
+      <Hsp_identity>92</Hsp_identity>
+      <Hsp_positive>92</Hsp_positive>
+      <Hsp_gaps>12</Hsp_gaps>
+      <Hsp_align-len>125</Hsp_align-len>
+      <Hsp_qseq>TTCTTATCAAGAGAAGCAGAGGGACTGGCCCGACGAAGCTTCAGCAACCGG--TGT----AATGGCGAAAGCCATGACCAAGGTGCTAAATCCAGCAAGC--TCGAACAGCTTGGAAGATAAGAA</Hsp_qseq>
+      <Hsp_hseq>TTCTTATCGTGAGAGGTGGAGGGACTGGCCCTTAGAAACCTCAGCAACCGGCTTGTTTTGCATGTGCAAAGC----GCCAAGGTGCTAAATCCAGCAAGCGTTTTTTATGCTTGGAAGATAAGAA</Hsp_hseq>
+      <Hsp_midline>||||||||  |||| |  |||||||||||||   ||| | |||||||||||  |||     |||   |||||     |||||||||||||||||||||||  |      ||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>7</Hit_num>
+  <Hit_id>gi|3045499950|gb|CP197336.1|</Hit_id>
+  <Hit_def>Bacillus subtilis strain 122-WTA chromosome, complete genome</Hit_def>
+  <Hit_accession>CP197336</Hit_accession>
+  <Hit_len>4460909</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>203.264</Hsp_bit-score>
+      <Hsp_score>224</Hsp_score>
+      <Hsp_evalue>5.74444e-48</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>118</Hsp_query-to>
+      <Hsp_hit-from>564231</Hsp_hit-from>
+      <Hsp_hit-to>564113</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>-1</Hsp_hit-frame>
+      <Hsp_identity>117</Hsp_identity>
+      <Hsp_positive>117</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>119</Hsp_align-len>
+      <Hsp_qseq>GTTCTTATCAAGAGAAGCAGAGGGACTGGCCCGACGAAGCTTCAGCAACCGGTGTAATGGCGA-AAGCCATGACCAAGGTGCTAAATCCAGCAAGCTCGAACAGCTTGGAAGATAAGAA</Hsp_qseq>
+      <Hsp_hseq>GTTCTTATCAAGAGAAGCAGAGGGACTGGCCCGACGAAGCTTCAGCAACCGGTGTAATGGCGATCAGCCATGACCAAGGTGCTAAATCCAGCAAGCTCGAACAGCTTGGAAGATAAGAA</Hsp_hseq>
+      <Hsp_midline>|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||  ||||||||||||||||||||||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>70.716</Hsp_bit-score>
+      <Hsp_score>77</Hsp_score>
+      <Hsp_evalue>8.54058e-08</Hsp_evalue>
+      <Hsp_query-from>2</Hsp_query-from>
+      <Hsp_query-to>118</Hsp_query-to>
+      <Hsp_hit-from>643545</Hsp_hit-from>
+      <Hsp_hit-to>643665</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>1</Hsp_hit-frame>
+      <Hsp_identity>92</Hsp_identity>
+      <Hsp_positive>92</Hsp_positive>
+      <Hsp_gaps>12</Hsp_gaps>
+      <Hsp_align-len>125</Hsp_align-len>
+      <Hsp_qseq>TTCTTATCAAGAGAAGCAGAGGGACTGGCCCGACGAAGCTTCAGCAACCGG--TGT----AATGGCGAAAGCCATGACCAAGGTGCTAAATCCAGCAAGC--TCGAACAGCTTGGAAGATAAGAA</Hsp_qseq>
+      <Hsp_hseq>TTCTTATCGTGAGAGGTGGAGGGACTGGCCCTTAGAAACCTCAGCAACCGGCTTGTTTTGCATGTGCAAAGC----GCCAAGGTGCTAAATCCAGCAAGCGTTTTTTATGCTTGGAAGATAAGAA</Hsp_hseq>
+      <Hsp_midline>||||||||  |||| |  |||||||||||||   ||| | |||||||||||  |||     |||   |||||     |||||||||||||||||||||||  |      ||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>8</Hit_num>
+  <Hit_id>gi|3010815250|gb|CP195112.1|</Hit_id>
+  <Hit_def>Bacillus subtilis strain SASAF1 chromosome</Hit_def>
+  <Hit_accession>CP195112</Hit_accession>
+  <Hit_len>4266306</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>203.264</Hsp_bit-score>
+      <Hsp_score>224</Hsp_score>
+      <Hsp_evalue>5.74444e-48</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>118</Hsp_query-to>
+      <Hsp_hit-from>1182477</Hsp_hit-from>
+      <Hsp_hit-to>1182359</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>-1</Hsp_hit-frame>
+      <Hsp_identity>117</Hsp_identity>
+      <Hsp_positive>117</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>119</Hsp_align-len>
+      <Hsp_qseq>GTTCTTATCAAGAGAAGCAGAGGGACTGGCCCGACGAAGCTTCAGCAACCGGTGTAATGGCGA-AAGCCATGACCAAGGTGCTAAATCCAGCAAGCTCGAACAGCTTGGAAGATAAGAA</Hsp_qseq>
+      <Hsp_hseq>GTTCTTATCAAGAGAAGCAGAGGGACTGGCCCGACGAAGCTTCAGCAACCGGTGTAATGGCGATCAGCCATGACCAAGGTGCTAAATCCAGCAAGCTCGAACAGCTTGGAAGATAAGAA</Hsp_hseq>
+      <Hsp_midline>|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||  ||||||||||||||||||||||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>69.8143</Hsp_bit-score>
+      <Hsp_score>76</Hsp_score>
+      <Hsp_evalue>8.54058e-08</Hsp_evalue>
+      <Hsp_query-from>2</Hsp_query-from>
+      <Hsp_query-to>118</Hsp_query-to>
+      <Hsp_hit-from>1259978</Hsp_hit-from>
+      <Hsp_hit-to>1260098</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>1</Hsp_hit-frame>
+      <Hsp_identity>92</Hsp_identity>
+      <Hsp_positive>92</Hsp_positive>
+      <Hsp_gaps>14</Hsp_gaps>
+      <Hsp_align-len>126</Hsp_align-len>
+      <Hsp_qseq>TTCTTATCAAGAGAAGCAGAGGGACTGGCCCGACGAAGCTTCAGCAACCGG-------TGTAATGGCGAAAGCCATGACCAAGGTGCTAAATCCAGCAAGC--TCGAACAGCTTGGAAGATAAGAA</Hsp_qseq>
+      <Hsp_hseq>TTCTTATCGTGAGAGGTGGAGGGACTGGCCCTTAGAAACCTCAGCAACCGGCTTGTTTTGCATTTGC-AAAGC----GCCAAGGTGCTAAATCCAGCAAGCGTTTTTTATGCTTGGAAGATAAGAA</Hsp_hseq>
+      <Hsp_midline>||||||||  |||| |  |||||||||||||   ||| | |||||||||||       || | | || |||||     |||||||||||||||||||||||  |      ||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>9</Hit_num>
+  <Hit_id>gi|2960304706|gb|CP187546.1|</Hit_id>
+  <Hit_def>Bacillus subtilis strain ZJW2 chromosome, complete genome</Hit_def>
+  <Hit_accession>CP187546</Hit_accession>
+  <Hit_len>4045095</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>203.264</Hsp_bit-score>
+      <Hsp_score>224</Hsp_score>
+      <Hsp_evalue>5.74444e-48</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>118</Hsp_query-to>
+      <Hsp_hit-from>1174130</Hsp_hit-from>
+      <Hsp_hit-to>1174012</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>-1</Hsp_hit-frame>
+      <Hsp_identity>117</Hsp_identity>
+      <Hsp_positive>117</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>119</Hsp_align-len>
+      <Hsp_qseq>GTTCTTATCAAGAGAAGCAGAGGGACTGGCCCGACGAAGCTTCAGCAACCGGTGTAATGGCGA-AAGCCATGACCAAGGTGCTAAATCCAGCAAGCTCGAACAGCTTGGAAGATAAGAA</Hsp_qseq>
+      <Hsp_hseq>GTTCTTATCAAGAGAAGCAGAGGGACTGGCCCGACGAAGCTTCAGCAACCGGTGTAATGGCGATCAGCCATGACCAAGGTGCTAAATCCAGCAAGCTCGAACAGCTTGGAAGATAAGAA</Hsp_hseq>
+      <Hsp_midline>|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||  ||||||||||||||||||||||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>70.716</Hsp_bit-score>
+      <Hsp_score>77</Hsp_score>
+      <Hsp_evalue>8.54058e-08</Hsp_evalue>
+      <Hsp_query-from>2</Hsp_query-from>
+      <Hsp_query-to>118</Hsp_query-to>
+      <Hsp_hit-from>1251627</Hsp_hit-from>
+      <Hsp_hit-to>1251747</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>1</Hsp_hit-frame>
+      <Hsp_identity>92</Hsp_identity>
+      <Hsp_positive>92</Hsp_positive>
+      <Hsp_gaps>12</Hsp_gaps>
+      <Hsp_align-len>125</Hsp_align-len>
+      <Hsp_qseq>TTCTTATCAAGAGAAGCAGAGGGACTGGCCCGACGAAGCTTCAGCAACCGG--TGT----AATGGCGAAAGCCATGACCAAGGTGCTAAATCCAGCAAGC--TCGAACAGCTTGGAAGATAAGAA</Hsp_qseq>
+      <Hsp_hseq>TTCTTATCGTGAGAGGTGGAGGGACTGGCCCTTAGAAACCTCAGCAACCGGCTTGTTTTGCATGTGCAAAGC----GCCAAGGTGCTAAATCCAGCAAGCGTTTTTTATGCTTGGAAGATAAGAA</Hsp_hseq>
+      <Hsp_midline>||||||||  |||| |  |||||||||||||   ||| | |||||||||||  |||     |||   |||||     |||||||||||||||||||||||  |      ||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>10</Hit_num>
+  <Hit_id>gi|3352472158|gb|CP191225.1|</Hit_id>
+  <Hit_def>Bacillus sp. SCT118 chromosome, complete genome</Hit_def>
+  <Hit_accession>CP191225</Hit_accession>
+  <Hit_len>4030869</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>203.264</Hsp_bit-score>
+      <Hsp_score>224</Hsp_score>
+      <Hsp_evalue>5.74444e-48</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>118</Hsp_query-to>
+      <Hsp_hit-from>2884284</Hsp_hit-from>
+      <Hsp_hit-to>2884402</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>1</Hsp_hit-frame>
+      <Hsp_identity>117</Hsp_identity>
+      <Hsp_positive>117</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>119</Hsp_align-len>
+      <Hsp_qseq>GTTCTTATCAAGAGAAGCAGAGGGACTGGCCCGACGAAGCTTCAGCAACCGGTGTAATGGCGA-AAGCCATGACCAAGGTGCTAAATCCAGCAAGCTCGAACAGCTTGGAAGATAAGAA</Hsp_qseq>
+      <Hsp_hseq>GTTCTTATCAAGAGAAGCAGAGGGACTGGCCCGACGAAGCTTCAGCAACCGGTGTAATGGCGATCAGCCATGACCAAGGTGCTAAATCCAGCAAGCTCGAACAGCTTGGAAGATAAGAA</Hsp_hseq>
+      <Hsp_midline>|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||  ||||||||||||||||||||||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>72.5194</Hsp_bit-score>
+      <Hsp_score>79</Hsp_score>
+      <Hsp_evalue>2.44692e-08</Hsp_evalue>
+      <Hsp_query-from>2</Hsp_query-from>
+      <Hsp_query-to>118</Hsp_query-to>
+      <Hsp_hit-from>2806790</Hsp_hit-from>
+      <Hsp_hit-to>2806671</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>-1</Hsp_hit-frame>
+      <Hsp_identity>92</Hsp_identity>
+      <Hsp_positive>92</Hsp_positive>
+      <Hsp_gaps>11</Hsp_gaps>
+      <Hsp_align-len>124</Hsp_align-len>
+      <Hsp_qseq>TTCTTATCAAGAGAAGCAGAGGGACTGGCCCGACGAAGCTTCAGCAACCGG--TGT----AATGGCGAAAGCCATGACCAAGGTGCTAAATCCAGCAAGC-TCGAACAGCTTGGAAGATAAGAA</Hsp_qseq>
+      <Hsp_hseq>TTCTTATCGTGAGAGGTGGAGGGACTGGCCCTTAGAAACCTCAGCAACCGGCTTGTTTTGCATGTGCAAAGC----GCCAAGGTGCTAAATCCAGCAAGCGTTTTTATGCTTGGAAGATAAGAA</Hsp_hseq>
+      <Hsp_midline>||||||||  |||| |  |||||||||||||   ||| | |||||||||||  |||     |||   |||||     ||||||||||||||||||||||| |      ||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>11</Hit_num>
+  <Hit_id>gi|3129828550|gb|CP198967.1|</Hit_id>
+  <Hit_def>Bacillus subtilis strain BS-145 chromosome, complete genome</Hit_def>
+  <Hit_accession>CP198967</Hit_accession>
+  <Hit_len>4029863</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>203.264</Hsp_bit-score>
+      <Hsp_score>224</Hsp_score>
+      <Hsp_evalue>5.74444e-48</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>118</Hsp_query-to>
+      <Hsp_hit-from>1121932</Hsp_hit-from>
+      <Hsp_hit-to>1121814</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>-1</Hsp_hit-frame>
+      <Hsp_identity>117</Hsp_identity>
+      <Hsp_positive>117</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>119</Hsp_align-len>
+      <Hsp_qseq>GTTCTTATCAAGAGAAGCAGAGGGACTGGCCCGACGAAGCTTCAGCAACCGGTGTAATGGCGA-AAGCCATGACCAAGGTGCTAAATCCAGCAAGCTCGAACAGCTTGGAAGATAAGAA</Hsp_qseq>
+      <Hsp_hseq>GTTCTTATCAAGAGAAGCAGAGGGACTGGCCCGACGAAGCTTCAGCAACCGGTGTAATGGCGATCAGCCATGACCAAGGTGCTAAATCCAGCAAGCTCGAACAGCTTGGAAGATAAGAA</Hsp_hseq>
+      <Hsp_midline>|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||  ||||||||||||||||||||||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>69.8143</Hsp_bit-score>
+      <Hsp_score>76</Hsp_score>
+      <Hsp_evalue>8.54058e-08</Hsp_evalue>
+      <Hsp_query-from>2</Hsp_query-from>
+      <Hsp_query-to>118</Hsp_query-to>
+      <Hsp_hit-from>1197972</Hsp_hit-from>
+      <Hsp_hit-to>1198092</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>1</Hsp_hit-frame>
+      <Hsp_identity>92</Hsp_identity>
+      <Hsp_positive>92</Hsp_positive>
+      <Hsp_gaps>14</Hsp_gaps>
+      <Hsp_align-len>126</Hsp_align-len>
+      <Hsp_qseq>TTCTTATCAAGAGAAGCAGAGGGACTGGCCCGACGAAGCTTCAGCAACCGG-------TGTAATGGCGAAAGCCATGACCAAGGTGCTAAATCCAGCAAGC--TCGAACAGCTTGGAAGATAAGAA</Hsp_qseq>
+      <Hsp_hseq>TTCTTATCGTGAGAGGTGGAGGGACTGGCCCTTAGAAACCTCAGCAACCGGCTTGTTTTGCATTTGC-AAAGC----GCCAAGGTGCTAAATCCAGCAAGCGTTTTTTATGCTTGGAAGATAAGAA</Hsp_hseq>
+      <Hsp_midline>||||||||  |||| |  |||||||||||||   ||| | |||||||||||       || | | || |||||     |||||||||||||||||||||||  |      ||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>12</Hit_num>
+  <Hit_id>gi|2957977321|gb|CP121717.2|</Hit_id>
+  <Hit_def>Bacillus subtilis strain PRO73 chromosome, complete genome</Hit_def>
+  <Hit_accession>CP121717</Hit_accession>
+  <Hit_len>4006609</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>203.264</Hsp_bit-score>
+      <Hsp_score>224</Hsp_score>
+      <Hsp_evalue>5.74444e-48</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>118</Hsp_query-to>
+      <Hsp_hit-from>1170888</Hsp_hit-from>
+      <Hsp_hit-to>1170770</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>-1</Hsp_hit-frame>
+      <Hsp_identity>117</Hsp_identity>
+      <Hsp_positive>117</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>119</Hsp_align-len>
+      <Hsp_qseq>GTTCTTATCAAGAGAAGCAGAGGGACTGGCCCGACGAAGCTTCAGCAACCGGTGTAATGGCGA-AAGCCATGACCAAGGTGCTAAATCCAGCAAGCTCGAACAGCTTGGAAGATAAGAA</Hsp_qseq>
+      <Hsp_hseq>GTTCTTATCAAGAGAAGCAGAGGGACTGGCCCGACGAAGCTTCAGCAACCGGTGTAATGGCGATCAGCCATGACCAAGGTGCTAAATCCAGCAAGCTCGAACAGCTTGGAAGATAAGAA</Hsp_hseq>
+      <Hsp_midline>|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||  ||||||||||||||||||||||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>70.716</Hsp_bit-score>
+      <Hsp_score>77</Hsp_score>
+      <Hsp_evalue>8.54058e-08</Hsp_evalue>
+      <Hsp_query-from>2</Hsp_query-from>
+      <Hsp_query-to>118</Hsp_query-to>
+      <Hsp_hit-from>1251576</Hsp_hit-from>
+      <Hsp_hit-to>1251696</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>1</Hsp_hit-frame>
+      <Hsp_identity>92</Hsp_identity>
+      <Hsp_positive>92</Hsp_positive>
+      <Hsp_gaps>12</Hsp_gaps>
+      <Hsp_align-len>125</Hsp_align-len>
+      <Hsp_qseq>TTCTTATCAAGAGAAGCAGAGGGACTGGCCCGACGAAGCTTCAGCAACCGG--TGT----AATGGCGAAAGCCATGACCAAGGTGCTAAATCCAGCAAGC--TCGAACAGCTTGGAAGATAAGAA</Hsp_qseq>
+      <Hsp_hseq>TTCTTATCGTGAGAGGTGGAGGGACTGGCCCTTAGAAACCTCAGCAACCGGCTTGTTTTGCATGTGCAAAGC----GCCAAGGTGCTAAATCCAGCAAGCGTTTTTTATGCTTGGAAGATAAGAA</Hsp_hseq>
+      <Hsp_midline>||||||||  |||| |  |||||||||||||   ||| | |||||||||||  |||     |||   |||||     |||||||||||||||||||||||  |      ||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>13</Hit_num>
+  <Hit_id>gi|3045449739|gb|CP197340.1|</Hit_id>
+  <Hit_def>Bacillus subtilis strain 19-E3 chromosome, complete genome</Hit_def>
+  <Hit_accession>CP197340</Hit_accession>
+  <Hit_len>4099694</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>203.264</Hsp_bit-score>
+      <Hsp_score>224</Hsp_score>
+      <Hsp_evalue>5.74444e-48</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>118</Hsp_query-to>
+      <Hsp_hit-from>1188728</Hsp_hit-from>
+      <Hsp_hit-to>1188610</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>-1</Hsp_hit-frame>
+      <Hsp_identity>117</Hsp_identity>
+      <Hsp_positive>117</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>119</Hsp_align-len>
+      <Hsp_qseq>GTTCTTATCAAGAGAAGCAGAGGGACTGGCCCGACGAAGCTTCAGCAACCGGTGTAATGGCGA-AAGCCATGACCAAGGTGCTAAATCCAGCAAGCTCGAACAGCTTGGAAGATAAGAA</Hsp_qseq>
+      <Hsp_hseq>GTTCTTATCAAGAGAAGCAGAGGGACTGGCCCGACGAAGCTTCAGCAACCGGTGTAATGGCGATCAGCCATGACCAAGGTGCTAAATCCAGCAAGCTCGAACAGCTTGGAAGATAAGAA</Hsp_hseq>
+      <Hsp_midline>|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||  ||||||||||||||||||||||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>70.716</Hsp_bit-score>
+      <Hsp_score>77</Hsp_score>
+      <Hsp_evalue>8.54058e-08</Hsp_evalue>
+      <Hsp_query-from>2</Hsp_query-from>
+      <Hsp_query-to>118</Hsp_query-to>
+      <Hsp_hit-from>1266235</Hsp_hit-from>
+      <Hsp_hit-to>1266355</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>1</Hsp_hit-frame>
+      <Hsp_identity>92</Hsp_identity>
+      <Hsp_positive>92</Hsp_positive>
+      <Hsp_gaps>12</Hsp_gaps>
+      <Hsp_align-len>125</Hsp_align-len>
+      <Hsp_qseq>TTCTTATCAAGAGAAGCAGAGGGACTGGCCCGACGAAGCTTCAGCAACCGG--TGT----AATGGCGAAAGCCATGACCAAGGTGCTAAATCCAGCAAGC--TCGAACAGCTTGGAAGATAAGAA</Hsp_qseq>
+      <Hsp_hseq>TTCTTATCGTGAGAGGTGGAGGGACTGGCCCTTAGAAACCTCAGCAACCGGCTTGTTTTGCATGTGCAAAGC----GCCAAGGTGCTAAATCCAGCAAGCGTTTTTTATGCTTGGAAGATAAGAA</Hsp_hseq>
+      <Hsp_midline>||||||||  |||| |  |||||||||||||   ||| | |||||||||||  |||     |||   |||||     |||||||||||||||||||||||  |      ||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>14</Hit_num>
+  <Hit_id>gi|3004579732|gb|CP120581.2|</Hit_id>
+  <Hit_def>Bacillus subtilis strain PRO35 chromosome, complete genome</Hit_def>
+  <Hit_accession>CP120581</Hit_accession>
+  <Hit_len>3945537</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>203.264</Hsp_bit-score>
+      <Hsp_score>224</Hsp_score>
+      <Hsp_evalue>5.74444e-48</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>118</Hsp_query-to>
+      <Hsp_hit-from>1155638</Hsp_hit-from>
+      <Hsp_hit-to>1155520</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>-1</Hsp_hit-frame>
+      <Hsp_identity>117</Hsp_identity>
+      <Hsp_positive>117</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>119</Hsp_align-len>
+      <Hsp_qseq>GTTCTTATCAAGAGAAGCAGAGGGACTGGCCCGACGAAGCTTCAGCAACCGGTGTAATGGCGA-AAGCCATGACCAAGGTGCTAAATCCAGCAAGCTCGAACAGCTTGGAAGATAAGAA</Hsp_qseq>
+      <Hsp_hseq>GTTCTTATCAAGAGAAGCAGAGGGACTGGCCCGACGAAGCTTCAGCAACCGGTGTAATGGCGATCAGCCATGACCAAGGTGCTAAATCCAGCAAGCTCGAACAGCTTGGAAGATAAGAA</Hsp_hseq>
+      <Hsp_midline>|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||  ||||||||||||||||||||||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>70.716</Hsp_bit-score>
+      <Hsp_score>77</Hsp_score>
+      <Hsp_evalue>8.54058e-08</Hsp_evalue>
+      <Hsp_query-from>2</Hsp_query-from>
+      <Hsp_query-to>118</Hsp_query-to>
+      <Hsp_hit-from>1230774</Hsp_hit-from>
+      <Hsp_hit-to>1230894</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>1</Hsp_hit-frame>
+      <Hsp_identity>92</Hsp_identity>
+      <Hsp_positive>92</Hsp_positive>
+      <Hsp_gaps>12</Hsp_gaps>
+      <Hsp_align-len>125</Hsp_align-len>
+      <Hsp_qseq>TTCTTATCAAGAGAAGCAGAGGGACTGGCCCGACGAAGCTTCAGCAACCGG--TGT----AATGGCGAAAGCCATGACCAAGGTGCTAAATCCAGCAAGC--TCGAACAGCTTGGAAGATAAGAA</Hsp_qseq>
+      <Hsp_hseq>TTCTTATCGTGAGAGGTGGAGGGACTGGCCCTTAGAAACCTCAGCAACCGGCTTGTTTTGCATGTGCAAAGC----GCCAAGGTGCTAAATCCAGCAAGCGTTTTTTATGCTTGGAAGATAAGAA</Hsp_hseq>
+      <Hsp_midline>||||||||  |||| |  |||||||||||||   ||| | |||||||||||  |||     |||   |||||     |||||||||||||||||||||||  |      ||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>15</Hit_num>
+  <Hit_id>gi|2998955572|gb|CP120613.2|</Hit_id>
+  <Hit_def>Bacillus subtilis strain DSM 23521 chromosome, complete genome</Hit_def>
+  <Hit_accession>CP120613</Hit_accession>
+  <Hit_len>4204738</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>203.264</Hsp_bit-score>
+      <Hsp_score>224</Hsp_score>
+      <Hsp_evalue>5.74444e-48</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>118</Hsp_query-to>
+      <Hsp_hit-from>1169544</Hsp_hit-from>
+      <Hsp_hit-to>1169426</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>-1</Hsp_hit-frame>
+      <Hsp_identity>117</Hsp_identity>
+      <Hsp_positive>117</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>119</Hsp_align-len>
+      <Hsp_qseq>GTTCTTATCAAGAGAAGCAGAGGGACTGGCCCGACGAAGCTTCAGCAACCGGTGTAATGGCGA-AAGCCATGACCAAGGTGCTAAATCCAGCAAGCTCGAACAGCTTGGAAGATAAGAA</Hsp_qseq>
+      <Hsp_hseq>GTTCTTATCAAGAGAAGCAGAGGGACTGGCCCGACGAAGCTTCAGCAACCGGTGTAATGGCGATCAGCCATGACCAAGGTGCTAAATCCAGCAAGCTCGAACAGCTTGGAAGATAAGAA</Hsp_hseq>
+      <Hsp_midline>|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||  ||||||||||||||||||||||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>69.8143</Hsp_bit-score>
+      <Hsp_score>76</Hsp_score>
+      <Hsp_evalue>8.54058e-08</Hsp_evalue>
+      <Hsp_query-from>2</Hsp_query-from>
+      <Hsp_query-to>118</Hsp_query-to>
+      <Hsp_hit-from>1247044</Hsp_hit-from>
+      <Hsp_hit-to>1247164</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>1</Hsp_hit-frame>
+      <Hsp_identity>92</Hsp_identity>
+      <Hsp_positive>92</Hsp_positive>
+      <Hsp_gaps>14</Hsp_gaps>
+      <Hsp_align-len>126</Hsp_align-len>
+      <Hsp_qseq>TTCTTATCAAGAGAAGCAGAGGGACTGGCCCGACGAAGCTTCAGCAACCGG-------TGTAATGGCGAAAGCCATGACCAAGGTGCTAAATCCAGCAAGC--TCGAACAGCTTGGAAGATAAGAA</Hsp_qseq>
+      <Hsp_hseq>TTCTTATCGTGAGAGGTGGAGGGACTGGCCCTTAGAAACCTCAGCAACCGGCTTGTTTTGCATTTGC-AAAGC----GCCAAGGTGCTAAATCCAGCAAGCGTTTTTTATGCTTGGAAGATAAGAA</Hsp_hseq>
+      <Hsp_midline>||||||||  |||| |  |||||||||||||   ||| | |||||||||||       || | | || |||||     |||||||||||||||||||||||  |      ||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>16</Hit_num>
+  <Hit_id>gi|2957968173|gb|CP121755.2|</Hit_id>
+  <Hit_def>Bacillus subtilis strain PRO134 chromosome</Hit_def>
+  <Hit_accession>CP121755</Hit_accession>
+  <Hit_len>3953709</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>203.264</Hsp_bit-score>
+      <Hsp_score>224</Hsp_score>
+      <Hsp_evalue>5.74444e-48</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>118</Hsp_query-to>
+      <Hsp_hit-from>1067840</Hsp_hit-from>
+      <Hsp_hit-to>1067722</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>-1</Hsp_hit-frame>
+      <Hsp_identity>117</Hsp_identity>
+      <Hsp_positive>117</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>119</Hsp_align-len>
+      <Hsp_qseq>GTTCTTATCAAGAGAAGCAGAGGGACTGGCCCGACGAAGCTTCAGCAACCGGTGTAATGGCGA-AAGCCATGACCAAGGTGCTAAATCCAGCAAGCTCGAACAGCTTGGAAGATAAGAA</Hsp_qseq>
+      <Hsp_hseq>GTTCTTATCAAGAGAAGCAGAGGGACTGGCCCGACGAAGCTTCAGCAACCGGTGTAATGGCGATCAGCCATGACCAAGGTGCTAAATCCAGCAAGCTCGAACAGCTTGGAAGATAAGAA</Hsp_hseq>
+      <Hsp_midline>|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||  ||||||||||||||||||||||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>70.716</Hsp_bit-score>
+      <Hsp_score>77</Hsp_score>
+      <Hsp_evalue>8.54058e-08</Hsp_evalue>
+      <Hsp_query-from>2</Hsp_query-from>
+      <Hsp_query-to>118</Hsp_query-to>
+      <Hsp_hit-from>1141683</Hsp_hit-from>
+      <Hsp_hit-to>1141803</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>1</Hsp_hit-frame>
+      <Hsp_identity>92</Hsp_identity>
+      <Hsp_positive>92</Hsp_positive>
+      <Hsp_gaps>12</Hsp_gaps>
+      <Hsp_align-len>125</Hsp_align-len>
+      <Hsp_qseq>TTCTTATCAAGAGAAGCAGAGGGACTGGCCCGACGAAGCTTCAGCAACCGG--TGT----AATGGCGAAAGCCATGACCAAGGTGCTAAATCCAGCAAGC--TCGAACAGCTTGGAAGATAAGAA</Hsp_qseq>
+      <Hsp_hseq>TTCTTATCGTGAGAGGTGGAGGGACTGGCCCTTAGAAACCTCAGCAACCGGCTTGTTTTGCATGTGCAAAGC----GCCAAGGTGCTAAATCCAGCAAGCGTTTTTTATGCTTGGAAGATAAGAA</Hsp_hseq>
+      <Hsp_midline>||||||||  |||| |  |||||||||||||   ||| | |||||||||||  |||     |||   |||||     |||||||||||||||||||||||  |      ||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>17</Hit_num>
+  <Hit_id>gi|3280848790|emb|OZ462072.1|</Hit_id>
+  <Hit_def>Bacillus subtilis isolate NRS2103 genome assembly, chromosome: 1</Hit_def>
+  <Hit_accession>OZ462072</Hit_accession>
+  <Hit_len>4146099</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>203.264</Hsp_bit-score>
+      <Hsp_score>224</Hsp_score>
+      <Hsp_evalue>5.74444e-48</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>118</Hsp_query-to>
+      <Hsp_hit-from>1186844</Hsp_hit-from>
+      <Hsp_hit-to>1186726</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>-1</Hsp_hit-frame>
+      <Hsp_identity>117</Hsp_identity>
+      <Hsp_positive>117</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>119</Hsp_align-len>
+      <Hsp_qseq>GTTCTTATCAAGAGAAGCAGAGGGACTGGCCCGACGAAGCTTCAGCAACCGGTGTAATGGCGA-AAGCCATGACCAAGGTGCTAAATCCAGCAAGCTCGAACAGCTTGGAAGATAAGAA</Hsp_qseq>
+      <Hsp_hseq>GTTCTTATCAAGAGAAGCAGAGGGACTGGCCCGACGAAGCTTCAGCAACCGGTGTAATGGCGATCAGCCATGACCAAGGTGCTAAATCCAGCAAGCTCGAACAGCTTGGAAGATAAGAA</Hsp_hseq>
+      <Hsp_midline>|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||  ||||||||||||||||||||||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>70.716</Hsp_bit-score>
+      <Hsp_score>77</Hsp_score>
+      <Hsp_evalue>8.54058e-08</Hsp_evalue>
+      <Hsp_query-from>2</Hsp_query-from>
+      <Hsp_query-to>118</Hsp_query-to>
+      <Hsp_hit-from>1264339</Hsp_hit-from>
+      <Hsp_hit-to>1264459</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>1</Hsp_hit-frame>
+      <Hsp_identity>92</Hsp_identity>
+      <Hsp_positive>92</Hsp_positive>
+      <Hsp_gaps>12</Hsp_gaps>
+      <Hsp_align-len>125</Hsp_align-len>
+      <Hsp_qseq>TTCTTATCAAGAGAAGCAGAGGGACTGGCCCGACGAAGCTTCAGCAACCGG--TGT----AATGGCGAAAGCCATGACCAAGGTGCTAAATCCAGCAAGC--TCGAACAGCTTGGAAGATAAGAA</Hsp_qseq>
+      <Hsp_hseq>TTCTTATCGTGAGAGGTGGAGGGACTGGCCCTTAGAAACCTCAGCAACCGGCTTGTTTTGCATGTGCAAAGC----GCCAAGGTGCTAAATCCAGCAAGCGTTTTTTATGCTTGGAAGATAAGAA</Hsp_hseq>
+      <Hsp_midline>||||||||  |||| |  |||||||||||||   ||| | |||||||||||  |||     |||   |||||     |||||||||||||||||||||||  |      ||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>18</Hit_num>
+  <Hit_id>gi|2960586446|gb|CP187577.1|</Hit_id>
+  <Hit_def>Bacillus subtilis subsp. subtilis strain NRCB002 chromosome, complete genome</Hit_def>
+  <Hit_accession>CP187577</Hit_accession>
+  <Hit_len>4211270</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>203.264</Hsp_bit-score>
+      <Hsp_score>224</Hsp_score>
+      <Hsp_evalue>5.74444e-48</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>118</Hsp_query-to>
+      <Hsp_hit-from>1180402</Hsp_hit-from>
+      <Hsp_hit-to>1180284</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>-1</Hsp_hit-frame>
+      <Hsp_identity>117</Hsp_identity>
+      <Hsp_positive>117</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>119</Hsp_align-len>
+      <Hsp_qseq>GTTCTTATCAAGAGAAGCAGAGGGACTGGCCCGACGAAGCTTCAGCAACCGGTGTAATGGCGA-AAGCCATGACCAAGGTGCTAAATCCAGCAAGCTCGAACAGCTTGGAAGATAAGAA</Hsp_qseq>
+      <Hsp_hseq>GTTCTTATCAAGAGAAGCAGAGGGACTGGCCCGACGAAGCTTCAGCAACCGGTGTAATGGCGATCAGCCATGACCAAGGTGCTAAATCCAGCAAGCTCGAACAGCTTGGAAGATAAGAA</Hsp_hseq>
+      <Hsp_midline>|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||  ||||||||||||||||||||||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>69.8143</Hsp_bit-score>
+      <Hsp_score>76</Hsp_score>
+      <Hsp_evalue>8.54058e-08</Hsp_evalue>
+      <Hsp_query-from>2</Hsp_query-from>
+      <Hsp_query-to>118</Hsp_query-to>
+      <Hsp_hit-from>1257904</Hsp_hit-from>
+      <Hsp_hit-to>1258024</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>1</Hsp_hit-frame>
+      <Hsp_identity>92</Hsp_identity>
+      <Hsp_positive>92</Hsp_positive>
+      <Hsp_gaps>14</Hsp_gaps>
+      <Hsp_align-len>126</Hsp_align-len>
+      <Hsp_qseq>TTCTTATCAAGAGAAGCAGAGGGACTGGCCCGACGAAGCTTCAGCAACCGG-------TGTAATGGCGAAAGCCATGACCAAGGTGCTAAATCCAGCAAGC--TCGAACAGCTTGGAAGATAAGAA</Hsp_qseq>
+      <Hsp_hseq>TTCTTATCGTGAGAGGTGGAGGGACTGGCCCTTAGAAACCTCAGCAACCGGCTTGTTTTGCATTTGC-AAAGC----GCCAAGGTGCTAAATCCAGCAAGCGTTTTTTATGCTTGGAAGATAAGAA</Hsp_hseq>
+      <Hsp_midline>||||||||  |||| |  |||||||||||||   ||| | |||||||||||       || | | || |||||     |||||||||||||||||||||||  |      ||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>19</Hit_num>
+  <Hit_id>gi|2957969839|gb|CP120585.2|</Hit_id>
+  <Hit_def>Bacillus subtilis strain PRO31 chromosome, complete genome</Hit_def>
+  <Hit_accession>CP120585</Hit_accession>
+  <Hit_len>4197017</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>203.264</Hsp_bit-score>
+      <Hsp_score>224</Hsp_score>
+      <Hsp_evalue>5.74444e-48</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>118</Hsp_query-to>
+      <Hsp_hit-from>1203171</Hsp_hit-from>
+      <Hsp_hit-to>1203053</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>-1</Hsp_hit-frame>
+      <Hsp_identity>117</Hsp_identity>
+      <Hsp_positive>117</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>119</Hsp_align-len>
+      <Hsp_qseq>GTTCTTATCAAGAGAAGCAGAGGGACTGGCCCGACGAAGCTTCAGCAACCGGTGTAATGGCGA-AAGCCATGACCAAGGTGCTAAATCCAGCAAGCTCGAACAGCTTGGAAGATAAGAA</Hsp_qseq>
+      <Hsp_hseq>GTTCTTATCAAGAGAAGCAGAGGGACTGGCCCGACGAAGCTTCAGCAACCGGTGTAATGGCGATCAGCCATGACCAAGGTGCTAAATCCAGCAAGCTCGAACAGCTTGGAAGATAAGAA</Hsp_hseq>
+      <Hsp_midline>|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||  ||||||||||||||||||||||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>70.716</Hsp_bit-score>
+      <Hsp_score>77</Hsp_score>
+      <Hsp_evalue>8.54058e-08</Hsp_evalue>
+      <Hsp_query-from>2</Hsp_query-from>
+      <Hsp_query-to>118</Hsp_query-to>
+      <Hsp_hit-from>1277231</Hsp_hit-from>
+      <Hsp_hit-to>1277351</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>1</Hsp_hit-frame>
+      <Hsp_identity>92</Hsp_identity>
+      <Hsp_positive>92</Hsp_positive>
+      <Hsp_gaps>12</Hsp_gaps>
+      <Hsp_align-len>125</Hsp_align-len>
+      <Hsp_qseq>TTCTTATCAAGAGAAGCAGAGGGACTGGCCCGACGAAGCTTCAGCAACCGG--TGT----AATGGCGAAAGCCATGACCAAGGTGCTAAATCCAGCAAGC--TCGAACAGCTTGGAAGATAAGAA</Hsp_qseq>
+      <Hsp_hseq>TTCTTATCGTGAGAGGTGGAGGGACTGGCCCTTAGAAACCTCAGCAACCGGCTTGTTTTGCATGTGCAAAGC----GCCAAGGTGCTAAATCCAGCAAGCGTTTTTTATGCTTGGAAGATAAGAA</Hsp_hseq>
+      <Hsp_midline>||||||||  |||| |  |||||||||||||   ||| | |||||||||||  |||     |||   |||||     |||||||||||||||||||||||  |      ||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>20</Hit_num>
+  <Hit_id>gi|3040048967|gb|CP196825.1|</Hit_id>
+  <Hit_def>Bacillus subtilis subsp. subtilis strain 1E chromosome, complete genome</Hit_def>
+  <Hit_accession>CP196825</Hit_accession>
+  <Hit_len>4147866</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>203.264</Hsp_bit-score>
+      <Hsp_score>224</Hsp_score>
+      <Hsp_evalue>5.74444e-48</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>118</Hsp_query-to>
+      <Hsp_hit-from>3088115</Hsp_hit-from>
+      <Hsp_hit-to>3088233</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>1</Hsp_hit-frame>
+      <Hsp_identity>117</Hsp_identity>
+      <Hsp_positive>117</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>119</Hsp_align-len>
+      <Hsp_qseq>GTTCTTATCAAGAGAAGCAGAGGGACTGGCCCGACGAAGCTTCAGCAACCGGTGTAATGGCGA-AAGCCATGACCAAGGTGCTAAATCCAGCAAGCTCGAACAGCTTGGAAGATAAGAA</Hsp_qseq>
+      <Hsp_hseq>GTTCTTATCAAGAGAAGCAGAGGGACTGGCCCGACGAAGCTTCAGCAACCGGTGTAATGGCGATCAGCCATGACCAAGGTGCTAAATCCAGCAAGCTCGAACAGCTTGGAAGATAAGAA</Hsp_hseq>
+      <Hsp_midline>|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||  ||||||||||||||||||||||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>70.716</Hsp_bit-score>
+      <Hsp_score>77</Hsp_score>
+      <Hsp_evalue>8.54058e-08</Hsp_evalue>
+      <Hsp_query-from>2</Hsp_query-from>
+      <Hsp_query-to>118</Hsp_query-to>
+      <Hsp_hit-from>3010777</Hsp_hit-from>
+      <Hsp_hit-to>3010657</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>-1</Hsp_hit-frame>
+      <Hsp_identity>92</Hsp_identity>
+      <Hsp_positive>92</Hsp_positive>
+      <Hsp_gaps>12</Hsp_gaps>
+      <Hsp_align-len>125</Hsp_align-len>
+      <Hsp_qseq>TTCTTATCAAGAGAAGCAGAGGGACTGGCCCGACGAAGCTTCAGCAACCGG--TGT----AATGGCGAAAGCCATGACCAAGGTGCTAAATCCAGCAAGC--TCGAACAGCTTGGAAGATAAGAA</Hsp_qseq>
+      <Hsp_hseq>TTCTTATCGTGAGAGGTGGAGGGACTGGCCCTTAGAAACCTCAGCAACCGGCTTGTTTTGCATGTGCAAAGC----GCCAAGGTGCTAAATCCAGCAAGCGTTTTTTATGCTTGGAAGATAAGAA</Hsp_hseq>
+      <Hsp_midline>||||||||  |||| |  |||||||||||||   ||| | |||||||||||  |||     |||   |||||     |||||||||||||||||||||||  |      ||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>131744797</Statistics_db-num>
+      <Statistics_db-len>1086004251965</Statistics_db-len>
+      <Statistics_hsp-len>0</Statistics_hsp-len>
+      <Statistics_eff-space>0</Statistics_eff-space>
+      <Statistics_kappa>0.41</Statistics_kappa>
+      <Statistics_lambda>0.625</Statistics_lambda>
+      <Statistics_entropy>0.78</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+</Iteration>
+</BlastOutput_iterations>
+</BlastOutput>

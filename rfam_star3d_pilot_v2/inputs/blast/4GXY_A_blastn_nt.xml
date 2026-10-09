@@ -1,0 +1,659 @@
+<?xml version="1.0" encoding="US-ASCII"?>
+<!DOCTYPE BlastOutput PUBLIC "-//NCBI//NCBI BlastOutput/EN" "http://www.ncbi.nlm.nih.gov/dtd/NCBI_BlastOutput.dtd">
+<BlastOutput>
+  <BlastOutput_program>blastn</BlastOutput_program>
+  <BlastOutput_version>BLASTN 2.17.0+</BlastOutput_version>
+  <BlastOutput_reference>Stephen F. Altschul, Thomas L. Madden, Alejandro A. Sch&amp;auml;ffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), &quot;Gapped BLAST and PSI-BLAST: a new generation of protein database search programs&quot;, Nucleic Acids Res. 25:3389-3402.</BlastOutput_reference>
+  <BlastOutput_db>core_nt</BlastOutput_db>
+  <BlastOutput_query-ID>Query_7101837</BlastOutput_query-ID>
+  <BlastOutput_query-def>No definition line</BlastOutput_query-def>
+  <BlastOutput_query-len>172</BlastOutput_query-len>
+  <BlastOutput_param>
+    <Parameters>
+      <Parameters_expect>0.001</Parameters_expect>
+      <Parameters_sc-match>2</Parameters_sc-match>
+      <Parameters_sc-mismatch>-3</Parameters_sc-mismatch>
+      <Parameters_gap-open>5</Parameters_gap-open>
+      <Parameters_gap-extend>2</Parameters_gap-extend>
+      <Parameters_filter>L;m;</Parameters_filter>
+    </Parameters>
+  </BlastOutput_param>
+<BlastOutput_iterations>
+<Iteration>
+  <Iteration_iter-num>1</Iteration_iter-num>
+  <Iteration_query-ID>Query_7101837</Iteration_query-ID>
+  <Iteration_query-def>No definition line</Iteration_query-def>
+  <Iteration_query-len>172</Iteration_query-len>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>gi|409107360|pdb|4GXY|A</Hit_id>
+  <Hit_def>Chain A, Adenosylcobalamin riboswitch</Hit_def>
+  <Hit_accession>4GXY_A</Hit_accession>
+  <Hit_len>172</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>307.859</Hsp_bit-score>
+      <Hsp_score>340</Hsp_score>
+      <Hsp_evalue>3.06292e-79</Hsp_evalue>
+      <Hsp_query-from>2</Hsp_query-from>
+      <Hsp_query-to>171</Hsp_query-to>
+      <Hsp_hit-from>2</Hsp_hit-from>
+      <Hsp_hit-to>171</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>1</Hsp_hit-frame>
+      <Hsp_identity>170</Hsp_identity>
+      <Hsp_positive>170</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>170</Hsp_align-len>
+      <Hsp_qseq>GCGGCAGGTGCTCCCGACCCTGCGGTCGGGAGTTAAAAGGGAAGCCGGTGCAAGTCCGGCACGGTCCCGCCACTGTGACGGGGAGTCGCCCCTCGGGATGTGCCACTGGCCCGAAGGCCGGGAAGGCGGAGGGGCGGCGAGGATCCGGAGTCAGGAAACCTGCCTGCCGT</Hsp_qseq>
+      <Hsp_hseq>GCGGCAGGTGCTCCCGACCCTGCGGTCGGGAGTTAAAAGGGAAGCCGGTGCAAGTCCGGCACGGTCCCGCCACTGTGACGGGGAGTCGCCCCTCGGGATGTGCCACTGGCCCGAAGGCCGGGAAGGCGGAGGGGCGGCGAGGATCCGGAGTCAGGAAACCTGCCTGCCGT</Hsp_hseq>
+      <Hsp_midline>||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>2</Hit_num>
+  <Hit_id>gi|51854827|dbj|AP006840.1|</Hit_id>
+  <Hit_def>Symbiobacterium thermophilum IAM 14863 DNA, complete genome</Hit_def>
+  <Hit_accession>AP006840</Hit_accession>
+  <Hit_len>3566135</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>306.056</Hsp_bit-score>
+      <Hsp_score>338</Hsp_score>
+      <Hsp_evalue>1.06907e-78</Hsp_evalue>
+      <Hsp_query-from>2</Hsp_query-from>
+      <Hsp_query-to>170</Hsp_query-to>
+      <Hsp_hit-from>2074418</Hsp_hit-from>
+      <Hsp_hit-to>2074250</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>-1</Hsp_hit-frame>
+      <Hsp_identity>169</Hsp_identity>
+      <Hsp_positive>169</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>169</Hsp_align-len>
+      <Hsp_qseq>GCGGCAGGTGCTCCCGACCCTGCGGTCGGGAGTTAAAAGGGAAGCCGGTGCAAGTCCGGCACGGTCCCGCCACTGTGACGGGGAGTCGCCCCTCGGGATGTGCCACTGGCCCGAAGGCCGGGAAGGCGGAGGGGCGGCGAGGATCCGGAGTCAGGAAACCTGCCTGCCG</Hsp_qseq>
+      <Hsp_hseq>GCGGCAGGTGCTCCCGACCCTGCGGTCGGGAGTTAAAAGGGAAGCCGGTGCAAGTCCGGCACGGTCCCGCCACTGTGACGGGGAGTCGCCCCTCGGGATGTGCCACTGGCCCGAAGGCCGGGAAGGCGGAGGGGCGGCGAGGATCCGGAGTCAGGAAACCTGCCTGCCG</Hsp_hseq>
+      <Hsp_midline>|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>211.379</Hsp_bit-score>
+      <Hsp_score>233</Hsp_score>
+      <Hsp_evalue>6.32432e-50</Hsp_evalue>
+      <Hsp_query-from>2</Hsp_query-from>
+      <Hsp_query-to>170</Hsp_query-to>
+      <Hsp_hit-from>2078678</Hsp_hit-from>
+      <Hsp_hit-to>2078511</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>-1</Hsp_hit-frame>
+      <Hsp_identity>151</Hsp_identity>
+      <Hsp_positive>151</Hsp_positive>
+      <Hsp_gaps>3</Hsp_gaps>
+      <Hsp_align-len>170</Hsp_align-len>
+      <Hsp_qseq>GCGGCAGGTGCTCCCGACCCTGCGGTC-GGGAGTTAAAAGGGAAGCCGGTGCAAGTCCGGCACGGTCCCGCCACTGTGACGGGGAGTCGCCCCTCGGGATGTGCCACTGGCCCGAAGGCCGGGAAGGCGGAGGGGCGGCGAGGATCCGGAGTCAGGAAACCTGCCTGCCG</Hsp_qseq>
+      <Hsp_hseq>GCGGCAGGTGCTCCCGGCCCCGCGCTCCGGGAGTTAAAAGGGAAGCCGGTGCAAGTCCGGCACGGTCCCGCCACTGTGACGGGGAGCCGTCCC-CACGATGCGCCACTGGCCGGAAGGCTGGGAAGGCGG-GGGAAGGCGATGATCCGAAGTCAGGAGACCTGCCTGTCG</Hsp_hseq>
+      <Hsp_midline>|||||||||||||||| ||| ||| || |||||||||||||||||||||||||||||||||||||||||||||||||||||||||| || ||| |  |||| |||||||||| |||||| |||||||||| |||  ||||| |||||| |||||||| ||||||||| ||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>3</Hit_num>
+  <Hit_id>gi|3026149030|dbj|AP042454.1|</Hit_id>
+  <Hit_def>Symbiobacterium ostreiconchae JCM 15048 DNA, complete genome</Hit_def>
+  <Hit_accession>AP042454</Hit_accession>
+  <Hit_len>3636849</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>306.056</Hsp_bit-score>
+      <Hsp_score>338</Hsp_score>
+      <Hsp_evalue>1.06907e-78</Hsp_evalue>
+      <Hsp_query-from>2</Hsp_query-from>
+      <Hsp_query-to>170</Hsp_query-to>
+      <Hsp_hit-from>3032406</Hsp_hit-from>
+      <Hsp_hit-to>3032238</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>-1</Hsp_hit-frame>
+      <Hsp_identity>169</Hsp_identity>
+      <Hsp_positive>169</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>169</Hsp_align-len>
+      <Hsp_qseq>GCGGCAGGTGCTCCCGACCCTGCGGTCGGGAGTTAAAAGGGAAGCCGGTGCAAGTCCGGCACGGTCCCGCCACTGTGACGGGGAGTCGCCCCTCGGGATGTGCCACTGGCCCGAAGGCCGGGAAGGCGGAGGGGCGGCGAGGATCCGGAGTCAGGAAACCTGCCTGCCG</Hsp_qseq>
+      <Hsp_hseq>GCGGCAGGTGCTCCCGACCCTGCGGTCGGGAGTTAAAAGGGAAGCCGGTGCAAGTCCGGCACGGTCCCGCCACTGTGACGGGGAGTCGCCCCTCGGGATGTGCCACTGGCCCGAAGGCCGGGAAGGCGGAGGGGCGGCGAGGATCCGGAGTCAGGAAACCTGCCTGCCG</Hsp_hseq>
+      <Hsp_midline>|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>174.41</Hsp_bit-score>
+      <Hsp_score>192</Hsp_score>
+      <Hsp_evalue>4.55382e-39</Hsp_evalue>
+      <Hsp_query-from>2</Hsp_query-from>
+      <Hsp_query-to>170</Hsp_query-to>
+      <Hsp_hit-from>3036659</Hsp_hit-from>
+      <Hsp_hit-to>3036491</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>-1</Hsp_hit-frame>
+      <Hsp_identity>142</Hsp_identity>
+      <Hsp_positive>142</Hsp_positive>
+      <Hsp_gaps>2</Hsp_gaps>
+      <Hsp_align-len>170</Hsp_align-len>
+      <Hsp_qseq>GCGGCAGGTGCTCCCGACCCTGCGGTC-GGGAGTTAAAAGGGAAGCCGGTGCAAGTCCGGCACGGTCCCGCCACTGTGACGGGGAGTCGCCCCTCGGGATGTGCCACTGGCCCGAAGGCCGGGAAGGCGGAGGGGCGGCGAGGATCCGGAGTCAGGAAACCTGCCTGCCG</Hsp_qseq>
+      <Hsp_hseq>GCGGCAGGTGCTCCCGGTCCGCCGGGCCGGGAGTTAAAAGGGAAGCCGGTGCAAGTCCGGCACGGTCCCGCCACTGTAACGGGGAGCCGCCCC-CATCTCATGCCACTGGCCGTCAGGCTGGGAAGGCCGGGGGAGGGCGTTGATCCGAAGTCAGGAGACCTGCCTGTCG</Hsp_hseq>
+      <Hsp_midline>||||||||||||||||  ||  ||| | ||||||||||||||||||||||||||||||||||||||||||||||||| |||||||| |||||| |      |||||||||||   |||| |||||||| | |||  ||||  |||||| |||||||| ||||||||| ||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>4</Hit_num>
+  <Hit_id>gi|3026091525|dbj|AP042433.1|</Hit_id>
+  <Hit_def>Symbiobacterium turbinis JCM 15996 DNA, complete genome</Hit_def>
+  <Hit_accession>AP042433</Hit_accession>
+  <Hit_len>3796082</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>292.53</Hsp_bit-score>
+      <Hsp_score>323</Hsp_score>
+      <Hsp_evalue>2.35477e-74</Hsp_evalue>
+      <Hsp_query-from>2</Hsp_query-from>
+      <Hsp_query-to>170</Hsp_query-to>
+      <Hsp_hit-from>1273624</Hsp_hit-from>
+      <Hsp_hit-to>1273456</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>-1</Hsp_hit-frame>
+      <Hsp_identity>166</Hsp_identity>
+      <Hsp_positive>166</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>169</Hsp_align-len>
+      <Hsp_qseq>GCGGCAGGTGCTCCCGACCCTGCGGTCGGGAGTTAAAAGGGAAGCCGGTGCAAGTCCGGCACGGTCCCGCCACTGTGACGGGGAGTCGCCCCTCGGGATGTGCCACTGGCCCGAAGGCCGGGAAGGCGGAGGGGCGGCGAGGATCCGGAGTCAGGAAACCTGCCTGCCG</Hsp_qseq>
+      <Hsp_hseq>GCGGTAGGTGCTCCCGGCCCTGCGGTCGGGAGTTAAAAGGGAAGCCGGTGCAAGTCCGGCACGGTCCCGCCACTGTGACGGGGAGTCGCCCCTCAGGATGTGCCACTGGCCCGAAGGCCGGGAAGGCGGAGGGGCGGCGAGGATCCGGAGTCAGGAAACCTGCCTGCCG</Hsp_hseq>
+      <Hsp_midline>|||| ||||||||||| ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>196.05</Hsp_bit-score>
+      <Hsp_score>216</Hsp_score>
+      <Hsp_evalue>1.39302e-45</Hsp_evalue>
+      <Hsp_query-from>2</Hsp_query-from>
+      <Hsp_query-to>170</Hsp_query-to>
+      <Hsp_hit-from>1277841</Hsp_hit-from>
+      <Hsp_hit-to>1277672</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>-1</Hsp_hit-frame>
+      <Hsp_identity>146</Hsp_identity>
+      <Hsp_positive>146</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>170</Hsp_align-len>
+      <Hsp_qseq>GCGGCAGGTGCTCCCGACCCTGCGG-TCGGGAGTTAAAAGGGAAGCCGGTGCAAGTCCGGCACGGTCCCGCCACTGTGACGGGGAGTCGCCCCTCGGGATGTGCCACTGGCCCGAAGGCCGGGAAGGCGGAGGGGCGGCGAGGATCCGGAGTCAGGAAACCTGCCTGCCG</Hsp_qseq>
+      <Hsp_hseq>GCGGTAGGTGCTCCCGTGCCCACGGGTCGGGAGTTAAAAGGGAAGCCGGTGAAAGTCCGGCACGGTCCCGCCACTGTGACGGGGAGTCGCCCCCACCCAGACGCCACTGGCCTGCAGGCCGGGAAGGCTGGGGGACGGCCATGATCCGAAGTCAGGAAACCTGCCTGTCG</Hsp_hseq>
+      <Hsp_midline>|||| |||||||||||  ||  ||| ||||||||||||||||||||||||| |||||||||||||||||||||||||||||||||||||||||     |   |||||||||| | ||||||||||||| | ||| |||| | |||||| |||||||||||||||||| ||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>5</Hit_num>
+  <Hit_id>gi|3378303261|emb|OZ519124.1|</Hit_id>
+  <Hit_def>MAG: Actinomycetes bacterium isolate MFD15153.bin.s.207 genome assembly, chromosome: 1</Hit_def>
+  <Hit_accession>OZ519124</Hit_accession>
+  <Hit_len>2700441</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>123.915</Hsp_bit-score>
+      <Hsp_score>136</Hsp_score>
+      <Hsp_evalue>7.22242e-24</Hsp_evalue>
+      <Hsp_query-from>38</Hsp_query-from>
+      <Hsp_query-to>163</Hsp_query-to>
+      <Hsp_hit-from>2157113</Hsp_hit-from>
+      <Hsp_hit-to>2157237</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>1</Hsp_hit-frame>
+      <Hsp_identity>107</Hsp_identity>
+      <Hsp_positive>107</Hsp_positive>
+      <Hsp_gaps>5</Hsp_gaps>
+      <Hsp_align-len>128</Hsp_align-len>
+      <Hsp_qseq>AAGGGAAGCCGGTGCAAGTCCGGCACGGTCCCGCCACTGTGACGGGGAGTCGC-CCCTCG-GGATGTGCCACTGGCCCGAAGGCCGGGAAGGCGGAGGGGCGGCGAGGATCCGGAGTCAGGAAACCTG</Hsp_qseq>
+      <Hsp_hseq>AAGGGAAGCCGGTGCAAGTCCGGCACGGTCCCGCCGCTGTGA-GGGGAGACGCTCCTTCGCCGAGACGCCACTGGCCCGACGGCCGGGAAGGCGGCGGAGGGGGGAG--CCCCGAGTCAGAAGACCTG</Hsp_hseq>
+      <Hsp_midline>||||||||||||||||||||||||||||||||||| |||||| |||||| ||| || |||  ||   ||||||||||||| |||||||||||||| || | || |||   || ||||||| | |||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>6</Hit_num>
+  <Hit_id>gi|3378955724|emb|OZ531580.1|</Hit_id>
+  <Hit_def>MAG: Actinomycetes bacterium isolate MFD03634.bin.c.5 genome assembly, chromosome: 1</Hit_def>
+  <Hit_accession>OZ531580</Hit_accession>
+  <Hit_len>2868007</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>120.309</Hsp_bit-score>
+      <Hsp_score>132</Hsp_score>
+      <Hsp_evalue>8.79871e-23</Hsp_evalue>
+      <Hsp_query-from>38</Hsp_query-from>
+      <Hsp_query-to>163</Hsp_query-to>
+      <Hsp_hit-from>764627</Hsp_hit-from>
+      <Hsp_hit-to>764750</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>1</Hsp_hit-frame>
+      <Hsp_identity>106</Hsp_identity>
+      <Hsp_positive>106</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>128</Hsp_align-len>
+      <Hsp_qseq>AAGGGAAGCCGGTGCAAGTCCGGCACGGTCCCGCCACTGTGACGGGGAGTCGCCCCTCGG--GATGTGCCACTGGCCCGAAGGCCGGGAAGGCGGAGGGGCGGCGAGGATCCGGAGTCAGGAAACCTG</Hsp_qseq>
+      <Hsp_hseq>AAGGGAAGCCGGTGCGAGTCCGGCACGGTCCCGCCGCTGTGA-GGGGAGACGCTCCTCCGCCGA-GTGCCACTGGCCCGCGGGTCGGGAAGGCGGCGGAGGGGGGAG--CCCCGAGTCAGAAGACCTG</Hsp_hseq>
+      <Hsp_midline>||||||||||||||| ||||||||||||||||||| |||||| |||||| ||| |||| |  || ||||||||||||||  || ||||||||||| || | || |||   || ||||||| | |||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>7</Hit_num>
+  <Hit_id>gi|3378229421|emb|OZ511481.1|</Hit_id>
+  <Hit_def>MAG: Actinomycetes bacterium isolate MFD15063.bin.c.21 genome assembly, chromosome: 1</Hit_def>
+  <Hit_accession>OZ511481</Hit_accession>
+  <Hit_len>2868313</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>120.309</Hsp_bit-score>
+      <Hsp_score>132</Hsp_score>
+      <Hsp_evalue>8.79871e-23</Hsp_evalue>
+      <Hsp_query-from>38</Hsp_query-from>
+      <Hsp_query-to>163</Hsp_query-to>
+      <Hsp_hit-from>2307870</Hsp_hit-from>
+      <Hsp_hit-to>2307747</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>-1</Hsp_hit-frame>
+      <Hsp_identity>106</Hsp_identity>
+      <Hsp_positive>106</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>128</Hsp_align-len>
+      <Hsp_qseq>AAGGGAAGCCGGTGCAAGTCCGGCACGGTCCCGCCACTGTGACGGGGAGTCGCCCCTCGG--GATGTGCCACTGGCCCGAAGGCCGGGAAGGCGGAGGGGCGGCGAGGATCCGGAGTCAGGAAACCTG</Hsp_qseq>
+      <Hsp_hseq>AAGGGAAGCCGGTGCGAGTCCGGCACGGTCCCGCCGCTGTGA-GGGGAGACGCTCCTCCGCCGA-GTGCCACTGGCCCGCGGGTCGGGAAGGCGGCGGAGGGGGGAG--CCCCGAGTCAGAAGACCTG</Hsp_hseq>
+      <Hsp_midline>||||||||||||||| ||||||||||||||||||| |||||| |||||| ||| |||| |  || ||||||||||||||  || ||||||||||| || | || |||   || ||||||| | |||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>8</Hit_num>
+  <Hit_id>gi|3378303284|emb|OZ519142.1|</Hit_id>
+  <Hit_def>MAG: Actinomycetes bacterium isolate MFD15153.bin.3.4819 genome assembly, chromosome: 1</Hit_def>
+  <Hit_accession>OZ519142</Hit_accession>
+  <Hit_len>1596903</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>120.309</Hsp_bit-score>
+      <Hsp_score>132</Hsp_score>
+      <Hsp_evalue>8.79871e-23</Hsp_evalue>
+      <Hsp_query-from>38</Hsp_query-from>
+      <Hsp_query-to>163</Hsp_query-to>
+      <Hsp_hit-from>1307894</Hsp_hit-from>
+      <Hsp_hit-to>1307771</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>-1</Hsp_hit-frame>
+      <Hsp_identity>106</Hsp_identity>
+      <Hsp_positive>106</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>128</Hsp_align-len>
+      <Hsp_qseq>AAGGGAAGCCGGTGCAAGTCCGGCACGGTCCCGCCACTGTGACGGGGAGTCGCCCCTCGG--GATGTGCCACTGGCCCGAAGGCCGGGAAGGCGGAGGGGCGGCGAGGATCCGGAGTCAGGAAACCTG</Hsp_qseq>
+      <Hsp_hseq>AAGGGAAGCCGGTGCGAGTCCGGCACGGTCCCGCCGCTGTGA-GGGGAGACGCTCCTCCGCCGA-GTGCCACTGGCCCGCGGGTCGGGAAGGCGGCGGAGGGGGGAG--CCCCGAGTCAGAAGACCTG</Hsp_hseq>
+      <Hsp_midline>||||||||||||||| ||||||||||||||||||| |||||| |||||| ||| |||| |  || ||||||||||||||  || ||||||||||| || | || |||   || ||||||| | |||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>9</Hit_num>
+  <Hit_id>gi|3378303810|emb|OZ519254.1|</Hit_id>
+  <Hit_def>MAG: Actinomycetes bacterium isolate MFD15153.bin.3.3015 genome assembly, chromosome: 1</Hit_def>
+  <Hit_accession>OZ519254</Hit_accession>
+  <Hit_len>2361267</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>120.309</Hsp_bit-score>
+      <Hsp_score>132</Hsp_score>
+      <Hsp_evalue>8.79871e-23</Hsp_evalue>
+      <Hsp_query-from>38</Hsp_query-from>
+      <Hsp_query-to>163</Hsp_query-to>
+      <Hsp_hit-from>111969</Hsp_hit-from>
+      <Hsp_hit-to>111846</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>-1</Hsp_hit-frame>
+      <Hsp_identity>106</Hsp_identity>
+      <Hsp_positive>106</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>128</Hsp_align-len>
+      <Hsp_qseq>AAGGGAAGCCGGTGCAAGTCCGGCACGGTCCCGCCACTGTGACGGGGAGTCG--CCCCTCGGGATGTGCCACTGGCCCGAAGGCCGGGAAGGCGGAGGGGCGGCGAGGATCCGGAGTCAGGAAACCTG</Hsp_qseq>
+      <Hsp_hseq>AAGGGAAGCCGGTGCGAGTCCGGCACGGTCCCGCCGCTGTGA-GGGGAGACGCTCCCCGCCGGA-ATGCCACTGGCCCGAGGGCCGGGAAGGCGGCGGAGGAGGGAG--CCCCGAGTCAGAAGACCTG</Hsp_hseq>
+      <Hsp_midline>||||||||||||||| ||||||||||||||||||| |||||| |||||| ||  |||| | |||  |||||||||||||| |||||||||||||| || |  | |||   || ||||||| | |||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>10</Hit_num>
+  <Hit_id>gi|3377084430|emb|OZ510359.1|</Hit_id>
+  <Hit_def>MAG: Actinomycetes bacterium isolate MFD15062.bin.2.7823 genome assembly, chromosome: 1</Hit_def>
+  <Hit_accession>OZ510359</Hit_accession>
+  <Hit_len>1608768</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>120.309</Hsp_bit-score>
+      <Hsp_score>132</Hsp_score>
+      <Hsp_evalue>8.79871e-23</Hsp_evalue>
+      <Hsp_query-from>38</Hsp_query-from>
+      <Hsp_query-to>163</Hsp_query-to>
+      <Hsp_hit-from>159706</Hsp_hit-from>
+      <Hsp_hit-to>159829</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>1</Hsp_hit-frame>
+      <Hsp_identity>106</Hsp_identity>
+      <Hsp_positive>106</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>128</Hsp_align-len>
+      <Hsp_qseq>AAGGGAAGCCGGTGCAAGTCCGGCACGGTCCCGCCACTGTGACGGGGAGTCGCCCCTCGG--GATGTGCCACTGGCCCGAAGGCCGGGAAGGCGGAGGGGCGGCGAGGATCCGGAGTCAGGAAACCTG</Hsp_qseq>
+      <Hsp_hseq>AAGGGAAGCCGGTGCGAGTCCGGCACGGTCCCGCCGCTGTGA-GGGGAGACGCTCCTCCGCCGA-GTGCCACTGGCCCGCGGGTCGGGAAGGCGGCGGAGGGGGGAG--CCCCGAGTCAGAAGACCTG</Hsp_hseq>
+      <Hsp_midline>||||||||||||||| ||||||||||||||||||| |||||| |||||| ||| |||| |  || ||||||||||||||  || ||||||||||| || | || |||   || ||||||| | |||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>11</Hit_num>
+  <Hit_id>gi|3378303088|emb|OZ519026.1|</Hit_id>
+  <Hit_def>MAG: Actinomycetes bacterium isolate MFD15152.bin.s.448 genome assembly, chromosome: 1</Hit_def>
+  <Hit_accession>OZ519026</Hit_accession>
+  <Hit_len>3073471</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>120.309</Hsp_bit-score>
+      <Hsp_score>132</Hsp_score>
+      <Hsp_evalue>8.79871e-23</Hsp_evalue>
+      <Hsp_query-from>38</Hsp_query-from>
+      <Hsp_query-to>163</Hsp_query-to>
+      <Hsp_hit-from>2373538</Hsp_hit-from>
+      <Hsp_hit-to>2373661</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>1</Hsp_hit-frame>
+      <Hsp_identity>106</Hsp_identity>
+      <Hsp_positive>106</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>128</Hsp_align-len>
+      <Hsp_qseq>AAGGGAAGCCGGTGCAAGTCCGGCACGGTCCCGCCACTGTGACGGGGAGTCGCCCCTCGG--GATGTGCCACTGGCCCGAAGGCCGGGAAGGCGGAGGGGCGGCGAGGATCCGGAGTCAGGAAACCTG</Hsp_qseq>
+      <Hsp_hseq>AAGGGAAGCCGGTGCGAGTCCGGCACGGTCCCGCCGCTGTGA-GGGGAGACGCTCCTCCGCCGA-GTGCCACTGGCCCGCGGGTCGGGAAGGCGGCGGAGGGGGGAG--CCCCGAGTCAGAAGACCTG</Hsp_hseq>
+      <Hsp_midline>||||||||||||||| ||||||||||||||||||| |||||| |||||| ||| |||| |  || ||||||||||||||  || ||||||||||| || | || |||   || ||||||| | |||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>12</Hit_num>
+  <Hit_id>gi|3380352253|emb|OZ535515.1|</Hit_id>
+  <Hit_def>MAG: Actinomycetes bacterium isolate MFD15093.bin.c.30 genome assembly, chromosome: 1</Hit_def>
+  <Hit_accession>OZ535515</Hit_accession>
+  <Hit_len>3095995</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>119.407</Hsp_bit-score>
+      <Hsp_score>131</Hsp_score>
+      <Hsp_evalue>3.07105e-22</Hsp_evalue>
+      <Hsp_query-from>38</Hsp_query-from>
+      <Hsp_query-to>163</Hsp_query-to>
+      <Hsp_hit-from>2912513</Hsp_hit-from>
+      <Hsp_hit-to>2912389</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>-1</Hsp_hit-frame>
+      <Hsp_identity>105</Hsp_identity>
+      <Hsp_positive>105</Hsp_positive>
+      <Hsp_gaps>5</Hsp_gaps>
+      <Hsp_align-len>128</Hsp_align-len>
+      <Hsp_qseq>AAGGGAAGCCGGTGCAAGTCCGGCACGGTCCCGCCACTGTGACGGGGAGTCGCCCCTCGG--GATGTGCCACTGGCCCGAAGGCCGGGAAGGCGGAGGGGCGGCGAGGATCCGGAGTCAGGAAACCTG</Hsp_qseq>
+      <Hsp_hseq>AAGGGAAGCCGGTGCGAGTCCGGCACGGTCCCGCCGCTGTGA-GGGGAGACGCTCCTCCGCCGAGATGCCACTGGCCAGCGGGCCGGGAAGGCGGCGGAGGGGGGAG--CCCCGAGTCAGAAGACCTG</Hsp_hseq>
+      <Hsp_midline>||||||||||||||| ||||||||||||||||||| |||||| |||||| ||| |||| |  ||  ||||||||||| |  |||||||||||||| || | || |||   || ||||||| | |||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>13</Hit_num>
+  <Hit_id>gi|3374309605|emb|OZ505327.1|</Hit_id>
+  <Hit_def>MAG: Actinomycetes bacterium isolate MFD15062.bin.2.58 genome assembly, chromosome: 1</Hit_def>
+  <Hit_accession>OZ505327</Hit_accession>
+  <Hit_len>2150308</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>119.407</Hsp_bit-score>
+      <Hsp_score>131</Hsp_score>
+      <Hsp_evalue>3.07105e-22</Hsp_evalue>
+      <Hsp_query-from>38</Hsp_query-from>
+      <Hsp_query-to>163</Hsp_query-to>
+      <Hsp_hit-from>1407530</Hsp_hit-from>
+      <Hsp_hit-to>1407654</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>1</Hsp_hit-frame>
+      <Hsp_identity>106</Hsp_identity>
+      <Hsp_positive>106</Hsp_positive>
+      <Hsp_gaps>5</Hsp_gaps>
+      <Hsp_align-len>128</Hsp_align-len>
+      <Hsp_qseq>AAGGGAAGCCGGTGCAAGTCCGGCACGGTCCCGCCACTGTGACGGGGAGTCGC-CCCTCG-GGATGTGCCACTGGCCCGAAGGCCGGGAAGGCGGAGGGGCGGCGAGGATCCGGAGTCAGGAAACCTG</Hsp_qseq>
+      <Hsp_hseq>AAGGGAAGCCGGTGCGAGTCCGGCACGGTCCCGCCGCTGTGA-GGGGAGACGCTCCTTCGCCGAGACGCCACTGGCCCGCAGGCCGGGAAGGCGGCGGAGGGGGGAG--CCCCGAGTCAGAAGACCTG</Hsp_hseq>
+      <Hsp_midline>||||||||||||||| ||||||||||||||||||| |||||| |||||| ||| || |||  ||   |||||||||||| ||||||||||||||| || | || |||   || ||||||| | |||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>14</Hit_num>
+  <Hit_id>gi|3378955744|emb|OZ531590.1|</Hit_id>
+  <Hit_def>MAG: Actinomycetes bacterium isolate MFD03634.bin.2.8443 genome assembly, chromosome: 1</Hit_def>
+  <Hit_accession>OZ531590</Hit_accession>
+  <Hit_len>1909627</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>119.407</Hsp_bit-score>
+      <Hsp_score>131</Hsp_score>
+      <Hsp_evalue>3.07105e-22</Hsp_evalue>
+      <Hsp_query-from>38</Hsp_query-from>
+      <Hsp_query-to>163</Hsp_query-to>
+      <Hsp_hit-from>1268248</Hsp_hit-from>
+      <Hsp_hit-to>1268372</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>1</Hsp_hit-frame>
+      <Hsp_identity>106</Hsp_identity>
+      <Hsp_positive>106</Hsp_positive>
+      <Hsp_gaps>5</Hsp_gaps>
+      <Hsp_align-len>128</Hsp_align-len>
+      <Hsp_qseq>AAGGGAAGCCGGTGCAAGTCCGGCACGGTCCCGCCACTGTGACGGGGAGTCGC-CCCTCG-GGATGTGCCACTGGCCCGAAGGCCGGGAAGGCGGAGGGGCGGCGAGGATCCGGAGTCAGGAAACCTG</Hsp_qseq>
+      <Hsp_hseq>AAGGGAAGCCGGTGCGAGTCCGGCACGGTCCCGCCGCTGTGA-GGGGAGACGCTCCTTCGCCGAAGCGCCACTGGCCGGACGGCCGGGAAGGCGGCGGAGGGGGGAG--CCCCGAGTCAGAAGACCTG</Hsp_hseq>
+      <Hsp_midline>||||||||||||||| ||||||||||||||||||| |||||| |||||| ||| || |||  || | |||||||||| || |||||||||||||| || | || |||   || ||||||| | |||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>15</Hit_num>
+  <Hit_id>gi|3378292311|emb|OZ515353.1|</Hit_id>
+  <Hit_def>MAG: Actinomycetes bacterium isolate MFD15094.bin.2.366 genome assembly, chromosome: 1</Hit_def>
+  <Hit_accession>OZ515353</Hit_accession>
+  <Hit_len>2549567</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>118.505</Hsp_bit-score>
+      <Hsp_score>130</Hsp_score>
+      <Hsp_evalue>3.07105e-22</Hsp_evalue>
+      <Hsp_query-from>38</Hsp_query-from>
+      <Hsp_query-to>166</Hsp_query-to>
+      <Hsp_hit-from>706759</Hsp_hit-from>
+      <Hsp_hit-to>706634</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>-1</Hsp_hit-frame>
+      <Hsp_identity>107</Hsp_identity>
+      <Hsp_positive>107</Hsp_positive>
+      <Hsp_gaps>5</Hsp_gaps>
+      <Hsp_align-len>130</Hsp_align-len>
+      <Hsp_qseq>AAGGGAAGCCGGTGCAAGTCCGGCACGGTCCCGCCACTGTGACGGGGAGTCGCCCCT-CGGGATGTGCCACTGGCCCGAAGGCCGGGAAGGCGGAGGGGCGGCGAGGATCCGGAGTCAGGAAACCTGCCT</Hsp_qseq>
+      <Hsp_hseq>AAGGGAAGCCGGTGCAAGTCCGGCACGGTCCCGCCGCTGTGA-GGGGAGACGCTCCTCCGCCACGAGCCACTGG-CCGACGGCCGGGAAGGCGGCGGAAGAGGGAG--CCCCGAGTCAGAAGACCTGCCT</Hsp_hseq>
+      <Hsp_midline>||||||||||||||||||||||||||||||||||| |||||| |||||| ||| ||| ||  | | |||||||| |||| |||||||||||||| ||    | |||   || ||||||| | ||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>16</Hit_num>
+  <Hit_id>gi|3354219363|emb|OZ490531.1|</Hit_id>
+  <Hit_def>MAG: uncultured actinomycete isolate MFD02134.bin.2.437.r1 genome assembly, chromosome: 1</Hit_def>
+  <Hit_accession>OZ490531</Hit_accession>
+  <Hit_len>2040647</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>117.604</Hsp_bit-score>
+      <Hsp_score>129</Hsp_score>
+      <Hsp_evalue>1.0719e-21</Hsp_evalue>
+      <Hsp_query-from>37</Hsp_query-from>
+      <Hsp_query-to>166</Hsp_query-to>
+      <Hsp_hit-from>1931243</Hsp_hit-from>
+      <Hsp_hit-to>1931371</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>1</Hsp_hit-frame>
+      <Hsp_identity>108</Hsp_identity>
+      <Hsp_positive>108</Hsp_positive>
+      <Hsp_gaps>5</Hsp_gaps>
+      <Hsp_align-len>132</Hsp_align-len>
+      <Hsp_qseq>AAAGGGAAGCCGGTGCAAGTCCGGCACGGTCCCGCCACTGTGACGGGGAGTCGC-CCCTCG-GGATGTGCCACTGGCCCGAAGGCCGGGAAGGCGGAGGGGCGGCGAGGATCCGGAGTCAGGAAACCTGCCT</Hsp_qseq>
+      <Hsp_hseq>AAAGGGAACCCGGTGCGAGTCCGGGACGGTCCCGCCGCTGTGA-GGGGAGACGCTCCAGCGCCGAAGTGCCACTGGCCGAAAGGCCGGGAAGGCGGCGAGGGAGGGAG--CCCCGAGTCAGAAAACCTGCCT</Hsp_hseq>
+      <Hsp_midline>|||||||| ||||||| ||||||| ||||||||||| |||||| |||||| ||| ||  ||  || ||||||||||||  |||||||||||||||| | ||  | |||   || ||||||| ||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>17</Hit_num>
+  <Hit_id>gi|3377090230|emb|OZ510935.1|</Hit_id>
+  <Hit_def>MAG: Actinomycetes bacterium isolate MFD15063.bin.3.2688 genome assembly, chromosome: 1</Hit_def>
+  <Hit_accession>OZ510935</Hit_accession>
+  <Hit_len>1454926</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>117.604</Hsp_bit-score>
+      <Hsp_score>129</Hsp_score>
+      <Hsp_evalue>1.0719e-21</Hsp_evalue>
+      <Hsp_query-from>38</Hsp_query-from>
+      <Hsp_query-to>163</Hsp_query-to>
+      <Hsp_hit-from>105862</Hsp_hit-from>
+      <Hsp_hit-to>105987</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>1</Hsp_hit-frame>
+      <Hsp_identity>107</Hsp_identity>
+      <Hsp_positive>107</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>129</Hsp_align-len>
+      <Hsp_qseq>AAGGGAAGCCGGTGCAAGTCCGGCACGGTCCCGCCACTGTGACGGGGAGTCGC-CCCTCG-GGATGTGCCACTGGCCCG-AAGGCCGGGAAGGCGGAGGGGCGGCGAGGATCCGGAGTCAGGAAACCTG</Hsp_qseq>
+      <Hsp_hseq>AAGGGAAGCCGGTGCAAGTCCGGCACGGTCCCGCCGCTGTGA-GGGGAGACGCTCCTTCGCCGAGACGCCACTGGCCCGCGAGGCCGGGAAGGCGGCGGAGGGGGGAG--CCCCGAGTCAGAAGACCTG</Hsp_hseq>
+      <Hsp_midline>||||||||||||||||||||||||||||||||||| |||||| |||||| ||| || |||  ||   ||||||||||||  ||||||||||||||| || | || |||   || ||||||| | |||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>18</Hit_num>
+  <Hit_id>gi|3377081366|emb|OZ509416.1|</Hit_id>
+  <Hit_def>MAG: Actinomycetes bacterium isolate MFD15050.bin.c.187 genome assembly, chromosome: 1</Hit_def>
+  <Hit_accession>OZ509416</Hit_accession>
+  <Hit_len>2990062</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>117.604</Hsp_bit-score>
+      <Hsp_score>129</Hsp_score>
+      <Hsp_evalue>1.0719e-21</Hsp_evalue>
+      <Hsp_query-from>38</Hsp_query-from>
+      <Hsp_query-to>163</Hsp_query-to>
+      <Hsp_hit-from>262745</Hsp_hit-from>
+      <Hsp_hit-to>262870</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>1</Hsp_hit-frame>
+      <Hsp_identity>106</Hsp_identity>
+      <Hsp_positive>106</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>129</Hsp_align-len>
+      <Hsp_qseq>AAGGGAAGCCGGTGCAAGTCCGGCACGGTCCCGCCACTGTGACGGGGAGTCGCCCCTCGG--GATGTGCCACTGGCCC-GAAGGCCGGGAAGGCGGAGGGGCGGCGAGGATCCGGAGTCAGGAAACCTG</Hsp_qseq>
+      <Hsp_hseq>AAGGGAAGCCGGTGCGAGTCCGGCACGGTCCCGCCGCTGTGA-GGGGAGACGCTCCTCTGCCGAGATGCCACTGGCCCACACGGCCGGGAAGGCGGCGGAGGGGGGAG--CCCCGAGTCAGAAGACCTG</Hsp_hseq>
+      <Hsp_midline>||||||||||||||| ||||||||||||||||||| |||||| |||||| ||| |||| |  ||  ||||||||||||  | |||||||||||||| || | || |||   || ||||||| | |||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>19</Hit_num>
+  <Hit_id>gi|3377083376|emb|OZ509795.1|</Hit_id>
+  <Hit_def>MAG: Actinomycetes bacterium isolate MFD15064.bin.s.419 genome assembly, chromosome: 1</Hit_def>
+  <Hit_accession>OZ509795</Hit_accession>
+  <Hit_len>3015648</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>117.604</Hsp_bit-score>
+      <Hsp_score>129</Hsp_score>
+      <Hsp_evalue>1.0719e-21</Hsp_evalue>
+      <Hsp_query-from>38</Hsp_query-from>
+      <Hsp_query-to>163</Hsp_query-to>
+      <Hsp_hit-from>2111137</Hsp_hit-from>
+      <Hsp_hit-to>2111262</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>1</Hsp_hit-frame>
+      <Hsp_identity>107</Hsp_identity>
+      <Hsp_positive>107</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>129</Hsp_align-len>
+      <Hsp_qseq>AAGGGAAGCCGGTGCAAGTCCGGCACGGTCCCGCCACTGTGACGGGGAGTCGC-CCCTCG-GGATGTGCCACTGGCCCG-AAGGCCGGGAAGGCGGAGGGGCGGCGAGGATCCGGAGTCAGGAAACCTG</Hsp_qseq>
+      <Hsp_hseq>AAGGGAAGCCGGTGCAAGTCCGGCACGGTCCCGCCGCTGTGA-GGGGAGACGCTCCTTCGCCGAGACGCCACTGGCCCGCGAGGCCGGGAAGGCGGCGGAGGGGGGAG--CCCCGAGTCAGAAGACCTG</Hsp_hseq>
+      <Hsp_midline>||||||||||||||||||||||||||||||||||| |||||| |||||| ||| || |||  ||   ||||||||||||  ||||||||||||||| || | || |||   || ||||||| | |||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>20</Hit_num>
+  <Hit_id>gi|3361609080|emb|OZ307179.1|</Hit_id>
+  <Hit_def>MAG: uncultured Gaiellales bacterium isolate 088-SA-05.bin.1.403 genome assembly, chromosome: 1</Hit_def>
+  <Hit_accession>OZ307179</Hit_accession>
+  <Hit_len>3962031</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>116.702</Hsp_bit-score>
+      <Hsp_score>128</Hsp_score>
+      <Hsp_evalue>1.0719e-21</Hsp_evalue>
+      <Hsp_query-from>39</Hsp_query-from>
+      <Hsp_query-to>165</Hsp_query-to>
+      <Hsp_hit-from>348748</Hsp_hit-from>
+      <Hsp_hit-to>348873</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>1</Hsp_hit-frame>
+      <Hsp_identity>105</Hsp_identity>
+      <Hsp_positive>105</Hsp_positive>
+      <Hsp_gaps>5</Hsp_gaps>
+      <Hsp_align-len>129</Hsp_align-len>
+      <Hsp_qseq>AGGGAAGCCGGTGCAAGTCCGGCACGGTCCCGCCACTGTGACGGGGAGTCGCCCCTCGG--GATGTGCCACTGGCCCGAAGGCCGGGAAGGCGGAGGGGCGGCGAGGATCCGGAGTCAGGAAACCTGCC</Hsp_qseq>
+      <Hsp_hseq>AGGGAAGCCGGTGCGAGTCCGGCACGGTCCCGCCGCTGTGA-GGGGAGACGCCTCTCCGCCGAGAAGCCACTGGCCGGCAGGCCGGGAAGGCGGCGGAGAGGGGAG--CCCCGAGTCAGAAGACCTTCC</Hsp_hseq>
+      <Hsp_midline>|||||||||||||| ||||||||||||||||||| |||||| |||||| |||| ||| |  ||   |||||||||| | ||||||||||||||| || | || |||   || ||||||| | |||| ||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>131744797</Statistics_db-num>
+      <Statistics_db-len>1086004251965</Statistics_db-len>
+      <Statistics_hsp-len>0</Statistics_hsp-len>
+      <Statistics_eff-space>0</Statistics_eff-space>
+      <Statistics_kappa>0.41</Statistics_kappa>
+      <Statistics_lambda>0.625</Statistics_lambda>
+      <Statistics_entropy>0.78</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+</Iteration>
+</BlastOutput_iterations>
+</BlastOutput>

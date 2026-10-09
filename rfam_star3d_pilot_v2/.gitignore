@@ -1,0 +1,23 @@
+# local environment / caches
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.DS_Store
+# large or re-downloadable raw inputs (URLs + sha256 in metadata/sources_manifest.tsv)
+inputs/structures/
+inputs/pdb/
+annotations/_cif/
+# not redistributed: paper texts / quoted excerpts (copyright)
+inputs/literature/
+review/literature/
+# not redistributed: STAR3D distribution incl. third-party MC-Annotate/RemovePseudoknots binaries
+inputs/software/
+runs/**/STAR3D_source/tools/
+runs/**/STAR3D_source/lib/
+runs/**/STAR3D_source/class/
+runs/**/STAR3D_source/src/
+runs/**/STAR3D_source/STAR3D.jar
+runs/**/STAR3D_source/README
+runs/**/STAR3D_source/build.xml
+runs/**/STAR3D_source/ShowAln.py
