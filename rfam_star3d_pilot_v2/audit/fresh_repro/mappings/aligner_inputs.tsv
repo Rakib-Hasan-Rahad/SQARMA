@@ -1,0 +1,4 @@
+rep_id	star3d_id	pdb_id	label_asym_id	auth_asym_id	model_used	n_models_in_entry	altloc_atoms_before	label_seq_range	residues_written	file	sha256	source_mmcif_sha256
+RF00522__3FU2_A	3fu2a	3FU2	A	A	1	1	0	1-34	32	runs/_inputs/3fu2a.pdb	41b28fbc7dd73d6126a28335674a30efaf5ea0552843e2a770563525db96f16c	22ac1941787618775616c8f09d2cb332194a7f0bc3cc30eac3ff9d0adb772826
+RF00522__6VUI_A	6vuia	6VUI	A	A	1	1	0	1-33	33	runs/_inputs/6vuia.pdb	e963927dd1078c82a42b87592b99fb8baf646dd62ddfaaf6f04545b955459f2f	b40f8e61db25e5479cca64169fa6bbd0c29341866a1265e57e06410bc32d48d8
+RF00522__7REX_A	7rexa	7REX	A	A	1	1	0	1-34	34	runs/_inputs/7rexa.pdb	9d896dff0d9126033507b94e287ba1df8b48e1a4cafd3bd04b87e99f2d03bb82	5c2fa2517f8f319520f0d174a3adfb33a341860f01ffba77b8407b2f89fdd3d5

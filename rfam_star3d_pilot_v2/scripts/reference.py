@@ -78,6 +78,8 @@ def struct_status(cw, rep, k, masked):
 
 
 def main(only):
+    if only:
+        raise SystemExit("subset runs would overwrite the complete global tables; run without arguments")
     check_reference()
     reps = {r["rep_id"]: r for r in read_tsv(P("results/selected_representatives.tsv"))}
     pairs = [p for p in read_tsv(P("results/selected_pairs.tsv")) if not only or p["pair_id"] in only]

@@ -54,6 +54,9 @@ def resid_index(cwrep):
     return out
 
 
+VALIDATION_FAILURES = []
+
+
 def compare_run(run, pair, cw, ref):
     qrep, trep = pair["query_rep"], pair["target_rep"]
     cq, ct = cw[qrep], cw[trep]
@@ -72,15 +75,22 @@ def compare_run(run, pair, cw, ref):
             pairs.append((a, b) if run["direction"] == "forward" else (b, a))
         qs = [a for a, _ in pairs]
         ts = [b for _, b in pairs]
-        injective = len(set(qs)) == len(qs) and len(set(ts)) == len(ts)
-        smap = dict(pairs)
+        injective = len(set(qs)) == len(qs) and len(set(ts)) == len(ts)   # checked BEFORE building the map
+        if unmapped or not injective:
+            # unexplained output-to-crosswalk failure or many-to-one mapping = validation failure, never a silent drop
+            VALIDATION_FAILURES.append((run["run_id"], len(unmapped), injective))
+            smap = None
+        else:
+            smap = dict(pairs)
     rmap = {int(r["row_A_index"]): int(r["row_B_index"]) for r in ref}
     rows = []
     for i, c in sorted(cq.items()):
         jr = rmap.get(i)
         js = smap.get(i) if smap is not None else None
         masked_q = c["engineered_masked"] == "yes"
-        if smap is None:
+        if smap is None and run["status"] == "completed":
+            cat = "validation_failed"
+        elif smap is None:
             cat = "technical_failure_or_no_alignment"
         elif jr is not None and js is not None:
             cat = "same_partner" if jr == js else "different_partner"
@@ -93,7 +103,8 @@ def compare_run(run, pair, cw, ref):
         why_r = None if jr is not None else "alignment_gap_in_standard_seed"
         if js is None:
             if smap is None:
-                why_s = "technical_failure" if run["status"] == "failed" else "no_alignment"
+                why_s = ("validation_failed" if run["status"] == "completed" else
+                         "technical_failure" if run["status"] == "failed" else "no_alignment")
             elif c["observed"] != "yes":
                 why_s = "missing_coordinates_source"
             elif jr is not None and ct[jr]["observed"] != "yes":
@@ -152,13 +163,15 @@ def summarize(run, pair, rows, smap, rmap, injective, unmapped, cw):
                 jaccard_pairs_unmasked=round(len(unmask(R) & Sa) / len(unmask(R) | Sa), 4) if (smap is not None and (unmask(R) | Sa)) else None,
                 same_partner=cats["same_partner"], different_partner=cats["different_partner"],
                 rfam_only=cats["rfam_only"], star3d_only=cats["star3d_only"], neither=cats["neither"],
-                failure_rows=cats["technical_failure_or_no_alignment"],
+                failure_rows=cats["technical_failure_or_no_alignment"] + cats["validation_failed"],
                 category_sum_check="ok" if sum(cats.values()) == len(cq) else "MISMATCH",
                 reference_source="Rfam.seed.gz", rfam_release=CFG["reference"]["rfam_release"],
                 seed_sha256=CFG["reference"]["seed_sha256"])
 
 
 def main(only):
+    if only:
+        raise SystemExit("subset runs would overwrite the complete global tables; run without arguments")
     pairs = {p["pair_id"]: p for p in read_tsv(P("results/selected_pairs.tsv"))}
     runs = [r for r in read_tsv(P("results/run_manifest.tsv")) if r["direction"] in ("forward", "reverse") and not r["run_id"].startswith("attempt")
             and (not only or r["pair_id"] in only)]
@@ -182,7 +195,7 @@ def main(only):
         cons.append(dict(pair_id=pid, direction=d, replicates=len(vals), identical_across_replicates=len(set(vals)) == 1,
                          distinct_outputs=len(set(vals))))
     fw_rev = []
-    for pid in {p for p, _ in maps}:
+    for pid in sorted({p for p, _ in maps}):
         f = maps.get((pid, "forward"), {}).get("1")
         r = maps.get((pid, "reverse"), {}).get("1")
         if f is not None and r is not None:
@@ -192,6 +205,8 @@ def main(only):
                                distinct_outputs=f"shared {len(fs & rs)}; fwd-only {len(fs - rs)}; rev-only {len(rs - fs)}"))
     write_tsv(P("results/replicate_consistency.tsv"), cons + fw_rev,
               ["pair_id", "direction", "replicates", "identical_across_replicates", "distinct_outputs"])
+    if VALIDATION_FAILURES:
+        raise SystemExit(f"STAGE FAILED: STAR3D output validation failures {VALIDATION_FAILURES} (tables written)")
     for s in summ:
         print(s["run_id"], s["status"], "R", s["rfam_pairs"], "Ra", s["rfam_pairs_structurally_assessable"], "S",
               s["star3d_pairs"], "shared", s["shared_pairs"], "reproduced", s["frac_rfam_assessable_reproduced"],

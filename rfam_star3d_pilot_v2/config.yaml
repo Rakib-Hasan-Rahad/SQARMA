@@ -6,7 +6,7 @@ project: rfam_star3d_pilot_v2
 prompt_version: "2.0"
 config_version: 1
 mode: pilot                 # pilot | scale  (scale is not launched without user request)
-cohort_version: 1
+cohort_version: "1.1"   # v1.1 = tier relabel of RF00162 (audit-repair v2.1); same 7 pairs and runs
 
 reference:
   reference_source: Rfam.seed.gz          # SOLE alignment reference (pilot and scale)

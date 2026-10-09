@@ -1,0 +1,10 @@
+{
+ "source_mmcif": "inputs/structures/mmcif/7REX.cif.gz",
+ "source_mmcif_sha256": "5c2fa2517f8f319520f0d174a3adfb33a341860f01ffba77b8407b2f89fdd3d5",
+ "decompressed_cif_sha256": "3cf1c6022efcaacba92286eac92a06a798277a7cbd107a9f80643bb77c520a3c",
+ "fr3d_commit": "288f98ccfd72dc6d88036c124605c05ce623b1b7",
+ "categories": "basepair,stacking",
+ "model_policy": "all models annotated; model 1 kept in normalization",
+ "command": "/Users/rakibhasanrahad/Desktop/IMPORTANT FILES 2026/2027 research/RNASEQ/Phase 1/Codebase/SQARMA/rfam_star3d_pilot_v2/.venv/bin/python -m fr3d.classifiers.NA_pairwise_interactions -i /Users/rakibhasanrahad/Desktop/IMPORTANT FILES 2026/2027 research/RNASEQ/Phase 1/Codebase/SQARMA/rfam_star3d_pilot_v2/audit/fresh_repro/annotations/raw/_cif -o /Users/rakibhasanrahad/Desktop/IMPORTANT FILES 2026/2027 research/RNASEQ/Phase 1/Codebase/SQARMA/rfam_star3d_pilot_v2/audit/fresh_repro/annotations/raw -c basepair,stacking 7REX.cif",
+ "provenance": "generated"
+}

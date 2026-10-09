@@ -49,9 +49,37 @@ where it depends on the alignment. Index systems are never mixed without a named
 - **results/pair_summary.tsv** — per run: lengths, observed/masked counts, Rfam pairs (all / structurally
   assessable), STAR3D pairs, shared pairs, fraction of assessable Rfam pairs reproduced, Jaccard (unmasked),
   category counts + `category_sum_check`, injectivity.
-- **results/interaction_comparison.tsv / interaction_summary.tsv** — per source FR3D interaction and method:
-  exact_class_preserved, different_class, no_annotated_target_pair, unmapped_endpoint,
-  target_endpoint_unobserved; `common_assessable_*` marks the shared denominator.
-- **results/region_review.tsv** — all candidate disagreement regions, ranking inputs, inspection status,
+- **results/interaction_comparison.tsv** (v2.1) — per source FR3D interaction: for each method m ∈ {rfam,
+  star3d_forward, star3d_reverse}: `m_status` ∈ exact_class_preserved, different_class, no_annotated_target_pair,
+  unmapped_endpoint, target_endpoint_unobserved; `m_target`; `m_target_masked` (yes/no/NA). For each comparison
+  c ∈ {rfam_vs_star3d_forward, rfam_vs_star3d_reverse, all_three_methods}: `eligible_c` and `exclusion_c`
+  (source_endpoint_masked, <m>_unmapped_endpoint, <m>_target_unobserved, <m>_target_masked). Nothing is dropped.
+- **results/interaction_summary.tsv** (v2.1) — per pair, source side, class and comparison: source_interactions,
+  eligible_unmasked (the comparison's own denominator), and per method: coverage_all, preserved_all and
+  preserved_eligible (NA for methods outside the comparison).
+- **annotations/normalized/_symmetry_lines_excluded.tsv** — FR3D lines that involve non-identity symmetry copies
+  (copy_duplicate, inter_copy); these are never counted as intrachain.
+- **annotations/raw/<PDB>.provenance.json** — source mmCIF sha256, the sha256 of the decompressed CIF that FR3D read,
+  FR3D commit, and categories; `provenance` = generated or reconstructed_v2.1.
+- **results/region_review.tsv** (v2.1) — all candidate regions; n_correspondence_disagreements vs
+  n_coverage_differences; source_engineering_overlap, rfam_target_engineering_overlap,
+  star3d_target_engineering_overlap, source_unobserved_in_span, rfam_target_unobserved, star3d_target_unobserved;
+  eligible_for_structural_adjudication (eligible for investigation, not correctness); interpretation_source (how a
+  manual interpretation was carried forward); ranking inputs; inspection status;
   classification ∈ agreement, technical_mapping_or_input_defect, possible_STAR3D_correspondence_issue,
   structural_biological_experimental_difference, supported_candidate_Rfam_correspondence_issue, unresolved.
+
+## v2.1 additions
+- **review/exact_source_check.tsv** — exact search of the claimed source genome (both strands): full family interval,
+  trimmed core (masked termini removed), internal masked positions, and verdict ∈ exact_source_verified,
+  core_exact_source_verified_termini_differ, NOT_found_exactly_in_claimed_genome.
+- **review/decisions.yaml** `evidence_strength` ∈ exact_source_genome, core_exact_source_genome,
+  literature_supported_only, related_species_only, conflicting_metadata; `engineering_status` ∈ confirmed_absent,
+  terminal_only, present_documented, unknown, not_applicable.
+- **results/anchor_fit/<pair>_<range>_<rule>.tsv** — shared-correspondence anchor fit. The header records the rule,
+  anchors, RMSD and singular values. Rules: shared, shared_flank_excl, shared_canonical. Degenerate sets are REFUSED.
+- **review/candidate_RF00522/** — structure_facts, numbering_chain, p1_raw_fr3d_lines, residue_evidence_<pair>,
+  adjustment_validation.json, adjustment_interactions(_summary).tsv.
+- **results/selected_pairs.tsv** `tier` ∈ primary, exploratory, exploratory_engineered_technical.
+- **results/run_manifest.tsv** statuses add failed_mount_check, failed_mount_mismatch and validation_failed
+  (correspondence category). `attempt*__` run_ids are historical attempts and are excluded from current denominators.

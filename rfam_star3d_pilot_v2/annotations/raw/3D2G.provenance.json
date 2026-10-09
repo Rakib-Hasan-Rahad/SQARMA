@@ -1,0 +1,9 @@
+{
+ "source_mmcif": "inputs/structures/mmcif/3D2G.cif.gz",
+ "source_mmcif_sha256": "7bd4d78f8506bea34f073df176c7ea003285693c8bd8d0545e8ae6f4e9191d06",
+ "decompressed_cif_sha256": "f4ce51f5d303cf6403dd039be294312b8cc670a5ae75dbdf60c63322550267e1",
+ "fr3d_commit": "288f98ccfd72dc6d88036c124605c05ce623b1b7",
+ "categories": "basepair,stacking",
+ "model_policy": "all models annotated; model 1 kept in normalization",
+ "provenance": "reconstructed_v2.1: annotations/_cif CIF verified byte-identical to pinned mmCIF; FR3D commit taken from the single environment record (venv pinned)"
+}

@@ -102,6 +102,48 @@ def code_commit():
     return p.stdout.strip() or "uncommitted"
 
 
+def preprocess_and_gate(work, ids, rep_order, base, tag, k, common, runner=None):
+    """Mount check + STAR3D preprocessing for both RNAs. Returns True only if EVERY step completed and passed its
+    checks. Any failure (mount view mismatch, stale intermediates present, nonzero exit, missing/empty npk.ct,
+    container/host checksum mismatch of the npk.ct) is recorded in the manifest and stops the pair's attempt."""
+    runner = runner or docker
+    # 1. container must see exactly the host input bytes and NO pre-existing intermediates
+    rc, _, _, so = runner(work, "sha256sum PDB/*.pdb; ls STAR3D_struct_info 2>/dev/null | wc -l",
+                          os.path.join(base, "logs", "mount_check"))
+    seen = {l.split()[1].split("/")[-1][:-4]: l.split()[0] for l in so.splitlines() if l.strip().endswith(".pdb")}
+    lines = so.strip().splitlines()
+    bad = rc != 0 or not lines or any(seen.get(v[0]) != v[2] for v in ids.values()) or lines[-1].strip() != "0"
+    if bad:
+        append_manifest(dict(common, run_id=f"{tag}__a{k}__mount_check", direction="preprocess",
+                             command="sha256sum PDB/*.pdb; ls STAR3D_struct_info | wc -l", exit_code=rc,
+                             status="failed_mount_check", note=("container view differs from host or stale "
+                                                                "intermediates present: " + so.strip())[:200],
+                             stdout=os.path.relpath(os.path.join(base, "logs", "mount_check.stdout"), ROOT)))
+        return False
+    # 2. preprocessing, each followed by an in-container checksum of its product
+    for rid in rep_order:
+        sid, ch, _ = ids[rid]
+        cmd = f"java -cp STAR3D.jar Preprocess {sid} {ch}"
+        rc, dur, st, so = runner(work, cmd, os.path.join(base, "logs", f"preprocess_{sid}"))
+        npk = os.path.join(work, "STAR3D_struct_info", f"{sid}_{ch}.npk.ct")
+        status = "completed" if rc == 0 and os.path.exists(npk) and os.path.getsize(npk) > 0 else "failed"
+        note = None
+        if status == "completed":
+            rc2, _, _, so2 = runner(work, f"sha256sum STAR3D_struct_info/{sid}_{ch}.npk.ct",
+                                    os.path.join(base, "logs", f"post_check_{sid}"))
+            if rc2 != 0 or not so2.split() or so2.split()[0] != sha(npk):
+                status = "failed_mount_mismatch"
+                note = f"container npk.ct sha {so2.split()[0] if so2.split() else 'NA'} != host {sha(npk)}"
+        append_manifest(dict(common, run_id=f"{tag}__a{k}__preprocess_{sid}", direction="preprocess", command=cmd,
+                             started_utc=st, duration_s=dur, exit_code=rc, status=status, note=note,
+                             stdout=os.path.relpath(os.path.join(base, "logs", f"preprocess_{sid}.stdout"), ROOT),
+                             stderr=os.path.relpath(os.path.join(base, "logs", f"preprocess_{sid}.stderr"), ROOT),
+                             output_aln=os.path.relpath(npk, ROOT), output_sha256=sha(npk)))
+        if status != "completed":          # ANY non-completed preprocessing status stops the attempt
+            return False
+    return True
+
+
 def run_pair(pair, reps, inputs, nrep):
     if sha(TARBALL) != CFG["sources"]["star3d_sha256"]:
         raise SystemExit("STAR3D tarball checksum mismatch")
@@ -128,34 +170,14 @@ def run_pair(pair, reps, inputs, nrep):
             raise SystemExit(f"input {src} changed since preparation")
         shutil.copyfile(src, os.path.join(work, "PDB", meta["star3d_id"] + ".pdb"))
         ids[r["rep_id"]] = (meta["star3d_id"], r["auth_asym_id"], meta["sha256"])
-    # container must see exactly the host bytes (guards against stale bind-mount caches)
-    rc, _, _, so = docker(work, "sha256sum PDB/*.pdb; ls STAR3D_struct_info | wc -l", os.path.join(base, "logs", "mount_check"))
-    seen = {l.split()[1].split("/")[-1][:-4]: l.split()[0] for l in so.splitlines() if l.endswith(".pdb")}
-    lines = so.strip().splitlines()
-    if rc != 0 or not lines or any(seen.get(v[0]) != v[2] for v in ids.values()) or lines[-1].strip() != "0":
-        raise SystemExit(f"mount check failed: container view differs from host ({so})")
     img = image_id()
     common = dict(pair_id=pid, rfam_acc=pair["rfam_acc"], image=CFG["star3d"]["image"], image_id=img,
                   star3d_tarball_sha256=sha(TARBALL), reference_source="Rfam.seed.gz",
                   rfam_release=CFG["reference"]["rfam_release"], seed_sha256=CFG["reference"]["seed_sha256"],
                   code_commit=code_commit())
-    for rid in (q["rep_id"], t_["rep_id"]):
-        sid, ch, _ = ids[rid]
-        cmd = f"java -cp STAR3D.jar Preprocess {sid} {ch}"
-        rc, dur, st, so = docker(work, cmd, os.path.join(base, "logs", f"preprocess_{sid}"))
-        npk = os.path.join(work, "STAR3D_struct_info", f"{sid}_{ch}.npk.ct")
-        status = "completed" if rc == 0 and os.path.exists(npk) and os.path.getsize(npk) > 0 else "failed"
-        if status == "completed":
-            rc2, _, _, so2 = docker(work, f"sha256sum STAR3D_struct_info/{sid}_{ch}.npk.ct", os.path.join(base, "logs", f"post_check_{sid}"))
-            if rc2 != 0 or so2.split()[0] != sha(npk):
-                status = "failed_mount_mismatch"
-        append_manifest(dict(common, run_id=f"{tag}__a{k}__preprocess_{sid}", direction="preprocess", command=cmd,
-                             started_utc=st, duration_s=dur, exit_code=rc, status=status,
-                             stdout=os.path.relpath(os.path.join(base, "logs", f"preprocess_{sid}.stdout"), ROOT),
-                             stderr=os.path.relpath(os.path.join(base, "logs", f"preprocess_{sid}.stderr"), ROOT),
-                             output_aln=os.path.relpath(npk, ROOT), output_sha256=sha(npk)))
-        if status == "failed":
-            return
+    if not preprocess_and_gate(work, ids, (q["rep_id"], t_["rep_id"]), base, tag, k, common):
+        print(f"{pid}: preprocessing/mount gate FAILED -> no alignment runs for this attempt (see manifest)", flush=True)
+        return
     flags = " ".join(CFG["star3d"]["extra_flags"])
     for direction, (a, b) in (("forward", (q, t_)), ("reverse", (t_, q))):
         sa, ca, ha = ids[a["rep_id"]]

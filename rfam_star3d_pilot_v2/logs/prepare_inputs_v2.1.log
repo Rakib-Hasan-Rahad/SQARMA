@@ -1,0 +1,23 @@
+RF00162__2GIS_A 94 residues -> runs/_inputs/2gisa.pdb
+RF00162__4KQY_A 119 residues -> runs/_inputs/4kqya.pdb
+RF00522__6VUI_A 33 residues -> runs/_inputs/6vuia.pdb
+RF00522__3FU2_A 32 residues -> runs/_inputs/3fu2a.pdb
+RF00522__7REX_A 34 residues -> runs/_inputs/7rexa.pdb
+RF00174__4GXY_A 163 residues -> runs/_inputs/4gxya.pdb
+RF00174__6VMY_A 130 residues -> runs/_inputs/6vmya.pdb
+RF00059__2GDI_X 80 residues -> runs/_inputs/2gdix.pdb
+RF00059__3D2G_A 77 residues -> runs/_inputs/3d2ga.pdb
+RF00442__5U3G_B 85 residues -> runs/_inputs/5u3gb.pdb
+RF00442__7MLW_F 125 residues -> runs/_inputs/7mlwf.pdb
+crosswalk rows 986 identity mismatches 0
+RF00162__2GIS_A IDs == input file: OK; residues where scheme auth_seq_num != coordinate auth_seq_id: 0
+RF00162__4KQY_A IDs == input file: OK; residues where scheme auth_seq_num != coordinate auth_seq_id: 0
+RF00522__6VUI_A IDs == input file: OK; residues where scheme auth_seq_num != coordinate auth_seq_id: 0
+RF00522__3FU2_A IDs == input file: OK; residues where scheme auth_seq_num != coordinate auth_seq_id: 0
+RF00522__7REX_A IDs == input file: OK; residues where scheme auth_seq_num != coordinate auth_seq_id: 0
+RF00174__4GXY_A IDs == input file: OK; residues where scheme auth_seq_num != coordinate auth_seq_id: 0
+RF00174__6VMY_A IDs == input file: OK; residues where scheme auth_seq_num != coordinate auth_seq_id: 130
+RF00059__2GDI_X IDs == input file: OK; residues where scheme auth_seq_num != coordinate auth_seq_id: 1
+RF00059__3D2G_A IDs == input file: OK; residues where scheme auth_seq_num != coordinate auth_seq_id: 0
+RF00442__5U3G_B IDs == input file: OK; residues where scheme auth_seq_num != coordinate auth_seq_id: 0
+RF00442__7MLW_F IDs == input file: OK; residues where scheme auth_seq_num != coordinate auth_seq_id: 0

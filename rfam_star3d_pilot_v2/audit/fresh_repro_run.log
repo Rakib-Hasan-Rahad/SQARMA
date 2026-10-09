@@ -1,0 +1,136 @@
+[
+ {
+  "file": "inputs/structures/mmcif/3FU2.cif.gz",
+  "url": "https://files.rcsb.org/download/3FU2.cif.gz",
+  "recorded_sha256": "22ac1941787618775616c8f09d2cb332194a7f0bc3cc30eac3ff9d0adb772826",
+  "pinned_sha256": "22ac1941787618775616c8f09d2cb332194a7f0bc3cc30eac3ff9d0adb772826",
+  "fresh_sha256": "22ac1941787618775616c8f09d2cb332194a7f0bc3cc30eac3ff9d0adb772826",
+  "compressed_identical": true,
+  "fresh_decompressed_sha256": "eb33096b9d4c24489ed0e1ca037c810592694df585938b90584b27fb6558cd9e",
+  "pinned_decompressed_sha256": "eb33096b9d4c24489ed0e1ca037c810592694df585938b90584b27fb6558cd9e",
+  "decompressed_identical": true
+ },
+ {
+  "file": "inputs/structures/mmcif/6VUI.cif.gz",
+  "url": "https://files.rcsb.org/download/6VUI.cif.gz",
+  "recorded_sha256": "b40f8e61db25e5479cca64169fa6bbd0c29341866a1265e57e06410bc32d48d8",
+  "pinned_sha256": "b40f8e61db25e5479cca64169fa6bbd0c29341866a1265e57e06410bc32d48d8",
+  "fresh_sha256": "b40f8e61db25e5479cca64169fa6bbd0c29341866a1265e57e06410bc32d48d8",
+  "compressed_identical": true,
+  "fresh_decompressed_sha256": "4453174f5dd10044d0ac83ddb8c094cde63e4b2ea147154703dd3d0a3da68036",
+  "pinned_decompressed_sha256": "4453174f5dd10044d0ac83ddb8c094cde63e4b2ea147154703dd3d0a3da68036",
+  "decompressed_identical": true
+ },
+ {
+  "file": "inputs/structures/mmcif/7REX.cif.gz",
+  "url": "https://files.rcsb.org/download/7REX.cif.gz",
+  "recorded_sha256": "5c2fa2517f8f319520f0d174a3adfb33a341860f01ffba77b8407b2f89fdd3d5",
+  "pinned_sha256": "5c2fa2517f8f319520f0d174a3adfb33a341860f01ffba77b8407b2f89fdd3d5",
+  "fresh_sha256": "5c2fa2517f8f319520f0d174a3adfb33a341860f01ffba77b8407b2f89fdd3d5",
+  "compressed_identical": true,
+  "fresh_decompressed_sha256": "3cf1c6022efcaacba92286eac92a06a798277a7cbd107a9f80643bb77c520a3c",
+  "pinned_decompressed_sha256": "3cf1c6022efcaacba92286eac92a06a798277a7cbd107a9f80643bb77c520a3c",
+  "decompressed_identical": true
+ },
+ {
+  "file": "inputs/software/STAR3D_v1.2.tar.gz",
+  "url": "http://genome.ucf.edu/STAR3D/STAR3D_v1.2.tar.gz",
+  "recorded_sha256": "c9da44059d9cfc40828e798ebd4f6194c55415e17aaae7d90ac0f849ec2ed946",
+  "fresh_sha256": "c9da44059d9cfc40828e798ebd4f6194c55415e17aaae7d90ac0f849ec2ed946",
+  "compressed_identical": true
+ }
+]
+[
+ {
+  "rep_id": "RF00522__3FU2_A",
+  "retained_sha256": "41b28fbc7dd73d6126a28335674a30efaf5ea0552843e2a770563525db96f16c",
+  "fresh_sha256": "41b28fbc7dd73d6126a28335674a30efaf5ea0552843e2a770563525db96f16c",
+  "bytes_identical": true,
+  "residue_ids_and_names_identical": true,
+  "n_residues": 32,
+  "max_atom_displacement_A": 0.0
+ },
+ {
+  "rep_id": "RF00522__6VUI_A",
+  "retained_sha256": "e963927dd1078c82a42b87592b99fb8baf646dd62ddfaaf6f04545b955459f2f",
+  "fresh_sha256": "e963927dd1078c82a42b87592b99fb8baf646dd62ddfaaf6f04545b955459f2f",
+  "bytes_identical": true,
+  "residue_ids_and_names_identical": true,
+  "n_residues": 33,
+  "max_atom_displacement_A": 0.0
+ },
+ {
+  "rep_id": "RF00522__7REX_A",
+  "retained_sha256": "9d896dff0d9126033507b94e287ba1df8b48e1a4cafd3bd04b87e99f2d03bb82",
+  "fresh_sha256": "9d896dff0d9126033507b94e287ba1df8b48e1a4cafd3bd04b87e99f2d03bb82",
+  "bytes_identical": true,
+  "residue_ids_and_names_identical": true,
+  "n_residues": 34,
+  "max_atom_displacement_A": 0.0
+ }
+]
+RF00522__3FU2_A__6VUI_A__a1__forward__rep1 completed 31 2.59 2.65s
+RF00522__3FU2_A__6VUI_A__a1__forward__rep2 completed 31 2.59 2.71s
+RF00522__3FU2_A__6VUI_A__a1__forward__rep3 completed 31 2.59 2.58s
+RF00522__3FU2_A__6VUI_A__a1__reverse__rep1 completed 31 2.33 2.9s
+RF00522__3FU2_A__6VUI_A__a1__reverse__rep2 completed 31 2.33 2.84s
+RF00522__3FU2_A__6VUI_A__a1__reverse__rep3 completed 31 2.33 2.47s
+RF00522__3FU2_A__7REX_A__a1__forward__rep1 completed 32 2.0 2.78s
+RF00522__3FU2_A__7REX_A__a1__forward__rep2 completed 32 2.0 2.49s
+RF00522__3FU2_A__7REX_A__a1__forward__rep3 completed 32 2.0 2.77s
+RF00522__3FU2_A__7REX_A__a1__reverse__rep1 completed 32 2.0 2.86s
+RF00522__3FU2_A__7REX_A__a1__reverse__rep2 completed 32 2.0 2.65s
+RF00522__3FU2_A__7REX_A__a1__reverse__rep3 completed 32 2.0 2.79s
+RF00522__6VUI_A__7REX_A__a1__forward__rep1 completed 32 2.34 2.61s
+RF00522__6VUI_A__7REX_A__a1__forward__rep2 completed 32 2.34 2.86s
+RF00522__6VUI_A__7REX_A__a1__forward__rep3 completed 32 2.34 2.84s
+RF00522__6VUI_A__7REX_A__a1__reverse__rep1 completed 32 2.34 3.04s
+RF00522__6VUI_A__7REX_A__a1__reverse__rep2 completed 32 2.34 2.78s
+RF00522__6VUI_A__7REX_A__a1__reverse__rep3 completed 32 2.34 2.82s
+{'pair_id': 'RF00522__3FU2_A__6VUI_A', 'direction': 'forward', 'replicate': '1', 'fresh_status': 'completed', 'retained_status': 'completed', 'fresh_aligned_n': '31', 'retained_aligned_n': '31', 'fresh_rmsd': '2.59', 'retained_rmsd': '2.59', 'mapping_identical': True, 'fresh_npk_query_identical': True, 'fresh_npk_target_identical': True}
+{'pair_id': 'RF00522__3FU2_A__6VUI_A', 'direction': 'forward', 'replicate': '2', 'fresh_status': 'completed', 'retained_status': 'completed', 'fresh_aligned_n': '31', 'retained_aligned_n': '31', 'fresh_rmsd': '2.59', 'retained_rmsd': '2.59', 'mapping_identical': True, 'fresh_npk_query_identical': True, 'fresh_npk_target_identical': True}
+{'pair_id': 'RF00522__3FU2_A__6VUI_A', 'direction': 'forward', 'replicate': '3', 'fresh_status': 'completed', 'retained_status': 'completed', 'fresh_aligned_n': '31', 'retained_aligned_n': '31', 'fresh_rmsd': '2.59', 'retained_rmsd': '2.59', 'mapping_identical': True, 'fresh_npk_query_identical': True, 'fresh_npk_target_identical': True}
+{'pair_id': 'RF00522__3FU2_A__6VUI_A', 'direction': 'reverse', 'replicate': '1', 'fresh_status': 'completed', 'retained_status': 'completed', 'fresh_aligned_n': '31', 'retained_aligned_n': '31', 'fresh_rmsd': '2.33', 'retained_rmsd': '2.33', 'mapping_identical': True, 'fresh_npk_query_identical': True, 'fresh_npk_target_identical': True}
+{'pair_id': 'RF00522__3FU2_A__6VUI_A', 'direction': 'reverse', 'replicate': '2', 'fresh_status': 'completed', 'retained_status': 'completed', 'fresh_aligned_n': '31', 'retained_aligned_n': '31', 'fresh_rmsd': '2.33', 'retained_rmsd': '2.33', 'mapping_identical': True, 'fresh_npk_query_identical': True, 'fresh_npk_target_identical': True}
+{'pair_id': 'RF00522__3FU2_A__6VUI_A', 'direction': 'reverse', 'replicate': '3', 'fresh_status': 'completed', 'retained_status': 'completed', 'fresh_aligned_n': '31', 'retained_aligned_n': '31', 'fresh_rmsd': '2.33', 'retained_rmsd': '2.33', 'mapping_identical': True, 'fresh_npk_query_identical': True, 'fresh_npk_target_identical': True}
+{'pair_id': 'RF00522__3FU2_A__7REX_A', 'direction': 'forward', 'replicate': '1', 'fresh_status': 'completed', 'retained_status': 'completed', 'fresh_aligned_n': '32', 'retained_aligned_n': '32', 'fresh_rmsd': '2.0', 'retained_rmsd': '2.0', 'mapping_identical': True, 'fresh_npk_query_identical': True, 'fresh_npk_target_identical': True}
+{'pair_id': 'RF00522__3FU2_A__7REX_A', 'direction': 'forward', 'replicate': '2', 'fresh_status': 'completed', 'retained_status': 'completed', 'fresh_aligned_n': '32', 'retained_aligned_n': '32', 'fresh_rmsd': '2.0', 'retained_rmsd': '2.0', 'mapping_identical': True, 'fresh_npk_query_identical': True, 'fresh_npk_target_identical': True}
+{'pair_id': 'RF00522__3FU2_A__7REX_A', 'direction': 'forward', 'replicate': '3', 'fresh_status': 'completed', 'retained_status': 'completed', 'fresh_aligned_n': '32', 'retained_aligned_n': '32', 'fresh_rmsd': '2.0', 'retained_rmsd': '2.0', 'mapping_identical': True, 'fresh_npk_query_identical': True, 'fresh_npk_target_identical': True}
+{'pair_id': 'RF00522__3FU2_A__7REX_A', 'direction': 'reverse', 'replicate': '1', 'fresh_status': 'completed', 'retained_status': 'completed', 'fresh_aligned_n': '32', 'retained_aligned_n': '32', 'fresh_rmsd': '2.0', 'retained_rmsd': '2.0', 'mapping_identical': True, 'fresh_npk_query_identical': True, 'fresh_npk_target_identical': True}
+{'pair_id': 'RF00522__3FU2_A__7REX_A', 'direction': 'reverse', 'replicate': '2', 'fresh_status': 'completed', 'retained_status': 'completed', 'fresh_aligned_n': '32', 'retained_aligned_n': '32', 'fresh_rmsd': '2.0', 'retained_rmsd': '2.0', 'mapping_identical': True, 'fresh_npk_query_identical': True, 'fresh_npk_target_identical': True}
+{'pair_id': 'RF00522__3FU2_A__7REX_A', 'direction': 'reverse', 'replicate': '3', 'fresh_status': 'completed', 'retained_status': 'completed', 'fresh_aligned_n': '32', 'retained_aligned_n': '32', 'fresh_rmsd': '2.0', 'retained_rmsd': '2.0', 'mapping_identical': True, 'fresh_npk_query_identical': True, 'fresh_npk_target_identical': True}
+{'pair_id': 'RF00522__6VUI_A__7REX_A', 'direction': 'forward', 'replicate': '1', 'fresh_status': 'completed', 'retained_status': 'completed', 'fresh_aligned_n': '32', 'retained_aligned_n': '32', 'fresh_rmsd': '2.34', 'retained_rmsd': '2.34', 'mapping_identical': True, 'fresh_npk_query_identical': True, 'fresh_npk_target_identical': True}
+{'pair_id': 'RF00522__6VUI_A__7REX_A', 'direction': 'forward', 'replicate': '2', 'fresh_status': 'completed', 'retained_status': 'completed', 'fresh_aligned_n': '32', 'retained_aligned_n': '32', 'fresh_rmsd': '2.34', 'retained_rmsd': '2.34', 'mapping_identical': True, 'fresh_npk_query_identical': True, 'fresh_npk_target_identical': True}
+{'pair_id': 'RF00522__6VUI_A__7REX_A', 'direction': 'forward', 'replicate': '3', 'fresh_status': 'completed', 'retained_status': 'completed', 'fresh_aligned_n': '32', 'retained_aligned_n': '32', 'fresh_rmsd': '2.34', 'retained_rmsd': '2.34', 'mapping_identical': True, 'fresh_npk_query_identical': True, 'fresh_npk_target_identical': True}
+{'pair_id': 'RF00522__6VUI_A__7REX_A', 'direction': 'reverse', 'replicate': '1', 'fresh_status': 'completed', 'retained_status': 'completed', 'fresh_aligned_n': '32', 'retained_aligned_n': '32', 'fresh_rmsd': '2.34', 'retained_rmsd': '2.34', 'mapping_identical': True, 'fresh_npk_query_identical': True, 'fresh_npk_target_identical': True}
+{'pair_id': 'RF00522__6VUI_A__7REX_A', 'direction': 'reverse', 'replicate': '2', 'fresh_status': 'completed', 'retained_status': 'completed', 'fresh_aligned_n': '32', 'retained_aligned_n': '32', 'fresh_rmsd': '2.34', 'retained_rmsd': '2.34', 'mapping_identical': True, 'fresh_npk_query_identical': True, 'fresh_npk_target_identical': True}
+{'pair_id': 'RF00522__6VUI_A__7REX_A', 'direction': 'reverse', 'replicate': '3', 'fresh_status': 'completed', 'retained_status': 'completed', 'fresh_aligned_n': '32', 'retained_aligned_n': '32', 'fresh_rmsd': '2.34', 'retained_rmsd': '2.34', 'mapping_identical': True, 'fresh_npk_query_identical': True, 'fresh_npk_target_identical': True}
+[
+ {
+  "rep_id": "RF00522__3FU2_A",
+  "retained_n": 49,
+  "fresh_n": 49,
+  "normalized_identical": true,
+  "only_retained": [],
+  "only_fresh": [],
+  "raw_files_byte_identical": true
+ },
+ {
+  "rep_id": "RF00522__6VUI_A",
+  "retained_n": 48,
+  "fresh_n": 48,
+  "normalized_identical": true,
+  "only_retained": [],
+  "only_fresh": [],
+  "raw_files_byte_identical": true
+ },
+ {
+  "rep_id": "RF00522__7REX_A",
+  "retained_n": 49,
+  "fresh_n": 49,
+  "normalized_identical": true,
+  "only_retained": [],
+  "only_fresh": [],
+  "raw_files_byte_identical": true
+ }
+]

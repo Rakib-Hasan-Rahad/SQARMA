@@ -57,23 +57,97 @@ def reverse_label(label):
 def parse_unit(u):
     f = u.split("|")
     icode = f[7] if len(f) > 7 and f[7] else ""
-    return dict(pdb=f[0], model=int(f[1]), chain=f[2], comp=f[3], num=int(f[4]), icode=icode)
+    symop = f[8] if len(f) > 8 and f[8] else "1_555"     # absent symmetry operator = identity
+    return dict(pdb=f[0], model=int(f[1]), chain=f[2], comp=f[3], num=int(f[4]), icode=icode, symop=symop)
 
 
-def annotate(pdb):
-    raw = P("annotations/raw", f"{pdb}_basepair.txt")
-    if not os.path.exists(raw):
-        os.makedirs(P("annotations/_cif"), exist_ok=True)
-        cif = P("annotations/_cif", f"{pdb}.cif")
+def symmetry_class(u1, u2):
+    """identity: both endpoints in the deposited copy; copy_duplicate: both in the same non-identity copy
+    (re-annotation of an equivalent molecule); inter_copy: a contact BETWEEN different symmetry copies."""
+    if u1["symop"] == "1_555" and u2["symop"] == "1_555":
+        return "identity"
+    if u1["symop"] == u2["symop"]:
+        return "copy_duplicate"
+    return "inter_copy"
+
+
+def _sha(path):
+    import hashlib
+    h = hashlib.sha256()
+    with open(path, "rb") as f:
+        for b in iter(lambda: f.read(1 << 20), b""):
+            h.update(b)
+    return h.hexdigest()
+
+
+def _cif_bytes_sha(pdb):
+    import hashlib
+    with gzip.open(P("inputs/structures/mmcif", f"{pdb}.cif.gz"), "rb") as fi:
+        return hashlib.sha256(fi.read()).hexdigest()
+
+
+def annotate(pdb, raw_dir=None):
+    """Run (or reuse) FR3D for one entry. Reuse requires a provenance sidecar whose source mmCIF sha256,
+    decompressed-CIF sha256 and FR3D commit match the current pinned values; otherwise the stage fails."""
+    import json
+    raw_dir = raw_dir or P("annotations/raw")
+    side = os.path.join(raw_dir, f"{pdb}.provenance.json")
+    want = dict(source_mmcif=f"inputs/structures/mmcif/{pdb}.cif.gz",
+                source_mmcif_sha256=_sha(P("inputs/structures/mmcif", f"{pdb}.cif.gz")),
+                decompressed_cif_sha256=_cif_bytes_sha(pdb),
+                fr3d_commit=CFG["annotation"]["tool"].split("commit")[-1].strip(),
+                categories="basepair,stacking", model_policy="all models annotated; model 1 kept in normalization")
+    raw = os.path.join(raw_dir, f"{pdb}_basepair.txt")
+    if os.path.exists(raw):
+        if not os.path.exists(side):
+            raise SystemExit(f"cached FR3D output for {pdb} has no provenance sidecar; regenerate or backfill")
+        got = json.load(open(side))
+        for k in ("source_mmcif_sha256", "decompressed_cif_sha256", "fr3d_commit", "categories"):
+            if got.get(k) != want[k]:
+                raise SystemExit(f"cached FR3D output for {pdb}: provenance mismatch on {k}")
+    else:
+        os.makedirs(raw_dir, exist_ok=True)
+        cif_dir = os.path.join(raw_dir, "_cif")
+        os.makedirs(cif_dir, exist_ok=True)
+        cif = os.path.join(cif_dir, f"{pdb}.cif")
         with gzip.open(P("inputs/structures/mmcif", f"{pdb}.cif.gz"), "rb") as fi, open(cif, "wb") as fo:
             fo.write(fi.read())
-        cmd = [sys.executable, "-m", "fr3d.classifiers.NA_pairwise_interactions", "-i", P("annotations/_cif"),
-               "-o", P("annotations/raw"), "-c", "basepair,stacking", f"{pdb}.cif"]
+        cmd = [sys.executable, "-m", "fr3d.classifiers.NA_pairwise_interactions", "-i", cif_dir,
+               "-o", raw_dir, "-c", "basepair,stacking", f"{pdb}.cif"]
         p = subprocess.run(cmd, capture_output=True, text=True)
-        open(P("annotations/raw", f"{pdb}.log"), "w").write(" ".join(cmd) + "\n" + p.stdout + p.stderr)
+        open(os.path.join(raw_dir, f"{pdb}.log"), "w").write(" ".join(cmd) + "\n" + p.stdout + p.stderr)
         if p.returncode != 0:
             raise RuntimeError(f"FR3D failed for {pdb}")
-    return [P("annotations/raw", f"{pdb}_basepair.txt"), P("annotations/raw", f"{pdb}_stacking.txt")]
+        json.dump(dict(want, command=" ".join(cmd), provenance="generated"), open(side, "w"), indent=1)
+    return [os.path.join(raw_dir, f"{pdb}_basepair.txt"), os.path.join(raw_dir, f"{pdb}_stacking.txt")]
+
+
+def backfill_sidecars():
+    """One-off (v2.1): write sidecars for pre-existing raw files ONLY if the CIF FR3D actually read
+    (annotations/_cif/<pdb>.cif) is byte-identical to the pinned download. Marked 'reconstructed'."""
+    import json
+    for f in sorted(os.listdir(P("annotations/raw"))):
+        if not f.endswith("_basepair.txt"):
+            continue
+        pdb = f.split("_")[0]
+        side = P("annotations/raw", f"{pdb}.provenance.json")
+        if os.path.exists(side):
+            continue
+        used = P("annotations/_cif", f"{pdb}.cif")
+        ok = os.path.exists(used) and _sha(used) == _cif_bytes_sha(pdb)
+        if not ok:
+            print(pdb, "NOT backfilled: CIF used by FR3D missing or differs from pinned download")
+            continue
+        json.dump(dict(source_mmcif=f"inputs/structures/mmcif/{pdb}.cif.gz",
+                       source_mmcif_sha256=_sha(P("inputs/structures/mmcif", f"{pdb}.cif.gz")),
+                       decompressed_cif_sha256=_sha(used),
+                       fr3d_commit=CFG["annotation"]["tool"].split("commit")[-1].strip(),
+                       categories="basepair,stacking",
+                       model_policy="all models annotated; model 1 kept in normalization",
+                       provenance="reconstructed_v2.1: annotations/_cif CIF verified byte-identical to pinned "
+                                  "mmCIF; FR3D commit taken from the single environment record (venv pinned)"),
+                  open(side, "w"), indent=1)
+        print(pdb, "backfilled")
 
 
 def normalized(rep_id, rep, cw):
@@ -82,6 +156,7 @@ def normalized(rep_id, rep, cw):
                for r in cw.values() if r["observed"] == "yes"}
     nt = {int(r["row_index1"]): r["parent_nt"] for r in cw.values()}
     out, interchain, seen = [], 0, set()
+    symcount = {"copy_duplicate": 0, "inter_copy": 0}
     for path in annotate(rep["pdb_id"]):
         for line in open(path):
             f = line.rstrip("\n").split("\t")
@@ -89,6 +164,10 @@ def normalized(rep_id, rep, cw):
                 continue
             u1, lab, u2 = parse_unit(f[0]), f[1], parse_unit(f[2])
             if u1["model"] != 1 or u2["model"] != 1:
+                continue
+            sc = symmetry_class(u1, u2)
+            if sc != "identity":            # never counted as an intramolecular interaction
+                symcount[sc] += 1
                 continue
             ch = rep["auth_asym_id"]
             if (u1["chain"] == ch) != (u2["chain"] == ch):
@@ -117,6 +196,7 @@ def normalized(rep_id, rep, cw):
                 cls = "stack"
             out.append(dict(rep_id=rep_id, i=i, j=j, label=lab, kind=kind, pair_class=cls,
                             nt_i=nt[i], nt_j=nt[j], crossing=f[3] if len(f) > 3 else None))
+    SYMMETRY_LOG[rep_id] = symcount
     write_tsv(P("annotations/normalized", f"{rep_id}.tsv"), out,
               ["rep_id", "i", "j", "label", "kind", "pair_class", "nt_i", "nt_j", "crossing"])
     return out, interchain
@@ -132,9 +212,61 @@ def primary_replicates(comp):
     return ok
 
 
+SYMMETRY_LOG = {}
+METHODS = ("rfam", "star3d_forward", "star3d_reverse")
+COMPARISONS = {"rfam_vs_star3d_forward": ("rfam", "star3d_forward"),
+               "rfam_vs_star3d_reverse": ("rfam", "star3d_reverse"),
+               "all_three_methods": METHODS}
+
+
+def invert_injective(mp, what):
+    """Invert a residue map; a non one-to-one map is a validation failure, never silently collapsed."""
+    inv = {}
+    for a, b in mp.items():
+        if b in inv:
+            raise SystemExit(f"STAGE FAILED: {what} is not one-to-one (target {b} <- {inv[b]}, {a})")
+        inv[b] = a
+    return inv
+
+
+def method_status(s, mp, tix, tobs, tmask):
+    """Map one source interaction through one method. Returns dict with status, targets, target mask flag."""
+    a, b = mp.get(s["i"]), mp.get(s["j"])
+    if a is None or b is None:
+        return dict(status="unmapped_endpoint", a=a, b=b, target_masked="NA")
+    masked = "yes" if (a in tmask or b in tmask) else "no"
+    if a not in tobs or b not in tobs:
+        return dict(status="target_endpoint_unobserved", a=a, b=b, target_masked=masked)
+    x, y = (a, b) if a < b else (b, a)
+    lab = s["label"] if a < b else reverse_label(s["label"])   # endpoint order reversed -> edge labels swap
+    labs = tix.get((x, y), set())
+    st = "exact_class_preserved" if lab in labs else ("different_class" if labs else "no_annotated_target_pair")
+    return dict(status=st, a=a, b=b, target_masked=masked)
+
+
+def comparison_eligibility(source_masked, per_method, methods):
+    """Eligibility of one source interaction for an UNMASKED comparison between `methods`.
+    Requires: source endpoints unmasked; every compared method maps both endpoints; all mapped targets
+    observed; no mapped target engineered-masked under ANY compared method. Returns (eligible, reason)."""
+    if source_masked == "yes":
+        return False, "source_endpoint_masked"
+    for m in methods:
+        st = per_method[m]["status"]
+        if st == "unmapped_endpoint":
+            return False, f"{m}_unmapped_endpoint"
+        if st == "target_endpoint_unobserved":
+            return False, f"{m}_target_unobserved"
+    for m in methods:
+        if per_method[m]["target_masked"] == "yes":
+            return False, f"{m}_target_masked"
+    return True, "eligible"
+
+
 def main(only):
+    if only:
+        raise SystemExit("subset runs would overwrite the complete global tables; run without arguments")
     reps = {r["rep_id"]: r for r in read_tsv(P("results/selected_representatives.tsv"))}
-    pairs = [p for p in read_tsv(P("results/selected_pairs.tsv")) if not only or p["pair_id"] in only]
+    pairs = read_tsv(P("results/selected_pairs.tsv"))
     cw = defaultdict(dict)
     for r in read_tsv(P("results/residue_crosswalk.tsv")):
         cw[r["rep_id"]][int(r["row_index1"])] = r
@@ -157,64 +289,61 @@ def main(only):
         for src_side in ("query", "target"):
             src = p["query_rep"] if src_side == "query" else p["target_rep"]
             tgt = p["target_rep"] if src_side == "query" else p["query_rep"]
-            m = maps if src_side == "query" else {k: {b: a for a, b in v.items()} for k, v in maps.items()}
+            m = maps if src_side == "query" else {k: invert_injective(v, f"{p['pair_id']} {k}") for k, v in maps.items()}
             tix = defaultdict(set)
             for t in ann[tgt]:
                 tix[(t["i"], t["j"])].add(t["label"])
             tobs = {k for k, r in cw[tgt].items() if r["observed"] == "yes"}
             tmask = {k for k, r in cw[tgt].items() if r["engineered_masked"] == "yes"}
             smask = {k for k, r in cw[src].items() if r["engineered_masked"] == "yes"}
-            per = defaultdict(dict)
+            sel = []
             for s in ann[src]:
-                for meth, mp in m.items():
-                    a, b = mp.get(s["i"]), mp.get(s["j"])
-                    if a is None or b is None:
-                        st = "unmapped_endpoint"
-                    elif a not in tobs or b not in tobs:
-                        st = "target_endpoint_unobserved"
-                    else:
-                        x, y = (a, b) if a < b else (b, a)
-                        lab = s["label"] if a < b else reverse_label(s["label"])
-                        labs = tix.get((x, y), set())
-                        st = "exact_class_preserved" if lab in labs else ("different_class" if labs else "no_annotated_target_pair")
-                    per[(s["i"], s["j"], s["label"])][meth] = (st, a, b)
-            for (i, j, lab), d in per.items():
-                s = next(x for x in ann[src] if (x["i"], x["j"], x["label"]) == (i, j, lab))
-                assess = {k: v[0] not in ("unmapped_endpoint", "target_endpoint_unobserved") for k, v in d.items()}
-                rows.append(dict(pair_id=p["pair_id"], source_side=src_side, source_rep=src, target_rep=tgt, i=i, j=j,
-                                 label=lab, pair_class=s["pair_class"], kind=s["kind"],
-                                 source_masked="yes" if (i in smask or j in smask) else "no",
-                                 **{f"{k}_status": v[0] for k, v in d.items()},
-                                 **{f"{k}_target": f"{v[1]}-{v[2]}" for k, v in d.items()},
-                                 common_assessable_rfam_vs_star3d_forward="yes" if assess["rfam"] and assess["star3d_forward"] else "no",
-                                 target_masked_rfam="yes" if (d["rfam"][1] in tmask or d["rfam"][2] in tmask) else "no",
-                                 reference_source="Rfam.seed.gz", rfam_release=CFG["reference"]["rfam_release"]))
-            sel = [r for r in rows if r["pair_id"] == p["pair_id"] and r["source_side"] == src_side]
+                per = {meth: method_status(s, m[meth], tix, tobs, tmask) for meth in METHODS}
+                smasked = "yes" if (s["i"] in smask or s["j"] in smask) else "no"
+                row = dict(pair_id=p["pair_id"], source_side=src_side, source_rep=src, target_rep=tgt,
+                           i=s["i"], j=s["j"], label=s["label"], pair_class=s["pair_class"], kind=s["kind"],
+                           source_masked=smasked)
+                for meth in METHODS:
+                    row[f"{meth}_status"] = per[meth]["status"]
+                    row[f"{meth}_target"] = f"{per[meth]['a']}-{per[meth]['b']}"
+                    row[f"{meth}_target_masked"] = per[meth]["target_masked"]
+                for cname, meths in COMPARISONS.items():
+                    ok, why = comparison_eligibility(smasked, per, meths)
+                    row[f"eligible_{cname}"] = "yes" if ok else "no"
+                    row[f"exclusion_{cname}"] = None if ok else why
+                row.update(reference_source="Rfam.seed.gz", rfam_release=CFG["reference"]["rfam_release"])
+                rows.append(row)
+                sel.append(row)
             for cls in ("all", "canonical", "wobble", "noncanonical", "stack"):
-                for masked_ok in ("all", "unmasked_only"):
-                    ss = [r for r in sel if (cls == "all" or r["pair_class"] == cls)
-                          and (masked_ok == "all" or (r["source_masked"] == "no" and r["target_masked_rfam"] == "no"))]
-                    common = [r for r in ss if r["common_assessable_rfam_vs_star3d_forward"] == "yes"]
-                    summ.append(dict(
-                        pair_id=p["pair_id"], source_side=src_side, interaction_class=cls, masking=masked_ok,
-                        source_interactions=len(ss),
-                        rfam_assessable=sum(r["rfam_status"] not in ("unmapped_endpoint", "target_endpoint_unobserved") for r in ss),
-                        star3d_fwd_assessable=sum(r["star3d_forward_status"] not in ("unmapped_endpoint", "target_endpoint_unobserved") for r in ss),
-                        rfam_preserved_all=sum(r["rfam_status"] == "exact_class_preserved" for r in ss),
-                        star3d_fwd_preserved_all=sum(r["star3d_forward_status"] == "exact_class_preserved" for r in ss),
-                        common_assessable=len(common),
-                        rfam_preserved_common=sum(r["rfam_status"] == "exact_class_preserved" for r in common),
-                        star3d_fwd_preserved_common=sum(r["star3d_forward_status"] == "exact_class_preserved" for r in common),
-                        star3d_rev_preserved_common=sum(r["star3d_reverse_status"] == "exact_class_preserved" for r in common),
-                        interchain_lines_excluded=interch[src]))
+                ss = [r for r in sel if cls == "all" or r["pair_class"] == cls]
+                cov = {meth: sum(r[f"{meth}_status"] not in ("unmapped_endpoint", "target_endpoint_unobserved") for r in ss)
+                       for meth in METHODS}
+                pres = {meth: sum(r[f"{meth}_status"] == "exact_class_preserved" for r in ss) for meth in METHODS}
+                for cname, meths in COMPARISONS.items():
+                    el = [r for r in ss if r[f"eligible_{cname}"] == "yes"]
+                    rec = dict(pair_id=p["pair_id"], source_side=src_side, interaction_class=cls, comparison=cname,
+                               source_interactions=len(ss), eligible_unmasked=len(el),
+                               interchain_lines_excluded=interch[src])
+                    for meth in METHODS:
+                        rec[f"{meth}_coverage_all"] = cov[meth]
+                        rec[f"{meth}_preserved_all"] = pres[meth]
+                        rec[f"{meth}_preserved_eligible"] = (sum(r[f"{meth}_status"] == "exact_class_preserved" for r in el)
+                                                             if meth in meths else None)
+                    summ.append(rec)
+    write_tsv(P("annotations/normalized/_symmetry_lines_excluded.tsv"),
+              [dict(rep_id=k, **v) for k, v in sorted(SYMMETRY_LOG.items())], ["rep_id", "copy_duplicate", "inter_copy"])
     fields = list(rows[0].keys())
     write_tsv(P("results/interaction_comparison.tsv"), rows, fields)
     write_tsv(P("results/interaction_summary.tsv"), summ, list(summ[0].keys()))
     for s in summ:
-        if s["masking"] == "unmasked_only" and s["interaction_class"] in ("all", "noncanonical"):
-            print(s["pair_id"], s["source_side"], s["interaction_class"], "n", s["source_interactions"], "common",
-                  s["common_assessable"], "rfam", s["rfam_preserved_common"], "star3d", s["star3d_fwd_preserved_common"])
+        if s["interaction_class"] == "all" and s["source_side"] == "query":
+            print(s["pair_id"], s["comparison"], "n", s["source_interactions"], "eligible", s["eligible_unmasked"],
+                  "rfam", s["rfam_preserved_eligible"], "fwd", s["star3d_forward_preserved_eligible"],
+                  "rev", s["star3d_reverse_preserved_eligible"])
 
 
 if __name__ == "__main__":
-    main(sys.argv[1:])
+    if sys.argv[1:] == ["--backfill-sidecars"]:
+        backfill_sidecars()
+    else:
+        main(sys.argv[1:])

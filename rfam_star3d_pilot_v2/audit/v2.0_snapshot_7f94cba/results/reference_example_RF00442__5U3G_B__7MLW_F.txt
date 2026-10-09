@@ -1,0 +1,13 @@
+RF00442__5U3G_B__7MLW_F  (pinned Rfam.seed.gz 15.1; ORIGINAL column numbers)
+col    1  A   -------GGUGACUAGGGUUCCGGC------GAAA-------------------------
+          B   ------GGAUCGCUAGGGUUCCGGUCG--UGCGGCGUUC-----------GCGCCGCA--
+          SS  :.:::::<<<<<<--<<---<<<<<<<..<<____...................._>>..
+
+col   61  A   --G---CCG-GUCCGAGAGUU-ACC-GACCGCC------------------------GAA
+          B   CGAUG-CUG-GUCCGAGAGCA-AUCCGGUCUUGCCUUCGCCUCG----UUCGCGAGGAAA
+          SS  >>>>-->->.>->>---->>>.>>>.<<<<<<<<......................____
+
+col  121  A   A-------------------G--G-CGGU-UACACGGCGGGAAAAAAGCCCGGGAGGA
+          B   C-----------------GGC--G-AGGC-UCCACGGAGGGAUAAAAGCCCGGGAGG-
+          SS  _................._>>..>.>>>>.>:<-A---<<<_______>>>->::a::
+
