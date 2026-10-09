@@ -1,0 +1,41 @@
+#STAR3d alignment for 7mlwf_F and 5u3gb_B (2026/10/09 06:03:05)
+############
+#Parameters#
+############
+#RMSD cutoff: 4.0A
+#Minimum stack size: 3
+#Gap open penalty: -5.0
+#Gap extension penalty: -2.0
+#Match score: 3.0
+#Mismatch score: 0.0
+#########
+#Results#
+#########
+#Aligned nucleotide: 25
+#Alignment RMSD: 3.05A
+#Nucleotide mapping:
+F:14<->B:34
+F:15<->B:35
+F:16<->B:36
+F:17<->B:37
+F:18<->B:38
+F:19<->B:39
+F:20<->B:40
+F:21<->B:41
+F:22<->B:42
+F:23<->B:43
+F:24<->B:44
+F:26<->B:45
+F:27<->B:46
+F:28<->B:47
+F:29<->B:48
+F:33<->B:52
+F:34<->B:53
+F:35<->B:54
+F:37<->B:55
+F:38<->B:56
+F:39<->B:57
+F:40<->B:58
+F:110<->B:72
+F:111<->B:73
+F:112<->B:74

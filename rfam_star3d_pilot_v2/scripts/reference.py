@@ -6,7 +6,7 @@ residues in both rows becomes a reference pair. Residue-gap columns are written 
 
 Outputs (keys prefixed by pair_id / rep_id):
   results/standard_seed_membership.tsv   proof of membership per selected row
-  results/standard_seed_rows.sto         derived excerpt: selected rows + all #=GC lines, ORIGINAL columns
+  results/standard_seed_rows.sto         derived excerpt: one Stockholm record per family, ORIGINAL columns
   results/reference_pairs.tsv            (pair, original column, row_A index, row_B index, structure join)
   results/reference_gap_assignments.tsv  residue-gap columns
   results/reference_example_<pair>.txt   readable excerpt for manual tracing
@@ -77,6 +77,33 @@ def struct_status(cw, rep, k, masked):
     return c, "assessable"
 
 
+def write_family_excerpts(path, seed, rows_by_family):
+    """Write one complete Stockholm record per family (header, #=GF ID/AC/CC, selected rows with their
+    #=GS/#=GR annotations, all #=GC lines, '//'). Original columns and row strings are kept verbatim;
+    families of different widths are never merged or padded into one record."""
+    tmp = path + ".tmp"
+    with open(tmp, "w") as f:
+        for fam in sorted(rows_by_family):
+            a = seed[fam]
+            f.write("# STOCKHOLM 1.0\n")
+            f.write(f"#=GF ID   {a.id}\n#=GF AC   {fam}\n")
+            f.write("#=GF CC   DERIVED EXCERPT of pinned Rfam.seed.gz (release %s, sha256 %s); selected rows "
+                    "only; original columns preserved; not an alignment product\n" % (REF["rfam_release"], REF["seed_sha256"]))
+            names = list(dict.fromkeys(rows_by_family[fam]))
+            for n in names:
+                for tag, vals in a.gs.get(n, {}).items():
+                    for v in vals:
+                        f.write(f"#=GS {n} {tag} {v}\n")
+            for n in names:
+                f.write(f"{n:<45} {a.seqs[n]}\n")
+                for feat, s in a.gr.get(n, {}).items():
+                    f.write(f"#=GR {n:<40} {feat:<10} {s}\n")
+            for k, s in a.gc.items():
+                f.write(f"#=GC {k:<40} {s}\n")
+            f.write("//\n")
+    os.replace(tmp, path)
+
+
 def main(only):
     if only:
         raise SystemExit("subset runs would overwrite the complete global tables; run without arguments")
@@ -113,22 +140,10 @@ def main(only):
             raise SystemExit(f"STAGE FAILED: {rid} row not verified in pinned standard seed")
     write_tsv(P("results/standard_seed_membership.tsv"), mem, list(mem[0].keys()))
 
-    # derived Stockholm excerpt with original columns
-    with open(P("results/standard_seed_rows.sto"), "w") as f:
-        f.write("# STOCKHOLM 1.0\n#=GF CC DERIVED EXCERPT of pinned Rfam.seed.gz (release %s, sha256 %s); "
-                "original columns preserved; not an alignment product\n" % (REF["rfam_release"], REF["seed_sha256"]))
-        for fam in sorted(fams):
-            a = seed[fam]
-            f.write(f"#=GF AC   {fam}\n")
-            for rid in used:
-                if reps[rid]["rfam_acc"] == fam:
-                    n = reps[rid]["row_name"]
-                    f.write(f"{n:<45} {a.seqs[n]}\n")
-                    for feat, s in a.gr.get(n, {}).items():
-                        f.write(f"#=GR {n:<40} {feat:<10} {s}\n")
-            for k, s in a.gc.items():
-                f.write(f"#=GC {k:<40} {s}\n")
-        f.write("//\n")
+    # derived Stockholm excerpt with original columns: one complete record per family (v3 repair A)
+    write_family_excerpts(P("results/standard_seed_rows.sto"), seed,
+                          {fam: [reps[rid]["row_name"] for rid in used if reps[rid]["rfam_acc"] == fam]
+                           for fam in sorted(fams)})
 
     rp, gaps = [], []
     for p in pairs:

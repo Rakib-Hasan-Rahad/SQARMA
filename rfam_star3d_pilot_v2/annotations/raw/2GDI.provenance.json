@@ -5,5 +5,20 @@
  "fr3d_commit": "288f98ccfd72dc6d88036c124605c05ce623b1b7",
  "categories": "basepair,stacking",
  "model_policy": "all models annotated; model 1 kept in normalization",
- "provenance": "reconstructed_v2.1: annotations/_cif CIF verified byte-identical to pinned mmCIF; FR3D commit taken from the single environment record (venv pinned)"
+ "command": "/Users/rakibhasanrahad/Desktop/IMPORTANT FILES 2026/2027 research/RNASEQ/Phase 1/Codebase/SQARMA/rfam_star3d_pilot_v2/.venv/bin/python -m fr3d.classifiers.NA_pairwise_interactions -i /Users/rakibhasanrahad/Desktop/IMPORTANT FILES 2026/2027 research/RNASEQ/Phase 1/Codebase/SQARMA/rfam_star3d_pilot_v2/annotations/_v3_regen/2GDI/_cif -o /Users/rakibhasanrahad/Desktop/IMPORTANT FILES 2026/2027 research/RNASEQ/Phase 1/Codebase/SQARMA/rfam_star3d_pilot_v2/annotations/_v3_regen/2GDI -c basepair,stacking 2GDI.cif",
+ "provenance": "verified_v3: regenerated with the verified installed FR3D commit; raw outputs byte-identical to the retained files",
+ "raw_sha256": {
+  "2GDI_basepair.txt": "43e9c58ee33f321be0ca105929f55cffbf7170ef29afdaa905758b587960d16d",
+  "2GDI_stacking.txt": "a866c0563c36accc33bbe2a7d694f4b4f7a6bd4bab2df44b460b85d357b99a21"
+ },
+ "fr3d_installed": {
+  "interpreter": "/Users/rakibhasanrahad/Desktop/IMPORTANT FILES 2026/2027 research/RNASEQ/Phase 1/Codebase/SQARMA/rfam_star3d_pilot_v2/.venv/bin/python",
+  "distribution": "fr3d 0.0.2",
+  "vcs_url": "https://github.com/BGSU-RNA/fr3d-python.git",
+  "installed_commit": "288f98ccfd72dc6d88036c124605c05ce623b1b7",
+  "imported_from": "/Users/rakibhasanrahad/Desktop/IMPORTANT FILES 2026/2027 research/RNASEQ/Phase 1/Codebase/SQARMA/rfam_star3d_pilot_v2/.venv/lib/python3.13/site-packages/fr3d",
+  "import_inside_distribution": true,
+  "record_files_checked": 95,
+  "record_files_mismatched": 0
+ }
 }

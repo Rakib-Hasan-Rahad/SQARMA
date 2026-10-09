@@ -1,0 +1,4 @@
+pair_id	direction	replicates	identical_across_replicates	distinct_outputs
+RF00005__5CCB_N__7EQJ_B	forward	3	True	1
+RF00005__5CCB_N__7EQJ_B	reverse	3	True	1
+RF00005__5CCB_N__7EQJ_B	forward_vs_reverse_rep1	NA	False	shared 60; fwd-only 4; rev-only 4

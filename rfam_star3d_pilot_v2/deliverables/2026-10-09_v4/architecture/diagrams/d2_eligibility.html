@@ -1,0 +1,22 @@
+<!doctype html><html><head><meta charset="utf-8">
+<script src="https://cdn.jsdelivr.net/npm/mermaid@10.9.1/dist/mermaid.min.js"></script>
+<style>body{margin:0;background:#fff;font-family:Arial,Helvetica,sans-serif} .mermaid{display:inline-block;padding:12px}</style>
+</head><body><pre class="mermaid">flowchart TD
+  A[&quot;Candidate PDB chain&quot;] --&gt; B([&quot;Explicit #=GR link&lt;br/&gt;or exact sequence-only match&lt;br/&gt;to a seed row?&quot;])
+  B -- &quot;no&quot; --&gt; X1[&quot;Excluded:&lt;br/&gt;no verified row&quot;]
+  B -- &quot;yes&quot; --&gt; C([&quot;Row sequence found exactly once&lt;br/&gt;in the chain (parent-mapped)?&quot;])
+  C -- &quot;no / ambiguous&quot; --&gt; X2[&quot;Unresolved:&lt;br/&gt;kept, not used&quot;]
+  C -- &quot;yes&quot; --&gt; D([&quot;RNA source organism =&lt;br/&gt;row&#x27;s organism?&quot;])
+  D -- &quot;no&quot; --&gt; X3[&quot;Excluded:&lt;br/&gt;link to another species&#x27; row&quot;]
+  D -- &quot;yes&quot; --&gt; E([&quot;Engineering inside the&lt;br/&gt;family interval?&quot;])
+  E -- &quot;motif-affecting&quot; --&gt; X4[&quot;Exploratory tier&lt;br/&gt;(masked, reported separately)&quot;]
+  E -- &quot;none / terminal only&quot; --&gt; F([&quot;≥90% observed, X-ray/EM,&lt;br/&gt;no unmappable modifications?&quot;])
+  F -- &quot;no&quot; --&gt; X5[&quot;Excluded or exploratory&quot;]
+  F -- &quot;yes&quot; --&gt; G([&quot;Same sequence as an&lt;br/&gt;existing representative?&quot;])
+  G -- &quot;yes&quot; --&gt; X6[&quot;Redundant:&lt;br/&gt;sensitivity evidence only&quot;]
+  G -- &quot;no&quot; --&gt; H[&quot;Eligible representative&quot;]
+  H --&gt; I([&quot;Distinct natural sequences,&lt;br/&gt;preferably different species?&quot;])
+  I -- &quot;yes&quot; --&gt; J[&quot;Primary pair&lt;br/&gt;(frozen before STAR3D)&quot;]
+</pre>
+<script>mermaid.initialize({startOnLoad:true, theme:'neutral', flowchart:{useMaxWidth:false, htmlLabels:true, curve:'basis', nodeSpacing:30, rankSpacing:40},
+ themeVariables:{fontSize:'15px', fontFamily:'Arial, Helvetica, sans-serif'}});</script></body></html>

@@ -1,0 +1,35 @@
+## date
+Fri Oct  9 05:15:42 UTC 2026
+## host
+arm64
+## tarball sha256
+c9da44059d9cfc40828e798ebd4f6194c55415e17aaae7d90ac0f849ec2ed946  inputs/software/STAR3D_v1.2.tar.gz
+## host-side JAR sha256 (all attempt dirs)
+e03ff7bcd7a6b88e91af049cf1ca591ec39fb3d06a796466fb1291f038a58618  runs/RF00059__2GDI_X__3D2G_A/attempt1/STAR3D_source/STAR3D.jar
+e03ff7bcd7a6b88e91af049cf1ca591ec39fb3d06a796466fb1291f038a58618  runs/RF00162__2GIS_A__4KQY_A/attempt1/STAR3D_source/STAR3D.jar
+e03ff7bcd7a6b88e91af049cf1ca591ec39fb3d06a796466fb1291f038a58618  runs/RF00174__4GXY_A__6VMY_A/attempt1/STAR3D_source/STAR3D.jar
+e03ff7bcd7a6b88e91af049cf1ca591ec39fb3d06a796466fb1291f038a58618  runs/RF00442__5U3G_B__7MLW_F/attempt1/STAR3D_source/STAR3D.jar
+e03ff7bcd7a6b88e91af049cf1ca591ec39fb3d06a796466fb1291f038a58618  runs/RF00522__3FU2_A__6VUI_A/attempt3/STAR3D_source/STAR3D.jar
+e03ff7bcd7a6b88e91af049cf1ca591ec39fb3d06a796466fb1291f038a58618  runs/RF00522__3FU2_A__7REX_A/attempt1/STAR3D_source/STAR3D.jar
+e03ff7bcd7a6b88e91af049cf1ca591ec39fb3d06a796466fb1291f038a58618  runs/RF00522__6VUI_A__7REX_A/attempt1/STAR3D_source/STAR3D.jar
+e03ff7bcd7a6b88e91af049cf1ca591ec39fb3d06a796466fb1291f038a58618  runs/_controls/RF00162__2GIS_A__3IQR_A/attempt1/STAR3D_source/STAR3D.jar
+e03ff7bcd7a6b88e91af049cf1ca591ec39fb3d06a796466fb1291f038a58618  runs/_controls/RF00162__2GIS_A__3IQR_A/attempt2/STAR3D_source/STAR3D.jar
+e03ff7bcd7a6b88e91af049cf1ca591ec39fb3d06a796466fb1291f038a58618  runs/_controls/RF00174__4GXY_A__4GXY_A/attempt1/STAR3D_source/STAR3D.jar
+e03ff7bcd7a6b88e91af049cf1ca591ec39fb3d06a796466fb1291f038a58618  runs/_controls/RF00174__6VMY_A__6VMY_A/attempt1/STAR3D_source/STAR3D.jar
+## tarball listing jar
+-rw-r--r--  0 pge    pge    341614 Apr 14  2015 STAR3D_source/lib/EJML-core-0.26.jar
+-rw-r--r--  0 pge    pge     41123 Apr 14  2015 STAR3D_source/lib/commons-cli-1.2.jar
+-rw-rw-r--  0 pge    pge      3014 Jul 10  2015 STAR3D_source/README
+-rw-r--r--  0 pge    pge    409857 Oct 17  2016 STAR3D_source/STAR3D.jar
+## image inspect
+sha256:e1602e600f599264c7ca239202433dd009118214db05459744a7d3e59aa61b7e amd64 linux 2026-10-08T21:54:39.714991231-05:00
+## docker: uname -m
+x86_64
+## docker: java -version
+openjdk version "1.8.0_504"
+OpenJDK Runtime Environment (build 1.8.0_504-8u504-ga-1ubuntu1~22.04.3-b01)
+OpenJDK 64-Bit Server VM (build 25.504-b01, mixed mode)
+## docker: sha256 jar + tarball in container
+c9da44059d9cfc40828e798ebd4f6194c55415e17aaae7d90ac0f849ec2ed946  /sw/STAR3D_v1.2.tar.gz
+e03ff7bcd7a6b88e91af049cf1ca591ec39fb3d06a796466fb1291f038a58618  /s/STAR3D.jar
+e03ff7bcd7a6b88e91af049cf1ca591ec39fb3d06a796466fb1291f038a58618  /tmp/STAR3D_source/STAR3D.jar

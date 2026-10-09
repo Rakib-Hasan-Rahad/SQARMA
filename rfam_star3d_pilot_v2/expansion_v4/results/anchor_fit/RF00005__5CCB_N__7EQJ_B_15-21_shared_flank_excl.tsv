@@ -1,0 +1,9 @@
+# shared-correspondence anchor fit; rule=shared_flank_excl flank=2; 55 anchors [(1, 1), (2, 2), (3, 3), (4, 4), (5, 5), (6, 6), (7, 7), (8, 8), (9, 9), (10, 10), (11, 11), (12, 12), (24, 24), (25, 25), (26, 26), (27, 27), (28, 28), (29, 29), (30, 30), (31, 31), (32, 32), (33, 33), (34, 34), (35, 35), (36, 36), (37, 37), (38, 38), (39, 39), (40, 40), (41, 41), (42, 42), (43, 43), (44, 44), (45, 45), (46, 46), (47, 47), (48, 48), (49, 49), (50, 50), (51, 51), (52, 52), (53, 53), (61, 61), (62, 62), (63, 63), (64, 64), (65, 65), (66, 66), (67, 67), (68, 68), (69, 69), (70, 70), (71, 71), (72, 72), (73, 73)]; fit RMSD 4.01 A; source singular values [151.92, 61.99, 38.76]; target singular values [150.95, 64.28, 34.82]
+pair_id	source_row_index	source_nt	category	rfam_partner	star3d_partner	rfam_C1p_dist	star3d_C1p_dist	rfam_base_centroid_dist	star3d_base_centroid_dist
+RF00005__5CCB_N__7EQJ_B	15	G	rfam_only	15	NA	11.06	NA	12.69	NA
+RF00005__5CCB_N__7EQJ_B	16	U	rfam_only	16	NA	12.94	NA	12.96	NA
+RF00005__5CCB_N__7EQJ_B	17	C	rfam_only	17	NA	16.47	NA	17.98	NA
+RF00005__5CCB_N__7EQJ_B	18	G	rfam_only	18	NA	14.51	NA	15.15	NA
+RF00005__5CCB_N__7EQJ_B	19	G	rfam_only	19	NA	18.57	NA	23.45	NA
+RF00005__5CCB_N__7EQJ_B	20	U	different_partner	20	15	12.75	1.24	12.22	4.25
+RF00005__5CCB_N__7EQJ_B	21	A	rfam_only	21	NA	4.41	NA	3.95	NA

@@ -1,0 +1,15 @@
+item	classification	evidence
+7REX P1 3' strand supported candidate (moderate)	verified_this_session	review/region_review_v4.tsv; results/region_evidence/
+L1 favours the seed (low-moderate)	verified_this_session	review/region_review_v4.tsv; PMC8752633
+All 19 pilot regions classified	verified_this_session	deliverables/2026-10-09_v4/region_review_v4.md
+STAR3D pair-selection difference and overwrite quantified	verified_this_session	deliverables/2026-10-09_v4/method_audit_v4.md
+S1/S2 sensitivity (not the primary method)	exploratory	results/sensitivity/
+Curated records identical to ordinary in 14.9-15.1	verified_this_session	results/rfam_history/curated_vs_ordinary.tsv
+7REX row first appears in 15.0	verified_this_session	results/rfam_history/rf00522_rows.tsv
+tRNA expansion: no primary-eligible pair	verified_this_session	review/v4_expansion/candidate_structures.tsv
+tRNA exploratory pair 5CCB-7EQJ result	exploratory	expansion_v4/results/
+Fresh reruns of all 7 pilot pairs from re-downloaded inputs	retained_not_rerun	audit/fresh_repro; audit/fresh_repro_v3_other4
+Exact-source genome matches (6VUI, 3FU2, 7REX)	retained_not_rerun	review/exact_source_check.tsv
+Exploratory adjusted 7REX row counts	exploratory	review/candidate_RF00522/
+Regions with insufficient evidence (7) and not adjudicated (6)	unresolved	review/region_review_v4.tsv
+Guanidine-I STAR3D alignment (pair-rule dependent)	unresolved	results/sensitivity/S1_vs_default.tsv

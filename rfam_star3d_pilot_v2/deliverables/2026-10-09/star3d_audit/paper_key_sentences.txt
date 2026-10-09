@@ -1,0 +1,78 @@
+- 2015 https://creativecommons.org/licenses/by/4.0/ This is an Open Access article distributed under the terms of the Creative Commons Attribution License ( http://creativecommons.org/licenses/by/4.0/ ), which permits unrestricted reuse, distribution, and reproduction in any medium, provided the original work is properly cited.
+- Although some methods rely on both backbone conformations and base pairing interactions, none of them consider the entire hierarchical formation of the RNA secondary structure.
+- In the first group, the base pairing interactions in the inputs are ignored or degraded into sequential information.
+- The matches between n -body cliques (in which n member nucleotides satisfy that all pair-wise spatial distances are within a threshold) are determined by the superimposition of their atomic coordinates.
+- Unlike the previously mentioned tools, DIAL ( 17 ) incorporates base pairing interactions into its dynamic programming scoring function, which also accounts for sequence and torsion angle information.
+- The other group of RNA 3D structural alignment tools relies on the comparison of base pairing interactions in the molecules.
+- In ARTS ( 19 ), two successive base pairs are used together as a seed.
+- Similar to ARTS, the final results of R3D Align ( 20 ) are assembled from the alignments of local neighborhoods.
+- Neighbors are the spatially closest nucleotides in one RNA, which may imply interactions such as base pairs, tertiary interlinks and stacking contacts.
+- The structurally similar neighbors in two RNAs are detected and the optimal combination of these local alignments is determined by employing maximum clique finding algorithm on a compatibility graph.
+- The same procedure is applied only to base pairs if the pairing information is provided.
+- However, the enclosing and juxtaposing relations between stacks provide more detailed structural information than what has been used in the existing tools, such as ‘paired’ or ‘unpaired’ attributes, base pairing interactions and stack positions.
+- In this graph, the maximum clique can be converted into a tree-like consensus structure of two RNAs.
+- All plausible pairing interactions are identified by using MC-Annotate ( 28 , 29 ).
+- Among them, the Watson–Crick base pairs (A↔U, C↔G) and wobble base pairs (G↔U) are retrieved to form the RNA secondary structures ( 30 ).
+- In order to avoid excessive computation, we eliminate the crossing base pairs in the secondary structures by using the program RemovePseudoknots ( 31 ) in the RNAstructure package ( 32 ).
+- Stack decomposition Helical structured stacks are formed by consecutively nested Watson–Crick base pairs and wobble base pairs.
+- To detect the 3D structural conservation in the stacks efficiently, the double-stranded regions in the pseudoknot-free secondary structures are decomposed into consecutive sub-stacks of size k , namely k -stacks.
+- A stack with l base pairs ( l ≥ k ) can be divided into l − k + 1 overlapping k -stacks.
+- At the secondary structure level, the set of k -stacks in the pseudoknot-free structure is denoted as \documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{upgreek} \usepackage{mathrsfs} \setlength{\oddsidemargin}{-69pt} \begin{document} }{}$\mathcal {P}^A$\end{document} .
+- In our method, the k -stacks (default value of k is 3) in the inputs are retrieved as the building blocks for the larger conserved regions.
+- In our implementation, the RMSD values are computed with the Kabsch method ( 38 ) by using the geometric center of six backbone atoms C3’, C4’, C5’, O3’, O5’ and P ( 39 ).
+- Therefore, we define a new notation l ( q A ) to represent the number of base pairs in q A .
+- The solid lines show the edges in the maximum clique.
+- ( C ) The tree-like consensus of e -stacks obtained from the clique in (B).
+- Based on the graph properties, the optimal stack configuration can be inferred from the maximum clique in the graph, which is detected by using the Bron-Kerbosch algorithm ( 44 ).
+- After that, the 3D structural alignment in the double-stranded regions is determined by the topology of these vertices in the clique.
+- Although normally finding the maximum clique takes exponential time, it is solved very efficiently in our method.
+- The corresponding Watson–Crick base pairs and wobble base pairs are also used as interactions in the loop regions to assist the alignment.
+- =\max \lbrace I_{i-1,j-1}, D_{i-1,j-1}, M_{i-1, j-1}\rbrace +\alpha (i, j)+ \beta (i,j) \end{aligned} \end{equation*}\end{document} Here, ε o and ε e are the gap open penalty and gap extension penalty.
+- The second function β( i , j ) calculates the bonus scores for the base pairs in loop regions.
+- Pseudoknots, non-canonical base pairs and canonical base pairs in the unaligned stack regions are considered in the computation.
+- Due to the potential crossing in pseudoknots and non-canonical base pairs, finding the optimal matching of these pairing interactions is an NP-hard problem.
+- Generally, each base has three possible pairs: Watson–Crick base pair, Hoogsteen base pair and Sugar base pair ( 45 ).
+- All the predicted base pairs of two nucleotides \documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{upgreek} \usepackage{mathrsfs} \setlength{\oddsidemargin}{-69pt} \begin{document} }{}$L^A_k[i]$\end{document} and \documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{upgreek} \usepackage{mathrsfs} \setlength{\oddsidemargin}{-69pt} \begin{document} }{}$L^B_k[j]$\end{document} are compared in 3D space by using a similar approach of comparing nucleotides in α( i , j ).
+- The match of two base pairs is valid if the corresponding RMSD is less than r c .
+- RESULTS Benchmarking tools STAR3D is benchmarked with ARTS, LaJolla (v2.2), SARA (v1.0.7) and R3D Align in this section.
+- All the experimental results were performed with default parameters.
+- In SCOR, the chains with at least three base pairs and unique function annotations are clustered at 90% identity.
+- PSI is defined as the percentage of aligned nucleotides in 4 Å with respect to the length of the shorter sequence.
+- PSS is defined as the percentage of aligned base pairs in 4 Å with respect to the smaller number of base pairs of two aligned RNA sequences.
+- The base pairs in the tested chains, including both canonical base pairs and non-canonical base pairs, are predicted using MC-Annotate.
+- ARTS and SARA have relatively high PSS values because the base pairing information is integrated.
+- It can be seen that some alignments of SARA and LaJolla may not contain any base pair.
+- On the other hand, the PSS values of ARTS and STAR3D are all greater than zero, because ARTS extends the base pair mapping and STAR3D relies on the stack mapping.
+- Furthermore, the alignments of base pairs and the whole 3D structures are computed separately.
+- ARTS finds the matching of base pairs first and then extends it to both 5′ and 3′ directions of the RNA strand.
+- In Figure 4C , it can be seen that three base pairs are matched very well, while the 3D structures of the loop regions are distinct.
+- The secondary structural alignments are listed below the 3D structure figures and the base pairs are predicted by MC-Annotate.
+- Compared with the GNRA motif, sarcin-ricin is more complex: it contains 27 residues, 6 canonical base pairs and 4 non-canonical base pairs.
+- From the base pair profiles and the 3D structures, it can be seen that the hairpin loop (residues 2684–2710) has a high probability to be a sarcin-ricin motif.
+- By checking the base pair annotation of all the D.
+- For the five rRNAs in which STAR3D can not detect the motifs, only four base pairs are annotated in the helix of the motif regions.
+- The different annotation between these regions and the sarcin-ricin motif, which has five base pairs in the stack, disallows STAR3D to make the correct prediction.
+- The base pairs in the aligned regions are predicted by MC-Annotate.
+- For maximum clique finding, the Bron–Kerbosch algorithm can be implemented in parallel too.
+- In the original method, only the maximum clique in the compatible graph is chosen to build the structural tree.
+- To develop a local alignment approach, we can change STAR3D to deal with multiple cliques.
+- The excessive flexibility of atomic positions challenges the prediction of base pairing interactions, which may affect the performance of STAR3D.
+- To solve the problem, we plan to design an iterative pipeline to find the base pairs in the low resolution RNA structures.
+- Hence a better annotation of base pairs for the target can be inferred by aligning two RNAs with STAR3D.
+- In the following run, these predicted base pairs can be used as the secondary structural information in STAR3D to generate a more precise alignment.
+- This procedure is continued until no new base pairs can be detected for the target.
+- In addition, the low resolution RNAs can be aligned to other RNAs more accurately with the inferred base pairs.
+- A 3D consensus structure of two RNAs can be constructed by connecting the centroids of the mapped nucleotides.
+- Long noncoding RNAs: cellular address codes in development and disease Cell 2013 152 1298 1307 23498938 10.1016/j.cell.2013.02.012 PMC3651923 5.
+- 2013 41 e114 23585278 10.1093/nar/gkt187 PMC3675459 19.
+- R3D Align: global pairwise alignment of RNA 3D structures using local superpositions Bioinformatics 2010 26 2689 2697 20929913 10.1093/bioinformatics/btq506 PMC3465099 21.
+- Efficient alignment of RNA secondary structures using sparse dynamic programming BMC Bioinformatics 2013 14 269 24011432 10.1186/1471-2105-14-269 PMC3871798 28.
+- RNA canonical and non-canonical base pairing types: a recognition method and complete repertoire Nucleic Acids Res.
+- From knotted to nested RNA structures: a variety of computational methods for pseudoknot removal RNA 2008 14 410 416 18230758 10.1261/rna.881308 PMC2248259 32.
+- 2004 14 685 692 15060011 10.1101/gr.2067704 PMC383314 34.
+- A graph theoretical approach for predicting common RNA secondary structure motifs including pseudoknots in unaligned sequences Bioinformatics 2004 20 1591 1602 14962926 10.1093/bioinformatics/bth131 36.
+- Frequency and isostericity of RNA base pairs Nucleic Acids Res.
+- Algorithm 457: finding all cliques of an undirected graph Commun.
+- Geometric nomenclature and classification of RNA base pairs RNA 2001 7 499 512 11345429 10.1017/s1355838201002515 PMC1370104 46.
+- 2004 32 D182 D184 14681389 10.1093/nar/gkh080 PMC308814 48.
+- 1994 22 4673 4680 7984417 10.1093/nar/22.22.4673 PMC308517

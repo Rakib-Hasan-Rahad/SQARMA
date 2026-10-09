@@ -1,0 +1,7 @@
+34f8b63a8ba66f9f194b941ced3eebbd2c468eba
+?? SQARMA_Agent_Execution_Prompt_v3.docx
+?? rfam_star3d_pilot_v2/deliverables/2026-10-09_v4/
+51 passed in 0.41s
+sha256:e1602e600f599264c7ca239202433dd009118214db05459744a7d3e59aa61b7e amd64
+arm64
+Fri Oct  9 05:58:31 UTC 2026

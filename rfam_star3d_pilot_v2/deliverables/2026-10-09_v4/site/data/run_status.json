@@ -1,0 +1,15 @@
+{
+ "source": "results/run_manifest.tsv",
+ "unit": "STAR3D step (run_manifest row)",
+ "current_rows": 56,
+ "historical_attempt_rows_excluded": 9,
+ "current_status_counts": {
+  "completed": 55,
+  "failed": 1
+ },
+ "current_direction_counts": {
+  "preprocess": 14,
+  "forward": 21,
+  "reverse": 21
+ }
+}

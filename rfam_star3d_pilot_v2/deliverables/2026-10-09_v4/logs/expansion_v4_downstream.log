@@ -1,0 +1,18 @@
+RF00005__5CCB_N 73 residues -> runs/_inputs/5ccbn.pdb
+RF00005__7EQJ_B 73 residues -> runs/_inputs/7eqjb.pdb
+crosswalk rows 146 identity mismatches 0
+RF00005__5CCB_N IDs == input file: OK; residues where scheme auth_seq_num != coordinate auth_seq_id: 0
+RF00005__7EQJ_B IDs == input file: OK; residues where scheme auth_seq_num != coordinate auth_seq_id: 0
+RF00005__5CCB_N__7EQJ_B reference pairs 73 assessable 73 gap assignments 0
+RF00005__5CCB_N__7EQJ_B__a1__forward__rep1 completed R 73 Ra 73 S 64 shared 59 reproduced 0.8082 diff 5 inj True ok
+RF00005__5CCB_N__7EQJ_B__a1__forward__rep2 completed R 73 Ra 73 S 64 shared 59 reproduced 0.8082 diff 5 inj True ok
+RF00005__5CCB_N__7EQJ_B__a1__forward__rep3 completed R 73 Ra 73 S 64 shared 59 reproduced 0.8082 diff 5 inj True ok
+RF00005__5CCB_N__7EQJ_B__a1__reverse__rep1 completed R 73 Ra 73 S 64 shared 59 reproduced 0.8082 diff 5 inj True ok
+RF00005__5CCB_N__7EQJ_B__a1__reverse__rep2 completed R 73 Ra 73 S 64 shared 59 reproduced 0.8082 diff 5 inj True ok
+RF00005__5CCB_N__7EQJ_B__a1__reverse__rep3 completed R 73 Ra 73 S 64 shared 59 reproduced 0.8082 diff 5 inj True ok
+RF00005__5CCB_N__7EQJ_B rfam_vs_star3d_forward n 106 eligible 97 rfam 81 fwd 81 rev None
+RF00005__5CCB_N__7EQJ_B rfam_vs_star3d_reverse n 106 eligible 98 rfam 81 fwd None rev 81
+RF00005__5CCB_N__7EQJ_B all_three_methods n 106 eligible 97 rfam 81 fwd 81 rev 81
+2 candidate regions
+1 RF00005__5CCB_N__7EQJ_B__r15-21 corr 1 cov 6 eligible yes int 1 | 
+2 RF00005__5CCB_N__7EQJ_B__r54-60 corr 4 cov 3 eligible yes int 0 | 

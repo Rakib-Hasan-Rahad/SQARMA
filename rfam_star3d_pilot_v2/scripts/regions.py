@@ -62,20 +62,34 @@ def region_eligibility(span, src_cw, tgt_cw, rfam_map, s3d_map):
 
 
 def carry_interpretations(out, previous):
-    """Carry manual review fields from earlier region tables: exact region_id first, else same pair with
-    overlapping span (noted). Nothing is reset to pending if it was reviewed before."""
+    """Carry manual review fields from earlier region tables (v3 repair D).
+    - Exact region_id with unchanged eligibility: carried as is.
+    - Span overlap only (boundary changed) or changed eligibility: the earlier review is kept as HISTORICAL context
+      and the region is marked needs_reassessment; the old conclusion is never accepted automatically.
+    Nothing reviewed before is silently reset to pending."""
+    elig = "eligible_for_structural_adjudication"
     for r in out:
         r.update(inspected="pending", classification="not_inspected", interpretation=None, interpretation_source=None)
         exact = [p for p in previous if p["region_id"] == r["region_id"] and p["inspected"] not in ("pending", "NA")]
         over = [p for p in previous if p["pair_id"] == r["pair_id"] and p["inspected"] not in ("pending", "NA")
-                and int(p["row_index_start"]) <= r["row_index_end"] and int(p["row_index_end"]) >= r["row_index_start"]]
+                and int(p["row_index_start"]) <= int(r["row_index_end"]) and int(p["row_index_end"]) >= int(r["row_index_start"])]
         src = exact or over
-        if src:
+        if not src:
+            continue
+        changed = [p["region_id"] for p in src if elig in p and elig in r and p[elig] != r[elig]]
+        ids = ",".join(p["region_id"] for p in src)
+        if exact and not changed:
             r["inspected"] = ";".join(sorted({p["inspected"] for p in src}))
             r["classification"] = " || ".join(p["classification"] for p in src)
             r["interpretation"] = " || ".join(p["interpretation"] for p in src)
-            r["interpretation_source"] = ("carried exact from " if exact else "carried by span overlap from ") + \
-                ",".join(p["region_id"] for p in src)
+            r["interpretation_source"] = "carried exact from " + ids
+        else:
+            why = "eligibility changed" if changed else "region boundary changed (span overlap only)"
+            r["inspected"] = "needs_reassessment"
+            r["classification"] = "needs_reassessment"
+            r["interpretation"] = ("HISTORICAL, not accepted (" + why + "): " +
+                                   " || ".join(f"[{p['classification']}] {p['interpretation']}" for p in src))
+            r["interpretation_source"] = f"historical from {ids}; {why}"
     return out
 
 

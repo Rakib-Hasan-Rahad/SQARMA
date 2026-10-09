@@ -1,0 +1,20 @@
+19 candidate regions
+1 RF00522__6VUI_A__7REX_A__r7-23 corr 15 cov 2 eligible yes int 22 | carried exact from RF00522__6VUI_A__7REX_A__r7-23
+2 RF00522__3FU2_A__7REX_A__r15-22 corr 7 cov 1 eligible yes int 13 | carried exact from RF00522__3FU2_A__7REX_A__r15-22
+3 RF00522__3FU2_A__7REX_A__r9-12 corr 4 cov 0 eligible yes int 3 | carried exact from RF00522__3FU2_A__7REX_A__r9-12
+4 RF00522__3FU2_A__7REX_A__r32-34 corr 2 cov 1 eligible yes int 3 | carried exact from RF00522__3FU2_A__7REX_A__r32-34
+5 RF00522__3FU2_A__6VUI_A__r32-34 corr 1 cov 2 eligible yes int 2 | carried exact from RF00522__3FU2_A__6VUI_A__r32-34
+6 RF00059__2GDI_X__3D2G_A__r76-76 corr 1 cov 0 eligible yes int 1 | carried exact from RF00059__2GDI_X__3D2G_A__r76-76
+7 RF00174__4GXY_A__6VMY_A__r26-82 corr 2 cov 54 eligible yes int 0 | carried exact from RF00174__4GXY_A__6VMY_A__r26-82
+8 RF00522__3FU2_A__6VUI_A__r23-24 corr 2 cov 0 eligible yes int 0 | carried exact from RF00522__3FU2_A__6VUI_A__r23-24
+9 RF00522__3FU2_A__6VUI_A__r7-8 corr 1 cov 1 eligible yes int 0 | carried exact from RF00522__3FU2_A__6VUI_A__r7-8
+10 RF00174__4GXY_A__6VMY_A__r85-88 corr 0 cov 4 eligible yes int 0 | carried exact from RF00174__4GXY_A__6VMY_A__r85-88
+11 RF00174__4GXY_A__6VMY_A__r102-112 corr 0 cov 11 eligible yes int 0 | carried exact from RF00174__4GXY_A__6VMY_A__r102-112
+12 RF00174__4GXY_A__6VMY_A__r117-129 corr 0 cov 13 eligible yes int 0 | carried exact from RF00174__4GXY_A__6VMY_A__r117-129
+13 RF00522__3FU2_A__6VUI_A__r15-15 corr 0 cov 1 eligible yes int 0 | carried exact from RF00522__3FU2_A__6VUI_A__r15-15
+14 RF00162__2GIS_A__4KQY_A__r1-93 corr 21 cov 72 eligible no int 9 | carried exact from RF00162__2GIS_A__4KQY_A__r1-93
+15 RF00442__5U3G_B__7MLW_F__r41-55 corr 12 cov 3 eligible no int 7 | carried exact from RF00442__5U3G_B__7MLW_F__r41-55
+16 RF00442__5U3G_B__7MLW_F__r17-23 corr 4 cov 3 eligible no int 2 | carried exact from RF00442__5U3G_B__7MLW_F__r17-23
+17 RF00059__2GDI_X__3D2G_A__r17-23 corr 0 cov 6 eligible no int 0 | carried exact from RF00059__2GDI_X__3D2G_A__r17-23
+18 RF00174__4GXY_A__6VMY_A__r1-19 corr 0 cov 18 eligible no int 0 | carried exact from RF00174__4GXY_A__6VMY_A__r1-19
+19 RF00174__4GXY_A__6VMY_A__r145-172 corr 0 cov 28 eligible no int 0 | carried exact from RF00174__4GXY_A__6VMY_A__r145-172

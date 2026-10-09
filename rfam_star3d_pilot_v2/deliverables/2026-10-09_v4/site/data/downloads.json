@@ -1,0 +1,225 @@
+{
+ "downloads": [
+  {
+   "label": "Professor report v4 (current)",
+   "description": "Validated status and recommendation",
+   "href": "downloads/professor_report_v4.md",
+   "status": "available"
+  },
+  {
+   "label": "Professor summary (current)",
+   "description": "One-page summary",
+   "href": "downloads/professor_summary.md",
+   "status": "available"
+  },
+  {
+   "label": "Weekly progress update v4",
+   "description": "One page",
+   "href": "downloads/weekly_progress_update_v4.md",
+   "status": "available"
+  },
+  {
+   "label": "Meeting script v4",
+   "description": "Completed work only",
+   "href": "downloads/meeting_script_v4.md",
+   "status": "available"
+  },
+  {
+   "label": "7REX candidate update v4",
+   "description": "Evidence for and against",
+   "href": "downloads/candidate_evidence_update_v4.md",
+   "status": "available"
+  },
+  {
+   "label": "Region review v4",
+   "description": "All regions with evidence",
+   "href": "downloads/region_review_v4.md",
+   "status": "available"
+  },
+  {
+   "label": "Method audit v4",
+   "description": "STAR3D pair selection and sensitivity",
+   "href": "downloads/method_audit_v4.md",
+   "status": "available"
+  },
+  {
+   "label": "Dataset and provenance v4",
+   "description": "Survey B wording, release history, tRNA expansion",
+   "href": "downloads/dataset_and_provenance_v4.md",
+   "status": "available"
+  },
+  {
+   "label": "Validation v4",
+   "description": "Tests, mutation check, gates",
+   "href": "downloads/validation_v4.md",
+   "status": "available"
+  },
+  {
+   "label": "Expansion pre-registration",
+   "description": "Rules fixed before screening",
+   "href": "downloads/PREREGISTRATION.md",
+   "status": "available"
+  },
+  {
+   "label": "Architecture and pipeline guide (Word)",
+   "description": "For new PhD students",
+   "href": "downloads/SQARMA_Project_Architecture_and_Pipeline_Guide.docx",
+   "status": "available"
+  },
+  {
+   "label": "Architecture and pipeline guide (PDF)",
+   "description": "Same content as PDF",
+   "href": "downloads/SQARMA_Project_Architecture_and_Pipeline_Guide.pdf",
+   "status": "available"
+  },
+  {
+   "label": "Main report (cumulative)",
+   "description": "Dated sections; v4 at top",
+   "href": "downloads/report.md",
+   "status": "available"
+  },
+  {
+   "label": "Data dictionary",
+   "description": "Column definitions incl. v4",
+   "href": "downloads/data_dictionary.md",
+   "status": "available"
+  },
+  {
+   "label": "STAR3D execution audit (v3)",
+   "description": "Package, commands, parser",
+   "href": "downloads/STAR3D_execution_audit.md",
+   "status": "available"
+  },
+  {
+   "label": "Manifest v4",
+   "description": "Outputs, inputs, software, checksums",
+   "href": null,
+   "status": "unavailable"
+  },
+  {
+   "label": "Validation report",
+   "description": "Validation details",
+   "href": "downloads/validation_report.md",
+   "status": "available",
+   "source": "reports/validation_report.md"
+  },
+  {
+   "label": "Evidence cards",
+   "description": "Per-claim evidence",
+   "href": "downloads/evidence_cards.md",
+   "status": "available",
+   "source": "reports/evidence_cards.md"
+  },
+  {
+   "label": "Blockers",
+   "description": "Open blockers",
+   "href": "downloads/blockers.md",
+   "status": "available",
+   "source": "reports/blockers.md"
+  },
+  {
+   "label": "Pair summary",
+   "description": "Per-run correspondence summary",
+   "href": "downloads/pair_summary.tsv",
+   "status": "available",
+   "source": "results/pair_summary.tsv"
+  },
+  {
+   "label": "Interaction summary",
+   "description": "Interaction preservation by class",
+   "href": "downloads/interaction_summary.tsv",
+   "status": "available",
+   "source": "results/interaction_summary.tsv"
+  },
+  {
+   "label": "Region review",
+   "description": "Candidate disagreement regions",
+   "href": "downloads/region_review.tsv",
+   "status": "available",
+   "source": "results/region_review.tsv"
+  },
+  {
+   "label": "Family inventory",
+   "description": "Screening funnel per family",
+   "href": "downloads/family_inventory.tsv",
+   "status": "available",
+   "source": "results/family_inventory.tsv"
+  },
+  {
+   "label": "Selected pairs",
+   "description": "Frozen cohort",
+   "href": "downloads/selected_pairs.tsv",
+   "status": "available",
+   "source": "results/selected_pairs.tsv"
+  },
+  {
+   "label": "7REX adjustment summary",
+   "description": "Interaction preservation under the adjusted row",
+   "href": "downloads/adjustment_interaction_summary.tsv",
+   "status": "available",
+   "source": "review/candidate_RF00522/adjustment_interaction_summary.tsv"
+  },
+  {
+   "label": "7REX adjustment validation",
+   "description": "Checks on the one-column adjustment",
+   "href": "downloads/adjustment_validation.json",
+   "status": "available",
+   "source": "review/candidate_RF00522/adjustment_validation.json"
+  },
+  {
+   "label": "Export manifest",
+   "description": "Sources, checksums and row counts of this site",
+   "href": "data/export_manifest.json",
+   "status": "available"
+  },
+  {
+   "label": "conclusions_changed.tsv",
+   "description": "Session table (deliverables/2026-10-09_v4/tables)",
+   "href": "downloads/conclusions_changed.tsv",
+   "status": "available",
+   "source": "deliverables/2026-10-09_v4/tables/conclusions_changed.tsv"
+  },
+  {
+   "label": "downloads.tsv",
+   "description": "Session table (deliverables/2026-10-09_v4/tables)",
+   "href": "downloads/downloads.tsv",
+   "status": "available",
+   "source": "deliverables/2026-10-09_v4/tables/downloads.tsv"
+  },
+  {
+   "label": "mutation_check.tsv",
+   "description": "Session table (deliverables/2026-10-09_v4/tables)",
+   "href": "downloads/mutation_check.tsv",
+   "status": "available",
+   "source": "deliverables/2026-10-09_v4/tables/mutation_check.tsv"
+  },
+  {
+   "label": "requirements_matrix.tsv",
+   "description": "Session table (deliverables/2026-10-09_v4/tables)",
+   "href": "downloads/requirements_matrix.tsv",
+   "status": "available",
+   "source": "deliverables/2026-10-09_v4/tables/requirements_matrix.tsv"
+  },
+  {
+   "label": "results_status.tsv",
+   "description": "Session table (deliverables/2026-10-09_v4/tables)",
+   "href": "downloads/results_status.tsv",
+   "status": "available",
+   "source": "deliverables/2026-10-09_v4/tables/results_status.tsv"
+  },
+  {
+   "label": "test_results.tsv",
+   "description": "Session table (deliverables/2026-10-09_v4/tables)",
+   "href": "downloads/test_results.tsv",
+   "status": "available",
+   "source": "deliverables/2026-10-09_v4/tables/test_results.tsv"
+  },
+  {
+   "label": "validation_gates.tsv",
+   "description": "Session table (deliverables/2026-10-09_v4/tables)",
+   "href": "downloads/validation_gates.tsv",
+   "status": "available",
+   "source": "deliverables/2026-10-09_v4/tables/validation_gates.tsv"
+  }
+ ]
+}

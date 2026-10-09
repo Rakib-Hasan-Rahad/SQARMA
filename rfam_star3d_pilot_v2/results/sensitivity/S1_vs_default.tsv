@@ -1,0 +1,15 @@
+pair_id	tier	direction	status	default_aligned	S1_aligned	identical_mapping	shared_with_default	only_default	only_S1	default_same_as_rfam	S1_same_as_rfam	default_rmsd	S1_rmsd	S1_attempts
+RF00059__2GDI_X__3D2G_A	exploratory	forward	completed	75	76	False	72	3	4	71	68	2.2	2.28	1
+RF00059__2GDI_X__3D2G_A	exploratory	reverse	completed	75	76	False	72	3	4	71	68	2.2	2.28	1
+RF00162__2GIS_A__4KQY_A	exploratory_engineered_technical	forward	completed	25	24	False	16	9	8	0	0	4.1	4.29	1
+RF00162__2GIS_A__4KQY_A	exploratory_engineered_technical	reverse	completed	25	24	False	16	9	8	0	0	4.1	4.29	1
+RF00174__4GXY_A__6VMY_A	primary	forward	completed	26	27	False	13	13	14	0	0	3.37	3.29	1
+RF00174__4GXY_A__6VMY_A	primary	reverse	completed	26	27	False	13	13	14	0	0	3.37	3.29	1
+RF00442__5U3G_B__7MLW_F	exploratory	forward	completed	78	25	False	0	78	25	62	0	2.44	3.05	1
+RF00442__5U3G_B__7MLW_F	exploratory	reverse	completed	78	25	False	0	78	25	62	0	2.44	3.05	1
+RF00522__3FU2_A__6VUI_A	primary	forward	completed	31	31	True	31	0	0	24	24	2.59	2.59	1
+RF00522__3FU2_A__6VUI_A	primary	reverse	completed	31	31	True	31	0	0	24	24	2.33	2.33	1
+RF00522__3FU2_A__7REX_A	primary	forward	completed	32	32	True	32	0	0	17	17	2.0	2.0	1
+RF00522__3FU2_A__7REX_A	primary	reverse	completed	32	32	True	32	0	0	17	17	2.0	2.0	1
+RF00522__6VUI_A__7REX_A	primary	forward	completed	32	32	True	32	0	0	16	16	2.34	2.34	1
+RF00522__6VUI_A__7REX_A	primary	reverse	completed	32	32	True	32	0	0	16	16	2.34	2.34	1

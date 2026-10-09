@@ -1,0 +1,16 @@
+flowchart TD
+  A["Candidate PDB chain"] --> B(["Explicit #=GR link<br/>or exact sequence-only match<br/>to a seed row?"])
+  B -- "no" --> X1["Excluded:<br/>no verified row"]
+  B -- "yes" --> C(["Row sequence found exactly once<br/>in the chain (parent-mapped)?"])
+  C -- "no / ambiguous" --> X2["Unresolved:<br/>kept, not used"]
+  C -- "yes" --> D(["RNA source organism =<br/>row's organism?"])
+  D -- "no" --> X3["Excluded:<br/>link to another species' row"]
+  D -- "yes" --> E(["Engineering inside the<br/>family interval?"])
+  E -- "motif-affecting" --> X4["Exploratory tier<br/>(masked, reported separately)"]
+  E -- "none / terminal only" --> F(["≥90% observed, X-ray/EM,<br/>no unmappable modifications?"])
+  F -- "no" --> X5["Excluded or exploratory"]
+  F -- "yes" --> G(["Same sequence as an<br/>existing representative?"])
+  G -- "yes" --> X6["Redundant:<br/>sensitivity evidence only"]
+  G -- "no" --> H["Eligible representative"]
+  H --> I(["Distinct natural sequences,<br/>preferably different species?"])
+  I -- "yes" --> J["Primary pair<br/>(frozen before STAR3D)"]

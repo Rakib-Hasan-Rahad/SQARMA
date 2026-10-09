@@ -1,0 +1,25 @@
+OK   pair table RF00522__3FU2_A__6VUI_A
+OK   pair table RF00162__2GIS_A__4KQY_A
+OK   pair table RF00174__4GXY_A__6VMY_A
+OK   pair table RF00522__3FU2_A__7REX_A
+OK   pair table RF00522__6VUI_A__7REX_A
+OK   pair table RF00059__2GDI_X__3D2G_A
+OK   pair table RF00442__5U3G_B__7MLW_F
+OK   pair table RF00005__5CCB_N__7EQJ_B
+OK   region counts
+OK   S1 guanidine 78->25
+OK   S1 preQ1 identical
+OK   S2 identical
+OK   mutation 16/16
+OK   64 tests
+OK   curated identical every release
+OK   7REX row first in 15.0
+OK   tRNA 81/97
+OK   r7-23 canonical 7/0/5
+OK   r15-22 canonical 5/0/5
+OK   guide 19/47 29/47
+OK   site prospective pair available
+OK   site v4 tables all available
+OK   site mutation table == file
+OK   site funnel reviewed_total 31
+24 OK, 0 FAIL

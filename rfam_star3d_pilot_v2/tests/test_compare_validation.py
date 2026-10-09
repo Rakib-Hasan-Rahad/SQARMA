@@ -47,3 +47,59 @@ def test_author_id_collision_is_fatal():
     cw[2]["auth_seq_id"] = "1"                     # two residues with the same author ID
     with pytest.raises(SystemExit):
         compare.resid_index(cw)
+
+
+# ---- v3 repair C: stored outputs are re-validated when consumed -------------------------------------------------
+def _run_raw(tmp_path, monkeypatch, text, **manifest):
+    f = tmp_path / "x.aln"
+    f.write_text(text)
+    monkeypatch.setattr(compare, "P", lambda *a: str(f))
+    compare.VALIDATION_FAILURES.clear()
+    cw = {"Q": cwrep(5), "T": cwrep(5, "B", 100)}
+    run = dict(run_id="r1", status="completed", direction="forward", output_aln="x.aln", replicate="1", **manifest)
+    return compare.compare_run(run, dict(query_rep="Q", target_rep="T", pair_id="p", tier="primary"), cw, [])
+
+
+def test_declared_count_mismatch_is_validation_failure(tmp_path, monkeypatch):
+    text = ALN.format(n=3, lines="A:1<->B:101\nA:2<->B:102\n")           # declares 3, contains 2
+    rows, smap, *_ = _run_raw(tmp_path, monkeypatch, text)
+    assert smap is None and compare.VALIDATION_FAILURES[0][1] == "stored_output_invalid"
+    assert {r["category"] for r in rows} == {"validation_failed"}
+
+
+def test_malformed_mapping_line_is_validation_failure(tmp_path, monkeypatch):
+    text = ALN.format(n=2, lines="A:1<->B:101\nGARBAGE\nA:2<->B:102\n")
+    rows, smap, *_ = _run_raw(tmp_path, monkeypatch, text)
+    assert smap is None and compare.VALIDATION_FAILURES
+
+
+def test_stale_manifest_does_not_overrule_changed_bytes(tmp_path, monkeypatch):
+    text = ALN.format(n=2, lines="A:1<->B:101\nA:2<->B:102\n")
+    rows, smap, *_ = _run_raw(tmp_path, monkeypatch, text, output_sha256="0" * 64, aligned_n="2")
+    assert smap is None and "output bytes changed" in compare.VALIDATION_FAILURES[0][2]
+
+
+def test_manifest_aligned_n_mismatch_is_validation_failure(tmp_path, monkeypatch):
+    import hashlib
+    text = ALN.format(n=2, lines="A:1<->B:101\nA:2<->B:102\n")
+    sha = hashlib.sha256(text.encode()).hexdigest()
+    rows, smap, *_ = _run_raw(tmp_path, monkeypatch, text, output_sha256=sha, aligned_n="5")
+    assert smap is None and "aligned_n" in compare.VALIDATION_FAILURES[0][2]
+    rows, smap, *_ = _run_raw(tmp_path, monkeypatch, text, output_sha256=sha, aligned_n="2")
+    assert smap == {1: 1, 2: 2} and not compare.VALIDATION_FAILURES
+
+
+def test_missing_output_is_validation_failure(tmp_path, monkeypatch):
+    monkeypatch.setattr(compare, "P", lambda *a: str(tmp_path / "absent.aln"))
+    compare.VALIDATION_FAILURES.clear()
+    run = dict(run_id="r1", status="completed", direction="forward", output_aln="absent.aln", replicate="1")
+    rows, smap, *_ = compare.compare_run(run, dict(query_rep="Q", target_rep="T", pair_id="p", tier="primary"),
+                                         {"Q": cwrep(2), "T": cwrep(2, "B", 100)}, [])
+    assert smap is None and compare.VALIDATION_FAILURES
+
+
+def test_failed_stage_does_not_replace_complete_tables(tmp_path, monkeypatch):
+    path = tmp_path / "t.tsv"
+    path.write_text("complete\n")
+    compare.write_tsv(str(path), [{"a": 1}], ["a"])           # atomic: no .tmp left behind
+    assert path.read_text() == "a\n1\n" and not (tmp_path / "t.tsv.tmp").exists()

@@ -1,0 +1,81 @@
+{
+ "available": true,
+ "source": "deliverables/2026-10-09_v4/tables/results_status.tsv",
+ "columns": [
+  "item",
+  "classification",
+  "evidence"
+ ],
+ "rows": [
+  {
+   "item": "7REX P1 3' strand supported candidate (moderate)",
+   "classification": "verified_this_session",
+   "evidence": "review/region_review_v4.tsv; results/region_evidence/"
+  },
+  {
+   "item": "L1 favours the seed (low-moderate)",
+   "classification": "verified_this_session",
+   "evidence": "review/region_review_v4.tsv; PMC8752633"
+  },
+  {
+   "item": "All 19 pilot regions classified",
+   "classification": "verified_this_session",
+   "evidence": "deliverables/2026-10-09_v4/region_review_v4.md"
+  },
+  {
+   "item": "STAR3D pair-selection difference and overwrite quantified",
+   "classification": "verified_this_session",
+   "evidence": "deliverables/2026-10-09_v4/method_audit_v4.md"
+  },
+  {
+   "item": "S1/S2 sensitivity (not the primary method)",
+   "classification": "exploratory",
+   "evidence": "results/sensitivity/"
+  },
+  {
+   "item": "Curated records identical to ordinary in 14.9-15.1",
+   "classification": "verified_this_session",
+   "evidence": "results/rfam_history/curated_vs_ordinary.tsv"
+  },
+  {
+   "item": "7REX row first appears in 15.0",
+   "classification": "verified_this_session",
+   "evidence": "results/rfam_history/rf00522_rows.tsv"
+  },
+  {
+   "item": "tRNA expansion: no primary-eligible pair",
+   "classification": "verified_this_session",
+   "evidence": "review/v4_expansion/candidate_structures.tsv"
+  },
+  {
+   "item": "tRNA exploratory pair 5CCB-7EQJ result",
+   "classification": "exploratory",
+   "evidence": "expansion_v4/results/"
+  },
+  {
+   "item": "Fresh reruns of all 7 pilot pairs from re-downloaded inputs",
+   "classification": "retained_not_rerun",
+   "evidence": "audit/fresh_repro; audit/fresh_repro_v3_other4"
+  },
+  {
+   "item": "Exact-source genome matches (6VUI, 3FU2, 7REX)",
+   "classification": "retained_not_rerun",
+   "evidence": "review/exact_source_check.tsv"
+  },
+  {
+   "item": "Exploratory adjusted 7REX row counts",
+   "classification": "exploratory",
+   "evidence": "review/candidate_RF00522/"
+  },
+  {
+   "item": "Regions with insufficient evidence (7) and not adjudicated (6)",
+   "classification": "unresolved",
+   "evidence": "review/region_review_v4.tsv"
+  },
+  {
+   "item": "Guanidine-I STAR3D alignment (pair-rule dependent)",
+   "classification": "unresolved",
+   "evidence": "results/sensitivity/S1_vs_default.tsv"
+  }
+ ]
+}

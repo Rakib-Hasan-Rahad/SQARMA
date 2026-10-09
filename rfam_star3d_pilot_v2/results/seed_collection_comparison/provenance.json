@@ -1,0 +1,26 @@
+{
+ "ordinary": {
+  "path": "inputs/rfam/15.1/Rfam.seed.gz",
+  "sha256": "41f014f4ab5628620935f089b1bb77987ebc162fda7c72bff368a32c9cccabac",
+  "release": "15.1",
+  "url": "https://ftp.ebi.ac.uk/pub/databases/Rfam/15.1/Rfam.seed.gz"
+ },
+ "curated": {
+  "path": "inputs/rfam_survey_b/Rfam.3d.seed.gz",
+  "sha256": "4055ce87a369794a1e4455badcaf7c3bc3a7a524368b5b249e34b2a8d2e8146f",
+  "release": "15.1",
+  "url": "https://ftp.ebi.ac.uk/pub/databases/Rfam/15.1/Rfam.3d.seed.gz",
+  "retrieved_utc": "2026-10-09T05:38:55Z"
+ },
+ "families_ordinary_total": 4227,
+ "families_curated": 74,
+ "families_in_both": 74,
+ "families_with_shared_row": 74,
+ "families_with_two_shared_identical_rows": 74,
+ "shared_rows": 7808,
+ "shared_rows_aligned_identical": 7808,
+ "comparable_row_pairs": 1304970,
+ "row_pairs_with_changed_correspondence": 0,
+ "annotation_differences": 0,
+ "note": "Auxiliary survey; does not modify the primary ordinary-seed baseline."
+}

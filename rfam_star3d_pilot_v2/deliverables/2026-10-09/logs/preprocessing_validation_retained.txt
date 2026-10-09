@@ -1,0 +1,2 @@
+runs/RF00442__5U3G_B__7MLW_F/attempt1/STAR3D_source/STAR3D_struct_info/7mlwf_F.npk.ct warn [] ['raw .ct non-reciprocal partners at [44]']
+checked 14

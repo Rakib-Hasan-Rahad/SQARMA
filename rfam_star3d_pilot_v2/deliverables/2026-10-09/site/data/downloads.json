@@ -1,0 +1,254 @@
+{
+ "downloads": [
+  {
+   "label": "Professor report (2026-10-09)",
+   "description": "Updated professor-facing report",
+   "href": "downloads/professor_report.md",
+   "status": "available"
+  },
+  {
+   "label": "Weekly progress update",
+   "description": "One-page update",
+   "href": "downloads/weekly_progress_update.md",
+   "status": "available"
+  },
+  {
+   "label": "Two-minute meeting script",
+   "description": "Completed work only",
+   "href": "downloads/meeting_script.md",
+   "status": "available"
+  },
+  {
+   "label": "Repair impact report",
+   "description": "Defects, evidence, repairs, tests, effects",
+   "href": "downloads/repair_impact_report.md",
+   "status": "available"
+  },
+  {
+   "label": "STAR3D execution audit",
+   "description": "Paper vs source vs our execution",
+   "href": "downloads/STAR3D_execution_audit.md",
+   "status": "available"
+  },
+  {
+   "label": "7REX candidate evidence update",
+   "description": "Side-by-side evidence and counterevidence",
+   "href": "downloads/candidate_evidence_update.md",
+   "status": "available"
+  },
+  {
+   "label": "Readiness decision",
+   "description": "Expansion readiness checks",
+   "href": "downloads/readiness.json",
+   "status": "available"
+  },
+  {
+   "label": "Survey B explanation",
+   "description": "Ordinary vs curated seed, release 15.1",
+   "href": "downloads/README.md",
+   "status": "available"
+  },
+  {
+   "label": "Screening notes",
+   "description": "21 newly reviewed families",
+   "href": "downloads/screening_notes.md",
+   "status": "available"
+  },
+  {
+   "label": "Pair summary (all runs)",
+   "description": "Per-run correspondence counts",
+   "href": "downloads/pair_summary.tsv",
+   "status": "available"
+  },
+  {
+   "label": "Interaction summary",
+   "description": "Per-pair interaction preservation",
+   "href": "downloads/interaction_summary.tsv",
+   "status": "available"
+  },
+  {
+   "label": "Region review",
+   "description": "Candidate regions and interpretations",
+   "href": "downloads/region_review.tsv",
+   "status": "available"
+  },
+  {
+   "label": "Main report (cumulative)",
+   "description": "Full study report with dated sections",
+   "href": "downloads/report.md",
+   "status": "available"
+  },
+  {
+   "label": "Data dictionary",
+   "description": "Column definitions",
+   "href": "downloads/data_dictionary.md",
+   "status": "available"
+  },
+  {
+   "label": "Manifest",
+   "description": "Outputs, inputs, software and checksums",
+   "href": "downloads/MANIFEST.tsv",
+   "status": "available"
+  },
+  {
+   "label": "Professor summary",
+   "description": "Plain-language summary (v2.1)",
+   "href": "downloads/professor_summary.md",
+   "status": "available",
+   "source": "reports/professor_summary.md"
+  },
+  {
+   "label": "Validation report",
+   "description": "Validation details",
+   "href": "downloads/validation_report.md",
+   "status": "available",
+   "source": "reports/validation_report.md"
+  },
+  {
+   "label": "Evidence cards",
+   "description": "Per-claim evidence",
+   "href": "downloads/evidence_cards.md",
+   "status": "available",
+   "source": "reports/evidence_cards.md"
+  },
+  {
+   "label": "Blockers",
+   "description": "Open blockers",
+   "href": "downloads/blockers.md",
+   "status": "available",
+   "source": "reports/blockers.md"
+  },
+  {
+   "label": "Family inventory",
+   "description": "Screening funnel per family",
+   "href": "downloads/family_inventory.tsv",
+   "status": "available",
+   "source": "results/family_inventory.tsv"
+  },
+  {
+   "label": "Selected pairs",
+   "description": "Frozen cohort",
+   "href": "downloads/selected_pairs.tsv",
+   "status": "available",
+   "source": "results/selected_pairs.tsv"
+  },
+  {
+   "label": "7REX adjustment summary",
+   "description": "Interaction preservation under the adjusted row",
+   "href": "downloads/adjustment_interaction_summary.tsv",
+   "status": "available",
+   "source": "review/candidate_RF00522/adjustment_interaction_summary.tsv"
+  },
+  {
+   "label": "7REX adjustment validation",
+   "description": "Checks on the one-column adjustment",
+   "href": "downloads/adjustment_validation.json",
+   "status": "available",
+   "source": "review/candidate_RF00522/adjustment_validation.json"
+  },
+  {
+   "label": "Export manifest",
+   "description": "Sources, checksums and row counts of this site",
+   "href": "data/export_manifest.json",
+   "status": "available"
+  },
+  {
+   "label": "RF00522_P1_register_all_rows.tsv",
+   "description": "Session table (deliverables/2026-10-09/tables)",
+   "href": "downloads/RF00522_P1_register_all_rows.tsv",
+   "status": "available",
+   "source": "deliverables/2026-10-09/tables/RF00522_P1_register_all_rows.tsv"
+  },
+  {
+   "label": "candidate_7REX_correspondence.tsv",
+   "description": "Session table (deliverables/2026-10-09/tables)",
+   "href": "downloads/candidate_7REX_correspondence.tsv",
+   "status": "available",
+   "source": "deliverables/2026-10-09/tables/candidate_7REX_correspondence.tsv"
+  },
+  {
+   "label": "candidate_7REX_counts.tsv",
+   "description": "Session table (deliverables/2026-10-09/tables)",
+   "href": "downloads/candidate_7REX_counts.tsv",
+   "status": "available",
+   "source": "deliverables/2026-10-09/tables/candidate_7REX_counts.tsv"
+  },
+  {
+   "label": "candidate_7REX_excluded_from_common_set.tsv",
+   "description": "Session table (deliverables/2026-10-09/tables)",
+   "href": "downloads/candidate_7REX_excluded_from_common_set.tsv",
+   "status": "available",
+   "source": "deliverables/2026-10-09/tables/candidate_7REX_excluded_from_common_set.tsv"
+  },
+  {
+   "label": "candidate_7REX_method_differences.tsv",
+   "description": "Session table (deliverables/2026-10-09/tables)",
+   "href": "downloads/candidate_7REX_method_differences.tsv",
+   "status": "available",
+   "source": "deliverables/2026-10-09/tables/candidate_7REX_method_differences.tsv"
+  },
+  {
+   "label": "candidate_screening.tsv",
+   "description": "Session table (deliverables/2026-10-09/tables)",
+   "href": "downloads/candidate_screening.tsv",
+   "status": "available",
+   "source": "deliverables/2026-10-09/tables/candidate_screening.tsv"
+  },
+  {
+   "label": "downloads.tsv",
+   "description": "Session table (deliverables/2026-10-09/tables)",
+   "href": "downloads/downloads.tsv",
+   "status": "available",
+   "source": "deliverables/2026-10-09/tables/downloads.tsv"
+  },
+  {
+   "label": "fr3d_verify_regenerate.tsv",
+   "description": "Session table (deliverables/2026-10-09/tables)",
+   "href": "downloads/fr3d_verify_regenerate.tsv",
+   "status": "available",
+   "source": "deliverables/2026-10-09/tables/fr3d_verify_regenerate.tsv"
+  },
+  {
+   "label": "fresh_repro_other4.tsv",
+   "description": "Session table (deliverables/2026-10-09/tables)",
+   "href": "downloads/fresh_repro_other4.tsv",
+   "status": "available",
+   "source": "deliverables/2026-10-09/tables/fresh_repro_other4.tsv"
+  },
+  {
+   "label": "requirements_status.tsv",
+   "description": "Session table (deliverables/2026-10-09/tables)",
+   "href": "downloads/requirements_status.tsv",
+   "status": "available",
+   "source": "deliverables/2026-10-09/tables/requirements_status.tsv"
+  },
+  {
+   "label": "results_status.tsv",
+   "description": "Session table (deliverables/2026-10-09/tables)",
+   "href": "downloads/results_status.tsv",
+   "status": "available",
+   "source": "deliverables/2026-10-09/tables/results_status.tsv"
+  },
+  {
+   "label": "survey_b_summary.tsv",
+   "description": "Session table (deliverables/2026-10-09/tables)",
+   "href": "downloads/survey_b_summary.tsv",
+   "status": "available",
+   "source": "deliverables/2026-10-09/tables/survey_b_summary.tsv"
+  },
+  {
+   "label": "test_results.tsv",
+   "description": "Session table (deliverables/2026-10-09/tables)",
+   "href": "downloads/test_results.tsv",
+   "status": "available",
+   "source": "deliverables/2026-10-09/tables/test_results.tsv"
+  },
+  {
+   "label": "validation_checks.tsv",
+   "description": "Session table (deliverables/2026-10-09/tables)",
+   "href": "downloads/validation_checks.tsv",
+   "status": "available",
+   "source": "deliverables/2026-10-09/tables/validation_checks.tsv"
+  }
+ ]
+}

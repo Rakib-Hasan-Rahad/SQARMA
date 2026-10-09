@@ -1,0 +1,356 @@
+{
+ "available": true,
+ "source": "deliverables/2026-10-09/tables/candidate_7REX_method_differences.tsv",
+ "columns": [
+  "pair",
+  "interaction",
+  "pair_class",
+  "eligible_all_three",
+  "preserved_by",
+  "seed_target",
+  "adjusted_target",
+  "star3d_target"
+ ],
+ "rows": [
+  {
+   "pair": "RF00522__6VUI_A__7REX_A",
+   "interaction": "cWW(1-20)",
+   "pair_class": "canonical",
+   "eligible_all_three": "yes",
+   "preserved_by": "adjusted,star3d",
+   "seed_target": "1-21",
+   "adjusted_target": "1-22",
+   "star3d_target": "1-22"
+  },
+  {
+   "pair": "RF00522__6VUI_A__7REX_A",
+   "interaction": "cWW(2-19)",
+   "pair_class": "canonical",
+   "eligible_all_three": "yes",
+   "preserved_by": "adjusted,star3d",
+   "seed_target": "2-20",
+   "adjusted_target": "2-21",
+   "star3d_target": "2-21"
+  },
+  {
+   "pair": "RF00522__6VUI_A__7REX_A",
+   "interaction": "cWW(3-18)",
+   "pair_class": "canonical",
+   "eligible_all_three": "yes",
+   "preserved_by": "adjusted,star3d",
+   "seed_target": "3-19",
+   "adjusted_target": "3-20",
+   "star3d_target": "3-20"
+  },
+  {
+   "pair": "RF00522__6VUI_A__7REX_A",
+   "interaction": "cWW(4-17)",
+   "pair_class": "canonical",
+   "eligible_all_three": "yes",
+   "preserved_by": "adjusted,star3d",
+   "seed_target": "4-18",
+   "adjusted_target": "4-19",
+   "star3d_target": "4-19"
+  },
+  {
+   "pair": "RF00522__6VUI_A__7REX_A",
+   "interaction": "cWW(5-16)",
+   "pair_class": "canonical",
+   "eligible_all_three": "yes",
+   "preserved_by": "adjusted,star3d",
+   "seed_target": "5-17",
+   "adjusted_target": "5-18",
+   "star3d_target": "5-18"
+  },
+  {
+   "pair": "RF00522__6VUI_A__7REX_A",
+   "interaction": "cSW(16-28)",
+   "pair_class": "noncanonical",
+   "eligible_all_three": "yes",
+   "preserved_by": "adjusted,star3d",
+   "seed_target": "17-29",
+   "adjusted_target": "18-29",
+   "star3d_target": "18-29"
+  },
+  {
+   "pair": "RF00522__6VUI_A__7REX_A",
+   "interaction": "cSW(17-26)",
+   "pair_class": "noncanonical",
+   "eligible_all_three": "yes",
+   "preserved_by": "adjusted,star3d",
+   "seed_target": "18-27",
+   "adjusted_target": "19-27",
+   "star3d_target": "19-27"
+  },
+  {
+   "pair": "RF00522__6VUI_A__7REX_A",
+   "interaction": "s55(2-20)",
+   "pair_class": "stack",
+   "eligible_all_three": "yes",
+   "preserved_by": "adjusted,star3d",
+   "seed_target": "2-21",
+   "adjusted_target": "2-22",
+   "star3d_target": "2-22"
+  },
+  {
+   "pair": "RF00522__6VUI_A__7REX_A",
+   "interaction": "s55(4-18)",
+   "pair_class": "stack",
+   "eligible_all_three": "yes",
+   "preserved_by": "adjusted,star3d",
+   "seed_target": "4-19",
+   "adjusted_target": "4-20",
+   "star3d_target": "4-20"
+  },
+  {
+   "pair": "RF00522__6VUI_A__7REX_A",
+   "interaction": "s55(5-17)",
+   "pair_class": "stack",
+   "eligible_all_three": "yes",
+   "preserved_by": "adjusted,star3d",
+   "seed_target": "5-18",
+   "adjusted_target": "5-19",
+   "star3d_target": "5-19"
+  },
+  {
+   "pair": "RF00522__6VUI_A__7REX_A",
+   "interaction": "s35(6-7)",
+   "pair_class": "stack",
+   "eligible_all_three": "yes",
+   "preserved_by": "star3d",
+   "seed_target": "6-8",
+   "adjusted_target": "6-8",
+   "star3d_target": "6-7"
+  },
+  {
+   "pair": "RF00522__6VUI_A__7REX_A",
+   "interaction": "s35(7-8)",
+   "pair_class": "stack",
+   "eligible_all_three": "yes",
+   "preserved_by": "seed,adjusted",
+   "seed_target": "8-9",
+   "adjusted_target": "8-9",
+   "star3d_target": "7-10"
+  },
+  {
+   "pair": "RF00522__6VUI_A__7REX_A",
+   "interaction": "ns33(8-10)",
+   "pair_class": "stack",
+   "eligible_all_three": "yes",
+   "preserved_by": "seed,adjusted",
+   "seed_target": "9-11",
+   "adjusted_target": "9-11",
+   "star3d_target": "10-12"
+  },
+  {
+   "pair": "RF00522__6VUI_A__7REX_A",
+   "interaction": "s35(9-10)",
+   "pair_class": "stack",
+   "eligible_all_three": "yes",
+   "preserved_by": "seed,adjusted",
+   "seed_target": "10-11",
+   "adjusted_target": "10-11",
+   "star3d_target": "11-12"
+  },
+  {
+   "pair": "RF00522__6VUI_A__7REX_A",
+   "interaction": "ns35(15-16)",
+   "pair_class": "stack",
+   "eligible_all_three": "yes",
+   "preserved_by": "adjusted,star3d",
+   "seed_target": "16-17",
+   "adjusted_target": "17-18",
+   "star3d_target": "17-18"
+  },
+  {
+   "pair": "RF00522__6VUI_A__7REX_A",
+   "interaction": "s35(16-17)",
+   "pair_class": "stack",
+   "eligible_all_three": "yes",
+   "preserved_by": "adjusted,star3d",
+   "seed_target": "17-18",
+   "adjusted_target": "18-19",
+   "star3d_target": "18-19"
+  },
+  {
+   "pair": "RF00522__3FU2_A__7REX_A",
+   "interaction": "cWW(1-22)",
+   "pair_class": "canonical",
+   "eligible_all_three": "yes",
+   "preserved_by": "adjusted,star3d",
+   "seed_target": "1-21",
+   "adjusted_target": "1-22",
+   "star3d_target": "1-22"
+  },
+  {
+   "pair": "RF00522__3FU2_A__7REX_A",
+   "interaction": "cWW(2-21)",
+   "pair_class": "canonical",
+   "eligible_all_three": "yes",
+   "preserved_by": "adjusted,star3d",
+   "seed_target": "2-20",
+   "adjusted_target": "2-21",
+   "star3d_target": "2-21"
+  },
+  {
+   "pair": "RF00522__3FU2_A__7REX_A",
+   "interaction": "cWW(3-20)",
+   "pair_class": "canonical",
+   "eligible_all_three": "yes",
+   "preserved_by": "adjusted,star3d",
+   "seed_target": "3-19",
+   "adjusted_target": "3-20",
+   "star3d_target": "3-20"
+  },
+  {
+   "pair": "RF00522__3FU2_A__7REX_A",
+   "interaction": "cWW(4-19)",
+   "pair_class": "canonical",
+   "eligible_all_three": "yes",
+   "preserved_by": "adjusted,star3d",
+   "seed_target": "4-18",
+   "adjusted_target": "4-19",
+   "star3d_target": "4-19"
+  },
+  {
+   "pair": "RF00522__3FU2_A__7REX_A",
+   "interaction": "cWW(5-18)",
+   "pair_class": "canonical",
+   "eligible_all_three": "yes",
+   "preserved_by": "adjusted,star3d",
+   "seed_target": "5-17",
+   "adjusted_target": "5-18",
+   "star3d_target": "5-18"
+  },
+  {
+   "pair": "RF00522__3FU2_A__7REX_A",
+   "interaction": "cSW(18-29)",
+   "pair_class": "noncanonical",
+   "eligible_all_three": "yes",
+   "preserved_by": "adjusted,star3d",
+   "seed_target": "17-29",
+   "adjusted_target": "18-29",
+   "star3d_target": "18-29"
+  },
+  {
+   "pair": "RF00522__3FU2_A__7REX_A",
+   "interaction": "cSW(19-27)",
+   "pair_class": "noncanonical",
+   "eligible_all_three": "yes",
+   "preserved_by": "adjusted,star3d",
+   "seed_target": "18-27",
+   "adjusted_target": "19-27",
+   "star3d_target": "19-27"
+  },
+  {
+   "pair": "RF00522__3FU2_A__7REX_A",
+   "interaction": "cSW(21-25)",
+   "pair_class": "noncanonical",
+   "eligible_all_three": "yes",
+   "preserved_by": "adjusted,star3d",
+   "seed_target": "20-25",
+   "adjusted_target": "21-25",
+   "star3d_target": "21-25"
+  },
+  {
+   "pair": "RF00522__3FU2_A__7REX_A",
+   "interaction": "s55(2-22)",
+   "pair_class": "stack",
+   "eligible_all_three": "yes",
+   "preserved_by": "adjusted,star3d",
+   "seed_target": "2-21",
+   "adjusted_target": "2-22",
+   "star3d_target": "2-22"
+  },
+  {
+   "pair": "RF00522__3FU2_A__7REX_A",
+   "interaction": "s55(4-20)",
+   "pair_class": "stack",
+   "eligible_all_three": "yes",
+   "preserved_by": "adjusted,star3d",
+   "seed_target": "4-19",
+   "adjusted_target": "4-20",
+   "star3d_target": "4-20"
+  },
+  {
+   "pair": "RF00522__3FU2_A__7REX_A",
+   "interaction": "s55(5-19)",
+   "pair_class": "stack",
+   "eligible_all_three": "yes",
+   "preserved_by": "adjusted,star3d",
+   "seed_target": "5-18",
+   "adjusted_target": "5-19",
+   "star3d_target": "5-19"
+  },
+  {
+   "pair": "RF00522__3FU2_A__7REX_A",
+   "interaction": "s35(9-10)",
+   "pair_class": "stack",
+   "eligible_all_three": "yes",
+   "preserved_by": "seed,adjusted",
+   "seed_target": "10-11",
+   "adjusted_target": "10-11",
+   "star3d_target": "11-12"
+  },
+  {
+   "pair": "RF00522__3FU2_A__7REX_A",
+   "interaction": "s35(15-16)",
+   "pair_class": "stack",
+   "eligible_all_three": "no",
+   "preserved_by": "adjusted,star3d",
+   "seed_target": "None-15",
+   "adjusted_target": "15-16",
+   "star3d_target": "15-16"
+  },
+  {
+   "pair": "RF00522__3FU2_A__7REX_A",
+   "interaction": "ns35(17-18)",
+   "pair_class": "stack",
+   "eligible_all_three": "yes",
+   "preserved_by": "adjusted,star3d",
+   "seed_target": "16-17",
+   "adjusted_target": "17-18",
+   "star3d_target": "17-18"
+  },
+  {
+   "pair": "RF00522__3FU2_A__7REX_A",
+   "interaction": "s35(18-19)",
+   "pair_class": "stack",
+   "eligible_all_three": "yes",
+   "preserved_by": "adjusted,star3d",
+   "seed_target": "17-18",
+   "adjusted_target": "18-19",
+   "star3d_target": "18-19"
+  },
+  {
+   "pair": "RF00522__3FU2_A__7REX_A",
+   "interaction": "s35(31-32)",
+   "pair_class": "stack",
+   "eligible_all_three": "no",
+   "preserved_by": "star3d",
+   "seed_target": "31-None",
+   "adjusted_target": "31-None",
+   "star3d_target": "31-32"
+  },
+  {
+   "pair": "RF00522__3FU2_A__7REX_A",
+   "interaction": "s35(32-33)",
+   "pair_class": "stack",
+   "eligible_all_three": "no",
+   "preserved_by": "star3d",
+   "seed_target": "None-32",
+   "adjusted_target": "None-32",
+   "star3d_target": "32-33"
+  },
+  {
+   "pair": "RF00522__3FU2_A__7REX_A",
+   "interaction": "s35(33-34)",
+   "pair_class": "stack",
+   "eligible_all_three": "yes",
+   "preserved_by": "seed,adjusted",
+   "seed_target": "32-33",
+   "adjusted_target": "32-33",
+   "star3d_target": "33-34"
+  }
+ ]
+}

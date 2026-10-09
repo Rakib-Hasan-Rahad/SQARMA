@@ -1,0 +1,9 @@
+# shared-correspondence anchor fit; rule=shared_flank_excl flank=2; 56 anchors [(1, 2), (2, 3), (3, 4), (4, 5), (5, 6), (6, 7), (7, 8), (8, 9), (9, 10), (10, 11), (11, 12), (12, 13), (13, 14), (14, 15), (26, 47), (27, 48), (28, 49), (29, 50), (30, 51), (31, 52), (32, 53), (33, 54), (34, 55), (35, 56), (36, 57), (38, 59), (39, 60), (40, 61), (56, 100), (57, 101), (58, 102), (59, 103), (60, 104), (61, 105), (62, 106), (63, 107), (64, 108), (65, 109), (66, 110), (67, 111), (68, 112), (69, 113), (71, 115), (72, 116), (73, 117), (74, 118), (75, 119), (76, 120), (77, 121), (78, 122), (79, 123), (80, 124), (81, 125), (82, 126), (83, 127), (84, 128)]; fit RMSD 1.23 A; source singular values [89.94, 76.5, 41.19]; target singular values [92.3, 77.28, 40.27]
+pair_id	source_row_index	source_nt	category	rfam_partner	star3d_partner	rfam_C1p_dist	star3d_C1p_dist	rfam_base_centroid_dist	star3d_base_centroid_dist
+RF00442__5U3G_B__7MLW_F	17	G	rfam_only	18	NA	4.77	NA	5.12	NA
+RF00442__5U3G_B__7MLW_F	18	C	different_partner	19	18	7.63	6.14	6.74	6.05
+RF00442__5U3G_B__7MLW_F	19	G	different_partner	24	19	24.25	5.79	19.24	5.33
+RF00442__5U3G_B__7MLW_F	20	A	different_partner	25	20	25.77	8.86	25.85	14.27
+RF00442__5U3G_B__7MLW_F	21	A	rfam_only	26	NA	23.01	NA	17.88	NA
+RF00442__5U3G_B__7MLW_F	22	A	rfam_only	27	NA	30.81	NA	29.19	NA
+RF00442__5U3G_B__7MLW_F	23	G	different_partner	42	44	11.49	7.65	9.36	8.8

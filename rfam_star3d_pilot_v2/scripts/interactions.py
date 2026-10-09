@@ -14,6 +14,7 @@ Usage: interactions.py [pair_id ...]
 """
 import csv
 import gzip
+import hashlib
 import os
 import subprocess
 import sys
@@ -86,18 +87,86 @@ def _cif_bytes_sha(pdb):
         return hashlib.sha256(fi.read()).hexdigest()
 
 
+_FR3D_PROV = None
+
+
+def installed_fr3d_provenance():
+    """v3 repair C: provenance of the FR3D package the running interpreter ACTUALLY imports (not a config label):
+    the installed distribution's PEP 610 direct_url.json VCS commit, plus a check that every installed fr3d file
+    still matches the sha256 in the distribution RECORD and that `import fr3d` resolves inside that distribution."""
+    global _FR3D_PROV
+    if _FR3D_PROV is not None:
+        return _FR3D_PROV
+    import base64
+    import importlib.metadata as md
+    import json
+    import fr3d
+    dist = md.distribution("fr3d")
+    du = json.loads(dist.read_text("direct_url.json") or "{}")
+    base = os.path.realpath(str(dist.locate_file("")))
+    checked = bad = 0
+    for f in dist.files or []:
+        if not f.hash or not str(f).startswith("fr3d"):
+            continue
+        data = open(dist.locate_file(f), "rb").read()
+        dig = base64.urlsafe_b64encode(hashlib.sha256(data).digest()).rstrip(b"=").decode()
+        checked += 1
+        bad += dig != f.hash.value
+    imported = os.path.realpath(os.path.dirname(fr3d.__file__))
+    _FR3D_PROV = dict(interpreter=sys.executable, distribution=f"{dist.metadata['Name']} {dist.version}",
+                      vcs_url=du.get("url"), installed_commit=(du.get("vcs_info") or {}).get("commit_id"),
+                      imported_from=imported, import_inside_distribution=imported.startswith(base),
+                      record_files_checked=checked, record_files_mismatched=bad)
+    return _FR3D_PROV
+
+
+def pinned_fr3d_commit():
+    return CFG["annotation"]["tool"].split("commit")[-1].strip()
+
+
+def verified_fr3d_commit():
+    """Installed commit, or stop: an unverifiable or different FR3D must not produce/reuse annotations."""
+    pv = installed_fr3d_provenance()
+    if (pv["installed_commit"] != pinned_fr3d_commit() or pv["record_files_mismatched"] or not pv["record_files_checked"]
+            or not pv["import_inside_distribution"]):
+        raise SystemExit(f"FR3D provenance not verified: {pv} (pinned {pinned_fr3d_commit()})")
+    return pv["installed_commit"]
+
+
+def raw_output_check(paths):
+    """Hashes and completeness of FR3D raw outputs: files exist and every non-blank line is
+    '<unit>\t<label>\t<unit>...' with parseable unit IDs."""
+    out = {}
+    for path in paths:
+        if not os.path.exists(path):
+            raise SystemExit(f"FR3D raw output missing: {path}")
+        for k, line in enumerate(open(path), 1):
+            if not line.strip():
+                continue
+            f = line.rstrip("\n").split("\t")
+            try:
+                assert len(f) >= 3
+                parse_unit(f[0]), parse_unit(f[2])
+            except Exception:
+                raise SystemExit(f"FR3D raw output incomplete/malformed: {path} line {k}") from None
+        out[os.path.basename(path)] = _sha(path)
+    return out
+
+
 def annotate(pdb, raw_dir=None):
     """Run (or reuse) FR3D for one entry. Reuse requires a provenance sidecar whose source mmCIF sha256,
-    decompressed-CIF sha256 and FR3D commit match the current pinned values; otherwise the stage fails."""
+    decompressed-CIF sha256, VERIFIED installed FR3D commit and raw-output sha256s match the current files, and
+    complete raw outputs; otherwise the stage fails (v3 repair C)."""
     import json
     raw_dir = raw_dir or P("annotations/raw")
     side = os.path.join(raw_dir, f"{pdb}.provenance.json")
     want = dict(source_mmcif=f"inputs/structures/mmcif/{pdb}.cif.gz",
                 source_mmcif_sha256=_sha(P("inputs/structures/mmcif", f"{pdb}.cif.gz")),
                 decompressed_cif_sha256=_cif_bytes_sha(pdb),
-                fr3d_commit=CFG["annotation"]["tool"].split("commit")[-1].strip(),
+                fr3d_commit=verified_fr3d_commit(),
                 categories="basepair,stacking", model_policy="all models annotated; model 1 kept in normalization")
     raw = os.path.join(raw_dir, f"{pdb}_basepair.txt")
+    outs = [raw, os.path.join(raw_dir, f"{pdb}_stacking.txt")]
     if os.path.exists(raw):
         if not os.path.exists(side):
             raise SystemExit(f"cached FR3D output for {pdb} has no provenance sidecar; regenerate or backfill")
@@ -105,6 +174,11 @@ def annotate(pdb, raw_dir=None):
         for k in ("source_mmcif_sha256", "decompressed_cif_sha256", "fr3d_commit", "categories"):
             if got.get(k) != want[k]:
                 raise SystemExit(f"cached FR3D output for {pdb}: provenance mismatch on {k}")
+        if "raw_sha256" not in got:
+            raise SystemExit(f"cached FR3D output for {pdb}: sidecar has no raw-output hashes "
+                             "(run interactions.py --verify-regenerate)")
+        if raw_output_check(outs) != got["raw_sha256"]:
+            raise SystemExit(f"cached FR3D output for {pdb}: raw output bytes differ from the sidecar record")
     else:
         os.makedirs(raw_dir, exist_ok=True)
         cif_dir = os.path.join(raw_dir, "_cif")
@@ -118,8 +192,46 @@ def annotate(pdb, raw_dir=None):
         open(os.path.join(raw_dir, f"{pdb}.log"), "w").write(" ".join(cmd) + "\n" + p.stdout + p.stderr)
         if p.returncode != 0:
             raise RuntimeError(f"FR3D failed for {pdb}")
-        json.dump(dict(want, command=" ".join(cmd), provenance="generated"), open(side, "w"), indent=1)
+        json.dump(dict(want, command=" ".join(cmd), provenance="generated", raw_sha256=raw_output_check(outs),
+                       fr3d_installed=installed_fr3d_provenance()), open(side, "w"), indent=1)
     return [os.path.join(raw_dir, f"{pdb}_basepair.txt"), os.path.join(raw_dir, f"{pdb}_stacking.txt")]
+
+
+def verify_regenerate(report_path):
+    """v3: rerun FR3D (verified installed commit) for every retained raw output into a scratch directory, compare
+    bytes, and upgrade the sidecar to verified provenance only when raw outputs are byte-identical. The previous
+    sidecar is kept as <pdb>.provenance.v2.1.json. Differences are reported and the retained files are untouched."""
+    import json
+    import shutil
+    commit = verified_fr3d_commit()
+    rows = []
+    for f in sorted(os.listdir(P("annotations/raw"))):
+        if not f.endswith("_basepair.txt"):
+            continue
+        pdb = f.split("_")[0]
+        scratch = P("annotations", "_v3_regen", pdb)
+        shutil.rmtree(scratch, ignore_errors=True)
+        os.makedirs(scratch)
+        side = P("annotations/raw", f"{pdb}.provenance.json")
+        old = json.load(open(side)) if os.path.exists(side) else {}
+        new = json.load(open(annotate(pdb, raw_dir=scratch) and os.path.join(scratch, f"{pdb}.provenance.json")))
+        kept = [P("annotations/raw", f"{pdb}_{k}.txt") for k in ("basepair", "stacking")]
+        same = raw_output_check(kept) == new["raw_sha256"]
+        rows.append(dict(pdb=pdb, previous_provenance=old.get("provenance", "missing"), installed_commit=commit,
+                         regenerated_basepair_sha256=new["raw_sha256"][f"{pdb}_basepair.txt"],
+                         regenerated_stacking_sha256=new["raw_sha256"][f"{pdb}_stacking.txt"],
+                         retained_byte_identical="yes" if same else "NO"))
+        if same:
+            if old and not os.path.exists(side.replace(".json", ".v2.1.json")):
+                shutil.copyfile(side, side.replace(".json", ".v2.1.json"))
+            json.dump(dict(new, provenance="verified_v3: regenerated with the verified installed FR3D commit; raw "
+                                           "outputs byte-identical to the retained files"), open(side, "w"), indent=1)
+        print(pdb, "identical" if same else "DIFFERS")
+    with open(report_path, "w") as fo:
+        fo.write("\t".join(rows[0]) + "\n")
+        for r in rows:
+            fo.write("\t".join(str(v) for v in r.values()) + "\n")
+    return rows
 
 
 def backfill_sidecars():
@@ -345,5 +457,7 @@ def main(only):
 if __name__ == "__main__":
     if sys.argv[1:] == ["--backfill-sidecars"]:
         backfill_sidecars()
+    elif sys.argv[1:2] == ["--verify-regenerate"]:
+        verify_regenerate(sys.argv[2] if len(sys.argv) > 2 else P("annotations", "fr3d_verify_regenerate.tsv"))
     else:
         main(sys.argv[1:])

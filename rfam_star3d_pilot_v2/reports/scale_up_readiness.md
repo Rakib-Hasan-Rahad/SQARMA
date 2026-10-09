@@ -1,5 +1,16 @@
 # Scale-up readiness
 
+## v4 decision (2026-10-09)
+**Not ready to scale under the current rules: the eligible experimental inventory is exhausted.**
+- All 31 explicitly linked, screen-passing families have been reviewed.
+- The first non-curated family (tRNA) gave no primary pair.
+- Scaling requires a declared scope decision, for example parent-mapped modified tRNAs (a method change), an engineered
+  tier, or predicted structures as a separate study.
+- It also requires a native x86-64 host.
+
+Projections are in `deliverables/2026-10-09_v4/architecture/SQARMA_Project_Architecture_and_Pipeline_Guide.md` (section G).
+
+
 Mode `scale` in `config.yaml` changes only the cohort caps (`max_families_to_review: null`,
 `max_pairs_per_family: null`). The reference policy (pinned Rfam.seed.gz 15.1), the eligibility rules and the
 validation standard stay the same. The pilot is a development set: results on newly added families must be reported
@@ -55,3 +66,14 @@ validate it independently.
 5. A native x86-64 STAR3D host.
 
 After that, scale mode can reuse every automated stage unchanged. Construct review stays manual.
+
+## Update 2026-10-09 (v3)
+- Items 2 and 4 of the recommendation are done:
+  - the fresh rerun covers all 7 pairs;
+  - all 21 unreviewed families are reviewed, with 0 new primary pairs.
+- Item 3 was applied to the new candidates (`review/v3_screening/exact_source_v3.tsv`).
+- Still open:
+  - item 1, researcher review;
+  - item 5, a native host.
+- Under the current criteria there is nothing eligible to scale to. Further growth needs a declared scope change
+  (`deliverables/2026-10-09/readiness.json`).

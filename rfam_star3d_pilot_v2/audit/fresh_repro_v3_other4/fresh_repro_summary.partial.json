@@ -1,0 +1,338 @@
+{
+ "note": "reproduction by the same AI agent; not independent external validation",
+ "downloads": [
+  {
+   "file": "inputs/structures/mmcif/2GDI.cif.gz",
+   "recorded_sha256": "28debe1741bd4801dbfe0f299452c08fe8e73ae3461c26373781342c20cc2470",
+   "fresh_sha256": "28debe1741bd4801dbfe0f299452c08fe8e73ae3461c26373781342c20cc2470",
+   "compressed_identical": true,
+   "fresh_decompressed_sha256": "6bb6454ce216b0343097d5fdda0ed006a03ce9bd5aa03ee820530ec7f05ff85c",
+   "pinned_decompressed_sha256": "6bb6454ce216b0343097d5fdda0ed006a03ce9bd5aa03ee820530ec7f05ff85c",
+   "decompressed_identical": true,
+   "verdict": "accepted_identical",
+   "url": "https://files.rcsb.org/download/2GDI.cif.gz"
+  },
+  {
+   "file": "inputs/structures/mmcif/2GIS.cif.gz",
+   "recorded_sha256": "00dd7434a17c1c3b2e5be078afa7a3bad358e67baa3c4d0143e99f0d50734aa6",
+   "fresh_sha256": "00dd7434a17c1c3b2e5be078afa7a3bad358e67baa3c4d0143e99f0d50734aa6",
+   "compressed_identical": true,
+   "fresh_decompressed_sha256": "6abfaa32bf189a174454b1994514511216bba786b809728e05c51af3944a9ccd",
+   "pinned_decompressed_sha256": "6abfaa32bf189a174454b1994514511216bba786b809728e05c51af3944a9ccd",
+   "decompressed_identical": true,
+   "verdict": "accepted_identical",
+   "url": "https://files.rcsb.org/download/2GIS.cif.gz"
+  },
+  {
+   "file": "inputs/structures/mmcif/3D2G.cif.gz",
+   "recorded_sha256": "7bd4d78f8506bea34f073df176c7ea003285693c8bd8d0545e8ae6f4e9191d06",
+   "fresh_sha256": "7bd4d78f8506bea34f073df176c7ea003285693c8bd8d0545e8ae6f4e9191d06",
+   "compressed_identical": true,
+   "fresh_decompressed_sha256": "f4ce51f5d303cf6403dd039be294312b8cc670a5ae75dbdf60c63322550267e1",
+   "pinned_decompressed_sha256": "f4ce51f5d303cf6403dd039be294312b8cc670a5ae75dbdf60c63322550267e1",
+   "decompressed_identical": true,
+   "verdict": "accepted_identical",
+   "url": "https://files.rcsb.org/download/3D2G.cif.gz"
+  },
+  {
+   "file": "inputs/structures/mmcif/4GXY.cif.gz",
+   "recorded_sha256": "a9c7c3d7d55db211014da8540b67c2c22bace9d661c1f883ff239171f6e13246",
+   "fresh_sha256": "a9c7c3d7d55db211014da8540b67c2c22bace9d661c1f883ff239171f6e13246",
+   "compressed_identical": true,
+   "fresh_decompressed_sha256": "cf082ea916b9e858838403cb6193ac917cdcf9f2e416776da6b1dceb5c15876a",
+   "pinned_decompressed_sha256": "cf082ea916b9e858838403cb6193ac917cdcf9f2e416776da6b1dceb5c15876a",
+   "decompressed_identical": true,
+   "verdict": "accepted_identical",
+   "url": "https://files.rcsb.org/download/4GXY.cif.gz"
+  },
+  {
+   "file": "inputs/structures/mmcif/4KQY.cif.gz",
+   "recorded_sha256": "f6e75780f39f866177cd77bd8544b6460e9f05202195da3838c1318db4971584",
+   "fresh_sha256": "f6e75780f39f866177cd77bd8544b6460e9f05202195da3838c1318db4971584",
+   "compressed_identical": true,
+   "fresh_decompressed_sha256": "59b57bebd86227af0aa286634c1207b500fd8df8212e94fa134207e644274145",
+   "pinned_decompressed_sha256": "59b57bebd86227af0aa286634c1207b500fd8df8212e94fa134207e644274145",
+   "decompressed_identical": true,
+   "verdict": "accepted_identical",
+   "url": "https://files.rcsb.org/download/4KQY.cif.gz"
+  },
+  {
+   "file": "inputs/structures/mmcif/5U3G.cif.gz",
+   "recorded_sha256": "8dead5640b483c5e01aa367da7447f28338080ffd48d6805cded150acb86e2ca",
+   "fresh_sha256": "8dead5640b483c5e01aa367da7447f28338080ffd48d6805cded150acb86e2ca",
+   "compressed_identical": true,
+   "fresh_decompressed_sha256": "956c0be35fc502cd7cef4412f9e1df943374c74823ecd85c4e147d8ae630a9d2",
+   "pinned_decompressed_sha256": "956c0be35fc502cd7cef4412f9e1df943374c74823ecd85c4e147d8ae630a9d2",
+   "decompressed_identical": true,
+   "verdict": "accepted_identical",
+   "url": "https://files.rcsb.org/download/5U3G.cif.gz"
+  },
+  {
+   "file": "inputs/structures/mmcif/6VMY.cif.gz",
+   "recorded_sha256": "5ae4f6ff367cc68e472557059044afceedf2aa87fb773d8e838b95fa439306c3",
+   "fresh_sha256": "5ae4f6ff367cc68e472557059044afceedf2aa87fb773d8e838b95fa439306c3",
+   "compressed_identical": true,
+   "fresh_decompressed_sha256": "f076a50411695f8fd5022843ffe7dfdf645859b5d5300b7aa2f7acbe635ff6ea",
+   "pinned_decompressed_sha256": "f076a50411695f8fd5022843ffe7dfdf645859b5d5300b7aa2f7acbe635ff6ea",
+   "decompressed_identical": true,
+   "verdict": "accepted_identical",
+   "url": "https://files.rcsb.org/download/6VMY.cif.gz"
+  },
+  {
+   "file": "inputs/structures/mmcif/7MLW.cif.gz",
+   "recorded_sha256": "52b677a3763973a44dbfe64a3d09457ec7cb849e3d5705279ad4bc8b07f0f9e3",
+   "fresh_sha256": "52b677a3763973a44dbfe64a3d09457ec7cb849e3d5705279ad4bc8b07f0f9e3",
+   "compressed_identical": true,
+   "fresh_decompressed_sha256": "f8f2afa692349f8ca35e329c6697e8fcb4752d049b53a0d06e47c198bb4fd563",
+   "pinned_decompressed_sha256": "f8f2afa692349f8ca35e329c6697e8fcb4752d049b53a0d06e47c198bb4fd563",
+   "decompressed_identical": true,
+   "verdict": "accepted_identical",
+   "url": "https://files.rcsb.org/download/7MLW.cif.gz"
+  },
+  {
+   "file": "inputs/software/STAR3D_v1.2.tar.gz",
+   "recorded_sha256": "c9da44059d9cfc40828e798ebd4f6194c55415e17aaae7d90ac0f849ec2ed946",
+   "fresh_sha256": "c9da44059d9cfc40828e798ebd4f6194c55415e17aaae7d90ac0f849ec2ed946",
+   "compressed_identical": true,
+   "verdict": "accepted_identical",
+   "url": "http://genome.ucf.edu/STAR3D/STAR3D_v1.2.tar.gz"
+  }
+ ],
+ "gate": {
+  "blocked": {},
+  "records": [
+   {
+    "file": "inputs/structures/mmcif/2GDI.cif.gz",
+    "recorded_sha256": "28debe1741bd4801dbfe0f299452c08fe8e73ae3461c26373781342c20cc2470",
+    "fresh_sha256": "28debe1741bd4801dbfe0f299452c08fe8e73ae3461c26373781342c20cc2470",
+    "compressed_identical": true,
+    "fresh_decompressed_sha256": "6bb6454ce216b0343097d5fdda0ed006a03ce9bd5aa03ee820530ec7f05ff85c",
+    "pinned_decompressed_sha256": "6bb6454ce216b0343097d5fdda0ed006a03ce9bd5aa03ee820530ec7f05ff85c",
+    "decompressed_identical": true,
+    "verdict": "accepted_identical",
+    "url": "https://files.rcsb.org/download/2GDI.cif.gz"
+   },
+   {
+    "file": "inputs/structures/mmcif/2GIS.cif.gz",
+    "recorded_sha256": "00dd7434a17c1c3b2e5be078afa7a3bad358e67baa3c4d0143e99f0d50734aa6",
+    "fresh_sha256": "00dd7434a17c1c3b2e5be078afa7a3bad358e67baa3c4d0143e99f0d50734aa6",
+    "compressed_identical": true,
+    "fresh_decompressed_sha256": "6abfaa32bf189a174454b1994514511216bba786b809728e05c51af3944a9ccd",
+    "pinned_decompressed_sha256": "6abfaa32bf189a174454b1994514511216bba786b809728e05c51af3944a9ccd",
+    "decompressed_identical": true,
+    "verdict": "accepted_identical",
+    "url": "https://files.rcsb.org/download/2GIS.cif.gz"
+   },
+   {
+    "file": "inputs/structures/mmcif/3D2G.cif.gz",
+    "recorded_sha256": "7bd4d78f8506bea34f073df176c7ea003285693c8bd8d0545e8ae6f4e9191d06",
+    "fresh_sha256": "7bd4d78f8506bea34f073df176c7ea003285693c8bd8d0545e8ae6f4e9191d06",
+    "compressed_identical": true,
+    "fresh_decompressed_sha256": "f4ce51f5d303cf6403dd039be294312b8cc670a5ae75dbdf60c63322550267e1",
+    "pinned_decompressed_sha256": "f4ce51f5d303cf6403dd039be294312b8cc670a5ae75dbdf60c63322550267e1",
+    "decompressed_identical": true,
+    "verdict": "accepted_identical",
+    "url": "https://files.rcsb.org/download/3D2G.cif.gz"
+   },
+   {
+    "file": "inputs/structures/mmcif/4GXY.cif.gz",
+    "recorded_sha256": "a9c7c3d7d55db211014da8540b67c2c22bace9d661c1f883ff239171f6e13246",
+    "fresh_sha256": "a9c7c3d7d55db211014da8540b67c2c22bace9d661c1f883ff239171f6e13246",
+    "compressed_identical": true,
+    "fresh_decompressed_sha256": "cf082ea916b9e858838403cb6193ac917cdcf9f2e416776da6b1dceb5c15876a",
+    "pinned_decompressed_sha256": "cf082ea916b9e858838403cb6193ac917cdcf9f2e416776da6b1dceb5c15876a",
+    "decompressed_identical": true,
+    "verdict": "accepted_identical",
+    "url": "https://files.rcsb.org/download/4GXY.cif.gz"
+   },
+   {
+    "file": "inputs/structures/mmcif/4KQY.cif.gz",
+    "recorded_sha256": "f6e75780f39f866177cd77bd8544b6460e9f05202195da3838c1318db4971584",
+    "fresh_sha256": "f6e75780f39f866177cd77bd8544b6460e9f05202195da3838c1318db4971584",
+    "compressed_identical": true,
+    "fresh_decompressed_sha256": "59b57bebd86227af0aa286634c1207b500fd8df8212e94fa134207e644274145",
+    "pinned_decompressed_sha256": "59b57bebd86227af0aa286634c1207b500fd8df8212e94fa134207e644274145",
+    "decompressed_identical": true,
+    "verdict": "accepted_identical",
+    "url": "https://files.rcsb.org/download/4KQY.cif.gz"
+   },
+   {
+    "file": "inputs/structures/mmcif/5U3G.cif.gz",
+    "recorded_sha256": "8dead5640b483c5e01aa367da7447f28338080ffd48d6805cded150acb86e2ca",
+    "fresh_sha256": "8dead5640b483c5e01aa367da7447f28338080ffd48d6805cded150acb86e2ca",
+    "compressed_identical": true,
+    "fresh_decompressed_sha256": "956c0be35fc502cd7cef4412f9e1df943374c74823ecd85c4e147d8ae630a9d2",
+    "pinned_decompressed_sha256": "956c0be35fc502cd7cef4412f9e1df943374c74823ecd85c4e147d8ae630a9d2",
+    "decompressed_identical": true,
+    "verdict": "accepted_identical",
+    "url": "https://files.rcsb.org/download/5U3G.cif.gz"
+   },
+   {
+    "file": "inputs/structures/mmcif/6VMY.cif.gz",
+    "recorded_sha256": "5ae4f6ff367cc68e472557059044afceedf2aa87fb773d8e838b95fa439306c3",
+    "fresh_sha256": "5ae4f6ff367cc68e472557059044afceedf2aa87fb773d8e838b95fa439306c3",
+    "compressed_identical": true,
+    "fresh_decompressed_sha256": "f076a50411695f8fd5022843ffe7dfdf645859b5d5300b7aa2f7acbe635ff6ea",
+    "pinned_decompressed_sha256": "f076a50411695f8fd5022843ffe7dfdf645859b5d5300b7aa2f7acbe635ff6ea",
+    "decompressed_identical": true,
+    "verdict": "accepted_identical",
+    "url": "https://files.rcsb.org/download/6VMY.cif.gz"
+   },
+   {
+    "file": "inputs/structures/mmcif/7MLW.cif.gz",
+    "recorded_sha256": "52b677a3763973a44dbfe64a3d09457ec7cb849e3d5705279ad4bc8b07f0f9e3",
+    "fresh_sha256": "52b677a3763973a44dbfe64a3d09457ec7cb849e3d5705279ad4bc8b07f0f9e3",
+    "compressed_identical": true,
+    "fresh_decompressed_sha256": "f8f2afa692349f8ca35e329c6697e8fcb4752d049b53a0d06e47c198bb4fd563",
+    "pinned_decompressed_sha256": "f8f2afa692349f8ca35e329c6697e8fcb4752d049b53a0d06e47c198bb4fd563",
+    "decompressed_identical": true,
+    "verdict": "accepted_identical",
+    "url": "https://files.rcsb.org/download/7MLW.cif.gz"
+   },
+   {
+    "file": "inputs/software/STAR3D_v1.2.tar.gz",
+    "recorded_sha256": "c9da44059d9cfc40828e798ebd4f6194c55415e17aaae7d90ac0f849ec2ed946",
+    "fresh_sha256": "c9da44059d9cfc40828e798ebd4f6194c55415e17aaae7d90ac0f849ec2ed946",
+    "compressed_identical": true,
+    "verdict": "accepted_identical",
+    "url": "http://genome.ucf.edu/STAR3D/STAR3D_v1.2.tar.gz"
+   },
+   {
+    "file": "runs/_inputs/2gdix.pdb",
+    "retained_sha256": "6470064a7e74aee463765c5390adfdb4216281c96abf91833f198136c04fc806",
+    "fresh_sha256": "6470064a7e74aee463765c5390adfdb4216281c96abf91833f198136c04fc806",
+    "bytes_identical": true,
+    "verdict": "accepted_identical"
+   },
+   {
+    "file": "runs/_inputs/3d2ga.pdb",
+    "retained_sha256": "3910793aa2c13ebfb9f7d8fb38f05e82ab250476489eaa28aaa6c5209f3e6305",
+    "fresh_sha256": "3910793aa2c13ebfb9f7d8fb38f05e82ab250476489eaa28aaa6c5209f3e6305",
+    "bytes_identical": true,
+    "verdict": "accepted_identical"
+   },
+   {
+    "file": "runs/_inputs/2gisa.pdb",
+    "retained_sha256": "00f9b8fdae807d87532b27da48dba9cc626ebafe54be10806686aa6de8d85e8a",
+    "fresh_sha256": "00f9b8fdae807d87532b27da48dba9cc626ebafe54be10806686aa6de8d85e8a",
+    "bytes_identical": true,
+    "verdict": "accepted_identical"
+   },
+   {
+    "file": "runs/_inputs/4kqya.pdb",
+    "retained_sha256": "e56f935d835b208c3db4e36054d9944a97199be47f522476156836fbe00f5934",
+    "fresh_sha256": "e56f935d835b208c3db4e36054d9944a97199be47f522476156836fbe00f5934",
+    "bytes_identical": true,
+    "verdict": "accepted_identical"
+   },
+   {
+    "file": "runs/_inputs/4gxya.pdb",
+    "retained_sha256": "bda3f47d055604f4ed486dd71feba74d71075756177849f89104d73433aea2dc",
+    "fresh_sha256": "bda3f47d055604f4ed486dd71feba74d71075756177849f89104d73433aea2dc",
+    "bytes_identical": true,
+    "verdict": "accepted_identical"
+   },
+   {
+    "file": "runs/_inputs/6vmya.pdb",
+    "retained_sha256": "1affe2d9d3e6fd8b11718dbe1aed767e1d8ae438d16e4db38799afbfd15e6c6d",
+    "fresh_sha256": "1affe2d9d3e6fd8b11718dbe1aed767e1d8ae438d16e4db38799afbfd15e6c6d",
+    "bytes_identical": true,
+    "verdict": "accepted_identical"
+   },
+   {
+    "file": "runs/_inputs/5u3gb.pdb",
+    "retained_sha256": "d6852025a1f783b9cbb8889a60e29939dc5fbe62a600ba31500c50d13bc8298d",
+    "fresh_sha256": "d6852025a1f783b9cbb8889a60e29939dc5fbe62a600ba31500c50d13bc8298d",
+    "bytes_identical": true,
+    "verdict": "accepted_identical"
+   },
+   {
+    "file": "runs/_inputs/7mlwf.pdb",
+    "retained_sha256": "c8ff0fea2c1cd8d4f2ecbe18fe7b05341cfb2e209a767f1ab61d25f4152706c3",
+    "fresh_sha256": "c8ff0fea2c1cd8d4f2ecbe18fe7b05341cfb2e209a767f1ab61d25f4152706c3",
+    "bytes_identical": true,
+    "verdict": "accepted_identical"
+   }
+  ]
+ },
+ "inputs": [
+  {
+   "rep_id": "RF00059__2GDI_X",
+   "retained_sha256": "6470064a7e74aee463765c5390adfdb4216281c96abf91833f198136c04fc806",
+   "fresh_sha256": "6470064a7e74aee463765c5390adfdb4216281c96abf91833f198136c04fc806",
+   "bytes_identical": true,
+   "residue_ids_and_names_identical": true,
+   "n_residues": 80,
+   "max_atom_displacement_A": 0.0
+  },
+  {
+   "rep_id": "RF00059__3D2G_A",
+   "retained_sha256": "3910793aa2c13ebfb9f7d8fb38f05e82ab250476489eaa28aaa6c5209f3e6305",
+   "fresh_sha256": "3910793aa2c13ebfb9f7d8fb38f05e82ab250476489eaa28aaa6c5209f3e6305",
+   "bytes_identical": true,
+   "residue_ids_and_names_identical": true,
+   "n_residues": 77,
+   "max_atom_displacement_A": 0.0
+  },
+  {
+   "rep_id": "RF00162__2GIS_A",
+   "retained_sha256": "00f9b8fdae807d87532b27da48dba9cc626ebafe54be10806686aa6de8d85e8a",
+   "fresh_sha256": "00f9b8fdae807d87532b27da48dba9cc626ebafe54be10806686aa6de8d85e8a",
+   "bytes_identical": true,
+   "residue_ids_and_names_identical": true,
+   "n_residues": 94,
+   "max_atom_displacement_A": 0.0
+  },
+  {
+   "rep_id": "RF00162__4KQY_A",
+   "retained_sha256": "e56f935d835b208c3db4e36054d9944a97199be47f522476156836fbe00f5934",
+   "fresh_sha256": "e56f935d835b208c3db4e36054d9944a97199be47f522476156836fbe00f5934",
+   "bytes_identical": true,
+   "residue_ids_and_names_identical": true,
+   "n_residues": 119,
+   "max_atom_displacement_A": 0.0
+  },
+  {
+   "rep_id": "RF00174__4GXY_A",
+   "retained_sha256": "bda3f47d055604f4ed486dd71feba74d71075756177849f89104d73433aea2dc",
+   "fresh_sha256": "bda3f47d055604f4ed486dd71feba74d71075756177849f89104d73433aea2dc",
+   "bytes_identical": true,
+   "residue_ids_and_names_identical": true,
+   "n_residues": 163,
+   "max_atom_displacement_A": 0.0
+  },
+  {
+   "rep_id": "RF00174__6VMY_A",
+   "retained_sha256": "1affe2d9d3e6fd8b11718dbe1aed767e1d8ae438d16e4db38799afbfd15e6c6d",
+   "fresh_sha256": "1affe2d9d3e6fd8b11718dbe1aed767e1d8ae438d16e4db38799afbfd15e6c6d",
+   "bytes_identical": true,
+   "residue_ids_and_names_identical": true,
+   "n_residues": 130,
+   "max_atom_displacement_A": 0.0
+  },
+  {
+   "rep_id": "RF00442__5U3G_B",
+   "retained_sha256": "d6852025a1f783b9cbb8889a60e29939dc5fbe62a600ba31500c50d13bc8298d",
+   "fresh_sha256": "d6852025a1f783b9cbb8889a60e29939dc5fbe62a600ba31500c50d13bc8298d",
+   "bytes_identical": true,
+   "residue_ids_and_names_identical": true,
+   "n_residues": 85,
+   "max_atom_displacement_A": 0.0
+  },
+  {
+   "rep_id": "RF00442__7MLW_F",
+   "retained_sha256": "c8ff0fea2c1cd8d4f2ecbe18fe7b05341cfb2e209a767f1ab61d25f4152706c3",
+   "fresh_sha256": "c8ff0fea2c1cd8d4f2ecbe18fe7b05341cfb2e209a767f1ab61d25f4152706c3",
+   "bytes_identical": true,
+   "residue_ids_and_names_identical": true,
+   "n_residues": 125,
+   "max_atom_displacement_A": 0.0
+  }
+ ],
+ "star3d_gate": {
+  "RF00059__2GDI_X__3D2G_A": "run",
+  "RF00162__2GIS_A__4KQY_A": "run",
+  "RF00174__4GXY_A__6VMY_A": "run",
+  "RF00442__5U3G_B__7MLW_F": "run"
+ }
+}

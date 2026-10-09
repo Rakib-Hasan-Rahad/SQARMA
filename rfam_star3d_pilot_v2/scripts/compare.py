@@ -8,6 +8,7 @@ Outputs: results/correspondence_comparison.tsv (per run x source residue)
 Usage: compare.py [pair_id ...]
 """
 import csv
+import hashlib
 import os
 import sys
 from collections import defaultdict
@@ -27,11 +28,14 @@ def read_tsv(path):
 
 
 def write_tsv(path, rows, fields):
-    with open(path, "w", newline="", encoding="utf-8") as f:
+    """Atomic write (tmp + rename) so an interrupted stage never leaves a truncated table in place."""
+    tmp = path + ".tmp"
+    with open(tmp, "w", newline="", encoding="utf-8") as f:
         w = csv.DictWriter(f, fieldnames=fields, delimiter="\t", lineterminator="\n", extrasaction="ignore")
         w.writeheader()
         for r in rows:
             w.writerow({k: ("NA" if r.get(k) is None or r.get(k) == "" else r[k]) for k in fields})
+    os.replace(tmp, path)
 
 
 def crosswalks():
@@ -57,13 +61,32 @@ def resid_index(cwrep):
 VALIDATION_FAILURES = []
 
 
+def stored_alignment_problems(run, pa, path):
+    """v3 repair C: re-validate STORED STAR3D output when it is consumed. A manifest saying 'completed' never
+    overrules malformed or changed current bytes."""
+    probs = list(pa["bad_lines"])                          # unparsable mapping lines, declared != parsed count
+    if pa["aligned_n"] is None:
+        probs.append("no '#Aligned nucleotide' header")
+    cur = hashlib.sha256(open(path, "rb").read()).hexdigest()
+    if run.get("output_sha256") not in (None, "", "NA") and run["output_sha256"] != cur:
+        probs.append(f"output bytes changed since run (manifest {run['output_sha256'][:12]} != current {cur[:12]})")
+    if run.get("aligned_n") not in (None, "", "NA") and int(run["aligned_n"]) != len(pa["pairs"]):
+        probs.append(f"manifest aligned_n {run['aligned_n']} != parsed {len(pa['pairs'])}")
+    return probs
+
+
 def compare_run(run, pair, cw, ref):
     qrep, trep = pair["query_rep"], pair["target_rep"]
     cq, ct = cw[qrep], cw[trep]
     if run["status"] != "completed":
         smap, injective, unmapped = None, None, None
     else:
-        pa = star3d.parse_aln(P(run["output_aln"]))
+        aln_path = P(run["output_aln"])
+        if not os.path.exists(aln_path):
+            pa, probs = dict(pairs=[], bad_lines=[], aligned_n=None), [f"output missing: {run['output_aln']}"]
+        else:
+            pa = star3d.parse_aln(aln_path)
+            probs = stored_alignment_problems(run, pa, aln_path)
         left_rep, right_rep = (qrep, trep) if run["direction"] == "forward" else (trep, qrep)
         il, ir = resid_index(cw[left_rep]), resid_index(cw[right_rep])
         pairs, unmapped = [], []
@@ -76,7 +99,10 @@ def compare_run(run, pair, cw, ref):
         qs = [a for a, _ in pairs]
         ts = [b for _, b in pairs]
         injective = len(set(qs)) == len(qs) and len(set(ts)) == len(ts)   # checked BEFORE building the map
-        if unmapped or not injective:
+        if probs:
+            VALIDATION_FAILURES.append((run["run_id"], "stored_output_invalid", "; ".join(probs)))
+            smap = None
+        elif unmapped or not injective:
             # unexplained output-to-crosswalk failure or many-to-one mapping = validation failure, never a silent drop
             VALIDATION_FAILURES.append((run["run_id"], len(unmapped), injective))
             smap = None
@@ -187,8 +213,10 @@ def main(only):
         allrows += rows
         summ.append(summarize(run, pair, rows, smap, rmap, inj, un, cw))
         maps[(run["pair_id"], run["direction"])][run["replicate"]] = smap
-    write_tsv(P("results/correspondence_comparison.tsv"), allrows, list(allrows[0].keys()))
-    write_tsv(P("results/pair_summary.tsv"), summ, list(summ[0].keys()))
+    # on validation failure the recomputed tables are written ONLY as *.INVALID.tsv (complete tables untouched)
+    out = (lambda n: P("results", n + (".INVALID.tsv" if VALIDATION_FAILURES else ".tsv")))  # noqa: E731
+    write_tsv(out("correspondence_comparison"), allrows, list(allrows[0].keys()))
+    write_tsv(out("pair_summary"), summ, list(summ[0].keys()))
     cons = []
     for (pid, d), reps in sorted(maps.items()):
         vals = [frozenset(v.items()) if v is not None else None for v in reps.values()]
@@ -203,10 +231,10 @@ def main(only):
             fw_rev.append(dict(pair_id=pid, direction="forward_vs_reverse_rep1", replicates=None,
                                identical_across_replicates=fs == rs,
                                distinct_outputs=f"shared {len(fs & rs)}; fwd-only {len(fs - rs)}; rev-only {len(rs - fs)}"))
-    write_tsv(P("results/replicate_consistency.tsv"), cons + fw_rev,
+    write_tsv(out("replicate_consistency"), cons + fw_rev,
               ["pair_id", "direction", "replicates", "identical_across_replicates", "distinct_outputs"])
     if VALIDATION_FAILURES:
-        raise SystemExit(f"STAGE FAILED: STAR3D output validation failures {VALIDATION_FAILURES} (tables written)")
+        raise SystemExit(f"STAGE FAILED: STAR3D output validation failures {VALIDATION_FAILURES} (written only as results/*.INVALID.tsv)")
     for s in summ:
         print(s["run_id"], s["status"], "R", s["rfam_pairs"], "Ra", s["rfam_pairs_structurally_assessable"], "S",
               s["star3d_pairs"], "shared", s["shared_pairs"], "reproduced", s["frac_rfam_assessable_reproduced"],

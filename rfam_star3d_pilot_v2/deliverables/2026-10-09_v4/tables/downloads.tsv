@@ -1,0 +1,17 @@
+label	path	description
+Professor report v4 (current)	deliverables/2026-10-09_v4/professor_report_v4.md	Validated status and recommendation
+Professor summary (current)	reports/professor_summary.md	One-page summary
+Weekly progress update v4	deliverables/2026-10-09_v4/weekly_progress_update_v4.md	One page
+Meeting script v4	deliverables/2026-10-09_v4/meeting_script_v4.md	Completed work only
+7REX candidate update v4	deliverables/2026-10-09_v4/candidate_evidence_update_v4.md	Evidence for and against
+Region review v4	deliverables/2026-10-09_v4/region_review_v4.md	All regions with evidence
+Method audit v4	deliverables/2026-10-09_v4/method_audit_v4.md	STAR3D pair selection and sensitivity
+Dataset and provenance v4	deliverables/2026-10-09_v4/dataset_and_provenance_v4.md	Survey B wording, release history, tRNA expansion
+Validation v4	deliverables/2026-10-09_v4/validation_v4.md	Tests, mutation check, gates
+Expansion pre-registration	review/v4_expansion/PREREGISTRATION.md	Rules fixed before screening
+Architecture and pipeline guide (Word)	deliverables/2026-10-09_v4/architecture/SQARMA_Project_Architecture_and_Pipeline_Guide.docx	For new PhD students
+Architecture and pipeline guide (PDF)	deliverables/2026-10-09_v4/architecture/SQARMA_Project_Architecture_and_Pipeline_Guide.pdf	Same content as PDF
+Main report (cumulative)	reports/report.md	Dated sections; v4 at top
+Data dictionary	reports/data_dictionary.md	Column definitions incl. v4
+STAR3D execution audit (v3)	deliverables/2026-10-09/STAR3D_execution_audit.md	Package, commands, parser
+Manifest v4	deliverables/2026-10-09_v4/MANIFEST.tsv	Outputs, inputs, software, checksums

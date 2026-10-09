@@ -1,0 +1,314 @@
+{
+ "available": true,
+ "source": "deliverables/2026-10-09/tables/RF00522_P1_register_all_rows.tsv",
+ "columns": [
+  "row",
+  "n_pairs_with_residues",
+  "wc_or_gu_as_aligned",
+  "wc_or_gu_3prime_shift_plus1",
+  "wc_or_gu_3prime_shift_minus1"
+ ],
+ "rows": [
+  {
+   "row": "AE017355.1/1568663-1568707",
+   "n_pairs_with_residues": "5",
+   "wc_or_gu_as_aligned": "5",
+   "wc_or_gu_3prime_shift_plus1": "1",
+   "wc_or_gu_3prime_shift_minus1": "2"
+  },
+  {
+   "row": "AE017355.1/1321429-1321472",
+   "n_pairs_with_residues": "5",
+   "wc_or_gu_as_aligned": "5",
+   "wc_or_gu_3prime_shift_plus1": "3",
+   "wc_or_gu_3prime_shift_minus1": "3"
+  },
+  {
+   "row": "AL766846.1/39196-39152",
+   "n_pairs_with_residues": "5",
+   "wc_or_gu_as_aligned": "4",
+   "wc_or_gu_3prime_shift_plus1": "2",
+   "wc_or_gu_3prime_shift_minus1": "2"
+  },
+  {
+   "row": "AL596166.1/191853-191900",
+   "n_pairs_with_residues": "5",
+   "wc_or_gu_as_aligned": "5",
+   "wc_or_gu_3prime_shift_plus1": "1",
+   "wc_or_gu_3prime_shift_minus1": "2"
+  },
+  {
+   "row": "X99978.2/10136-10181",
+   "n_pairs_with_residues": "5",
+   "wc_or_gu_as_aligned": "5",
+   "wc_or_gu_3prime_shift_plus1": "1",
+   "wc_or_gu_3prime_shift_minus1": "2"
+  },
+  {
+   "row": "AE016827.1/1848390-1848434",
+   "n_pairs_with_residues": "5",
+   "wc_or_gu_as_aligned": "5",
+   "wc_or_gu_3prime_shift_plus1": "1",
+   "wc_or_gu_3prime_shift_minus1": "2"
+  },
+  {
+   "row": "AASA01000045.1/1296-1252",
+   "n_pairs_with_residues": "5",
+   "wc_or_gu_as_aligned": "5",
+   "wc_or_gu_3prime_shift_plus1": "1",
+   "wc_or_gu_3prime_shift_minus1": "2"
+  },
+  {
+   "row": "CP000746.1/2223340-2223384",
+   "n_pairs_with_residues": "5",
+   "wc_or_gu_as_aligned": "5",
+   "wc_or_gu_3prime_shift_plus1": "1",
+   "wc_or_gu_3prime_shift_minus1": "2"
+  },
+  {
+   "row": "AAXV01000007.1/14855-14899",
+   "n_pairs_with_residues": "5",
+   "wc_or_gu_as_aligned": "5",
+   "wc_or_gu_3prime_shift_plus1": "1",
+   "wc_or_gu_3prime_shift_minus1": "2"
+  },
+  {
+   "row": "AAXB02000001.1/142227-142271",
+   "n_pairs_with_residues": "5",
+   "wc_or_gu_as_aligned": "5",
+   "wc_or_gu_3prime_shift_plus1": "2",
+   "wc_or_gu_3prime_shift_minus1": "2"
+  },
+  {
+   "row": "CP000513.1/859945-859989",
+   "n_pairs_with_residues": "5",
+   "wc_or_gu_as_aligned": "5",
+   "wc_or_gu_3prime_shift_plus1": "1",
+   "wc_or_gu_3prime_shift_minus1": "2"
+  },
+  {
+   "row": "AARF01000079.1/5363-5319",
+   "n_pairs_with_residues": "5",
+   "wc_or_gu_as_aligned": "5",
+   "wc_or_gu_3prime_shift_plus1": "3",
+   "wc_or_gu_3prime_shift_minus1": "3"
+  },
+  {
+   "row": "CP000233.1/1599957-1600001",
+   "n_pairs_with_residues": "5",
+   "wc_or_gu_as_aligned": "5",
+   "wc_or_gu_3prime_shift_plus1": "2",
+   "wc_or_gu_3prime_shift_minus1": "2"
+  },
+  {
+   "row": "BA000028.3/467676-467632",
+   "n_pairs_with_residues": "5",
+   "wc_or_gu_as_aligned": "5",
+   "wc_or_gu_3prime_shift_plus1": "1",
+   "wc_or_gu_3prime_shift_minus1": "2"
+  },
+  {
+   "row": "AE017333.1/1501710-1501754",
+   "n_pairs_with_residues": "5",
+   "wc_or_gu_as_aligned": "5",
+   "wc_or_gu_3prime_shift_plus1": "3",
+   "wc_or_gu_3prime_shift_minus1": "3"
+  },
+  {
+   "row": "CR936503.1/1598027-1597983",
+   "n_pairs_with_residues": "5",
+   "wc_or_gu_as_aligned": "5",
+   "wc_or_gu_3prime_shift_plus1": "1",
+   "wc_or_gu_3prime_shift_minus1": "2"
+  },
+  {
+   "row": "ABDX01000003.1/184506-184550",
+   "n_pairs_with_residues": "5",
+   "wc_or_gu_as_aligned": "5",
+   "wc_or_gu_3prime_shift_plus1": "3",
+   "wc_or_gu_3prime_shift_minus1": "3"
+  },
+  {
+   "row": "CP000414.1/1235047-1235002",
+   "n_pairs_with_residues": "5",
+   "wc_or_gu_as_aligned": "5",
+   "wc_or_gu_3prime_shift_plus1": "3",
+   "wc_or_gu_3prime_shift_minus1": "2"
+  },
+  {
+   "row": "AAYG02000018.1/120313-120357",
+   "n_pairs_with_residues": "5",
+   "wc_or_gu_as_aligned": "5",
+   "wc_or_gu_3prime_shift_plus1": "2",
+   "wc_or_gu_3prime_shift_minus1": "2"
+  },
+  {
+   "row": "ABCF01000001.1/139145-139189",
+   "n_pairs_with_residues": "5",
+   "wc_or_gu_as_aligned": "5",
+   "wc_or_gu_3prime_shift_plus1": "3",
+   "wc_or_gu_3prime_shift_minus1": "3"
+  },
+  {
+   "row": "AE002098.2/329220-329176",
+   "n_pairs_with_residues": "5",
+   "wc_or_gu_as_aligned": "4",
+   "wc_or_gu_3prime_shift_plus1": "1",
+   "wc_or_gu_3prime_shift_minus1": "2"
+  },
+  {
+   "row": "AAAK03000099.1/1629-1673",
+   "n_pairs_with_residues": "5",
+   "wc_or_gu_as_aligned": "4",
+   "wc_or_gu_3prime_shift_plus1": "2",
+   "wc_or_gu_3prime_shift_minus1": "2"
+  },
+  {
+   "row": "CP000764.1/1180651-1180694",
+   "n_pairs_with_residues": "5",
+   "wc_or_gu_as_aligned": "5",
+   "wc_or_gu_3prime_shift_plus1": "3",
+   "wc_or_gu_3prime_shift_minus1": "3"
+  },
+  {
+   "row": "AAOX01000006.1/21305-21347",
+   "n_pairs_with_residues": "5",
+   "wc_or_gu_as_aligned": "5",
+   "wc_or_gu_3prime_shift_plus1": "3",
+   "wc_or_gu_3prime_shift_minus1": "3"
+  },
+  {
+   "row": "BA000004.3/2373342-2373299",
+   "n_pairs_with_residues": "5",
+   "wc_or_gu_as_aligned": "5",
+   "wc_or_gu_3prime_shift_plus1": "3",
+   "wc_or_gu_3prime_shift_minus1": "3"
+  },
+  {
+   "row": "AP006627.1/2249570-2249527",
+   "n_pairs_with_residues": "5",
+   "wc_or_gu_as_aligned": "5",
+   "wc_or_gu_3prime_shift_plus1": "3",
+   "wc_or_gu_3prime_shift_minus1": "3"
+  },
+  {
+   "row": "AM421808.1/1884627-1884671",
+   "n_pairs_with_residues": "5",
+   "wc_or_gu_as_aligned": "4",
+   "wc_or_gu_3prime_shift_plus1": "1",
+   "wc_or_gu_3prime_shift_minus1": "2"
+  },
+  {
+   "row": "AAVO02000002.1/275638-275594",
+   "n_pairs_with_residues": "5",
+   "wc_or_gu_as_aligned": "5",
+   "wc_or_gu_3prime_shift_plus1": "2",
+   "wc_or_gu_3prime_shift_minus1": "2"
+  },
+  {
+   "row": "CP000029.1/370924-370878",
+   "n_pairs_with_residues": "5",
+   "wc_or_gu_as_aligned": "5",
+   "wc_or_gu_3prime_shift_plus1": "3",
+   "wc_or_gu_3prime_shift_minus1": "3"
+  },
+  {
+   "row": "AP006716.1/2221258-2221304",
+   "n_pairs_with_residues": "5",
+   "wc_or_gu_as_aligned": "5",
+   "wc_or_gu_3prime_shift_plus1": "3",
+   "wc_or_gu_3prime_shift_minus1": "3"
+  },
+  {
+   "row": "AP008934.1/2076124-2076170",
+   "n_pairs_with_residues": "5",
+   "wc_or_gu_as_aligned": "5",
+   "wc_or_gu_3prime_shift_plus1": "3",
+   "wc_or_gu_3prime_shift_minus1": "3"
+  },
+  {
+   "row": "AARM02000383.1/1741-1694",
+   "n_pairs_with_residues": "5",
+   "wc_or_gu_as_aligned": "5",
+   "wc_or_gu_3prime_shift_plus1": "1",
+   "wc_or_gu_3prime_shift_minus1": "2"
+  },
+  {
+   "row": "AL009126.3/1439274-1439318",
+   "n_pairs_with_residues": "5",
+   "wc_or_gu_as_aligned": "5",
+   "wc_or_gu_3prime_shift_plus1": "3",
+   "wc_or_gu_3prime_shift_minus1": "3"
+  },
+  {
+   "row": "AE004439.1/209165-209100",
+   "n_pairs_with_residues": "5",
+   "wc_or_gu_as_aligned": "5",
+   "wc_or_gu_3prime_shift_plus1": "3",
+   "wc_or_gu_3prime_shift_minus1": "2"
+  },
+  {
+   "row": "AL935263.2/2519559-2519515",
+   "n_pairs_with_residues": "5",
+   "wc_or_gu_as_aligned": "5",
+   "wc_or_gu_3prime_shift_plus1": "3",
+   "wc_or_gu_3prime_shift_minus1": "3"
+  },
+  {
+   "row": "URS000080E08D_32630/1-36",
+   "n_pairs_with_residues": "5",
+   "wc_or_gu_as_aligned": "5",
+   "wc_or_gu_3prime_shift_plus1": "3",
+   "wc_or_gu_3prime_shift_minus1": "3"
+  },
+  {
+   "row": "URS000080E020_32630/1-34",
+   "n_pairs_with_residues": "5",
+   "wc_or_gu_as_aligned": "5",
+   "wc_or_gu_3prime_shift_plus1": "3",
+   "wc_or_gu_3prime_shift_minus1": "3"
+  },
+  {
+   "row": "URS000080E037_32630/1-34",
+   "n_pairs_with_residues": "5",
+   "wc_or_gu_as_aligned": "5",
+   "wc_or_gu_3prime_shift_plus1": "3",
+   "wc_or_gu_3prime_shift_minus1": "3"
+  },
+  {
+   "row": "URS000080E32E_32630/1-33",
+   "n_pairs_with_residues": "5",
+   "wc_or_gu_as_aligned": "5",
+   "wc_or_gu_3prime_shift_plus1": "3",
+   "wc_or_gu_3prime_shift_minus1": "3"
+  },
+  {
+   "row": "URS000080E32E_119072/1-33",
+   "n_pairs_with_residues": "5",
+   "wc_or_gu_as_aligned": "5",
+   "wc_or_gu_3prime_shift_plus1": "3",
+   "wc_or_gu_3prime_shift_minus1": "3"
+  },
+  {
+   "row": "URS0000E60BA5_119072/1-33",
+   "n_pairs_with_residues": "5",
+   "wc_or_gu_as_aligned": "5",
+   "wc_or_gu_3prime_shift_plus1": "3",
+   "wc_or_gu_3prime_shift_minus1": "3"
+  },
+  {
+   "row": "URS0000E60B99_119072/1-33",
+   "n_pairs_with_residues": "5",
+   "wc_or_gu_as_aligned": "5",
+   "wc_or_gu_3prime_shift_plus1": "3",
+   "wc_or_gu_3prime_shift_minus1": "2"
+  },
+  {
+   "row": "URS00023119CB_2126436/1-34",
+   "n_pairs_with_residues": "5",
+   "wc_or_gu_as_aligned": "2",
+   "wc_or_gu_3prime_shift_plus1": "5",
+   "wc_or_gu_3prime_shift_minus1": "4"
+  }
+ ]
+}

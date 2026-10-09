@@ -1,0 +1,11 @@
+check	status	evidence	note
+Valid Stockholm exports	pass	tests/test_stockholm_export.py; results/standard_seed_rows.sto	5 records parse and equal pinned seed
+Input mismatches stop reproduction	pass	tests/test_fresh_repro_gate.py; audit/fresh_repro_v3_other4 (all accepted_identical)	gate exercised on real downloads
+Actual FR3D software provenance	pass	scripts/interactions.py installed_fr3d_provenance; tables/fr3d_verify_regenerate.tsv	commit 288f98cc from direct_url.json; 95/95 RECORD hashes
+STAR3D package/JAR/runtime identity	pass	STAR3D_execution_audit.md section 1	emulated x86-64 (QEMU) on arm64
+Parser and intermediate behaviour	pass with limitations	STAR3D_execution_audit.md; logs/preprocessing_validation_retained.txt	coordinate gaps treated as neighbours; non-WC WWc pairs kept; 7MLW ct overwrite
+Stored STAR3D outputs validated on consumption	pass	tests/test_compare_validation.py; logs/compare_v3.log	41/41 completed runs; sha, counts, injectivity, crosswalk
+Reproduction of the 7 pilot pairs	pass with platform failures	audit/fresh_repro; tables/fresh_repro_other4.tsv	all completed runs identical; 3 JVM crashes in 84 emulated runs
+Frozen candidate rules before new runs	pass	review/v3_screening/frozen_selection_v3.json	empty selection
+Missing data distinguished from disagreement	pass	results/correspondence_comparison.tsv categories; site shows unavailable not zero	
+Native x86-64 execution	not available	reports/environment.md	only emulation used

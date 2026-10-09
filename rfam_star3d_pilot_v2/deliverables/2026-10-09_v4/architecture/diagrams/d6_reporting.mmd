@@ -1,0 +1,11 @@
+flowchart TD
+  A["Authoritative tables<br/>results/*.tsv, review/*.tsv,<br/>expansion_v4/results"] --> B["export_site_data.py"]
+  B --> C["site/data/*.json<br/>+ export_manifest.json<br/>(sha256 of every source)"]
+  C --> D["index.html + app.js<br/>(no typed numbers)"]
+  A --> E["render scripts<br/>(region review, evidence cards)"]
+  E --> F["Markdown reports"]
+  A --> G["check_report_numbers.py"]
+  F --> G
+  C --> G
+  G --> H["OK / FAIL log"]
+  F --> I["pandoc → .docx<br/>Chrome → .pdf"]

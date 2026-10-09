@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rfam vs STAR3D Pilot</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-head">
+  <div class="wrap">
+    <p class="eyebrow">SQARMA pilot &middot; prepared by an AI research agent; not yet reviewed by a human</p>
+    <h1>Do Rfam seed alignments match 3D structure correspondences?</h1>
+    <nav aria-label="Sections">
+      <a href="#overview">Overview</a>
+      <a href="#dataset">Dataset</a>
+      <a href="#results">Results</a>
+      <a href="#case">7REX case</a>
+      <a href="#validation">Validation</a>
+      <a href="#downloads">Downloads</a>
+      <a href="#glossary">Glossary</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+<p id="load-error" class="notice warn" hidden></p>
+
+<!-- 1 OVERVIEW -->
+<section id="overview">
+  <h2>1. Overview</h2>
+  <div class="grid2">
+    <div>
+      <h3>Research question</h3>
+      <p>When two RNAs of the same family both have experimental 3D structures, does the Rfam
+      <dfn>standard seed alignment</dfn> pair up the same nucleotides as a structure-based aligner
+      (<dfn>original STAR3D</dfn>)? Where they disagree, which correspondence better preserves the base pairs and
+      stacking seen in the crystal structures (annotated by <dfn>FR3D</dfn>)?</p>
+      <h3>Scope</h3>
+      <p>A small pilot: a screened set of Rfam families, a frozen cohort of structure pairs, and STAR3D run in both
+      directions with replicates. Only the standard seed (Rfam.seed.gz, release 15.1) is used as the Rfam reference. The comparison pairs analysed
+so far are a <em>development set</em>: they were also used to debug the workflow and to design one exploratory
+adjustment.
+      Pairs are labelled <span class="tag primary">primary</span> (eligible for scientific interpretation) or
+      <span class="tag exploratory">exploratory</span> (shown for context only).</p>
+    </div>
+    <div>
+      <h3>Headline</h3>
+      <p>Per-pair agreement counts, with denominators, are in Results. The clearest
+      disagreement is in the preQ1-I riboswitch family (RF00522), in the seed row for PDB 7REX, where the 3&prime;
+      strand of helix P1 appears shifted by one position. This is a <strong>candidate for curator review</strong>,
+      not a demonstrated error: both supporting comparisons share the same 7REX row, so they are one observation,
+      and in loop L1 the seed's partners fit better than STAR3D's.</p>
+<p><strong>This session (2026-10-09):</strong> every family that passed the first screen has now been reviewed by
+hand, and <strong>no new pair met all primary criteria</strong>, so no new comparison was run (see Dataset). The
+ordinary and "3D-curated" Rfam seed files turned out to be identical for every family they share, including all
+pilot families (Survey B). Software repairs changed no scientific table (Validation).</p>
+      <div id="kpis" class="kpis" aria-live="polite"></div>
+    </div>
+  </div>
+</section>
+
+<!-- 2 DATASET -->
+<section id="dataset">
+  <h2>2. Dataset</h2>
+  <h3>Screening funnel <small>(unit: Rfam family)</small></h3>
+  <div id="funnel"></div>
+
+  <h3>Frozen cohort <small>(unit: structure pair)</small></h3>
+  <div id="pairs-table"></div>
+
+  <h3>Representatives and provenance <small>(unit: PDB chain linked to a seed row)</small></h3>
+  <div id="reps-table"></div>
+  <details><summary>Construct review (engineering, ligand state, decisions)</summary><div id="construct-table"></div></details>
+  <details><summary>Exact source-genome check</summary><div id="exact-table"></div></details>
+
+  <h3>Family inventory <small>(searchable; unit: Rfam family)</small></h3>
+  <div class="controls">
+    <label>Search <input id="fam-search" type="search" placeholder="accession, name, decision…"></label>
+    <label>Screen status <select id="fam-screen"><option value="">any</option></select></label>
+    <label>Review decision <select id="fam-decision"><option value="">any</option></select></label>
+  </div>
+  <div id="families-table" class="scroll"></div>
+
+  <h3>New candidate screening <span class="tag exploratory">this session</span></h3>
+  <div id="screening-table"></div>
+  <h3>Ordinary vs structure-curated Rfam seed (Survey B, release 15.1)</h3>
+  <p>A separate question from the professor: do the ordinary seed and the "3D-curated" seed collection differ for the
+    families they share? Residue correspondences of shared rows were compared, not raw column numbers. Result below;
+    explanation in <code>results/seed_collection_comparison/README.md</code>. Consequence: for the families in this
+    pilot, the ordinary seed already <em>is</em> the 3D-curated alignment, so this is not a "sequence-only versus 3D"
+    comparison.</p>
+  <div id="surveyb-table"></div>
+</section>
+
+<!-- 3 RESULTS -->
+<section id="results">
+  <h2>3. Results</h2>
+  <p class="lede">For each pair, every residue of the source row is placed in exactly one category: the seed and
+  STAR3D give the <em>same partner</em>, a <em>different partner</em>, only the seed gives a partner
+  (<em>rfam only</em>), only STAR3D does (<em>star3d only</em>), or <em>neither</em>. Interaction preservation
+  asks: of the source structure's FR3D interactions that are eligible (both ends observed and not engineered),
+  how many reappear with the same class between the mapped target residues?</p>
+
+  <h3>Development pairs <small>(existing cohort)</small></h3>
+  <div class="controls">
+    <label>Show tiers <select id="tier-filter">
+      <option value="">all</option><option value="primary">primary only</option>
+      <option value="exploratory">exploratory only</option></select></label>
+    <label>Interaction side <select id="side-filter"><option value="query">query as source</option>
+      <option value="target">target as source</option></select></label>
+  </div>
+  <div id="dev-results"></div>
+
+  <h3>Prospective pairs <span class="tag exploratory">new this session</span></h3>
+  <div id="new-results"></div>
+
+  <h3>Candidate disagreement regions <small>(unit: region of contiguous disagreements)</small></h3>
+  <div id="regions-table" class="scroll"></div>
+</section>
+
+<!-- 4 CASE -->
+<section id="case">
+  <h2>4. Case study: RF00522 row for 7REX <span class="tag exploratory">exploratory adjustment</span></h2>
+  <p class="notice"><strong>Candidate for curator review, not a demonstrated error.</strong>
+  The two supporting comparisons (6VUI&rarr;7REX and 3FU2&rarr;7REX) are <strong>not independent</strong>:
+  both comparisons share the 7REX row. The "adjusted row" is an exploratory one-column shift of part of the 7REX
+  row, constructed by the agent to test the hypothesis; it is not an Rfam product.</p>
+
+  <div class="grid2">
+    <figure id="case-figure"></figure>
+    <div>
+      <h3>Supporting evidence</h3>
+      <ul>
+        <li>The seed's own consensus structure, applied to the 7REX row, implies non-Watson&ndash;Crick P1 pairs;
+          the one-column shift makes them Watson&ndash;Crick (see validation checks below).</li>
+        <li>The STAR3D register is the one observed in the 7REX crystal structure (FR3D <abbr title="cis Watson-Crick/Watson-Crick">cWW</abbr> annotations).</li>
+        <li>After superposing on residues where both methods agree, STAR3D partners lie closer than seed partners
+          in the P1 3&prime; strand (anchor-fit tables below), including when flanking residues are excluded.</li>
+        <li>On the same eligible interaction set, the adjusted row preserves more interactions than the seed row and
+          loses none the seed preserved (table below).</li>
+      </ul>
+      <h3>Counterevidence and caveats</h3>
+      <ul>
+        <li><strong>Loop L1:</strong> there the seed's partners fit better than STAR3D's (classified as a possible
+          STAR3D correspondence issue). 7REX binds a second preQ1 near L1, which may change local geometry.</li>
+        <li>STAR3D uses canonical pairs during preprocessing, so canonical-pair agreement partly overlaps STAR3D's
+          own input.</li>
+        <li>Local sequence differs between species in the P1 3&prime; region; a curator must judge the alignment.</li>
+        <li>Not independent: both comparisons share the 7REX row, so this counts as one observation.</li>
+      </ul>
+    </div>
+  </div>
+
+  <h3>Interaction preservation on the same eligible set <small>(unit: FR3D interaction; denominator = eligible_same_set)</small></h3>
+  <div id="adj-summary"></div>
+
+  <h3>Residue correspondence <small>(seed vs STAR3D vs adjusted)</small></h3>
+  <div id="corr-table"></div>
+  <div id="counts-table"></div>
+  <h3>Interactions where the methods differ (including L1, where the seed does better)</h3>
+  <div id="methoddiff-table"></div>
+  <h3>Is the register problem specific to the 7REX row? (sequence-level check of all 43 preQ1-I seed rows)</h3>
+  <p>Number of the 5 consensus P1 pairs that are Watson&ndash;Crick or G&middot;U as aligned, and if the 3&prime; strand
+    partner is taken one residue later (+1) or earlier (&minus;1). Sequence complementarity only, not structure.</p>
+  <div id="rows-table"></div>
+
+  <h3>Adjustment validation checks</h3>
+  <div id="adj-validation"></div>
+
+  <h3>Inspected regions involving 7REX</h3>
+  <div id="case-regions"></div>
+
+  <h3>Shared-correspondence anchor fits <small>(distances in &Aring; after superposition)</small></h3>
+  <div id="anchor-fits"></div>
+</section>
+
+<!-- 5 VALIDATION -->
+<section id="validation">
+  <h2>5. Validation and reproduction</h2>
+  <h3>STAR3D run status <small>(unit: STAR3D step)</small></h3>
+  <div id="run-status"></div>
+  <h3>Replicate consistency <small>(unit: pair &times; direction)</small></h3>
+  <div id="replicates"></div>
+  <h3>Test suites</h3>
+  <div id="tests-table"></div>
+  <h3>Validation checks</h3>
+  <div id="checks-table"></div>
+  <h3>Status of each result this session</h3>
+  <div id="results-status-table"></div>
+  <h3>Requirements</h3>
+  <div id="req-table"></div>
+  <h3>Fresh rerun today of the four non-preQ1 pilot pairs (per run)</h3>
+  <div id="fresh-table"></div>
+  <h3>Limitations</h3>
+  <ul>
+    <li>Pilot scale: few families and pairs; families with large models and rRNA were excluded for tractability.</li>
+    <li>Only one structural aligner (STAR3D v1.2, original) and one annotator (FR3D) were used.</li>
+    <li>Standard seeds may already contain structure-informed rows; the ordinary-versus-curated seed comparison is deferred.</li>
+    <li>Reruns were performed by the same agent and are not independent validation.</li>
+    <li>Exploratory and engineered-construct pairs are not used for scientific conclusions.</li>
+  </ul>
+</section>
+
+<!-- 6 DOWNLOADS -->
+<section id="downloads">
+  <h2>6. Downloads and next steps</h2>
+  <div id="downloads-list"></div>
+  <h3>Next steps</h3>
+  <ol>
+    <li>Ask an Rfam curator to check the alignment history of the 7REX row.</li>
+    <li>Test whether other preQ1-I sequences with different P1 lengths show the same register question.</li>
+    <li>Repeat with a second structural aligner or a curated structural reference to separate STAR3D-specific effects.</li>
+    <li>No screened family met the primary criteria this session. Any further expansion needs an explicitly revised scope (for example engineered constructs as a separate tier, sequence-only links after provenance review, or predicted structures as a separate study) and a native x86-64 STAR3D host.</li>
+  </ol>
+</section>
+
+<section id="glossary">
+  <h2>Glossary</h2>
+  <dl class="glossary">
+    <dt>Seed alignment</dt><dd>The small, curated multiple sequence alignment that defines an Rfam family. Here: the standard Rfam.seed.gz file, release shown in the footer.</dd>
+    <dt>Correspondence</dt><dd>The claim that nucleotide i in one RNA "is the same position" as nucleotide j in another. An alignment column implies correspondences.</dd>
+    <dt>STAR3D</dt><dd>A program that aligns two RNA 3D structures and outputs which nucleotides correspond, based on geometry.</dd>
+    <dt>FR3D</dt><dd>A program that annotates base pairs and stacking in an RNA 3D structure.</dd>
+    <dt>cWW</dt><dd>cis Watson&ndash;Crick/Watson&ndash;Crick base pair: the standard pairing geometry of helices (includes G&ndash;C, A&ndash;U and G&ndash;U wobble).</dd>
+    <dt>Stacking</dt><dd>Bases lying on top of each other, a major stabilising interaction distinct from pairing.</dd>
+    <dt>Denominator</dt><dd>The number of items a fraction is taken over. Every fraction here is shown as "x / n" with its unit; when n is zero or missing it is shown as unavailable, not 0.</dd>
+    <dt>Eligible</dt><dd>An interaction or residue that can be checked: both ends observed in the structures and not engineered.</dd>
+    <dt>Primary / exploratory</dt><dd>Primary pairs passed every predeclared eligibility rule; exploratory pairs are shown for context and are not used for conclusions.</dd>
+  </dl>
+</section>
+</main>
+
+<footer class="site-foot">
+  <div class="wrap" id="provenance">Loading provenance&hellip;</div>
+</footer>
+<script src="app.js"></script>
+</body>
+</html>

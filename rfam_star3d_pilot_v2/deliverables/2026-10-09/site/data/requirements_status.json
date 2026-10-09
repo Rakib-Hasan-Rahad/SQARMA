@@ -1,0 +1,54 @@
+{
+ "available": true,
+ "source": "deliverables/2026-10-09/tables/requirements_status.tsv",
+ "columns": [
+  "requirement",
+  "status",
+  "evidence",
+  "next_action"
+ ],
+ "rows": [
+  {
+   "requirement": "Suitable families with >=2 distinct natural sequence sources and experimental structures",
+   "status": "partial",
+   "evidence": "results/family_inventory.tsv; review/v3_screening/candidate_screening.tsv; review/v3_screening/screening_notes.md",
+   "next_action": "All 31 screen-passing families now reviewed (10 earlier + 21 today): 2 primary families (RF00522, RF00174), 3 exploratory pilot families, 4 new exploratory-only, 0 new primary. Next: resolve RF01750 construct papers (captcha) and the 1,793 sequence-only proposals"
+  },
+  {
+   "requirement": "Reliable PDB-to-Rfam row correspondence",
+   "status": "completed (pilot rows)",
+   "evidence": "results/standard_seed_membership.tsv; results/residue_crosswalk.tsv; results/standard_seed_rows.sto (now valid per-family Stockholm)",
+   "next_action": "Extend to any new primary candidates"
+  },
+  {
+   "requirement": "Construct and engineering review",
+   "status": "completed for reviewed families",
+   "evidence": "review/construct_review.tsv; review/exact_source_check.tsv; review/v3_screening/exact_source_v3.tsv; review/v3_screening/structure_facts.tsv",
+   "next_action": "Inaccessible papers: 4ZNP, 4XWF (captcha), 3 non-OA; chimp CPEB3 genome unchecked"
+  },
+  {
+   "requirement": "Original STAR3D comparison",
+   "status": "completed for 7 development pairs; fresh rerun of all 7 done (2 emulation crashes in today's rerun)",
+   "evidence": "results/pair_summary.tsv; audit/fresh_repro; audit/fresh_repro_v3_other4; deliverables/2026-10-09/STAR3D_execution_audit.md",
+   "next_action": "Native x86-64 host to remove JVM crash confound"
+  },
+  {
+   "requirement": "Interaction and motif-region interpretation",
+   "status": "partial",
+   "evidence": "results/interaction_summary.tsv; results/region_review.tsv; deliverables/2026-10-09/candidate_evidence_update.md",
+   "next_action": "5 of 19 regions inspected; 14 pending"
+  },
+  {
+   "requirement": "Ordinary vs structure-curated seed comparison",
+   "status": "completed for release 15.1 (result: identical)",
+   "evidence": "results/seed_collection_comparison/README.md; provenance.json",
+   "next_action": "Compare the 74 curated families against a pre-curation release"
+  },
+  {
+   "requirement": "Predicted structures / outside data (conditional)",
+   "status": "not started (fallback only)",
+   "evidence": "reports/professor_QA.md (questions for Smriti, not sent)",
+   "next_action": "Needed only if experimental inventory stays too sparse; would be a separate study"
+  }
+ ]
+}

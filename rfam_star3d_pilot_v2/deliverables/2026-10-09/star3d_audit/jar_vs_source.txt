@@ -1,0 +1,22 @@
+MANIFEST: Manifest-Version: 1.0 | Ant-Version: Apache Ant 1.9.6 | Created-By: 1.8.0_91-8u91-b14-3ubuntu1~16.04.1-b14 (Oracle Corporation |  ) | Main-Class: STAR3D | Class-Path: lib/EJML-core-0.26.jar lib/commons-cli-1.2.jar
+top-level classes in jar: 16 ['Atom.class', 'FindCompatibleSM.class', 'FindStackmap.class', 'Geom.class', 'Lib.class', 'LoopAlign.class', 'MCA.class', 'PDB.class', 'Pair.class', 'Point.class', 'Preprocess.class', 'ResID.class', 'Residue.class', 'STAR3D.class', 'Snode.class', 'Stackmap.class']
+Atom.class classfile_major=52 jar==class/: True
+FindCompatibleSM.class classfile_major=52 jar==class/: True
+FindStackmap.class classfile_major=52 jar==class/: True
+Geom.class classfile_major=52 jar==class/: True
+Lib.class classfile_major=52 jar==class/: True
+LoopAlign.class classfile_major=52 jar==class/: True
+MCA.class classfile_major=52 jar==class/: True
+PDB.class classfile_major=52 jar==class/: True
+Pair.class classfile_major=52 jar==class/: True
+Point.class classfile_major=52 jar==class/: True
+Preprocess.class classfile_major=52 jar==class/: True
+ResID.class classfile_major=52 jar==class/: True
+Residue.class classfile_major=52 jar==class/: True
+STAR3D.class classfile_major=52 jar==class/: True
+Snode.class classfile_major=52 jar==class/: True
+Stackmap.class classfile_major=52 jar==class/: True
+src without jar class: []
+jar class without src: []
+Preprocess.class contains rcsb URL: True ; DATAPATH string: True ; WWc: True
+MCA.class has --h: True

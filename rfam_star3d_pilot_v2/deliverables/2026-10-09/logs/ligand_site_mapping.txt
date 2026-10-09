@@ -1,0 +1,6 @@
+# 4 A ligand contacts from review/candidate_RF00522/structure_facts.tsv; mapping via residue_evidence_RF00522__6VUI_A__7REX_A.tsv
+6VUI {'PRF101': [5, 6, 7, 11, 14, 15, 16, 29, 30], 'MN102': [8, 10], 'MN103': [32, 33], 'MN104': [4], 'MN105': [23], 'MN107': [32, 33]}
+7REX {'PRF101': [7, 8, 12, 16, 30, 31, 32], 'PRF102': [5, 6, 16, 17, 18, 30, 31], 'MG103': [12, 13], 'MG105': [5]}
+rfam_partner mapped 6VUI site -> [5, 6, 8, 12, 15, 16, 17, 30, 31] on 7REX PRF102: 6 / 9 on PRF101: 5
+star3d_fwd_partner mapped 6VUI site -> [5, 6, 7, 13, 16, 17, 18, 30, 31] on 7REX PRF102: 7 / 9 on PRF101: 4
+adjusted_partner mapped 6VUI site -> [5, 6, 8, 12, 16, 17, 18, 30, 31] on 7REX PRF102: 7 / 9 on PRF101: 5

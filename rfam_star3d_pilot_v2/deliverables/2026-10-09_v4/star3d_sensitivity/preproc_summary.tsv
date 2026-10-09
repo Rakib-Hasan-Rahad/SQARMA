@@ -1,0 +1,12 @@
+rna	residues	pdb_ct_length_match	star3d_WWc_pairs	WWc_noncanonical_identity	WWc_not_Ww_Ww_edges	residues_with_multiple_WWc_partners	ct_nonreciprocal	ct_pairs	npk_pairs	npk_noncanonical_identity	npk_not_Ww_Ww	S1_pairs	S1_conflicts	source_dir
+3fu2a_A	32	True	9	1	2	none	none	9	5	0	0	7	none	runs/RF00522__3FU2_A__6VUI_A/attempt3/STAR3D_source/STAR3D_struct_info
+6vuia_A	33	True	7	0	0	none	none	7	5	0	0	7	none	runs/RF00522__3FU2_A__6VUI_A/attempt3/STAR3D_source/STAR3D_struct_info
+2gisa_A	94	True	31	1	3	none	none	31	27	0	2	28	none	runs/RF00162__2GIS_A__4KQY_A/attempt1/STAR3D_source/STAR3D_struct_info
+4kqya_A	119	True	37	1	3	none	none	37	34	1	2	34	none	runs/RF00162__2GIS_A__4KQY_A/attempt1/STAR3D_source/STAR3D_struct_info
+4gxya_A	163	True	48	1	8	none	none	48	46	1	8	39	none	runs/RF00174__4GXY_A__6VMY_A/attempt1/STAR3D_source/STAR3D_struct_info
+6vmya_A	130	True	42	2	5	none	none	42	39	2	5	35	none	runs/RF00174__4GXY_A__6VMY_A/attempt1/STAR3D_source/STAR3D_struct_info
+7rexa_A	34	True	5	0	0	none	none	5	5	0	0	5	none	runs/RF00522__3FU2_A__7REX_A/attempt1/STAR3D_source/STAR3D_struct_info
+2gdix_X	80	True	23	1	1	none	none	23	23	1	1	21	none	runs/RF00059__2GDI_X__3D2G_A/attempt1/STAR3D_source/STAR3D_struct_info
+3d2ga_A	77	True	20	0	1	none	none	20	20	0	1	19	none	runs/RF00059__2GDI_X__3D2G_A/attempt1/STAR3D_source/STAR3D_struct_info
+5u3gb_B	85	True	25	1	3	none	none	25	24	1	3	22	none	runs/RF00442__5U3G_B__7MLW_F/attempt1/STAR3D_source/STAR3D_struct_info
+7mlwf_F	125	True	37	2	5	16:[41, 44]	44	36	34	2	4	31	none	runs/RF00442__5U3G_B__7MLW_F/attempt1/STAR3D_source/STAR3D_struct_info

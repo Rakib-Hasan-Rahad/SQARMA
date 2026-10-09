@@ -102,6 +102,42 @@ def code_commit():
     return p.stdout.strip() or "uncommitted"
 
 
+def preprocessing_problems(work, sid, ch):
+    """v3: validate preprocessing CONTENTS, not only exit codes (STAR3D ignores its external tools' exit codes).
+    Fatal: missing/empty MC-Annotate .mca or no 'Base-pairs' section; npk.ct header/row count mismatch, malformed
+    rows, or non-reciprocal partners. Returned separately as warnings: a non-reciprocal raw .ct (a known STAR3D
+    source behaviour when one residue has two WWc partners; the later overwrites the earlier)."""
+    d = os.path.join(work, "STAR3D_struct_info")
+    fatal, warn = [], []
+    mca = os.path.join(d, f"{sid}.mca")
+    if not os.path.exists(mca) or os.path.getsize(mca) == 0:
+        fatal.append("MC-Annotate output missing or empty")
+    elif "Base-pairs" not in open(mca, errors="replace").read():
+        fatal.append("MC-Annotate output has no Base-pairs section")
+
+    def ct_check(path, label, sink):
+        if not os.path.exists(path):
+            sink.append(f"{label} missing")
+            return
+        lines = [x.split() for x in open(path) if x.strip()]
+        try:
+            n = int(lines[0][0])
+            rows = [(int(r[0]), int(r[4])) for r in lines[1:]]
+        except (IndexError, ValueError):
+            sink.append(f"{label} malformed")
+            return
+        if len(rows) != n or [i for i, _ in rows] != list(range(1, n + 1)):
+            sink.append(f"{label} declares {n} residues, has {len(rows)}")
+            return
+        partner = dict(rows)
+        bad = [i for i, j in rows if j and (j < 1 or j > n or partner.get(j) != i)]
+        if bad:
+            sink.append(f"{label} non-reciprocal partners at {bad[:6]}")
+    ct_check(os.path.join(d, f"{sid}_{ch}.npk.ct"), "npk.ct", fatal)
+    ct_check(os.path.join(d, f"{sid}_{ch}.ct"), "raw .ct", warn)
+    return fatal, warn
+
+
 def preprocess_and_gate(work, ids, rep_order, base, tag, k, common, runner=None):
     """Mount check + STAR3D preprocessing for both RNAs. Returns True only if EVERY step completed and passed its
     checks. Any failure (mount view mismatch, stale intermediates present, nonzero exit, missing/empty npk.ct,
@@ -134,6 +170,11 @@ def preprocess_and_gate(work, ids, rep_order, base, tag, k, common, runner=None)
             if rc2 != 0 or not so2.split() or so2.split()[0] != sha(npk):
                 status = "failed_mount_mismatch"
                 note = f"container npk.ct sha {so2.split()[0] if so2.split() else 'NA'} != host {sha(npk)}"
+            else:
+                fatal, warn = preprocessing_problems(work, sid, ch)
+                if fatal:
+                    status = "failed_intermediate_invalid"
+                note = "; ".join(fatal + [f"WARNING {w}" for w in warn]) or None
         append_manifest(dict(common, run_id=f"{tag}__a{k}__preprocess_{sid}", direction="preprocess", command=cmd,
                              started_utc=st, duration_s=dur, exit_code=rc, status=status, note=note,
                              stdout=os.path.relpath(os.path.join(base, "logs", f"preprocess_{sid}.stdout"), ROOT),

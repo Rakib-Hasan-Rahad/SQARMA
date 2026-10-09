@@ -1,0 +1,20 @@
+<!doctype html><html><head><meta charset="utf-8">
+<script src="https://cdn.jsdelivr.net/npm/mermaid@10.9.1/dist/mermaid.min.js"></script>
+<style>body{margin:0;background:#fff;font-family:Arial,Helvetica,sans-serif} .mermaid{display:inline-block;padding:12px}</style>
+</head><body><pre class="mermaid">flowchart TD
+  A[&quot;Verify tarball sha256&quot;] --&gt; B[&quot;New unique attempt dir&lt;br/&gt;(never reuse a path)&quot;]
+  B --&gt; C[&quot;Copy PDB inputs;&lt;br/&gt;in-container checksum + empty-dir check&quot;]
+  C -- &quot;mismatch / stale&quot; --&gt; F1[&quot;failed_mount_check:&lt;br/&gt;stop pair&quot;]
+  C --&gt; D[&quot;Preprocess × 2&lt;br/&gt;MC-Annotate → .ct → RemovePseudoknots → npk.ct&quot;]
+  D --&gt; E([&quot;Exit 0, npk.ct checksum matches,&lt;br/&gt;.mca has Base-pairs,&lt;br/&gt;npk.ct reciprocal?&quot;])
+  E -- &quot;no&quot; --&gt; F2[&quot;failed_* status:&lt;br/&gt;no alignment run&quot;]
+  E -- &quot;yes&quot; --&gt; G[&quot;Align: java -jar STAR3D.jar -o … -p q A t A&lt;br/&gt;forward + reverse, 3 replicates&quot;]
+  G --&gt; H([&quot;Exit code&quot;])
+  H -- &quot;≠0 (e.g. JVM crash)&quot; --&gt; F3[&quot;failed (recorded,&lt;br/&gt;other replicates used)&quot;]
+  H -- &quot;0, no file&quot; --&gt; N[&quot;no_alignment&quot;]
+  H -- &quot;0, file&quot; --&gt; I([&quot;Parse: declared = parsed count,&lt;br/&gt;no bad lines, sha recorded&quot;])
+  I -- &quot;no&quot; --&gt; F4[&quot;parse_error / validation_failed&quot;]
+  I -- &quot;yes&quot; --&gt; J[&quot;completed → compare.py&lt;br/&gt;re-validates on every read&quot;]
+</pre>
+<script>mermaid.initialize({startOnLoad:true, theme:'neutral', flowchart:{useMaxWidth:false, htmlLabels:true, curve:'basis', nodeSpacing:30, rankSpacing:40},
+ themeVariables:{fontSize:'15px', fontFamily:'Arial, Helvetica, sans-serif'}});</script></body></html>

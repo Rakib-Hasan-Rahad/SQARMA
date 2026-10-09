@@ -1,0 +1,34 @@
+{
+ "available": true,
+ "source": "deliverables/2026-10-09_v4/tables/test_results.tsv",
+ "columns": [
+  "suite",
+  "passed",
+  "failed",
+  "command",
+  "log_path"
+ ],
+ "rows": [
+  {
+   "suite": "64 tests (tests/), v4",
+   "passed": "64",
+   "failed": "0",
+   "command": ".venv/bin/python -m pytest -q tests",
+   "log_path": "logs/pytest_final_v4.txt"
+  },
+  {
+   "suite": "mutation check: 16 re-introduced defects",
+   "passed": "16 detected",
+   "failed": "0 undetected",
+   "command": ".venv/bin/python deliverables/2026-10-09_v4/scripts/mutation_check.py",
+   "log_path": "tables/mutation_check.tsv"
+  },
+  {
+   "suite": "baseline at v4 start (34f8b63)",
+   "passed": "51",
+   "failed": "0",
+   "command": ".venv/bin/python -m pytest -q tests",
+   "log_path": "baseline/baseline_state.txt"
+  }
+ ]
+}

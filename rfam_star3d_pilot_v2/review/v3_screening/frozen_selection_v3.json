@@ -1,0 +1,13 @@
+{
+  "schema": "v3_screening frozen selection (Agent B)",
+  "frozen_utc": "2026-10-09T05:39:13Z",
+  "reference_source": "Rfam.seed.gz",
+  "rfam_release": "15.1",
+  "seed_sha256": "41f014f4ab5628620935f089b1bb77987ebc162fda7c72bff368a32c9cccabac",
+  "rule": "config.yaml representative_rule: verified_standard_seed_row_link > no_known_engineering_in_target_motifs > cognate_ligand_bound_state_preferred > higher_observed_fraction > xray_before_em_before_nmr > better_resolution > pdb_id_chain_asc; primary eligibility also requires two distinct natural sequences, defensible source link, construct engineering absent from the family interval except maskable termini, observed_fraction >= 0.90",
+  "families_screened": 21,
+  "accepted_pairs": [],
+  "reason_none_accepted": "No screen-passing unreviewed family yielded a pair of two distinct natural sequences with documented, motif-free constructs. Taxa=2 families: THF (RF01831) both natural groups carry internal engineering (S. mutans P4 replaced by tetraloop + P1 terminal GC pairs; E. siraeum internal 14/65/85 noncanonical->WC changes); CPEB3 (RF00622) U1A-binding module in P4 and crystal-packing loss of P1.1, sequences differ by 1 nt; PrrB_RsmZ (RF00166) one side is an NMR two-conformer ensemble and the other has an unexplained 1-nt indel vs PAO1/PA14. ZMP-ZTP (RF01750) is the closest candidate (3 species, X-ray, full coverage) but both full-coverage constructs differ internally from their claimed source genomes and both papers were inaccessible (captcha). All other families: single natural source, designed variants, artificial sequences, or observed fraction < 0.90.",
+  "exploratory_only_not_frozen": ["RF01831__3SUH_X vs RF01831__4LVV_A", "RF00622__7QR3_C vs RF00622__7QR4_B", "RF00166__2MF0_G vs RF00166__7YR7_A", "RF01750__4XWF_A vs RF01750__4ZNP_A"],
+  "statement": "This selection (empty) was frozen before any STAR3D run. Agent B did not run STAR3D and did not inspect any STAR3D output for these families."
+}

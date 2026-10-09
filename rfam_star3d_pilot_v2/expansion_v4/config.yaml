@@ -1,0 +1,82 @@
+# Rfam (standard seed) vs ORIGINAL STAR3D — predeclared configuration, prompt Version 2.0.
+# Written 2026-10-09 (UTC) before any research STAR3D run, before any cohort freeze.
+# Changes after freeze require a new cohort_version and a logs/changes.md entry.
+
+project: rfam_star3d_pilot_v2
+prompt_version: "2.0"
+config_version: 1
+mode: pilot                 # pilot | scale  (scale is not launched without user request)
+cohort_version: "1.1"   # v1.1 = tier relabel of RF00162 (audit-repair v2.1); same 7 pairs and runs
+
+reference:
+  reference_source: Rfam.seed.gz          # SOLE alignment reference (pilot and scale)
+  rfam_release: "15.1"                    # from release README header + explicit versioned URL
+  seed_url: https://ftp.ebi.ac.uk/pub/databases/Rfam/15.1/Rfam.seed.gz
+  seed_path: inputs/rfam/15.1/Rfam.seed.gz
+  seed_sha256: 41f014f4ab5628620935f089b1bb77987ebc162fda7c72bff368a32c9cccabac
+  seed_decompressed_sha256: a6fc52d98766fa2b8d479763a819f4edbc288fe63fcdb754ff01e2af95a241b9
+  forbidden_alignment_sources: [Rfam.3d.seed.gz, cmalign-added rows, full-family alignments, other releases]
+  deferred_checks: [ordinary_vs_structure_curated_seed_comparison]
+
+sources:
+  rfam_pdb_mapping: inputs/rfam/15.1/Rfam.pdb.gz      # candidate discovery metadata only
+  pdb_seqres: https://files.wwpdb.org/pub/pdb/derived_data/pdb_seqres.txt.gz
+  rcsb_mmcif: https://files.rcsb.org/download/{pdb}.cif.gz
+  star3d_url: http://genome.ucf.edu/STAR3D/STAR3D_v1.2.tar.gz
+  star3d_sha256: c9da44059d9cfc40828e798ebd4f6194c55415e17aaae7d90ac0f849ec2ed946
+
+# ---------------------------------------------------------------- Phase 1
+link_discovery:
+  # a PDB chain is linked to a seed row by (1) an explicit #=GR <PDB>_<chain>_SS feature on that row
+  # in Rfam.seed.gz, or (2) proposal only: exact ungapped row sequence found in the chain's SEQRES.
+  # (2) never qualifies without provenance review (Phase 2).
+  normalization: "uppercase; T->U; no other changes"
+shortlist:
+  min_distinct_linked_row_sequences: 2
+  max_family_model_length: 300            # tractability; limits generalization (explicit)
+  exclude_types_regex: "rRNA"             # large ribosomal assemblies excluded from pilot (explicit)
+  max_families_to_review: {pilot: 10, scale: null}
+  # ranking: distinct linked-row taxids excluding 32630 'synthetic construct' (desc), distinct linked
+  # sequences (desc), model length (asc), accession (asc)
+  rank_keys: [n_nonsynthetic_taxa_desc, n_distinct_seqs_desc, clen_asc, acc_asc]
+
+# ---------------------------------------------------------------- Phase 2
+eligibility:
+  require_existing_standard_seed_row: true
+  require_exact_match_or_documented_same_source_construct: true
+  min_observed_fraction_of_row: 0.90
+  model_policy: first_model
+  altloc_policy: gemmi_remove_alternative_conformations_first_conformer
+  single_char_author_chain_required_for_star3d: true
+representative_rule:          # applied in order within one naturally distinct source group
+  - verified_standard_seed_row_link
+  - no_known_engineering_in_target_motifs
+  - cognate_ligand_bound_state_preferred   # comparable experimental context across the family
+  - higher_observed_fraction
+  - xray_before_em_before_nmr
+  - better_resolution
+  - pdb_id_chain_asc
+
+cohort:
+  targets: {families: [3, 5], representatives: [8, 15], pairs: [10, 20]}
+  max_pairs_per_family: {pilot: 6, scale: null}
+  random_seed: 20261008                    # not used unless a random subset is required (none planned)
+  primary_direction: sorted_stable_id      # query = lexicographically smaller "<PDB>_<authchain>"
+  run_both_directions: true
+
+star3d:
+  image: star3d-runtime:1                  # ubuntu:22.04 + openjdk-8-jre-headless, linux/amd64
+  parameters: defaults                     # -r 4.0 -s 3 -g -5 -e -2 -m 3 -i 0 -t 1 (STAR3D.java)
+  extra_flags: ["-p"]                      # superposition PDB output only
+  replicates: 3                            # unseeded java.util.Random in Bron-Kerbosch pivot
+  input_policy: family interval of one chain, model 1, author numbering, mmCIF source
+
+annotation:
+  tool: fr3d-python (BGSU-RNA) commit 288f98ccfd72dc6d88036c124605c05ce623b1b7
+  categories: [basepair, stacking]
+  canonical: "cWW AND identity in {AU,UA,GC,CG}; GU/UG cWW = wobble (reported separately)"
+
+regions:
+  merge_gap: 2
+  max_inspected_regions: 3
+  agreement_examples: 1

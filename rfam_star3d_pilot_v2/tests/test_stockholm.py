@@ -78,3 +78,9 @@ def test_gr_for_unknown_sequence_rejected(tmp_path):
 
 def test_split_name_reverse_strand():
     assert stockholm.split_name("AB000001.1/50-10") == ("AB000001.1", 50, 10)
+
+
+def test_reverse_strand_row_coordinates_count_down():
+    import prepare_inputs
+    assert [prepare_inputs.row_coordinate({"row_start": "2022", "row_end": "1950"}, k) for k in (0, 1, 72)] == [2022, 2021, 1950]
+    assert [prepare_inputs.row_coordinate({"row_start": "1", "row_end": "34"}, k) for k in (0, 33)] == [1, 34]

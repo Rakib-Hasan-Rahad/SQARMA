@@ -1,0 +1,14 @@
+flowchart TD
+  A["Verify tarball sha256"] --> B["New unique attempt dir<br/>(never reuse a path)"]
+  B --> C["Copy PDB inputs;<br/>in-container checksum + empty-dir check"]
+  C -- "mismatch / stale" --> F1["failed_mount_check:<br/>stop pair"]
+  C --> D["Preprocess × 2<br/>MC-Annotate → .ct → RemovePseudoknots → npk.ct"]
+  D --> E(["Exit 0, npk.ct checksum matches,<br/>.mca has Base-pairs,<br/>npk.ct reciprocal?"])
+  E -- "no" --> F2["failed_* status:<br/>no alignment run"]
+  E -- "yes" --> G["Align: java -jar STAR3D.jar -o … -p q A t A<br/>forward + reverse, 3 replicates"]
+  G --> H(["Exit code"])
+  H -- "≠0 (e.g. JVM crash)" --> F3["failed (recorded,<br/>other replicates used)"]
+  H -- "0, no file" --> N["no_alignment"]
+  H -- "0, file" --> I(["Parse: declared = parsed count,<br/>no bad lines, sha recorded"])
+  I -- "no" --> F4["parse_error / validation_failed"]
+  I -- "yes" --> J["completed → compare.py<br/>re-validates on every read"]
