@@ -2,7 +2,8 @@
 
 Steps (outputs only under audit/fresh_repro/; retained study files are never overwritten):
  1. re-download mmCIF (3FU2, 6VUI, 7REX) and the STAR3D tarball from the recorded URLs; compare compressed AND
-    decompressed sha256 with the pinned/recorded values (mismatch is recorded, never silently adopted);
+    decompressed sha256 with the pinned/recorded values; a mismatch writes a diagnostic, quarantines the bytes and
+    BLOCKS every dependent step (v3 repair B); the run then exits nonzero;
  2. rebuild the STAR3D coordinate inputs from the fresh mmCIF with the unchanged prepare() policy; compare bytes,
     residue identities and coordinates with the retained inputs;
  3. rerun ORIGINAL STAR3D (fresh tarball, star3d-runtime:1, defaults) for the 3 preQ1 pairs, both directions x 3;
@@ -63,32 +64,114 @@ def get(url, dest, tries=4):
     return data
 
 
+class InputMismatch(RuntimeError):
+    pass
+
+
+class InputGate:
+    """v3 repair B: strict pinned-input policy. A changed download or rebuilt input is never adopted: a diagnostic is
+    written FIRST, the unexpected bytes are quarantined, and every dependent rep/pair is blocked so that no
+    preprocessing, annotation or alignment runs on rejected inputs. Compressed-container-only changes are
+    distinguished in the diagnostic but are also rejected (a later explicit source-version decision is required)."""
+
+    def __init__(self, root):
+        self.root = root
+        self.diag_dir = os.path.join(root, "diagnostics")
+        self.q_dir = os.path.join(root, "quarantine")
+        self.blocked = {}            # key ('rep:<rep_id>' or 'software') -> reason
+        self.records = []
+
+    def _reject(self, key, rel, data, diag):
+        os.makedirs(self.diag_dir, exist_ok=True)
+        name = rel.replace("/", "__")
+        with open(os.path.join(self.diag_dir, name + ".mismatch.json"), "w") as f:   # diagnostic before anything else
+            json.dump(diag, f, indent=1, default=str)
+        if data is not None:
+            os.makedirs(self.q_dir, exist_ok=True)
+            open(os.path.join(self.q_dir, name + ".rejected"), "wb").write(data)
+        for k in key if isinstance(key, (list, tuple)) else [key]:
+            self.blocked[k] = diag["verdict"]
+
+    def check_download(self, key, rel, data, recorded_sha, pinned_path=None, fresh_path=None):
+        rec = dict(file=rel, recorded_sha256=recorded_sha, fresh_sha256=sha_bytes(data),
+                   compressed_identical=sha_bytes(data) == recorded_sha)
+        if pinned_path and rel.endswith(".gz"):
+            try:
+                fd = gzip.decompress(data)
+            except OSError:
+                fd = None
+            pd = gzip.open(pinned_path).read()
+            rec.update(fresh_decompressed_sha256=sha_bytes(fd) if fd is not None else "not_gzip",
+                       pinned_decompressed_sha256=sha_bytes(pd), decompressed_identical=fd == pd)
+        ok = rec["compressed_identical"] and rec.get("decompressed_identical", True)
+        if ok:
+            rec["verdict"] = "accepted_identical"
+        else:
+            rec["verdict"] = ("rejected_container_only_change" if rec.get("decompressed_identical")
+                              else "rejected_content_change")
+            self._reject(key, rel, data, rec)
+            if fresh_path and os.path.exists(fresh_path):
+                os.remove(fresh_path)        # never leave rejected bytes where a later run would reuse them
+        self.records.append(rec)
+        return rec
+
+    def check_rebuilt(self, key, rel, fresh_bytes, retained_bytes):
+        rec = dict(file=rel, retained_sha256=sha_bytes(retained_bytes), fresh_sha256=sha_bytes(fresh_bytes),
+                   bytes_identical=fresh_bytes == retained_bytes)
+        rec["verdict"] = "accepted_identical" if rec["bytes_identical"] else "rejected_rebuilt_input_differs"
+        if not rec["bytes_identical"]:
+            self._reject(key, rel, fresh_bytes, rec)
+        self.records.append(rec)
+        return rec
+
+    def allowed_pair(self, pair):
+        return not ("software" in self.blocked or f"rep:{pair['query_rep']}" in self.blocked
+                    or f"rep:{pair['target_rep']}" in self.blocked)
+
+    def allowed_rep(self, rep_id):
+        return f"rep:{rep_id}" not in self.blocked
+
+
+def run_allowed_pairs(gate, pairs, runner):
+    """Run `runner(pair)` only for pairs whose inputs passed the gate; return per-pair status."""
+    out = {}
+    for pid, pair in pairs.items():
+        if gate.allowed_pair(pair):
+            runner(pair)
+            out[pid] = "run"
+        else:
+            out[pid] = "blocked_input_mismatch"
+    return out
+
+
 def R(path):
     return list(csv.DictReader(open(path, encoding="utf-8"), delimiter="\t"))
 
 
 def main():
     os.makedirs(FR, exist_ok=True)
-    rec = {"note": "reproduction by the same AI agent; not independent external validation"}
     man = {r["local_path"]: r for r in R(os.path.join(ROOT, "metadata/sources_manifest.tsv")) if r["status"] == "ok"}
-    # 1. downloads
+    # 1. downloads (strict gate; v3 repair B)
+    gate = InputGate(FR)
+    rep_of_pdb = {rid.split("__")[1].split("_")[0]: rid for rid in REPS}
     dl = []
     for pdb in PDBS:
         rel = f"inputs/structures/mmcif/{pdb}.cif.gz"
         url = man[rel]["url"]
         fresh = os.path.join(FR, rel)
         data = get(url, fresh)
-        pinned = os.path.join(ROOT, rel)
-        dl.append(dict(file=rel, url=url, recorded_sha256=man[rel]["sha256"], pinned_sha256=sha(pinned),
-                       fresh_sha256=sha_bytes(data), compressed_identical=sha_bytes(data) == man[rel]["sha256"],
-                       fresh_decompressed_sha256=sha_bytes(gzip.decompress(data)),
-                       pinned_decompressed_sha256=sha_bytes(gzip.open(pinned).read()),
-                       decompressed_identical=gzip.decompress(data) == gzip.open(pinned).read()))
+        rec = gate.check_download(f"rep:{rep_of_pdb[pdb]}", rel, data, man[rel]["sha256"],
+                                  pinned_path=os.path.join(ROOT, rel), fresh_path=fresh)
+        rec["url"] = url
+        dl.append(rec)
     rel = "inputs/software/STAR3D_v1.2.tar.gz"
-    data = get(man[rel]["url"], os.path.join(FR, rel))
-    dl.append(dict(file=rel, url=man[rel]["url"], recorded_sha256=man[rel]["sha256"], fresh_sha256=sha_bytes(data),
-                   compressed_identical=sha_bytes(data) == man[rel]["sha256"]))
-    rec["downloads"] = dl
+    fresh_tar = os.path.join(FR, rel)
+    data = get(man[rel]["url"], fresh_tar)
+    rec = gate.check_download("software", rel, data, man[rel]["sha256"], fresh_path=fresh_tar)
+    rec["url"] = man[rel]["url"]
+    dl.append(rec)
+    rec = {"note": "reproduction by the same AI agent; not independent external validation", "downloads": dl}
+    _write_partial(rec, gate)
     print(json.dumps(dl, indent=1))
 
     # fresh root: copy only the small tables the unchanged code needs; coordinates come from FRESH downloads
@@ -106,12 +189,16 @@ def main():
     retained = {r["rep_id"]: r for r in R(os.path.join(ROOT, "mappings/aligner_inputs.tsv"))}
     inp, comp_inputs = [], []
     for rid in REPS:
+        if not gate.allowed_rep(rid):
+            comp_inputs.append(dict(rep_id=rid, status="blocked_input_mismatch"))
+            continue
         meta, conv = prepare_inputs.prepare(reps[rid], None)
         meta["file"] = os.path.relpath(os.path.join(ROOT, meta["file"]), FR)   # prepare() returns study-root-relative
         inp.append(meta)
         old = os.path.join(ROOT, retained[rid]["file"])
         new = fp(meta["file"])
         same_bytes = sha(old) == sha(new)
+        gate.check_rebuilt(f"rep:{rid}", meta["file"], open(new, "rb").read(), open(old, "rb").read())
         import gemmi
         a, b = gemmi.read_structure(old), gemmi.read_structure(new)
         ra, rb = [(r.seqid.num, r.seqid.icode, r.name) for r in a[0][0]], [(r.seqid.num, r.seqid.icode, r.name) for r in b[0][0]]
@@ -125,11 +212,14 @@ def main():
         comp_inputs.append(dict(rep_id=rid, retained_sha256=sha(old), fresh_sha256=sha(new), bytes_identical=same_bytes,
                                 residue_ids_and_names_identical=ra == rb, n_residues=len(rb),
                                 max_atom_displacement_A=round(maxd, 4)))
-    with open(fp("mappings/aligner_inputs.tsv"), "w", newline="") as f:
-        w = csv.DictWriter(f, fieldnames=list(inp[0].keys()), delimiter="\t", lineterminator="\n")
-        w.writeheader()
-        w.writerows(inp)
+    inp = [m for m in inp if gate.allowed_rep(m["rep_id"])]      # rejected rebuilt inputs are never handed on
+    if inp:
+        with open(fp("mappings/aligner_inputs.tsv"), "w", newline="") as f:
+            w = csv.DictWriter(f, fieldnames=list(inp[0].keys()), delimiter="\t", lineterminator="\n")
+            w.writeheader()
+            w.writerows(inp)
     rec["inputs"] = comp_inputs
+    _write_partial(rec, gate)
     print(json.dumps(comp_inputs, indent=1))
 
     # 3. original STAR3D rerun with the FRESH tarball
@@ -138,9 +228,12 @@ def main():
     star3d.MANIFEST_PATH = fp("results/run_manifest.tsv")
     pairs = {p["pair_id"]: p for p in R(fp("results/selected_pairs.tsv"))}
     inputs = {r["rep_id"]: r for r in inp}
-    for pid in PAIRS:
-        star3d.run_pair(pairs[pid], reps, inputs, star3d.CFG["star3d"]["replicates"])
-    runs_new = [r for r in R(fp("results/run_manifest.tsv")) if r["direction"] in ("forward", "reverse")]
+    rec["star3d_gate"] = run_allowed_pairs(
+        gate, {pid: pairs[pid] for pid in PAIRS},
+        lambda p: star3d.run_pair(p, reps, inputs, star3d.CFG["star3d"]["replicates"]))
+    _write_partial(rec, gate)
+    runs_new = ([r for r in R(fp("results/run_manifest.tsv")) if r["direction"] in ("forward", "reverse")]
+                if os.path.exists(fp("results/run_manifest.tsv")) else [])
     runs_old = {r["run_id"]: r for r in R(os.path.join(ROOT, "results/run_manifest.tsv"))
                 if r["pair_id"] in PAIRS and r["direction"] in ("forward", "reverse") and not r["run_id"].startswith("attempt")}
     star = []
@@ -168,6 +261,9 @@ def main():
         cw.setdefault(r["rep_id"], {})[int(r["row_index1"])] = r
     fr3d = []
     for rid in REPS:
+        if not gate.allowed_rep(rid):
+            fr3d.append(dict(rep_id=rid, status="blocked_input_mismatch"))
+            continue
         rep = reps[rid]
         out, _ = interactions.normalized(rid, rep, cw[rid])
         old = R(os.path.join(ROOT, "annotations/normalized", f"{rid}.tsv"))
@@ -180,8 +276,35 @@ def main():
                          raw_files_byte_identical=raw_same))
     rec["fr3d"] = fr3d
     print(json.dumps(fr3d, indent=1))
-    json.dump(rec, open(os.path.join(FR, "fresh_repro_summary.json"), "w"), indent=1, default=str)
+    rec["status"] = "complete" if not gate.blocked else "stopped_on_input_mismatch"
+    _write_partial(rec, gate, final=True)
+    if gate.blocked:
+        raise SystemExit(f"INPUT MISMATCH: dependent steps blocked: {gate.blocked} (see {gate.diag_dir})")
+
+
+def _write_partial(rec, gate, final=False):
+    rec["gate"] = {"blocked": gate.blocked, "records": gate.records}
+    name = "fresh_repro_summary.json" if final else "fresh_repro_summary.partial.json"
+    tmp = os.path.join(FR, name + ".tmp")
+    json.dump(rec, open(tmp, "w"), indent=1, default=str)
+    os.replace(tmp, os.path.join(FR, name))
+
+
+def configure(pair_ids, out_dir):
+    """v3: generalize beyond the preQ1 trio (outputs in a separate directory; retained files never overwritten)."""
+    global FR, PAIRS, REPS, PDBS
+    FR = os.path.join(ROOT, out_dir)
+    PAIRS = list(pair_ids)
+    REPS = sorted({f"{p.split('__')[0]}__{x}" for p in PAIRS for x in p.split("__")[1:]})
+    PDBS = sorted({r.split("__")[1].split("_")[0] for r in REPS})
 
 
 if __name__ == "__main__":
+    import argparse
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--pairs", help="comma-separated pair_ids (default: the preQ1 trio)")
+    ap.add_argument("--out", default="audit/fresh_repro")
+    a = ap.parse_args()
+    if a.pairs:
+        configure(a.pairs.split(","), a.out)
     main()

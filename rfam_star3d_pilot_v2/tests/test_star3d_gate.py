@@ -81,3 +81,61 @@ def test_stale_intermediates_fail_mount_check(tmp_path, monkeypatch):
     assert not any("Preprocess" in c or "STAR3D.jar -o" in c for c in issued)
     rows = list(csv.DictReader(open(root / "results/run_manifest.tsv"), delimiter="\t"))
     assert [r["status"] for r in rows] == ["failed_mount_check"]
+
+
+# ---- v3: preprocessing contents are validated (STAR3D ignores its external tools' exit codes) -----------------
+def _prep_docker(pdbs, mca_text, npk_text, ct_text=None):
+    issued = []
+
+    def fake_docker(work, cmd, logbase):
+        issued.append(cmd)
+        if cmd.startswith("sha256sum PDB"):
+            return 0, 0.1, "t", "".join(f"{h}  PDB/{n}.pdb\n" for n, h in pdbs.items()) + "0\n"
+        if "Preprocess" in cmd:
+            sid, ch = cmd.split()[-2:]
+            d = os.path.join(work, "STAR3D_struct_info")
+            os.makedirs(d, exist_ok=True)
+            open(os.path.join(d, f"{sid}.mca"), "w").write(mca_text)
+            open(os.path.join(d, f"{sid}_{ch}.npk.ct"), "w").write(npk_text)
+            open(os.path.join(d, f"{sid}_{ch}.ct"), "w").write(ct_text or npk_text)
+            return 0, 0.1, "t", ""
+        if cmd.startswith("sha256sum STAR3D_struct_info"):
+            f = os.path.join(work, cmd.split()[1])
+            return 0, 0.1, "t", hashlib.sha256(open(f, "rb").read()).hexdigest() + "  f\n"
+        return 0, 0.1, "t", "#Aligned nucleotide: 0\n"
+    return fake_docker, issued
+
+
+GOOD_CT = "4 x\n1 G 0 2 4 1\n2 G 1 3 0 2\n3 A 2 4 0 3\n4 C 3 5 1 4\n"
+
+
+def test_empty_mca_stops_before_alignment(tmp_path, monkeypatch):
+    root, reps, inputs, pair, pdbs = _setup(tmp_path, monkeypatch)
+    fake, issued = _prep_docker(pdbs, "", GOOD_CT)
+    monkeypatch.setattr(star3d, "docker", fake)
+    star3d.run_pair(pair, reps, inputs, 1)
+    assert not any("STAR3D.jar -o" in c for c in issued)
+    rows = list(csv.DictReader(open(root / "results/run_manifest.tsv"), delimiter="\t"))
+    assert rows[0]["status"] == "failed_intermediate_invalid" and "MC-Annotate" in rows[0]["note"]
+
+
+def test_non_reciprocal_npk_ct_stops_before_alignment(tmp_path, monkeypatch):
+    root, reps, inputs, pair, pdbs = _setup(tmp_path, monkeypatch)
+    bad = "4 x\n1 G 0 2 4 1\n2 G 1 3 0 2\n3 A 2 4 0 3\n4 C 3 5 2 4\n"
+    fake, issued = _prep_docker(pdbs, "Base-pairs ---\n", bad)
+    monkeypatch.setattr(star3d, "docker", fake)
+    star3d.run_pair(pair, reps, inputs, 1)
+    assert not any("STAR3D.jar -o" in c for c in issued)
+
+
+def test_valid_preprocessing_proceeds_and_raw_ct_defect_is_a_warning(tmp_path, monkeypatch):
+    root, reps, inputs, pair, pdbs = _setup(tmp_path, monkeypatch)
+    raw_bad = "4 x\n1 G 0 2 4 1\n2 G 1 3 4 2\n3 A 2 4 0 3\n4 C 3 5 2 4\n"
+    fake, issued = _prep_docker(pdbs, "Base-pairs ---\n", GOOD_CT, raw_bad)
+    monkeypatch.setattr(star3d, "docker", fake)
+    star3d.run_pair(pair, reps, inputs, 1)
+    rows = list(csv.DictReader(open(root / "results/run_manifest.tsv"), delimiter="\t"))
+    pre = [r for r in rows if r["direction"] == "preprocess"]
+    assert [r["status"] for r in pre] == ["completed", "completed"]
+    assert "WARNING raw .ct non-reciprocal" in pre[0]["note"]
+    assert any("STAR3D.jar -o" in c for c in issued)

@@ -47,5 +47,15 @@ def test_manual_interpretations_carried_not_reset():
                                          dict(region_id="P__r8-12", pair_id="P", row_index_start=8, row_index_end=12),
                                          dict(region_id="Q__r1-2", pair_id="Q", row_index_start=1, row_index_end=2)], prev)
     assert out[0]["classification"] == "supported_candidate" and out[0]["interpretation_source"].startswith("carried exact")
-    assert out[1]["interpretation_source"].startswith("carried by span overlap")
+    assert out[1]["inspected"] == "needs_reassessment"                 # boundary changed: not auto-accepted
+    assert out[1]["interpretation"].startswith("HISTORICAL") and "supported_candidate" in out[1]["interpretation"]
     assert out[2]["inspected"] == "pending"
+
+
+def test_changed_eligibility_triggers_reassessment():
+    prev = [dict(region_id="P__r17-23", pair_id="P", row_index_start="17", row_index_end="23", inspected="inspected",
+                 classification="possible_STAR3D_issue", interpretation="text",
+                 eligible_for_structural_adjudication="yes")]
+    out = regions.carry_interpretations([dict(region_id="P__r17-23", pair_id="P", row_index_start=17, row_index_end=23,
+                                              eligible_for_structural_adjudication="no")], prev)
+    assert out[0]["classification"] == "needs_reassessment" and "eligibility changed" in out[0]["interpretation_source"]
