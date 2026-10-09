@@ -1,0 +1,16 @@
+release	file	url	last_modified	retrieved_utc	sha256
+14.0	Rfam.seed.gz	https://ftp.ebi.ac.uk/pub/databases/Rfam/14.0/Rfam.seed.gz	Tue, 21 Aug 2018 13:54:52 GMT	2026-10-09T06:10:06Z	78682e1beb71d5763a0485af667ed4590bf0441a42bafca46ac2b0a95f6207b8
+14.1	Rfam.seed.gz	https://ftp.ebi.ac.uk/pub/databases/Rfam/14.1/Rfam.seed.gz	Fri, 25 Jan 2019 09:03:57 GMT	2026-10-09T06:10:11Z	165a89c2a71cdae9675c3c2f6b6adc24f479039d705b6fb69b63794f5f9451dd
+14.2	Rfam.seed.gz	https://ftp.ebi.ac.uk/pub/databases/Rfam/14.2/Rfam.seed.gz	Fri, 24 Apr 2020 17:15:42 GMT	2026-10-09T06:10:15Z	5a506328b418af747342a56136421bddbdb894373a3504c8e969dcfd9eb0f854
+14.3	Rfam.seed.gz	https://ftp.ebi.ac.uk/pub/databases/Rfam/14.3/Rfam.seed.gz	Fri, 06 Nov 2020 13:33:43 GMT	2026-10-09T06:10:20Z	7c41ef87ecd75474e92f8d3101d847fcf3b0d52ac1678e872a487e51a9c41067
+14.4	Rfam.seed.gz	https://ftp.ebi.ac.uk/pub/databases/Rfam/14.4/Rfam.seed.gz	Fri, 11 Dec 2020 14:48:01 GMT	2026-10-09T06:10:25Z	672d14c78fa78d5083319e55469404525549368aeff1bb1d2f6350fe270c86aa
+14.5	Rfam.seed.gz	https://ftp.ebi.ac.uk/pub/databases/Rfam/14.5/Rfam.seed.gz	Mon, 08 Mar 2021 12:14:22 GMT	2026-10-09T06:10:31Z	eb2c019ea3fb5b423699364fa28896853986d4930f5bdb2bf95666698a778602
+14.6	Rfam.seed.gz	https://ftp.ebi.ac.uk/pub/databases/Rfam/14.6/Rfam.seed.gz	Mon, 05 Jul 2021 11:03:09 GMT	2026-10-09T06:10:37Z	24b067ab50ca1b92f60e02901195964519c098a1914ef3f302cc4b103b4dc8b5
+14.7	Rfam.seed.gz	https://ftp.ebi.ac.uk/pub/databases/Rfam/14.7/Rfam.seed.gz	Thu, 09 Dec 2021 17:18:06 GMT	2026-10-09T06:10:42Z	89abe86f6c2b09cdec8f70014727fa426d9d7ecb35b0a424807000508ccb8762
+14.8	Rfam.seed.gz	https://ftp.ebi.ac.uk/pub/databases/Rfam/14.8/Rfam.seed.gz	Mon, 23 May 2022 17:36:23 GMT	2026-10-09T06:10:47Z	f51de9624c88f101d9d39428d62593c88bef12f6aa0f0727b06a96a542ed4344
+14.9	Rfam.seed.gz	https://ftp.ebi.ac.uk/pub/databases/Rfam/14.9/Rfam.seed.gz	Tue, 22 Nov 2022 13:59:00 GMT	2026-10-09T06:10:52Z	d612622e40ce31412fa2479263424adfa7768535f8aad8ff34236d91e5da3e25
+14.9	Rfam.3d.seed.gz	https://ftp.ebi.ac.uk/pub/databases/Rfam/14.9/Rfam.3d.seed.gz	Thu, 10 Nov 2022 13:10:54 GMT	2026-10-09T06:10:54Z	c7703ee4c28336b236b0579e37a1a894897c23ae5a931645a81d69c21340af6b
+14.10	Rfam.seed.gz	https://ftp.ebi.ac.uk/pub/databases/Rfam/14.10/Rfam.seed.gz	Mon, 13 Nov 2023 14:17:31 GMT	2026-10-09T06:10:59Z	e0dda7fc95e9dac7214ddcc130a0356f56ca176942d0bf5881289270311da000
+14.10	Rfam.3d.seed.gz	https://ftp.ebi.ac.uk/pub/databases/Rfam/14.10/Rfam.3d.seed.gz	Tue, 14 Nov 2023 11:07:01 GMT	2026-10-09T06:11:02Z	27a2ca3f77528f11d88cd845baa869e00ebfdd923e311209c151c370f8e3518e
+15.0	Rfam.seed.gz	https://ftp.ebi.ac.uk/pub/databases/Rfam/15.0/Rfam.seed.gz	Tue, 17 Sep 2024 11:44:48 GMT	2026-10-09T06:11:08Z	b06ac74d772609e863c5e1906eb491d699e9d325c5f22f4fc78126a808ad0bed
+15.0	Rfam.3d.seed.gz	https://ftp.ebi.ac.uk/pub/databases/Rfam/15.0/Rfam.3d.seed.gz	Tue, 17 Sep 2024 12:29:19 GMT	2026-10-09T06:11:10Z	6d2aa3a99b7be4716644c8355438507ee8cffde05035c200658aa9fa0dcab78d
