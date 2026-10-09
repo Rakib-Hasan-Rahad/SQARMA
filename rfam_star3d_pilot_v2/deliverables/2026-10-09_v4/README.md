@@ -1,6 +1,6 @@
 # Session deliverables, 2026-10-09 (v4: scientific validation)
 
-*AI-agent work; no human review. Branch `v4-validation-2026-10-09`, with local commits only.*
+*AI-agent work; no human review. Branch `v4-validation-2026-10-09`, pushed to GitHub (not merged into main).*
 
 **Start here:** `professor_report_v4.md`, which supersedes the v3 conclusions. Then read:
 - `candidate_evidence_update_v4.md` — the 7REX candidate;
